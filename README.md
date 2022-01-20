@@ -1,6 +1,6 @@
 # Welcome Home
 ![License CC BY-NC](https://img.shields.io/badge/license-CC_BY--NC--SA-green.svg?style=plastic)
-Telegram [主频道](https://t.me/ShareCentre)｜[次频道](https://t.me/ShareCentrePro)
+[主频道](https://t.me/ShareCentre)｜[次频道](https://t.me/ShareCentrePro)
 #### ❗️以下是软件下载链接❗️
 ## Windows
 首推v2ray，支持格式众多，[官网](v2ray.com)。其次Clash，需自行转换订阅！SSR只支持ssr协议！SS翻墙始祖，已无安全保障，只支持ss协议

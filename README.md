@@ -16,4 +16,4 @@
 [![Download](./help/apple.svg?.inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)
 ### Potatso Free
 [![Download](./help/apple.svg?.inline)](https://apps.apple.com/us/app/shadowrocket/id1239860606)
-##### 不懂如何使用美区Apple ID下载付费软件，出门左转Google
+##### 如何使用美区Apple ID下载付费软件？出门左转Google

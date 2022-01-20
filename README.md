@@ -23,7 +23,5 @@
 
 ## iOS
 必须是外区Apple ID才能下载到，Potatso只支持SS协议
-### Shadowrocket $2.99
-[![Download](./help/apple.svg?.inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)
-### Potatso   Free
-[![Download](./help/apple.svg?.inline)](https://apps.apple.com/us/app/shadowrocket/id1239860606)
+### Shadowrocket $2.99    Potatso   Free
+[![Download](./help/apple.svg?.inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)｜[![Download](./help/apple.svg?.inline)](https://apps.apple.com/us/app/shadowrocket/id1239860606)

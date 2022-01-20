@@ -22,4 +22,4 @@
 ### [SS](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks--universal-v5.2.6.apk)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk)｜[v2rayNG](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28.apk)
 
 ## iOS
-### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118?l=zh)
+### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118?l=zh)｜[Potatso](https://apps.apple.com/us/app/potatso-lite/id1239860606?l=zh)

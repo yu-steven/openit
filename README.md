@@ -1,12 +1,10 @@
 # 欢迎光临本仓库
 
-### Telegram 频道，分享高速节点
+### Telegram 频道,分享高速节点,每天更新！
 
 [主频道](https://t.me/ShareCentre)｜[次频道](https://t.me/ShareCentrePro)
 
 🎬订阅转换 https://sub.v1.mk/
-
-订阅链接永久不变，节点每天都会更新。
 #### ❗️以下是软件下载链接❗️
 
 ## Windows

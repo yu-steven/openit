@@ -1,10 +1,7 @@
-# 欢迎光临本仓库
+# Welcome Home
+![License CC BY-NC](https://img.shields.io/badge/license-CC_BY--NC--SA-green.svg?style=plastic)
+#### Telegram [主频道](https://t.me/ShareCentre)｜[次频道](https://t.me/ShareCentrePro)
 
-### Telegram 频道,分享高速节点,每天更新！
-
-[主频道](https://t.me/ShareCentre)｜[次频道](https://t.me/ShareCentrePro)
-
-🎬订阅转换 https://sub.v1.mk/
 #### ❗️以下是软件下载链接❗️
 
 ## Windows

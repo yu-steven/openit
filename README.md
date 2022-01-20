@@ -15,5 +15,5 @@
 ### Shadowrocket $2.99
 [![Download](./help/apple.svg)](https://apps.apple.com/us/app/shadowrocket/id932747118)
 ### Potatso Free
-[![Download](https://raw.githubusercontent.com/git-yusteven/appletag/main/ios-black.svg)](https://apps.apple.com/us/app/shadowrocket/id1239860606)
+[![Download](https://github.com/git-yusteven/appletag/raw/main/ios-black.svg)](https://apps.apple.com/us/app/shadowrocket/id1239860606)
 ##### 如何使用美区Apple ID下载付费软件？出门左转Google

@@ -8,10 +8,10 @@
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样内核，比较轻量化。
 ### [SSR](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.5/Clash.for.Windows-0.19.5.dmg)｜[Clash(Arm)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.5/Clash.for.Windows-0.19.5-arm64.dmg)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.72.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)
 ## Android 
-同样SS手机翻墙始祖，建议优先使用Google play的v2rayNG
+首推Google play的v2rayNG,没有条件可以下载apk文件安装(v2rayNG蓝色字体）
 ### [SS](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks--universal-v5.2.6.apk)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk)｜[v2rayNG⬇️](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.v2ray.ang)
 ## iOS
-必须是外区Apple ID才能下载到，Potatso只支持SS协议
+首推Shadowrocket（虽然付费）必须使用外区Apple ID下载，Potatso免费，只支持SS协议
 ### Shadowrocket $2.99
 [![Download](./help/apple.svg?.inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)
 ### Potatso Free

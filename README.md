@@ -1,6 +1,7 @@
 # 节点订阅
 ![License CC BY-NC-SA](https://img.shields.io/badge/license-CC_BY--NC--SA-green.svg?style=plastic)
 ![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-green.svg?style=plastic)
+使用Clash，不兼容订阅？出门左转Google搜索“订阅转换”
 ## Windows
 首推v2ray，支持格式众多，[官网](v2ray.com)。其次Clash，需自行转换订阅！SSR只支持ssr协议！SS翻墙始祖，已无安全保障，只支持ss协议
 ### [SS](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip)｜[v2ray](https://github.com/v2fly/v2ray-core/releases/download/v4.31.0/v2ray-windows-64.zip)｜[Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.5/Clash.for.Windows-0.19.5-win.7z)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z)

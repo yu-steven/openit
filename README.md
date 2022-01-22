@@ -5,8 +5,8 @@
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在使用完后24小时之内删除，出现一切问题本站作者概不负责。
 ## Windows
-首推v2ray，支持格式众多，[官网](v2ray.com)。其次Clash，需自行转换订阅！SSR只支持ssr协议！SS翻墙始祖，已无安全保障，只支持ss协议
-### [SS](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip)｜[v2ray](https://github.com/v2fly/v2ray-core/releases/download/v4.31.0/v2ray-windows-64.zip)｜[Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.5/Clash.for.Windows-0.19.5-win.7z)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z)
+首推v2ray，支持格式众多，[官网](v2ray.com)。其次Clash。SSR只支持ssr协议！SS翻墙始祖，已无安全保障，只支持ss协议
+### [SS](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip)｜[v2ray](https://github.com/v2fly/v2ray-core/releases/download/v4.31.0/v2ray-windows-64.zip)｜[Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.6/Clash.for.Windows-0.19.6-win.7z)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z)
 ## MacOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样内核，前者更加轻量化。
 ### [SSR](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.5/Clash.for.Windows-0.19.5.dmg)｜[Clash(Arm)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.5/Clash.for.Windows-0.19.5-arm64.dmg)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.72.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)

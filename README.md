@@ -11,7 +11,7 @@
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样内核，前者更加轻量化。
 ### [SSR](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.6/Clash.for.Windows-0.19.6.dmg)｜[Clash(Arm)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.6/Clash.for.Windows-0.19.6-arm64.dmg)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.72.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)
 ## Android 
-首推Google play的v2rayNG,没有条件可以下载apk安装包进行安装(点击v2rayNG蓝色字体),还有Clash也推荐，洁面美观。SS和SSR只支持其固有协议！
+首推Google play的v2rayNG,没有条件可以下载apk安装包进行安装(点击v2rayNG蓝色字体),还有Clash也推荐，简洁美观。SS和SSR只支持其固有协议！
 ### [SS](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks--universal-v5.2.6.apk)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk)｜[v2rayNG⬇️](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.v2ray.ang)[Clash⬇️](https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.4/cfa-2.5.4-foss-universal-release.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
 
 ## iOS

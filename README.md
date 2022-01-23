@@ -17,7 +17,7 @@
 ## iOS
 首推Shadowrocket（虽然付费）必须使用外区Apple ID下载(首推美区)，Potatso免费，只支持SS协议
 ### Shadowrocket $2.99
-[![Download](https://github.com/git-yusteven/appletag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)
 ### Potatso Free
-[![Download](https://github.com/git-yusteven/appletag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/shadowrocket/id1239860606)
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/shadowrocket/id1239860606)
 ##### 如何使用美区Apple ID下载付费软件？出门左转Google

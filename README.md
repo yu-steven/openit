@@ -5,7 +5,7 @@
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在使用完后24小时之内删除，出现一切问题本站作者概不负责。
 ## Windows
-首推v2ray，支持格式众多，但vmess和vless格式不统一。其次Clash。SSR只支持ssr协议！SS翻墙始祖，已无安全保障，只支持ss协议
+首推v2ray，支持格式众多，但v2系列协议url格式不统一。其次Clash。SSR只支持ssr协议！SS翻墙始祖，已无安全保障，只支持ss协议
 ### [SS](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip)｜[v2ray](https://github.com/2dust/v2rayN/releases/download/4.29/v2rayN-Core.zip)｜[Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.6/Clash.for.Windows-0.19.6-win.7z)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z)
 ## MacOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样内核，前者更加轻量化。

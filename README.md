@@ -16,7 +16,7 @@
 ### [SS](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks--universal-v5.2.6.apk)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk)｜[v2rayNG⬇️](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.v2ray.ang)[Clash⬇️](https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.4/cfa-2.5.4-foss-universal-release.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
 
 ## iOS
-首推Shadowrocket（虽然付费）必须使用外区Apple ID下载(首推美区)，Potatso免费，只支持SS协议。但仍有OneClick可以选择
+首推Shadowrocket（虽然付费）必须使用外区Apple ID下载(首推美区)，Potatso免费，只支持SS协议。但仍有OneClick可供选择
 ### Shadowrocket $2.99
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)
 ### Potatso Free

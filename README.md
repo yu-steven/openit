@@ -8,6 +8,8 @@
 
 **Clash订阅** https://github.com/git-yusteven/openit/raw/main/Clash.yaml
 
+稳定x安全=**贵**｜稳定x便宜=**不安全**｜安全x便宜=**不稳定**｜稳定x安全x便宜=**本仓库**
+
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在使用完后24小时之内删除，出现一切问题本站作者概不负责。
 ## Windows
 首推SS，SS翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次v2ray和Clash，v2ray支持格式众多，但v2系列协议url格式不统一；Clash也可，与v2ray不相上下。而SSR只支持ssr协议！

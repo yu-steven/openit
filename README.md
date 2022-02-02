@@ -4,9 +4,9 @@
 ![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)
 ![hello](https://github-watch.vercel.app/api/counter)
 
-原始订阅：https://github.com/git-yusteven/openit/raw/main/long
+**原始订阅** https://github.com/git-yusteven/openit/raw/main/long
 
-Clash 订阅：https://github.com/git-yusteven/openit/raw/main/Clash.yaml
+**Clash订阅** https://github.com/git-yusteven/openit/raw/main/Clash.yaml
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在使用完后24小时之内删除，出现一切问题本站作者概不负责。
 ## Windows

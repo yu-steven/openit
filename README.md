@@ -1,7 +1,7 @@
 # 节点订阅
 
-![License CC BY-NC-SA](https://img.shields.io/badge/license-CC_BY--NC--SA-green.svg?style=plastic)
-![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)
+[![License CC BY-NC-SA](https://img.shields.io/badge/license-CC_BY--NC--SA-green.svg?style=plastic)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)](https://t.me/ShareCentrePro)
 ![hello](https://github-watch.vercel.app/api/counter)
 
 **原始订阅** https://github.com/git-yusteven/openit/raw/main/long

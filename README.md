@@ -4,9 +4,9 @@
 [![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)](https://t.me/ShareCentrePro)
 ![hello](https://github-watch.vercel.app/api/counter)
 
-**原始订阅** https://github.com/git-yusteven/openit/raw/main/long
+**原始订阅** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long
 
-**Clash订阅** https://github.com/git-yusteven/openit/raw/main/Clash.yaml
+**Clash订阅** https://cdn.jsdelivr.net/gh/git-yusteven/openit/Clash.yaml
 
 稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x安全x白嫖=**本仓库**
 

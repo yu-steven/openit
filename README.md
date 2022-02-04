@@ -2,8 +2,8 @@
 
 [![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-green.svg?style=plastic)](https://github.com/git-yusteven/openit/blob/main/LICENSE)
 [![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)](https://t.me/ShareCentrePro)
-![base64](https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=github)
-![Clash](https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=github)
+![base64](https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=GitHub)
+![Clash](https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub)
 ![hello](https://github-watch.vercel.app/api/counter)
 
 **原始订阅** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long

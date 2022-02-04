@@ -78,4 +78,4 @@ https://github.com/Qv2ray/Qv2ray/releases/
 
 #### Shadowrocket支持的协议
 [![Download](https://github.com/git-yusteven/openit/blob/main/images/26A8345A-1165-40B7-A4D9-5C4A2D91B11A.jpeg)](https://apps.apple.com/app/shadowrocket/id932747118)
-*Telegram* [*@yusteven*](https://t.me/yusteven)
+*Telegram [*@yusteven*](https://t.me/yusteven)

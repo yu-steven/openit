@@ -6,7 +6,7 @@
 ![Clash](https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub)
 ![hello](https://github-watch.vercel.app/api/counter)
 
-**原始订阅** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long
+**base64** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long
 
 **Clash订阅** https://cdn.jsdelivr.net/gh/git-yusteven/openit/Clash.yaml
 

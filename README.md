@@ -25,7 +25,7 @@
 
 ## iOS
 首推[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299),[Quantumult](https://github.com/git-yusteven/openit#quantumult-799),[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买),[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)（尽管是付费的）[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)(俗称小火箭)业界顶流，支持**众多**格式，[如图](https://github.com/git-yusteven/openit#shadowrocket支持的协议)；[Quantumult](https://github.com/git-yusteven/openit#quantumult-799)(俗称圈x)和[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)面向专业发烧友群体，特别是[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)提供更多众多扩展功能而[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)偏小众。购买时必须使用外区Apple ID下载(首推美区)；
-当然也有为广大白嫖用户准备的Potatso(只支持ss协议)；Onechick(支持ss,Trojan,Vmess，小众良心软件)；Shadowlink(**安全性存疑**，支持主流协议)
+当然也有为广大白嫖用户准备的[Potatso](https://github.com/git-yusteven/openit#potatso--free)(只支持ss协议)；[OneClick](https://github.com/git-yusteven/openit#oneclick--free)(支持ss,Trojan,Vmess，小众良心软件)；[Shadowlink](https://github.com/git-yusteven/openit#shadowlink--free)(**安全性存疑**，支持主流协议)
 ### Shadowrocket *$2.99*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
 ### Quantumult *$7.99*

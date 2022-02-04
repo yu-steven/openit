@@ -22,13 +22,21 @@
 ### [SS](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks--universal-v5.2.6.apk)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk)｜[v2rayNG⬇️](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.v2ray.ang)[Clash⬇️](https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.4/cfa-2.5.4-foss-universal-release.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
 
 ## iOS
-首推Shadowrocket（虽然付费）必须使用外区Apple ID下载(首推美区)；Potatso免费，只支持SS协议；但仍有OneClick可供选择。
+首推Shadowrocket,Quantumult,Surge,Potatso 2（尽管是付费的）圈x和Surge是面向专业发烧友的，特别是Surge提供更多扩展功能而Postato 2偏小众。购买时必须使用外区Apple ID下载(首推美区)；当然也有为广大白嫖用户准备的Potatso(只支持ss协议)；Onechick(支持ss，Trojan，Vmess)；Shadowlink(**安全性存疑**，支持ss，Trojan，Vmess)
 ### Shadowrocket $2.99
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/shadowrocket/id932747118)
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
+### Quantumult $7.99
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/quantumult-x/id1443988620)
+### Surge $49.99(App内购买)
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/surge-4/id1442620678)
+### Potatso 2 $2.99
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/potatso-2/id1162704202)
 ### Potatso Free
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/shadowrocket/id1239860606)
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id1239860606)
 ### OneClick Free
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/us/app/oneclick-safe-easy-fast/id1545555197)
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197)
+### Shadowlink Free
+[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518)
 ##### 如何使用美区Apple ID下载付费软件？出门左转Google
 
 **Telegram** [@yusteven](https://t.me/yusteven)

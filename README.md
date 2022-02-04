@@ -39,6 +39,5 @@
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518)
 ##### 如何使用美区Apple ID下载付费软件？出门左转Google
 #### Shadowrocket支持的协议
-![Download](https://github.com/git-yusteven/openit/raw/main/images/DF67E5F2-1887-4363-91CF-F24BF57DB4F7.jpeg)
-![Download](https://github.com/git-yusteven/openit/raw/main/images/8705C293-6F6A-47FB-ACA8-29DAFC014FCF.jpeg)
+![Download](https://github.com/git-yusteven/openit/blob/main/images/26A8345A-1165-40B7-A4D9-5C4A2D91B11A.jpeg)
 *Telegram* [*@yusteven*](https://t.me/yusteven)

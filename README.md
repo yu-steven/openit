@@ -8,7 +8,7 @@
 
 **base64** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long
 
-**Clash订阅** https://cdn.jsdelivr.net/gh/git-yusteven/openit/Clash.yaml
+**Clash**  https://cdn.jsdelivr.net/gh/git-yusteven/openit/Clash.yaml
 
 稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x安全x白嫖=**本仓库**
 

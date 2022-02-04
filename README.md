@@ -25,19 +25,19 @@
 
 ## iOS
 首推Shadowrocket,Quantumult,Surge,Potatso 2（尽管是付费的）Shadowrocket(俗称小火箭)业界顶流，支持**众多**格式，[如图](https://github.com/git-yusteven/openit#shadowrocket支持的协议)；Quantumult(俗称圈x)和Surge面向专业发烧友群体，特别是Surge提供更多扩展功能而Postato 2偏小众。购买时必须使用外区Apple ID下载(首推美区)；当然也有为广大白嫖用户准备的Potatso(只支持ss协议)；Onechick(支持ss,Trojan,Vmess，小众良心软件)；Shadowlink(**安全性存疑**，支持主流协议)
-### Shadowrocket $2.99
+### Shadowrocket *$2.99*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
-### Quantumult $7.99
+### Quantumult *$7.99*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/quantumult-x/id1443988620)
-### Surge $49.99(App内购买)
+### Surge *$49.99*(App内购买)
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/surge-4/id1442620678)
-### Potatso 2 $2.99
+### Potatso 2  *$2.99*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/potatso-2/id1162704202)
-### Potatso Free
+### Potatso  *Free*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id1239860606)
-### OneClick Free
+### OneClick  *Free*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197)
-### Shadowlink Free
+### Shadowlink  *Free*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518)
 ##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%BE%8E%E5%8C%BAApple+ID%E4%B8%8B%E8%BD%BD%E4%BB%98%E8%B4%B9%E8%BD%AF%E4%BB%B6%EF%BC%9F&ie=UTF-8&oe=UTF-8)
 --------------—---------------------------

@@ -71,7 +71,7 @@ https://github.com/Fndroid/clash_for_windows_pkg/releases/
 ### maxOS
 https://github.com/yichengchen/clashX/releases/
 
-## Qv2ray
+## Qv2ray(已停更）
 ### Win/Mac/Linux
 https://github.com/Qv2ray/Qv2ray/releases/
 

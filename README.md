@@ -16,7 +16,7 @@
 ## Windows
 首推SS，SS翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次v2ray和Clash，v2ray支持格式众多，但v2系列协议url格式不统一；Clash也可，与v2ray不相上下。而SSR只支持ssr协议！
 ### [SS](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip)｜[v2ray](https://github.com/2dust/v2rayN/releases/download/4.29/v2rayN-Core.zip)｜[Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.6/Clash.for.Windows-0.19.6-win.7z)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z)
-## MacOS
+## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样内核，前者更加轻量化。
 ### [SSR](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.6/Clash.for.Windows-0.19.6.dmg)｜[Clash(Arm)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.6/Clash.for.Windows-0.19.6-arm64.dmg)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.72.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)
 ## Android 
@@ -40,6 +40,41 @@
 ### Shadowlink Free
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518)
 ##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%BE%8E%E5%8C%BAApple+ID%E4%B8%8B%E8%BD%BD%E4%BB%98%E8%B4%B9%E8%BD%AF%E4%BB%B6%EF%BC%9F&ie=UTF-8&oe=UTF-8)
+--------—----—---------------------------
+
+由于可能的更新不及时，这里给出以上软件GitHub托管地址
+## Shadowsocks
+### Windows
+https://github.com/shadowsocks/shadowsocks-windows/releases/
+### Android
+https://github.com/shadowsocks/shadowsocks-android/releases/
+
+## Shadowsocksr
+### Windows
+https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/
+### macOS
+https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/
+### Android
+https://github.com/shadowsocksrr/shadowsocksr-android/releases/
+
+## v2ray
+### Windows
+https://github.com/2dust/v2rayN/releases/
+### Android
+https://github.com/2dust/v2rayNG/releases/
+
+## Clash
+### Win/Mac/Android/Linux
+https://github.com/Fndroid/clash_for_windows_pkg/releases/
+
+## ClashX
+### maxOS
+https://github.com/yichengchen/clashX/releases/
+
+## Qv2ray
+### Win/Mac/Linux
+https://github.com/Qv2ray/Qv2ray/releases/
+
 #### Shadowrocket支持的协议
 [![Download](https://github.com/git-yusteven/openit/blob/main/images/26A8345A-1165-40B7-A4D9-5C4A2D91B11A.jpeg)](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)

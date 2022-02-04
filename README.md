@@ -39,7 +39,7 @@
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197)
 ### Shadowlink Free
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518)
-##### 如何使用美区Apple ID下载付费软件？出门左转Google
+##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%BE%8E%E5%8C%BAApple+ID%E4%B8%8B%E8%BD%BD%E4%BB%98%E8%B4%B9%E8%BD%AF%E4%BB%B6%EF%BC%9F&ie=UTF-8&oe=UTF-8)
 #### Shadowrocket支持的协议
 [![Download](https://github.com/git-yusteven/openit/blob/main/images/26A8345A-1165-40B7-A4D9-5C4A2D91B11A.jpeg)](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)

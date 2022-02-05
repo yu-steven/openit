@@ -31,7 +31,7 @@
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
 ### Quantumult  *4.99*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/quantumult/id1252015438)
-### QuantumultX *$7.99*
+### Quantumult X *$7.99*
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/quantumult-x/id1443988620)
 ### Surge *$49.99*(App内购买)
 [![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/surge-4/id1442620678)

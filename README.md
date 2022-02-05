@@ -79,6 +79,8 @@ https://github.com/yichengchen/clashX/releases
 ### Win/Mac/Linux
 https://github.com/Qv2ray/Qv2ray/releases/
 
+#### Quantumult X UI界面
+[![Download](https://github.com/git-yusteven/openit/raw/main/images/5B76AB90-F19A-42C1-A4B8-13E626D1D088.jpeg)](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### Shadowrocket支持的协议
 [![Download](https://github.com/git-yusteven/openit/blob/main/images/26A8345A-1165-40B7-A4D9-5C4A2D91B11A.jpeg)](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)

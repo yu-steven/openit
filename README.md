@@ -49,7 +49,7 @@
 ##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%BE%8E%E5%8C%BAApple+ID%E4%B8%8B%E8%BD%BD%E4%BB%98%E8%B4%B9%E8%BD%AF%E4%BB%B6%EF%BC%9F&ie=UTF-8&oe=UTF-8)
 --------------—---------------------------
 
-由于**可能的**更新不及时，下面给出以上软件GitHub托管地址，全部指向releases(软件包)地址（选择困难者**勿入**）
+由于**可能的**更新不及时，下面给出以上软件GitHub托管地址，全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
 ## Shadowsocks
 ### Windows
 https://github.com/shadowsocks/shadowsocks-windows/releases/

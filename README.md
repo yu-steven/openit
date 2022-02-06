@@ -26,6 +26,10 @@
 ### [SSR](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z)｜[Clash(Arm)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)| Shadowrocket(Arm) *$2.99*⬇️
 [![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
 
+## Linux
+Linux方面我不太了解，这里给出下载地址，其实在Linux上更多的是部署，相信玩Linux的同学一定是会的（各种意义上）
+### [Clash](https://github.com/Dreamacro/clash/releases)
+
 ## Android 
 首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(点击下方v2rayNG蓝色字体),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观。[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
 ### [SS](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks--universal-v5.2.6.apk)｜[SSR](https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk)｜[v2rayNG⬇️](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.v2ray.ang)[Clash⬇️](https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.4/cfa-2.5.4-foss-universal-release.apk)[![Download](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
@@ -74,8 +78,10 @@ https://github.com/2dust/v2rayN/releases/
 https://github.com/2dust/v2rayNG/releases/
 
 ## Clash
-### Win/Mac/Android/Linux
+### Win/Mac/Android
 https://github.com/Fndroid/clash_for_windows_pkg/releases/
+### Linux
+https://github.com/Dreamacro/clash/releases
 
 ## ClashX
 ### macOS

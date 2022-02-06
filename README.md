@@ -16,7 +16,7 @@
 
 以下软件下载由知名[**CDN**](https://www.huaweicloud.com/zhishi/edit-590710.html)--->[**jsdelivr**](https://www.jsdelivr.com/)进行加速，提高用户访问文件的响应速度和下载速度；这里给出[**jsdelivr**转换地址](https://www.jsdelivr.com/github)
 
-*iPhone下载以下文件不完整为普遍问题*
+[*iPhone下载以下文件不完整问题*](https://github.com/git-yusteven/openit/issues/75#issue-1125103761)
 ## Windows
 首推[SS](https://github.com/git-yusteven/openit#shadowsocks),翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次[v2ray](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2ray](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2ray](https://github.com/git-yusteven/openit#v2ray)不相上下。而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr协议！
 【提示】.7z文件可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版

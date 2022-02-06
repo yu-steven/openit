@@ -79,7 +79,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 
 ## v2ray
 ### Windows
-` https://github.com/2dust/v2rayN/releases/`
+` https://github.com/2dust/v2rayN/releases`
 ### Android
 ` https://github.com/2dust/v2rayNG/releases/`
 

@@ -24,8 +24,13 @@
 
 ## macOS
 首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket *$2.99*
+【提示】.7z可以使用[The Unarchiver](https://www.theunarchiver.com/)，下面给出下载地址。
 ### [SSR](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z)｜[Clash(Arm)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)| Shadowrocket(Arm) *$2.99*⬇️
 [![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
+
+### [The Unarchiver⬇️](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
+
+[![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
 
 ## Linux
 Linux方面我不太了解，这里给出下载地址，其实在Linux上更多的是部署，相信玩Linux的同学一定是会的（各种意义上）

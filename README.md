@@ -60,37 +60,37 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址，全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
 ## Shadowsocks
 ### Windows
-https://github.com/shadowsocks/shadowsocks-windows/releases/
+'https://github.com/shadowsocks/shadowsocks-windows/releases/'
 ### Android
-https://github.com/shadowsocks/shadowsocks-android/releases/
+'https://github.com/shadowsocks/shadowsocks-android/releases/'
 
 ## Shadowsocksr
 ### Windows
-https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/
+'https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/'
 ### macOS
-https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/
+'https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/'
 ### Android
-https://github.com/shadowsocksrr/shadowsocksr-android/releases/
+'https://github.com/shadowsocksrr/shadowsocksr-android/releases/'
 
 ## v2ray
 ### Windows
-https://github.com/2dust/v2rayN/releases/
+'https://github.com/2dust/v2rayN/releases/'
 ### Android
-https://github.com/2dust/v2rayNG/releases/
+'https://github.com/2dust/v2rayNG/releases/'
 
 ## Clash
 ### Win/Mac/Android
-https://github.com/Fndroid/clash_for_windows_pkg/releases/
+'https://github.com/Fndroid/clash_for_windows_pkg/releases/'
 ### Linux
-https://github.com/Dreamacro/clash/releases
+'https://github.com/Dreamacro/clash/releases'
 
 ## ClashX
 ### macOS
-https://github.com/yichengchen/clashX/releases
+'https://github.com/yichengchen/clashX/releases'
 
 ## Qv2ray(已停更）
 ### Win/Mac/Linux
-https://github.com/Qv2ray/Qv2ray/releases/
+'https://github.com/Qv2ray/Qv2ray/releases/'
 
 #### *Quantumult X* UI界面
 [![Download](https://github.com/git-yusteven/openit/raw/main/images/5B76AB90-F19A-42C1-A4B8-13E626D1D088.jpeg)](https://apps.apple.com/app/quantumult-x/id1443988620)

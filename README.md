@@ -23,7 +23,7 @@
 
 ## macOS
 首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket *$2.99*
-### [SSR](https://cdn.jsdelivr.net/gh/shadowsocksr-backup/ShadowsocksX-NG@releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7.dmg)｜[Clash(Arm)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64.dmg)｜[ClashX](https://cdn.jsdelivr.net/gh/yichengchen/clashX@releases/download/1.72.0/ClashX.dmg)｜[Qv2ray](https://cdn.jsdelivr.net/gh/Qv2ray/Qv2ray@releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)| Shadowrocket(Arm) *$2.99*⬇️
+### [SSR](https://gitHub.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7.dmg)｜[Clash(Arm)](https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64.dmg)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.72.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)| Shadowrocket(Arm) *$2.99*⬇️
 [![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
 
 ## Android 

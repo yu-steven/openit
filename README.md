@@ -14,7 +14,7 @@
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在使用完后24小时之内删除，出现一切问题本站作者概不负责。
 
-以下软件下载由知名[**CDN**](https://www.huaweicloud.com/zhishi/edit-590710.html)--->[**jsdelivr**](https://www.jsdelivr.com/)进行加速，提高用户访问文件的响应速度和下载速度；这里给出[**jsdelivr**转换地址](https://www.jsdelivr.com/github)
+以下软件下载由知名[**CDN**](https://www.huaweicloud.com/zhishi/edit-590710.html)--->[**Jsdelivr**](https://www.jsdelivr.com/)进行加速，提高用户访问文件的响应速度和下载速度；这里给出[**Jsdelivr**转换地址](https://www.jsdelivr.com/github)
 
 [*iPhone下载以下文件不完整问题*](https://github.com/git-yusteven/openit/issues/75#issue-1125103761)
 ## Windows

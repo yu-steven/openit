@@ -14,7 +14,7 @@
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在使用完后24小时之内删除，出现一切问题本站作者概不负责。
 
-以下软件下载由CDN--->[jsdelivr](https://www.jsdelivr.com/)进行加速，提高用户访问网站的响应速度和下载速度，使用时不需要代理；这里给出[jsdelivr转换链接](https://www.jsdelivr.com/github)
+以下软件下载由CDN--->[jsdelivr](https://www.jsdelivr.com/)进行加速，提高用户访问文件的响应速度和下载速度，使用时不需要代理；这里给出[jsdelivr转换链接](https://www.jsdelivr.com/github)
 ## Windows
 首推[SS](https://github.com/git-yusteven/openit#shadowsocks),翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次[v2ray](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2ray](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2ray](https://github.com/git-yusteven/openit#v2ray)不相上下。而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr协议！
 【提示】.7z文件可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版

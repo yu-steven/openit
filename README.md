@@ -26,7 +26,7 @@
 ## macOS
 首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用[Clash(Arm)](https://github.com/git-yusteven/openit#clash-1)&iPhone/iPad版的Shadowrocket *$2.99*，当然经过Rosetta 2转移非Arm应用也是可以使用的！
 
-【提示】.7z可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**)，下面给出[下载地址](https://github.com/git-yusteven/openit#the-unarchiver%EF%B8%8F)。
+【提示】.7z可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**)，下面给出下载地址。
 ### [SSR](https://cdn.jsdelivr.net/gh/shadowsocks/ShadowsocksX-NG@releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip)|[Clash(intel)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z)｜[Clash(Arm)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg) Shadowrocket(Arm) *$2.99*⬇️
 [![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
 

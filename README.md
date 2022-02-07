@@ -19,13 +19,15 @@
 [*iPhone下载以下文件不完整问题*](https://github.com/git-yusteven/openit/issues/75#issue-1125103761)
 ## Windows
 首推[SS](https://github.com/git-yusteven/openit#shadowsocks),翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次[v2ray](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2ray](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2ray](https://github.com/git-yusteven/openit#v2ray)不相上下。而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr协议！
+
 【提示】.7z文件可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS](https://cdn.jsdelivr.net/gh/shadowsocks/shadowsocks-windows@releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip)｜[SSR](https://cdn.jsdelivr.net/gh/shadowsocksrr/shadowsocksr-csharp@releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip)｜[v2ray](https://cdn.jsdelivr.net/gh/2dust/v2rayN@releases/download/4.29/v2rayN-Core.zip)｜[Clash](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-win.7z)｜[Qv2ray](https://cdn.jsdelivr.net/gh/Qv2ray/Qv2ray@releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z)
 
 ## macOS
-首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化；M1芯片还可以使用[Clash(Arm)](https://github.com/git-yusteven/openit#clash-1)&iPhone/iPad版的Shadowrocket *$2.99*
+首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用[Clash(Arm)](https://github.com/git-yusteven/openit#clash-1)&iPhone/iPad版的Shadowrocket *$2.99*，当然经过Rosetta 2转移非Arm应用也是可以使用的！
+
 【提示】.7z可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**)，下面给出[下载地址](https://github.com/git-yusteven/openit#the-unarchiver%EF%B8%8F)。
-### [SSR](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases/download/1.4.2-R8-subscribe-alpha-3/ShadowsocksX-NG-R8.dmg)｜[Clash(intel)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z)｜[Clash(Arm)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg) Shadowrocket(Arm) *$2.99*⬇️
+### [SSR](https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip)｜[Clash(intel)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z)｜[Clash(Arm)](https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z)｜[ClashX](https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg) Shadowrocket(Arm) *$2.99*⬇️
 [![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
 
 ### [The Unarchiver⬇️](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)

@@ -5,559 +5,363 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: FR_492, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR_493, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR_496, server: 95.142.175.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: tkAx1ehPPkMN, udp: true}
+  - {name: CN2-HK, server: cn2.unicorntech.shop, port: 32634, type: ss, cipher: aes-256-gcm, password: 22efb2e7-d417-4fb3-bfb7-9e62ac6aa038, udp: true}
+  - {name: CN2-JP, server: cn2.unicorntech.shop, port: 17676, type: ss, cipher: aes-256-gcm, password: 22efb2e7-d417-4fb3-bfb7-9e62ac6aa038, udp: true}
+  - {name: CN, server: 101.230.149.38, port: 32634, type: ss, cipher: aes-256-gcm, password: 22efb2e7-d417-4fb3-bfb7-9e62ac6aa038, udp: true}
+  - {name: JP @ShareCentrePro, server: news.homeos.ml, port: 1433, type: ss, cipher: aes-256-gcm, password: HomeOS, udp: true}
+  - {name: 上海, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
+  - {name: JP, server: news.homeos.ml, port: 8080, type: trojan, password: HomeOS, sni: news.homeos.ml, skip-cert-verify: true, udp: true}
+  - {name: FR 8, server: 95.142.175.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: tkAx1ehPPkMN, udp: true}
+  - {name: CN @ShareCentrePro 2, server: 101.230.149.38, port: 32634, type: ss, cipher: aes-256-gcm, password: 22efb2e7-d417-4fb3-bfb7-9e62ac6aa038, udp: true}
+  - {name: FR 7, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 法国 2, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1992, server: 38.75.136.93, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_2362, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2289, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1315, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_2050, server: 172.99.190.87, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_2052, server: 172.99.190.87, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1553, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_05 @WangCai_1, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1869, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1485, server: 172.99.190.109, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1625, server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_01 @WangCai_1, server: 38.68.134.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _23, server: 38.68.134.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1589, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_2046, server: 172.99.190.87, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_2361, server: 38.68.134.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1379, server: 38.68.134.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1431, server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1452, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1623, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1645, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1531, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_2036, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2327, server: 38.68.134.37, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2124, server: 38.68.134.37, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1499, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2053, server: 172.99.190.87, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_10 @WangCai_1, server: 38.68.134.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2065, server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1635, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_2333, server: 38.68.134.23, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1696, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2026, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1628, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1629, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1619, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_2009, server: 172.99.190.139, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1409, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1672, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_2566, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_2804, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_2064, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1883, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2802, server: 169.197.141.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2106, server: 167.88.63.28, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1370, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1381, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1830, server: 38.68.134.37, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: AU 7, server: 172.105.171.80, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR_491, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_2530, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ‌‌🇨🇦CA_8882 @WangCai_1, server: 134.195.196.214, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1832, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_2375 @WangCai_1, server: 134.195.196.214, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1827, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ‌‌🇨🇦CA_9102 @WangCai_1, server: 134.195.196.214, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌‌🇨🇦CA_8888 @WangCai_1, server: 134.195.196.214, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1677, server: 38.107.226.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA 25, server: 198.57.27.184, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_2481, server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌‌🇨🇦CA_8881 @WangCai_1, server: 134.195.196.214, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ‌‌🇨🇦CA_8118 @WangCai_1, server: 134.195.196.214, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ‌‌🇨🇦CA_8000 @WangCai_1, server: 134.195.196.214, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2780, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1475, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 上海 2, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
+  - {name: US 20, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
+  - {name: USA 6, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US 16, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US @ShareCentrePro, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US @ShareCentrePro 2, server: 38.143.66.112, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US 2, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US 23, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
+  - {name: USA 5, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US 19, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: USA 3, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: USA, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US 17, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: USA 7, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: USA 9, server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US 13, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 18, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US 6, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA 6, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US 10, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: RU CF, server: sg.xxioixx.com, port: 443, type: trojan, password: c86c28ca-615a-4e83-b3ef-832a0dee2efd, sni: sg.xxioixx.com, skip-cert-verify: true, udp: true}
+  - {name: USA 8, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US 15, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: USA 4, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA 16, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA 20, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA 11, server: 198.57.27.152, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR 5, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: FR 6, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US 18, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US 4, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA 19, server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US 11, server: 38.68.134.191, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA 17, server: 198.57.27.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: FR 4, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA 15, server: 198.57.27.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US 12, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 10, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA 13, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA 24, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌CA 3, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA 2, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 12, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US 14, server: 46.moons.team, port: 8088, type: trojan, password: 956d6c3f-1b38-4691-8b17-bbe0eec86f93, sni: 46.moons.team, skip-cert-verify: true, udp: true}
+  - {name: CA 14, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US 8, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US 3, server: 142.202.48.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA 8, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 4, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA 7, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 21, server: 134.195.196.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US, server: 38.68.134.23, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: FR 2, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 法国, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: FR 3, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA 23, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌CA 2, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: USA 2, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 香港, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
+  - {name: CA 9, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: AU, server: 172.105.171.80, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌CA, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US 5, server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: USA 10, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US 22, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA 3, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA 5, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US 7, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: CA 22, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_2605, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ‌‌🇨🇦CA_3306 @WangCai_1, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_5000 @WangCai_1, server: 134.195.196.214, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2635, server: 134.195.196.128, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌‌🇨🇦CA_6679 @WangCai_1, server: 134.195.196.214, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ‌‌🇨🇦CA_6379 @WangCai_1, server: 134.195.196.214, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1684, server: 38.107.226.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA 27, server: 198.57.27.184, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA_249, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ‌‌🇨🇦CA_6697 @WangCai_1, server: 134.195.196.214, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ‌‌🇨🇦CA_7002 @WangCai_1, server: 134.195.196.214, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA 10, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2348, server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2920, server: 134.195.198.252, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2538, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_2885, server: 134.195.198.252, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_2779, server: 134.195.198.252, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA 12, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA 6, server: 198.57.27.184, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA 11, server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1682, server: 38.107.226.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1385, server: 38.107.226.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA_184, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 8, server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA 7, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1406, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2371, server: 38.107.226.48, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2803, server: 134.195.196.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA 3, server: 198.57.27.152, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2334, server: 38.107.226.48, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_155, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA_157, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_2512, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR_485, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA_162, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 5, server: 198.57.27.184, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA 23, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA_164, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 17, server: 198.57.27.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA_186, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 4, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA 21, server: 198.57.27.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_2197, server: 172.99.190.139, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA 14, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR_504, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA 20, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA 16, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1172, server: 142.202.48.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA 15, server: 198.57.27.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA, server: 198.57.27.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA 9, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 2, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2070, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2286, server: 38.68.134.37, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 13, server: 198.57.27.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_2376 @WangCai_1, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ‌‌🇨🇦CA_5003 @WangCai_1, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1222, server: 38.68.134.23, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1173, server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR_497, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1493, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR_500, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1835, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US 9, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: FR, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US 21, server: 38.114.114.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CN @ShareCentrePro, server: 120.232.192.211, port: 9584, type: ss, cipher: aes-256-gcm, password: 29bbe1a0-e2d2-4e83-975b-6dcec7e2e700, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -576,563 +380,368 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1148,140 +757,91 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - FR_492
-      - FR_493
-      - FR_496
+      - CN2-HK
+      - CN2-JP
+      - CN
+      - JP @ShareCentrePro
+      - 上海
+      - JP
+      - FR 8
+      - CN @ShareCentrePro 2
+      - FR 7
       - 法国 2
-      - US_1992
-      - US_2362
-      - US_2289
-      - US_1315
-      - US_2050
-      - US_2052
-      - US_1553
-      - US_05 @WangCai_1
-      - US_1869
-      - US_1485
-      - US_1625
-      - US_01 @WangCai_1
-      - _23
-      - US_1589
-      - US_2046
-      - US_2361
-      - US_1379
-      - US_1431
-      - US_1452
-      - US_1623
-      - US_1645
-      - US_1531
-      - US_2036
-      - US_2327
-      - US_2124
-      - US_1499
-      - US_2053
-      - US_10 @WangCai_1
-      - US_2065
-      - US_1635
-      - US_2333
-      - US_1696
-      - US_2026
-      - US_1628
-      - US_1629
-      - US_1619
-      - US_2009
-      - US_1409
-      - US_1672
-      - ZZ_2566
-      - ZZ_2804
-      - US_2064
-      - US_1883
-      - ZZ_2802
-      - US_2106
-      - US_1370
-      - US_1381
-      - US_1830
-      - AU 7
-      - FR_491
-      - ZZ_2530
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - US_1832
-      - ‌‌🇨🇦CA_2375 @WangCai_1
-      - FR
-      - US_1827
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - US_1677
-      - CA 25
-      - ZZ_2481
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - ZZ_2780
-      - US_1475
-      - CA 22
-      - ZZ_2605
-      - ‌‌🇨🇦CA_3306 @WangCai_1
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ZZ_2635
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - US_1684
-      - CA 27
-      - CA_249
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - CA 10
-      - US_2348
-      - ZZ_2920
-      - ZZ_2538
-      - ZZ_2885
-      - ZZ_2779
-      - CA 12
+      - 上海 2
+      - US 20
+      - USA 6
+      - US 16
+      - US @ShareCentrePro
+      - US @ShareCentrePro 2
+      - US 2
+      - US 23
+      - USA 5
+      - US 19
+      - USA 3
+      - USA
+      - US 17
+      - USA 7
+      - USA 9
+      - US 13
+      - CA 18
+      - US 6
       - CA 6
-      - CA 11
-      - US_1682
-      - US_1385
-      - CA_184
-      - CA 8
-      - CA 7
-      - US_1406
-      - US_2371
-      - ZZ_2803
-      - CA 3
-      - US_2334
-      - CA_155
-      - CA_157
-      - ZZ_2512
-      - FR_485
-      - CA_162
-      - CA 5
-      - CA 23
-      - CA_164
-      - CA 17
-      - CA_186
-      - CA 4
-      - CA 21
-      - US_2197
-      - CA 14
-      - FR_504
-      - CA 20
+      - US 10
+      - RU CF
+      - USA 8
+      - US 15
+      - USA 4
       - CA 16
-      - US_1172
+      - CA 20
+      - CA 11
+      - FR 5
+      - FR 6
+      - US 18
+      - US 4
+      - CA 19
+      - US 11
+      - CA 17
+      - FR 4
       - CA 15
-      - CA
-      - CA 9
-      - CA 2
-      - US_2070
-      - US_2286
+      - US 12
+      - CA 10
       - CA 13
-      - ‌‌🇨🇦CA_2376 @WangCai_1
-      - ‌‌🇨🇦CA_5003 @WangCai_1
-      - US_1222
-      - US_1173
-      - FR_497
-      - US_1493
-      - FR_500
-      - US_1835
+      - CA 24
+      - CA
+      - ‌CA 3
+      - CA 2
+      - CA 12
+      - US 14
+      - CA 14
+      - US 8
+      - US 3
+      - CA 8
+      - CA 4
+      - CA 7
+      - CA 21
+      - US
+      - FR 2
+      - 法国
+      - FR 3
+      - CA 23
+      - ‌CA 2
+      - 全球直连①-TikTok
+      - USA 2
+      - 香港
+      - CA 9
+      - AU
+      - ‌CA
+      - US 5
+      - USA 10
+      - US 22
+      - CA 3
+      - CA 5
+      - US 7
+      - CA 22
+      - US 9
+      - FR
+      - US 21
+      - CN @ShareCentrePro
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

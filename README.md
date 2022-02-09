@@ -1,9 +1,9 @@
 # Openit订阅
 
-[![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-green.svg?style=plastic)](https://github.com/git-yusteven/openit/blob/main/LICENSE)
+[![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-green.svg?style=plastic)](./LICENSE)
 [![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)](https://t.me/ShareCentrePro)
-[![base64](https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](https://github.com/git-yusteven/openit/blob/main/long)
-[![Clash](https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](https://github.com/git-yusteven/openit/blob/main/Clash.yaml)
+[![base64](https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](./long)
+[![Clash](https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](./Clash.yaml)
 ![hello](https://github-watch.vercel.app/api/counter)
 
 **base64** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long

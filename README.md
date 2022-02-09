@@ -13,7 +13,7 @@
  [git-base64]: ./long
  [git-clash]: ./Clash.yaml
  [telegram]: https://t.me/ShareCentrePro
- [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA-green.svg?style=plastic
+ [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
  [svg-base64]: https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=GitHub
  [svg-clash]: https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic

@@ -56,6 +56,7 @@
 >.7z文件可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**)，下面给出下载地址。
 ### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray]
 ### Shadowrocket(Arm) *$2.99*⬇️
+[![name][macos-black]][Shadowrocket]
 
 [ssr]: https://cdn.jsdelivr.net/gh/shadowsocks/ShadowsocksX-NG@releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z

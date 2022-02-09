@@ -4,7 +4,7 @@
 [![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)](https://t.me/ShareCentrePro)
 [![base64](https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](./long)
 [![Clash](https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](./Clash.yaml)
-![hello](https://github-watch.vercel.app/api/counter)
+![刷新一下](https://github-watch.vercel.app/api/counter)
 
 **base64** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long
 

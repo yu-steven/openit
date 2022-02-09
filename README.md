@@ -79,10 +79,14 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 
 ## Android 
 首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具；[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
-### [SS↘️][apk-ss][![name-ss][google-play]][google-ss]
-### [v2rayNG↘️][apk-v2rayng][![name-v2rayng][google-play]][google-v2rayng]
-### [Clash↘️][apk-clash][![name-clash][google-play]][google-clash]
-### [Surfboard↘️][apk-surfboard][![name-surfboard][google-play]][google-surfboard]
+### [SS↘️][apk-ss]
+[![name-ss][google-play]][google-ss]
+### [v2rayNG↘️][apk-v2rayng]
+[![name-v2rayng][google-play]][google-v2rayng]
+### [Clash↘️][apk-clash]
+[![name-clash][google-play]][google-clash]
+### [Surfboard↘️][apk-surfboard]
+[![name-surfboard][google-play]][google-surfboard]
 ### [SSR⬅️][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download

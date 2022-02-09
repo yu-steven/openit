@@ -1,4 +1,4 @@
-# Openit订阅
+# Openit订阅,READMME.md定期维护
 
 
 <div align="center">

@@ -98,6 +98,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ### Win/Mac/Linux
 ` https://github.com/Qv2ray/Qv2ray/releases/`
 
+
 #### *Quantumult X* UI界面
 [![Download](https://github.com/git-yusteven/openit/raw/main/images/5B76AB90-F19A-42C1-A4B8-13E626D1D088.jpeg "炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### *Shadowrocket*支持的协议

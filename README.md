@@ -32,7 +32,6 @@
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在下载完后24小时之内删除，出现一切问题本站作者概不负责。
 
 ***
-
 以下软件下载由知名[**CDN**]--->[**Jsdelivr**]进行加速，提高用户访问文件的响应速度和下载速度；这里给出[**Jsdelivr**转换地址]
 
 [**cdn**]: https://www.huaweicloud.com/zhishi/edit-590710.html
@@ -80,7 +79,10 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ## Android 
 首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址，附带下方⬇️是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具；[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
 ### [SS⬇️][apk-ss][![name-ss][google-play]][google-ss]
-### [v2rayNG⬇️][apk-v2rayng][![name-ss][google-play]][google-v2rayng][Clash⬇️][apk-clash][![name-clash][google-play]][google-clash][Surfboard⬇️][apk-surfboard][![name-surfboard][google-play]][google-surfboard][SSR⬅️][apk-ssr]
+### [v2rayNG⬇️][apk-v2rayng][![name-ss][google-play]][google-v2rayng]
+### [Clash⬇️][apk-clash][![name-clash][google-play]][google-clash]
+### [Surfboard⬇️][apk-surfboard][![name-surfboard][google-play]][google-surfboard]
+### [SSR⬅️][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
@@ -97,22 +99,32 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 首推[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)（尽管是付费的）[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)(俗称小火箭)业界顶流，支持**众多**格式[(如图)](https://github.com/git-yusteven/openit#shadowrocket支持的协议)并支持导出节点；[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)和[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)(俗称圈x)由一个作者所写，更新频率上[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x是更贵的；另外[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)和[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面)更加美观定制，而[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)偏小众。购买时必须使用外区Apple ID下载(首推美区)；
 当然也有为广大白嫖用户准备的[Potatso](https://github.com/git-yusteven/openit#potatso--free)(只支持ss协议)；[OneClick](https://github.com/git-yusteven/openit#oneclick--free)(支持ss,Trojan,Vmess，小众良心软件)；[Shadowlink](https://github.com/git-yusteven/openit#shadowlink--free)(**安全性存疑**，支持主流协议)
 ### Shadowrocket *$2.99*
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
+[![name-ssr][svg-apple]][ipk-ssr]
 ### Quantumult  *4.99*
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/quantumult/id1252015438)
+[![name-quan][svg-apple]][ipk-quan]
 ### Quantumult X *$7.99*
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/quantumult-x/id1443988620)
+[![name-quanx][svg-apple]][ipk-quanx]
 ### Surge *$49.99*(App内购买)
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/surge-4/id1442620678)
+[![name-surge][svg-apple]][ipk-surge]
 ### Potatso 2  *$2.99*
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/potatso-2/id1162704202)
+[![name-p2][svg-apple]][ipk-p2]
 ### Potatso  *Free*
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id1239860606)
+[![name-p][svg-apple]][ipk-p]
 ### OneClick  *Free*
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197)
+[![name-oc][svg-apple]][ipk-oc]
 ### Shadowlink  *Free*
-[![Download](https://github.com/git-yusteven/tag/raw/main/ios-black.svg?inline)](https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518)
-##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%BE%8E%E5%8C%BAApple+ID%E4%B8%8B%E8%BD%BD%E4%BB%98%E8%B4%B9%E8%BD%AF%E4%BB%B6%EF%BC%9F&ie=UTF-8&oe=UTF-8)
+[![name-sl][svg-apple]][ipk-sl]
+
+[ipk-ssr]: https://apps.apple.com/app/shadowrocket/id932747118
+[ipk-quan]: https://apps.apple.com/app/quantumult/id1252015438
+[ipk-quanx]: https://apps.apple.com/app/quantumult-x/id1443988620
+[ipk-surge]: https://apps.apple.com/app/surge-4/id1442620678
+[ipk-p2]: https://apps.apple.com/app/potatso-2/id1162704202
+[ipk-p]: https://apps.apple.com/app/shadowrocket/id1239860606
+[ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197
+[ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
+[svg-apple]: https://github.com/git-yusteven/tag/raw/main/ios-black.svg
+##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=如何使用美区Apple%20ID下载付费软件？)
 ***
 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址，全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
 ## Shadowsocks

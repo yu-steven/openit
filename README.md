@@ -85,7 +85,6 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ### [Surfboard↘️][apk-surfboard][![name-surfboard][google-play]][google-surfboard]
 ### [SSR⬅️][apk-ssr]
 
-[google-play]: https://github.com/git-yusteven/tag/raw/main/google-play.svg
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
 [apk-clash]: https://apkpure.com/clash-for-android/com.github.kr328.clash/download
@@ -95,11 +94,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [google-v2rayng]: https://play.google.com/store/apps/details?id=com.v2ray.ang
 [google-clash]: https://play.google.com/store/apps/details?id=com.github.kr328.clash
 [google-surfboard]: https://play.google.com/store/apps/details?id=com.getsurfboard
-<p align="left">
-  <a href="https://nextjs-view-counter-hephaest.vercel.app/api/counter">
-    <img height="65"  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
-  </a>
-</p>
+[google-play]: https://github.com/git-yusteven/tag/raw/main/google-play.svg
 
 ## iOS
 首推[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)（尽管是付费的）[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)(俗称小火箭)业界顶流，支持**众多**格式[(如图)](https://github.com/git-yusteven/openit#shadowrocket支持的协议)并支持导出节点；[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)和[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)(俗称圈x)由一个作者所写，更新频率上[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x是更贵的；另外[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)和[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面)更加美观定制，而[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)偏小众。购买时必须使用外区Apple ID下载(首推美区)；

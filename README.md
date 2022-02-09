@@ -57,13 +57,14 @@
 >.7z文件可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**)，下面给出下载地址。
 ### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray]
 ### Shadowrocket(Arm) *$2.99*⬇️
-[![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/shadowrocket/id932747118)
 
 [ssr]: https://cdn.jsdelivr.net/gh/shadowsocks/ShadowsocksX-NG@releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z
 [clash(Arm)]: https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z
 [clashx]: https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
 [qv2ray]: https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
+[Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
+[macos-black]: https://github.com/git-yusteven/tag/raw/main/macos-black.svg
 ### [The Unarchiver⬇️](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 
 [![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
@@ -78,7 +79,8 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 
 ## Android 
 首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址，附带下方⬇️是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具；[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
-### [SS⬇️][apk-ss][![name-ss][google-play]][google-ss][v2rayNG⬇️][apk-v2rayng][![name-ss][google-play]][google-v2rayng][Clash⬇️][apk-clash][![name-clash][google-play]][google-clash][Surfboard⬇️][apk-surfboard][![name-surfboard][google-play]][google-surfboard][SSR⬅️][apk-ssr]
+### [SS⬇️][apk-ss][![name-ss][google-play]][google-ss]
+### [v2rayNG⬇️][apk-v2rayng][![name-ss][google-play]][google-v2rayng][Clash⬇️][apk-clash][![name-clash][google-play]][google-clash][Surfboard⬇️][apk-surfboard][![name-surfboard][google-play]][google-surfboard][SSR⬅️][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download

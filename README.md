@@ -1,10 +1,17 @@
 # Openit订阅
 
-[![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-green.svg?style=plastic)](./LICENSE)
-[![License Telegram](https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic)](https://t.me/ShareCentrePro)
-[![base64](https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](./long)
-[![Clash](https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub)](./Clash.yaml)
-![刷新一下](https://github-watch.vercel.app/api/counter)
+[![name-license][svg-license]][git-license] [![name-telegram][svg-telegram]][telegram] [![name-base64][svg-base64]][git-base64] [![name-clash][svg-clash]][git-clash]
+
+[git-License]: ./LICENSE
+[git-base64]: ./long
+[git-clash]: ./Clash.yaml
+[telegram]: https://t.me/ShareCentrePro
+[svg-license]: https://img.shields.io/badge/license-GPL--3.0-green.svg?style=plastic
+[svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
+[svg-base64]: https://img.shields.io/badge/base64-Passed-brightgreen.svg?style=flat-square&logo=GitHub
+[svg-clash]: https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub
+[svg-counter]: https://github-watch.vercel.app/api/counter
+
 
 **base64** https://cdn.jsdelivr.net/gh/git-yusteven/openit/long
 

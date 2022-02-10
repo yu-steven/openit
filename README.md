@@ -173,7 +173,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 本仓库采用 CC BY-SA 4.0 许可协议。
 
 著作权归作者所有
-转载或引用本文时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
+转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
 #### *Quantumult X* UI界面
 [![Download](https://github.com/git-yusteven/openit/raw/main/images/5B76AB90-F19A-42C1-A4B8-13E626D1D088.jpeg "炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)

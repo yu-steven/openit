@@ -1,4 +1,4 @@
-# Openit订阅
+# Openit
 
 
 <div align="center">

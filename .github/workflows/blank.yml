@@ -1,0 +1,8 @@
+steps:
+- uses: frostebite/File-To-Base64@master
+  id: base64Config
+  with:
+    - filePath: ~/.kube/config
+- uses: frostebite/kubernetes-download-pv@master
+  with:
+    kubernetesBase64Config: ${{ steps.base64Config.outputs.base64 }}

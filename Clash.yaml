@@ -5,415 +5,207 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港-03, server: herjgf.arh.sstnb.cn, port: 6103, type: trojan, password: 58EEC395-8F95-D7F3-BE32-B6853EABF12D, sni: iqiyi.com, skip-cert-verify: true, udp: true}
-  - {name: HK, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 2, server: 104.208.64.48, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SH, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
-  - {name: SH 2, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
-  - {name: US_237, server: 38.143.66.112, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "Discover IN Munbai #1", server: az.misakamitoko.ml, port: 10003, type: vmess, uuid: f772bf5c-2e9a-429f-8c76-998bb0212869, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ghjjkkkjgffcugvihuyfuyguyciucuh, ws-headers: {Host: az.misakamitoko.ml}, udp: true}
-  - {name: US, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
-  - {name: JP, server: lin-jp.tgsc.xyz, port: 443, type: vmess, uuid: 57c95541-5147-4dae-81d0-660cc6b25e9b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /FNRWR48K, ws-headers: {Host: lin-jp.tgsc.xyz}, udp: true}
-  - {name: 香港-02, server: herjgf.arh.sstnb.cn, port: 6102, type: trojan, password: 58EEC395-8F95-D7F3-BE32-B6853EABF12D, sni: iqiyi.com, skip-cert-verify: true, udp: true}
-  - {name: US-JP, server: 20.24.66.67, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 3, server: 104.208.64.48, port: 52329, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_218, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: RU, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: US_222, server: 172.99.190.188, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US 2, server: 38.143.66.112, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "Mechanted AU Sydney #1", server: az3.misakamitoko.ml, port: 20003, type: vmess, uuid: f772bf5c-2e9a-429f-8c76-998bb0212869, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wswjdfchwfwndkxnsjdfberjwnds, ws-headers: {Host: az3.misakamitoko.ml}, udp: true}
-  - {name: FR, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: HK Azure, server: hk.wuhuv.xyz, port: 33414, type: vmess, uuid: 2d748545-f544-4d4e-98a6-b673b826b9c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.wuhuv.xyz}, udp: true}
-  - {name: US 3, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
-  - {name: FR 2, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_339, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: USA, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 4, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_298, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: USA 2, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: USA 3, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_242, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: HK 4, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
-  - {name: 美国3|原生|NF, server: 198.52.125.218, port: 55432, type: trojan, password: bab4574d-dd84-4003-8926-f45512c39aa3, sni: mus3.shanjun.me, skip-cert-verify: true, udp: true}
-  - {name: CN, server: 120.233.10.62, port: 52284, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_175, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_349, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 上海, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
+  - {name: 上海 2, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
+  - {name: US 20, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 23, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
   - {name: AU, server: 172.105.171.80, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_243, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_321, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_190, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_211, server: 172.99.190.188, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_221, server: 172.99.190.188, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: AU_4, server: 172.105.171.80, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 5, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_194, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_158, server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: FR 3, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "XING DE Frankfurt #1", server: az2.misakamitoko.ml, port: 20010, type: vmess, uuid: f772bf5c-2e9a-429f-8c76-998bb0212869, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1osjdiecfu2iefdsjqhiduygfweid, ws-headers: {Host: az2.misakamitoko.ml}, udp: true}
-  - {name: US_263, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: FR 4, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "dB Doll US Dallas #2", server: az2.misakamitoko.ml, port: 20022, type: vmess, uuid: f772bf5c-2e9a-429f-8c76-998bb0212869, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /awdjfweuifhlke, ws-headers: {Host: az2.misakamitoko.ml}, udp: true}
-  - {name: US_179, server: 167.88.63.61, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: USA 4, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CN 2, server: 120.233.10.62, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_232, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "万吨匿名信 US #3", server: az3.misakamitoko.ml, port: 20000, type: vmess, uuid: f772bf5c-2e9a-429f-8c76-998bb0212869, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ghjjkkkjgffcugvihuyfuyguyciucuh, ws-headers: {Host: az3.misakamitoko.ml}, udp: true}
-  - {name: USA 5, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: RU CF, server: sg.xxioixx.com, port: 443, type: trojan, password: c86c28ca-615a-4e83-b3ef-832a0dee2efd, sni: sg.xxioixx.com, skip-cert-verify: true, udp: true}
-  - {name: "GOODTEK CA Toronto #1", server: az2.misakamitoko.ml, port: 20000, type: vmess, uuid: f772bf5c-2e9a-429f-8c76-998bb0212869, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ghjjkkkjgffcugvihuyfuyguyciucuh, ws-headers: {Host: az2.misakamitoko.ml}, udp: true}
-  - {name: US_186, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: USA 6, server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_314, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_185, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_281, server: 38.107.226.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: USA 7, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_333, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 2, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: FR 7, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA 6, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 23, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 香港, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
+  - {name: CA 14, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: USA 4, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US 3, server: 142.202.48.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 法国 2, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US 6, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA 22, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US 10, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US 16, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA 5, server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 3, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: USA 8, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "MOBILYS UK London #1", server: az2.misakamitoko.ml, port: 20011, type: vmess, uuid: f772bf5c-2e9a-429f-8c76-998bb0212869, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ghjjkkkjgffcugvihuyfuyguyciucuh, ws-headers: {Host: az2.misakamitoko.ml}, udp: true}
+  - {name: ‌CA 2, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: FR 5, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_344, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 6, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA 3, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_331, server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_312, server: 38.75.136.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ‌CA, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA 4, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_301, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_225, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR 6, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_182, server: 142.202.48.34, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: CA 5, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 6, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_306, server: 142.202.48.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 7, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 7, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 8, server: 142.202.48.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_323, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA 8, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_291, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA 9, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ‌CA 2, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 9, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA 10, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 10, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ‌CA 3, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 11, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_313, server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA 12, server: 198.57.27.152, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA 13, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: FR 2, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US 7, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: USA 5, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 法国, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: FR, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA 20, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: FR 6, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: FR 3, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA 11, server: 198.57.27.152, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: US 9, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: FR 4, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: USA 10, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA 24, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US 8, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: USA 3, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA 2, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US 15, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US 13, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: RU CF, server: sg.xxioixx.com, port: 443, type: trojan, password: c86c28ca-615a-4e83-b3ef-832a0dee2efd, sni: sg.xxioixx.com, skip-cert-verify: true, udp: true}
+  - {name: USA 6, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌CA 3, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA 10, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -432,421 +224,212 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-03
-      - 香港-02
+      - 香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -862,104 +445,52 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-03
-      - HK
-      - HK 2
-      - SH
-      - SH 2
-      - US_237
-      - "Discover IN Munbai #1"
-      - US
-      - JP
-      - 香港-02
-      - US-JP
-      - HK 3
-      - US_218
-      - RU
-      - US_222
-      - US 2
-      - "Mechanted AU Sydney #1"
-      - FR
-      - HK Azure
-      - US 3
-      - FR 2
-      - US_339
-      - USA
-      - US 4
-      - US_298
-      - USA 2
-      - USA 3
-      - US_242
-      - HK 4
-      - 美国3|原生|NF
-      - CN
-      - US_175
-      - US_349
+      - 上海
+      - 上海 2
+      - US 20
+      - US 23
       - AU
-      - US_243
-      - US_321
-      - US_190
-      - US_211
-      - US_221
-      - AU_4
-      - US 5
-      - US_194
-      - US_158
-      - FR 3
-      - "XING DE Frankfurt #1"
-      - US_263
-      - FR 4
-      - "dB Doll US Dallas #2"
-      - US_179
-      - USA 4
-      - CN 2
-      - US_232
-      - "万吨匿名信 US #3"
-      - USA 5
-      - RU CF
-      - "GOODTEK CA Toronto #1"
-      - US_186
-      - USA 6
-      - US_314
-      - CA
-      - US_185
-      - US_281
-      - USA 7
-      - US_333
-      - CA 2
-      - USA 8
-      - "MOBILYS UK London #1"
-      - FR 5
-      - US_344
-      - US 6
-      - CA 3
-      - US_331
-      - US_312
-      - ‌CA
-      - CA 4
-      - US_301
-      - US_225
-      - FR 6
-      - US_182
-      - CA 5
+      - FR 7
       - CA 6
-      - US_306
-      - CA 7
-      - US 7
-      - US 8
-      - US_323
-      - CA 8
-      - US_291
-      - CA 9
-      - ‌CA 2
-      - US 9
-      - CA 10
+      - CA 23
+      - 香港
+      - CA 14
+      - CA
+      - USA 4
+      - US 3
+      - 法国 2
+      - US 6
+      - CA 22
       - US 10
-      - ‌CA 3
+      - US 16
+      - CA 5
+      - CA 3
+      - USA 8
+      - ‌CA 2
+      - FR 5
+      - FR 2
+      - US 7
+      - USA 5
+      - 法国
+      - FR
+      - CA 20
+      - FR 6
+      - FR 3
       - CA 11
-      - US_313
-      - CA 12
-      - CA 13
+      - 全球直连①-TikTok
+      - US 9
+      - FR 4
+      - USA 10
+      - CA 24
+      - US 8
+      - USA 3
+      - CA 2
+      - US 15
+      - US 13
+      - RU CF
+      - USA 6
+      - ‌CA 3
+      - CA 10
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

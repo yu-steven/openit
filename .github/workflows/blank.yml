@@ -13,8 +13,9 @@ id: write_fileuses
 uses: timheuer/base64-to-file@v1.1
 with:
 fileName: 'myTemporaryFile.txt'
-encodedString: {{ secrets.SOME_ENCODED_STRING }}
+fileDir: './main/'
+encodedString: ${{ secrets.SOME_ENCODED_STRING }}
 - name: Some other step
 uses: actions/someaction@master
 with:
-filelocation: {{ steps.write_file.outputs.filePath }}
+filelocation: ${{ steps.write_file.outputs.filePath }}

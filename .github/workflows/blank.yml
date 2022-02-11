@@ -14,7 +14,8 @@ uses: timheuer/base64-to-file@v1.1
 with:
 fileName: 'myTemporaryFile.txt'
 fileDir: './main/'
-encodedString: ${{ secrets.SOME_ENCODED_STRING }}
+token: ${{ secrets.SOME_ENCODED_STRING }}
+committer_token: ${{ secrets.GITHUB_TOKEN }}
 - name: Some other step
 uses: actions/someaction@master
 with:

@@ -7,13 +7,13 @@ workflow_dispatch:
 jobs:
 github-metrics-personal:
 build:
-    runs-on: ubuntu-latest
-    steps:- name: Run Workflow
-     id: write_fileuses: timheuer/base64-to-file@v1.1
-  with:
-    fileName: 'myTemporaryFile.txt'
-    encodedString: ${{ secrets.SOME_ENCODED_STRING }}
+runs-on: ubuntu-latest
+steps:- name: Run Workflow
+id: write_fileuses: timheuer/base64-to-file@v1.1
+with:
+fileName: 'myTemporaryFile.txt'
+encodedString: ${{ secrets.SOME_ENCODED_STRING }}
 - name: Some other step
-  uses: actions/someaction@master
-  with:
-      filelocation: ${{ steps.write_file.outputs.filePath }}
+uses: actions/someaction@master
+with:
+filelocation: ${{ steps.write_file.outputs.filePath }}

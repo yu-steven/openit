@@ -13,13 +13,13 @@ github-metrics-personal:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
-- name: Run Workflow
+      - name: Run Workflow
   id: write_file
   uses: timheuer/base64-to-file@v1.1
   with:
     fileName: 'myTemporaryFile.txt'
     encodedString: ${{ secrets.SOME_ENCODED_STRING }}
-- name: Some other step
+      - name: Some other step
   uses: actions/someaction@master
   with:
       filelocation: ${{ steps.write_file.outputs.filePath }}

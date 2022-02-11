@@ -20,6 +20,6 @@ github-metrics-personal:
     fileName: 'myTemporaryFile.txt'
     encodedString: ${{ secrets.SOME_ENCODED_STRING }}
       - name: Some other step
-  uses: actions/someaction@master
-  with:
-      filelocation: ${{ steps.write_file.outputs.filePath }}
+        uses: actions/someaction@master
+        with:
+          filelocation: ${{ steps.write_file.outputs.filePath }}

@@ -9,7 +9,8 @@ github-metrics-personal:
 build:
 runs-on: ubuntu-latest
 steps:- name: Run Workflow
-id: write_fileuses: timheuer/base64-to-file@v1.1
+id: write_fileuses
+uses: timheuer/base64-to-file@v1.1
 with:
 fileName: 'myTemporaryFile.txt'
 encodedString: ${{ secrets.SOME_ENCODED_STRING }}

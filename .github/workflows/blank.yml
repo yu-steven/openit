@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+   - name: Run Workflow
+     id: write_file
+     uses: timheuer/base64-to-file@v1.1
+     with:
+       fileName: 'myTemporaryFile.txt'
+       fileDir: './main/folder/subfolder/'
+       encodedString: ${{ secrets.SOME_ENCODED_STRING }}

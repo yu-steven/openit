@@ -6,16 +6,13 @@ on:
     branches: [ main ]
   workflow_dispatch:
 jobs:
-  build:
-    # The type of runner that the job will run on
+  github-base64:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-   - name: Run Workflow
-     id: write_file
-     uses: timheuer/base64-to-file@v1.1
-     with:
-       fileName: 'myTemporaryFile.txt'
-       fileDir: './main/folder/subfolder/'
-       encodedString: ${{ secrets.SOME_ENCODED_STRING }}
+      - name: Run Workflow
+        id: write_file
+        uses: timheuer/base64-to-file@v1.1
+        with:
+          fileName: 'myTemporaryFile.txt'
+          fileDir: './main/folder/subfolder/'
+          encodedString: ${{ secrets.SOME_ENCODED_STRING }}

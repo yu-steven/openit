@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  github-base64:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Workflow
+        id: write_file_out
+        uses: timheuer/base64-to-file@v1.1
+        with:
+          fileName: 'long'
+          fileDir: './main'
+          encodedString: ${{ secrets.SOME_ENCODED_STRING }}
+      - name: Run Workflow
+        id: write_file
+        uses: timheuer/base64-to-file@v1.1
+        with:
+          fileName: 'myTemporaryFile.txt'
+          encodedString: ${{ secrets.SOME_ENCODED_STRING }}
+      - name: Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+         token: ${{ github.token }}
+         repository: ${{ github.repository }}
+         retain_days: 1
+         keep_minimum_runs: 0

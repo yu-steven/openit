@@ -106,7 +106,8 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [google-play]: https://github.com/git-yusteven/tag/raw/main/google-play.svg
 
 ## iOS
-首推[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)（尽管是付费的）[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)(俗称小火箭)业界顶流，支持**众多**格式[(如图)](https://github.com/git-yusteven/openit#shadowrocket支持的协议)并支持导出节点；[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)和[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)(俗称圈x)由一个作者所写，更新频率上[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x是更贵的；另外[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)和[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面)更加美观定制，而[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)偏小众。购买时必须使用外区Apple ID下载(首推美区)；
+首推[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)（尽管是付费的）[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)(俗称小火箭)业界顶流，支持**众多**格式[(如图)](https://github.com/git-yusteven/openit#shadowrocket支持的协议)并支持导出节点；
+[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)和[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)(俗称圈x)由一个作者所写，更新频率上[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x是更贵的；另外[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)和[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面)更加美观定制([教程] and [分流规则])[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)偏小众。以上软件购买时必须使用外区Apple ID下载(首推美区)；
 当然也有为广大白嫖用户准备的[Potatso](https://github.com/git-yusteven/openit#potatso--free)(只支持ss协议)；[OneClick](https://github.com/git-yusteven/openit#oneclick--free)(支持ss,Trojan,Vmess，小众良心软件)；[Shadowlink](https://github.com/git-yusteven/openit#shadowlink--free)(**安全性存疑**，支持主流协议)
 ### Shadowrocket *$2.99*
 [![name-ssr][svg-apple]][ipk-ssr]
@@ -134,6 +135,8 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197
 [ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
 [svg-apple]: https://github.com/git-yusteven/tag/raw/main/ios-black.svg
+[教程]: https://limbopro.com/archives/3846.html
+[分流规则]: https://merlinblog.xyz/wiki/quanx.html
 ##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=如何使用美区Apple%20ID下载付费软件？)
 ***
 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址，全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
@@ -183,3 +186,4 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 #### *Shadowrocket*支持的协议
 [![Download](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)
+<!--都看到源代码结尾了，还不给个Star？-->

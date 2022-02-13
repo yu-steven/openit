@@ -179,7 +179,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
 #### *Quantumult X* UI界面
-[![Download](https://github.com/git-yusteven/openit/raw/main/images/5B76AB90-F19A-42C1-A4B8-13E626D1D088.jpeg "炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
+[![Download](https://github.com/git-yusteven/openit/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### *Shadowrocket*支持的协议
-[![Download](https://github.com/git-yusteven/openit/blob/main/images/26A8345A-1165-40B7-A4D9-5C4A2D91B11A.jpeg "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
+[![Download](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)

@@ -155,7 +155,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ` https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/`
 ### macOS
 ` https://github.com/shadowsocks/ShadowsocksX-NG/releases/`
-### Android
+### Android/TV
 ` https://github.com/shadowsocksrr/shadowsocksr-android/releases/`
 
 ## v2ray

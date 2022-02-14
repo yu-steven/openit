@@ -47,11 +47,11 @@
 首推[SS](https://github.com/git-yusteven/openit#windows-1),翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次[v2ray](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2ray](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2ray](https://github.com/git-yusteven/openit#v2ray)不相上下。而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr协议！
 >**.7z文件如何下载？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
-### [SS]｜[SSR]｜[v2ray]｜[Clash]｜[Qv2ray]
+### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
 
-[ss]: https://cdn.jsdelivr.net/gh/shadowsocks/shadowsocks-windows@releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip
+[ss]: https://cdn.jsdelivr.net/gh/shadowsocks/shadowsocks-windows@releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://cdn.jsdelivr.net/gh/shadowsocksrr/shadowsocksr-csharp@releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2ray]: https://cdn.jsdelivr.net/gh/2dust/v2rayN@releases/download/4.32/v2rayN-Core.zip
+[v2rayN]: https://cdn.jsdelivr.net/gh/2dust/v2rayN@releases/download/4.32/v2rayN-Core.zip
 [clash]: https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-win.7z
 [qv2ray]: https://cdn.jsdelivr.net/gh/Qv2ray/Qv2ray@releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 

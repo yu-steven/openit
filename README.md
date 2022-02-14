@@ -51,7 +51,7 @@
 
 [ss]: https://cdn.jsdelivr.net/gh/shadowsocks/shadowsocks-windows@releases/download/4.4.0.0/Shadowsocks-4.4.0.185.zip
 [ssr]: https://cdn.jsdelivr.net/gh/shadowsocksrr/shadowsocksr-csharp@releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2ray]: https://cdn.jsdelivr.net/gh/2dust/v2rayN@releases/download/4.30/v2rayN-Core.zip
+[v2ray]: https://cdn.jsdelivr.net/gh/2dust/v2rayN@releases/download/4.32/v2rayN-Core.zip
 [clash]: https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-win.7z
 [qv2ray]: https://cdn.jsdelivr.net/gh/Qv2ray/Qv2ray@releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 

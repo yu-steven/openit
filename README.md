@@ -112,6 +112,8 @@
 [![name-quanx][svg-apple]][ipk-quanx]
 ### Surge *$49.99*(App内购买)
 [![name-surge][svg-apple]][ipk-surge]
+### Loon
+[![name-loon][svg-apple]][ipk-loon]
 ### Potatso 2  *$2.99*
 [![name-p2][svg-apple]][ipk-p2]
 ### Potatso  *Free*
@@ -125,6 +127,7 @@
 [ipk-quan]: https://apps.apple.com/app/quantumult/id1252015438
 [ipk-quanx]: https://apps.apple.com/app/quantumult-x/id1443988620
 [ipk-surge]: https://apps.apple.com/app/surge-4/id1442620678
+[ipk-loon]: https://apps.apple.com/app/loon/id1373567447
 [ipk-p2]: https://apps.apple.com/app/potatso-2/id1162704202
 [ipk-p]: https://apps.apple.com/app/shadowrocket/id1239860606
 [ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197

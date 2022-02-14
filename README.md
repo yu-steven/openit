@@ -74,14 +74,6 @@
 
 [![Download](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
 
-## Linux
-Linux方面我不太了解，这里给出下载地址，其实在Linux上更多的是部署.
->相信玩Linux的同学一定是会的（各种意义上）
-### [Clash]｜[Qv2ray]
-
-[clash]: https://github.com/Dreamacro/clash/releases
-[qv2ray]: https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
-
 ## Android 
 首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具；[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
 ### [SS↘️][apk-ss]
@@ -138,6 +130,14 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [教程]: https://limbopro.com/archives/3846.html
 [分流规则]: https://merlinblog.xyz/wiki/quanx.html
 ##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=如何使用美区Apple%20ID下载付费软件？)
+
+## Linux
+Linux方面我不太了解，这里给出下载地址，其实在Linux上更多的是部署.
+>相信玩Linux的同学一定是会的（各种意义上）
+### [Clash]｜[Qv2ray]
+
+[clash]: https://github.com/Dreamacro/clash/releases
+[qv2ray]: https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
 ***
 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址，全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
 ## Shadowsocks
@@ -173,7 +173,6 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ## Qv2ray(已停更）
 ### Win/Mac/Linux
 ` https://github.com/Qv2ray/Qv2ray/releases/`
-
 ***
 # 许可证
 本仓库采用 CC BY-SA 4.0 许可协议

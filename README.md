@@ -150,40 +150,51 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ### ｜[SS]｜
 [SS]: https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk
 ***
-由于**可能的**更新不及时，下面给出以上软件GitHub托管地址，全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
+由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间，链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
 ## Shadowsocks
-### Windows
+### Windows  
 ` https://github.com/shadowsocks/shadowsocks-windows/releases/`
+*2022.2.8---v4.4.1.0*
 ### Android
 ` https://github.com/shadowsocks/shadowsocks-android/releases/`
+*2021.9.17---v5.2.6*
 
 ## Shadowsocksr
 ### Windows
 ` https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/`
+*2019.4.21---v4.9.2*
 ### macOS
 ` https://github.com/shadowsocks/ShadowsocksX-NG/releases/`
+*2019.11.13---v1.9.4*
 ### Android/TV
 ` https://github.com/shadowsocksrr/shadowsocksr-android/releases/`
+**2018.3.7---v3.5.3*
 
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
+*2022.2.14---v4.32*
 ### Android
 ` https://github.com/2dust/v2rayNG/releases/`
+*2022.2.3---v1.6.30*
 
 ## Clash
 ### Win/Mac/Android
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases/`
+*2022.2.11---v0.19.8*
 ### Linux
 ` https://github.com/Dreamacro/clash/releases/`
+*2022.1.2---v1.9.0*
 
 ## ClashX
 ### macOS
 ` https://github.com/yichengchen/clashX/releases`
+*2022.1.8---1.90.0*
 
-## Qv2ray(已停更）
+## Qv2ray
 ### Win/Mac/Linux
 ` https://github.com/Qv2ray/Qv2ray/releases/`
+*2021.6.17---v2.7.0* **The End**
 ***
 # 许可证
 本仓库采用 CC BY-SA 4.0 许可协议

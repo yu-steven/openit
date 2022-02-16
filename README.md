@@ -23,7 +23,7 @@
 
 本订阅由iOS的[Shadowrocket]&nbsp;(以下简称小火箭)导入、测试、整理、导出；对小火箭の兼容性**最高**，也**很**推荐您购买二手iPhone进行翻墙
 
-[Shadowrocket]: https://github.com/git-yusteven/openit#shadowrocket-299
+[Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **base64**
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit/long`
 

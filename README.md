@@ -60,9 +60,9 @@
 >**.7z文件如何下载？**
 可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**);蓝字是软件dmg安装包地址，附带箭头方向的是Mac App Store地址
 ### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)
-### Shadowrocket(Arm) *$2.99*↙️
+### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
-### Quantumult X(Arm) *$7.99*↙️
+### Quantumult X(Arm) *$7.99*
 [![点击跳转至Mac App Store][macos-black]][Quantumult X]
 
 [ssr]: https://cdn.jsdelivr.net/gh/shadowsocks/ShadowsocksX-NG@releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
@@ -72,30 +72,34 @@
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
 [macos-black]: https://github.com/git-yusteven/tag/raw/main/macos-black.svg
-### [The Unarchiver↙️](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
+### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 
 [![点击跳转至Mac App Store](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
 
 ## Android 
 首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具；[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
 
-### [SS ↘️][apk-ss]
+### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">
-<img alt="轻触跳转至Google Play" align="left" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
-### [v2rayNG ↘️][apk-v2rayng]
+
+### [v2rayNG][apk-v2rayng]
 <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_black">
-<img alt="轻触跳转至Google Play" align="left" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
-### [Clash ↘️][apk-clash]
+
+### [Clash][apk-clash]
 <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash" target="_black">
-<img alt="轻触跳转至Google Play" align="left" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
-### [Surfboard ↘️][apk-surfboard]
+
+### [Surfboard][apk-surfboard]
 <a href="https://play.google.com/store/apps/details?id=com.getsurfboard" target="_black">
-<img alt="轻触跳转至Google Play" align="left" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
-### [SSR⬅️][apk-ssr]
+
+### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download

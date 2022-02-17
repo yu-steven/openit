@@ -61,9 +61,9 @@
 可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**);蓝字是软件dmg安装包地址，附带箭头方向的是Mac App Store地址
 ### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)
 ### Shadowrocket(Arm) *$2.99*↙️
-[![name][macos-black]][Shadowrocket]
+[![点此跳转至Mac App Store][macos-black]][Shadowrocket]
 ### Quantumult X(Arm) *$7.99*↙️
-[![name][macos-black]][Quantumult X]
+[![点此跳转至Mac App Store][macos-black]][Quantumult X]
 
 [ssr]: https://cdn.jsdelivr.net/gh/shadowsocks/ShadowsocksX-NG@releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://cdn.jsdelivr.net/gh/Fndroid/clash_for_windows_pkg@releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z
@@ -79,13 +79,13 @@
 ## Android 
 首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具；[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
 ### [SS↘️][apk-ss]
-[![name-ss][google-play]][google-ss]
+[![点此跳转至Google Play][google-play]][google-ss]
 ### [v2rayNG⬇️][apk-v2rayng]
-[![name-v2rayng][google-play]][google-v2rayng]
+[![点此跳转至Google Play][google-play]][google-v2rayng]
 ### [Clash↘️][apk-clash]
-[![name-clash][google-play]][google-clash]
+[![点此跳转至Google Play][google-play]][google-clash]
 ### [Surfboard⬇️][apk-surfboard]
-[![name-surfboard][google-play]][google-surfboard]
+[![点此跳转至Google Play][google-play]][google-surfboard]
 ### [SSR⬅️][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
@@ -105,23 +105,23 @@
 [Loon](https://github.com/git-yusteven/openit#loon-499)最为新兴软件，有着Surge美观的界面，但仍处于测试阶段[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)偏小众。以上软件购买时必须使用外区Apple ID下载(首推美区)；
 当然也有为广大白嫖用户准备的[Potatso](https://github.com/git-yusteven/openit#potatso--free)(只支持ss协议)；[OneClick](https://github.com/git-yusteven/openit#oneclick--free)(支持ss,Trojan,Vmess，小众良心软件)；[Shadowlink](https://github.com/git-yusteven/openit#shadowlink--free)(**安全性存疑**，支持主流协议)
 ### Shadowrocket *$2.99*
-[![name-ssr][svg-apple]][ipk-ssr]
+[![点此跳转至App Store][svg-apple]][ipk-ssr]
 ### Quantumult  *4.99*
-[![name-quan][svg-apple]][ipk-quan]
+[![点此跳转至App Store][svg-apple]][ipk-quan]
 ### Quantumult X *$7.99*
-[![name-quanx][svg-apple]][ipk-quanx]
+[![点此跳转至App Store][svg-apple]][ipk-quanx]
 ### Surge *$49.99*(App内购买)
-[![name-surge][svg-apple]][ipk-surge]
+[![点此跳转至App Store][svg-apple]][ipk-surge]
 ### Loon *$4.99*
-[![name-loon][svg-apple]][ipk-loon]
+[![点此跳转至App Store][svg-apple]][ipk-loon]
 ### Potatso 2  *$2.99*
-[![name-p2][svg-apple]][ipk-p2]
+[![点此跳转至App Store][svg-apple]][ipk-p2]
 ### Potatso  *Free*
-[![name-p][svg-apple]][ipk-p]
+[![点此跳转至App Store][svg-apple]][ipk-p]
 ### OneClick  *Free*
-[![name-oc][svg-apple]][ipk-oc]
+[![点此跳转至App Store][svg-apple]][ipk-oc]
 ### Shadowlink  *Free*
-[![name-sl][svg-apple]][ipk-sl]
+[![点此跳转至App Store][svg-apple]][ipk-sl]
 
 [ipk-ssr]: https://apps.apple.com/app/shadowrocket/id932747118
 [ipk-quan]: https://apps.apple.com/app/quantumult/id1252015438

@@ -167,7 +167,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ### Windows  
 ` https://github.com/shadowsocks/shadowsocks-windows/releases/`
 *2022.2.8---v4.4.1.0*
-### Android
+### Android/TV
 ` https://github.com/shadowsocks/shadowsocks-android/releases/`
 *2021.9.17---v5.2.6*
 
@@ -178,7 +178,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ### macOS
 ` https://github.com/shadowsocks/ShadowsocksX-NG/releases/`
 *2019.11.13---v1.9.4*
-### Android/TV
+### Android
 ` https://github.com/shadowsocksrr/shadowsocksr-android/releases/`
 **2018.3.7---v3.5.3*
 

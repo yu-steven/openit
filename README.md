@@ -7,7 +7,7 @@
  [![name-telegram][svg-telegram]][telegram]
  [![name-base64][svg-base64]][git-base64]
  [![name-clash][svg-clash]][git-clash]
- ![name-刷新一下][svg-counter]
+ ![刷新一下][svg-counter]
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
  [git-license]: ./LICENSE
  [git-base64]: ./long

@@ -153,7 +153,7 @@
 ## Linux
 Linux方面我不太了解，这里给出下载地址，其实在Linux上更多的是部署.
 >相信玩Linux的同学一定是会的（各种意义上）
-### [Clash](https://github.com/Dreamacro/clash/releases/)｜[Qv2ray]
+### [Clash](https://github.com/Dreamacro/clash/releases/)｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
 
 [clash]: https://github.com/Dreamacro/clash/releases/
 [qv2ray]: https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage

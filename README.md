@@ -35,7 +35,7 @@
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在下载完后24小时之内删除，出现一切问题本站作者概不负责。
 
 ***
-以下软件下载由知名[**CDN**]--->[**Jsdelivr**]进行加速，提高用户访问文件的响应速度和下载速度；这里给出[**Jsdelivr**转换地址]
+以下为翻墙软件下载地址
 
 [**cdn**]: https://www.huaweicloud.com/zhishi/edit-590710.html
 [**jsdelivr**]: https://www.jsdelivr.com/

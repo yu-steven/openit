@@ -25,10 +25,10 @@
 
 [Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **base64**
-` https://cdn.jsdelivr.net/gh/git-yusteven/openit@raw/main/long`
+` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long`
 
 **Clash**
-` https://cdn.jsdelivr.net/gh/git-yusteven/openit@raw/main/Clash.yaml`
+` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml`
 
 稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x安全x白嫖=**本仓库** 欢迎大家**Star！**
 

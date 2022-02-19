@@ -35,7 +35,7 @@
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在下载完后24小时之内删除，出现一切问题本站作者概不负责。
 
 ***
-以下为翻墙软件下载地址
+***** 以下为翻墙软件下载地址
 
 [**cdn**]: https://www.huaweicloud.com/zhishi/edit-590710.html
 [**jsdelivr**]: https://www.jsdelivr.com/

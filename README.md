@@ -43,7 +43,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在下载完后24小时之内删除，出现一切问题本站作者概不负责。
 
 ***
-##### 为了加快GitHub文件下载速度，已为所有文件进行加速，不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit/main/README.md#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间)选择要下载的文件
+##### 为了加快GitHub文件下载速度，已为所有文件进行加速，不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间)选择要下载的文件
 
 [**cdn**]: https://www.huaweicloud.com/zhishi/edit-590710.html
 [**jsdelivr**]: https://www.jsdelivr.com/

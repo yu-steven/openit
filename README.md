@@ -169,7 +169,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ### ｜[SS](https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
 [SS]: https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk
 ***
-##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间
+##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间  [点击回来](https://github.com/git-yusteven/openit#为了加快github文件下载速度已为所有文件进行加速不信任本仓库链接点击蓝色字体选择要下载的文件)
 链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**）
 ## Shadowsocks
 ### Windows  

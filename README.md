@@ -31,8 +31,8 @@
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml`
 
 <!--访问这两个链接，刷新CDN
-https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long
-https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
+https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
+https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 这是注释文本，不会显示-->
 
 稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x安全x白嫖=**本仓库** 欢迎大家**Star！**

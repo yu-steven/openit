@@ -30,7 +30,7 @@
 **Clash**
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml`
 
-**Shadowrocket(小火箭)专用，https协议持续有效无需更新**
+**小火箭专用，https协议，持续有效无需更新**
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https`
 
 <!--访问这两个链接，刷新CDN

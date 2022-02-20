@@ -57,11 +57,11 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
 
-[ss]: https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
-[ssr]: https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://github.com/2dust/v2rayN/releases/download/4.32/v2rayN-Core.zip
-[clash]: https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7-win.7z
-[qv2ray]: https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
+[ss]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
+[ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
+[v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.32/v2rayN-Core.zip
+[clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7-win.7z
+[qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 
 ## macOS
 首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用[Clash(Arm)](https://github.com/git-yusteven/openit#clash)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
@@ -73,10 +73,10 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 ### Quantumult X(Arm) *$7.99*
 [![点击跳转至Mac App Store][macos-black]][Quantumult X]
 
-[ssr]: https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z
-[clash(Arm)]: https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z
-[clashx]: https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
+[ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
+[clash(intel)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7-mac.7z
+[clash(Arm)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.7/Clash.for.Windows-0.19.7-arm64-mac.7z
+[clashx]: https://github.abskoop.workers.dev/https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
 [macos-black]: https://github.com/git-yusteven/tag/raw/main/macos-black.svg

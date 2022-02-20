@@ -5,323 +5,355 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Alien, server: 113.wowogg.cyou, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
-  - {name: PH IPLC, server: 122.9.62.15, port: 4848, type: ss, cipher: chacha20-ietf-poly1305, password: f46dcfa9264802877761045b54f69eb689c00d0d23af2139ce8a9608767fd00c, udp: true}
-  - {name: SG IPLC, server: 122.9.62.50, port: 6601, type: ss, cipher: chacha20-ietf-poly1305, password: 8d8c2570832b1650c0024f6d1d3302e4885ba53852b0103d71e16fbae1a27c50, udp: true}
-  - {name: MY IPLC, server: 122.9.62.27, port: 3666, type: ss, cipher: chacha20-ietf-poly1305, password: f75636d4e8479daaae3e020aa4f6b200ecedb14c06031a98b8a1d8d7f3198034, udp: true}
-  - {name: Alien 2, server: iplc01.2333dns.com, port: 3023, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 3, server: 130.wowogg.cyou, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SH, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
-  - {name: Alien 4, server: 89.wowogg.cyou, port: 52289, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 5, server: 89.wowogg.cyou, port: 52289, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 6, server: iplc01.2333dns.com, port: 3143, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本1|公益线路, server: 45.142.166.15, port: 48919, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, skip-cert-verify: true, udp: true}
-  - {name: Alien 7, server: 112.wowogg.cyou, port: 52212, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 8, server: iplc01.2333dns.com, port: 3173, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 9, server: 89.wowogg.cyou, port: 52289, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 10, server: iplc01.2333dns.com, port: 3113, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 11, server: 113.wowogg.cyou, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 12, server: iplc01.2333dns.com, port: 3053, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 13, server: 128tw02.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 14, server: 128hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 15, server: 128hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国2 福利 0x, server: k11.pbaplink.xyz, port: 48500, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: k11.pbaplink.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本3•DNS解锁•1.5x, server: zjcm.relay.qchwnd.moe, port: 10204, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: jp4.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 日本AWS｜Direct, server: 11.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 11.earths.team, skip-cert-verify: true, udp: true}
+  - {name: 日本2•华东入口•0.8x, server: zjcm.relay.qchwnd.moe, port: 10200, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: jp1.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 日本1•华东入口•1x, server: zjcm.relay.qchwnd.moe, port: 10202, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: jp2.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 新加坡4•DNS解锁•2x, server: gdcm2.relay.qchwnd.moe, port: 10222, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: sg4.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: LinodeSG, server: 14.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 14.earths.team, skip-cert-verify: true, udp: true}
+  - {name: 美国3·流媒解锁·1x, server: zjcm.relay.qchwnd.moe, port: 10205, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: us3.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 德国•1x, server: azhk.relay.qchwnd.moe, port: 10215, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: de1.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 印度•0x, server: in1.pbaplink.xyz, port: 8443, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: in1.pbaplink.xyz, skip-cert-verify: true, udp: true}
+  - {name: GB, server: 172.99.190.205, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 俄罗斯1•DNS解锁•1x, server: zjcm.relay.qchwnd.moe, port: 10208, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: ru.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 美国2|公益线路, server: 45.142.166.15, port: 56654, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, sni: fmus2.shanjun.me, skip-cert-verify: true, udp: true}
+  - {name: 美国4·流媒解锁·1x, server: zjcm.relay.qchwnd.moe, port: 10206, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: us4.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 加拿大•1x, server: zjcm.relay.qchwnd.moe, port: 10214, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: ca1.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 喵哥甲骨文美国🇺🇸（h2协议）, server: zhang.miaoge110.cf, port: 443, type: vmess, uuid: f74e3a3d-41a3-4ef9-ad53-418d8547aea8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 英国•1x, server: azhk.relay.qchwnd.moe, port: 10217, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: uk1.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 美国1|公益线路, server: 209.141.35.147, port: 48919, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, sni: fmus1.shanjun.me, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3•流媒解锁•1x, server: gdcm2.relay.qchwnd.moe, port: 10221, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: sg3.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 广州移动-香港Azure@vpnhat, server: 120.232.173.119, port: 13016, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: San Jose-ColoCrossing@vpnhat, server: 107.173.111.182, port: 35662, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 广州移动-高雄Hinet-dip@vpnhat, server: 120.232.173.119, port: 13005, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 广州移动-LAX-ColoCrossing@vpnhat, server: 120.232.173.119, port: 13010, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: vpnpool-高雄Hinet-dip, server: 120.232.173.119, port: 13002, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 广州移动-Seoul-EC2@vpnhat, server: 120.232.173.119, port: 13014, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: vpnpool-高雄Hinet-dip 2, server: 120.232.173.119, port: 13001, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 台北Hinet-dip@vpnhat, server: 111.249.179.39, port: 10011, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 广州移动-高雄Hinet-dip@vpnhat 2, server: 120.232.173.119, port: 13017, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 丽水联通-dip@vpnhat, server: 101.67.8.172, port: 38845, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 广州移动-SG-Oracle@vpnhat, server: 120.232.173.119, port: 13003, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 广州移动-SG-Oracle@vpnhat 2, server: 120.232.173.119, port: 13000, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: 广州移动-香港Azure@vpnhat 2, server: 120.232.173.119, port: 13008, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: SG-Oracle@vpnhat, server: 168.138.172.9, port: 46524, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: Jakarta-APIK-free, server: 183.240.181.20, port: 1103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jakarta-APIK, server: 183.240.181.20, port: 1104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Amsterdam-M247-free, server: 183.240.181.20, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Ho Chi Minh-Cloudcore, server: 183.240.181.20, port: 1108, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港HKT, server: 183.240.181.20, port: 1112, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Ho Chi Minh-Cloudcore-free, server: 183.240.181.20, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Balashikha-Baxet, server: 183.240.181.20, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Makati-Eastern, server: 183.240.181.20, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 3063 git-yusteven, server: iplc01.2333dns.com, port: 3063, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: JP IPLC, server: 122.9.62.6, port: 4413, type: ss, cipher: chacha20-ietf-poly1305, password: 1605b9dd9d2fb4b42bc72e2c30f269ab6cf41c21c5ed062a7fa5ad7553d7735f, udp: true}
-  - {name: Alien 16, server: iplc01.2333dns.com, port: 3043, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 17, server: iplc01.2333dns.com, port: 3013, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 18, server: iplc01.2333dns.com, port: 3073, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_910, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: Alien 19, server: 128hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 20, server: 85.wowogg.cyou, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 21, server: iplc01.2333dns.com, port: 3063, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: Alien 22, server: iplc01.2333dns.com, port: 3193, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 23, server: gzcm.v2hub.top, port: 19201, type: vmess, uuid: da8f4c57-d022-3ccc-ae2a-a70256d68c32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 24, server: 120.233.10.62, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 2, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
-  - {name: Alien 25, server: 120.233.10.62, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 26, server: 89.wowogg.cyou, port: 52289, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 27, server: mg04.nfeng6.pp.ua, port: 63078, type: vmess, uuid: 042250a0-5c14-3394-b57e-cf4970f5dcfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]", server: 122.9.62.60, port: 10081, type: ss, cipher: chacha20-ietf-poly1305, password: dce4c0411b7146eb3d60ed21fd7a9e3e621ac67328fa30daa463f6ac071f4620, udp: true}
-  - {name: US_8080 git-yusteven, server: 38.68.135.208, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR_8080 由git-yusteven整理, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Alien 28, server: 120.233.10.62, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_8118 git-yusteven, server: 38.68.135.208, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Alien 29, server: iplc01.2333dns.com, port: 3133, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR_3306 由git-yusteven整理, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]", server: 122.9.62.46, port: 6634, type: ss, cipher: chacha20-ietf-poly1305, password: 661564ea3e4e45b71875794393c811310669141d68f530a2053403a65e612a6a, udp: true}
-  - {name: US_8882 git-yusteven, server: 38.68.135.208, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_3389 git-yusteven, server: 38.68.135.208, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: GB_628, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: MY IPLC, server: 122.9.62.27, port: 3666, type: ss, cipher: chacha20-ietf-poly1305, password: f75636d4e8479daaae3e020aa4f6b200ecedb14c06031a98b8a1d8d7f3198034, udp: true}
+  - {name: SH, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
+  - {name: 台湾(绿头外网集团)(Public) 15, server: 128tw02.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: "%7B%22Host%22:%22128tw02.fans8.xyz%22%7D"}, udp: true}
+  - {name: _香港_YouTube:VV科技_19, server: 112.wowogg.cyou, port: 52212, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 3193 git-yusteven, server: iplc01.2333dns.com, port: 3193, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
+  - {name: vpnpool-SG-DigitalOcean, server: 120.233.10.62, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: US_2375 git-yusteven, server: 38.68.135.208, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_333, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Alien 30, server: iplc01.2333dns.com, port: 3153, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 31, server: iplc01.2333dns.com, port: 3033, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 32, server: 120.233.10.62, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 33, server: iplc01.2333dns.com, port: 3183, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 34, server: lv.tgproxy.wtf, port: 2052, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 35, server: 88.wowogg.cyou, port: 52288, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 36, server: iplc01.2333dns.com, port: 3103, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 37, server: 120.233.10.62, port: 52222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 38, server: 120.233.10.62, port: 11222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_2797 |160.18Mb, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国1|公益线路, server: 209.141.35.147, port: 48919, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, skip-cert-verify: true, udp: true}
-  - {name: HK IPLC, server: 122.9.54.209, port: 5542, type: ss, cipher: chacha20-ietf-poly1305, password: c4e3e2445d3e03e651e620d3357b7c118417cda4605d4714993075cde9e2ba34, udp: true}
-  - {name: Alien 39, server: 128hk8.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 40, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: JP, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: US, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG IPLC, server: 122.9.62.50, port: 6601, type: ss, cipher: chacha20-ietf-poly1305, password: 8d8c2570832b1650c0024f6d1d3302e4885ba53852b0103d71e16fbae1a27c50, udp: true}
+  - {name: US_8882 git-yusteven, server: 38.68.135.208, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 俄罗斯U, server: 46.29.164.148, port: 9511, type: ssr, cipher: rc4, password: lncn.org 9p, protocol: origin, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US 2, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN, server: 120.233.10.62, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_8080 git-yusteven, server: 38.68.135.208, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 中国_Git-yusteven_131, server: gzcm.v2hub.top, port: 19221, type: trojan, password: da8f4c57-d022-3ccc-ae2a-a70256d68c32, sni: gzcm.v2hub.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_Git-yusteven_22, server: 120.233.10.62, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: "俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]", server: 122.9.62.60, port: 10081, type: ss, cipher: chacha20-ietf-poly1305, password: dce4c0411b7146eb3d60ed21fd7a9e3e621ac67328fa30daa463f6ac071f4620, udp: true}
+  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: HK IPLC, server: 122.9.54.209, port: 5542, type: ss, cipher: chacha20-ietf-poly1305, password: c4e3e2445d3e03e651e620d3357b7c118417cda4605d4714993075cde9e2ba34, udp: true}
+  - {name: PH IPLC, server: 122.9.62.15, port: 4848, type: ss, cipher: chacha20-ietf-poly1305, password: f46dcfa9264802877761045b54f69eb689c00d0d23af2139ce8a9608767fd00c, udp: true}
+  - {name: JP_910, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
   - {name: 俄罗斯联邦_Git-yusteven_136, server: j-d.xioix.cf, port: 443, type: trojan, password: d52f0642-2216-42db-84a9-d7b1cf9290db, sni: j-d.xioix.cf, skip-cert-verify: true, udp: true}
-  - {name: Alien 41, server: 120.233.10.62, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR_8091 由git-yusteven整理, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: GB_9102 git-yusteven, server: 172.99.190.205, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: vpnpool-Tokyo-Linode, server: 120.233.10.62, port: 52222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RelayGB, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}, udp: true}
+  - {name: 美国1|公益线路 2, server: 209.141.35.147, port: 48919, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, sni: fmus1.shanjun.me, skip-cert-verify: true, udp: true}
+  - {name: 3033 git-yusteven, server: iplc01.2333dns.com, port: 3033, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 法国_Git-yusteven_174, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 俄罗斯X, server: 46.29.164.213, port: 9511, type: ssr, cipher: rc4, password: lncn.org 9p, protocol: origin, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 香港9-三网优化, server: 128hk8.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 128hk8.fans8.xyz}, udp: true}
+  - {name: FR_8091 由git-yusteven整理, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 2, server: 120.233.10.62, port: 11222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 拉脱维亚|01|流解|0x, server: lv.tgproxy.wtf, port: 2052, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: lv.tgproxy.wtf}, udp: true}
+  - {name: 3103 git-yusteven, server: iplc01.2333dns.com, port: 3103, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 2, server: 120.233.10.62, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_9102 git-yusteven, server: 172.99.190.205, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 11, server: 89.wowogg.cyou, port: 52289, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: GB_7002 git-yusteven, server: 172.99.190.205, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: FR_7002 由git-yusteven整理, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Alien 42, server: iplc01.2333dns.com, port: 3123, type: vmess, uuid: fc391a36-8923-365c-a16f-b789faa7db87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -340,327 +372,367 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 广州移动-香港Azure@vpnhat
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-香港Azure@vpnhat 2
+      - 香港HKT
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 香港9-三网优化
+      - 香港(绿头外网集团)(Public) 11
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -676,81 +748,89 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Alien
-      - HK
-      - PH IPLC
-      - SG IPLC
-      - MY IPLC
-      - Alien 2
-      - Alien 3
-      - SH
-      - Alien 4
-      - Alien 5
-      - Alien 6
-      - 日本1|公益线路
-      - Alien 7
-      - Alien 8
-      - Alien 9
-      - Alien 10
-      - Alien 11
-      - Alien 12
-      - Alien 13
-      - Alien 14
-      - Alien 15
-      - JP IPLC
-      - Alien 16
-      - Alien 17
-      - Alien 18
-      - JP_910
-      - Alien 19
-      - Alien 20
-      - Alien 21
-      - JP
-      - Alien 22
-      - Alien 23
-      - Alien 24
-      - US
-      - US 2
-      - Alien 25
-      - Alien 26
-      - Alien 27
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - US_8080 git-yusteven
-      - FR_8080 由git-yusteven整理
-      - Alien 28
-      - US_8118 git-yusteven
-      - Alien 29
-      - FR_3306 由git-yusteven整理
-      - 俄罗斯 - 莫斯科 [BGPA] [SVIP] [Netflix]
-      - US_8882 git-yusteven
-      - US_3389 git-yusteven
-      - GB_628
-      - US_2375 git-yusteven
-      - US_333
-      - Alien 30
-      - Alien 31
-      - Alien 32
-      - Alien 33
-      - Alien 34
-      - Alien 35
-      - Alien 36
-      - Alien 37
-      - Alien 38
-      - ZZ_2797 |160.18Mb
+      - 韩国2 福利 0x
+      - 日本3•DNS解锁•1.5x
+      - 日本AWS｜Direct
+      - 日本2•华东入口•0.8x
+      - 日本1•华东入口•1x
+      - 新加坡4•DNS解锁•2x
+      - LinodeSG
+      - 美国3·流媒解锁·1x
+      - 德国•1x
+      - 印度•0x
+      - GB
+      - 俄罗斯1•DNS解锁•1x
+      - 美国2|公益线路
+      - 美国4·流媒解锁·1x
+      - 加拿大•1x
+      - 喵哥甲骨文美国🇺🇸（h2协议）
+      - 英国•1x
       - 美国1|公益线路
-      - HK IPLC
-      - Alien 39
-      - Alien 40
-      - 全球直连①-TikTok
+      - 新加坡3•流媒解锁•1x
+      - 广州移动-香港Azure@vpnhat
+      - San Jose-ColoCrossing@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat
+      - 广州移动-LAX-ColoCrossing@vpnhat
+      - vpnpool-高雄Hinet-dip
+      - 广州移动-Seoul-EC2@vpnhat
+      - vpnpool-高雄Hinet-dip 2
+      - 台北Hinet-dip@vpnhat
+      - 广州移动-高雄Hinet-dip@vpnhat 2
+      - 丽水联通-dip@vpnhat
+      - 广州移动-SG-Oracle@vpnhat
+      - 广州移动-SG-Oracle@vpnhat 2
+      - 广州移动-香港Azure@vpnhat 2
+      - SG-Oracle@vpnhat
+      - Jakarta-APIK-free
+      - Jakarta-APIK
+      - Amsterdam-M247-free
+      - Ho Chi Minh-Cloudcore
+      - 香港HKT
+      - Ho Chi Minh-Cloudcore-free
+      - Balashikha-Baxet
+      - Makati-Eastern
+      - 3063 git-yusteven
+      - JP IPLC
+      - MY IPLC
+      - SH
+      - 台湾(绿头外网集团)(Public) 15
+      - _香港_YouTube:VV科技_19
+      - 3193 git-yusteven
+      - HK
+      - vpnpool-SG-DigitalOcean
+      - US_2375 git-yusteven
+      - JP
+      - US
+      - SG IPLC
+      - US_8882 git-yusteven
+      - 俄罗斯U
+      - US 2
+      - CN
+      - US_8080 git-yusteven
       - 中国_Git-yusteven_131
+      - 中国_Git-yusteven_22
+      - RU
+      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
+      - 全球直连①-TikTok
+      - HK IPLC
+      - PH IPLC
+      - JP_910
       - 俄罗斯联邦_Git-yusteven_136
-      - Alien 41
-      - FR_8091 由git-yusteven整理
-      - GB_9102 git-yusteven
+      - vpnpool-Tokyo-Linode
+      - RelayGB
+      - 美国1|公益线路 2
+      - 3033 git-yusteven
       - 法国_Git-yusteven_174
+      - 俄罗斯X
+      - 香港9-三网优化
+      - FR_8091 由git-yusteven整理
+      - vpnpool-SG-DigitalOcean 2
+      - 拉脱维亚|01|流解|0x
+      - 3103 git-yusteven
+      - vpnpool-Tokyo-Linode 2
+      - GB_9102 git-yusteven
+      - 香港(绿头外网集团)(Public) 11
       - GB_7002 git-yusteven
-      - FR_7002 由git-yusteven整理
-      - Alien 42
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

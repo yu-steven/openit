@@ -207,7 +207,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 
 ## ClashX
 ### macOS
-` https://github.com/yichengchen/clashX/releases`
+` https://github.com/yichengchen/clashX/releases/`
 *2022.1.8---1.90.0*
 
 ## Qv2ray

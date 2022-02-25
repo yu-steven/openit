@@ -2,7 +2,7 @@
 <h1 align="center">
 <sub>
 </sub>
-Openit
+Openit  Subscribe
 </h1>
 
 <div align="center">

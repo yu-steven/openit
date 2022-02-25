@@ -204,7 +204,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ## Clash
 ### Win/Mac/Android
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases/`
-*2022.2.11---v0.19.8*
+*2022.2.25---v0.19.10*
 ### Linux
 ` https://github.com/Dreamacro/clash/releases/`
 *2022.1.2---v1.9.0*

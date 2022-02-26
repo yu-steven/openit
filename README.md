@@ -1,5 +1,9 @@
+### 重要：Clash for Windows发现危险性漏洞，可以在您订阅时执行任意代码，请立即更新至最新版本v0.19.10
+点击此处了解更多（跳转到Clash仓库）
+本仓库已同步至Clash的最新版本
+
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-<h1 align="center">
+<h1 align="left">
 Openit  Subscribe
 </h1>
 

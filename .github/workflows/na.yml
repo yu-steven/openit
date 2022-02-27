@@ -1,10 +1,11 @@
 name: 'GitHub Actions Weather Bot'
-on:
-  push:
+on: 
   schedule:
-  
-    - cron: '* * * * *'
-jobs:
+    - cron: "0 * * * *"
+  push:
+    branches: "master"
+  workflow_dispatch:
+  jobs:
   bot:
     runs-on: ubuntu-latest
     steps:

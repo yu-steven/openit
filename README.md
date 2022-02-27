@@ -1,4 +1,4 @@
-<details
+<details>
 <summary>重要</div></summary>
 Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，影响v0.19.9之前所有版本请立即马上果断更新至最新版本v0.19.10(所有Clash系软件)
  

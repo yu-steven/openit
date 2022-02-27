@@ -1,6 +1,10 @@
-### 重要：Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，影响v0.19.9之前所有版本请立即马上果断更新至最新版本v0.19.10(所有Clash系软件)
-[点击此处了解更多](https://github.com/Fndroid/clash_for_windows_pkg/issues/2710)（跳转到Clash官方仓库issues）
-本仓库已同步至Clash的最新版本
+<details>
+<summary>重要</div></summary>
+Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，影响v0.19.9之前所有版本请立即马上果断更新至最新版本v0.19.10(所有Clash系软件)
+ 
+ [点击此处了解更多](https://github.com/Fndroid/clash_for_windows_pkg/issues/2710)（跳转到Clash官方仓库issues）
+ 本仓库已同步至Clash的最新版本
+</details>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 <h1 align="left">
@@ -67,7 +71,6 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.32/v2rayN-Core.zip
 [clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.10/Clash.for.Windows-0.19.10-win.7z
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-
 ## macOS
 首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用[Clash(Arm)](https://github.com/git-yusteven/openit#clash)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
 >**.7z文件如何下载？**

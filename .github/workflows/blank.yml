@@ -1,9 +1,8 @@
 name: Base64
 on: 
   push: 
-    branches: [ main ]
-    paths:   
-      - 'url'
+  schedule:
+    - cron: '*/5 * * * *'
 jobs:
   my-job:
     name: My Job
@@ -11,7 +10,7 @@ jobs:
     steps:
     - name: Sleep
       run: 
-        date ; sleep 6m ; date
+        date ; sleep 4m ; date
     - name: Download
       run: 
         wget https://github.com/git-yusteven/openit/raw/main/url

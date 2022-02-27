@@ -1,17 +1,20 @@
-name: Greeting from Mona
-on: push
-
+name: Base64
+on: 
+  push: 
+    branches: [ main ]
+    paths:   
+      - 'url'
 jobs:
   my-job:
     name: My Job
     runs-on: ubuntu-latest
     steps:
-    - name: 1
+    - name: Sleep
       run: 
-        date ; sleep 1s ; date
-    - name: 2
+        date ; sleep 6m ; date
+    - name: Download
       run: 
         wget https://github.com/git-yusteven/openit/raw/main/url
-    - name: 3
+    - name: Write
       run:
-        base64 url > long
+        base64 url

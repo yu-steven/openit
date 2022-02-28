@@ -1,4 +1,4 @@
-# [已停更](https://t.me/ShareCentrePro/806)，6.28恢复
+
 <details>
 <summary>重要</div></summary>
 本订阅已停更(2.28)或一段时间内有效且https订阅持续有效，但是不更新，计划6.28恢复更新或无限期延长

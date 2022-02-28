@@ -24,12 +24,12 @@ jobs:
       run:
         base64 url > long
         
-        rm -rf url
+        ls -l
     - name: check for changes
       run: git status
     - name: stage changed files
-      run: git add .
+      run: git add long
     - name: commit changed files
-      run: git commit -a -m"bot"
+      run: git commit -m"bot"
     - name: push code
       run: git push

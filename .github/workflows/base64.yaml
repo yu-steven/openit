@@ -17,11 +17,8 @@ jobs:
     - name: Sleep
       run: 
         date; sleep 1s ;date
-
     - name: Write
       run:
-        git pull
-        
         base64 url > long
         
     - name: check for changes
@@ -29,6 +26,6 @@ jobs:
     - name: stage changed files
       run: git add long
     - name: commit changed files
-      run: git commit -m"bot"
+      run: git commit -a -m"bot"
     - name: push code
       run: git push

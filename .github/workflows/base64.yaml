@@ -17,16 +17,13 @@ jobs:
     - name: Sleep
       run: 
         date; sleep 1s ;date
-    - name: Download
-      run: 
-        wget https://github.com/git-yusteven/openit/raw/main/url
-        wget https://github.com/git-yusteven/openit/raw/main/long
-   
+
     - name: Write
       run:
+        git pull
+        
         base64 url > long
         
-        ls -l
     - name: check for changes
       run: git status
     - name: stage changed files

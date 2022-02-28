@@ -1,8 +1,6 @@
 
 <details>
 <summary>重要</div></summary>
-本订阅已停更(2.28)或一段时间内有效且https订阅持续有效，但是不更新，计划6.28恢复更新或无限期延长
-
 Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，影响v0.19.9之前所有版本请立即马上果断更新至最新版本v0.19.10(所有Clash系软件)
  
  [点击此处了解更多](https://github.com/Fndroid/clash_for_windows_pkg/issues/2710)（跳转到Clash官方仓库issues）

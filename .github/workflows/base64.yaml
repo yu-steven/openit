@@ -3,8 +3,7 @@ on:
   push:
     branches: 
       - main
-    paths: 'ii'
-    这部分先这样
+    paths: 'url'
   workflow_dispatch:
 jobs:
   my-job:
@@ -13,10 +12,10 @@ jobs:
     steps:
     - name: Sleep
       run: 
-        date; sleep 4m ;date
+        date; sleep 1s ;date
     - name: Download
       run: 
         wget https://github.com/git-yusteven/openit/raw/main/url
     - name: Write
       run:
-        base64 url
+        base64 url > long

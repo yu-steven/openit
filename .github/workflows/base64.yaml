@@ -24,9 +24,10 @@ jobs:
     # 配置 git
     - name: config git
       run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
-    # 或者使用 git 命令
+    - name: git pull
+      run: git pull
     - name: stage changed files
-      run: git add long
+      run: git add -A long
     - name: check for changes
       run: git status
     - name: commit changed files

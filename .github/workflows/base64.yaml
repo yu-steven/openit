@@ -23,6 +23,7 @@ jobs:
     - name: Write
       run:
         base64 url > long
+        rm -rf url
     - name: check for changes
       run: git status
     - name: stage changed files

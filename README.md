@@ -9,6 +9,7 @@ Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，
  本仓库已同步至Clash的最新版本
 </details>
 
+关于翻墙的任何问题在任何时间都可以联系我 Telegram [@yusteven](https://t.me/yusteven)
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 <h1 align="left">
 Openit  

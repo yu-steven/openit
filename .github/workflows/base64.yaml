@@ -12,6 +12,10 @@ jobs:
       with:
         # personal access token
         token: ${{ secrets.BASE64_NAME }}
+    - name: config git
+      run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
+    - name: git pull
+      run: git pull
     - name: Sleep
       run: 
         date; sleep 1s ;date
@@ -21,11 +25,6 @@ jobs:
     - name: Write
       run:
         base64 url > long
-    # 配置 git
-    - name: config git
-      run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
-    - name: git pull
-      run: git pull
     - name: stage changed files
       run: git add -A long
     - name: check for changes

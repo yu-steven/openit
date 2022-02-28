@@ -1,5 +1,7 @@
+# [已停更](https://t.me/ShareCentrePro/806)
 <details>
 <summary>重要</div></summary>
+本订阅已停更，或最近一段时间好用，但是已不更新，计划6.28恢复更新或无限期延长
 Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，影响v0.19.9之前所有版本请立即马上果断更新至最新版本v0.19.10(所有Clash系软件)
  
  [点击此处了解更多](https://github.com/Fndroid/clash_for_windows_pkg/issues/2710)（跳转到Clash官方仓库issues）
@@ -8,7 +10,7 @@ Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 <h1 align="left">
-Openit  [已停更](https://t.me/ShareCentrePro/806)
+Openit  
 </h1>
 
 <div align="center">

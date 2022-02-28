@@ -1,15 +1,17 @@
 name: Base64
 on: 
-  push:
-    branches: 
-      - main
-    paths: 'url'
+  schedule:
+    - cron: '0 * * * *'
   workflow_dispatch:
 jobs:
   my-job:
     name: My Job
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      with:
+        # personal access token
+        token: ${{ secrets.BASE64_NAME }}
     - name: Sleep
       run: 
         date; sleep 1s ;date
@@ -19,3 +21,15 @@ jobs:
     - name: Write
       run:
         base64 url > long
+    # 配置 git
+    - name: config git
+      run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
+    # 或者使用 git 命令
+    - name: check for changes
+      run: git status
+    - name: stage changed files
+      run: git add long
+    - name: commit changed files
+      run: git commit -m "update by File"
+    - name: push code to main
+      run: git push origin main

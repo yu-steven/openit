@@ -8,7 +8,7 @@ Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 <h1 align="left">
-Openit  Subscribe
+Openit  [已停更](https://t.me/ShareCentrePro/806)
 </h1>
 
 <div align="center">

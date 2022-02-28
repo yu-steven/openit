@@ -3,7 +3,9 @@ on:
   schedule:
     - cron: "* * * * *"
   push:
-    branches: "main"
+    branches: 
+      - main
+    paths: 'url'
   workflow_dispatch:
 jobs:
   my-job:

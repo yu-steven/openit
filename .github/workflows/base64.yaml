@@ -21,7 +21,9 @@ jobs:
       run:
         base64 url > long
         
-        which long
+        rm -f /home/runner/work/openit/openit/long
+        
+        cp long /home/runner/work/openit/openit
     - name: check for changes
       run: git status
     - name: stage changed files

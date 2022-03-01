@@ -15,8 +15,6 @@ jobs:
         token: ${{ secrets.BASE64_NAME }}
     - name: config git
       run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
-    - name: Sleep
-      run: date;sleep 2s;date
     - name: Write
       run: base64 url > long
     - name: check for changes

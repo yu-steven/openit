@@ -16,11 +16,9 @@ jobs:
     - name: config git
       run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
     - name: Sleep
-      run: 
-        date; sleep 1 ;date
+      run: date;sleep 2s;date
     - name: Write
-      run:
-        base64 url > long
+      run: base64 url > long
     - name: check for changes
       run: git status
     - name: stage changed files

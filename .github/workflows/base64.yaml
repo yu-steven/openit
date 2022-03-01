@@ -1,11 +1,13 @@
 name: Base64
 on: 
-  schedule:
-    - cron: '0 * * * *'
+on:
+  push:
+    paths:
+      - 'url'
   workflow_dispatch:
 jobs:
   my-job:
-    name: My Job
+    name: Base64编码任务
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

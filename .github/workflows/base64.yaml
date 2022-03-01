@@ -19,7 +19,7 @@ jobs:
         date; sleep 1s ;date
     - name: Write
       run:
-        base64 url > long.txt
+        base64 url > long
     - name: check for changes
       run: git status
     - name: stage changed files
@@ -27,4 +27,4 @@ jobs:
     - name: commit changed files
       run: git commit -m"bot"
     - name: push code
-      run: git push origin master
+      run: git push

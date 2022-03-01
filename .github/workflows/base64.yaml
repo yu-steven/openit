@@ -8,7 +8,7 @@ jobs:
     name: My Job
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
       with:
         # personal access token
         token: ${{ secrets.BASE64_NAME }}
@@ -20,12 +20,6 @@ jobs:
     - name: Write
       run:
         base64 url > long
-        
-        cat long
-        
-        rm -f /home/runner/work/openit/openit/long
-        
-        cp long /home/runner/work/openit/openit
     - name: check for changes
       run: git status
     - name: stage changed files

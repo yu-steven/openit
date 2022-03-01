@@ -16,7 +16,7 @@ jobs:
       run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
     - name: Sleep
       run: 
-        date; sleep 1s ;date
+        date; sleep 4m ;date
     - name: Write
       run:
         base64 url > long
@@ -25,6 +25,6 @@ jobs:
     - name: stage changed files
       run: git add .
     - name: commit changed files
-      run: git commit -m"bot"
+      run: git commit -m"Change by GitHub action"
     - name: push code
       run: git push

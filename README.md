@@ -42,7 +42,7 @@ Openit
 **Clash**
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml`
 
-**小火箭专用，https协议，持续有效无需更新**
+**HTTPS协议，小火箭专用，持续有效无需更新**
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https`
 
 <!--访问这两个链接，刷新CDN

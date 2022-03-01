@@ -3,7 +3,7 @@ on:
   # 这是一个由定时任务触发的场景，不会导致无限循环
   schedule:
     - cron: '0 */12 * * *'
-  workflow_dispatch
+  workflow_dispatch: 
 jobs:
   modify:
     runs-on: ubuntu-latest

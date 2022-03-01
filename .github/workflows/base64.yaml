@@ -14,8 +14,6 @@ jobs:
         token: ${{ secrets.BASE64_NAME }}
     - name: config git
       run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
-    - name: 拉取
-      run: git clone git@github.com:git-yusteven/openit.git
     - name: Sleep
       run: 
         date; sleep 1s ;date

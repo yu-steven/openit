@@ -26,8 +26,8 @@ Openit
  [git-clash]: ./Clash.yaml
  [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
-[![Base64](https://github.com/git-yusteven/openit/actions/workflows/base64.yaml/badge.svg?branch=main)](https://github.com/git-yusteven/openit/actions/workflows/base64.yaml) 
-[svg-clash]: https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-square&logo=GitHub
+ [svg-base64]: https://github.com/git-yusteven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
+ [svg-clash]: https://img.shields.io/badge/Clash-Passed-brightgreen.svg?style=flat-plastic&logo=GitHub
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
 

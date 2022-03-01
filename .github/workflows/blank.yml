@@ -1,0 +1,39 @@
+name: demo
+on:
+  # 这是一个由定时任务触发的场景，不会导致无限循环
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch
+jobs:
+  modify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        # personal access token
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    # 修改文件的操作
+    - name: modify files
+      run: node ./operations.js
+    # 配置 git
+    - name: config git
+      run: git config --global user.email "name@gmail.com"&&git config --global user.name "name"
+    # 使用上面的 sh 脚本提交和推送
+    - name: run script
+      run: chmod +x ./update-repo.sh&&./update-repo.sh
+    # 或者使用 git 命令
+    - name: check for changes
+      run: git status
+    - name: stage changed files
+      run: git add .
+    - name: commit changed files
+      run: git commit -m "update by github actions"
+    - name: push code to master
+      run: git push origin master

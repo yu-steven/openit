@@ -1,0 +1,14 @@
+name: CDN
+on: 
+   schedule:
+      - cron: "0 */6 * * *"
+   workflow_dispatch:
+jobs:
+  my-job:
+    name: jsdelivr
+    runs-on: ubuntu-latest
+    steps:
+    - name: long
+      run: curl https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
+    - name: Clash.yaml
+      run: curl https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml

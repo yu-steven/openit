@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         # personal access token
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        token: ${{ secrets.BASE64_NAME }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:

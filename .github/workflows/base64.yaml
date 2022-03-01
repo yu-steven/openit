@@ -20,6 +20,8 @@ jobs:
     - name: Write
       run:
         base64 url > long
+        
+        save long
     - name: check for changes
       run: git status
     - name: stage changed files

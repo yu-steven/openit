@@ -19,11 +19,12 @@ jobs:
         date; sleep 1s ;date
     - name: Write
       run:
-        which url
-        
         base64 url > long
-
-        cat long
+        
+        rm -f ～/usr/bin/git/long
+        
+        cp long ～/usr/bin/git
+        
     - name: check for changes
       run: git status
     - name: stage changed files

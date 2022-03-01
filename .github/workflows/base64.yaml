@@ -8,7 +8,7 @@ jobs:
     name: My Job
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
         # personal access token
         token: ${{ secrets.BASE64_NAME }}
@@ -27,4 +27,4 @@ jobs:
     - name: commit changed files
       run: git commit -m"bot"
     - name: push code
-      run: git push origin main
+      run: git push

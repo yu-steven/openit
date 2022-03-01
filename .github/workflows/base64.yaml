@@ -19,14 +19,7 @@ jobs:
         date; sleep 1s ;date
     - name: Write
       run:
-        cat url
-        
         base64 url > long
-        
-        rm -f ～/usr/bin/git/long
-        
-        cp long ～/usr/bin/git
-        
     - name: check for changes
       run: git status
     - name: stage changed files
@@ -34,4 +27,4 @@ jobs:
     - name: commit changed files
       run: git commit -m"bot"
     - name: push code
-      run: git push
+      run: git push origin master

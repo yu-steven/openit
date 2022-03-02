@@ -64,7 +64,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 
 ## Windows
-首推[SS](https://github.com/git-yusteven/openit#windows-1),翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次[v2rayN](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2rayN](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2rayN](https://github.com/git-yusteven/openit#v2ray)不相上下。而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr协议！
+首推[SS](https://github.com/git-yusteven/openit#windows-1),翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次[v2rayN](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2rayN](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2rayN](https://github.com/git-yusteven/openit#v2ray)不相上下。而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr
 >**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
@@ -97,7 +97,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [![点击跳转至Mac App Store](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
 
 ## Android 
-首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具；[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持其固有协议！
+首推[Google play](https://play.google.com/store/apps)的[v2rayNG](https://github.com/git-yusteven/openit#android-3),没有条件可以下载[apk](https://wikipedia.org/wiki/APK)安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有[Clash](https://github.com/git-yusteven/openit#clash)也推荐，简洁美观；Surfboard是一个与[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)配置兼容的代理实用工具;[SS](https://github.com/git-yusteven/openit#android-1)和[SSR](https://github.com/git-yusteven/openit#android-2)只支持ss和ssr
 
 ### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">

@@ -136,12 +136,12 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 当然也有为广大白嫖用户准备的[Potatso](https://github.com/git-yusteven/openit#potatso--free)(只支持ss协议)；[OneClick](https://github.com/git-yusteven/openit#oneclick--free)(支持ss,Trojan,Vmess，小众良心软件)；[Shadowlink](https://github.com/git-yusteven/openit#shadowlink--free)(**安全性存疑**，支持主流协议)
 ### Shadowrocket *$2.99*
 [![轻触跳转至App Store][svg-apple]][ipk-ssr]
-### Quantumult  *4.99*
-[![轻触跳转至App Store][svg-apple]][ipk-quan]
 ### Quantumult X *$7.99*
 [![轻触跳转至App Store][svg-apple]][ipk-quanx]
 ### Surge *$49.99*(App内购买)
 [![轻触跳转至App Store][svg-apple]][ipk-surge]
+### Quantumult  *4.99*
+[![轻触跳转至App Store][svg-apple]][ipk-quan]
 ### Loon *$4.99*
 [![轻触跳转至App Store][svg-apple]][ipk-loon]
 ### Potatso 2  *$2.99*

@@ -63,7 +63,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 ## Windows
 首推[SS](https://github.com/git-yusteven/openit#windows-1),翻墙始祖，虽只支持SS协议，但网上还是主流配置！其次[v2rayN](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2rayN](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2rayN](https://github.com/git-yusteven/openit#v2ray)不相上下。而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr协议！
->**.7z文件如何下载？**
+>**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
 
@@ -75,7 +75,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 ## macOS
 首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用[Clash(Arm)](https://github.com/git-yusteven/openit#clash)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
->**.7z文件如何下载？**
+>**.7z文件如何解压？**
 可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**);蓝字是软件dmg安装包地址 下方是Mac App Store地址
 ### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)
 ### Shadowrocket(Arm) *$2.99*

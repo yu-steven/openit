@@ -33,7 +33,7 @@ Openit
 
 </div>
 
-本订阅由iOS的[Shadowrocket]&nbsp;(以下简称小火箭)导入、测试、整理、导出；对小火箭の兼容性**最高**，也**很**推荐您购买二手iPhone进行翻墙
+本订阅由iOS的[Shadowrocket]&nbsp;(以下简称小火箭)导入、测试、整理、导出;对小火箭兼容性**最高** 也**很**推荐您购买二手iPhone进行翻墙
 
 [Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **base64**

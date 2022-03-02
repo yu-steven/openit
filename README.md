@@ -72,6 +72,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.32/v2rayN-Core.zip
 [clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.10/Clash.for.Windows-0.19.10-win.7z
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
+
 ## macOS
 首推[Clash](https://github.com/git-yusteven/openit#clash)，稳定通用，但需要订阅转换！[ClashX](https://github.com/git-yusteven/openit#clashx)和[Clash](https://github.com/git-yusteven/openit#clash)一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用[Clash(Arm)](https://github.com/git-yusteven/openit#clash)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
 >**.7z文件如何下载？**
@@ -130,8 +131,8 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [google-play]: https://github.com/git-yusteven/tag/raw/main/google-play.svg
 
 ## iOS
-首推[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)（尽管是付费的）[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)(俗称小火箭)业界顶流，支持**众多**格式[(如图)](https://github.com/git-yusteven/openit#shadowrocket支持的协议)并支持导出节点；
-[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)和[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)(俗称圈x)由一个作者所写，更新频率上[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x是更贵的；另外[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)和[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面)更加美观定制([教程] and [分流规则]);
+首推[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)（尽管是付费的）[Shadowrocket](https://github.com/git-yusteven/openit#shadowrocket-299)(俗称小火箭)业界顶流，支持**众多**格式[(如图)](https://github.com/git-yusteven/openit#shadowrocket支持的协议--返回)并支持导出节点；
+[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)和[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)(俗称圈x)由一个作者所写，更新频率上[Quantumult](https://github.com/git-yusteven/openit#quantumult--499)上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x是更贵的；另外[QuantumultX](https://github.com/git-yusteven/openit#quantumult-x-799)和[Surge](https://github.com/git-yusteven/openit#surge-4999app内购买)面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面--返回)更加美观定制([教程] and [分流规则]);
 [Loon](https://github.com/git-yusteven/openit#loon-499)最为新兴软件，有着Surge美观的界面，但仍处于测试阶段[Potatso 2](https://github.com/git-yusteven/openit#potatso-2--299)偏小众。以上软件购买时必须使用外区Apple ID下载(首推美区)；
 当然也有为广大白嫖用户准备的[Potatso](https://github.com/git-yusteven/openit#potatso--free)(只支持ss协议)；[OneClick](https://github.com/git-yusteven/openit#oneclick--free)(支持ss,Trojan,Vmess，小众良心软件)；[Shadowlink](https://github.com/git-yusteven/openit#shadowlink--free)(**安全性存疑**，支持主流协议)
 ### Shadowrocket *$2.99*

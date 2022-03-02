@@ -41,16 +41,18 @@ Openit
 **Clash**
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml`
 
-**HTTPS协议，小火箭专用，持续有效无需更新**
+**HTTPS**
 ` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https`
+
+Base64适用于众多平台和软件，Clash专属于Clash系软件，HTTPS专属于[Shadowrocket]
+HTTPS持续有效，无需更新
 
 <!--访问这两个链接，刷新CDN
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 这是注释文本，不会显示-->
 
-稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**
-
+<!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在下载完后24小时之内删除，出现一切问题本站作者概不负责。
 ***
 *最后更新时间2022.2.25-22:32*

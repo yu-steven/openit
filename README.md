@@ -232,9 +232,9 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 著作权归作者所有，节点归IP所有者所有
 转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
-#### *Quantumult X* UI界面
+#### *Quantumult X* UI界面  [返回](https://github.com/git-yusteven/openit#ios)
 [![图片，加载不出来就不看吧](https://github.com/git-yusteven/openit/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
-#### *Shadowrocket*支持的协议
+#### *Shadowrocket*支持的协议  [返回](https://github.com/git-yusteven/openit#ios)
 [![图片，没啥，有软件之后就知道了](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)
 <!--都看到这儿了，还不给个Star？-->

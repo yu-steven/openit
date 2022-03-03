@@ -27,7 +27,7 @@ jobs:
 不用一个个复制，最后给出全部代码
 
 * 设定触发条件，特定几个文件或者某些文件，不要定时运行(后文给出原因),最好加上手动触发`workflow_dispatch:`放在xxx的下一行与push对齐以备调试所用
-[如图](https://github.com/git-yusteven/openit/tree/main/.github#调试时点击绿框直接运行)
+[如图](https://github.com/git-yusteven/openit/tree/main/.github#调试时点击绿框直接运行-返回)
 ```
 name: xxx
 on: 

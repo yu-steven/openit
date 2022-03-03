@@ -167,7 +167,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
 [svg-apple]: https://github.com/git-yusteven/tag/raw/main/ios-black.svg
 [教程]: https://limbopro.com/archives/3846.html
-[分流规则]: https://merlinblog.xyz/wiki/quanx.html
+[神机规则]: https://merlinblog.xyz/wiki/quanx.html
 ##### 如何使用美区Apple ID下载付费软件？出门左转[*Google*](https://www.google.com/search?q=如何使用美区Apple%20ID下载付费软件？)
 
 ## Linux

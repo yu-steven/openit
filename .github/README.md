@@ -50,7 +50,7 @@ jobs:
 在这里添加到仓库密钥区，指路链接：https://github.com/您的名字/您的仓库名/settings/secrets/actions 
 
 记得Token名字改成` ACCESS_TOKEN `
-* 使用官方`actions/checkout@v2`工具检出代码(v1的改良版，v1用到了指针的概念，不易懂)
+* 使用官方`actions/checkout@v2`命令检出代码(v1的改良版，v1用到了指针的概念，不易懂)
 ```
     - uses: actions/checkout@v2
       with:

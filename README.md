@@ -72,7 +72,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [ss]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
 [v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.34/v2rayN-Core.zip
-[clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.10/Clash.for.Windows-0.19.10-win.7z
+[clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-win.7z
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 
 ## macOS
@@ -86,8 +86,8 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [![点击跳转至Mac App Store][macos-black]][Quantumult X]
 
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.10/Clash.for.Windows-0.19.10-mac.7z
-[clash(Arm)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.10/Clash.for.Windows-0.19.10-arm64-mac.7z
+[clash(intel)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-mac.7z
+[clash(Arm)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-arm64-mac.7z
 [clashx]: https://github.abskoop.workers.dev/https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118

@@ -64,7 +64,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 
 ## Windows
-首推SS 翻墙始祖，虽只支持SS协议，但网上还是主流配置；但我更推荐v2rayN和Clash，v2rayN支持格式众多，但v2系列协议url格式不统一；Clash也可，与v2rayN不相上下；而SSR只支持ssr协议
+首推SS 翻墙始祖，只支持SS协议，但网上还是主流配置；但我更推荐v2rayN和Clash，v2rayN支持格式众多，但v2系列协议url格式不统一；Clash最推荐，但是是英文界面需要汉化；而SSR只支持ssr协议；这里给一个[Clash汉化补丁]
 >**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]

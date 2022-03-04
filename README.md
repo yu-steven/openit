@@ -134,7 +134,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 ## iOS
 首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[(如图)](https://github.com/git-yusteven/openit#shadowrocket支持的协议--返回)简单易用并支持分享节点; 
-Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x是更贵;
+Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x则更贵;
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面--返回)更加美观定制([教程] and [神机规则]); 
 Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;Potatso 2偏小众;以上软件购买时必须使用外区Apple ID下载(首推美区);
 当然也有为广大白嫖用户准备的Potatso(只支持ss协议)；OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)

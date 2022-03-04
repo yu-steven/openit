@@ -64,7 +64,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 
 ## Windows
-首推[SS](https://shadowsockshelp.github.io/Shadowsocks/windows.html),翻墙始祖，虽只支持SS协议，但网上还是主流配置；但我更推荐[v2rayN](https://github.com/git-yusteven/openit#v2ray)和[Clash](https://github.com/git-yusteven/openit#clash)，[v2rayN](https://github.com/git-yusteven/openit#v2ray)支持格式众多，但v2系列协议url格式不统一；[Clash](https://github.com/git-yusteven/openit#clash)也可，与[v2rayN](https://github.com/git-yusteven/openit#v2ray)不相上下；而[SSR](https://github.com/git-yusteven/openit#shadowsocksr)只支持ssr协议
+首推SS 翻墙始祖，虽只支持SS协议，但网上还是主流配置；但我更推荐v2rayN和Clash，v2rayN支持格式众多，但v2系列协议url格式不统一；Clash也可，与v2rayN不相上下；而SSR只支持ssr协议
 >**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]

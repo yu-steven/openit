@@ -71,7 +71,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 [ss]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.32/v2rayN-Core.zip
+[v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.34/v2rayN-Core.zip
 [clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.10/Clash.for.Windows-0.19.10-win.7z
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 
@@ -207,7 +207,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
-*2022.2.14---v4.32*
+*2022.3.2---v4.34*
 ### Android
 ` https://github.com/2dust/v2rayNG/releases/`
 *2022.2.3---v1.6.30*

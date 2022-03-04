@@ -64,7 +64,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化[Clash汉化补丁]配合v0.19.11版本；SS和SSR，只支持ss或ssr协议，在网上还是主流配置
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化[Clash汉化补丁]·[教程](https://yuncun.xyz/archives/clash.html)配合v0.19.11版本；SS和SSR，只支持ss或ssr协议，在网上还是主流配置
 >**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
@@ -219,7 +219,9 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ### Linux
 ` https://github.com/Dreamacro/clash/releases/`
 *2022.1.2---v1.9.0*
-
+### Clash 汉化补丁
+`https://github.com/BoyceLig/Clash_Chinese_Patch/releases/`
+*2022.3.4---v0.19.11*
 ## ClashX
 ### macOS
 ` https://github.com/yichengchen/clashX/releases/`

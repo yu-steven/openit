@@ -36,13 +36,13 @@ Openit
 
 [Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **Base64**
-` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long`
+```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long```
 
 **Clash**
-` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml`
+```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml```
 
 **HTTPS**
-` https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https`
+```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 
 Base64适用于众多平台和软件，Clash专属于Clash系软件，HTTPS专属于Shadowrocket
 HTTPS持续有效，无需更新    [源文件](https://github.com/git-yusteven/openit/raw/main/url)

@@ -179,6 +179,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
 ## Android TV
 什么，电视翻墙？？？
+也可以通过软路由翻墙
 ### ｜[SS](https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
 [SS]: https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk
 ***

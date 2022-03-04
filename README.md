@@ -202,7 +202,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 *2019.11.13---v1.9.4*
 ### Android
 ` https://github.com/shadowsocksrr/shadowsocksr-android/releases/`
-**2018.3.7---v3.5.3*
+*2018.3.7---v3.5.3*
 
 ## v2ray
 ### Windows

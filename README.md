@@ -64,7 +64,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化[[Clash汉化补丁]](https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.11/app.asar)配合v0.19.11版本；SS和SSR，只支持ss或ssr协议，在网上还是主流配置
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化[Clash汉化补丁]配合v0.19.11版本；SS和SSR，只支持ss或ssr协议，在网上还是主流配置
 >**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
@@ -74,7 +74,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.34/v2rayN-Core.zip
 [clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-win.7z
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-
+[Clash汉化补丁]: https://github.abskoop.workers.dev/https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.11/app.asar
 ## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
 >**.7z文件如何解压？**

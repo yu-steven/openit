@@ -14,7 +14,7 @@ jobs:
         # personal access token
         token: ${{ secrets.BASE64_NAME }}
     - name: config git
-      run: git config --global user.email "yxyusteven@gmail.com"&&git config --global user.name "git-yusteven"
+      run: git config --global user.name "github-actions[bot]"&&git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - name: Write
       run: base64 url > long
     - name: check for changes

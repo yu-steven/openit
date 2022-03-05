@@ -239,7 +239,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ## Time in Stars
-
+<!--替换成仓库和名字就可以用了
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/Loyalsoldier/clash-rules)
 
 #### *Quantumult X* UI界面  [返回](https://github.com/git-yusteven/openit#ios)

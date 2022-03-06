@@ -53,7 +53,6 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 这是注释文本，不会显示-->
 
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
-所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。
 ***
 *最后更新时间2022.2.25-22:32*
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--点击回来)选择要下载的文件
@@ -232,12 +231,13 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ` https://github.com/Qv2ray/Qv2ray/releases/`
 *2021.6.17---v2.7.0* **The End**
 ***
-# 许可证
+# 声明
 本仓库采用 CC BY-SA 4.0 许可协议
 
 著作权归作者所有，节点归IP所有者所有
 转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
+所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。
 ## Time in Stars
 <!--替换成仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/Loyalsoldier/clash-rules)

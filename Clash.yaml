@@ -5,863 +5,407 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_771 |19.94Mb, server: 45.11.1.158, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: JP_785 |27.56Mb, server: 45.11.1.158, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: JP_747 |19.02Mb, server: 45.11.1.158, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: JP_780 |27.75Mb, server: 45.11.1.158, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: JP_768 |15.30Mb, server: 45.11.1.158, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: JP_777 |15.73Mb, server: 45.11.1.158, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: IR_698 |24.94Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: IT_706 |17.29Mb, server: 158.58.173.240, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1708 |20.73Mb, server: 167.88.62.104, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_144 |17.92Mb, server: 198.57.27.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_253 |16.69Mb, server: 198.57.27.218, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_2095 |18.67Mb, server: 38.114.114.69, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA_116 |19.08Mb, server: 198.57.27.218, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CA_121 |19.19Mb, server: 198.57.27.218, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_3135 |20.00Mb, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_3009 |19.40Mb, server: 134.195.196.97, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA_119 |16.03Mb, server: 198.57.27.218, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_241 |19.21Mb, server: 198.57.27.218, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_226 |18.94Mb, server: 198.57.27.218, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1568 |18.08Mb, server: 167.88.61.70, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1578 |19.84Mb, server: 38.91.102.86, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA_111 |17.09Mb, server: 198.57.27.218, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Relay_ |18.28Mb, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22Host%22:%22198.41.221.169%22%7D"}, udp: true}
-  - {name: CA_106 |19.14Mb, server: 198.57.27.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_257 |17.55Mb, server: 198.57.27.218, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb, server: sg.xxioixx.com, port: 443, type: trojan, password: 93bda856-e793-39cd-9a53-a113a80d68a0, sni: sg.xxioixx.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb, server: gz2.52168.xyz, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: ZZ_3085 |20.64Mb, server: 134.195.196.163, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: IT_699 |17.63Mb, server: 158.58.173.240, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_200 |19.22Mb, server: 198.57.27.172, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2990 |20.68Mb, server: 134.195.196.97, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: IPLC, server: 122.9.62.15, port: 4848, type: ss, cipher: chacha20-ietf-poly1305, password: f46dcfa9264802877761045b54f69eb689c00d0d23af2139ce8a9608767fd00c, udp: true}
+  - {name: 美国纽约IPLC专线, server: 122.9.54.75, port: 5590, type: ss, cipher: chacha20-ietf-poly1305, password: 82e2b056d73b89bfbbe0ef9127315b9a0144e13bcd2f545c59bce6867a4fd723, udp: true}
+  - {name: HK, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
+  - {name: 中国香港Huawei CN2-1, server: 49.0.231.23, port: 32612, type: vmess, uuid: 6dfa7afc-14b7-43bf-e762-a171c06f9572, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IPLC, server: 122.9.62.50, port: 6601, type: ss, cipher: chacha20-ietf-poly1305, password: 8d8c2570832b1650c0024f6d1d3302e4885ba53852b0103d71e16fbae1a27c50, udp: true}
+  - {name: HK 2, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
   - {name: _中国_老杨爱分享_77, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: IPLC 2, server: 122.9.62.27, port: 3666, type: ss, cipher: chacha20-ietf-poly1305, password: f75636d4e8479daaae3e020aa4f6b200ecedb14c06031a98b8a1d8d7f3198034, udp: true}
-  - {name: T.20.新加坡.中继3, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: T.40.台湾.中继3, server: fsyd.wecanfly.top, port: 51133, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
-  - {name: "*🇨🇳TW -396 TG@moon365free", server: fsyd.wecanfly.top, port: 51133, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: HK, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
-  - {name: HK 2, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
-  - {name: JP_910, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
   - {name: "*🇭🇰HK -393 TG@moon365free", server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: IPLC 3, server: 122.9.62.50, port: 6601, type: ss, cipher: chacha20-ietf-poly1305, password: 8d8c2570832b1650c0024f6d1d3302e4885ba53852b0103d71e16fbae1a27c50, udp: true}
-  - {name: 美国纽约IPLC专线, server: 122.9.54.75, port: 5590, type: ss, cipher: chacha20-ietf-poly1305, password: 82e2b056d73b89bfbbe0ef9127315b9a0144e13bcd2f545c59bce6867a4fd723, udp: true}
-  - {name: _IN_印度_67, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _IN_印度, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _IN_印度_7, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 日本_R_498, server: iepl-hn01.qqgg.work, port: 27078, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 越南, server: iepl-hn01.qqgg.work, port: 43738, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: JP_807, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: JP_90, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 香港 038, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: T.40.台湾.中继2, server: cscu.wecanfly.top, port: 51132, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
-  - {name: "*🇭🇰HK -408 TG@moon365free", server: hygz.doggogogo.top, port: 50102, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: hygz.doggogogo.top, skip-cert-verify: true, udp: true}
-  - {name: _IN_印度_62, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _IN_印度_134, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: T.10.日本.中继1, server: hygz.doggogogo.top, port: 53030, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
-  - {name: _IN_印度_52, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: HongKong——Taiwan -1, server: 13.70.21.135, port: 23391, type: vmess, uuid: d4b64497-2773-4281-96f1-fc2914ea3c28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%2213.70.21.135%22%7D"}, udp: true}
   - {name: "*🇸🇬SG -394 TG@moon365free", server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国_93, server: 51.255.66.185, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国_23, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: JP_910, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: T.20.新加坡.中继3, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: SG_1993, server: 13.67.113.86, port: 80, type: vmess, uuid: 943c9358-c3da-4ece-bae3-b35bed1743fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.67.113.86}, udp: true}
+  - {name: 香港 038, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: "*🇭🇰HK -408 TG@moon365free", server: hygz.doggogogo.top, port: 50102, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: hygz.doggogogo.top, skip-cert-verify: true, udp: true}
+  - {name: 越南, server: iepl-hn01.qqgg.work, port: 43738, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: T.40.台湾.中继2, server: cscu.wecanfly.top, port: 51132, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
+  - {name: "*🇨🇳TW -396 TG@moon365free", server: fsyd.wecanfly.top, port: 51133, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
   - {name: T.10.日本.中继3, server: fsyd.wecanfly.top, port: 51221, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: 38.91.102.86, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国_22, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 2, server: 169.197.142.187, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 3, server: 38.143.66.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国_24, server: 38.91.102.86, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国_7, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国_87, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _FR_法国_43, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: vpn软件提取, server: iepl-hn01.qqgg.work, port: 48293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: "俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]", server: 122.9.62.60, port: 10081, type: ss, cipher: chacha20-ietf-poly1305, password: dce4c0411b7146eb3d60ed21fd7a9e3e621ac67328fa30daa463f6ac071f4620, udp: true}
-  - {name: _US_美国 4, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 菲律宾_R_280, server: gzyd-01.yyuuii.cyou, port: 45705, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: free.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: vpn软件提取 2, server: gzyd-01.yyuuii.cyou, port: 20003, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _US_美国_10, server: 38.143.66.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国_44, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_2, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _FR_法国_52, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: JP_807, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 我在东京眺望北海道 ほっかいどう -1（100Mbps）, server: 153.127.13.203, port: 18899, type: vmess, uuid: 3cc23eed-b3f9-4366-c085-76117f92268b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%22153.127.13.203%22%7D"}, udp: true}
+  - {name: T.10.日本.中继1, server: hygz.doggogogo.top, port: 53030, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
+  - {name: vpn软件提取, server: gzyd-01.yyuuii.cyou, port: 20003, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IR_698 |24.94Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
+  - {name: CN_343, server: 117.185.229.8, port: 20158, type: ss, cipher: aes-256-gcm, password: bc80ff25-744f-4ddf-abe8-fc871cf561a6, udp: true}
   - {name: 台湾极速专线G1 VIP会员, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _US_美国 5, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国_13, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国_44, server: 38.143.66.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国_41, server: 38.143.66.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 2, server: 198.57.27.218, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 4, server: 198.57.27.218, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大_14, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 5, server: 198.57.27.218, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大_15, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国_7 2, server: 38.143.66.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_3, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _FR_法国_151, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国_1, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_10, server: 134.195.196.12, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国_57, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 6, server: 38.86.135.36, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大_62, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_53, server: 134.195.196.12, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 英国_R_366, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _SG_新加坡_37, server: 172.104.168.83, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 德国, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: _US_美国, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: vpn软件提取 2, server: iepl-hn01.qqgg.work, port: 48293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 菲律宾_R_280, server: gzyd-01.yyuuii.cyou, port: 45705, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: _CA_加拿大_1, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_1 2, server: 134.195.196.12, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_38, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_7, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国_47, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_85, server: 134.195.196.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 7, server: 167.88.63.79, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大_2 2, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 8, server: 38.143.66.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国_17, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_8, server: 134.195.196.12, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_34, server: 134.195.196.12, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 9, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 10, server: 169.197.142.187, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 9, server: 198.57.27.218, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_87, server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大 10, server: 198.57.27.218, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 泰国_R_459, server: gzyd-01.yyuuii.cyou, port: 29404, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 12, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_R_370, server: iepl-gz.yyuuii.cyou, port: 15658, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 13, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 14, server: 198.57.27.218, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大 15, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 16, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _GB_英国_53, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 印度_R_361, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大_89, server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 17, server: 198.57.27.218, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: vpn软件提取 3, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大_96, server: 134.195.196.12, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 加拿大, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 18, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大_64, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大 19, server: 198.57.27.218, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大_42, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_48, server: 134.195.196.12, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 印度, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 20, server: 198.57.27.218, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大 21, server: 134.195.196.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 菲律宾, server: gzyd-01.yyuuii.cyou, port: 45705, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: vpn软件提取 4, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 英国_R_366, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 301更新_CA_加拿大_69, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_20, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 22, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: vpn软件提取 5, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 23, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 土耳其_R_458, server: iepl-hn01.qqgg.work, port: 26563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 立陶宛_R_456, server: ieplszhk-sz.qqgg.work, port: 56326, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大_17, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_2 3, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 菲律宾_R_196, server: iepl-hn01.qqgg.work, port: 48293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 24, server: 134.195.196.12, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 25, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国_28, server: 38.86.135.36, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: JP_1853, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
+  - {name: _CA_加拿大_2, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大_10, server: 134.195.196.12, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _GB_英国, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: vpn软件提取 3, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 加拿大, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 俄罗斯_R_324, server: gzyd-01.yyuuii.cyou, port: 26096, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大_9, server: 134.195.196.12, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 26, server: 134.195.196.12, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大_16, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大_22, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 27, server: 134.195.196.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_37, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 301更新_GB_英国_78, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大_55, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: vpn软件提取 6, server: jx-002.yyuuii.cyou, port: 10018, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 28, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大 29, server: 134.195.196.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: vpn软件提取 4, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 印度_R_361, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 印度, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_R_370, server: iepl-gz.yyuuii.cyou, port: 15658, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _GB_英国_44, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大 5, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大_69, server: 134.195.196.12, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.12, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大_6, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 智利, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: vpn软件提取 7, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: Alien_1, server: hwsrv-910530.hostwindsdns.com, port: 23308, type: vmess, uuid: 5bf287e9-c85d-40f2-e85b-bf9774d7fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: "%7B%22host%22:%22104.168.176.152%22%7D"}, udp: true}
+  - {name: vpn软件提取 5, server: jx-002.yyuuii.cyou, port: 10018, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _US_美国_22, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: T.40.台湾.中继3, server: fsyd.wecanfly.top, port: 51133, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国_10, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 8, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 阿根廷, server: iepl-hn01.qqgg.work, port: 19563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大_51, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_13, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_25, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: default_name, server: 162.159.204.77, port: 443, type: vmess, uuid: 204a334a-d58e-40ce-e954-1605d0d6993f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: euserv1.aifx.eu.org}, udp: true}
-  - {name: 阿根廷_R_437, server: iepl-hn01.qqgg.work, port: 19563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 30, server: 198.57.27.218, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国_24 2, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大_4, server: 134.195.196.12, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: default_name 2, server: 104.21.84.81, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
-  - {name: 智利_R_445, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大_66, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 11, server: 169.197.142.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: default_name_5, server: 198.41.212.9, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: _CA_加拿大 31, server: 134.195.196.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 32, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 33, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_1 3, server: 134.195.196.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国_30, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _GB_英国_51, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _GB_英国, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: default_name 3, server: 198.41.212.10, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: _CA_加拿大 34, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: vpn软件提取 6, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: vpn软件提取 7, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 立陶宛_R_456, server: ieplszhk-sz.qqgg.work, port: 56326, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _FR_法国_29, server: 51.255.66.185, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大_16, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _FR_法国_20, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: default_name, server: 104.21.84.81, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
+  - {name: _CA_加拿大_27, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 土耳其_R_458, server: iepl-hn01.qqgg.work, port: 26563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _CA_加拿大 9, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_加拿大_28, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大_11, server: 134.195.196.12, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 10, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 2, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: _CA_加拿大_52, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大_60, server: 134.195.196.12, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 12, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国_84, server: 38.143.66.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 13, server: 169.197.142.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国 2, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 301破解_US_美国_67, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: _US_美国_12, server: 38.143.66.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_油管 TG 8度科技, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: _US_美国_13 2, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: 301更新_CA_加拿大_87, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大_20, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 3, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _FR_法国_28, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大_22, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _FR_法国_151, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大_13, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_13, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
+  - {name: _CA_加拿大 11, server: 134.195.196.12, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大 12, server: 134.195.196.12, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: _US_美国_55, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: _JP_日本_38, server: xmlinodejp2.aifx.eu.org, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: "%7B%22host%22:%22xmlinodejp2.aifx.eu.org%22%7D"}, udp: true}
+  - {name: _CA_加拿大_37, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_油管 TG 8度科技, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: default_name 2, server: 162.159.204.77, port: 443, type: vmess, uuid: 204a334a-d58e-40ce-e954-1605d0d6993f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: euserv1.aifx.eu.org}, udp: true}
+  - {name: JP_90, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: _CA_加拿大_7, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大_51, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 13, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大_85, server: 134.195.196.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -880,871 +424,416 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - T.40.台湾.中继3
+      - 中国香港Huawei CN2-1
       - 香港 038
       - T.40.台湾.中继2
       - 台湾极速专线G1 VIP会员
+      - T.40.台湾.中继3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1760,216 +849,102 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_771 |19.94Mb
-      - JP_785 |27.56Mb
-      - JP_747 |19.02Mb
-      - JP_780 |27.75Mb
-      - JP_768 |15.30Mb
-      - JP_777 |15.73Mb
-      - IR_698 |24.94Mb
-      - IT_706 |17.29Mb
-      - US_1708 |20.73Mb
-      - CA_144 |17.92Mb
-      - CA_253 |16.69Mb
-      - US_2095 |18.67Mb
-      - CA_116 |19.08Mb
-      - CA_121 |19.19Mb
-      - ZZ_3135 |20.00Mb
-      - ZZ_3009 |19.40Mb
-      - CA_119 |16.03Mb
-      - CA_241 |19.21Mb
-      - CA_226 |18.94Mb
-      - US_1568 |18.08Mb
-      - US_1578 |19.84Mb
-      - CA_111 |17.09Mb
-      - Relay_ |18.28Mb
-      - CA_106 |19.14Mb
-      - CA_257 |17.55Mb
-      - Relay_🇷🇺RU-🇷🇺RU_873 |21.71Mb
-      - Relay_🇨🇳CN-🇳🇱NL_330 |17.07Mb
-      - ZZ_3085 |20.64Mb
-      - IT_699 |17.63Mb
-      - CA_200 |19.22Mb
-      - ZZ_2990 |20.68Mb
+      - 美国纽约IPLC专线
+      - HK
+      - 中国香港Huawei CN2-1
       - IPLC
+      - HK 2
       - _中国_老杨爱分享_77
       - IPLC 2
-      - T.20.新加坡.中继3
-      - T.40.台湾.中继3
-      - "*🇨🇳TW -396 TG@moon365free"
-      - HK
-      - HK 2
-      - JP_910
       - "*🇭🇰HK -393 TG@moon365free"
-      - IPLC 3
-      - 美国纽约IPLC专线
-      - _IN_印度_67
-      - _IN_印度
-      - _IN_印度_7
-      - 日本_R_498
-      - 越南
-      - JP_807
-      - JP_90
-      - 香港 038
-      - T.40.台湾.中继2
-      - "*🇭🇰HK -408 TG@moon365free"
-      - _IN_印度_62
-      - _IN_印度_134
-      - T.10.日本.中继1
-      - _IN_印度_52
+      - HongKong——Taiwan -1
       - "*🇸🇬SG -394 TG@moon365free"
-      - _FR_法国_93
-      - _US_美国_23
+      - JP_910
+      - T.20.新加坡.中继3
+      - SG_1993
+      - 香港 038
+      - "*🇭🇰HK -408 TG@moon365free"
+      - 越南
+      - T.40.台湾.中继2
+      - "*🇨🇳TW -396 TG@moon365free"
       - T.10.日本.中继3
-      - _US_美国
-      - _US_美国_22
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国_24
-      - _US_美国_7
-      - _US_美国_87
-      - _FR_法国_43
+      - JP_807
+      - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.10.日本.中继1
       - vpn软件提取
-      - 俄罗斯 - 新西伯利亚 [BGPA] [SVIP] [Netflix]
-      - _US_美国 4
-      - 菲律宾_R_280
-      - 全球直连①-TikTok
-      - vpn软件提取 2
-      - _US_美国_10
-      - _GB_英国_44
-      - _CA_加拿大_2
-      - _FR_法国_52
-      - _CA_加拿大
+      - IR_698 |24.94Mb
+      - CN_343
       - 台湾极速专线G1 VIP会员
-      - _US_美国 5
-      - _US_美国_13
-      - _US_美国_44
-      - _US_美国_41
+      - 德国
+      - _US_美国
+      - vpn软件提取 2
+      - 菲律宾_R_280
+      - _CA_加拿大
+      - _CA_加拿大_1
+      - 全球直连①-TikTok
+      - 英国_R_366
+      - 301更新_CA_加拿大_69
+      - JP_1853
+      - _CA_加拿大_2
       - _CA_加拿大 2
+      - _CA_加拿大_10
+      - _GB_英国
+      - vpn软件提取 3
+      - 加拿大
+      - 俄罗斯_R_324
+      - vpn软件提取 4
+      - 印度_R_361
+      - 印度
       - _CA_加拿大 3
       - _CA_加拿大 4
-      - _CA_加拿大_14
-      - _CA_加拿大 5
-      - _CA_加拿大_15
-      - _US_美国_7 2
-      - _CA_加拿大 6
-      - _CA_加拿大_3
-      - _FR_法国_151
-      - _US_美国_1
-      - _CA_加拿大_10
-      - _US_美国_57
-      - _US_美国 6
-      - _CA_加拿大_62
-      - _CA_加拿大_53
-      - 英国_R_366
-      - _SG_新加坡_37
-      - _CA_加拿大_1
-      - _CA_加拿大_1 2
-      - _CA_加拿大_38
-      - _CA_加拿大_7
-      - _US_美国_47
-      - _CA_加拿大_85
-      - _US_美国 7
-      - _CA_加拿大_2 2
-      - _US_美国 8
-      - _GB_英国_17
-      - _CA_加拿大 7
-      - _CA_加拿大_8
-      - _CA_加拿大_34
-      - _US_美国 9
-      - _CA_加拿大 8
-      - _US_美国 10
-      - _CA_加拿大 9
-      - _CA_加拿大_87
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - 泰国_R_459
-      - _CA_加拿大 12
       - 美国_R_370
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _GB_英国_53
-      - 印度_R_361
-      - _CA_加拿大_89
-      - _CA_加拿大 17
-      - vpn软件提取 3
-      - _CA_加拿大_96
-      - 加拿大
-      - _CA_加拿大 18
-      - _CA_加拿大_64
-      - _CA_加拿大 19
-      - _CA_加拿大_42
-      - _CA_加拿大_48
-      - 印度
-      - _CA_加拿大 20
-      - _CA_加拿大 21
-      - 菲律宾
-      - vpn软件提取 4
-      - 301更新_CA_加拿大_69
-      - _CA_加拿大_20
-      - _CA_加拿大 22
-      - vpn软件提取 5
-      - _CA_加拿大 23
-      - 土耳其_R_458
-      - 立陶宛_R_456
-      - _CA_加拿大_17
-      - _CA_加拿大_2 3
-      - 菲律宾_R_196
-      - _CA_加拿大 24
-      - _CA_加拿大 25
-      - _US_美国_28
-      - 俄罗斯_R_324
-      - _CA_加拿大_9
-      - _CA_加拿大 26
-      - _CA_加拿大_16
-      - _CA_加拿大_22
-      - _CA_加拿大 27
-      - _CA_加拿大_37
-      - 301更新_GB_英国_78
-      - _CA_加拿大_55
-      - vpn软件提取 6
-      - _CA_加拿大 28
-      - _CA_加拿大 29
+      - _GB_英国_44
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - _CA_加拿大_69
+      - _CA_加拿大 7
+      - _CA_加拿大_6
       - 智利
-      - vpn软件提取 7
+      - Alien_1
+      - vpn软件提取 5
+      - _US_美国_22
+      - T.40.台湾.中继3
+      - _GB_英国_10
+      - _CA_加拿大 8
       - 阿根廷
-      - _CA_加拿大_51
-      - _CA_加拿大_13
-      - _US_美国_25
+      - vpn软件提取 6
+      - vpn软件提取 7
+      - 立陶宛_R_456
+      - _FR_法国_29
+      - _CA_加拿大_16
+      - _FR_法国_20
       - default_name
-      - 阿根廷_R_437
-      - _CA_加拿大 30
-      - _US_美国_24 2
-      - _CA_加拿大_4
-      - default_name 2
-      - 智利_R_445
-      - _CA_加拿大_66
-      - _US_美国 11
-      - default_name_5
-      - _CA_加拿大 31
-      - _CA_加拿大 32
-      - _CA_加拿大 33
-      - _CA_加拿大_1 3
-      - _US_美国_30
-      - _GB_英国_51
-      - _GB_英国
-      - default_name 3
-      - _CA_加拿大 34
+      - _CA_加拿大_27
+      - 土耳其_R_458
+      - _CA_加拿大 9
+      - _CA_加拿大_28
+      - _CA_加拿大_11
+      - _CA_加拿大 10
+      - _US_美国 2
       - _CA_加拿大_52
-      - _CA_加拿大_60
-      - _US_美国 12
-      - _US_美国_84
-      - _US_美国 13
-      - _GB_英国 2
-      - 301破解_US_美国_67
-      - _US_美国_12
-      - US_油管 TG 8度科技
-      - _US_美国_13 2
-      - 301更新_CA_加拿大_87
+      - _CA_加拿大_20
+      - _US_美国 3
+      - _FR_法国_28
+      - _CA_加拿大_22
+      - _FR_法国_151
+      - _CA_加拿大_13
+      - _US_美国_13
+      - _CA_加拿大 11
+      - _CA_加拿大 12
       - _US_美国_55
-      - _JP_日本_38
+      - _CA_加拿大_37
+      - US_油管 TG 8度科技
+      - default_name 2
+      - JP_90
+      - _CA_加拿大_7
+      - _CA_加拿大_51
+      - _CA_加拿大 13
+      - _CA_加拿大_85
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

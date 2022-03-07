@@ -101,7 +101,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [![点击跳转至Mac App Store](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
 
 ## Android
-首推[Google play](https://play.google.com/store/apps)的v2rayNG,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有Clash也推荐，简洁美观；Surfboard是一个与Surge配置兼容的代理实用工具;SS和SSR只支持ss和ssr
+首推[Google play](https://play.google.com/store/apps)的v2rayNG,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有Clash也推荐，简洁美观；kitsunebi老牌翻墙工具；Surfboard是一个与Surge配置兼容的代理实用工具;SS和SSR只支持ss和ssr
 ### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">
 <img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
@@ -132,7 +132,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
 [apk-clash]: https://apkpure.com/clash-for-android/com.github.kr328.clash/download
-[apk-Kitsunebi]https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
+[apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
 [apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download
 [apk-ssr]: https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
 [google-ss]: https://play.google.com/store/apps/details?id=com.github.shadowsocks

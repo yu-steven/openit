@@ -83,6 +83,8 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
 ### Quantumult X(Arm) *$7.99*
 [![点击跳转至Mac App Store][macos-black]][Quantumult X]
+### Surge(Arm) *$49.99* App内购买
+[![点击跳转至Mac App Store][macos-black]][Surge]
 
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-mac.7z
@@ -91,6 +93,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
+[Surge]: https://apps.apple.com/app/surge-4/id1442620678
 [macos-black]: https://github.com/git-yusteven/tag/raw/main/macos-black.svg
 ### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 
@@ -141,7 +144,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [![轻触跳转至App Store][svg-apple]][ipk-ssr]
 ### Quantumult X *$7.99*
 [![轻触跳转至App Store][svg-apple]][ipk-quanx]
-### Surge *$49.99*(App内购买)
+### Surge *$49.99* App内购买
 [![轻触跳转至App Store][svg-apple]][ipk-surge]
 ### Quantumult  *4.99*
 [![轻触跳转至App Store][svg-apple]][ipk-quan]
@@ -162,12 +165,12 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [ipk-quan]: https://apps.apple.com/app/quantumult/id1252015438
 [ipk-quanx]: https://apps.apple.com/app/quantumult-x/id1443988620
 [ipk-surge]: https://apps.apple.com/app/surge-4/id1442620678
-[ipk-loon]: https://apps.apple.com/app/loon/id1373567447
 [ipk-p2]: https://apps.apple.com/app/potatso-2/id1162704202
 [ipk-p]: https://apps.apple.com/app/shadowrocket/id1239860606
+[ipk-stash]: https://apps.apple.com/app/stash/id1596063349
+[ipk-loon]: https://apps.apple.com/app/loon/id1373567447
 [ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197
 [ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
-[ipk-st]: https://apps.apple.com/app/stash/id1596063349
 [svg-apple]: https://github.com/git-yusteven/tag/raw/main/ios-black.svg
 [教程]: https://limbopro.com/archives/3846.html
 [神机规则]: https://merlinblog.xyz/wiki/quanx.html

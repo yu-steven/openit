@@ -147,6 +147,8 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [![轻触跳转至App Store][svg-apple]][ipk-quan]
 ### Potatso 2  *$2.99*
 [![轻触跳转至App Store][svg-apple]][ipk-p2]
+### Stash *$2.99*
+[![轻触跳转至App Store][svg-apple]][ipk-st]
 ### Loon *$4.99*
 [![轻触跳转至App Store][svg-apple]][ipk-loon]
 ### Potatso  *Free*
@@ -165,6 +167,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [ipk-p]: https://apps.apple.com/app/shadowrocket/id1239860606
 [ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197
 [ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
+[ipk-st]: https://apps.apple.com/app/stash/id1596063349
 [svg-apple]: https://github.com/git-yusteven/tag/raw/main/ios-black.svg
 [教程]: https://limbopro.com/archives/3846.html
 [神机规则]: https://merlinblog.xyz/wiki/quanx.html

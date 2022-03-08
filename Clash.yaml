@@ -5,407 +5,523 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国纽约IPLC专线, server: 122.9.54.75, port: 5590, type: ss, cipher: chacha20-ietf-poly1305, password: 82e2b056d73b89bfbbe0ef9127315b9a0144e13bcd2f545c59bce6867a4fd723, udp: true}
-  - {name: HK, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
-  - {name: 中国香港Huawei CN2-1, server: 49.0.231.23, port: 32612, type: vmess, uuid: 6dfa7afc-14b7-43bf-e762-a171c06f9572, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IPLC, server: 122.9.62.50, port: 6601, type: ss, cipher: chacha20-ietf-poly1305, password: 8d8c2570832b1650c0024f6d1d3302e4885ba53852b0103d71e16fbae1a27c50, udp: true}
-  - {name: HK 2, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
+  - {name: "①V2RAY [vip2]广移-中转-新加坡", server: 37.mxysss.top, port: 42237, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒗V2RAY [vip1]电信-中转-新加坡", server: 29.mxysss.top, port: 41129, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本", server: 53.mxysss.top, port: 42253, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒈V2RAY [vip1]北京BGP-中转-AWS香港", server: 9.mxysss.top, port: 41109, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "9V2RAY [vip2]北京BGP-中转-日本", server: 45.mxysss.top, port: 42245, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒏V2RAY [vip1]电信-中转-日本", server: 16.mxysss.top, port: 41116, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒊V2RAY [vip1]广移-中转-日本", server: 11.mxysss.top, port: 41111, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒖V2RAY [vip1]上海cn2-中转-新加坡", server: 27.mxysss.top, port: 41127, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K", server: 50.mxysss.top, port: 43350, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒉V2RAY [vip1]广移-中转-新加坡", server: 10.mxysss.top, port: 41110, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒕V2RAY [vip1]北京BGP-中转-日本", server: 26.mxysss.top, port: 41126, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "10V2RAY [vip2]北京BGP-中转-日本", server: 46.mxysss.top, port: 42246, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒒V2RAY[vip1]北京BGP-中转-日本", server: 19.mxysss.top, port: 41119, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "④V2RAY [vip2]广移-中转-日本", server: 40.mxysss.top, port: 42240, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒍V2RAY [vip1]北京BGP-中转-日本", server: 14.mxysss.top, port: 41114, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒋V2RAY [vip1]广移-中转-新加坡", server: 12.mxysss.top, port: 41112, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "8V2RAY [vip2]北京BGP-中转-日本", server: 44.mxysss.top, port: 42244, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "5V2RAY [vip2]上海联通-中转-日本", server: 41.mxysss.top, port: 42241, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒑V2RAY [vip1]北京BGP-中转-日本", server: 18.mxysss.top, port: 41118, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒔V2RAY [vip1]北京BGP-中转-日本", server: 21.mxysss.top, port: 41121, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒌V2RAY [vip1]上海cn2-中转-日本", server: 13.mxysss.top, port: 41113, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "7V2RAY [vip2]北京BGP-中转-日本", server: 43.mxysss.top, port: 42243, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "③V2RAY [vip2]广移-中转-日本", server: 39.mxysss.top, port: 42239, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒎V2RAY [vip1]广移-中转-日本", server: 15.mxysss.top, port: 41115, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒐V2RAY [vip1]广移-中转-日本", server: 17.mxysss.top, port: 41117, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K", server: 51.mxysss.top, port: 43351, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒓V2RAY [vip1]北京BGP-中转-日本", server: 20.mxysss.top, port: 41120, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本", server: 54.mxysss.top, port: 42254, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "6V2RAY [vip2]北京BGP-中转-日本", server: 42.mxysss.top, port: 42242, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "②V2RAY [vip2]广移-中转-新加坡", server: 38.mxysss.top, port: 42238, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP", server: 58.mxysss.top, port: 42258, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⑪V2RAY [vip2]電信-中转-日本", server: 52.mxysss.top, port: 42252, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K", server: 48.mxysss.top, port: 43348, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国", server: 55.mxysss.top, port: 42255, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒘V2RAY [vip1]广州电信-中转-美国", server: 31.mxysss.top, port: 41131, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⒙V2RAY [vip1]北京BGP-中转-美国", server: 32.mxysss.top, port: 41132, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国", server: 56.mxysss.top, port: 42256, type: vmess, uuid: 95731f7b-cbd6-31b8-8024-9759f4e09b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IPLC, server: 122.9.62.27, port: 3666, type: ss, cipher: chacha20-ietf-poly1305, password: f75636d4e8479daaae3e020aa4f6b200ecedb14c06031a98b8a1d8d7f3198034, udp: true}
+  - {name: HK, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
   - {name: _中国_老杨爱分享_77, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IPLC 2, server: 122.9.62.27, port: 3666, type: ss, cipher: chacha20-ietf-poly1305, password: f75636d4e8479daaae3e020aa4f6b200ecedb14c06031a98b8a1d8d7f3198034, udp: true}
   - {name: "*🇭🇰HK -393 TG@moon365free", server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: HongKong——Taiwan -1, server: 13.70.21.135, port: 23391, type: vmess, uuid: d4b64497-2773-4281-96f1-fc2914ea3c28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%2213.70.21.135%22%7D"}, udp: true}
-  - {name: "*🇸🇬SG -394 TG@moon365free", server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: JP_910, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: T.20.新加坡.中继3, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: SG_1993, server: 13.67.113.86, port: 80, type: vmess, uuid: 943c9358-c3da-4ece-bae3-b35bed1743fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.67.113.86}, udp: true}
-  - {name: 香港 038, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: IPLC 2, server: 122.9.62.50, port: 6601, type: ss, cipher: chacha20-ietf-poly1305, password: 8d8c2570832b1650c0024f6d1d3302e4885ba53852b0103d71e16fbae1a27c50, udp: true}
   - {name: "*🇭🇰HK -408 TG@moon365free", server: hygz.doggogogo.top, port: 50102, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: hygz.doggogogo.top, skip-cert-verify: true, udp: true}
-  - {name: 越南, server: iepl-hn01.qqgg.work, port: 43738, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: T.40.台湾.中继2, server: cscu.wecanfly.top, port: 51132, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
-  - {name: "*🇨🇳TW -396 TG@moon365free", server: fsyd.wecanfly.top, port: 51133, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: T.10.日本.中继3, server: fsyd.wecanfly.top, port: 51221, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
   - {name: JP_807, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 我在东京眺望北海道 ほっかいどう -1（100Mbps）, server: 153.127.13.203, port: 18899, type: vmess, uuid: 3cc23eed-b3f9-4366-c085-76117f92268b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%22153.127.13.203%22%7D"}, udp: true}
-  - {name: T.10.日本.中继1, server: hygz.doggogogo.top, port: 53030, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
-  - {name: vpn软件提取, server: gzyd-01.yyuuii.cyou, port: 20003, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: IR_698 |24.94Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: CN_343, server: 117.185.229.8, port: 20158, type: ss, cipher: aes-256-gcm, password: bc80ff25-744f-4ddf-abe8-fc871cf561a6, udp: true}
-  - {name: 台湾极速专线G1 VIP会员, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 德国, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _US_美国, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: vpn软件提取 2, server: iepl-hn01.qqgg.work, port: 48293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 菲律宾_R_280, server: gzyd-01.yyuuii.cyou, port: 45705, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大_1, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: free.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: 英国_R_366, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 301更新_CA_加拿大_69, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国纽约IPLC专线, server: 122.9.54.75, port: 5590, type: ss, cipher: chacha20-ietf-poly1305, password: 82e2b056d73b89bfbbe0ef9127315b9a0144e13bcd2f545c59bce6867a4fd723, udp: true}
+  - {name: JP_90, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 越南, server: iepl-hn01.qqgg.work, port: 43738, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 香港 038, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
   - {name: JP_1853, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
-  - {name: _CA_加拿大_2, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_10, server: 134.195.196.12, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _GB_英国, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: vpn软件提取 3, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 加拿大, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 俄罗斯_R_324, server: gzyd-01.yyuuii.cyou, port: 26096, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: vpn软件提取 4, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 印度_R_361, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 印度, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_R_370, server: iepl-gz.yyuuii.cyou, port: 15658, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _GB_英国_44, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大_69, server: 134.195.196.12, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.12, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_6, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 智利, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: Alien_1, server: hwsrv-910530.hostwindsdns.com, port: 23308, type: vmess, uuid: 5bf287e9-c85d-40f2-e85b-bf9774d7fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: "%7B%22host%22:%22104.168.176.152%22%7D"}, udp: true}
-  - {name: vpn软件提取 5, server: jx-002.yyuuii.cyou, port: 10018, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _US_美国_22, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: T.40.台湾.中继3, server: fsyd.wecanfly.top, port: 51133, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
-  - {name: _GB_英国_10, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 阿根廷, server: iepl-hn01.qqgg.work, port: 19563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: vpn软件提取 6, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: vpn软件提取 7, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 立陶宛_R_456, server: ieplszhk-sz.qqgg.work, port: 56326, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: "*🇸🇬SG -394 TG@moon365free", server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: HK 2, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e, udp: true}
+  - {name: 我在东京眺望北海道 ほっかいどう -1（100Mbps）, server: 153.127.13.203, port: 18899, type: vmess, uuid: 3cc23eed-b3f9-4366-c085-76117f92268b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%22153.127.13.203%22%7D"}, udp: true}
+  - {name: T.20.新加坡.中继3, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: T.10.日本.中继3, server: fsyd.wecanfly.top, port: 51221, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: T.10.日本.中继1, server: hygz.doggogogo.top, port: 53030, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: sni.gouziyun.top, skip-cert-verify: true, udp: true}
+  - {name: vpn软件提取, server: iepl-hn01.qqgg.work, port: 48293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: vpn软件提取 2, server: gzyd-01.yyuuii.cyou, port: 20003, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 台湾极速专线G1 VIP会员, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: _FR_法国_28, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: _FR_法国_29, server: 51.255.66.185, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_16, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _FR_法国_20, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: default_name, server: 104.21.84.81, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
+  - {name: vpn软件提取 3, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 美国_R_370, server: iepl-gz.yyuuii.cyou, port: 15658, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 菲律宾_R_280, server: gzyd-01.yyuuii.cyou, port: 45705, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: _CA_加拿大_27, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 土耳其_R_458, server: iepl-hn01.qqgg.work, port: 26563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 9, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大_28, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大_11, server: 134.195.196.12, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 10, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 2, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_52, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大_20, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 3, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _FR_法国_28, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_22, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _FR_法国_151, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大_13, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_13, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.12, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大 12, server: 134.195.196.12, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: vpn软件提取 4, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 印度, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 加拿大, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 印度_R_361, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 立陶宛_R_456, server: ieplszhk-sz.qqgg.work, port: 56326, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 英国_R_366, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: vpn软件提取 5, server: jx-002.yyuuii.cyou, port: 10018, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 德国, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: vpn软件提取 6, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: _US_美国_55, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: _CA_加拿大_37, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_油管 TG 8度科技, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: default_name 2, server: 162.159.204.77, port: 443, type: vmess, uuid: 204a334a-d58e-40ce-e954-1605d0d6993f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: euserv1.aifx.eu.org}, udp: true}
-  - {name: JP_90, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大_7, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大_51, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 13, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 301更新_CA_加拿大_69, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大_13, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大_6, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 俄罗斯_R_324, server: gzyd-01.yyuuii.cyou, port: 26096, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _GB_英国_44, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 智利, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: vpn软件提取 7, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: _CA_加拿大_85, server: 134.195.196.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _FR_法国_151, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: default_name, server: 104.21.84.81, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
+  - {name: _US_美国_13, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
+  - {name: IR_698 |24.94Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: 动态BGP+IPLC_香港01_3x_1, server: flbgpi.yixuedianzishu.com, port: 58511, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港02_3x_2, server: flbgpi.yixuedianzishu.com, port: 58512, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港03_3x_3, server: flbgpi.yixuedianzishu.com, port: 58513, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港04_3x_4, server: flbgpi.yixuedianzishu.com, port: 58514, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港05_3x_5, server: flbgpi.yixuedianzishu.com, port: 58515, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港01(原生)_3x_6, server: flbgpi.yixuedianzishu.com, port: 58501, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港02(原生)_3x_7, server: flbgpi.yixuedianzishu.com, port: 58502, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港03(原生)_3x_8, server: flbgpi.yixuedianzishu.com, port: 58503, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港04(原生)_3x_9, server: flbgpi.yixuedianzishu.com, port: 58504, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港05(原生)_3x_10, server: flbgpi.yixuedianzishu.com, port: 58505, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_新加坡01(原生)_3x_11, server: flbgpi.yixuedianzishu.com, port: 58521, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_新加坡02(原生)_3x_12, server: flbgpi.yixuedianzishu.com, port: 58522, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_新加坡03(原生)_3x_13, server: flbgpi.yixuedianzishu.com, port: 58523, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾01(原生)_3x_14, server: flbgpi.yixuedianzishu.com, port: 58531, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾02(原生)_3x_15, server: flbgpi.yixuedianzishu.com, port: 58532, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾03(原生)_3x_16, server: flbgpi.yixuedianzishu.com, port: 58533, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾04(原生)_3x_17, server: flbgpi.yixuedianzishu.com, port: 58534, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾05(原生)_3x_18, server: flbgpi.yixuedianzishu.com, port: 58535, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾06(原生)_3x_19, server: flbgpi.yixuedianzishu.com, port: 58536, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾07(原生)_3x_20, server: flbgpi.yixuedianzishu.com, port: 58537, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾08(原生)_3x_21, server: flbgpi.yixuedianzishu.com, port: 58538, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾09(原生)_3x_22, server: flbgpi.yixuedianzishu.com, port: 58539, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾10(原生)_3x_23, server: flbgpi.yixuedianzishu.com, port: 58540, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_日本01(原生)_3x_24, server: flbgpi.yixuedianzishu.com, port: 58541, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_日本02(原生)_3x_25, server: flbgpi.yixuedianzishu.com, port: 58542, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_日本03(原生)_3x_26, server: flbgpi.yixuedianzishu.com, port: 58543, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_日本04(原生)_3x_27, server: flbgpi.yixuedianzishu.com, port: 58544, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_日本05(原生)_3x_28, server: flbgpi.yixuedianzishu.com, port: 58545, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_美国01(原生)_3x_29, server: flbgpi.yixuedianzishu.com, port: 58551, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_美国02(原生)_3x_30, server: flbgpi.yixuedianzishu.com, port: 58552, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_美国03(原生)_3x_31, server: flbgpi.yixuedianzishu.com, port: 58553, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_美国04(原生)_3x_32, server: flbgpi.yixuedianzishu.com, port: 58554, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_美国05(原生)_3x_33, server: flbgpi.yixuedianzishu.com, port: 58555, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -424,416 +540,550 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 中国香港Huawei CN2-1
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
       - 香港 038
-      - T.40.台湾.中继2
       - 台湾极速专线G1 VIP会员
-      - T.40.台湾.中继3
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -849,102 +1099,131 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国纽约IPLC专线
-      - HK
-      - 中国香港Huawei CN2-1
+      - ①V2RAY [vip2]广移-中转-新加坡
+      - ⒗V2RAY [vip1]电信-中转-新加坡
+      - ⑫V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - ⒈V2RAY [vip1]北京BGP-中转-AWS香港
+      - 9V2RAY [vip2]北京BGP-中转-日本
+      - ⒏V2RAY [vip1]电信-中转-日本
+      - ⒊V2RAY [vip1]广移-中转-日本
+      - ⒖V2RAY [vip1]上海cn2-中转-新加坡
+      - V2ray [vip3]③ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒉V2RAY [vip1]广移-中转-新加坡
+      - ⒕V2RAY [vip1]北京BGP-中转-日本
+      - 10V2RAY [vip2]北京BGP-中转-日本
+      - ⒒V2RAY[vip1]北京BGP-中转-日本
+      - ④V2RAY [vip2]广移-中转-日本
+      - ⒍V2RAY [vip1]北京BGP-中转-日本
+      - ⒋V2RAY [vip1]广移-中转-新加坡
+      - 8V2RAY [vip2]北京BGP-中转-日本
+      - 5V2RAY [vip2]上海联通-中转-日本
+      - ⒑V2RAY [vip1]北京BGP-中转-日本
+      - ⒔V2RAY [vip1]北京BGP-中转-日本
+      - ⒌V2RAY [vip1]上海cn2-中转-日本
+      - 7V2RAY [vip2]北京BGP-中转-日本
+      - ③V2RAY [vip2]广移-中转-日本
+      - ⒎V2RAY [vip1]广移-中转-日本
+      - ⒐V2RAY [vip1]广移-中转-日本
+      - V2ray [vip3]④ipcl专线-深圳-日本-原生IP-极速8K
+      - ⒓V2RAY [vip1]北京BGP-中转-日本
+      - ⑬V2RAY [vip2]IPLC专线-游戏|深圳|日本
+      - 6V2RAY [vip2]北京BGP-中转-日本
+      - ②V2RAY [vip2]广移-中转-新加坡
+      - ⑰V2RAY [vip2]IPLC专线-游戏|日本原生IP
+      - ⑪V2RAY [vip2]電信-中转-日本
+      - V2ray [vip3]①ipcl专线-深圳-日本-原生IP-极速8K
+      - ⑭V2RAY [vip2]IPLC专线-游戏|深圳|美国
+      - ⒘V2RAY [vip1]广州电信-中转-美国
+      - ⒙V2RAY [vip1]北京BGP-中转-美国
+      - ⑮V2RAY [vip2]IPLC专线-游戏|深圳|美国
       - IPLC
-      - HK 2
+      - HK
       - _中国_老杨爱分享_77
-      - IPLC 2
       - "*🇭🇰HK -393 TG@moon365free"
-      - HongKong——Taiwan -1
-      - "*🇸🇬SG -394 TG@moon365free"
-      - JP_910
-      - T.20.新加坡.中继3
-      - SG_1993
-      - 香港 038
+      - IPLC 2
       - "*🇭🇰HK -408 TG@moon365free"
-      - 越南
-      - T.40.台湾.中继2
-      - "*🇨🇳TW -396 TG@moon365free"
-      - T.10.日本.中继3
       - JP_807
+      - 美国纽约IPLC专线
+      - JP_90
+      - 越南
+      - 香港 038
+      - JP_1853
+      - "*🇸🇬SG -394 TG@moon365free"
+      - HK 2
       - 我在东京眺望北海道 ほっかいどう -1（100Mbps）
+      - T.20.新加坡.中继3
+      - T.10.日本.中继3
       - T.10.日本.中继1
       - vpn软件提取
-      - IR_698 |24.94Mb
-      - CN_343
-      - 台湾极速专线G1 VIP会员
-      - 德国
-      - _US_美国
       - vpn软件提取 2
-      - 菲律宾_R_280
-      - _CA_加拿大
-      - _CA_加拿大_1
       - 全球直连①-TikTok
-      - 英国_R_366
-      - 301更新_CA_加拿大_69
-      - JP_1853
-      - _CA_加拿大_2
-      - _CA_加拿大 2
-      - _CA_加拿大_10
-      - _GB_英国
-      - vpn软件提取 3
-      - 加拿大
-      - 俄罗斯_R_324
-      - vpn软件提取 4
-      - 印度_R_361
-      - 印度
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 美国_R_370
-      - _GB_英国_44
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_69
-      - _CA_加拿大 7
-      - _CA_加拿大_6
-      - 智利
-      - Alien_1
-      - vpn软件提取 5
-      - _US_美国_22
-      - T.40.台湾.中继3
-      - _GB_英国_10
-      - _CA_加拿大 8
-      - 阿根廷
-      - vpn软件提取 6
-      - vpn软件提取 7
-      - 立陶宛_R_456
+      - 台湾极速专线G1 VIP会员
+      - _FR_法国_28
+      - _US_美国
       - _FR_法国_29
-      - _CA_加拿大_16
-      - _FR_法国_20
-      - default_name
+      - vpn软件提取 3
+      - 美国_R_370
+      - 菲律宾_R_280
       - _CA_加拿大_27
       - 土耳其_R_458
-      - _CA_加拿大 9
-      - _CA_加拿大_28
-      - _CA_加拿大_11
-      - _CA_加拿大 10
-      - _US_美国 2
-      - _CA_加拿大_52
-      - _CA_加拿大_20
-      - _US_美国 3
-      - _FR_法国_28
-      - _CA_加拿大_22
-      - _FR_法国_151
-      - _CA_加拿大_13
-      - _US_美国_13
-      - _CA_加拿大 11
-      - _CA_加拿大 12
+      - vpn软件提取 4
+      - 印度
+      - 加拿大
+      - 印度_R_361
+      - 立陶宛_R_456
+      - 英国_R_366
+      - vpn软件提取 5
+      - 德国
+      - _CA_加拿大
+      - vpn软件提取 6
       - _US_美国_55
-      - _CA_加拿大_37
-      - US_油管 TG 8度科技
-      - default_name 2
-      - JP_90
-      - _CA_加拿大_7
-      - _CA_加拿大_51
-      - _CA_加拿大 13
+      - 301更新_CA_加拿大_69
+      - _CA_加拿大_13
+      - _CA_加拿大_6
+      - 俄罗斯_R_324
+      - _GB_英国_44
+      - 智利
+      - _CA_加拿大 2
+      - vpn软件提取 7
       - _CA_加拿大_85
+      - _FR_法国_151
+      - default_name
+      - _US_美国_13
+      - IR_698 |24.94Mb
+      - US_油管 TG 8度科技
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6
+      - 动态BGP+IPLC_香港02(原生)_3x_7
+      - 动态BGP+IPLC_香港03(原生)_3x_8
+      - 动态BGP+IPLC_香港04(原生)_3x_9
+      - 动态BGP+IPLC_香港05(原生)_3x_10
+      - 动态BGP+IPLC_新加坡01(原生)_3x_11
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12
+      - 动态BGP+IPLC_新加坡03(原生)_3x_13
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20
+      - 动态BGP+IPLC_台湾08(原生)_3x_21
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_日本01(原生)_3x_24
+      - 动态BGP+IPLC_日本02(原生)_3x_25
+      - 动态BGP+IPLC_日本03(原生)_3x_26
+      - 动态BGP+IPLC_日本04(原生)_3x_27
+      - 动态BGP+IPLC_日本05(原生)_3x_28
+      - 动态BGP+IPLC_美国01(原生)_3x_29
+      - 动态BGP+IPLC_美国02(原生)_3x_30
+      - 动态BGP+IPLC_美国03(原生)_3x_31
+      - 动态BGP+IPLC_美国04(原生)_3x_32
+      - 动态BGP+IPLC_美国05(原生)_3x_33
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

@@ -54,7 +54,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
 ***
-*最后更新时间2022.2.25-22:32*
+*最后更新时间2022.3.8-00:00*
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--点击回来)选择要下载的文件
 
 [**cdn**]: https://www.huaweicloud.com/zhishi/edit-590710.html

@@ -47,7 +47,7 @@ Openit
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 
 Base64适用于众多平台和软件，Clash专属于Clash系软件，HTTPS专属于Shadowrocket
-HTTPS持续有效，无需更新&emsp;&emsp;&emsp;&emsp;[源文件](https://github.com/git-yusteven/openit/raw/main/url)
+HTTPS 持续有效，无需更新&emsp;&emsp;&emsp;&emsp;[源文件](https://github.com/git-yusteven/openit/raw/main/url)
 
 <!--访问这两个链接，刷新CDN
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long

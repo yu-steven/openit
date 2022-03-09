@@ -253,7 +253,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。
 ## Time in Stars
 <!--替换成仓库和名字就可以用了-->
-[![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/Loyalsoldier/clash-rules)
+[![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/git-yusteven/openit)
 
 #### *Quantumult X* UI界面  [返回](https://github.com/git-yusteven/openit#ios)
 [![图片，加载不出来就不看吧](https://github.com/git-yusteven/openit/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)

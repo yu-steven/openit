@@ -222,7 +222,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 *2022.3.8---v4.36*
 ### Android
 ` https://github.com/2dust/v2rayNG/releases/`
-*2022.2.3---v1.6.30*
+*2022.2.20---v1.7.0*
 
 ## Clash
 ### Win/Mac/Android

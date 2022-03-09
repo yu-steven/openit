@@ -5,6 +5,8 @@ Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，
  
  [点击此处了解更多](https://github.com/Fndroid/clash_for_windows_pkg/issues/2710)（跳转到Clash官方仓库issues）
  本仓库已同步至Clash的最新版本
+
+支持乌克兰，支持乌克兰总统，永远反战
 </details>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>

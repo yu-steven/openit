@@ -158,8 +158,7 @@ Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quant
 Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;Potatso 2偏小众;以上软件购买时必须使用外区Apple ID下载(首推美区);
 当然也有为广大白嫖用户准备的Potatso(只支持ss协议)；OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)
 
-
-
+ Shadowrocket｜Quantumult X｜Surge｜Quantumult｜Potatso 2｜Stash｜Loon｜Potatso｜OneClick｜Shadowlink｜教程
 ### Shadowrocket *$2.99*
 [![轻触跳转至App Store][svg-apple]][ipk-ssr]
 ### Quantumult X *$7.99*

@@ -35,6 +35,7 @@ Openit
 </div>
 
 本订阅由iOS的[Shadowrocket]&nbsp;(以下简称小火箭)导入、测试、整理、导出;对小火箭兼容性**最高**
+<!--本订阅由Openit节点网络和互联网公开节点组成节点网络安全稳定，互联网公开节点留以备用-->
 
 [Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **Base64**

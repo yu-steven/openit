@@ -70,6 +70,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 >**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
+ 教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray
 
 [ss]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
@@ -82,6 +83,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 >**.7z文件如何解压？**
 可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**);蓝字是软件dmg安装包地址 下方是Mac App Store地址
 ### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge(intel)]
+ ｜SSR｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge(intel)｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
 ### Quantumult X(Arm) *$7.99*
@@ -105,6 +107,8 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 ## Android
 首推[Google play](https://play.google.com/store/apps)的v2rayNG,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有Clash也推荐，简洁美观；kitsunebi老牌翻墙工具；Surfboard是一个与Surge配置兼容的代理实用工具;SS和SSR只支持ss和ssr
+
+ 教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜
 ### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">
 <img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
@@ -150,6 +154,9 @@ Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quant
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面--返回)更加美观定制([教程] and [神机规则]); 
 Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;Potatso 2偏小众;以上软件购买时必须使用外区Apple ID下载(首推美区);
 当然也有为广大白嫖用户准备的Potatso(只支持ss协议)；OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)
+
+
+
 ### Shadowrocket *$2.99*
 [![轻触跳转至App Store][svg-apple]][ipk-ssr]
 ### Quantumult X *$7.99*

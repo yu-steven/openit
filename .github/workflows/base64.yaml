@@ -15,13 +15,5 @@ jobs:
         token: ${{ secrets.BASE64_NAME }}
     - name: config git
       run: git config --global user.name "github-actions[bot]"&&git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    - name: Write
-      run: base64 url > long
-    - name: check for changes
-      run: git status
-    - name: stage changed files
-      run: git add .
-    - name: commit changed files
-      run: git commit -m"Change by GitHub action"
     - name: push code
-      run: git push
+      run: chmod +x ./update-repo.sh&&./update-repo.sh

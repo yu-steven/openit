@@ -4,5 +4,5 @@ status_log=$(git status -sb)
 if [ "$status_log" == "## main...origin/main" ];then
   echo "nothing to commit, working tree clean"
 else
-  git add .&&git commit -m "Collected by GitHub action"&&git push origin master
+  git add .&&git commit -m "Collected by GitHub action"&&git push origin main
 fi

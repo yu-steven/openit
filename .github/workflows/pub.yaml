@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --global user.name "$username"
           git config --global user.email "$email"
-     - name: 设置SSH私钥信息
+      - name: 设置SSH私钥信息
         env:
           token_Private_Keys: ${{ secrets.token_Private_Keys }}
         run: |

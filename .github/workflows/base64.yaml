@@ -15,5 +15,7 @@ jobs:
         token: ${{ secrets.BASE64_NAME }}
     - name: config git
       run: git config --global user.name "github-actions[bot]"&&git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - name: Write
+      run: base64 url > long
     - name: push code
       run: chmod +x ./update-repo.sh&&./update-repo.sh

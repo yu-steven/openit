@@ -20,13 +20,8 @@ jobs:
       - name: 'Install requests'
         run: |
           pip install -r requirements.txt
-      - name: 设置githup信息
-        env:
-          email: ${{ secrets.EMAIL }}
-          username: ${{ secrets.USERNAME }}
-        run: |
-          git config --global user.name "$username"
-          git config --global user.email "$email"
+      - name: config git
+        git config --global user.name "github-actions[bot]"&&git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: 设置SSH私钥信息
         env:
           token_Private_Keys: ${{ secrets.token_Private_Keys }}

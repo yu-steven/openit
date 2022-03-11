@@ -33,6 +33,6 @@ mattkaydiary = mattkaydiary_content()
 pub = os.path.join("pub")
 yamlUtils = YamlUtils(pub)
 yamlUtils.make_template(
-    ["jiang.yaml", "mattkaydiary.yaml", "freenode.yaml", "bhqz.yaml", "ssr.yaml"]
+    ["jiang.yaml", "mattkaydiary.yaml", "freenode.yaml", "bhqz.yaml"]
 )
 yamlUtils.save_file("pub/combine.yaml")

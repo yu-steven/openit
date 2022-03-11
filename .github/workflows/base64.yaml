@@ -1,7 +1,8 @@
 name: Base64
 on: 
-  schedule:
-    - cron: '2/8 * * * *'
+  push:
+    paths:
+      - 'url'
   workflow_dispatch:
 jobs:
   my-job:

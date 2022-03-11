@@ -6,9 +6,9 @@ on:
     watch:
       types: started
     repository_dispatch:
-      types: get
+      types: Aggregate
 jobs:
-  get:
+  Aggregate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -38,7 +38,7 @@ jobs:
           ssh-add ~/.ssh/id_rsa
       - name: 获取订阅
         run: |
-          python3 get_clash.py
+          python3 git.py
           git add .
           git pull
           git commit --allow-empty -m "Collected by GitHub action"

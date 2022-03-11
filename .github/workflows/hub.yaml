@@ -1,0 +1,45 @@
+name: 监视源
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    watch:
+      types: started
+    repository_dispatch:
+      types: get
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: 'Set up Python'
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+      - name: 'Install requests'
+        run: |
+          pip install -r requirements.txt
+      - name: 设置githup信息
+        env:
+          email: ${{ secrets.EMAIL }}
+          username: ${{ secrets.USERNAME }}
+        run: |
+          git config --global user.name "$username"
+          git config --global user.email "$email"
+      - name: 设置SSH私钥信息
+        env:
+          token_Private_Keys: ${{ secrets.token_Private_Keys }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$token_Private_Keys" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_rsa
+      - name: 获取订阅
+        run: |
+          python3 get_clash.py
+          git add .
+          git pull
+          git commit --allow-empty -m "up"
+          git push

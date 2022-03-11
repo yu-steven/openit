@@ -21,6 +21,7 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: config git
+        run: |
           git config --global user.name "github-actions[bot]"&&git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: 设置SSH私钥信息
         env:

@@ -21,10 +21,12 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: config git
+        env:
+          email: ${{ secrets.EMAIL }}
+          username: ${{ secrets.USERNAME }}
         run: |
-          git config --global user.name "git-yusteven"
-          git config --global user.email "78414278+github-actions[bot]@users.noreply.github.com"
-      - name: 设置SSH私钥信息
+          git config --global user.name "$username"
+          git config --global user.email "$email"      - name: 设置SSH私钥信息
         env:
           token_Private_Keys: ${{ secrets.token_Private_Keys }}
         run: |

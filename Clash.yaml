@@ -5,863 +5,467 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 给别人用, server: 173.82.151.210, port: 24549, type: vmess, uuid: 2cb83d0e-7823-4473-d17f-3fa260f970a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 01, server: az01.thenodemoon365.xyz, port: 20000, type: trojan, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, sni: ga.thenodemoon365.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国 01, server: az01.thenodemoon365.xyz, port: 20001, type: trojan, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, sni: ga.thenodemoon365.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国 01, server: az01.thenodemoon365.xyz, port: 20002, type: trojan, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, sni: ga.thenodemoon365.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 01, server: az01.thenodemoon365.xyz, port: 20003, type: trojan, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, sni: ga.thenodemoon365.xyz, skip-cert-verify: true, udp: true}
+  - {name: 英国 01, server: az01.thenodemoon365.xyz, port: 20004, type: trojan, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, sni: ga.thenodemoon365.xyz, skip-cert-verify: true, udp: true}
+  - {name: imkcp白嫖, server: 104.24.34.233, port: 443, type: vmess, uuid: 1c8f1d5c-c9b1-46be-d034-c649b006b15d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kcpblog.tk}, udp: true}
+  - {name: 🐮🍺, server: 43.154.108.90, port: 31455, type: vmess, uuid: 13230594-f683-4cd1-e1a7-03797f34227a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IEPL | 香港   450, server: iepl-hn01.qqgg.work, port: 64112, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 香港   446, server: ieplszhk-sz.qqgg.work, port: 50804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 香港   334, server: iepl-hn01.qqgg.work, port: 44702, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 香港   316, server: iepl-gz.yyuuii.cyou, port: 10804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 香港   160, server: iepl-gz.yyuuii.cyou, port: 64112, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 香港   133, server: gzyd-01.yyuuii.cyou, port: 20001, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 香港   121, server: jx-002.yyuuii.cyou, port: 12021, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 香港   22, server: 117.185.229.112, port: 45089, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 香港   15, server: 116.162.14.248, port: 45435, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 韩国   311, server: jx-002.yyuuii.cyou, port: 10020, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 韩国   310, server: gzyd-01.yyuuii.cyou, port: 20003, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 阿根廷   437, server: iepl-hn01.qqgg.work, port: 19563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 越南   380, server: iepl-hn01.qqgg.work, port: 43738, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 越南   377, server: iepl-gz.yyuuii.cyou, port: 10899, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 越南   277, server: gzyd-01.yyuuii.cyou, port: 49036, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 菲律宾   280, server: gzyd-01.yyuuii.cyou, port: 45705, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 菲律宾   196, server: iepl-hn01.qqgg.work, port: 48293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 英国   366, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 英国   228, server: jx-002.yyuuii.cyou, port: 10006, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 美国   370, server: iepl-gz.yyuuii.cyou, port: 15658, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 美国   273, server: gzyd-01.yyuuii.cyou, port: 40678, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 美国   21, server: jx-002.yyuuii.cyou, port: 10018, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 立陶宛   456, server: ieplszhk-sz.qqgg.work, port: 56326, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 瑞典   362, server: iepl-hn01.qqgg.work, port: 20098, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 爱沙尼亚   453, server: ieplszhk-sz.qqgg.work, port: 59058, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 澳大利亚   19, server: 116.162.14.248, port: 45705, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 泰国   459, server: gzyd-01.yyuuii.cyou, port: 29404, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 法国   372, server: iepl-gz.yyuuii.cyou, port: 49853, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 法国   274, server: gzyd-01.yyuuii.cyou, port: 23033, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 智利   445, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 日本   498, server: iepl-hn01.qqgg.work, port: 27078, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 日本   22, server: jx-002.yyuuii.cyou, port: 10019, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 新加坡   441, server: ieplszhk-sz.qqgg.work, port: 52306, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 新加坡   229, server: gzyd-01.yyuuii.cyou, port: 20002, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 德国   23, server: 117.185.229.112, port: 45090, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 希腊   500, server: ieplszhk-sz.qqgg.work, port: 59578, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 土耳其   458, server: iepl-hn01.qqgg.work, port: 26563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 台湾   34, server: gzyd-01.yyuuii.cyou, port: 30002, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 台湾   338, server: iepl-hn01.qqgg.work, port: 20399, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 台湾   319, server: iepl-gz.yyuuii.cyou, port: 10802, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 台湾   314, server: ieplszhk-sz.qqgg.work, port: 10802, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: STREAM | 台湾   271, server: jx-002.yyuuii.cyou, port: 10007, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 印度   361, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 加拿大   365, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: BASIC | 俄罗斯   324, server: gzyd-01.yyuuii.cyou, port: 26096, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: IEPL | 俄罗斯   24, server: 117.185.229.112, port: 45101, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 美国纽约IPLC专线, server: 122.9.54.75, port: 5590, type: ss, cipher: chacha20-ietf-poly1305, password: 82e2b056d73b89bfbbe0ef9127315b9a0144e13bcd2f545c59bce6867a4fd723, udp: true}
   - {name: IPLC, server: 122.9.62.50, port: 6601, type: ss, cipher: chacha20-ietf-poly1305, password: 8d8c2570832b1650c0024f6d1d3302e4885ba53852b0103d71e16fbae1a27c50, udp: true}
   - {name: _中国_老杨爱分享_77, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _01, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 春川arm1_Trojan_2, server: www.ggchk.ga, port: 443, type: trojan, password: 4ae98d26-b209-4dd5-8e91-bf11d4f10801, sni: www.ggchk.ga, skip-cert-verify: true, udp: true}
-  - {name: "*🇭🇰HK -393 TG@moon365free", server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
   - {name: HK, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
-  - {name: 韩国/17, server: tj-06.t8737.shop, port: 11223, type: trojan, password: 253aff4e-09a7-4817-830c-a26ca5cfd612, sni: TJ-06.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: T.20.新加坡.中继3, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: JP_90, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 香港 038, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 甲骨文东京2_7, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
-  - {name: JP_807, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: "*🇸🇬SG -394 TG@moon365free", server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: 高速6, server: g9.gs1024.com, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: hk3.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: 香港/18, server: tj-01.t8737.shop, port: 11223, type: trojan, password: 253aff4e-09a7-4817-830c-a26ca5cfd612, sni: TJ-01.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: T.10.日本.中继3, server: fsyd.wecanfly.top, port: 51221, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: 高速AAA, server: iplc.gs1024.com, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: ip.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: 中国/13, server: iepl01.zerohost.live, port: 11014, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl01.zerohost.live}, udp: true}
-  - {name: "[V2]台湾HiNet丨隧道", server: gy.jjxcloud.xyz, port: 62005, type: vmess, uuid: d9a63d08-f47d-37d8-8fe6-756d4e412617, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gy.jjxcloud.xyz}, udp: true}
-  - {name: ZZ_716, server: 0306hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0306hk01.fans8.xyz}, udp: true}
-  - {name: _JP_日本, server: xmlinodejp2.aifx.eu.org, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: xmlinodejp2.aifx.eu.org}, udp: true}
-  - {name: 中国/23, server: iepl01.zerohost.live, port: 11000, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_905, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22host%22:%22172.105.222.98%22%7D"}, udp: true}
-  - {name: 高速5, server: g9.gs1024.com, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: tj1.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 高速BBB, server: g3.gs1024.com, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: in.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: _US美国_74, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国 /11, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国_18, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 高速3, server: jp.gs1024.com, port: 21231, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: j1.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: 中国/11, server: iepl04.zerohost.live, port: 11017, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
-  - {name: 中国/14, server: iepl01.zerohost.live, port: 11014, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl01.zerohost.live}, udp: true}
-  - {name: _FR_法国 2, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: vpn软件提取, server: gzyd-01.yyuuii.cyou, port: 20003, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _FR_法国_18, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US美国_75, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _FR_法国_111, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 高速1, server: jp.gs1024.com, port: 21230, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: j2.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: 欧洲/457, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _GB_英国_67, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国_14, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国 /86, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 全球直连①-TikTok, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: free.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: 欧洲/103, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大_34, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _AU_澳大利亚, server: 172.105.187.158, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_75, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _GB_英国_17, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大 /21, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_58, server: 134.195.196.81, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大_41, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.81, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 欧洲/475, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _GB_英国_79, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.81, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大_50, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.81, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _FR_法国_93, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 高速2, server: g3.gs1024.com, port: 21225, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: m2.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_31, server: 142.202.48.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大_27, server: 134.195.196.81, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国_R_366, server: iepl-hn01.qqgg.work, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 9, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: vpn软件提取 2, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 美国 /54, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: 美国/23, server: 39.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: 加拿大, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _FR_法国_125, server: 51.255.66.185, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国/27, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国_1, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: _US_美国_2, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: "[V1]美国洛杉矶丨解自制剧", server: gy.jjxcloud.xyz, port: 53247, type: vmess, uuid: d9a63d08-f47d-37d8-8fe6-756d4e412617, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gy.jjxcloud.xyz}, udp: true}
-  - {name: 美国/44, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
-  - {name: _GB_英国_1, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 立陶宛_R_456, server: ieplszhk-sz.qqgg.work, port: 56326, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 香港/246, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: US_106_2_36Mb_19, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: _US_美国, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
-  - {name: 美国/45, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
-  - {name: US_517, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: _CA_加拿大_48, server: 134.195.196.81, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_527, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: _US_美国_3, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: 俄罗斯_R_324, server: gzyd-01.yyuuii.cyou, port: 26096, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 印度, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 印度_R_361, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: JP_67 TGatpeekfun_34, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: _CA加拿大_38, server: 134.195.196.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 加拿大 /93, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 高速7, server: g6.gs1024.com, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: bg1.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大 10, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 土耳其_R_458, server: iepl-hn01.qqgg.work, port: 26563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: vpn软件提取 3, server: iepl-hn01.qqgg.work, port: 48293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大_84, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 中国/21, server: iepl01.zerohost.live, port: 11000, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CA加拿大_22, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国/21, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_32, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: 智利, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _FR_法国_39, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 阿联酋/34, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 33cabb34-fc80-4eb0-a688-0f134d0e11e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.81, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 欧洲/93, server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_9, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国_5, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: 高速8, server: g3.gs1024.com, port: 21227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: d.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: default_name_10, server: 198.41.212.18, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: default_name, server: 198.41.212.14, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: default_name_70, server: 198.41.212.20, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: default_name 2, server: 198.41.212.20, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: vpn软件提取 4, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _GB_英国_33, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_712, server: 198.41.212.10, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: ZZ_710, server: 198.41.212.1, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: default_name_12, server: 198.41.212.11, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: _CA_加拿大 12, server: 134.195.196.81, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: vpn软件提取 5, server: jx-002.yyuuii.cyou, port: 10018, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: _CA_加拿大 13, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大/59, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国/50, server: usa.oracleusa.ml, port: 2053, type: vmess, uuid: 928d2df4-6c5e-4274-9af4-b2769ea9dd96, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
-  - {name: US_油管 TG 8度科技, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: _01, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 014, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%22172.105.222.98%22%7D"}, udp: true}
+  - {name: "*🇭🇰HK -393 TG@moon365free", server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: /|日本(JP)Japan/Shinjuku_55, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22host%22:%22172.105.222.98%22%7D"}, udp: true}
   - {name: JP_1853, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
-  - {name: _CA_加拿大_64, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 欧洲/115, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国->🇩🇪_DE_德国_81, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: "%7B%22host%22:%22ipv6.xrenblog.com%22%7D"}, udp: true}
-  - {name: "日本公益 02 解锁NF [1x]", server: gongyijp2.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp2.yigeweizhuang.com}, udp: true}
-  - {name: _US美国_71, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 2, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国 /12, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _FR_法国_39 2, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 3, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}, udp: true}
-  - {name: _US_美国->🇩🇪_DE_德国, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: default_name_25, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: f11a81c0-3d8d-48f4-bdcf-6bf599844ded, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22host%22:%22v6d.moonfree.top%22%7D"}, udp: true}
-  - {name: _CA_加拿大 14, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大_20, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国 /68, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 15, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大_12, server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_10, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国_71, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _FR_法国_99, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大 16, server: 134.195.196.187, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA加拿大_43, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 台湾极速专线G1 VIP会员, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 最新域名：galaxy-cloud.com, server: gcusfree.galaxycloud.buzz, port: 443, type: vmess, uuid: d7075aa0-1b6a-4330-8cfb-c295a07ce3a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /0DGCTPQ, ws-headers: {Host: gcusfree.galaxycloud.buzz}, udp: true}
-  - {name: _GB英国_1, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国_11, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: US_500, server: test.0dc.cn, port: 443, type: vmess, uuid: ebe5703b-c18e-4664-c3a7-9fcf52453898, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: test.0dc.cn}, udp: true}
-  - {name: _CA_加拿大_67, server: 134.195.196.81, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 17, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 18, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国_10, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: US_521, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: 加拿大/28, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _FR_法国_104, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国->🇷🇺_RU_俄罗斯联邦, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: _US_美国_22, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22ahdaeph8.com%22%7D"}, udp: true}
-  - {name: _CA_加拿大_7, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国->🇳🇱_NL_荷兰_1, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: "%7B%22host%22:%22ipv6.xrenblog.com%22%7D"}, udp: true}
-  - {name: _US_美国_63, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22ahdaeph8.com%22%7D"}, udp: true}
-  - {name: 加拿大/68, server: 134.195.196.81, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 土耳其/49, server: rq.nodrop.bike, port: 443, type: vmess, uuid: 30e46917-9383-4248-be0a-65b68de6eb6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: rq.nodrop.bike}, udp: true}
-  - {name: "新加坡公益 01 解锁NF [1x]", server: gongyisg1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyisg1.yigeweizhuang.com}, udp: true}
-  - {name: "日本公益 01 解锁NF [1x]", server: gongyijp1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp1.yigeweizhuang.com}, udp: true}
-  - {name: "美国公益 01 解锁NF [1x]", server: gongyius1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyius1.yigeweizhuang.com}, udp: true}
-  - {name: _US_美国->🇯🇵_JP_日本_18, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: "%7B%22host%22:%22xmlinodejp2.aifx.eu.org%22%7D"}, udp: true}
-  - {name: _CA加拿大_37, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_45, server: 0306jp08.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0306jp08.fans8.xyz}, udp: true}
-  - {name: _US_美国 4, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: 香港(yudou66_com玉豆分享)_6, server: iepl04.zerohost.live, port: 11003, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
+  - {name: 香港(yudou66_com玉豆分享)_4, server: iepl04.zerohost.live, port: 11017, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
+  - {name: T.20.新加坡.中继3, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: 中国/23, server: iepl01.zerohost.live, port: 11000, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国/21, server: iepl01.zerohost.live, port: 11000, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: T.10.日本.中继3, server: fsyd.wecanfly.top, port: 51221, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: fsyd.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: 中国/11, server: iepl04.zerohost.live, port: 11017, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
+  - {name: 美国(yudou66_com玉豆分享)_73, server: iepl02.zerohost.live, port: 11015, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
+  - {name: 中国/14, server: iepl01.zerohost.live, port: 11014, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl01.zerohost.live}, udp: true}
+  - {name: _GB_英国_57, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_TG@nodesharing_48, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国 179, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_40, server: g9.gs1024.com, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: tj1.baofu.buzz, skip-cert-verify: true, udp: true}
+  - {name: 德国 008, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 加拿大, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: vpn软件提取, server: iepl-hn01.qqgg.work, port: 46164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 美国 159, server: 104.243.30.59, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: 英国(yudou66_com 玉豆分享)_68, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 加拿大_TG@nodesharing_56, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: vpn软件提取 2, server: jx-002.yyuuii.cyou, port: 10018, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _CA_加拿大_17, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 加拿大(yudou66_com 玉豆分享)_79, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大_41, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: _US_美国_8, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: 腾讯云_5, server: www.tokyo2021.ga, port: 443, type: trojan, password: 7a990132-cf76-4ac2-8a3c-681743fa8627, sni: www.tokyo2021.ga, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_897, server: xmlinodejp2.aifx.eu.org, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: "%7B%22host%22:%22xmlinodejp2.aifx.eu.org%22%7D"}, udp: true}
-  - {name: _JP_日本_9, server: xmlinodejp2.aifx.eu.org, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: "%7B%22host%22:%22xmlinodejp2.aifx.eu.org%22%7D"}, udp: true}
-  - {name: JP_178, server: xmlinodejp2.aifx.eu.org, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: "%7B%22host%22:%22xmlinodejp2.aifx.eu.org%22%7D"}, udp: true}
-  - {name: default_name_8, server: 198.41.212.13, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: _US_美国_55, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: _HK_香港->🇮🇳_IN_印度_9, server: 129.227.201.234, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22aicoo6du.com%22%7D"}, udp: true}
-  - {name: default_name 3, server: 198.41.212.13, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 美国/58, server: usa.oracleusa.ml, port: 2053, type: vmess, uuid: 928d2df4-6c5e-4274-9af4-b2769ea9dd96, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
-  - {name: US_512, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 45.35.84.162}, udp: true}
+  - {name: _CA_加拿大_20, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _GB_英国_45, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_(yudou66_com 玉豆分享)_19, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 印度_R_361, server: iepl-hn01.qqgg.work, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 土耳其_R_458, server: iepl-hn01.qqgg.work, port: 26563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 中国_TG@nodesharing_42, server: g9.gs1024.com, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: tj1.baofu.buzz, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_TG@nodesharing_14, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 中国_TG@nodesharing_62, server: iplc.gs1024.com, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: ip.baofu.buzz, skip-cert-verify: true, udp: true}
+  - {name: vpn软件提取 3, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 俄罗斯_R_324, server: gzyd-01.yyuuii.cyou, port: 26096, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: _US_美国->🇷🇺_RU_俄罗斯联邦, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
+  - {name: _US_美国_18, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 香港 038, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_TG@nodesharing_108, server: 134.195.196.81, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.187, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 智利, server: iepl-hn01.qqgg.work, port: 16319, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 美国 019, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
+  - {name: /|日本(JP)Japan/Tokyo_49, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
   - {name: 高速4, server: jp.gs1024.com, port: 21229, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: a1.baofu.buzz, skip-cert-verify: true, udp: true}
-  - {name: CN_61, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22sxqxj.cn%22%7D"}, udp: true}
-  - {name: IR_698 |24.94Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_42, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}, udp: true}
-  - {name: 日本 /82, server: jp19.holiganfan.com, port: 10088, type: trojan, password: cbb104a6-a43f-42d6-b897-474906361501, sni: jp19.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: 美国/46, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
-  - {name: _US_美国_2 2, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: "%7B%22host%22:%22usa-dallas.lvuft.com%22%7D"}, udp: true}
-  - {name: _US_美国->🇳🇱_NL_荷兰_12, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 98b20eea-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nBaG3RmV/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
-  - {name: _US_美国->🇭🇰_HK_香港, server: cloudflare.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
-  - {name: _US_美国 5, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}, udp: true}
-  - {name: 跳转官网地址：galaxy-cloud.github.io/login, server: gcusfree.galaxycloud.buzz, port: 443, type: vmess, uuid: d7075aa0-1b6a-4330-8cfb-c295a07ce3a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /0DGCTPQ, ws-headers: {Host: gcusfree.galaxycloud.buzz}, udp: true}
-  - {name: US_537, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: "%7B%22host%22:%22xmlinodejp2.aifx.eu.org%22%7D"}, udp: true}
-  - {name: default_name 4, server: 198.41.212.1, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: ZZ_714, server: 198.41.212.19, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: _HK_香港->🇮🇳_IN_印度, server: 129.227.201.234, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: aicoo6du.com}, udp: true}
-  - {name: 斯巴达_Trojan_4, server: www.nyc3000.ga, port: 443, type: trojan, password: 10fd99c2-c26d-42e2-b73c-601ed051e5f3, sni: www.nyc3000.ga, skip-cert-verify: true, udp: true}
-  - {name: 日本 /39, server: jp19.holiganfan.com, port: 10088, type: trojan, password: cbb104a6-a43f-42d6-b897-474906361501, sni: jp19.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: 春川arm2_Trojan_3, server: www.sanjose2021.ga, port: 443, type: trojan, password: 6cfa5ab4-c2a5-4ad1-8b75-ff12bc59b770, sni: www.sanjose2021.ga, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇯🇵_JP_日本_83, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: "%7B%22host%22:%22xmlinodejp2.aifx.eu.org%22%7D"}, udp: true}
-  - {name: default_name_5, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%222022-world-1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: default_name_42, server: 198.41.212.18, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: "%7B%22host%22:%22zero1.a-yu.xyz%22%7D"}, udp: true}
-  - {name: _US_美国->🇳🇱_NL_荷兰, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 98b20eea-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nBaG3RmV/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
-  - {name: _US_美国->🇯🇵_JP_日本, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: xmlinodejp2.aifx.eu.org}, udp: true}
+  - {name: JP_90, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_TG@nodesharing_26, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 日本 013, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国_6, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 甲骨文东京2_7, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -880,875 +484,489 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 01
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
       - 香港 038
-      - 香港/18
-      - "[V2]台湾HiNet丨隧道"
-      - 香港/246
-      - 台湾极速专线G1 VIP会员
-      - _HK_香港->🇮🇳_IN_印度_9
-      - _US_美国->🇭🇰_HK_香港
-      - _HK_香港->🇮🇳_IN_印度
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1764,216 +982,117 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 给别人用
+      - 香港 01
+      - 韩国 01
+      - 美国 01
+      - 新加坡 01
+      - 英国 01
+      - imkcp白嫖
+      - 🐮🍺
+      - IEPL | 香港   450
+      - IEPL | 香港   446
+      - IEPL | 香港   334
+      - IEPL | 香港   316
+      - IEPL | 香港   160
+      - BASIC | 香港   133
+      - BASIC | 香港   121
+      - IEPL | 香港   22
+      - IEPL | 香港   15
+      - BASIC | 韩国   311
+      - BASIC | 韩国   310
+      - IEPL | 阿根廷   437
+      - IEPL | 越南   380
+      - IEPL | 越南   377
+      - BASIC | 越南   277
+      - BASIC | 菲律宾   280
+      - IEPL | 菲律宾   196
+      - IEPL | 英国   366
+      - BASIC | 英国   228
+      - IEPL | 美国   370
+      - BASIC | 美国   273
+      - BASIC | 美国   21
+      - BASIC | 立陶宛   456
+      - IEPL | 瑞典   362
+      - BASIC | 爱沙尼亚   453
+      - BASIC | 澳大利亚   19
+      - BASIC | 泰国   459
+      - BASIC | 法国   372
+      - BASIC | 法国   274
+      - IEPL | 智利   445
+      - BASIC | 日本   498
+      - BASIC | 日本   22
+      - IEPL | 新加坡   441
+      - BASIC | 新加坡   229
+      - IEPL | 德国   23
+      - BASIC | 希腊   500
+      - BASIC | 土耳其   458
+      - BASIC | 台湾   34
+      - BASIC | 台湾   338
+      - BASIC | 台湾   319
+      - IEPL | 台湾   314
+      - STREAM | 台湾   271
+      - IEPL | 印度   361
+      - IEPL | 加拿大   365
+      - BASIC | 俄罗斯   324
+      - IEPL | 俄罗斯   24
       - 美国纽约IPLC专线
       - IPLC
       - _中国_老杨爱分享_77
-      - _01
-      - 春川arm1_Trojan_2
-      - "*🇭🇰HK -393 TG@moon365free"
       - HK
-      - 韩国/17
-      - T.20.新加坡.中继3
-      - JP_90
-      - 香港 038
-      - 甲骨文东京2_7
-      - JP_807
-      - "*🇸🇬SG -394 TG@moon365free"
-      - 高速6
-      - 香港/18
-      - T.10.日本.中继3
-      - 高速AAA
-      - 中国/13
-      - "[V2]台湾HiNet丨隧道"
-      - ZZ_716
-      - _JP_日本
-      - 中国/23
-      - JP_905
-      - 高速5
-      - _FR_法国
-      - 高速BBB
-      - _US美国_74
-      - 美国 /11
-      - _US_美国_18
-      - 高速3
-      - 中国/11
-      - 中国/14
-      - _FR_法国 2
-      - vpn软件提取
-      - _FR_法国_18
-      - _US美国_75
-      - _FR_法国_111
-      - 高速1
-      - 欧洲/457
-      - _GB_英国_67
-      - _US_美国_14
-      - 美国 /86
-      - 全球直连①-TikTok
-      - 欧洲/103
-      - _CA_加拿大_34
-      - _AU_澳大利亚
-      - _CA_加拿大_75
-      - _GB_英国_17
-      - _CA_加拿大
-      - 加拿大 /21
-      - _CA_加拿大_58
-      - _CA_加拿大_41
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 欧洲/475
-      - _GB_英国_79
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - _CA_加拿大_50
-      - _CA_加拿大 7
-      - _FR_法国_93
-      - 高速2
-      - _US_美国_31
-      - _CA_加拿大_27
-      - _CA_加拿大 8
-      - 英国_R_366
-      - _CA_加拿大 9
-      - vpn软件提取 2
-      - 美国 /54
-      - 美国/23
-      - 加拿大
-      - _FR_法国_125
-      - 美国/27
-      - _US_美国_1
-      - _US_美国_2
-      - "[V1]美国洛杉矶丨解自制剧"
-      - 美国/44
-      - _GB_英国_1
-      - 立陶宛_R_456
-      - 香港/246
-      - US_106_2_36Mb_19
-      - _US_美国
-      - 美国/45
-      - US_517
-      - _CA_加拿大_48
-      - US_527
-      - _US_美国_3
-      - 俄罗斯_R_324
-      - 印度
-      - 印度_R_361
-      - JP_67 TGatpeekfun_34
-      - _CA加拿大_38
-      - 加拿大 /93
-      - 高速7
-      - _CA_加拿大 10
-      - 土耳其_R_458
-      - vpn软件提取 3
-      - _CA_加拿大_84
-      - 中国/21
-      - _CA加拿大_22
-      - 美国/21
-      - _US_美国_32
-      - 智利
-      - _FR_法国_39
-      - 阿联酋/34
-      - _CA_加拿大 11
-      - 欧洲/93
-      - _CA_加拿大_9
-      - _US_美国_5
-      - 高速8
-      - default_name_10
-      - default_name
-      - default_name_70
-      - default_name 2
-      - vpn软件提取 4
-      - _GB_英国_33
-      - ZZ_712
-      - ZZ_710
-      - default_name_12
-      - _CA_加拿大 12
-      - vpn软件提取 5
-      - _CA_加拿大 13
-      - 加拿大/59
-      - 美国/50
-      - US_油管 TG 8度科技
+      - _01
+      - 日本 014
+      - "*🇭🇰HK -393 TG@moon365free"
+      - /|日本(JP)Japan/Shinjuku_55
       - JP_1853
-      - _CA_加拿大_64
-      - 欧洲/115
-      - _GB_英国
-      - _US_美国->🇩🇪_DE_德国_81
-      - 日本公益 02 解锁NF [1x]
-      - _US美国_71
-      - _US_美国 2
-      - 美国 /12
-      - _FR_法国_39 2
-      - _US_美国 3
-      - _US_美国->🇩🇪_DE_德国
-      - default_name_25
-      - _CA_加拿大 14
-      - _CA_加拿大_20
-      - 美国 /68
-      - _CA_加拿大 15
-      - _CA_加拿大_12
-      - _CA_加拿大_10
-      - _US_美国_71
-      - _FR_法国_99
-      - _CA_加拿大 16
-      - _CA加拿大_43
-      - 台湾极速专线G1 VIP会员
-      - 最新域名：galaxy-cloud.com
-      - _GB英国_1
-      - _US_美国_11
-      - US_500
-      - _CA_加拿大_67
-      - _CA_加拿大 17
-      - _CA_加拿大 18
-      - _US_美国_10
-      - US_521
-      - 加拿大/28
-      - _FR_法国_104
-      - _US_美国->🇷🇺_RU_俄罗斯联邦
-      - _US_美国_22
-      - _CA_加拿大_7
-      - _US_美国->🇳🇱_NL_荷兰_1
-      - _US_美国_63
-      - 加拿大/68
-      - 土耳其/49
-      - 新加坡公益 01 解锁NF [1x]
-      - 日本公益 01 解锁NF [1x]
-      - 美国公益 01 解锁NF [1x]
-      - _US_美国->🇯🇵_JP_日本_18
-      - _CA加拿大_37
-      - CA_45
-      - _US_美国 4
+      - 香港(yudou66_com玉豆分享)_6
+      - 香港(yudou66_com玉豆分享)_4
+      - T.20.新加坡.中继3
+      - 中国/23
+      - 中国/21
+      - T.10.日本.中继3
+      - 中国/11
+      - 美国(yudou66_com玉豆分享)_73
+      - 中国/14
+      - _GB_英国_57
+      - 美国_TG@nodesharing_48
+      - 美国 179
+      - 中国_TG@nodesharing_40
+      - 德国 008
+      - 加拿大
+      - vpn软件提取
+      - 美国 159
+      - 英国(yudou66_com 玉豆分享)_68
+      - 加拿大_TG@nodesharing_56
+      - vpn软件提取 2
+      - _CA_加拿大_17
+      - 加拿大(yudou66_com 玉豆分享)_79
+      - _CA_加拿大_41
       - _US_美国_8
-      - 腾讯云_5
-      - Relay_🇯🇵JP-🇯🇵JP_897
-      - _JP_日本_9
-      - JP_178
-      - default_name_8
-      - _US_美国_55
-      - _HK_香港->🇮🇳_IN_印度_9
-      - default_name 3
-      - 美国/58
-      - US_512
+      - _CA_加拿大_20
+      - _GB_英国_45
+      - CA_(yudou66_com 玉豆分享)_19
+      - 印度_R_361
+      - 土耳其_R_458
+      - 中国_TG@nodesharing_42
+      - 加拿大_TG@nodesharing_14
+      - 中国_TG@nodesharing_62
+      - vpn软件提取 3
+      - 俄罗斯_R_324
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
+      - _US_美国_18
+      - 香港 038
+      - 加拿大_TG@nodesharing_108
+      - _CA_加拿大
+      - 智利
+      - 美国 019
+      - /|日本(JP)Japan/Tokyo_49
       - 高速4
-      - CN_61
-      - IR_698 |24.94Mb
-      - _US_美国_42
-      - 日本 /82
-      - 美国/46
-      - _US_美国_2 2
-      - _US_美国->🇳🇱_NL_荷兰_12
-      - _US_美国->🇭🇰_HK_香港
-      - _US_美国 5
-      - 跳转官网地址：galaxy-cloud.github.io/login
-      - US_537
-      - default_name 4
-      - ZZ_714
-      - _HK_香港->🇮🇳_IN_印度
-      - 斯巴达_Trojan_4
-      - 日本 /39
-      - 春川arm2_Trojan_3
-      - _US_美国->🇯🇵_JP_日本_83
-      - default_name_5
-      - default_name_42
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇯🇵_JP_日本
+      - JP_90
+      - 加拿大_TG@nodesharing_26
+      - 日本 013
+      - _GB_英国_6
+      - 甲骨文东京2_7
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

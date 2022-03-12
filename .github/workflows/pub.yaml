@@ -41,4 +41,5 @@ jobs:
           python3 get_clash.py
       - name: upload to GitHub
         run: |
+          git pull
           chmod +x ./update-repo.sh&&./update-repo.sh

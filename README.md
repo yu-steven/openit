@@ -69,7 +69,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 
 
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁]/[教程](https://yuncun.xyz/archives/clash.html))配合v0.19.11版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁]/[教程](https://yuncun.xyz/archives/clash.html))配合v0.19.12版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置
 >**.7z文件如何解压？**
 可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
@@ -78,9 +78,9 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [ss]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
 [v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.36/v2rayN-Core.zip
-[clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-win.7z
+[clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-win.7z
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://github.abskoop.workers.dev/https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.11/app.asar
+[Clash汉化补丁]: https://github.abskoop.workers.dev/https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.12/app.asar
 ## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
 >**.7z文件如何解压？**
@@ -95,8 +95,8 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 [![点击跳转至Mac App Store][macos-black]][Surge]
 
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-mac.7z
-[clash(Arm)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.11/Clash.for.Windows-0.19.11-arm64-mac.7z
+[clash(intel)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-mac.7z
+[clash(Arm)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-arm64-mac.7z
 [clashx]: https://github.abskoop.workers.dev/https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
 [qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [Surge(intel)]: https://nssurge.com/
@@ -239,10 +239,10 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ## Clash
 ### Win/Mac/Android
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases/`
-*2022.3.4---v0.19.11*
+*2022.3.11---v0.19.12*
 ### Clash 汉化补丁 Win
 `https://github.com/BoyceLig/Clash_Chinese_Patch/releases/`
-*2022.3.4---v0.19.11*
+*2022.3.4---v0.19.12*
 ### Linux
 ` https://github.com/Dreamacro/clash/releases/`
 *2022.1.2---v1.9.0*

@@ -242,7 +242,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 *2022.3.11---v0.19.12*
 ### Clash 汉化补丁 Win
 `https://github.com/BoyceLig/Clash_Chinese_Patch/releases/`
-*2022.3.4---v0.19.12*
+*2022.3.11---v0.19.12*
 ### Linux
 ` https://github.com/Dreamacro/clash/releases/`
 *2022.1.2---v1.9.0*

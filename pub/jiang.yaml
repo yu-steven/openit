@@ -1,165 +1,124 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: :9090
-proxies:
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_1, server: 118.193.179.2, port: 36923, type: ss, cipher: chacha20-ietf-poly1305, password: koko666}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_2, server: 183.232.56.161, port: 1301, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: microsoft.com}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_3, server: 183.232.56.161, port: 8099, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: microsoft.com}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_4, server: 183.232.56.161, port: 3001, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: microsoft.com}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_5, server: 183.232.56.161, port: 1601, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: microsoft.com}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_6, server: 183.232.56.161, port: 1602, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: microsoft.com}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_7, server: 183.232.56.161, port: 5018, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: microsoft.com}}}
-  - {name: RU_二爷翻墙网 https://1808.ga 节点_8, server: 146.185.218.171, port: 443, type: vmess, uuid: 947af181-c509-4245-80de-9baf64f1aa51, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: govacaxixo.watchdoctor.xyz}}}
-  - {name: RU_二爷翻墙网 https://1808.ga 节点_9, server: 92.223.72.42, port: 443, type: vmess, uuid: ae08412f-5bb9-4be7-8560-1984976a1097, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: govacaxixo.watchdoctor.xyz}}}
-  - {name: RU_二爷翻墙网 https://1808.ga 节点_10, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: govacaxixo.watchdoctor.xyz}}}
-  - {name: TW_二爷翻墙网 https://1808.ga 节点_11, server: 0218tw02.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0218tw02.fans8.xyz}}}
-  - {name: TW_二爷翻墙网 https://1808.ga 节点_12, server: 128tw02.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 128tw02.fans8.xyz}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_13, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-hinet-tw-04.xncloud.xyz}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_14, server: guangzhou-lw-03.pucdn.me, port: 21106, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: guangzhou-lw-03.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_15, server: guangzhou-lw-03.pucdn.me, port: 21105, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: guangzhou-lw-03.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_16, server: guangzhou-lw-03.pucdn.me, port: 21104, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: guangzhou-lw-03.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_17, server: guangzhou-lw-03.pucdn.me, port: 21107, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: guangzhou-lw-03.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_18, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: tunnel-tw-a-01.xncloud.xyz}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_19, server: tunnel-tw-a-01.xncloud.xyz, port: 502, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: tunnel-tw-a-01.xncloud.xyz}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_20, server: global-sakura-tw-a-01.yingyun-resolve.com, port: 105, type: vmess, uuid: b5b579f4-3320-301c-a04b-c2473062b46c, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: v2ray-v1-hinet-tw-05.yingyun-resolve.com}}}
-  - {name: DE_二爷翻墙网 https://1808.ga 节点_21, server: 37.61.213.94, port: 443, type: vmess, uuid: 97ff78ea-8807-4c33-93e5-d8481ac0539e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: govacaxixo.watchdoctor.xyz}}}
-  - {name: SG_二爷翻墙网 https://1808.ga 节点_22, server: 0219sg.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0219sg.fans8.xyz}}}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_23, server: 113.wowogg.cyou, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_24, server: v1.mumi.bid, port: 10122, type: vmess, uuid: c8c213ae-a922-4aa2-bc75-e2b529e05362, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: v1.mumi.bid}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_25, server: 100.wowogg.cyou, port: 11220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_26, server: 102.wowogg.cyou, port: 11221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_27, server: 103.wowogg.cyou, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: KR_二爷翻墙网 https://1808.ga 节点_28, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 1031kr.fans8.xyz}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_29, server: 104.wowogg.cyou, port: 11222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_30, server: 105.wowogg.cyou, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_31, server: 107.wowogg.cyou, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_32, server: 109.wowogg.cyou, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_33, server: 110.wowogg.cyou, port: 52210, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_34, server: 114.wowogg.cyou, port: 52214, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_35, server: 115.wowogg.cyou, port: 52215, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_36, server: 116.wowogg.cyou, port: 52216, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_37, server: 117.wowogg.cyou, port: 52217, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_38, server: 119.wowogg.cyou, port: 52219, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_39, server: 122.wowogg.cyou, port: 52222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_40, server: 126.wowogg.cyou, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_41, server: 127.wowogg.cyou, port: 52227, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_42, server: 128.wowogg.cyou, port: 52228, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: KR_二爷翻墙网 https://1808.ga 节点_43, server: 146.56.109.197, port: 39966, type: vmess, uuid: 608408f6-fd79-49a3-96ef-003266a773a0, alterId: 0, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_44, server: 82.wowogg.cyou, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_45, server: 84.wowogg.cyou, port: 52284, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: AU_二爷翻墙网 https://1808.ga 节点_46, server: arm.50k.one, port: 39966, type: vmess, uuid: 608408f6-fd79-49a3-96ef-003266a773a0, alterId: 0, cipher: auto, tls: false}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_47, server: global-transit-hk-v2.pucdn.me, port: 10013, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_48, server: global-transit-hk-v2.pucdn.me, port: 10005, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_49, server: global-transit-hk-v2.pucdn.me, port: 10007, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_50, server: global-transit-hk-v2.pucdn.me, port: 10014, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: JP_二爷翻墙网 https://1808.ga 节点_51, server: aws.jp.tgproxy.wtf, port: 21888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /theuploadapi, headers: {Host: aws.jp.tgproxy.wtf}}}
-  - {name: LT_二爷翻墙网 https://1808.ga 节点_52, server: 0118ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0118ru.fans8.xyz}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_53, server: 183.232.56.161, port: 8001, type: vmess, uuid: 326d3d2b-ac85-3042-9cc4-05aeb7dbe997, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 183.232.56.161}}}
-  - {name: LT_二爷翻墙网 https://1808.ga 节点_54, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 1222ru.fans8.xyz}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_55, server: global-transit-hk-v2.pucdn.me, port: 10012, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_56, server: global-transit-hk-v2.pucdn.me, port: 10009, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_57, server: global-transit-hk-v2.pucdn.me, port: 10011, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_58, server: global-transit-hk-v2.pucdn.me, port: 10006, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /vvv, headers: {Host: global-transit-hk-v2.pucdn.me}}}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_59, server: 130.wowogg.cyou, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_60, server: 131.wowogg.cyou, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_61, server: 92.wowogg.cyou, port: 52292, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_62, server: 96.wowogg.cyou, port: 52296, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_63, server: 101.wowogg.cyou, port: 52201, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_64, server: 123.wowogg.cyou, port: 52223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_65, server: 124.wowogg.cyou, port: 52224, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_66, server: 173.82.141.20, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.24858033.xyz}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_67, server: 23.224.158.174, port: 443, type: vmess, uuid: 85d99164-4b46-487d-920e-df2e523a50c5, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.65530739.xyz}}}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_68, server: 98.wowogg.cyou, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_69, server: 23.224.9.90, port: 443, type: vmess, uuid: bb25859e-f6da-4101-989f-b4dd67a22682, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.24027907.xyz}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_70, server: 23.225.33.22, port: 443, type: vmess, uuid: 3de11753-9cec-4b4a-b5c5-47aa2dffb409, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.95708338.xyz}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_71, server: l1-do-ua-04.pucdn.me, port: 10080, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /pucloud, headers: {Host: l1-do-ua-04.pucdn.me}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_72, server: l1-do-ua-01.pucdn.me, port: 10080, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /pucloud, headers: {Host: l1-do-ua-01.pucdn.me}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_73, server: l1-do-ua-02.pucdn.me, port: 10080, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /pucloud, headers: {Host: l1-do-ua-02.pucdn.me}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_74, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_75, server: l1-do-ua-03.pucdn.me, port: 10080, type: vmess, uuid: ce8cfa18-f6a8-3369-9a8c-08dd4e27dff2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /pucloud, headers: {Host: l1-do-ua-03.pucdn.me}}}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_76, server: az1.xrenblog.com, port: 53067, type: vmess, uuid: 3c5e4538-d8aa-4d5e-ab37-81d20950c0b3, alterId: 0, cipher: auto, tls: true}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_77, server: 23.224.31.213, port: 443, type: vmess, uuid: d0e22005-b9fe-4bbc-81a3-27c52d4927a4, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.81690929.xyz}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_78, server: 23.224.31.43, port: 443, type: vmess, uuid: 2278efe4-ad0c-47ce-9480-068608368d76, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.44467269.xyz}}}
-  - {name: NL_二爷翻墙网 https://1808.ga 节点_79, server: 154.84.1.87, port: 443, type: vmess, uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.94226049.xyz}}}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_80, server: 132.wowogg.cyou, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_81, server: 133.wowogg.cyou, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_82, server: 134.wowogg.cyou, port: 52334, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_83, server: 135.wowogg.cyou, port: 52335, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_84, server: 136.wowogg.cyou, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_85, server: 81.wowogg.cyou, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_86, server: 86.wowogg.cyou, port: 52286, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_87, server: 91.wowogg.cyou, port: 52291, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_88, server: 94.wowogg.cyou, port: 52294, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_89, server: 90.wowogg.cyou, port: 52290, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_90, server: 85.wowogg.cyou, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_91, server: 129.wowogg.cyou, port: 52329, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_92, server: 117.28.243.164, port: 8007, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_93, server: 122.9.62.45, port: 1028, type: ss, cipher: chacha20-ietf-poly1305, password: 958c6e082af39b451e1656b87660a363c89071a21d5a768b12e564d1dbe3e96e}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_94, server: 117.28.243.220, port: 8223, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_95, server: 104.208.112.171, port: 3389, type: trojan, password: ca911d30af65ef1b}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_96, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b}
-  - {name: TW_二爷翻墙网 https://1808.ga 节点_97, server: 60.249.3.226, port: 3389, type: trojan, password: ca911d30af65ef1b}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_98, server: hk1-1.nigirocloud.com, port: 443, type: trojan, password: x3MdzdVvaffC97yuHt, sni: hk1-1.nigirocloud.com}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_99, server: hk1-8.nigirocloud.com, port: 443, type: trojan, password: x3MdzdVvaffC97yuHt, sni: hk1-8.nigirocloud.com}
-  - {name: SG_二爷翻墙网 https://1808.ga 节点_100, server: 13.229.132.31, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: JP_二爷翻墙网 https://1808.ga 节点_101, server: os2-1.nigirocloud.com, port: 443, type: trojan, password: x3MdzdVvaffC97yuHt, sni: os2-1.nigirocloud.com}
-  - {name: JP_二爷翻墙网 https://1808.ga 节点_102, server: os2-2.nigirocloud.com, port: 443, type: trojan, password: x3MdzdVvaffC97yuHt, sni: os2-2.nigirocloud.com}
-  - {name: JP_二爷翻墙网 https://1808.ga 节点_103, server: os2-4.nigirocloud.com, port: 443, type: trojan, password: x3MdzdVvaffC97yuHt, sni: os2-4.nigirocloud.com}
-  - {name: JP_二爷翻墙网 https://1808.ga 节点_104, server: ty2-2.nigirocloud.com, port: 443, type: trojan, password: x3MdzdVvaffC97yuHt, sni: ty2-2.nigirocloud.com}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_105, server: us3-3.nigirocloud.com, port: 443, type: trojan, password: x3MdzdVvaffC97yuHt, sni: us3-3.nigirocloud.com}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_106, server: 42.193.120.172, port: 40596, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_107, server: 42.193.120.172, port: 40589, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_108, server: 42.193.120.172, port: 40587, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_109, server: 42.193.120.172, port: 40586, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_110, server: 42.193.120.172, port: 40557, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_111, server: 42.193.120.172, port: 40548, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_112, server: 42.193.120.172, port: 40547, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_113, server: 42.193.120.172, port: 40546, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_114, server: 42.193.120.172, port: 40541, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_115, server: 42.193.120.172, port: 40535, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_116, server: 42.193.120.172, port: 40532, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_117, server: 42.193.120.172, port: 40582, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_118, server: 42.193.120.172, port: 40572, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_119, server: 42.193.120.172, port: 40570, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: JP_二爷翻墙网 https://1808.ga 节点_120, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_121, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_122, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_123, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_124, server: 120.232.174.85, port: 24089, type: ss, cipher: aes-128-gcm, password: xoz6KQ}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_125, server: 120.232.174.85, port: 25081, type: ss, cipher: aes-128-gcm, password: xoz6KQ}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_126, server: 120.232.174.85, port: 47985, type: ss, cipher: aes-128-gcm, password: xoz6KQ}
-  - {name: HK_二爷翻墙网 https://1808.ga 节点_127, server: hkaz1.scsevers.cf, port: 443, type: trojan, password: sharecentre, sni: hkaz1.scsevers.cf, skip-cert-verify: true}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_128, server: 122.9.62.44, port: 2945, type: ss, cipher: chacha20-ietf-poly1305, password: 2d5559dc1d6c1d3581f4ee327ac93b58359c963da44aa92faef307ee07a11261}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_129, server: 122.9.62.6, port: 5557, type: ss, cipher: chacha20-ietf-poly1305, password: 5912725b993997cf9a926efaa3827f2363a0edc73744ad39976bcb78bfd2995c}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_130, server: 122.9.62.57, port: 1001, type: ss, cipher: chacha20-ietf-poly1305, password: d448c5c3968140fcd5470e035d443c502faa163363b313e01bcbb2c024d2a510}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_131, server: 122.9.62.9, port: 7931, type: ss, cipher: chacha20-ietf-poly1305, password: bbea04c91913a27ab1c04f3aedc2a74e1e47c876898738d7f79938fd20c13b5e}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_132, server: 122.9.54.209, port: 5542, type: ss, cipher: chacha20-ietf-poly1305, password: c4e3e2445d3e03e651e620d3357b7c118417cda4605d4714993075cde9e2ba34}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_133, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, sni: hygz.doggogogo.top, skip-cert-verify: true}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_134, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, sni: cscu.wecanfly.top, skip-cert-verify: true}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_135, server: fsyd.wecanfly.top, port: 52000, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, sni: fsyd.wecanfly.top, skip-cert-verify: true}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_136, server: fsyd.wecanfly.top, port: 51219, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, sni: fsyd.wecanfly.top, skip-cert-verify: true}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_137, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_138, server: 117.185.229.112, port: 45089, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_139, server: 117.28.243.220, port: 8147, type: ss, cipher: rc4-md5, password: passinfo123}
-  - {name: IN_二爷翻墙网 https://1808.ga 节点_140, server: in-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: fD0KP8PWA, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_141, server: 120.232.174.85, port: 27938, type: ss, cipher: aes-128-gcm, password: xoz6KQ}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_142, server: zu.n.hxray.me, port: 43944, type: ss, cipher: aes-128-gcm, password: 47a56d84-3abb-48b0-b21b-1324b4ba04a0}
-  - {name: JP_二爷翻墙网 https://1808.ga 节点_143, server: lijp.scsevers.cf, port: 443, type: trojan, password: sharecentre, sni: lijp.scsevers.cf}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_144, server: cscu.wecanfly.top, port: 51227, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: cscu.wecanfly.top, skip-cert-verify: true}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_145, server: cscu.wecanfly.top, port: 51131, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: cscu.wecanfly.top, skip-cert-verify: true}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_146, server: cscu.wecanfly.top, port: 51210, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: cscu.wecanfly.top, skip-cert-verify: true}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_147, server: 120.232.192.119, port: 3389, type: trojan, password: ca911d30af65ef1b}
-  - {name: TW_二爷翻墙网 https://1808.ga 节点_148, server: 60.249.3.229, port: 3389, type: trojan, password: ca911d30af65ef1b}
-  - {name: SG_二爷翻墙网 https://1808.ga 节点_149, server: 13.212.10.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: SG_二爷翻墙网 https://1808.ga 节点_150, server: 54.151.244.16, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: US_二爷翻墙网 https://1808.ga 节点_151, server: 97.64.31.80, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: KR_二爷翻墙网 https://1808.ga 节点_152, server: 3.39.6.141, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: KR_二爷翻墙网 https://1808.ga 节点_153, server: 3.36.121.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_154, server: 120.232.174.85, port: 29147, type: ss, cipher: aes-128-gcm, password: xoz6KQ}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_155, server: ir02.advancedvectorextensions.com, port: 14328, type: ssr, cipher: rc4-md5, password: eHy72n, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_156, server: hk22.advancedvectorextensions.com, port: 14328, type: ssr, cipher: rc4-md5, password: eHy72n, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_157, server: hk04.advancedvectorextensions.com, port: 14328, type: ssr, cipher: rc4-md5, password: eHy72n, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: CN_二爷翻墙网 https://1808.ga 节点_158, server: hk05.advancedvectorextensions.com, port: 14328, type: ssr, cipher: rc4-md5, password: eHy72n, protocol: origin, obfs: http_simp
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>api.dler.io | 504: Gateway time-out</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+<script type="text/javascript">
+(function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode:504,helpful:a,version:1}};b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">504</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6ebf7a3199307db9 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2022-03-14 19:40:46 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Gateway time-out</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Los Angeles</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">api.dler.io</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a gateway time-out error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        
+        <div class="feedback-hidden py-8 text-center" id="error-feedback">
+           <div id="error-feedback-survey">
+              Was this page helpful?
+              <button class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded" id="feedback-button-yes" type="button">Yes</button>
+              <button class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded" id="feedback-button-no" type="button">No</button>
+           </div>
+           <div class="feedback-success feedback-hidden" id="error-feedback-success">
+              Thank you for your feedback!
+           </div>
+        </div>
+        
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6ebf7a3199307db9</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 138.91.189.138</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+

@@ -50,9 +50,10 @@ Openit
 **HTTPS**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 
-Base64适用于众多平台和软件，Clash专属于Clash系软件；HTTPS持续有效，专用于小火箭和装有资源解析器的Quantumult X
+Base64适用于众多平台和软件，Clash专属于Clash系软件；HTTPS持续有效，专用于小火箭和装有[资源解析器]的Quantumult X
 &emsp;&emsp;[源文件](https://github.com/git-yusteven/openit/raw/main/url)
 
+[资源解析器]: https://merlinblog.xyz/wiki/quanx.html
 <!--访问这两个链接，刷新CDN
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml

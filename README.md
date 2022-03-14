@@ -50,7 +50,7 @@ Openit
 **HTTPS**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 
-Base64适用于众多平台和软件，Clash专属于Clash系软件，HTTPS专用于[Shadowrocket]
+Base64适用于众多平台和软件，Clash专属于Clash系软件，HTTPS专用于Shadowrocket和装有资源解析器的Quantumult X
 HTTPS 持续有效，无需更新&emsp;&emsp;&emsp;[源文件](https://github.com/git-yusteven/openit/raw/main/url)
 
 <!--访问这两个链接，刷新CDN

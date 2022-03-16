@@ -77,16 +77,16 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
  教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray
 
 [ss]: https://ghproxy.com/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
-[ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.36/v2rayN-Core.zip
-[clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-win.7z
-[qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://github.abskoop.workers.dev/https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.12/app.7z
+[ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
+[v2rayN]: https://ghproxy.com/https://github.com/2dust/v2rayN/releases/download/4.36/v2rayN-Core.zip
+[clash]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-win.7z
+[qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
+[Clash汉化补丁]: https://ghproxy.com/https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.12/app.7z
 ## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
 >**.7z文件如何解压？**
 可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**);蓝字是软件dmg安装包地址 下方是Mac App Store地址
-### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge(intel)]
+### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge(intel)]
  ｜SSR｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge(intel)｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
@@ -95,11 +95,11 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 ### Surge(Arm) *$49.99* App内购买
 [![点击跳转至Mac App Store][macos-black]][Surge]
 
-[ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-mac.7z
-[clash(Arm)]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-arm64-mac.7z
-[clashx]: https://github.abskoop.workers.dev/https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
-[qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
+[ssr]: https://ghproxy.com/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
+[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-mac.7z
+[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-arm64-mac.7z
+[clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
+[qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [Surge(intel)]: https://nssurge.com/
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
@@ -200,14 +200,14 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 ## Linux
 Linux方面我不太了解，这里给出下载地址，其实在Linux上更多的是部署.
-### [Clash](https://github.com/Dreamacro/clash/releases/)｜[Qv2ray](https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
+### [Clash](https://github.com/Dreamacro/clash/releases/)｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
 
 [clash]: https://github.com/Dreamacro/clash/releases/
-[qv2ray]: https://github.abskoop.workers.dev/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
+[qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
 ## Android TV
 什么，电视翻墙？？？
 也可以通过软路由翻墙
-### ｜[SS](https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
+### ｜[SS](https://ghproxy.com/https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
 [SS]: https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk
 ***
 ##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间  [点击回来](https://github.com/git-yusteven/openit#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接点击蓝色字体选择要下载的文件)

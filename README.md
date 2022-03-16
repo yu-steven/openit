@@ -76,7 +76,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
  教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray
 
-[ss]: https://github.abskoop.workers.dev/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
+[ss]: https://ghproxy.com/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://github.abskoop.workers.dev/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
 [v2rayN]: https://github.abskoop.workers.dev/https://github.com/2dust/v2rayN/releases/download/4.36/v2rayN-Core.zip
 [clash]: https://github.abskoop.workers.dev/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-win.7z

@@ -87,7 +87,7 @@ https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 >**.7z文件如何解压？**
 可以使用[The Unarchiver](https://www.theunarchiver.com/)进行解压(**只能解压**);蓝字是软件dmg安装包地址 下方是Mac App Store地址
 ### [SSR]｜[Clash(intel)]｜[Clash(Arm)] [ClashX]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayX]
- ｜SSR｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge(intel)｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程
+ ｜SSR｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge｜v2rayX｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
 ### Quantumult X(Arm) *$7.99*

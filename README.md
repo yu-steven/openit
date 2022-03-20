@@ -272,7 +272,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/git-yusteven/openit)
 
 #### Clash超时也是可以用的，图中为ClashX  返回
-[![没啥，就是超时了](https://github.com/git-yusteven/openit/raw/main/images/ClashX.jpg "超时就长这样")
+![没啥，就是超时了](https://github.com/git-yusteven/openit/raw/main/images/ClashX.jpg "超时就长这样")
 #### *Quantumult X* UI界面  [返回](https://github.com/git-yusteven/openit#ios)
 [![图片，加载不出来就不看吧](https://github.com/git-yusteven/openit/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### *Shadowrocket*支持的协议  [返回](https://github.com/git-yusteven/openit#ios)

@@ -53,9 +53,6 @@ Openit
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 **专用**
 
-Clash[禁Ping会超时](https://github.com/git-yusteven/openit#clash超时也是可以用的图中为clashx--返回)
-&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;[源文件](https://github.com/git-yusteven/openit/raw/main/url)
-
 [资源解析器]: https://merlinblog.xyz/wiki/quanx.html
 <!--访问这两个链接，刷新CDN
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long

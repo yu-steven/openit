@@ -43,17 +43,17 @@ Openit
 [Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **Base64**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long```
-通用
+**通用**
 
 **Clash**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml```
-专用
+**专用**
 
 **iOS**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
-专用
+**专用**
 
-Base64适用于众多平台和软件；Clash专用于Clash系软件，[禁Ping会超时](https://github.com/git-yusteven/openit#clash超时也是可以用的图中为clashx--返回)；HTTPS专用于小火箭和装有[资源解析器]的Quantumult X；Clash和HTTPS均长期有效且不用更新
+Clash[禁Ping会超时](https://github.com/git-yusteven/openit#clash超时也是可以用的图中为clashx--返回)
 &emsp;&emsp;&ensp;[源文件](https://github.com/git-yusteven/openit/raw/main/url)
 
 [资源解析器]: https://merlinblog.xyz/wiki/quanx.html

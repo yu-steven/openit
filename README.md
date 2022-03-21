@@ -139,7 +139,7 @@ Openit
 [google-play]: https://github.com/git-yusteven/tag/raw/main/google-play.svg
 
 ## iOS
-首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](https://github.com/git-yusteven/openit#shadowrocket支持的协议--返回)简单易用并支持分享节点; 
+首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[^1][如图](https://github.com/git-yusteven/openit#shadowrocket支持的协议--返回)简单易用并支持分享节点; 
 Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x则更贵;
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
 Stash是Clash规则在iOS平台的最佳选择，完整适配Clash Premium;
@@ -256,11 +256,9 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 <!--替换成仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/git-yusteven/openit)
 
-#### Clash超时也是可以用的，图中为[ClashX](https://github.com/git-yusteven/openit#ssrclashintelclasharmclashxqv2raysurgev2rayx)  [返回](https://github.com/git-yusteven/openit#openit--)
-![没啥，就是超时了](https://github.com/git-yusteven/openit/raw/main/images/ClashX.jpg "超时就长这样")
 #### *Quantumult X* UI界面  [返回](https://github.com/git-yusteven/openit#ios)
 [![图片，加载不出来就不看吧](https://github.com/git-yusteven/openit/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
-#### *Shadowrocket*支持的协议  [返回](https://github.com/git-yusteven/openit#ios)
+[^1]: #### *Shadowrocket*支持的协议  [返回](https://github.com/git-yusteven/openit#ios)
 [![图片，没啥，有软件之后就知道了](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;*Since 2021.12.23*
 <!--都看到这儿了，还不给个Star？-->

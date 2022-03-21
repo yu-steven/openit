@@ -37,8 +37,7 @@ Openit
 
 </div>
 
-<!--本订阅由iOS的[Shadowrocket]&nbsp;(以下简称小火箭)导入、测试、整理、导出;对小火箭兼容性**最高**-->
-<!--本订阅由Openit自建节点和互联网公开节点组成节点网络安全稳定且可持续发展-->
+本订阅由iOS的[Shadowrocket]&nbsp;(以下简称小火箭)导入、测试、整理、导出;对小火箭兼容性**最高**
 
 [Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **Base64**
@@ -53,14 +52,13 @@ Openit
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 **专用**
 
-本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为自建节点分布
+<!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->
 
 [资源解析器]: https://merlinblog.xyz/wiki/quanx.html
 <!--访问这两个链接，刷新CDN
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
 这是注释文本，不会显示-->
-
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
 ***
 *最后更新时间2022.3.13-00:00*

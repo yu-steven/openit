@@ -57,7 +57,7 @@ Openit
 ## Windows
 首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://yuncun.xyz/archives/clash.html))配合v0.19.12版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置
 >**.7z文件如何解压？**
-可以使用[Bandizip](https://www.bandisoft.com/bandizip/dl.php?std-all)这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
+可以使用Bandizip[^1]这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
  教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray
 
@@ -262,3 +262,4 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [![图片，没啥，有软件之后就知道了](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;*Since 2021.12.23*
 <!--都看到这儿了，还不给个Star？-->
+[^1]: https://www.bandisoft.com/bandizip/dl.php?std-all

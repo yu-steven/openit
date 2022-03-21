@@ -1,5 +1,3 @@
-Hhhhh[^1]
-[^1]: hhh
 
 <details>
 <summary>重要</div></summary>

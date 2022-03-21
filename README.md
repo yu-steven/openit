@@ -23,7 +23,7 @@ Openit
  [![name-telegram][svg-telegram]][telegram]
  [![name-base64][svg-base64]][git-base64]
  [![name-clash][svg-clash]][git-clash]
- ![刷新一下][svg-counter]
+ [![name-cdn][svg-cdn]][git-cdn]
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
  [git-license]: ./LICENSE
  [git-base64]: ./long
@@ -33,7 +33,7 @@ Openit
  [svg-base64]: https://github.com/git-yusteven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
- [svg-counter]: https://github-watch.vercel.app/api/counter
+ [svg-cdn]: https://github.com/git-yusteven/openit/actions/workflows/CDN.yaml/badge.svg?branch=main
 
 </div>
 

@@ -37,9 +37,6 @@ Openit
 
 </div>
 
-本订阅由iOS的[Shadowrocket]&nbsp;(以下简称小火箭)导入、测试、整理、导出;对小火箭兼容性**最高**
-
-[Shadowrocket-299]: https://github.com/git-yusteven/openit#shadowrocket-299
 **Base64**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long```
 **通用**
@@ -53,22 +50,10 @@ Openit
 **专用**
 
 <!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->
-
-[资源解析器]: https://merlinblog.xyz/wiki/quanx.html
-<!--访问这两个链接，刷新CDN
-https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
-https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
-这是注释文本，不会显示-->
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
 ***
 *最后更新时间2022.3.13-00:00*
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--点击回来)选择要下载的文件
-
-[**cdn**]: https://www.huaweicloud.com/zhishi/edit-590710.html
-[**jsdelivr**]: https://www.jsdelivr.com/
-[**jsdelivr**转换地址]: https://www.jsdelivr.com/github
-
-
 ## Windows
 首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://yuncun.xyz/archives/clash.html))配合v0.19.12版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置
 >**.7z文件如何解压？**

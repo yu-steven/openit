@@ -263,7 +263,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [![图片，没啥，有软件之后就知道了](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;*Since 2021.12.23*
 <!--都看到这儿了，还不给个Star？-->
-![git-yusteven](https://count.getloli.com/get/@git-yusteven?theme=asoul)
+![openit](https://count.getloli.com/get/@openit?theme=asoul)
 [^1]: https://www.bandisoft.com/bandizip/dl.php?std-all
 [^2]: https://www.theunarchiver.com/
 [^3]: https://play.google.com/store/apps/

@@ -53,6 +53,8 @@ Openit
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 **专用**
 
+本订阅由Openit自建节点和互联网公开节点组成节点网络安全稳定且可持续发展
+
 [资源解析器]: https://merlinblog.xyz/wiki/quanx.html
 <!--访问这两个链接，刷新CDN
 https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long

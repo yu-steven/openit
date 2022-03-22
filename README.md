@@ -38,8 +38,8 @@ Openit
 
 </div>
 
-**Base64**```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long```
-**通用**
+**Base64**
+```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/long```**通用**
 
 **Clash**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml```

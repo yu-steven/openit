@@ -183,6 +183,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [svg-apple]: https://github.com/git-yusteven/tag/raw/main/ios-black.svg
 [教程]: https://limbopro.com/archives/3846.html
 [神机规则]: https://merlinblog.xyz/wiki/quanx.html
+##### 如何创建美区Apple ID？
 ##### [如何使用美区Apple ID下载付费软件？](https://www.extrabux.com/chs/guide/5532699)
 
 ## Linux

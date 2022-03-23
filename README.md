@@ -23,18 +23,17 @@ Openit
  [![name-telegram][svg-telegram]][telegram]
  [![name-base64][svg-base64]][git-base64]
  [![name-clash][svg-clash]][git-clash]
- [![name-cdn][svg-cdn]][git-cdn]
+ ![刷新一下][svg-counter]
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
  [git-license]: ./LICENSE
  [git-base64]: ./long
  [git-clash]: ./Clash.yaml
- [git-cdn]: https://github.com/git-yusteven/openit/actions/workflows/CDN.yaml
  [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
  [svg-base64]: https://github.com/git-yusteven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
- [svg-cdn]: https://github.com/git-yusteven/openit/actions/workflows/CDN.yaml/badge.svg?branch=main
+ [svg-counter]: https://github-watch.vercel.app/api/counter
 
 </div>
 
@@ -264,7 +263,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 [![图片，没啥，有软件之后就知道了](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;*Since 2021.12.23*
 <!--都看到这儿了，还不给个Star？-->
-![openit](https://count.getloli.com/get/@openit?theme=asoul)
+<!--![openit](https://count.getloli.com/get/@openit?theme=asoul)-->
 [^1]: https://www.bandisoft.com/bandizip/dl.php?std-all
 [^2]: https://www.theunarchiver.com/
 [^3]: https://play.google.com/store/apps/

@@ -27,11 +27,10 @@ yamlUtils.save_file("pub/freenode.yaml")
 shutil.rmtree(freenode)
 
 jiang = jiang_content()
-mattkaydiary = mattkaydiary_content()
 
 pub = os.path.join("pub")
 yamlUtils = YamlUtils(pub)
 yamlUtils.make_template(
-    ["jiang.yaml", "mattkaydiary.yaml", "freenode.yaml", "bhqz.yaml"]
+    ["jiang.yaml", "freenode.yaml", "bhqz.yaml"]
 )
 yamlUtils.save_file("pub/combine.yaml")

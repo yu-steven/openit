@@ -3,7 +3,6 @@ import time
 import shutil
 from utils.yamlUtils import YamlUtils
 from utils.jiang import get_content as jiang_content
-from utils.mattkaydiary import get_content as mattkaydiary_content
 
 changfengoss = os.path.join("changfengoss")
 dirname = time.strftime("%Y_%m_%d", time.localtime(time.time()))

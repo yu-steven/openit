@@ -56,7 +56,7 @@ Openit
 ## Windows
 首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/git-yusteven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.12版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果是因为更新订阅而引导至本网站，说明您在使用旧版Clash，已列出新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
 >**.7z文件如何解压？**
-可以使用Bandizip[^1]这个软件进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
+可以使用Bandizip[^1]进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
  教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray
 

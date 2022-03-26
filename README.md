@@ -233,7 +233,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 
 `https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/`
 *2022.3.25---v0.19.13*
-### Linux
+### Clash 内核
 ` https://github.com/Dreamacro/clash/releases/`
 *2022.1.2---v1.9.0*
 ## ClashX

@@ -54,7 +54,7 @@ Openit
 *最后更新时间2022.3.13-00:00*
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--点击回来)选择要下载的文件
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/git-yusteven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.12版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果是因为更新订阅而引导至本网站，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/git-yusteven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.13版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果是因为更新订阅而引导至本网站，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
 >**.7z文件如何解压？**
 可以使用Bandizip[^1]进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
@@ -63,9 +63,9 @@ Openit
 [ss]: https://ghproxy.com/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
 [v2rayN]: https://ghproxy.com/https://github.com/2dust/v2rayN/releases/download/4.36/v2rayN-Core.zip
-[clash]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-win.7z
+[clash]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.13/Clash.for.Windows-0.19.13-win.7z
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://ghproxy.com/https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.12/app.7z
+[Clash汉化补丁]: https://ghproxy.com/https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.13/app.7z
 ## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X，当然经过Rosetta 2转移非Arm应用也是可以使用的！
 >**.7z文件如何解压？**
@@ -80,8 +80,8 @@ Openit
 [![点击跳转至Mac App Store][macos-black]][Surge]
 
 [ssr]: https://ghproxy.com/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-mac.7z
-[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.12/Clash.for.Windows-0.19.12-arm64-mac.7z
+[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.13/Clash.for.Windows-0.19.13-mac.7z
+[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.13/Clash.for.Windows-0.19.13-arm64-mac.7z
 [clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [v2rayX]: https://ghproxy.com/https://github.com/Cenmrev/V2RayX/releases/download/v1.5.1/V2RayX.app.zip
@@ -226,10 +226,10 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ## Clash
 ### Win/Mac/Android
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases/`
-*2022.3.11---v0.19.12*
+*2022.3.11---v0.19.13*
 ### Clash 汉化补丁 Win
 `https://github.com/BoyceLig/Clash_Chinese_Patch/releases/`
-*2022.3.11---v0.19.12*
+*2022.3.11---v0.19.13*
 
 `https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/`
 *2022.3.25---v0.19.13*

@@ -95,7 +95,7 @@ Openit
 [![点击跳转至Mac App Store](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
 
 ## Android
-首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有v2rayNG其次；kitsunebi老牌翻墙工具；Surfboard是一个与Surge配置兼容的代理实用工具;SS和SSR只支持ss和ssr
+首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有v2rayNG其次；kitsunebi老牌翻墙工具；Surfboard是一个与Surge配置兼容的代理实用工具；SS和SSR只支持ss和ssr
 
  教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜
 ### [SS][apk-ss]

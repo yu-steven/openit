@@ -44,7 +44,7 @@ Openit
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml```
 **专用**
 
-**Apple**
+**iOS**
 ```https://cdn.jsdelivr.net/gh/git-yusteven/openit@main/https```
 **专用**
 

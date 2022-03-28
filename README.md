@@ -234,7 +234,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 *2022.3.25---v0.19.13*
 ### Android
 `https://github.com/Kr328/ClashForAndroid/releases/`
-*2022.1.15---v2.5.4
+*2022.1.15---v2.5.4*
 ### Clash 内核
 ` https://github.com/Dreamacro/clash/releases/`
 *2022.3.19---v1.10.0*

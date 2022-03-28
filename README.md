@@ -129,7 +129,7 @@ Openit
 [apk-clash]: https://apkpure.com/clash-for-android/com.github.kr328.clash/download
 [apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
 [apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download
-[apk-ssr]: https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
+[apk-ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
 [google-ss]: https://play.google.com/store/apps/details?id=com.github.shadowsocks
 [google-v2rayng]: https://play.google.com/store/apps/details?id=com.v2ray.ang
 [google-clash]: https://play.google.com/store/apps/details?id=com.github.kr328.clash

@@ -223,7 +223,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 *2022.2.3---v1.6.30*
 
 ## Clash
-### Win/Mac
+### Win / Mac
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases/`
 *2022.3.25---v0.19.13*
 ### Clash 汉化补丁 Win

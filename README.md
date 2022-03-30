@@ -53,7 +53,7 @@ Openit
 *最后更新时间2022.3.26-00:00*
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--点击回来)选择要下载的文件
 ## Windows
-首推Clash和v2rayN，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/git-yusteven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.13版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果是因为更新订阅而引导至本页面，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/git-yusteven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.13版本；SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果是因为更新订阅而引导至本页面，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
 >**.7z文件如何解压？**
 可以使用Bandizip[^1]进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]

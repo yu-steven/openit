@@ -11,7 +11,7 @@ Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，
 </details>
 
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-<h1 align="left">
+<h1 align="center">
 Openit  
 </h1>
 

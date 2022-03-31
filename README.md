@@ -94,7 +94,7 @@ Openit
 ##### [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者的解决方法](https://www.macwk.com/article/macos-file-damage)
 
 ## Android
-首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有v2rayNG其次；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Surfboard是一个与Surge配置兼容的代理实用工具；SS和SSR只支持ss和ssr
+首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有魔改ss和v2rayNG其次，魔改ss建议使用`http://openit.ml/https`订阅，可享受高速节点；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Surfboard是一个与Surge配置兼容的代理实用工具；SS和SSR只支持ss和ssr
 
  教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜
 ### [SS][apk-ss]
@@ -127,6 +127,7 @@ Openit
 <img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
 
+### [魔改ss](https://github.com/git-yusteven/openit/blob/main/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download

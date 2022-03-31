@@ -127,7 +127,7 @@ Openit
 <img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
 
-### [魔改ss](https://github.com/git-yusteven/openit/blob/main/images/Shadowsocks_4.8.5.apk)
+### [魔改ss](https://download.fastgit.org/git-yusteven/openit/blob/main/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download

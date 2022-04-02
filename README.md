@@ -94,7 +94,7 @@ Openit
 ##### [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者的解决方法](https://www.macwk.com/article/macos-file-damage)
 
 ## Android
-首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有魔改ss和v2rayNG其次，魔改ss可以支持更多类型的节点；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Surfboard是一个与Surge配置兼容的代理实用工具；SS和SSR只支持ss和ssr
+首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有魔改ss和v2rayNG其次，魔改ss可以支持更多类型的节点；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Matsuri(中文名“茉莉”作为SagerNet的一个分支，功能强大，很多人在用；Surfboard是一个与Surge配置兼容的代理实用工具；SS和SSR只支持ss和ssr
 
  教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜
 ### [SS][apk-ss]
@@ -112,13 +112,18 @@ Openit
 <img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
 
-### [Kitsunebi][apk-Kitsunebi]
-<a href="https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android" target="_black">
+### [Matsuri][apk-Matsuri]
+<a href="https://f-droid.org/packages/moe.matsuri.lite" target="_black">
 <img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
 
 ### [SagerNet][apk-SagerNet]
 <a href="https://play.google.com/store/apps/details?id=io.nekohasekai.sagernet" target="_black">
+<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+</a>
+
+### [Kitsunebi][apk-Kitsunebi]
+<a href="https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android" target="_black">
 <img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
 </a>
 
@@ -134,6 +139,7 @@ Openit
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
 [apk-clash]: https://apkpure.com/clash-for-android/com.github.kr328.clash/download
 [apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
+[apk-Matsuri]: https://f-droid.org/repo/moe.matsuri.lite_715.apk
 [apk-SagerNet]: https://apkpure.com/kitsunebi/io.nekohasekai.sagernet/download
 [apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download
 [apk-ssr]: https://download.fastgit.org/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk

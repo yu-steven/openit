@@ -18,7 +18,7 @@ Openit
 <div align="center">
 
  [![name-license][svg-license]][git-license]
- [![name-http][svg-http]][http]
+ [![name-telegram][svg-telegram]][telegram]
  [![name-base64][svg-base64]][git-base64]
  [![name-clash][svg-clash]][git-clash]
  ![刷新一下][svg-counter]
@@ -26,11 +26,11 @@ Openit
  [git-license]: ./LICENSE
  [git-base64]: ./long
  [git-clash]: ./Clash.yaml
- [http]: http://openit.ml
+ [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
  [svg-base64]: https://github.com/git-yusteven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
- [svg-http]: https://img.shields.io/badge/http://-openit.ml-blue.svg?style=plastic
+ [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
 
 </div>

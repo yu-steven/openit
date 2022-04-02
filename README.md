@@ -26,7 +26,7 @@ Openit
  [git-license]: ./LICENSE
  [git-base64]: ./long
  [git-clash]: ./Clash.yaml
- [telegram]: https://t.me/ShareCentrePro
+ [http]: http://openit.ml
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
  [svg-base64]: https://github.com/git-yusteven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch

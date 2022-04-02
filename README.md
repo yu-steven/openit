@@ -114,7 +114,7 @@ Openit
 
 ### [Matsuri][apk-Matsuri]
 <a href="https://f-droid.org/packages/moe.matsuri.lite" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" height="60" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" />
 </a>
 
 ### [SagerNet][apk-SagerNet]

@@ -41,7 +41,7 @@ Openit
 **Clash**
 ```http://openit.ml/Clash.yaml```
 
-**iOS**
+**HTTPS**
 ```http://openit.ml/https```
 
 **Base64** 订阅可在大多数翻墙软件中使用

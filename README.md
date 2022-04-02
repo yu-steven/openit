@@ -113,7 +113,7 @@ Openit
 </a>
 
 ### [Matsuri][apk-Matsuri]
-<a href="https://f-droid.org/packages/moe.matsuri.lite" target="_black">
+<a href="https://f-droid.org/repo/moe.matsuri.lite_715.apk" target="_black">
 <img alt="轻触跳转至Google Play" height="62" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.svg" />
 </a>
 

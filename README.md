@@ -37,15 +37,12 @@ Openit
 
 **Base64**
 ```http://openit.ml/long```
-**通用**
 
 **Clash**
 ```http://openit.ml/Clash.yaml```
-**专用**
 
 **iOS**
 ```http://openit.ml/https```
-**专用**
 
 **Base64** 订阅可在大多数翻墙软件中使用
 <br>**Clash** 订阅可在Clash系列软件中使用

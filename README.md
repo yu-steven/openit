@@ -113,8 +113,8 @@ Openit
 </a>
 
 ### [Matsuri][apk-Matsuri]
-<a href="https://f-droid.org/repo/moe.matsuri.lite_715.apk" target="_black">
-<img alt="轻触跳转至Google Play" height="62" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.svg" />
+<a href="https://f-droid.org/packages/moe.matsuri.lite" target="_black">
+<img alt="轻触跳转至Google Play" height="62px" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.svg" />
 </a>
 
 ### [SagerNet][apk-SagerNet]
@@ -138,9 +138,9 @@ Openit
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
 [apk-clash]: https://apkpure.com/clash-for-android/com.github.kr328.clash/download
-[apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
 [apk-Matsuri]: https://f-droid.org/repo/moe.matsuri.lite_715.apk
 [apk-SagerNet]: https://apkpure.com/kitsunebi/io.nekohasekai.sagernet/download
+[apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
 [apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download
 [apk-ssr]: https://download.fastgit.org/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
 [google-ss]: https://play.google.com/store/apps/details?id=com.github.shadowsocks

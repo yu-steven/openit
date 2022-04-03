@@ -44,7 +44,7 @@ Openit
 **HTTPS**
 ```http://openit.ml/https```
 
-> **不同订阅间的区别**
+> **不同订阅之间的区别**
 <br>**Base64** 订阅可在大多数翻墙软件中使用
 <br>**Clash** 订阅可在 Clash 系列软件中使用
 <br>**HTTPS** 订阅可在 Shadowrocket 中使用

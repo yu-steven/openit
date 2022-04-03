@@ -44,7 +44,7 @@ Openit
 **专用**
 
 **iOS**
-```http://openit.ml/https```
+ ```http://openit.ml/https```
 **专用**
 
 <!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->

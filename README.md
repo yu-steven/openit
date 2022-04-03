@@ -36,15 +36,15 @@ Openit
 </div>
 
 **Base64**
-```http://openit.ml/long```
+```https://openit.ml/long```
 **通用**
 
 **Clash**
-```http://openit.ml/Clash.yaml```
+```https://openit.ml/Clash.yaml```
 **专用**
 
 **iOS**
- ```http://openit.ml/https```
+ ```https://openit.ml/https```
 **专用**
 
 <!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->

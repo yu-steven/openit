@@ -37,17 +37,15 @@ Openit
 
 **Base64**
 ```http://openit.ml/long```
+**通用**
 
 **Clash**
 ```http://openit.ml/Clash.yaml```
+**专用**
 
-**HTTPS**
-```http://openit.ml/https```
-
-> **不同订阅之间的区别**
-<br>**Base64** 订阅可在大多数翻墙软件中使用
-<br>**Clash** 订阅可在 Clash 系列软件中使用
-<br>**HTTPS** 订阅可在 Shadowrocket 中使用
+**iOS**
+ ```http://openit.ml/https```
+**专用**
 
 <!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->

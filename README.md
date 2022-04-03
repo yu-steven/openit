@@ -61,7 +61,7 @@ Openit
 
 [ss]: https://download.fastgit.org/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://download.fastgit.org/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://download.fastgit.org/2dust/v2rayN/releases/download/4.36/v2rayN-Core.zip
+[v2rayN]: https://download.fastgit.org/2dust/v2rayN/releases/download/5.9/v2rayN-Core.zip
 [clash]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.13/Clash.for.Windows-0.19.13-win.7z
 [qv2ray]: https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 [Clash汉化补丁]: https://download.fastgit.org/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.13/app.7z
@@ -230,7 +230,7 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
-*2022.3.8---v4.36*
+*2022.4.1---v5.9*
 ### Android
 ` https://github.com/2dust/v2rayNG/releases/`
 *2022.2.3---v1.6.30*

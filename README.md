@@ -43,7 +43,7 @@ Openit
 ```https://openit.ml/Clash.yaml```
 **专用**
 
-**iOS**
+**Shadowrocket**
  ```https://openit.ml/https```
 **专用**
 

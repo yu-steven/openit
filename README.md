@@ -195,16 +195,17 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ##### 如何使用美区Apple ID下载付费软件？
 
 ## Linux
-Linux方面我不太了解，这里给出下载地址，其实在Linux上更多的是部署.
+在Linux上使用相关软件，主要意图是协议转换（即将ss,vmess等协议转换为htto,sock5等协议）。
+当然，如果您在Linux上有办公，写代码等需求，您也可以使用这些软件以连接国际网络。
+您可以在此下载并使用这些软件。
 ### [Clash](https://github.com/Dreamacro/clash/releases/)｜[Qv2ray](https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
 
 [clash]: https://github.com/Dreamacro/clash/releases/
 [qv2ray]: https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
 ## Android TV
-什么，电视翻墙？？？
-也可以通过软路由翻墙
+您可以通过在智能电视上安装相关应用来观看Netflix,Disney+等内容。
+电视性能主要偏重于视频解码性能，网络解析方面性能较差，可能会造成意想不到的卡顿等情况。 我们建议您通过软路由进行协议转换，再通过智能电视连接
 ### ｜[SS](https://download.fastgit.org/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
-[SS]: https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk
 ***
 ##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间  [点击回来](https://github.com/git-yusteven/openit#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接点击蓝色字体选择要下载的文件)
 链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**
@@ -263,14 +264,15 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 ***
 # 声明
 
-; 引用神机, blackmatrix7和lhie1重写规则, KOP-XIAO的geo-checker js脚本, ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则
+本仓库采用 CC BY-SA 4.0 许可协议
 
-著作权归作者所有，节点归IP所有者所有
-转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
+Clash.yaml 引用 ACL4SSR 代理规则
+Quanx.conf 引用神机, blackmatrix7和lhie1重写规则, KOP-XIAO的geo-checker js脚本, ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则
+
+著作权归作者所有，节点归IP所有者所有，规则、js脚本归创作所有者所有
+<br>转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。
-
-本仓库采用 CC BY-SA 4.0 许可协议
 ## Time in Stars
 <!--替换成仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/git-yusteven/openit)

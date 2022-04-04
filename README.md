@@ -10,8 +10,12 @@ Openit
  [![name-telegram][svg-telegram]][telegram]
  [![name-base64][svg-base64]][git-base64]
  [![name-clash][svg-clash]][git-clash]
- ![刷新一下][svg-counter]
+ ![如果看不见，就刷新一下][svg-counter]
+ 
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
+ 
+ Openit官网:https://openit.ml  文档(暂同官网):https://doc.openit.ml  教程:[Github Wiki](https://github.com/yu-steven/openit/wiki)/[Openit Document](https://doc.openit.ml/tutorial)
+ 
  [git-license]: ./LICENSE
  [git-base64]: ./long
  [git-clash]: ./Clash.yaml
@@ -39,6 +43,8 @@ Openit
 **Quanx**
 ```https://openit.ml/Quanx.conf```
 **专用**
+
+>Openit官网订阅有时会出现问题，如果出现问题，请使用[Wmx Prop服务](https://github.com/git-yusteven/openit#WmxProp备链)或[jsdelivr](https://github.com/git-yusteven/openit#jsdelivr备链)
 
 <!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
@@ -280,3 +286,35 @@ Quanx.conf 引用神机, blackmatrix7和lhie1重写规则, KOP-XIAO的geo-checke
 [^1]: https://www.bandisoft.com/bandizip/dl.php?std-all
 [^2]: https://www.theunarchiver.com/
 [^3]: https://play.google.com/store/apps/
+
+### WmxProp备链
+暂不支持Quan X
+
+**Base64**
+```https://prop.cf/openit?long```
+**通用**
+
+**小火箭**
+```https://prop.cf/openit?ios```
+**专用**
+
+**Clash**
+```https://prop.cf/openit```
+**专用**
+
+### jsdelivr备链
+**Base64**
+```https://cdn.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml```
+**通用**
+
+**小火箭**
+```https://cdn.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml```
+**专用**
+
+**Clash**
+```https://cdn.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml```
+**专用**
+
+**Quanx**
+```https://cdn.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml```
+**专用**

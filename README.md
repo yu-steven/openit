@@ -1,18 +1,7 @@
 
-<details>
-<summary>重要</div></summary>
-
-Clash for Windows存在严重漏洞，可以在您订阅时执行任意代码，影响v0.19.9之前所有版本请立即马上果断更新至最新版本v0.19.10及以上(所有Clash系软件)
- 
- [点击此处了解更多](https://github.com/Fndroid/clash_for_windows_pkg/issues/2710)（跳转到Clash官方仓库issues）
- 本仓库已同步至Clash的最新版本
-
-正在寻找本文提到的翻墙的教程，如有资源，联系我 https://t.me/yusteven
-</details>
-
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="./Openit.ico" /></a>
 <h1 align="lefts">
-Openit  
+Openit
 </h1>
 
 <div align="center">

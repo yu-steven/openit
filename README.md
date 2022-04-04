@@ -262,12 +262,15 @@ Linux方面我不太了解，这里给出下载地址，其实在Linux上更多�
 *2021.6.17---v2.7.0* **The End**
 ***
 # 声明
-本仓库采用 CC BY-SA 4.0 许可协议
+
+; 引用神机, blackmatrix7和lhie1重写规则, KOP-XIAO的geo-checker js脚本, ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则
 
 著作权归作者所有，节点归IP所有者所有
 转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。
+
+本仓库采用 CC BY-SA 4.0 许可协议
 ## Time in Stars
 <!--替换成仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/git-yusteven/openit)

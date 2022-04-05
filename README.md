@@ -20,6 +20,7 @@ Openit
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
+新增Openit教程:[Github Wiki](https://github.com/yu-steven/openit/wiki)/[Openit Document](https://doc.openit.ml/tutorial)
 
 </div>
 

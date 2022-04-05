@@ -1,4 +1,4 @@
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="./Openit.PNG" /></a>
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" width="73px" style="border-width:0" src="./Openit.PNG" /></a>
 <h1 align="lefts">
 Openit
 </h1>

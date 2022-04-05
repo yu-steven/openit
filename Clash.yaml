@@ -520,26 +520,6 @@ proxy-groups:
       - 🇸🇬 Http|新加坡27
       - 🇸🇬 Http|新加坡28
 
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - ♻️ 自动选择
-      - 🚀 节点选择
-
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - DIRECT
-      - 🚀 节点选择
-
   - name: 🇺🇸 美区
     type: load-balance
     url: https://www.google.com/gen_204
@@ -603,6 +583,24 @@ proxy-groups:
       - 🇸🇬 Http|新加坡26
       - 🇸🇬 Http|新加坡27
       - 🇸🇬 Http|新加坡28
+
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - ♻️ 自动选择
+      - 🚀 节点选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 🚀 节点选择
 
   - name: ⚖️ 关于
     type: select

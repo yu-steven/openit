@@ -1,5 +1,9 @@
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+<h1 align="lefts">
+<img alt="Logo" height="73px" style="border-width:0" src="./images/logo-pro.png" />
+</h1>
+
 <div align="center">
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img alt="Creative Commons License" width="300px" style="border-width:0" src="./images/logo-pro.png" /></a>
 
  [![name-license][svg-license]][git-license]
  [![name-telegram][svg-telegram]][telegram]
@@ -16,6 +20,7 @@
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
+Openit新增教程:[Github Wiki](https://github.com/yu-steven/openit/wiki)/[Openit Document](https://doc.openit.ml/tutorial)
 
 </div>
 

@@ -1,7 +1,4 @@
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" width="73px" style="border-width:0" src="./Openit.PNG" /></a>
-<h1 align="lefts">
-Openit
-</h1>
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="centre" alt="Creative Commons License" width="300" style="border-width:0" src="./images/logo-pro.png" /></a>
 
 <div align="center">
 
@@ -20,7 +17,6 @@ Openit
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
-新增Openit教程:[Github Wiki](https://github.com/yu-steven/openit/wiki)/[Openit Document](https://doc.openit.ml/tutorial)
 
 </div>
 

@@ -73,8 +73,8 @@ Openit新增教程:[Github Wiki](https://github.com/yu-steven/openit/wiki) / [Op
 [![点击跳转至Mac App Store][macos-black]][Surge]
 
 [ssr]: https://download.fastgit.org/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.13/Clash.for.Windows-0.19.13-mac.7z
-[clash(Arm)]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.13/Clash.for.Windows-0.19.13-arm64-mac.7z
+[clash(intel)]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.14/Clash.for.Windows-0.19.14.dmg
+[clash(Arm)]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.14/Clash.for.Windows-0.19.14-arm64.dmg
 [clashx]: https://download.fastgit.org/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg
 [qv2ray]: https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [v2rayX]: https://download.fastgit.org/Cenmrev/V2RayX/releases/download/v1.5.1/V2RayX.app.zip

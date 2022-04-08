@@ -17,11 +17,5 @@ jobs:
       run: git config --global user.name "github-actions[bot]"&&git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - name: Write
       run: base64 url > long
-    - name: check for changes
-      run: git status
-    - name: stage changed files
-      run: git add long
-    - name: commit changed files
-      run: git commit -m "更新订阅"
-    - name: push code
-      run: git push
+    - name: run script to upload
+      run: chmod +x ./.github/update-repo.sh&&./.github/update-repo.sh

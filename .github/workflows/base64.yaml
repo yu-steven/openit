@@ -13,6 +13,8 @@ jobs:
       with:
         # personal access token
         token: ${{ secrets.BASE64_NAME }}
+    - name: set timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: config git
       run: git config --global user.name "github-actions[bot]"&&git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - name: Write
@@ -22,6 +24,6 @@ jobs:
     - name: stage changed files
       run: git add long
     - name: commit changed files
-      run: git commit -m "更新订阅"
+      run: git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新订阅"
     - name: push code
       run: git push

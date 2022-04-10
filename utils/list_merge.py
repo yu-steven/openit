@@ -15,7 +15,7 @@ Eterniy = './Eternity'
 readme = './README.md'
 
 sub_list_json = './sub/sub_list.json'
-sub_merge_path = './'
+sub_merge_path = './sub/'
 sub_list_path = './sub/list/'
 
 class sub_merge():

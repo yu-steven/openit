@@ -197,7 +197,6 @@ class sub_merge():
             f.write(data)
 
 if __name__ == '__main__':
-    update_url.update_main([0,19])
     sub_merge.geoip_update('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb')
 
     sub_list = sub_merge.read_list(sub_list_json)

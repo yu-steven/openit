@@ -233,7 +233,7 @@ class sub_convert():
                         pass
 
             return sub_content_yaml # 返回字典, output 值为 True 时返回修饰过的 YAML 文本
-    def makeup(input, dup_rm_enabled=False, format_name_enabled=False): # 对节点进行区域的筛选和重命名，输出 YAML 文本 
+    def makeup(input, dup_rm_enabled=True, format_name_enabled=True, speedtest=True): # 对节点进行区域的筛选和重命名，输出 YAML 文本 
         # 区域判断(Clash YAML): https://blog.csdn.net/CSDN_duomaomao/article/details/89712826 (ip-api)
         if isinstance(input, dict):
             sub_content = input
@@ -244,7 +244,7 @@ class sub_convert():
                 yaml_content_raw = sub_convert.convert(input, 'content', 'YAML')
                 sub_content = yaml.safe_load(yaml_content_raw)
         proxies_list = sub_content['proxies']
-        
+
         if dup_rm_enabled: # 去重
             begin = 0
             raw_length = len(proxies_list)
@@ -270,7 +270,7 @@ class sub_convert():
 
         url_list = []
 
-
+        
         if speedtest: # 测速
             sum = len(proxies_list)
             print(f'节点总数：{sum}')
@@ -285,7 +285,7 @@ class sub_convert():
                     proxies_list.remove(proxy)
                 elif ping_result[1] < 1 or ping_result_g[1] < 1:
                     proxies_list.remove(proxy)
-
+        
         for proxy in proxies_list: # 改名
             if format_name_enabled:
                 emoji = {
@@ -296,7 +296,8 @@ class sub_convert():
                     'IT': '🇮🇹', 'PE': '🇵🇪', 'RO': '🇷🇴',
                     'AU': '🇦🇺', 'DE': '🇩🇪', 'RU': '🇷🇺',
                     'KR': '🇰🇷', 'DK': '🇩🇰', 'PT': '🇵🇹',
-                    'CY': '🇨🇾', 'ES': '🇪🇸', 'RELAY': '🏁',
+                    'FR': '🇫🇷', 'CY': '🇨🇾', 'ES': '🇪🇸',
+                    'RELAY': '🏴‍☠️-🇦🇶',
                     'NOWHERE': '🇦🇶',
                 }
 
@@ -321,21 +322,19 @@ class sub_convert():
                     country_code = 'RELAY'
                 elif country_code == 'PRIVATE':
                     country_code = 'RELAY'
-                elif country_code == 'CN':
-                    country_code = 'HK'
 
                 if country_code in emoji:
                     name_emoji = emoji[country_code]
                 else:
                     name_emoji = emoji['NOWHERE']
-
+    
                 proxy_index = proxies_list.index(proxy)
                 if len(proxies_list) > 999:
-                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>4d}'
+                    proxy['name'] = f'[{name_emoji}-{country_code}][{ip}]'
                 elif len(proxies_list) < 999 and len(proxies_list) > 99:
-                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>3d}'
+                    proxy['name'] = f'[{name_emoji}-{country_code}][{ip}]'
                 elif len(proxies_list) < 99:
-                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>2d}'
+                    proxy['name'] = f'[{name_emoji}-{country_code}][{ip}]'
 
                 if proxy['server'] != '127.0.0.1':
                     proxy_str = str(proxy)
@@ -344,7 +343,7 @@ class sub_convert():
                 if proxy['server'] != '127.0.0.1':
                     proxy_str = str(proxy)
                     url_list.append(proxy_str)
-
+                         
         yaml_content_dic = {'proxies': url_list}
         yaml_content_raw = yaml.dump(yaml_content_dic, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2) # yaml.dump 显示中文方法 https://blog.csdn.net/weixin_41548578/article/details/90651464 yaml.dump 各种参数 https://blog.csdn.net/swinfans/article/details/88770119
         yaml_content = yaml_content_raw.replace('\'', '').replace('False', 'false').replace('True', 'true')

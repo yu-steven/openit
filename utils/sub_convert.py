@@ -3,6 +3,7 @@
 import re, yaml, json, base64
 import requests, socket, urllib.parse
 from requests.adapters import HTTPAdapter
+from speedtest import ping
 
 import geoip2.database
 
@@ -268,6 +269,22 @@ class sub_convert():
                 begin += 1
 
         url_list = []
+
+
+        if speedtest: # 测速
+            sum = len(proxies_list)
+            print(f'节点总数：{sum}')
+            for proxy in proxies_list:
+                pos = proxies_list.index(proxy)
+                print(f'测试进度({sum}/{pos})')
+                server = proxy['server']
+                port = proxy['port']
+                ping_result = ping(server, port).tcp_ping()
+                ping_result_g = ping(server, port).google_ping()
+                if ping_result[0] >= 0.05 and ping_result_g[0] >= 0.05:
+                    proxies_list.remove(proxy)
+                elif ping_result[1] < 1 or ping_result_g[1] < 1:
+                    proxies_list.remove(proxy)
 
         for proxy in proxies_list: # 改名
             if format_name_enabled:

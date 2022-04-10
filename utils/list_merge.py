@@ -13,6 +13,8 @@ from urllib import request
 # 文件路径定义
 Eterniy = './Eternity'
 readme = './README.md'
+url = './url'
+base64 = './long'
 
 sub_list_json = './sub/sub_list.json'
 sub_merge_path = './sub/'
@@ -66,7 +68,7 @@ class sub_merge():
             file.write(output_type)
             file.close
         
-        write_list = [f'{sub_merge_path}/sub_merge.txt', f'{sub_merge_path}/sub_merge_base64.txt', f'{sub_merge_path}/sub_merge_yaml.yml']
+        write_list = [f'{url}', f'{base64}', f'{sub_merge_path}/nodes.yaml']
         content_type = (content, content_base64, content_yaml)
         for index in range(len(write_list)):
             content_write(write_list[index], content_type[index])

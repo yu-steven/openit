@@ -15,6 +15,7 @@ Eterniy = './Eternity'
 readme = './README.md'
 
 sub_list_json = './sub/sub_list.json'
+sub_new = './'
 sub_merge_path = './sub/'
 sub_list_path = './sub/list/'
 
@@ -66,7 +67,7 @@ class sub_merge():
             file.write(output_type)
             file.close
         
-        write_list = [f'./url', f'./long', f'{sub_merge_path}/nodes.yaml']
+        write_list = [f'{sub_new}/url', f'{sub_new}/long', f'{sub_merge_path}/nodes.yaml']
         content_type = (content, content_base64, content_yaml)
         for index in range(len(write_list)):
             content_write(write_list[index], content_type[index])

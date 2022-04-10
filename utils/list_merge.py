@@ -55,10 +55,11 @@ class sub_merge():
                 print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
 
         print('Merging nodes...\n')
-        content_raw = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
-        content_yaml = sub_convert.convert(content_raw,'content','YAML',{'dup_rm_enabled': False, 'format_name_enabled': True})
-        content_base64 = sub_convert.base64_encode(content_yaml)
-        content = content_raw
+        content_all = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
+        content_yaml = sub_convert.convert(content_all,'content','YAML',{'dup_rm_enabled': False, 'format_name_enabled': True})
+        content_url = sub_convert.yaml_decode(content_yaml)
+        content_base64 = sub_convert.base64_encode(content_url)
+        content = content_all
 
         def content_write(file, output_type):
             file = open(file, 'w', encoding = 'utf-8')

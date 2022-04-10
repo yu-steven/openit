@@ -205,4 +205,3 @@ if __name__ == '__main__':
     sub_list = sub_merge.read_list(sub_list_json)
     sub_list_remote = sub_merge.read_list(sub_list_json,True)
     sub_merge.sub_merge(sub_list_remote)
-    sub_merge.readme_update(readme,sub_list)

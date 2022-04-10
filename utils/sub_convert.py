@@ -297,7 +297,7 @@ class sub_convert():
                     'AU': '🇦🇺', 'DE': '🇩🇪', 'RU': '🇷🇺',
                     'KR': '🇰🇷', 'DK': '🇩🇰', 'PT': '🇵🇹',
                     'FR': '🇫🇷', 'CY': '🇨🇾', 'ES': '🇪🇸',
-                    'RELAY': '^',
+                    'RELAY': '',
                     'NOWHERE': '❌',
                 }
 

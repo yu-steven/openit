@@ -66,8 +66,8 @@ class sub_merge():
             file.write(output_type)
             file.close
         
-        write_list = [f'{sub_merge_path}/sub_merge.txt', f'{sub_merge_path}/sub_merge_base64.txt', f'{sub_merge_path}/sub_merge_yaml.yml']
-        content_type = (content, content_base64, content_yaml)
+        write_list = [f'{sub_merge_path}/sub_merge.txt', f'{sub_merge_path}/sub_merge_base64.txt', f'{sub_merge_path}/sub_merge_yaml.yml', f'{sub_merge_path}/sub_merge_url.txt']
+        content_type = (content, content_base64, content_yaml, content_url)
         for index in range(len(write_list)):
             content_write(write_list[index], content_type[index])
         print('Done!\n')

@@ -55,19 +55,19 @@ class sub_merge():
                 print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
 
         print('Merging nodes...\n')
-        content_all = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
+        # content_all = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
         content_yaml = sub_convert.convert(content_all,'content','YAML',{'dup_rm_enabled': False, 'format_name_enabled': True})
         content_url = sub_convert.yaml_decode(content_yaml)
         content_base64 = sub_convert.base64_encode(content_url)
-        content = content_all
+        content = content_url
 
         def content_write(file, output_type):
             file = open(file, 'w', encoding = 'utf-8')
             file.write(output_type)
             file.close
         
-        write_list = [f'{sub_merge_path}/sub_merge.txt', f'{sub_merge_path}/sub_merge_base64.txt', f'{sub_merge_path}/sub_merge_yaml.yml', f'{sub_merge_path}/sub_merge_url.txt']
-        content_type = (content, content_base64, content_yaml, content_url)
+        write_list = [f'{sub_merge_path}/sub_merge.txt', f'{sub_merge_path}/sub_merge_base64.txt', f'{sub_merge_path}/sub_merge_yaml.yml']
+        content_type = (content, content_base64, content_yaml)
         for index in range(len(write_list)):
             content_write(write_list[index], content_type[index])
         print('Done!\n')

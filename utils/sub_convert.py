@@ -289,7 +289,7 @@ class sub_convert():
         for proxy in proxies_list: # 改名
             if format_name_enabled:
                 emoji = {
-                    'US': '🇺🇸','HK': '🇭🇰', 'SG': '🇸🇬',
+                    'US': '🇺🇸', 'HK': '🇭🇰', 'SG': '🇸🇬',
                     'JP': '🇯🇵', 'TW': '🇹🇼', 'CA': '🇨🇦',
                     'GB': '🇬🇧', 'CN': '🇨🇳', 'NL': '🇳🇱',
                     'TH': '🇹🇭', 'BE': '🇧🇪', 'IN': '🇮🇳',
@@ -331,11 +331,11 @@ class sub_convert():
     
                 proxy_index = proxies_list.index(proxy)
                 if len(proxies_list) > 999:
-                    proxy['name'] = f'{name_emoji}{country_code} [Openit.ml]'
+                    proxy['name'] = f'{name_emoji}{country_code}-Openit.ml'
                 elif len(proxies_list) < 999 and len(proxies_list) > 99:
-                    proxy['name'] = f'{name_emoji}{country_code} [Openit.ml]'
+                    proxy['name'] = f'{name_emoji}{country_code}-Openit.ml'
                 elif len(proxies_list) < 99:
-                    proxy['name'] = f'{name_emoji}{country_code} [Openit.ml]'
+                    proxy['name'] = f'{name_emoji}{country_code}-Openit.ml'
 
                 if proxy['server'] != '127.0.0.1':
                     proxy_str = str(proxy)

@@ -101,7 +101,7 @@ class sub_merge():
             lines = f.readlines()
             f.close()
         # 获得当前名单及各仓库节点数量
-        with open('./sub/sub_merge.txt', 'r', encoding='utf-8') as f:
+        with open('./url', 'r', encoding='utf-8') as f:
             total = len(f.readlines())
             total = f'合并节点总数: `{total}`\n'
             thanks = []

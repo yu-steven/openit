@@ -21,7 +21,6 @@
  [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
-**每天中午12:00更新**
 
 </div>
 

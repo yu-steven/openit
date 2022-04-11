@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from datetime import timedelta, datetime
 from sub_convert import sub_convert # Python 之间互相调用文件https://blog.csdn.net/winycg/article/details/78512300
 from list_update import update_url
 
@@ -54,18 +55,20 @@ class sub_merge():
                 file.close()
                 print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
 
+        nodes = len(proxies_list)
+        now = datetime.today().strftime('+%Y-%m-%d %H:%M:%S')
+        up = "REMARKS=Openit\n🚀 STATUS=节点数量: {nodes}.♥.更新时间: {now}\n"
+        
         print('Merging nodes...\n')
         content_all = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
         content_yaml = sub_convert.convert(content_all,'content','YAML',{'dup_rm_enabled': False, 'format_name_enabled': True})
-        content_url = sub_convert.yaml_decode(content_yaml)
+        content_url = up + sub_convert.yaml_decode(content_yaml)
         content_base64 = sub_convert.base64_encode(content_url)
         content = content_url
 
-        up = "REMARKS=Openit\n🚀STATUS=节点数量: len(proxies_list).♥.更新时间: $(date '+%Y-%m-%d %H:%M:%S')\n"
-
         def content_write(file, output_type):
             file = open(file, 'w', encoding = 'utf-8')
-            file.write(up + output_type)
+            file.write(output_type)
             file.close
         
         write_list = [f'./url', f'./long', f'{sub_merge_path}/nodes.yaml']

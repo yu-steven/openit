@@ -61,7 +61,7 @@ class sub_merge():
         content_base64 = sub_convert.base64_encode(content_url)
         content = content_url
 
-        up = "REMARKS=Openit\n🚀STATUS=节点数量：____.♥.更新时间：________\n"
+        up = "REMARKS=Openit\n🚀STATUS=节点数量: len(proxies_list).♥.更新时间: $(date '+%Y-%m-%d %H:%M:%S')\n"
 
         def content_write(file, output_type):
             file = open(file, 'w', encoding = 'utf-8')

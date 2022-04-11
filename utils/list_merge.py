@@ -57,7 +57,7 @@ class sub_merge():
 
         nodes = len(url_list)
         nowTime = datetime.datetime.now().strftime('+%Y-%m-%d %H:%M:%S')  # 现在
-        parts = ['REMARKS=Openit\n🚀 STATUS=节点数量: ', '{nodes}', '.♥.更新时间: ', '{nowTime}'\n']
+        parts = ['REMARKS=Openit\n🚀 STATUS=节点数量: ', '{nodes}', '.♥.更新时间: ', '{nowTime}\n']
         up = ''.join(parts)
         
         print('Merging nodes...\n')

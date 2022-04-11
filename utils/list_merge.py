@@ -57,7 +57,8 @@ class sub_merge():
 
         nodes = len(url_list)
         nowTime = datetime.datetime.now().strftime('+%Y-%m-%d %H:%M:%S')  # 现在
-        up = "'REMARKS=Openit\n🚀 STATUS=节点数量: ' + 'str(nodes)' + '.♥.更新时间: ' + 'str(nowTime)'\n"
+        parts = ['REMARKS=Openit\n🚀 STATUS=节点数量: ', '{nodes}', '.♥.更新时间: ', '{nowTime}'\n']
+        up = ''.join(parts)
         
         print('Merging nodes...\n')
         content_all = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html

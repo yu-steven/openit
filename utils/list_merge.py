@@ -61,9 +61,11 @@ class sub_merge():
         content_base64 = sub_convert.base64_encode(content_url)
         content = content_url
 
+        up = "REMARKS=Openit\n🚀STATUS=节点数量：____.♥.更新时间：________\n"
+
         def content_write(file, output_type):
             file = open(file, 'w', encoding = 'utf-8')
-            file.write(REMARKS=Openit\n🚀STATUS=节点数量：____.♥.更新时间：________\noutput_type)
+            file.write(up + output_type)
             file.close
         
         write_list = [f'./url', f'./long', f'{sub_merge_path}/nodes.yaml']

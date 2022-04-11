@@ -36,8 +36,8 @@ class update_url():
                 if id == 0:
                     status = update_url.update_id_0()
                     update_url.update_write(id, status[1], status[1])
-                elif id == 19:
-                    status = update_url.update_id_19()
+                elif id == 4:
+                    status = update_url.update_id_4()
                     update_url.update_write(id, status[1], status[1])
 
             updated_list = json.dumps(raw_list, sort_keys=False, indent=2, ensure_ascii=False)
@@ -84,10 +84,10 @@ class update_url():
                 pattern = re.compile(r'v2ray\(请开启代理后再拉取\)&#65306;https://drive\.google\.com/uc\?export=download&id=\w*-*\w*')
                 
                 url_update = re.findall(pattern, raw_content)[0][24:]
-                return [19, url_update]
+                return [4, url_update]
             except Exception as err:
                 print(err)
-                return [19, 404]
+                return [4, 404]
         else:
             return [4, 404]
 
@@ -99,7 +99,7 @@ class update_url():
         for ch in 'abcdefghijklmnopqrstuvwxy':
             url_update = front_url + yesterday + ch + end_url# 修改字符串中的某一位字符 https://www.zhihu.com/question/31800070/answer/53345749
             if url_updated(url_update):
-                return [22, url_update]
+                return [5, url_update]
         else:
             return [5, 404]
 

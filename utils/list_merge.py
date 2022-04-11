@@ -55,7 +55,7 @@ class sub_merge():
                 file.close()
                 print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
 
-        nodes = len(content_yaml)
+        nodes = len(url_list)
         now = datetime.today().strftime('+%Y-%m-%d %H:%M:%S')
         up = "REMARKS=Openit\n🚀 STATUS=节点数量: {nodes}.♥.更新时间: {now}\n"
         

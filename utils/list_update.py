@@ -36,8 +36,11 @@ class update_url():
                 if id == 0:
                     status = update_url.update_id_0()
                     update_url.update_write(id, status[1], status[1])
-                elif id == 4:
-                    status = update_url.update_id_4()
+                elif id == 21:
+                    status = update_url.update_id_21()
+                    update_url.update_write(id, status[1], status[1])
+                elif id == 22:
+                    status = update_url.update_id_22()
                     update_url.update_write(id, status[1], status[1])
 
             updated_list = json.dumps(raw_list, sort_keys=False, indent=2, ensure_ascii=False)
@@ -68,7 +71,7 @@ class update_url():
         else:
             return [0, 404]
     
-    def update_id_4(): # remarks: Mattkaydiary，是个谷歌网盘链接
+    def update_id_21(): # remarks: Mattkaydiary，是个谷歌网盘链接
         date_inurl = datetime.today().strftime('%Y/%m/%Y-%m-%d')
         #date_inurl = '2021/12/2021-12-08'
         url_update = f'https://www.mattkaydiary.com/{date_inurl}-free-v2ray-clash-nodes.html'
@@ -84,14 +87,14 @@ class update_url():
                 pattern = re.compile(r'v2ray\(请开启代理后再拉取\)&#65306;https://drive\.google\.com/uc\?export=download&id=\w*-*\w*')
                 
                 url_update = re.findall(pattern, raw_content)[0][24:]
-                return [4, url_update]
+                return [21, url_update]
             except Exception as err:
                 print(err)
-                return [4, 404]
+                return [21, 404]
         else:
-            return [4, 404]
+            return [21, 404]
 
-    def update_id_5(): # remarks: v2raydy/v2ray, 将原链接更新至 https://https://raw.githubusercontent.com/v2raydy/v2ray/main/%MM-%(DD - 1)%str%1.txt
+    def update_id_22(): # remarks: v2raydy/v2ray, 将原链接更新至 https://https://raw.githubusercontent.com/v2raydy/v2ray/main/%MM-%(DD - 1)%str%1.txt
         yesterday = (datetime.today() + timedelta(-1)).strftime('%m-%d')# 得到当前日期前一天 https://blog.csdn.net/wanghuafengc/article/details/42458721
         
         front_url = 'https://raw.githubusercontent.com/v2raydy/v2ray/main/'
@@ -99,9 +102,9 @@ class update_url():
         for ch in 'abcdefghijklmnopqrstuvwxy':
             url_update = front_url + yesterday + ch + end_url# 修改字符串中的某一位字符 https://www.zhihu.com/question/31800070/answer/53345749
             if url_updated(url_update):
-                return [5, url_update]
+                return [22, url_update]
         else:
-            return [5, 404]
+            return [22, 404]
 
 if __name__ == '__main__':
-    update_url.update_main([0,4,5])
+    update_url.update_main([0,21,22])

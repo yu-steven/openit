@@ -68,7 +68,7 @@ class update_url():
         else:
             return [0, 404]
     
-    def update_id_19(): # remarks: Mattkaydiary，是个谷歌网盘链接
+    def update_id_4(): # remarks: Mattkaydiary，是个谷歌网盘链接
         date_inurl = datetime.today().strftime('%Y/%m/%Y-%m-%d')
         #date_inurl = '2021/12/2021-12-08'
         url_update = f'https://www.mattkaydiary.com/{date_inurl}-free-v2ray-clash-nodes.html'
@@ -89,9 +89,9 @@ class update_url():
                 print(err)
                 return [19, 404]
         else:
-            return [19, 404]
+            return [4, 404]
 
-    def update_id_22(): # remarks: v2raydy/v2ray, 将原链接更新至 https://https://raw.githubusercontent.com/v2raydy/v2ray/main/%MM-%(DD - 1)%str%1.txt
+    def update_id_5(): # remarks: v2raydy/v2ray, 将原链接更新至 https://https://raw.githubusercontent.com/v2raydy/v2ray/main/%MM-%(DD - 1)%str%1.txt
         yesterday = (datetime.today() + timedelta(-1)).strftime('%m-%d')# 得到当前日期前一天 https://blog.csdn.net/wanghuafengc/article/details/42458721
         
         front_url = 'https://raw.githubusercontent.com/v2raydy/v2ray/main/'
@@ -101,7 +101,7 @@ class update_url():
             if url_updated(url_update):
                 return [22, url_update]
         else:
-            return [22, 404]
+            return [5, 404]
 
 if __name__ == '__main__':
-    update_url.update_main([])
+    update_url.update_main([0,4,5])

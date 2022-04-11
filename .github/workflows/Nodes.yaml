@@ -19,13 +19,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-<!--    - name: 加载缓存
-      uses: actions/cache@v2
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip- -->
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 安装依赖

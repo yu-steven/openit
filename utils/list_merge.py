@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from sub_convert import sub_convert # Python 之间互相调用文件https://blog.csdn.net/winycg/article/details/78512300
-from list_update import update_url
 
 import json, re
 from urllib import request

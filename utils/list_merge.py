@@ -63,7 +63,7 @@ class sub_merge():
 
         def content_write(file, output_type):
             file = open(file, 'w', encoding = 'utf-8')
-            file.write(REMARKS=Openit \n 🚀 STATUS=节点数量：____.♥.更新时间：________ output_type)
+            file.write(REMARKS=Openit \n🚀 STATUS=节点数量：____.♥.更新时间：________output_type)
             file.close
         
         write_list = [f'./url', f'./long', f'{sub_merge_path}/nodes.yaml']

@@ -299,7 +299,7 @@ class sub_convert():
                     'FR': '🇫🇷', 'CY': '🇨🇾', 'ES': '🇪🇸',
                     'NL': '🇳🇱', 'VN': '🇻🇳', 'FL': '🇫🇮',
                     'CH': '🇨🇭', 'BG': '🇧🇬', 'ZA': '🇿🇦',
-                    'RELAY': '',
+                    'RELAY': ' ',
                     'NOWHERE': '',
                 }
 

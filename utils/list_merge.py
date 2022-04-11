@@ -66,7 +66,7 @@ class sub_merge():
             file.write(output_type)
             file.close
         
-        write_list = [f'./url', f'./long', f'{sub_merge_path}/node.yaml']
+        write_list = [f'./url', f'./long', f'{sub_merge_path}/nodes.yaml']
         content_type = (content, content_base64, content_yaml)
         for index in range(len(write_list)):
             content_write(write_list[index], content_type[index])

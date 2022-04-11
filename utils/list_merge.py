@@ -56,8 +56,8 @@ class sub_merge():
                 print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
 
         nodes = len(url_list)
-        now = datetime.today().strftime('+%Y-%m-%d %H:%M:%S')
-        up = "REMARKS=Openit\n🚀 STATUS=节点数量: {nodes}.♥.更新时间: {now}\n"
+        nowTime = datetime.datetime.now().strftime('+%Y-%m-%d %H:%M:%S')  # 现在
+        up = "'REMARKS=Openit\n🚀 STATUS=节点数量: ' + 'str(nodes)' + '.♥.更新时间: ' + 'str(nowTime)'\n"
         
         print('Merging nodes...\n')
         content_all = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html

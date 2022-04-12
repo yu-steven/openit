@@ -43,7 +43,7 @@ class sub_convert():
             base64_final
     """
 
-    def convert(raw_input, input_type='url', output_type='url', custom_set={'dup_rm_enabled': False, 'format_name_enabled': False}): # {'input_type': ['url', 'content'],'output_type': ['url', 'YAML', 'Base64']}
+    def convert(raw_input, input_type='url', output_type='url', custom_set={'dup_rm_enabled': False, 'format_name_enabled': False, 'speedtest': False}): # {'input_type': ['url', 'content'],'output_type': ['url', 'YAML', 'Base64']}
         # convert Url to YAML or Base64
         if input_type == 'url': # 获取 URL 订阅链接内容
             sub_content = ''
@@ -79,7 +79,8 @@ class sub_convert():
         if sub_content != '订阅内容解析错误': # 输出
             dup_rm_enabled = custom_set['dup_rm_enabled']
             format_name_enabled = custom_set['format_name_enabled']
-            final_content = sub_convert.makeup(sub_content,dup_rm_enabled,format_name_enabled)
+            speedtest = custom_set['speedtest']
+            final_content = sub_convert.makeup(sub_content,dup_rm_enabled,format_name_enabled,speedtest)
             if output_type == 'YAML':
                 return final_content
             elif output_type == 'Base64':

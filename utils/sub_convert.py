@@ -281,6 +281,7 @@ class sub_convert():
                 port = proxy['port']
                 ping_result = ping(server, port).tcp_ping()
                 ping_result_g = ping(server, port).google_ping()
+                ping_result_y = ping(server, port).youtube_ping()
                 if ping_result[0] >= 0.05 and ping_result_g[0] >= 0.05:
                     proxies_list.remove(proxy)
                 elif ping_result[1] < 1 or ping_result_g[1] < 1:

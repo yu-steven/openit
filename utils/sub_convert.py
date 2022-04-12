@@ -233,7 +233,7 @@ class sub_convert():
                         pass
 
             return sub_content_yaml # 返回字典, output 值为 True 时返回修饰过的 YAML 文本
-    def makeup(input, dup_rm_enabled=True, format_name_enabled=True, speedtest=True): # 对节点进行区域的筛选和重命名，输出 YAML 文本 
+    def makeup(input, dup_rm_enabled=True, format_name_enabled=True, speedtest=True): # 对节点进行区域的去重筛选和重命名以及测速，输出 YAML 文本 
         # 区域判断(Clash YAML): https://blog.csdn.net/CSDN_duomaomao/article/details/89712826 (ip-api)
         if isinstance(input, dict):
             sub_content = input

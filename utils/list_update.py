@@ -39,6 +39,9 @@ class update_url():
                 elif id == 4:
                     status = update_url.update_id_4()
                     update_url.update_write(id, status[1], status[1])
+                elif id == 5:
+                    status = update_url.update_id_5()
+                    update_url.update_write(id, status[1], status[1])
 
             updated_list = json.dumps(raw_list, sort_keys=False, indent=2, ensure_ascii=False)
             file = open(sub_list_json, 'w', encoding='utf-8')

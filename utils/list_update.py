@@ -42,6 +42,9 @@ class update_url():
                 elif id == 5:
                     status = update_url.update_id_5()
                     update_url.update_write(id, status[1], status[1])
+                elif id == 10:
+                    status = update_url.update_id_10()
+                    update_url.update_write(id, status[1], status[1])
 
             updated_list = json.dumps(raw_list, sort_keys=False, indent=2, ensure_ascii=False)
             file = open(sub_list_json, 'w', encoding='utf-8')
@@ -105,6 +108,16 @@ class update_url():
                 return [5, url_update]
         else:
             return [5, 404]
+
+    def update_id_10(): # remarks: pojiezhiyuanjun/freev2, 将原链接更新至 https://raw.fastgit.org/pojiezhiyuanjun/freev2/master/%MM%(DD - 1).txt
+        #yesterday = (datetime.today() + timedelta(-1)).strftime('%m%d')# 得到当前日期前一天 https://blog.csdn.net/wanghuafengc/article/details/42458721
+        year_today = datetime.today().strftime('%Y/%Y-%m-%d')
+        front_url = 'https://raw.githubusercontent.com/FMYC2015/V2ray/main/'
+        url_update = front_url + year_today# 修改字符串中的某一位字符 https://www.zhihu.com/question/31800070/answer/53345749
+        if url_updated(url_update):
+            return [10, url_update]
+        else:
+            return [10, 404]
 
 if __name__ == '__main__':
     update_url.update_main([0,4,5])

@@ -120,4 +120,4 @@ class update_url():
             return [10, 404]
 
 if __name__ == '__main__':
-    update_url.update_main([0,4,5])
+    update_url.update_main([0,4,5,10])

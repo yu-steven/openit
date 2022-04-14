@@ -366,6 +366,7 @@ class sub_convert():
             if 'vmess://' in line:
                 try:
                     vmess_json_config = json.loads(sub_convert.base64_decode(line.replace('vmess://', '')))
+                    print("vmess_decode_str:", vmess_json_config)
                     vmess_default_config = {
                         'v': 'Vmess Node', 'ps': 'Vmess Node', 'add': '0.0.0.0', 'port': 0, 'id': '',
                         'aid': 0, 'scy': 'auto', 'net': '', 'type': '', 'host': vmess_json_config['add'], 'path': '/', 'tls': ''
@@ -415,6 +416,7 @@ class sub_convert():
                     line = line + '#SS%20Node'
                 try:
                     ss_content =  line.replace('ss://', '')
+                    print("SS_decode_str:", ss_content)
                     part_list = ss_content.split('#', 1) # https://www.runoob.com/python/att-string-split.html
                     yaml_url.setdefault('name', urllib.parse.unquote(part_list[1]))
                     if '@' in part_list[0]:
@@ -444,32 +446,44 @@ class sub_convert():
             if 'ssr://' in line:
                 try:
                     ssr_content = sub_convert.base64_decode(line.replace('ssr://', ''))
-                
-                    part_list = re.split('/\?', ssr_content)
-                    if '&' in part_list[1]:
-                        ssr_part = re.split('&', part_list[1]) # 将 SSR content /？后部分参数分割
-                        for item in ssr_part:
-                            if 'remarks=' in item:
-                                remarks_part = item.replace('remarks=', '')
-                        try:
-                            remarks = sub_convert.base64_decode(remarks_part)
-                        except Exception:
-                            remarks = 'ssr'
-                    else:
-                        remarks_part = part_list[1].replace('remarks=', '')
-                        try:
-                            remarks = sub_convert.base64_decode(remarks_part)
-                        except Exception:
-                            remarks = 'ssr'
-                            print(f'SSR format error, content:{remarks_part}')
-                    yaml_url.setdefault('name', urllib.parse.unquote(remarks))
+                    print("SSR_decode_str:", ssr_content)
+                    parts = re.split(':', ssr_content)
+                    if len(parts) != 6:
+                        print('不能解析SSR链接: %s' % ssr_content)
 
-                    server_part_list = re.split(':', part_list[0])
-                    yaml_url.setdefault('server', server_part_list[0])
-                    yaml_url.setdefault('port', server_part_list[1])
+                    server = parts[0]
+                    port = parts[1]
+                    protocol = parts[2]
+                    cipher= parts[3]
+                    obfs = parts[4]
+                    password_and_params = parts[5]
+                    password_and_params = re.split('/\?', password_and_params)
+                    password_encode_str = password_and_params[0]
+                    password = sub_convert.base64_decode(password_encode_str)
+                    params = password_and_params[1]
+
+                    param_parts = re.split('\&', params)
+                    param_dic = {}
+                    for part in param_parts:
+                        key_and_value = re.split('\=', part)
+                        param_dic[key_and_value[0]] = key_and_value[1]
+
+                    obfsparam = sub_convert.base64_decode(param_dic['obfsparam'])
+                    protoparam = sub_convert.base64_decode(param_dic['protoparam'])
+                    remarks = sub_convert.base64_decode(param_dic['remarks'])
+                    group = sub_convert.base64_decode(param_dic['group'])
+                    
+                    yaml_url.setdefault('name', sub_convert.base64_decode(param_dic['remarks']))
+                    yaml_url.setdefault('server', parts[0])
+                    yaml_url.setdefault('port', parts[1])
                     yaml_url.setdefault('type', 'ssr')
-                    yaml_url.setdefault('cipher', server_part_list[3])
-                    yaml_url.setdefault('password', server_part_list[5])
+                    yaml_url.setdefault('cipher', parts[3])
+                    yaml_url.setdefault('password', sub_convert.base64_decode(password_encode_str))
+                    yaml_url.setdefault('obfs', parts[4])
+                    yaml_url.setdefault('protocol', parts[2])
+                    yaml_url.setdefault('obfsparam', sub_convert.base64_decode(param_dic['obfsparam']))
+                    yaml_url.setdefault('protoparam', sub_convert.base64_decode(param_dic['protoparam']))
+                    yaml_url.setdefault('group', sub_convert.base64_decode(param_dic['group']))
 
                     url_list.append(yaml_url)
                 except Exception as err:
@@ -479,6 +493,7 @@ class sub_convert():
             if 'trojan://' in line:
                 try:
                     url_content = line.replace('trojan://', '')
+                    print("trojan_decode_str:", url_content)
                     part_list = re.split('#', url_content, maxsplit=1) # https://www.runoob.com/python/att-string-split.html
                     yaml_url.setdefault('name', urllib.parse.unquote(part_list[1]))
 

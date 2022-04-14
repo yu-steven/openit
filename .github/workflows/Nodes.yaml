@@ -48,9 +48,4 @@ jobs:
          git add ./sub
          git add ./utils
          git commit -m "$(date '+%Y-%m-%d %H:%M:%S')合并筛选节点"
-
-    - name: 推送更改
-      uses:  ad-m/github-push-action@master
-      with:
-         # github_token: ${{ secrets.TOKEN }}
-         branch: main
+         git push

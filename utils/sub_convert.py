@@ -366,7 +366,7 @@ class sub_convert():
             if 'vmess://' in line:
                 try:
                     vmess_json_config = json.loads(sub_convert.base64_decode(line.replace('vmess://', '')))
-                    print("vmess_decode_str:", vmess_json_config)
+                    # print("vmess_decode_str:", vmess_json_config)
                     vmess_default_config = {
                         'v': 'Vmess Node', 'ps': 'Vmess Node', 'add': '0.0.0.0', 'port': 0, 'id': '',
                         'aid': 0, 'scy': 'auto', 'net': '', 'type': '', 'host': vmess_json_config['add'], 'path': '/', 'tls': ''
@@ -416,7 +416,7 @@ class sub_convert():
                     line = line + '#SS%20Node'
                 try:
                     ss_content =  line.replace('ss://', '')
-                    print("SS_decode_str:", ss_content)
+                    # print("SS_decode_str:", ss_content)
                     part_list = ss_content.split('#', 1) # https://www.runoob.com/python/att-string-split.html
                     yaml_url.setdefault('name', urllib.parse.unquote(part_list[1]))
                     if '@' in part_list[0]:
@@ -446,7 +446,7 @@ class sub_convert():
             if 'ssr://' in line:
                 try:
                     ssr_content = sub_convert.base64_decode(line.replace('ssr://', ''))
-                    print("SSR_decode_str:", ssr_content)
+                    # print("SSR_decode_str:", ssr_content)
                     parts = re.split(':', ssr_content)
                     if len(parts) != 6:
                         print('不能解析SSR链接: %s' % ssr_content)
@@ -493,7 +493,7 @@ class sub_convert():
             if 'trojan://' in line:
                 try:
                     url_content = line.replace('trojan://', '')
-                    print("trojan_decode_str:", url_content)
+                    # print("trojan_decode_str:", url_content)
                     part_list = re.split('#', url_content, maxsplit=1) # https://www.runoob.com/python/att-string-split.html
                     yaml_url.setdefault('name', urllib.parse.unquote(part_list[1]))
 

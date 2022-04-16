@@ -271,9 +271,9 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 Clash.yaml 引用 ACL4SSR 路由规则
 <br>long 引用alanbobs999/TopFreeProxies仓库的python代码并加以修改
-<br>Quanx.conf 引用神机, blackmatrix7和lhie1重写规则, KOP-XIAO的geo-checker js脚本, 代码, ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则
+<br>Quanx.conf 引用神机, blackmatrix7和lhie1重写规则, KOP-XIAO的geo-checker js脚本, ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则
 
-著作权归作者所有，节点归IP所有者所有，规则、js脚本、数据库归创作所有者所有
+著作权归作者所有，节点归IP所有者所有，规则、js脚本、代码、数据库归创作所有者所有
 <br>转载或引用本仓库时请遵守许可协议，商业转载请联系作者获得授权，非商业转载请注明出处。
 
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。

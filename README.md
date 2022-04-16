@@ -269,7 +269,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 本仓库采用 CC BY-SA 4.0 许可协议
 
-Clash.yaml 引用 ACL4SSR 代理规则
+Clash.yaml 引用 ACL4SSR 路由规则
 <br>long 引用alanbobs999/TopFreeProxies仓库的python代码并加以修改
 <br>Quanx.conf 引用神机, blackmatrix7和lhie1重写规则, KOP-XIAO的geo-checker js脚本, ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则
 

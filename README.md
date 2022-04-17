@@ -54,7 +54,7 @@
 
 [ss]: https://download.fastgit.org/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://download.fastgit.org/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://download.fastgit.org/2dust/v2rayN/releases/download/5.9/v2rayN-Core.zip
+[v2rayN]: https://download.fastgit.org/2dust/v2rayN/releases/download/5.16/v2rayN-Core.zip
 [clash]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.15/Clash.for.Windows-0.19.15-win.7z
 [qv2ray]: https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 [Clash汉化补丁]: https://download.fastgit.org/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.15_CN/app.asar

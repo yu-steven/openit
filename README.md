@@ -131,7 +131,7 @@
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
 [apk-clash]: https://apkpure.com/clash-for-android/com.github.kr328.clash/download
-[apk-Matsuri]: https://f-droid.org/repo/moe.matsuri.lite_715.apk
+[apk-Matsuri]: https://f-droid.org/repo/moe.matsuri.lite_725.apk
 [apk-SagerNet]: https://apkpure.com/kitsunebi/io.nekohasekai.sagernet/download
 [apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
 [apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download

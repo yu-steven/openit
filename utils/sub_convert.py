@@ -302,7 +302,7 @@ class sub_convert():
                     'NL': '🇳🇱', 'VN': '🇻🇳', 'FL': '🇫🇮',
                     'CH': '🇨🇭', 'BG': '🇧🇬', 'ZA': '🇿🇦',
                     'CZ': '🇨🇿', 'PL': '🇵🇱'
-                    'RELAY': '',
+                    'RELAY': '^',
                     'NOWHERE': '',
                 }
 

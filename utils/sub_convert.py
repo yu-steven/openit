@@ -274,7 +274,7 @@ class sub_convert():
         
         if speedtest: # 测速
             sum = len(proxies_list)
-            print(f'\n-----测速开始-----\n节点总数：{sum}')
+            print(f'\n-----测速开始-----\n节点总数{sum}')
             for proxy in proxies_list:
                 pos = proxies_list.index(proxy)
                 print(f'测试进度({sum}/{pos})')
@@ -287,7 +287,8 @@ class sub_convert():
                     proxies_list.remove(proxy)
                 elif ping_result[1] < 1 or ping_result_g[1] < 1 or ping_result_y[1] < 1:
                     proxies_list.remove(proxy)
-        
+                    print(f'有效节点{pos}\n-----测速完成-----\n')
+
         for proxy in proxies_list: # 改名
             if format_name_enabled:
                 emoji = {

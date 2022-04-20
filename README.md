@@ -202,7 +202,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ***
 ##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间  [返回🔙](#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接点击蓝色字体选择要下载的文件)
 链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**
-## Shadowsocks
+## ShadowSocks
 ### Windows  
 ` https://github.com/shadowsocks/shadowsocks-windows/releases/`
 *2022.2.8---v4.4.1.0*
@@ -210,7 +210,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ` https://github.com/shadowsocks/shadowsocks-android/releases/`
 *2021.9.17---v5.2.6*
 
-## Shadowsocksr
+## ShadowSocksr
 ### Windows
 ` https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/`
 *2019.4.21---v4.9.2*

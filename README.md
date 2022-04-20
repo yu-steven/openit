@@ -201,7 +201,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ### ｜[SS](https://download.fastgit.org/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
 ***
 ##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间  [返回🔙](#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接点击蓝色字体选择要下载的文件)
-链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**
+链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页，在releases后面加上.atom可以进行RSS订阅，选择困难者**勿入**
 ## ShadowSocks
 ### Windows
 ` https://github.com/shadowsocks/shadowsocks-windows/releases/`
@@ -213,7 +213,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ` https://github.com/shadowsocks/shadowsocks-android/releases/`
 *2021.9.17---v5.2.6*
 ### ShadowSocks 内核
-https://github.com/shadowsocks/shadowsocks-libev/`
+` https://github.com/shadowsocks/shadowsocks-libev/`
 *2022.9.15---v3.3.5*
 
 ## ShadowSocksR
@@ -246,16 +246,16 @@ https://github.com/shadowsocks/shadowsocks-libev/`
 ` https://github.com/yichengchen/clashX/releases/`
 *2022.1.8---v1.90.0*
 ### Android
-`https://github.com/Kr328/ClashForAndroid/releases/`
+` https://github.com/Kr328/ClashForAndroid/releases/`
 *2022.1.15---v2.5.4*
 ### Clash 汉化补丁 for Win
-`https://github.com/BoyceLig/Clash_Chinese_Patch/releases/`
+` https://github.com/BoyceLig/Clash_Chinese_Patch/releases/`
 *2022.4.10---v0.19.15*
 
-`https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/`
+` https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/`
 *2022.4.10---v0.19.15*
 ### Clash 内核
-` https://github.com/Dreamacro/clash/releases/`
+` https://github.com/Dreamacro/clash/`
 *2022.3.19---v1.10.0*
 
 ## Qv2ray

@@ -161,7 +161,7 @@ class sub_merge():
                     top_amount = len(proxies) - 1
                     f.close()
                 lines.insert(index+1, f'合并节点总数: `{top_amount}`\n')
-                """
+
                 with open('./sub/sub_merge.txt', 'r', encoding='utf-8') as f:
                     proxies = f.read()
                     proxies = proxies.split('\n')
@@ -175,7 +175,7 @@ class sub_merge():
                 for i in proxies:
                     index += 1
                     lines.insert(index, i)
-                """
+
                 break
         # 节点来源打印
         for index in range(len(lines)):

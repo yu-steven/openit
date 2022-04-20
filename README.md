@@ -62,7 +62,7 @@
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SSR最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X(经实验,Arm版的Clash会出现xxx.app已损坏,即使使用传统方法仍无法解决)但是经过Rosetta 2转译的Clash(intel)不受影响，仍可以使用！
 >**.7z文件如何解压？**
 可以使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**
-### [SSR]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayX]
+### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayX]
  ｜SSR｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge｜v2rayX｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
@@ -71,7 +71,7 @@
 ### Surge(Arm) *$49.99* App内购买
 [![点击跳转至Mac App Store][macos-black]][Surge]
 
-[ssr]: https://download.fastgit.org/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
+[ss-NG]: https://download.fastgit.org/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.14/Clash.for.Windows-0.19.14.dmg
 [clash(Arm)]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.14/Clash.for.Windows-0.19.14-arm64.dmg
 [clashx]: https://download.fastgit.org/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg

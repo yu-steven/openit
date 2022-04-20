@@ -287,7 +287,7 @@ class sub_convert():
                     proxies_list.remove(proxy)
                 elif ping_result[1] < 1 or ping_result_g[1] < 1 or ping_result_y[1] < 1:
                     proxies_list.remove(proxy)
-                    print(f'有效节点{pos}\n-----测速完成-----\n')
+                print(f'有效节点{pos}\n-----测速完成-----\n')
 
         for proxy in proxies_list: # 改名
             if format_name_enabled:

@@ -94,7 +94,7 @@ class sub_merge():
         except Exception:
             print('Failed!\n')
             pass
-    """
+
     def readme_update(readme_file='./README.md', sub_list=[]): # 更新 README 节点信息
         print('更新 README.md 中')
         with open(readme_file, 'r', encoding='utf-8') as f:
@@ -161,7 +161,7 @@ class sub_merge():
                     top_amount = len(proxies) - 1
                     f.close()
                 lines.insert(index+1, f'合并节点总数: `{top_amount}`\n')
-
+                """
                 with open('./sub/sub_merge.txt', 'r', encoding='utf-8') as f:
                     proxies = f.read()
                     proxies = proxies.split('\n')
@@ -175,7 +175,7 @@ class sub_merge():
                 for i in proxies:
                     index += 1
                     lines.insert(index, i)
-
+                """
                 break
         # 节点来源打印
         for index in range(len(lines)):
@@ -195,7 +195,7 @@ class sub_merge():
             data = ''.join(lines)
             print('完成!\n')
             f.write(data)
-    """
+
 if __name__ == '__main__':
     update_url.update_main([0,4,5,10])
     sub_merge.geoip_update('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb')

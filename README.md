@@ -25,24 +25,20 @@
 </div>
 
 **Base64**
-```
-https://openit.ml/long
-```
+```https://openit.ml/long```
+**通用**
 
 **小火箭**
-```
-https://openit.ml/https
-```
+```https://openit.ml/https```
+**专用**
 
 **Clash**
-```
-https://openit.ml/Clash.yaml
-```
+```https://openit.ml/Clash.yaml```
+**专用**
 
-**Quantumult X**
-```
-https://openit.ml/Quanx.conf
-```
+**Quanx**
+```https://openit.ml/Quanx.conf```
+**专用**
 
 <!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->

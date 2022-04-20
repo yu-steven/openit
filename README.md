@@ -48,7 +48,7 @@ https://openit.ml/Quanx.conf
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
 ***
 *最后更新时间2022.3.26-00:00*
-##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](https://github.com/git-yusteven/openit#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--点击回来)选择要下载的文件
+##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--点击回来)选择要下载的文件
 ## Windows
 首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/git-yusteven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.15版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果您是因为更新订阅而被引导至此页面，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
 >**.7z文件如何解压？**
@@ -204,7 +204,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 电视性能主要偏重于视频解码性能，网络解析方面性能较差，可能会造成意想不到的卡顿等情况。 我们建议您通过软路由进行协议转换，再通过智能电视连接
 ### ｜[SS](https://download.fastgit.org/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
 ***
-##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间  [点击回来](https://github.com/git-yusteven/openit#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接点击蓝色字体选择要下载的文件)
+##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址及正式版最后更新时间  [返回🔙](#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接点击蓝色字体选择要下载的文件)
 链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页（选择困难者**勿入**
 ## Shadowsocks
 ### Windows  

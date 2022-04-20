@@ -24,22 +24,22 @@
 
 </div>
 
-**Base64-通用**
+**Base64 通用**
 ```
 https://openit.ml/long
 ```
 
-**小火箭-专用**
+**小火箭 专用**
 ```
 https://openit.ml/https
 ```
 
-**Clash-专用**
+**Clash 专用**
 ```
 https://openit.ml/Clash.yaml
 ```
 
-**Quantumult X-专用**
+**Quantumult X 专用**
 ```
 https://openit.ml/Quanx.conf
 ```

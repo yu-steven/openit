@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        # personal access token
-        token: ${{ secrets.BASE64_NAME }}
     - name: set timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: config git

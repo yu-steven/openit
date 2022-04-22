@@ -83,7 +83,7 @@
 [Surge]: https://apps.apple.com/app/surge-4/id1442620678
 [macos-black]: https://gitlab.com/yu-steven/tag/-/raw/main/macos-black.svg
 ### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
-[![点击跳转至Mac App Store](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
+[![点击跳转至Mac App Store][macos-black]](https://apps.apple.com/app/the-unarchiver/id425424353)
 ##### [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者的解决方法](https://www.macwk.com/article/macos-file-damage)
 
 ## Android

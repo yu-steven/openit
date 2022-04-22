@@ -1,7 +1,7 @@
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 <h1 align="lefts">
 <a rel="openit" href="https://openit.ml">
-<img alt="Logo" height="73px" style="border-width:0" src="./images/logo-pro.png" />
+<img alt="Logo" height="73px" style="border-width:0" src="https://gitlab.com/yu-steven/openit/-/raw/main/images/logo-pro.png?inline=false" />
 </h1>
 
 <div align="center">
@@ -81,9 +81,9 @@
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
 [Surge]: https://apps.apple.com/app/surge-4/id1442620678
-[macos-black]: https://github.com/git-yusteven/tag/raw/main/macos-black.svg
+[macos-black]: https://gitlab.com/yu-steven/tag/-/raw/main/macos-black.svg
 ### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
-[![点击跳转至Mac App Store](https://github.com/git-yusteven/tag/raw/main/macos-black.svg?inline)](https://apps.apple.com/app/the-unarchiver/id425424353)
+[![点击跳转至Mac App Store][macos-black]](https://apps.apple.com/app/the-unarchiver/id425424353)
 ##### [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者的解决方法](https://www.macwk.com/article/macos-file-damage)
 
 ## Android
@@ -92,17 +92,17 @@
  教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜
 ### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [v2rayNG][apk-v2rayng]
 <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Clash][apk-clash]
 <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Matsuri][apk-Matsuri]
@@ -112,17 +112,17 @@
 
 ### [SagerNet][apk-SagerNet]
 <a href="https://play.google.com/store/apps/details?id=io.nekohasekai.sagernet" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Kitsunebi][apk-Kitsunebi]
 <a href="https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Surfboard][apk-surfboard]
 <a href="https://play.google.com/store/apps/details?id=com.getsurfboard" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://github.com/git-yusteven/tag/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [魔改ss](https://endpoint.fastgit.org/https://github.com/yu-steven/openit/blob/main/images/Shadowsocks_4.8.5.apk)
@@ -140,12 +140,12 @@
 [google-v2rayng]: https://play.google.com/store/apps/details?id=com.v2ray.ang
 [google-clash]: https://play.google.com/store/apps/details?id=com.github.kr328.clash
 [google-surfboard]: https://play.google.com/store/apps/details?id=com.getsurfboard
-[google-play]: https://github.com/git-yusteven/tag/raw/main/google-play.svg
+[google-play]: https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg
 
 ## iOS
-首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](https://github.com/git-yusteven/openit#shadowrocket支持的协议--返回)简单易用并支持分享节点; 
+首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点; 
 Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x则更贵;
-另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](https://github.com/git-yusteven/openit#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
+另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
 Stash是Clash规则在iOS平台的最佳选择，完整适配Clash Premium;
 Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;Potatso 2偏小众;以上软件购买时必须使用外区Apple ID下载(首推美区);
 当然也有为广大白嫖用户准备的OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)
@@ -181,7 +181,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [ipk-loon]: https://apps.apple.com/app/loon/id1373567447
 [ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197
 [ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
-[svg-apple]: https://github.com/git-yusteven/tag/raw/main/ios-black.svg
+[svg-apple]: https://gitlab.com/yu-steven/tag/-/raw/main/ios-black.svg
 [教程]: https://limbopro.com/archives/3846.html
 [神机规则]: https://merlinblog.xyz/wiki/quanx.html
 ##### [如何创建美区Apple ID？](https://shadowsockshelp.github.io/Shadowsocks/apple-id.html)
@@ -279,10 +279,10 @@ Clash.yaml 引用 ACL4SSR 路由规则
 <!--替换成仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/git-yusteven/openit)
 
-#### *Quantumult X* UI界面  [返回](https://github.com/git-yusteven/openit#ios)
-[![图片，加载不出来就不看吧](https://github.com/git-yusteven/openit/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
-#### *Shadowrocket*支持的协议  [返回](https://github.com/git-yusteven/openit#ios)
-[![图片，没啥，有软件之后就知道了](https://github.com/git-yusteven/openit/blob/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
+#### *Quantumult X* UI界面  [返回](#ios)
+[![图片，加载不出来就不看吧](https://gitlab.com/yu-steven/openit/-/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
+#### *Shadowrocket*支持的协议  [返回](#ios)
+[![图片，没啥，有软件之后就知道了](https://gitlab.com/yu-steven/openit/-/raw/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;*Since 2021.12.23*
 <!--都看到这儿了，还不给个Star？-->
 <!--![openit](https://count.getloli.com/get/@openit?theme=asoul)-->

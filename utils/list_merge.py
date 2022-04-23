@@ -56,7 +56,7 @@ class sub_merge():
 
         print('Merging nodes...\n')
         content_all = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
-        content_yaml = sub_convert.convert(content_all,'content','YAML',{'dup_rm_enabled': True, 'format_name_enabled': True, 'speedtest': True})
+        content_yaml = sub_convert.convert(content_all,'content','YAML',{'dup_rm_enabled': True, 'format_name_enabled': True, 'speedtest': False})
         content_url = sub_convert.yaml_decode(content_yaml)
         content_base64 = sub_convert.base64_encode(content_url)
         content = content_url

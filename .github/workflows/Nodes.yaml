@@ -40,12 +40,12 @@ jobs:
     - name: 提交更改
       run: |                 
          git config --local user.email "actions@github.com"
-         git config --local user.name "GitHub Actions"
+         git config --local user.name "Actions"
          git pull
          git status
          git add url
          git add long
          git add ./sub
          git add ./utils
-         git commit -m "$(date '+%Y-%m-%d %H:%M:%S')合并筛选节点"
+         git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新订阅"
          git push origin main

@@ -125,7 +125,7 @@
 <img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
-### [魔改ss](https://endpoint.fastgit.org/https://github.com/yu-steven/openit/blob/main/images/Shadowsocks_4.8.5.apk)
+### [魔改ss](https://openit.ml/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download

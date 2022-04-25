@@ -379,7 +379,9 @@ class sub_convert():
                     country_code = 'RELAY'
                 elif country_code == 'PRIVATE':
                     country_code = 'RELAY'
-
+                elif country_code == 'CN':
+                    country_code = 'RELAY'
+                    
                 if country_code in emoji:
                     name_emoji = emoji[country_code]
                 else:

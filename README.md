@@ -1,7 +1,7 @@
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 <h1 align="lefts">
 <a rel="openit" href="https://openit.ml">
-<img alt="Logo" height="73px" style="border-width:0" src="https://gitlab.com/yu-steven/openit/-/raw/main/images/logo-pro.png?inline=false" />
+<img alt="Logo" height="73px" style="border-width:0" src="https://openit.ml/images/logo-pro.png" />
 </h1>
 
 <div align="center">
@@ -280,9 +280,9 @@ Clash.yaml 引用 ACL4SSR 路由规则
 [![Stargazers over time](https://starchart.cc/git-yusteven/openit.svg)](https://starchart.cc/git-yusteven/openit)
 
 #### *Quantumult X* UI界面  [返回](#ios)
-[![图片，加载不出来就不看吧](https://gitlab.com/yu-steven/openit/-/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
+[![图片，加载不出来就不看吧](https://openit.ml/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### *Shadowrocket*支持的协议  [返回](#ios)
-[![图片，没啥，有软件之后就知道了](https://gitlab.com/yu-steven/openit/-/raw/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
+[![图片，没啥，有软件之后就知道了](https://openit.ml/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;*Since 2021.12.23*
 <!--都看到这儿了，还不给个Star？-->
 <!--![openit](https://count.getloli.com/get/@openit?theme=asoul)-->

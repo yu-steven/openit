@@ -23,9 +23,9 @@ def url_updated(url): # 判断远程远程链接是否已经更新
     except Exception:
         status = 404
     if status == 200:
-        url_updated = True
+        url_updated = False # 这里原本是True
     else:
-        url_updated = False
+        url_updated = True # 这里原本是False
     return url_updated
 
 class update_url():
@@ -33,16 +33,16 @@ class update_url():
     def update_main(update_enable_list=[]):
         if len(update_enable_list) > 0:
             for id in update_enable_list:
-                # if id == 0:
+                if id == 0:
                     status = update_url.update_id_0()
                     update_url.update_write(id, status[1], status[1])
-                # elif id == 4:
+                elif id == 4:
                     status = update_url.update_id_4()
                     update_url.update_write(id, status[1], status[1])
-                # elif id == 5:
+                elif id == 5:
                     status = update_url.update_id_5()
                     update_url.update_write(id, status[1], status[1])
-                # elif id == 10:
+                elif id == 10:
                     status = update_url.update_id_10()
                     update_url.update_write(id, status[1], status[1])
 

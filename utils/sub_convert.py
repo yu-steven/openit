@@ -498,7 +498,7 @@ class sub_convert():
                     print(f'yaml_encode 解析 ss 节点发生错误: {err}')
                     pass
 
-            #if 'ssr://' in line:
+            # if 'ssr://' in line:
                 try:
                     ssr_content = sub_convert.base64_decode(line.replace('ssr://', ''))
                     # print("SSR_decode_str:", ssr_content)

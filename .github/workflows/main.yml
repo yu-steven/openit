@@ -1,0 +1,29 @@
+name: xxx
+on: 
+  push:
+    paths:
+      - 'xxx'
+  workflow_dispatch:
+jobs:
+  my-job:
+    name: xxx
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: config git
+      run: git config --global user.email "actions@github.com"
+           git config --global user.name "GitHub Action"
+    - name: xxxx
+      run: 具体的命令
+<!--下方是四件套-->
+    - name: check for changes
+      run: git status
+    - name: stage changed files
+      run: git add .
+    - name: commit changed files
+      run: git commit -m "By GitHub Action"
+    - name: push code
+      run: git push
+<!--上方的四件套或者下方命令运行bash脚本两者选其一,update-repo.sh为上述bash文件名-->
+    - name: run script
+      run: chmod +x ./update-repo.sh&&./update-repo.sh

@@ -25,7 +25,7 @@ def url_updated(url): # 判断远程远程链接是否已经更新
     if status == 200:
         url_updated = False # 这里原本是True
     else:
-        url_updated = True # 这里原本是False
+        url_updated = False # 这里原本是False
     return url_updated
 
 class update_url():

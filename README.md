@@ -143,7 +143,7 @@
 [google-play]: https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg
 
 ## iOS
-首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点[教程](https://doc.openit.ml/tutorial/ios-shadowrocket.html); 
+首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点([教程](https://doc.openit.ml/tutorial/ios-shadowrocket.html)); 
 Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x则更贵;
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
 Stash是Clash规则在iOS平台的最佳选择，完整适配Clash Premium;

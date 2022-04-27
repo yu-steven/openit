@@ -17,8 +17,8 @@
  [git-clash]: ./Clash.yaml
  [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
- [svg-base64]: https://github.com/git-yusteven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
- [svg-clash]: https://github.com/git-yusteven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
+ [svg-base64]: https://github.com/yu-steven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
+ [svg-clash]: https://github.com/yu-steven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
 
@@ -46,11 +46,11 @@
 *最后更新时间2022.4.20-00:00*
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](#由于可能的更新不及时下面给出以上软件github托管地址及正式版最后更新时间--返回)选择要下载的文件
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/git-yusteven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.15版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果您是因为更新订阅而被引导至此页面，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://github.com/yu-steven/openit/wiki/Windows#如何汉化-clash-for-windows))配合v0.19.15版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果您是因为更新订阅而被引导至此页面，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用
 >**.7z文件如何解压？**
 可以使用Bandizip[^1]进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
- 教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray
+ <!--教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray-->
 
 [ss]: https://download.fastgit.org/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://download.fastgit.org/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
@@ -63,7 +63,7 @@
 >**.7z文件如何解压？**
 可以使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**
 ### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayX]
- ｜SS｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge｜v2rayX｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程
+ <!--｜SS｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge｜v2rayX｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程-->
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
 ### Quantumult X(Arm) *$7.99*
@@ -89,7 +89,7 @@
 ## Android
 首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有魔改ss和v2rayNG其次，魔改ss可以支持更多类型的节点；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Matsuri(中文名“茉莉”)作为SagerNet的一个分支，功能强大，很多人在用；Surfboard是一个与Surge配置兼容的代理实用工具；SS和SSR只支持ss和ssr
 
- 教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜
+ <!--教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜-->
 ### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">
 <img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
@@ -143,7 +143,7 @@
 [google-play]: https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg
 
 ## iOS
-首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点; 
+首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点(教程); 
 Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x则更贵;
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则https解密和MitM等功能(软件也就越贵)同时[UI方面](#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
 Stash是Clash规则在iOS平台的最佳选择，完整适配Clash Premium;
@@ -151,7 +151,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 当然也有为广大白嫖用户准备的OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)
 以下软件顺序按照欢迎度从高到低排列
 
- [Shadowrocket](https://github.com/git-yusteven/openit/wiki/iOS#shadowrocket)｜Quantumult X｜Surge｜Quantumult｜Potatso 2｜Stash｜Loon｜Potatso｜OneClick｜Shadowlink｜教程
+ <!--Shadowrocket｜Quantumult X｜Surge｜Quantumult｜Potatso 2｜Stash｜Loon｜Potatso｜OneClick｜Shadowlink｜教程-->
 ### Shadowrocket *$2.99*
 [![轻触跳转至App Store][svg-apple]][ipk-ssr]
 ### Quantumult X *$7.99*

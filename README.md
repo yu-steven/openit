@@ -54,7 +54,7 @@
 
 [ss]: https://download.fastgit.org/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://download.fastgit.org/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://download.fastgit.org/2dust/v2rayN/releases/download/5.20/v2rayN-Core.zip
+[v2rayN]: https://download.fastgit.org/2dust/v2rayN/releases/download/5.22/v2rayN-Core.zip
 [clash]: https://download.fastgit.org/Fndroid/clash_for_windows_pkg/releases/download/0.19.17/Clash.for.Windows-0.19.17-win.7z
 [qv2ray]: https://download.fastgit.org/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 [Clash汉化补丁]: https://download.fastgit.org/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.17_CN/app.asar
@@ -230,10 +230,10 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
-*2022.4.18---v5.18*
+*2022.5.1---v5.22*
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases/`
-*2022.2.3---v1.6.30*
+*2022.5.1--v1.7.5*
 
 ## Clash
 ### Win / Mac
@@ -250,7 +250,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2022.1.15---v2.5.4*
 ### Clash 汉化补丁 for Win
 ` https://github.com/BoyceLig/Clash_Chinese_Patch/releases/`
-*2022.4.30---v0.19.17*
+*2022.5.1---v0.19.17*
 
 ` https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/`
 *2022.4.30---v0.19.17*

@@ -1,3 +1,5 @@
+https://sub.id9.cc/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long
+
 name: Nodes
 
 # 触发条件
@@ -35,7 +37,6 @@ jobs:
       #   CONFIG: ${{ secrets.CONFIG }}
       run: |
         python ./utils/list_merge.py
-      
     - name: 提交更改
       run: |                 
          git config --local user.email "actions@github.com"
@@ -47,4 +48,15 @@ jobs:
          git add ./sub
          git add ./utils
          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
-         git push origin main
+         git push origin devmain
+    - name: 等待5分钟
+      run: |
+         sleep 5m
+    - name: 转译为Clash
+      run: |
+         curl "https://sub.id9.cc/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long"
+         wget "https://sub.id9.cc/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long" > Clash.yaml
+    - name: 提交更改
+      run: |
+         git add Clash.yaml
+         git push origin devmain

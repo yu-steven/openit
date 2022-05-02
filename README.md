@@ -212,7 +212,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ### Android / TV
 ` https://github.com/shadowsocks/shadowsocks-android/releases/`
 *2021.9.17---v5.2.6*
-### ShadowSocks 内核
+### ShadowSocks-core
 ` https://github.com/shadowsocks/shadowsocks-libev/`
 *2022.9.15---v3.3.5*
 
@@ -223,7 +223,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ### Android / TV
 ` https://github.com/shadowsocksrr/shadowsocksr-android/releases/`
 *2018.5.9---v3.5.4*
-### ShadowSocksR 内核
+### ShadowSocksR-core
 ` https://github.com/shadowsocksrr/shadowsocksr-libev/`
 *2016.12.29---v2.5.6*
 
@@ -234,6 +234,12 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases/`
 *2022.5.1--v1.7.5*
+### v2ray-core
+` https://github.com/v2fly/v2ray-core/releases`
+*2022.5.2--v5.0.4*
+### Xray-core
+` https://github.com/XTLS/Xray-core/releases`
+*2022.4.27--v1.5.5*
 
 ## Clash
 ### Win / Mac
@@ -254,7 +260,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 ` https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/`
 *2022.4.30---v0.19.17*
-### Clash 内核
+### Clash-core
 ` https://github.com/Dreamacro/clash/`
 *2022.3.19---v1.10.0*
 

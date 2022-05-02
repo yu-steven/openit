@@ -46,7 +46,7 @@ jobs:
          git add ./sub
          git add ./utils
          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
-         git push origin dev
+         git push origin devmain
     - name: 转译为Clash
       run: |
          wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https --no-check-certificate
@@ -56,4 +56,4 @@ jobs:
          git add https
          git add Clash.yaml
          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
-         git push origin dev
+         git push origin devmain

@@ -234,6 +234,12 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases`
 *2022.5.1--v1.7.5*
+### v2rayU for Mac
+` https://github.com/yanue/V2rayU/releases`
+*2021.6.22--v3.2.0*
+### v2rayX for Mac
+` https://github.com/Cenmrev/V2RayX/releases`
+*2019.2.14--v1.5.1
 ### v2ray-core
 ` https://github.com/v2fly/v2ray-core/releases`
 *2022.5.2--v5.0.4*
@@ -245,15 +251,15 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ### Win / Mac
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases`
 *2022.4.30---v0.19.17*
+### Android / TV
+` https://github.com/Kr328/ClashForAndroid/releases`
+*2022.1.15---v2.5.4*
 ### ClashN for Win
 ` https://github.com/2dust/clashN/releases`
 *2022.4.2---v1.8*
 ### ClashX for Mac
 ` https://github.com/yichengchen/clashX/releases`
 *2022.1.8---v1.90.0*
-### Android / TV
-` https://github.com/Kr328/ClashForAndroid/releases`
-*2022.1.15---v2.5.4*
 ### Clash 汉化补丁 for Win
 ` https://github.com/BoyceLig/Clash_Chinese_Patch/releases`
 *2022.5.1---v0.19.17*

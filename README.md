@@ -235,10 +235,10 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ` https://github.com/2dust/v2rayNG/releases/`
 *2022.5.1--v1.7.5*
 ### v2ray-core
-` https://github.com/v2fly/v2ray-core/releases`
+` https://github.com/v2fly/v2ray-core/releases/`
 *2022.5.2--v5.0.4*
 ### Xray-core
-` https://github.com/XTLS/Xray-core/releases`
+` https://github.com/XTLS/Xray-core/releases/`
 *2022.4.27--v1.5.5*
 
 ## Clash

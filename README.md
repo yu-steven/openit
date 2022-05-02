@@ -239,7 +239,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2021.6.22--v3.2.0*
 ### v2rayX for Mac
 ` https://github.com/Cenmrev/V2RayX/releases`
-*2019.2.14--v1.5.1
+*2019.2.14--v1.5.1*
 ### v2ray-core
 ` https://github.com/v2fly/v2ray-core/releases`
 *2022.5.2--v5.0.4*

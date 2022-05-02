@@ -213,7 +213,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ` https://github.com/shadowsocks/shadowsocks-android/releases`
 *2021.9.17---v5.2.6*
 ### ShadowSocks-core
-` https://github.com/shadowsocks/shadowsocks-libev`
+` https://github.com/shadowsocks/shadowsocks-libev/releases`
 *2022.9.15---v3.3.5*
 
 ## ShadowSocksR

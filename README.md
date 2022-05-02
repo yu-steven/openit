@@ -160,7 +160,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [![轻触跳转至App Store][svg-apple]][ipk-surge]
 ### Stash *$2.99*
 [![轻触跳转至App Store][svg-apple]][ipk-stash]
-### Quantumult  *4.99*
+### Quantumult  *$4.99*
 [![轻触跳转至App Store][svg-apple]][ipk-quan]
 ### Potatso 2  *$2.99*
 [![轻触跳转至App Store][svg-apple]][ipk-p2]

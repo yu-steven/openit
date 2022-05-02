@@ -1,4 +1,5 @@
 name: Nodes
+
 # 触发条件
 on:
   schedule:
@@ -6,6 +7,7 @@ on:
     # 表达式生成  https://crontab.guru/
     - cron: '*/30 * * * *'
   workflow_dispatch:
+
 jobs:
   Collecting:
     runs-on: ubuntu-latest
@@ -48,11 +50,11 @@ jobs:
     - name: 转译
       run: |
          wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https --no-check-certificate
-          wget "https://sub.id9.cc/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long" -O Clash.yaml --no-check-certificate
-     - name: 提交更改
-       run: |
-          git pull
-          git add https
-          git add Clash.yaml
-          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
+         wget "https://sub.id9.cc/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long" -O Clash.yaml --no-check-certificate
+    - name: 提交更改
+      run: |
+         git pull
+         git add https
+         git add Clash.yaml
+         git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
          git push origin devmain

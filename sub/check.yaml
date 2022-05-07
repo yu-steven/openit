@@ -1,20 +1,24 @@
 # proxypool远程服务器的地址，空白为http://127.0.0.1:8080
 server_url:
-  - https://example.proxypoolserver.com
-  - https://example.proxypoolserver.com/clash/proxies?type=vmess
+  - https://sspool.herokuapp.com
+  - https://free886.herokuapp.com
+  - https://fq.lonxin.net
+  - https://proxy.yugogo.xyz
+  - https://proxypoolss.fly.dev
+  - https://ednovas.design
 
 
 # 对于您的本地服务器
 request: http   # http / https
 domain:         # default: 127.0.0.1
-port:           # default: 80
+port: 7777      # default: 80
 
-cron_interval: 15       # default: 15  minutes
+cron_interval: 24       # default: 15  minutes
 show_remote_speed: true # default false
 
 healthcheck_timout:     # default 5
 healthcheck_connection: # default 100
 
-speedtest:            # default false
-speed_connection:     # default 5
-speed_timeout:         # default 10
+speedtest: true       # default false
+speed_connection: 10  # default 5
+speed_timeout: 5       # default 10

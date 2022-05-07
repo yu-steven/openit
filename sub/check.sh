@@ -9,5 +9,5 @@ echo "删除 proxypoolcheck.gz"
 rm proxypoolcheck.gz
 echo "chmod 授予777权限"
 chmod 777 proxypoolcheck
-echo "静默运行程序,默认配置"
+echo "静默执行程序,默认配置"
 nohup ./proxypoolcheck -c https://raw.githubusercontent.com/yu-steven/openit/main/sub/check.yaml

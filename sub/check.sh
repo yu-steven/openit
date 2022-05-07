@@ -8,4 +8,4 @@ gzip -d proxypoolcheck.gz
 echo "授予权限"
 chmod 777 proxypoolcheck
 echo "静默运行程序"
-nohup ./proxypoolcheck -c https://github.com/yu-steven/openit/raw/main/sub/check.yaml
+nohup ./proxypoolcheck -c https://raw.githubusercontent.com/yu-steven/openit/main/sub/check.yaml

@@ -7,5 +7,5 @@ echo "解压proxypoolcheck"
 gzip -d proxypoolcheck.gz
 echo "授予权限"
 chmod 777 proxypoolcheck
-echo "静默运行程序"
+echo "静默运行程序,默认配置"
 nohup ./proxypoolcheck -c https://raw.githubusercontent.com/yu-steven/openit/main/sub/check.yaml

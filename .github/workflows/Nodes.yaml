@@ -53,7 +53,7 @@ jobs:
     - name: 转译
       run: |
          wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https --no-check-certificate
-         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long" -O Clash.yaml --no-check-certificate
+         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/sub/nodes.yaml" -O Clash.yaml --no-check-certificate
     - name: 提交更改
       run: |
          git pull

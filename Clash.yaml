@@ -6,10 +6,11 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: CZ-Openit.ml, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, skip-cert-verify: true, udp: true}
-  - {name: CZ-Openit.ml 2, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: true, udp: true}
+  - {name: CZ-Openit.ml 2, server: 194.87.99.122, port: 62560, type: vmess, uuid: e19c03f6-97b9-4c2b-a42d-19daea18d849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CZ-Openit.ml 3, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, skip-cert-verify: true, udp: true}
-  - {name: CZ-Openit.ml 4, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
-  - {name: CZ-Openit.ml 5, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
+  - {name: CZ-Openit.ml 4, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: true, udp: true}
+  - {name: CZ-Openit.ml 5, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
+  - {name: CZ-Openit.ml 6, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
   - {name: HU-Openit.ml, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: HU-Openit.ml 2, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: IE-Openit.ml, server: lluucc3.herokuapp.com, port: 443, type: vmess, uuid: 7ff3d9c9-2153-4d3c-939d-697850c95b21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f495ba1f, headers: {Host: lluucc3.herokuapp.com}}, udp: true}
@@ -17,18 +18,15 @@ proxies:
   - {name: RELAY-Openit.ml, server: 172.67.140.112, port: 443, type: vmess, uuid: 4ac06183-feca-48f8-9f7d-3355bd950e2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 172.67.140.112}}, udp: true}
   - {name: RELAY-Openit.ml 2, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 0a4de18d-aba9-4392-9fd8-9f52bdaf1db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr1t.moonfree.top}}, udp: true}
   - {name: RELAY-Openit.ml 3, server: node.774.gs, port: 8443, type: vmess, uuid: 28f6159e-ed46-4bfe-b893-0e7531c28143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: node.774.gs}}, udp: true}
-  - {name: RELAY-Openit.ml 4, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
-  - {name: RELAY-Openit.ml 5, server: v2.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v2.ssrsub.com}}, udp: true}
-  - {name: RELAY-Openit.ml 6, server: 172.67.184.192, port: 443, type: vmess, uuid: 3a9c0d0c-e0fd-3145-a414-ec265e7010b7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 172.67.184.192}}, udp: true}
-  - {name: RELAY-Openit.ml 7, server: v3.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v3.ssrsub.com}}, udp: true}
-  - {name: RELAY-Openit.ml 8, server: greenfishpowered.cn, port: 10086, type: trojan, password: WDNMDC, sni: payday2.eu.org, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 9, server: greenfishpowered.cn, port: 10086, type: trojan, password: WDNMDN, sni: payday2.eu.org, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 10, server: greenfishpowered.cn, port: 10086, type: trojan, password: WDNMDM, sni: payday2.eu.org, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 11, server: 5.jp.zz.xxxxx.x-t-fuckword.network, port: 48752, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 12, server: ruvds.testx.eu.org, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess-share/?ed=2048", headers: {Host: ruvds.testx.eu.org}}, udp: true}
-  - {name: RELAY-Openit.ml 13, server: QTCS.baiyun.pw, port: 711, type: vmess, uuid: ddd45ba3-80fb-38f9-8e8a-83d469e103fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ssl.baiyu.click}}, udp: true}
-  - {name: RELAY-Openit.ml 14, server: qinton002.bmbai.buzz, port: 601, type: vmess, uuid: 17fcccf7-34ad-3c4b-b47c-5a38e89983c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ssl.baiyu.click}}, udp: true}
-  - {name: RELAY-Openit.ml 15, server: qinton002.bmbai.buzz, port: 603, type: vmess, uuid: 17fcccf7-34ad-3c4b-b47c-5a38e89983c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ssl.baiyu.click}}, udp: true}
+  - {name: RELAY-Openit.ml 4, server: v2.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v2.ssrsub.com}}, udp: true}
+  - {name: RELAY-Openit.ml 5, server: 172.67.184.192, port: 443, type: vmess, uuid: 3a9c0d0c-e0fd-3145-a414-ec265e7010b7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 172.67.184.192}}, udp: true}
+  - {name: RELAY-Openit.ml 6, server: v3.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v3.ssrsub.com}}, udp: true}
+  - {name: RELAY-Openit.ml 7, server: greenfishpowered.cn, port: 10086, type: trojan, password: WDNMDC, sni: payday2.eu.org, skip-cert-verify: true, udp: true}
+  - {name: RELAY-Openit.ml 8, server: greenfishpowered.cn, port: 10086, type: trojan, password: WDNMDN, sni: payday2.eu.org, skip-cert-verify: true, udp: true}
+  - {name: RELAY-Openit.ml 9, server: greenfishpowered.cn, port: 10086, type: trojan, password: WDNMDM, sni: payday2.eu.org, skip-cert-verify: true, udp: true}
+  - {name: RELAY-Openit.ml 10, server: gg05.nfeng6.pp.ua, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /t.me/nfeng6, headers: {Host: gg05.nfeng6.pp.ua}}, udp: true}
+  - {name: RELAY-Openit.ml 11, server: gg04.nfeng6.pp.ua, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /t.me/nfeng6, headers: {Host: gg04.nfeng6.pp.ua}}, udp: true}
+  - {name: RELAY-Openit.ml 12, server: gg01.nfeng6.pp.ua, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /t.me/nfeng6, headers: {Host: gg01.nfeng6.pp.ua}}, udp: true}
   - {name: RO-Openit.ml, server: jp.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
   - {name: SC-Openit.ml, server: cera.doubledou.win, port: 4586, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
   - {name: SC-Openit.ml 2, server: 156.251.191.241, port: 32898, type: vmess, uuid: 7204d6b8-ddaf-417b-c8d8-5f983dc9f6cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -36,292 +34,225 @@ proxies:
   - {name: VN-Openit.ml, server: 103.179.187.87, port: 80, type: vmess, uuid: 84e11227-e771-4c72-88ab-9d74c5b22e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.179.187.87}}, udp: true}
   - {name: VN-Openit.ml 2, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 192.186.129.66}}, udp: true}
   - {name: VN-Openit.ml 3, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}, udp: true}
-  - {name: VN-Openit.ml 4, server: 0001.hcm.genzpn.com, port: 443, type: trojan, password: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, skip-cert-verify: true, udp: true}
-  - {name: VN-Openit.ml 5, server: vn04v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: VN-Openit.ml 6, server: vn01v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: VN-Openit.ml 7, server: vn02v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: VN-Openit.ml 8, server: vn05v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: VN-Openit.ml 9, server: vn07v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: 🇦🇺 AU-Openit.ml, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
+  - {name: VN-Openit.ml 4, server: vn07v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: VN-Openit.ml 5, server: 0001.hn.genzpn.com, port: 80, type: vmess, uuid: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 0001.hn.genzpn.com}}, udp: true}
+  - {name: 🇦🇺 AU-Openit.ml, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU-Openit.ml 2, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU-Openit.ml 3, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
-  - {name: 🇦🇺 AU-Openit.ml 4, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml, server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 2, server: can5.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: can5.mayiyun.vip}}, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 3, server: can6.mayiyun.vip, port: 10010, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 4, server: can3.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: can3.mayiyun.vip}}, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 5, server: can6.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: can6.mayiyun.vip}}, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 6, server: 134.195.196.205, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 7, server: 134.195.196.205, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 8, server: 134.195.196.205, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇨🇦 CA-Openit.ml 9, server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml 2, server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml 3, server: 134.195.196.205, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml 4, server: 134.195.196.205, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml 5, server: 134.195.196.205, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml 6, server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml 7, server: 134.195.196.205, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇨🇦 CA-Openit.ml 8, server: 134.195.196.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: 🇨🇳 TW-Openit.ml, server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 61.222.202.140}}, udp: true}
   - {name: 🇨🇳 TW-Openit.ml 2, server: 61.222.202.140, port: 15789, type: vmess, uuid: 4535e708-5988-4377-a083-755ed60d8068, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW-Openit.ml 3, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW-Openit.ml 4, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW-Openit.ml 5, server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 61.222.202.140}}, udp: true}
-  - {name: 🇨🇳 TW-Openit.ml 6, server: 61.222.202.140, port: 15789, type: vmess, uuid: 4535e708-5988-4377-a083-755ed60d8068, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW-Openit.ml 7, server: tw01.nttkk.com, port: 443, type: vmess, uuid: 3a9c0d0c-e0fd-3145-a414-ec265e7010b7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw01.nttkk.com}}, udp: true}
-  - {name: 🇨🇳 TW-Openit.ml 8, server: tw99-direct.myn1des.com, port: 2087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /t.me/nfeng6, headers: {Host: tw99-direct.myn1des.com}}, udp: true}
+  - {name: 🇨🇳 TW-Openit.ml 5, server: tw01.nttkk.com, port: 443, type: vmess, uuid: 3a9c0d0c-e0fd-3145-a414-ec265e7010b7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw01.nttkk.com}}, udp: true}
+  - {name: 🇨🇳 TW-Openit.ml 6, server: tw99-direct.myn1des.com, port: 2087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /t.me/nfeng6, headers: {Host: tw99-direct.myn1des.com}}, udp: true}
+  - {name: 🇨🇳 TW-Openit.ml 7, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: dc09c9a0-1697-3f39-8ba9-65f2985e00ec, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
   - {name: 🇩🇪 DE-Openit.ml, server: 78.46.244.34, port: 33655, type: vmess, uuid: b41303b4-e2c8-4771-cb6c-ef62244a7621, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE-Openit.ml 2, server: 78.46.244.34, port: 33655, type: vmess, uuid: b41303b4-e2c8-4771-cb6c-ef62244a7621, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE-Openit.ml 3, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}, udp: true}
   - {name: 🇩🇪 DE-Openit.ml 4, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}, udp: true}
   - {name: 🇩🇪 DE-Openit.ml 5, server: de-01.fireplay.io, port: 443, type: trojan, password: lo3TmsNaLWUXpuoE, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 6, server: 139.162.135.191, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 7, server: 139.162.135.191, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 8, server: 139.162.135.191, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 9, server: 139.162.135.191, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 10, server: 139.162.135.191, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 11, server: 139.162.135.191, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 12, server: 139.162.135.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 13, server: 139.162.135.191, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 14, server: 139.162.135.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 15, server: 139.162.135.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 16, server: ger4.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ger4.mayiyun.vip}}, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 17, server: 139.162.135.191, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 18, server: 139.162.135.191, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 19, server: 139.162.135.191, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 20, server: 139.162.135.191, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 21, server: 139.162.135.191, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 22, server: 139.162.135.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇩🇪 DE-Openit.ml 23, server: ger3.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ger3.mayiyun.vip}}, udp: true}
   - {name: 🇫🇷 FR-Openit.ml, server: fr-trojan.bonds.id, port: 443, type: trojan, password: e4307a50-9853-11ec-9b4b-1239d0255272, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 FR-Openit.ml 2, server: fr-trojan.bonds.id, port: 443, type: trojan, password: e4307a50-9853-11ec-9b4b-1239d0255272, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 FR-Openit.ml 3, server: fr-trojan.bonds.id, port: 443, type: trojan, password: e4307a50-9853-11ec-9b4b-1239d0255272, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 GB-Openit.ml, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 2, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 3, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.46.68}}, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 4, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 5, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 6, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 7, server: 172.99.190.61, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 8, server: 82.145.41.125, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 9, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 10, server: 82.145.41.125, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 11, server: 82.145.41.125, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 12, server: 82.145.41.125, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 13, server: 82.145.41.125, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 14, server: 82.145.41.125, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 15, server: 82.145.41.125, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 16, server: 172.99.190.50, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 17, server: 172.99.190.61, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 18, server: 172.99.190.35, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 19, server: 172.99.190.35, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 20, server: 172.99.190.35, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 21, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 22, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 23, server: 82.145.41.125, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 24, server: 172.99.190.35, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 25, server: 172.99.190.61, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 26, server: 172.99.190.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 27, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 28, server: 172.99.190.61, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 29, server: 172.99.190.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 30, server: 172.99.190.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 31, server: 172.99.190.61, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 32, server: 172.99.190.50, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 33, server: 172.99.190.61, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 34, server: 82.145.41.125, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 35, server: 172.99.190.61, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 36, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 37, server: 172.99.190.35, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 38, server: 172.99.190.35, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 39, server: 172.99.190.35, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 40, server: 172.99.190.35, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 41, server: 172.99.190.50, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 42, server: 172.99.190.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 43, server: 172.99.190.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 44, server: 172.99.190.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 45, server: 172.99.190.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 46, server: 172.99.190.50, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 47, server: 172.99.190.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 48, server: 172.99.190.61, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 49, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 50, server: 172.99.190.50, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 51, server: 172.99.190.35, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 52, server: 172.99.190.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 53, server: 172.99.190.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇬🇧 GB-Openit.ml 54, server: 172.99.190.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 2, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.46.68}}, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 3, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 4, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 5, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 6, server: 172.99.190.61, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 7, server: 172.99.190.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 8, server: 172.99.190.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 9, server: 172.99.190.61, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 10, server: 172.99.190.61, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 11, server: 172.99.190.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 12, server: 172.99.190.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 13, server: 172.99.190.61, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 14, server: 172.99.190.61, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 15, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 16, server: 172.99.190.61, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 17, server: 172.99.190.61, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 18, server: 172.99.190.50, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 19, server: 172.99.190.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 20, server: 172.99.190.50, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 21, server: 172.99.190.50, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 22, server: 172.99.190.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 23, server: 172.99.190.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 24, server: 172.99.190.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 25, server: 172.99.190.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 26, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 27, server: 172.99.190.35, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 28, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 29, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 30, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 31, server: 172.99.190.35, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 32, server: 172.99.190.35, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇬🇧 GB-Openit.ml 33, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 🇭🇰 HK-Openit.ml, server: 45.125.64.201, port: 27442, type: vmess, uuid: 3463f354-529a-4f40-9019-b9b10dc08233, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK-Openit.ml 2, server: 8.210.127.214, port: 443, type: vmess, uuid: 5b00bd34-a2a7-4471-8b17-3f4768ac0330, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK-Openit.ml 3, server: hkaz2.xmrth-node.xyz, port: 11153, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: hkaz2.xmrth-node.xyz}}, udp: true}
   - {name: 🇭🇰 HK-Openit.ml 4, server: hkmax12.170809.xyz, port: 444, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK-Openit.ml 5, server: 8.210.127.214, port: 443, type: vmess, uuid: 5b00bd34-a2a7-4471-8b17-3f4768ac0330, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK-Openit.ml 6, server: china-unicom.fanqiangvpn.com, port: 80, type: vmess, uuid: 32eca3f7-e224-45bc-8b91-61b28ce0fea0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: china-unicom.fanqiangvpn.com}}, udp: true}
-  - {name: 🇭🇰 HK-Openit.ml 7, server: hk02.v2ray.xsjv2.vip, port: 80, type: vmess, uuid: 4ddcc34a-ddfd-3c8e-830b-61e625400654, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video, headers: {Host: hk02.v2ray.xsjv2.vip}}, udp: true}
-  - {name: 🇭🇰 HK-Openit.ml 8, server: azhk7.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: azhk7.mayiyun.vip}}, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 2, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK-Openit.ml 6, server: 20.24.77.204, port: 60028, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
+  - {name: 🇭🇰 HK-Openit.ml 7, server: 20.24.77.204, port: 60031, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
+  - {name: 🇭🇰 HK-Openit.ml 8, server: 20.24.199.110, port: 60024, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.199.110}}, udp: true}
+  - {name: 🇭🇰 HK-Openit.ml 9, server: 20.24.199.110, port: 60032, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN-Openit.ml, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN-Openit.ml 2, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, skip-cert-verify: true, udp: true}
   - {name: 🇮🇳 IN-Openit.ml 3, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, skip-cert-verify: true, udp: true}
   - {name: 🇮🇳 IN-Openit.ml 4, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 5, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 6, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 7, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 8, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 9, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 10, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN-Openit.ml 11, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP-Openit.ml 2, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 3, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 4, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 5, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 6, server: jp03.170809.xyz, port: 444, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 7, server: 168.138.219.245, port: 43533, type: vmess, uuid: 03b78acf-f658-4057-9a9d-52a2a784080e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 8, server: 0001.jp.genzpn.com, port: 443, type: trojan, password: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 9, server: aling.gq, port: 443, type: trojan, password: f727337d-52af-4cf9-b260-26ac9a23ddc2, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 10, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 11, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 12, server: 168.138.219.245, port: 43533, type: vmess, uuid: 03b78acf-f658-4057-9a9d-52a2a784080e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 13, server: aling.gq, port: 443, type: trojan, password: f727337d-52af-4cf9-b260-26ac9a23ddc2, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 14, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 15, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 16, server: jp4.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp4.mayiyun.vip}}, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 17, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 18, server: jp5.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp5.mayiyun.vip}}, udp: true}
-  - {name: 🇯🇵 JP-Openit.ml 19, server: 4k.fanqiangvpn.com, port: 443, type: vmess, uuid: 32eca3f7-e224-45bc-8b91-61b28ce0fea0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.fanqiangvpn.com, headers: {Host: 4k.fanqiangvpn.com}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 2, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 3, server: hgmf.speedcncnforward2.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 4, server: v2-4.godlight.xyz, port: 50497, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /g1641hvx, headers: {Host: v2-4.godlight.xyz}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 5, server: 193.123.225.89, port: 38767, type: vmess, uuid: 422c145e-cc52-4226-ddc7-e204111b0ba7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 193.123.225.89}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 6, server: 20.196.192.200, port: 3099, type: vmess, uuid: f4e074b9-5db3-4fbf-f7d6-12af29d8516d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 7, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 8, server: 129.154.54.75, port: 33004, type: vmess, uuid: 4f14695c-31b9-45bf-ca34-1d82170fc100, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 129.154.54.75}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 9, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 10, server: hgmf.speedcncnforward2.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 11, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 12, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 13, server: 193.123.225.89, port: 38767, type: vmess, uuid: 422c145e-cc52-4226-ddc7-e204111b0ba7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 193.123.225.89}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 14, server: 193.123.225.89, port: 59191, type: vmess, uuid: 5e657ab5-b553-464e-8d8c-61ba03b81b55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 15, server: 152.70.247.226, port: 63742, type: vmess, uuid: b48db258-b3aa-4913-9905-8ac4cf3e999b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 3, server: 150.230.60.59, port: 39072, type: vmess, uuid: 37e65b6d-fc4a-435f-9f1c-4ec58fec8e13, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 4, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 5, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 6, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 7, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 8, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 9, server: jp03.170809.xyz, port: 444, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 10, server: 168.138.219.245, port: 43533, type: vmess, uuid: 03b78acf-f658-4057-9a9d-52a2a784080e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 11, server: 0001.jp.genzpn.com, port: 443, type: trojan, password: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 12, server: aling.gq, port: 443, type: trojan, password: f727337d-52af-4cf9-b260-26ac9a23ddc2, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 13, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 14, server: jp03.170809.xyz, port: 444, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 15, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 16, server: 168.138.219.245, port: 43533, type: vmess, uuid: 03b78acf-f658-4057-9a9d-52a2a784080e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 17, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 18, server: aling.gq, port: 443, type: trojan, password: f727337d-52af-4cf9-b260-26ac9a23ddc2, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 19, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 20, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-Openit.ml 21, server: 4k.fanqiangvpn.com, port: 443, type: vmess, uuid: 32eca3f7-e224-45bc-8b91-61b28ce0fea0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.fanqiangvpn.com, headers: {Host: 4k.fanqiangvpn.com}}, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 2, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 3, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 4, server: hgmf.speedcncnforward2.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 5, server: v2-4.godlight.xyz, port: 50497, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /g1641hvx, headers: {Host: v2-4.godlight.xyz}}, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 6, server: 193.123.225.89, port: 38767, type: vmess, uuid: 422c145e-cc52-4226-ddc7-e204111b0ba7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 193.123.225.89}}, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 7, server: 20.196.192.200, port: 3099, type: vmess, uuid: f4e074b9-5db3-4fbf-f7d6-12af29d8516d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 8, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 9, server: 129.154.54.75, port: 33004, type: vmess, uuid: 4f14695c-31b9-45bf-ca34-1d82170fc100, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 129.154.54.75}}, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 10, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 11, server: hgmf.speedcncnforward2.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 12, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 13, server: 193.123.225.89, port: 59191, type: vmess, uuid: 5e657ab5-b553-464e-8d8c-61ba03b81b55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 14, server: 193.123.225.89, port: 38767, type: vmess, uuid: 422c145e-cc52-4226-ddc7-e204111b0ba7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 193.123.225.89}}, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 15, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 KR-Openit.ml 16, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 17, server: kr5.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr5.mayiyun.vip}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 18, server: kr.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.mayiyun.vip}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 19, server: kr1.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr1.mayiyun.vip}}, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 20, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-Openit.ml 21, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 17, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 18, server: 0001.kr.genzpn.com, port: 80, type: vmess, uuid: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: 🇰🇷 KR-Openit.ml 19, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL-Openit.ml, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL-Openit.ml 2, server: 20.123.187.212, port: 27931, type: vmess, uuid: 256eae41-0b8f-4faa-bce8-6366011dc19f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL-Openit.ml 3, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL-Openit.ml 4, server: 20.123.187.212, port: 27931, type: vmess, uuid: 256eae41-0b8f-4faa-bce8-6366011dc19f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL-Openit.ml 5, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml, server: sgmax01.170809.xyz, port: 444, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 2, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 3, server: 81.90.188.59, port: 41657, type: vmess, uuid: 930a425e-2fc8-4930-8735-141f6b237755, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 4, server: 0001.sg.genzpn.com, port: 80, type: vmess, uuid: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 0001.sg.genzpn.com}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 5, server: 168.138.177.112, port: 41239, type: vmess, uuid: f962092f-a5b7-4011-eaaa-ae52200a3740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 6, server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 7, server: sg-sr-114.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 8, server: sg1.qingyun123.xyz, port: 10001, type: trojan, password: 1362a776-8b97-4707-91b9-4ae21d910462, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 9, server: zecjk.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: zecjk.com}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 10, server: 103.253.26.20, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 103.253.26.20}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 11, server: 202.61.141.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 202.61.141.130}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 12, server: ycgyg.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ycgyg.com}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 13, server: eeh7iewe.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: eeh7iewe.com}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 14, server: 103.253.26.134, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 103.253.26.134}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 15, server: 81.90.188.59, port: 41657, type: vmess, uuid: 930a425e-2fc8-4930-8735-141f6b237755, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 16, server: 168.138.177.112, port: 41239, type: vmess, uuid: f962092f-a5b7-4011-eaaa-ae52200a3740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 17, server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 18, server: sg-sr-114.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 19, server: sgp02ul.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 20, server: sp.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sp.mayiyun.vip}}, udp: true}
-  - {name: 🇸🇬 SG-Openit.ml 21, server: sgp03ul.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: 🇳🇱 NL-Openit.ml 4, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL-Openit.ml 5, server: 20.123.187.212, port: 27931, type: vmess, uuid: 256eae41-0b8f-4faa-bce8-6366011dc19f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 2, server: 81.90.188.59, port: 41657, type: vmess, uuid: 930a425e-2fc8-4930-8735-141f6b237755, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 3, server: 0001.sg.genzpn.com, port: 80, type: vmess, uuid: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 0001.sg.genzpn.com}}, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 4, server: 168.138.177.112, port: 41239, type: vmess, uuid: f962092f-a5b7-4011-eaaa-ae52200a3740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 5, server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 6, server: sg-sr-114.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 7, server: sg1.qingyun123.xyz, port: 10001, type: trojan, password: 1362a776-8b97-4707-91b9-4ae21d910462, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 8, server: zecjk.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: zecjk.com}}, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 9, server: 103.253.26.20, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 103.253.26.20}}, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 10, server: 202.61.141.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 202.61.141.130}}, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 11, server: ycgyg.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ycgyg.com}}, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 12, server: eeh7iewe.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: eeh7iewe.com}}, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 13, server: 103.253.26.134, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 103.253.26.134}}, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 14, server: 81.90.188.59, port: 41657, type: vmess, uuid: 930a425e-2fc8-4930-8735-141f6b237755, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 15, server: 0001.sg.genzpn.com, port: 443, type: trojan, password: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 16, server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 17, server: sg-sr-114.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-Openit.ml 18, server: azsg.52jjyun.top, port: 88, type: vmess, uuid: f79237b4-52bb-44cc-91c2-90d7856a7122, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jjyun, headers: {Host: azsg.52jjyun.top}}, udp: true}
   - {name: 🇺🇸 US-Openit.ml, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US-Openit.ml 2, server: qwanck.xyz, port: 443, type: trojan, password: 57aa53f3afbd, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 3, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 4, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 5, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 6, server: usmax01.170809.xyz, port: 444, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 7, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 8, server: 85.209.159.107, port: 20403, type: vmess, uuid: b3b08b1c-c0a4-11ec-8151-00163c3fe0cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Asq7j5Mb/, headers: {Host: 85.209.159.107}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 9, server: trojan2.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 10, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 45.35.84.162}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 11, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 104.166.135.10}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 12, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 13, server: lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: lvuft.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 14, server: 185.202.172.243, port: 40941, type: vmess, uuid: 48537820-14f3-4de7-d26e-a3b88bcf015a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 15, server: 154.94.214.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 154.94.214.2}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 16, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 17, server: cloudflare-warp.fanqiangvpn.com, port: 443, type: vmess, uuid: ee8d15c0-927d-497a-ba84-65447a790f56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.fanqiangvpn.com, headers: {Host: cloudflare-warp.fanqiangvpn.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 18, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 19, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 20, server: streaming-1-route.teacher2050.com, port: 31222, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 21, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 22, server: 150.230.43.65, port: 14564, type: vmess, uuid: 1556e040-31d3-4c47-b0d2-ddf888010b4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 23, server: aa.kayalo.com, port: 26267, type: vmess, uuid: 9757cdba-c75b-4b94-9e31-7956dc7d852a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wis, headers: {Host: aa.kayalo.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 24, server: 104.168.13.8, port: 41342, type: vmess, uuid: 3aa90670-6d21-4287-eec5-0cd0b21d579a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 104.168.13.8}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 25, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 26, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 27, server: los2-cn2.v2ce.com, port: 443, type: trojan, password: 1Qfea1eL3zCALPJm, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 28, server: 0001.us.genzpn.com, port: 443, type: trojan, password: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 29, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 30, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 31, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 32, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 33, server: usd.scsevers.cf, port: 443, type: trojan, password: sharecentretest, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 34, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 35, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 36, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: us1nhg-node.aiqiche123.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 37, server: 45.91.83.111, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: 45.91.83.111}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 38, server: 65.49.217.194, port: 16194, type: vmess, uuid: 9309d1bd-cda9-4baf-e769-a37ef630daac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 39, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 40, server: 185.202.172.243, port: 40941, type: vmess, uuid: 48537820-14f3-4de7-d26e-a3b88bcf015a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 41, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 45.35.84.162}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 42, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 208.98.48.2}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 43, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: iesei1ei.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 3, server: 65.49.217.194, port: 16194, type: vmess, uuid: 9309d1bd-cda9-4baf-e769-a37ef630daac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 4, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 5, server: us01.170809.xyz, port: 443, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 6, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 7, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 8, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 9, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 10, server: 85.209.159.107, port: 20403, type: vmess, uuid: b3b08b1c-c0a4-11ec-8151-00163c3fe0cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Asq7j5Mb/, headers: {Host: 85.209.159.107}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 11, server: trojan2.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 12, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 45.35.84.162}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 13, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 104.166.135.10}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 14, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 15, server: lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: lvuft.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 16, server: 185.202.172.243, port: 40941, type: vmess, uuid: 48537820-14f3-4de7-d26e-a3b88bcf015a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 17, server: 154.94.214.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 154.94.214.2}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 18, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 19, server: cloudflare-warp.fanqiangvpn.com, port: 443, type: vmess, uuid: ee8d15c0-927d-497a-ba84-65447a790f56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.fanqiangvpn.com, headers: {Host: cloudflare-warp.fanqiangvpn.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 20, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 21, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 22, server: streaming-1-route.teacher2050.com, port: 31222, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 23, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 24, server: 150.230.43.65, port: 14564, type: vmess, uuid: 1556e040-31d3-4c47-b0d2-ddf888010b4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 25, server: aa.kayalo.com, port: 26267, type: vmess, uuid: 9757cdba-c75b-4b94-9e31-7956dc7d852a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wis, headers: {Host: aa.kayalo.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 26, server: 104.168.13.8, port: 41342, type: vmess, uuid: 3aa90670-6d21-4287-eec5-0cd0b21d579a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 104.168.13.8}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 27, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 28, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 29, server: los2-cn2.v2ce.com, port: 443, type: trojan, password: 1Qfea1eL3zCALPJm, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 30, server: 0001.us.genzpn.com, port: 443, type: trojan, password: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 31, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 32, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 33, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 34, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 35, server: usd.scsevers.cf, port: 443, type: trojan, password: sharecentretest, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 36, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 37, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 38, server: 45.91.83.111, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: 45.91.83.111}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 39, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: us1nhg-node.aiqiche123.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 40, server: trojan33.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 41, server: usmax01.170809.xyz, port: 444, type: trojan, password: 09d2d2b3-dfce-4912-b943-e4b88f2de92c, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 42, server: 185.202.172.243, port: 40941, type: vmess, uuid: 48537820-14f3-4de7-d26e-a3b88bcf015a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 43, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 45.35.84.162}}, udp: true}
   - {name: 🇺🇸 US-Openit.ml 44, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 104.166.135.10}}, udp: true}
   - {name: 🇺🇸 US-Openit.ml 45, server: 104.168.13.8, port: 41342, type: vmess, uuid: 3aa90670-6d21-4287-eec5-0cd0b21d579a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 104.168.13.8}}, udp: true}
   - {name: 🇺🇸 US-Openit.ml 46, server: aa.kayalo.com, port: 26267, type: vmess, uuid: 9757cdba-c75b-4b94-9e31-7956dc7d852a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wis, headers: {Host: aa.kayalo.com}}, udp: true}
   - {name: 🇺🇸 US-Openit.ml 47, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 48, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 49, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 192.96.204.250}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 50, server: lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: lvuft.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 51, server: 154.94.214.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 154.94.214.2}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 52, server: 154.94.218.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 154.94.218.130}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 53, server: viibah6u.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: viibah6u.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 54, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 55, server: o7cx6bd6t4yjiqsm.xiongsonglin.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 56, server: usa-sr-105.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 57, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 58, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 59, server: usd.scsevers.cf, port: 443, type: trojan, password: sharecentretest, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 60, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 61, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 62, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 63, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 64, server: 107.167.5.43, port: 443, type: vmess, uuid: aaacab30-a9fa-4249-9780-93ed4d223ed6, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/173418141123, headers: {Host: 107.167.5.43}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 65, server: 167.88.61.2, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 66, server: 167.88.61.2, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 67, server: 167.88.61.2, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 68, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 69, server: 38.75.137.88, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 70, server: 38.75.137.88, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 71, server: cloudflare-warp.fanqiangvpn.com, port: 443, type: vmess, uuid: 32eca3f7-e224-45bc-8b91-61b28ce0fea0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.fanqiangvpn.com, headers: {Host: cloudflare-warp.fanqiangvpn.com}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 72, server: 0001.us.genzpn.com, port: 80, type: vmess, uuid: 85a173a6-cbac-44b7-83b7-0c53d4aadf93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 73, server: 38.75.137.88, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 74, server: 38.75.137.88, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 75, server: 38.75.137.88, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 76, server: 38.75.137.88, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 77, server: 38.75.137.88, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 78, server: usa1.mayiyun.vip, port: 20012, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 79, server: 38.75.137.88, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 80, server: 167.88.63.5, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 81, server: 38.75.137.88, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 82, server: 38.75.137.88, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 83, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 84, server: 38.75.137.88, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇺🇸 US-Openit.ml 85, server: a23.v2.gay, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 48, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: iesei1ei.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 49, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 50, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 192.96.204.250}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 51, server: lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: lvuft.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 52, server: 154.94.214.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 154.94.214.2}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 53, server: 154.94.218.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 154.94.218.130}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 54, server: viibah6u.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: viibah6u.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 55, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 208.98.48.2}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 56, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 57, server: o7cx6bd6t4yjiqsm.xiongsonglin.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 58, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 59, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 60, server: usd.scsevers.cf, port: 443, type: trojan, password: sharecentretest, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 61, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 62, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 63, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 64, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 65, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: usa-sr-106.mitoption.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 66, server: cloudflare-warp.fanqiangvpn.com, port: 443, type: vmess, uuid: 32eca3f7-e224-45bc-8b91-61b28ce0fea0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.fanqiangvpn.com, headers: {Host: cloudflare-warp.fanqiangvpn.com}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 67, server: 96.43.94.113, port: 53618, type: vmess, uuid: 12f9e771-5e14-4167-a2ae-04a5772fe285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 96.43.94.113}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 68, server: 96.43.94.111, port: 32092, type: vmess, uuid: 480aea64-b548-492b-bc07-bcd4cf0ac29a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 96.43.94.111}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 69, server: 173.82.251.240, port: 2233, type: vmess, uuid: 1e3847e6-755a-4964-9845-4ac53e39b23c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 173.82.251.240}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 70, server: 173.82.236.126, port: 2233, type: vmess, uuid: f405fe3c-9789-43e7-a027-7be09a688e0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 173.82.236.126}}, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 71, server: 167.88.63.82, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 72, server: 167.88.63.82, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 73, server: 167.88.63.82, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 74, server: 167.88.63.82, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 75, server: 167.88.63.82, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 76, server: 167.88.63.82, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 77, server: 167.88.63.82, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 78, server: 167.88.63.82, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 79, server: 167.88.63.82, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 80, server: 167.88.63.82, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇺🇸 US-Openit.ml 81, server: 167.88.63.82, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
-  - name: 🇭🇰 香港总集
-    type: select
-    proxies:
-      - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - DIRECT
   - name: 🇭🇰 香港节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -336,34 +267,7 @@ proxy-groups:
       - 🇭🇰 HK-Openit.ml 6
       - 🇭🇰 HK-Openit.ml 7
       - 🇭🇰 HK-Openit.ml 8
-  - name: 🇭🇰 香港AGA
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇭🇰 香港IEPL
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇭🇰 香港IPLC
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇯🇵 日本总集
-    type: select
-    proxies:
-      - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - DIRECT
+      - 🇭🇰 HK-Openit.ml 9
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -389,27 +293,8 @@ proxy-groups:
       - 🇯🇵 JP-Openit.ml 17
       - 🇯🇵 JP-Openit.ml 18
       - 🇯🇵 JP-Openit.ml 19
-  - name: 🇯🇵 日本IEPL
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇯🇵 日本IPLC
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇺🇲 美国总集
-    type: select
-    proxies:
-      - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - DIRECT
+      - 🇯🇵 JP-Openit.ml 20
+      - 🇯🇵 JP-Openit.ml 21
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -497,31 +382,6 @@ proxy-groups:
       - 🇺🇸 US-Openit.ml 79
       - 🇺🇸 US-Openit.ml 80
       - 🇺🇸 US-Openit.ml 81
-      - 🇺🇸 US-Openit.ml 82
-      - 🇺🇸 US-Openit.ml 83
-      - 🇺🇸 US-Openit.ml 84
-      - 🇺🇸 US-Openit.ml 85
-  - name: 🇺🇲 美国IEPL
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇺🇲 美国IPLC
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇹🇼 台湾总集
-    type: select
-    proxies:
-      - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - DIRECT
   - name: 🇹🇼 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -535,28 +395,6 @@ proxy-groups:
       - 🇨🇳 TW-Openit.ml 5
       - 🇨🇳 TW-Openit.ml 6
       - 🇨🇳 TW-Openit.ml 7
-      - 🇨🇳 TW-Openit.ml 8
-  - name: 🇹🇼 台湾IEPL
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇹🇼 台湾IPLC
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇸🇬 狮城总集
-    type: select
-    proxies:
-      - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -581,30 +419,6 @@ proxy-groups:
       - 🇸🇬 SG-Openit.ml 16
       - 🇸🇬 SG-Openit.ml 17
       - 🇸🇬 SG-Openit.ml 18
-      - 🇸🇬 SG-Openit.ml 19
-      - 🇸🇬 SG-Openit.ml 20
-      - 🇸🇬 SG-Openit.ml 21
-  - name: 🇸🇬 狮城IEPL
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇸🇬 狮城IPLC
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇰🇷 韩国总集
-    type: select
-    proxies:
-      - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
-      - DIRECT
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -630,842 +444,285 @@ proxy-groups:
       - 🇰🇷 KR-Openit.ml 17
       - 🇰🇷 KR-Openit.ml 18
       - 🇰🇷 KR-Openit.ml 19
-      - 🇰🇷 KR-Openit.ml 20
-      - 🇰🇷 KR-Openit.ml 21
-  - name: 🇰🇷 韩国IEPL
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
-  - name: 🇰🇷 韩国IPLC
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - DIRECT
   - name: 🌍 其他地区
     type: select
     proxies:
       - DIRECT
-  - name: ♻️ 手动切换1
+  - name: ♻️ 手动切换
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
-      - 🌍 其他地区
-  - name: ♻️ 手动切换2
-    type: select
-    proxies:
-      - DIRECT
-      - 🇭🇰 香港总集
-      - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
-      - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
-      - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
-      - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
-      - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
-      - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
-      - 🌍 其他地区
-  - name: ♻️ 手动切换3
-    type: select
-    proxies:
-      - DIRECT
-      - 🇭🇰 香港总集
-      - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
-      - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
-      - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
-      - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
-      - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
-      - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
   - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 🧩 微软服务
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 📲 聊天软件
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
     type: select
     proxies:
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 📹 YouTube
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🎥 NETFLIX
     type: select
     proxies:
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🎵 TikTok
     type: select
     proxies:
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🎬 Prime
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 👪 DisneyPlus
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🎬 Spotify
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🎬 HBO
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 📺 EMBY
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: ⛩ 日韩媒体
     type: select
     proxies:
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🌍 国外媒体
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🌏 港台媒体
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 📺 哔哩哔哩
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 📺 爱奇艺
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 🇧🇹 BT&PT
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 🇺🇳 国外网站
     type: select
     proxies:
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
       - DIRECT
   - name: 🇹🇼 国内网站
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 🎮 游戏平台
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港总集
       - 🇭🇰 香港节点
-      - 🇭🇰 香港AGA
-      - 🇭🇰 香港IEPL
-      - 🇭🇰 香港IPLC
-      - 🇯🇵 日本总集
       - 🇯🇵 日本节点
-      - 🇯🇵 日本IEPL
-      - 🇯🇵 日本IPLC
-      - 🇺🇲 美国总集
       - 🇺🇲 美国节点
-      - 🇺🇲 美国IEPL
-      - 🇺🇲 美国IPLC
-      - 🇹🇼 台湾总集
       - 🇹🇼 台湾节点
-      - 🇹🇼 台湾IEPL
-      - 🇹🇼 台湾IPLC
-      - 🇸🇬 狮城总集
       - 🇸🇬 狮城节点
-      - 🇸🇬 狮城IEPL
-      - 🇸🇬 狮城IPLC
-      - 🇰🇷 韩国总集
       - 🇰🇷 韩国节点
-      - 🇰🇷 韩国IEPL
-      - 🇰🇷 韩国IPLC
       - 🌍 其他地区
-      - ♻️ 手动切换1
-      - ♻️ 手动切换2
-      - ♻️ 手动切换3
+      - ♻️ 手动切换
   - name: 🛑 全球拦截
     type: select
     proxies:

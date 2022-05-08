@@ -50,13 +50,13 @@ jobs:
     - name: 5分钟
       run: |
          sleep 5m
-    - name: 安装 subconverter
+    - name: 安装Subconverter
       run: |
          wget https://github.com/tindy2013/subconverter/releases/download/v0.7.2/subconverter_linux64.tar.gz&&tar -zxvf subconverter_linux64.tar.gz&&nohup ./subconverter/subconverter &
     - name: 转译
       run: |
          wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https
-         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rules.ini" -O Clash.yaml
+         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rules.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
     - name: 提交更改
       run: |
          git pull

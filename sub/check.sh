@@ -1,11 +1,8 @@
 #!/bin/bash
 
 echo -e "proxypoolcheck\n"
-echo "download proxypoolcheck.gz..."
-wget https://github.com/Sansui233/proxypoolCheck/releases/download/v0.3.1/proxypoolCheck-linux-amd64-v0.3.1.gz -O proxypoolcheck.gz
-echo "done"
-echo "unzip proxypoolcheck.gz..."
-gzip -d proxypoolcheck.gz
+echo "download proxypoolcheck..."
+wget https://github.com/yu-steven/proxypoolCheck/releases/download/v0.3.1/proxypoolCheck-linux-amd64 -O proxypoolcheck
 echo "done"
 echo "chmod 授予777权限..."
 chmod +755 proxypoolcheck

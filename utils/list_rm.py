@@ -16,7 +16,7 @@ def main(argv):
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'with -i <input_file> -o <output_file>'
+         print ('with -i <input_file> -o <output_file>')
          sys.exit()
       elif opt in ("-i", "--input"):
          input_file = arg

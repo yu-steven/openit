@@ -230,7 +230,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
-*2022.5.1---v5.22*
+*2022.5.6---v5.23*
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases`
 *2022.5.1--v1.7.5*

@@ -20,10 +20,10 @@ def main(argv):
          sys.exit()
       elif opt in ("-i", "--input"):
          input_file = arg
+         return input_file
       elif opt in ("-o", "--output"):
          output_file = arg
-    return input_file output_file
-
+         return output_file
 file_list = []  #创建一个空列表
 
 class sub_merge:

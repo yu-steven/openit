@@ -22,8 +22,8 @@ def main(argv):
          input_file = arg
       elif opt in ("-o", "--output"):
          output_file = arg
-   print '输入的文件为：', input_file
-   print '输出的文件为：', output_file
+   print ('input_file')
+   print ('output_file')
 
 file_list = []  #创建一个空列表
 

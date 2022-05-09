@@ -2,7 +2,7 @@
 
 echo -e "proxypool\n"
 echo "download proxypool..."
-wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-amd64 -O proxypool
+wget https://github.com/yu-steven/proxypool/releases/download/v0.6.1/proxypool-linux-amd64 -O proxypool
 echo "done"
 echo "chmod 授予777权限..."
 chmod +777 proxypool

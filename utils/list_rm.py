@@ -12,7 +12,7 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hi:o:",["input=","output="])
    except getopt.GetoptError:
-      print 'test.py -i <input_file> -o <output_file>'
+      print ('test.py -i <input_file> -o <output_file>')
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':

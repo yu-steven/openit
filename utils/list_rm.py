@@ -22,8 +22,7 @@ def main(argv):
          input_file = arg
       elif opt in ("-o", "--output"):
          output_file = arg
-   print ('input_file')
-   print ('output_file')
+    return input_file output_file
 
 file_list = []  #创建一个空列表
 

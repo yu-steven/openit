@@ -5,7 +5,6 @@ import json, re
 import sys, getopt
 from urllib import request
 
-# 文件路径定义
 def main(argv):
    input_file = ''
    output_file = ''
@@ -24,6 +23,11 @@ def main(argv):
       elif opt in ("-o", "--output"):
          output_file = arg
          return output_file
+
+# 文件路径定义
+input_file = input_file
+output_file = output_file
+
 file_list = []  #创建一个空列表
 
 class sub_merge:

@@ -6,8 +6,8 @@ import sys, getopt
 from urllib import request
 
 # 文件路径定义
-input_file = ./url
-output_file = ./url
+input_file = './url'
+output_file = './url'
 #创建一个空列表
 file_list = []
 

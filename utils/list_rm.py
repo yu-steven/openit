@@ -1,24 +1,31 @@
 #!/usr/bin/env python3
 
-from sub_convert import (
-    sub_convert,
-)  # Python 之间互相调用文件https://blog.csdn.net/winycg/article/details/78512300
-
-import sys
+from sub_convert import sub_convert   # Python 之间互相调用文件https://blog.csdn.net/winycg/article/details/78512300
 import json, re
+import sys, getopt
 from urllib import request
 
-# 分析当前项目依赖 https://blog.csdn.net/lovedingd/article/details/102522094
-
-in = sys.argv[1]
-out = sys.argv[2]
 # 文件路径定义
-input_file = '{in}'
-output_file = '{out}'
-file_list = []  #创建一个空列表
+def main(argv):
+   input_file = ''
+   output_file = ''
+   try:
+      opts, args = getopt.getopt(argv,"hi:o:",["input=","output="])
+   except getopt.GetoptError:
+      print 'test.py -i <input_file> -o <output_file>'
+      sys.exit(2)
+   for opt, arg in opts:
+      if opt == '-h':
+         print 'with -i <input_file> -o <output_file>'
+         sys.exit()
+      elif opt in ("-i", "--input"):
+         input_file = arg
+      elif opt in ("-o", "--output"):
+         output_file = arg
+   print '输入的文件为：', input_file
+   print '输出的文件为：', output_file
 
-print in
-print out
+file_list = []  #创建一个空列表
 
 class sub_merge:
     def out_file(): #文件去重
@@ -47,3 +54,4 @@ class sub_merge:
 
 if __name__ =="__main__":
     sub_merge.out_file()
+    main(sys.argv[1:])

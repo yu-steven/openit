@@ -389,11 +389,11 @@ class sub_convert():
     
                 proxy_index = proxies_list.index(proxy)
                 if len(proxies_list) > 999:
-                    proxy['name'] = f'{name_emoji}{country_code}-Openit.ml'# {name_emoji}{country_code}-{ip}-{proxy_index:0>4d}
+                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>4d}'# {name_emoji}{country_code}-{ip}-{proxy_index:0>4d}
                 elif len(proxies_list) < 999 and len(proxies_list) > 99:
-                    proxy['name'] = f'{name_emoji}{country_code}-Openit.ml'# {name_emoji}{country_code}-{ip}-{proxy_index:0>3d}
+                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>3d}'# {name_emoji}{country_code}-{ip}-{proxy_index:0>3d}
                 elif len(proxies_list) < 99:
-                    proxy['name'] = f'{name_emoji}{country_code}-Openit.ml'# {name_emoji}{country_code}-{ip}-{proxy_index:0>2d}
+                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>2d}'# {name_emoji}{country_code}-{ip}-{proxy_index:0>2d}
 
                 if proxy['server'] != '127.0.0.1':
                     proxy_str = str(proxy)

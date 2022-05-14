@@ -18,9 +18,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-    - name: 安装subconverter
-      run: |
-         wget https://github.com/yu-steven/subconverter/releases/download/v0.7.2/subconverter_linux64.tar.gz -O subconverter.tar.gz&&tar -zxvf subconverter.tar.gz&&nohup ./subconverter/subconverter &
+    # - name: 安装subconverter
+      # run: |
+         # wget https://github.com/yu-steven/subconverter/releases/download/v0.7.2/subconverter_linux64.tar.gz -O subconverter.tar.gz&&tar -zxvf subconverter.tar.gz&&nohup ./subconverter/subconverter &
     - name: 加载缓存
       uses: actions/cache@v2
       with:
@@ -50,17 +50,17 @@ jobs:
          git add ./utils
          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
          git push origin devmain
-    - name: 5分钟
-      run: |
-         sleep 5m
-    - name: 转译&同步
-      run: |
-         wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https
-         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
-    - name: 提交更改
-      run: |
-         git pull
-         git add https
-         git add Clash.yaml
-         git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
-         git push origin devmain
+    #- name: 5分钟
+    #  run: |
+    #     sleep 5m
+    # - name: 转译&同步
+      # run: |
+         # wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https
+         # wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
+    #- name: 提交更改
+    #  run: |
+    #     git pull
+    #     git add https
+    #     git add Clash.yaml
+    #     git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
+    #     git push origin devmain

@@ -683,7 +683,7 @@ class sub_convert():
             base64_content_format = base64_content
             return base64_content
 
-    def convert_remote(url='', output_type='clash', host='https://api.v1.mk'): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
+    def convert_remote(url='', output_type='clash', host='http://0.0.0.0:25500'): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
         # 使用远程订阅转换服务，输出相应配置。
         sever_host = host
         url = urllib.parse.quote(url, safe='') # https://docs.python.org/zh-cn/3/library/urllib.parse.html

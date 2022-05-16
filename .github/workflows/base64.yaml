@@ -13,9 +13,9 @@ jobs:
     - name: 安装subconverter
       run: |
          wget https://github.com/yu-steven/subconverter/releases/download/v0.7.2/subconverter_linux64.tar.gz -O subconverter.tar.gz&&tar -zxvf subconverter.tar.gz&&nohup ./subconverter/subconverter &
-    - name: set timezone
+    - name: 设置时间
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: config git
+    - name: 配置git
       run: |                 
          git config --local user.email "actions@github.com"
          git config --local user.name "GitHub Actions"

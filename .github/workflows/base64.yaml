@@ -2,7 +2,7 @@ name: Base64
 on: 
   #push:
   #  paths:
-  #    - 'xxx'
+  #    - 'url'
   workflow_dispatch:
 jobs:
   my-job:
@@ -10,19 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: 安装subconverter
+      run: |
+         wget https://github.com/yu-steven/subconverter/releases/download/v0.7.2/subconverter_linux64.tar.gz -O subconverter.tar.gz&&tar -zxvf subconverter.tar.gz&&nohup ./subconverter/subconverter &
     - name: set timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: config git
       run: |                 
          git config --local user.email "actions@github.com"
          git config --local user.name "GitHub Actions"
-    - name: Write
+    - name: long
       run: base64 url > long
-    - name: check for changes
-      run: git status
-    - name: stage changed files
-      run: git add long
-    - name: commit changed files
-      run: git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新订阅"
-    - name: push code
-      run: git push
+    - name: 提交更改1
+      run: |
+         git add long
+         git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新订阅"
+         git push origin main
+    - name: https&clash
+      run: |
+         wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https
+         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
+    - name: 提交更改2
+      run: |
+         git add https
+         git add Clash.yaml
+         git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
+         git push origin main

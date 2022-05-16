@@ -5,6 +5,19 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: v2 adae test, server: 18.140.65.224, port: 3224, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 IEPL  台湾 1, server: aga135.bieqiangwo.xyz, port: 55442, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 IEPL  台湾 2, server: 116.129.253.39, port: 27019, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 IEPL  台湾 3, server: aga135.bieqiangwo.xyz, port: 63200, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 IEPL  台湾 4, server: hinet1261.gfwisbest.xyz, port: 21234, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 IEPL  台湾 5, server: aga136.bieqiangwo.xyz, port: 43230, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 IEPL  台湾 6, server: aga136.bieqiangwo.xyz, port: 42473, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 CN2 1, server: 183.194.112.178, port: 50251, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 test1, server: aga135.bieqiangwo.xyz, port: 62110, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 直连 3, server: twpaopao2.gfwisbest.xyz, port: 221, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 直连 4, server: hinet1276.bieqiangwo.xyz, port: 1259, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 直连 5, server: hinet1261.gfwisbest.xyz, port: 224, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 直连 （AEAD, server: 185.217.110.184, port: 889, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK-20.205.118.170-521, server: nn02.nfeng6.pp.ua, port: 60010, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn02.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇭🇰 HK-20.205.118.170-522, server: nn02.nfeng6.pp.ua, port: 60034, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn02.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇭🇰 HK-20.205.118.170-523, server: nn02.nfeng6.pp.ua, port: 60017, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn02.nfeng6.pp.ua%22%7D"}}, udp: true}
@@ -16,17 +29,86 @@ proxies:
   - {name: 🇭🇰 HK-20.205.125.236-525, server: nn01.nfeng6.pp.ua, port: 60021, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn01.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇭🇰 HK-20.205.125.236-548, server: nn01.nfeng6.pp.ua, port: 60038, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn01.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇭🇰 HK-43.154.72.145-526, server: 43.154.72.145, port: 27091, type: vmess, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL  香港  10, server: 218.188.148.36, port: 44244, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL  香港 1, server: aga136.bieqiangwo.xyz, port: 40017, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL  香港 2, server: 103.117.101.215, port: 1013, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL  香港 3, server: aga130.bieqiangwo.xyz, port: 10016, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL  香港 4, server: 117.164.185.145, port: 11015, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2, headers: {Host: "%7B%22Host%22:%22hk5tls.v2ok.cc%22%7D"}}, udp: true}
+  - {name: 🇭🇰 IEPL  香港 5, server: aga130.bieqiangwo.xyz, port: 23688, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL  香港 6(AEAD 需开启允许不安全tls), server: 117.164.185.145, port: 19995, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: "%7B%22Host%22:%22hk7.v2ok.cc%22%7D"}}, udp: true}
+  - {name: 🇭🇰 IEPL  香港 7（台区Netflix, server: aga130.bieqiangwo.xyz, port: 59991, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL  香港 8（台区Netflix, server: aga130.bieqiangwo.xyz, port: 28887, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL 香港 9(AEAD 需开启允许不安全tls), server: 117.164.185.145, port: 13996, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: "%7B%22Host%22:%22hk8.v2ok.cc%22%7D"}}, udp: true}
+  - {name: 🇭🇰 香港 te, server: 103.149.249.136, port: 223, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 直连 HGC1, server: hk12348.v2ok.cc, port: 51260, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 直连 HKBN tls, server: hk5tls.v2ok.cc, port: 10015, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2, headers: {Host: "%7B%22Host%22:%22hk5tls.v2ok.cc%22%7D"}}, udp: true}
+  - {name: 🇭🇰 香港 直连 HKBN1, server: hk5.bieqiangwo.xyz, port: 10013, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 直连 腾讯云 2, server: 119.28.74.161, port: 1223, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 直连 腾讯云 3, server: 119.28.67.178, port: 223, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 直连 腾讯云 4, server: 43.154.146.176, port: 221, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 移动 HKBN1, server: aga130.bieqiangwo.xyz, port: 51999, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 IEPL  日本 1, server: jp1-cn.v2ok.cc, port: 20231, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: "%7B%22Host%22:%22jp1.v2ok.cc%22%7D"}}, udp: true}
+  - {name: 🇯🇵 IEPL  日本 2, server: aga136.bieqiangwo.xyz, port: 52390, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 IEPL  日本 3, server: aga130.bieqiangwo.xyz, port: 62333, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 IEPL  日本 4, server: 120.232.173.177, port: 16751, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP-35.79.15.53-007, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本  流媒体全解锁1, server: 198.144.166.40, port: 231, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 SB, server: 137.220.217.42, port: 369, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 直连 1, server: 154.31.112.51, port: 229, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 直连 3, server: 194.156.231.100, port: 399, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 直连 流媒体 01, server: 45.14.70.197, port: 1312, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 直连 流媒体 03, server: nhnjp3.sadno.cc, port: 1269, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 直连2 移动优化, server: 154.31.113.193, port: 2390, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 移动 test1, server: aga130.bieqiangwo.xyz, port: 62334, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 IEPL  韩国, server: 43.154.156.118, port: 50369, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 IEPL 俄罗斯, server: 194.50.170.35, port: 363, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 IEPL  新加坡 1, server: aga136.bieqiangwo.xyz, port: 41236, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 IEPL  新加坡 2, server: 139.227.135.220, port: 11671, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 IEPL  新加坡 3(AEAD 需开启允许不安全tls), server: 117.164.185.145, port: 19122, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2, headers: {Host: "%7B%22Host%22:%22sg1.v2ok.cc%22%7D"}}, udp: true}
+  - {name: 🇸🇬 IEPL  新加坡 4, server: 116.129.253.39, port: 55764, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 IEPL  新加坡 5, server: 43.154.155.27, port: 50362, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 IEPL  新加坡 6, server: 43.154.156.209, port: 50362, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 IEPL  新加坡 7, server: 43.154.156.118, port: 50366, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 直连 2, server: 103.83.157.45, port: 231, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 直连 Azure, server: 20.212.28.178, port: 1259, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 直连 流媒体 10, server: 103.142.140.95, port: 235, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇷 IEPL  土耳其, server: 43.154.156.118, port: 50221, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 IEPL  美国 1, server: bjaaw.bieqiangwo.xyz, port: 41251, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 IEPL  美国 2, server: 154.208.10.97, port: 41227, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 IEPL  美国 3, server: uszz22.bieqiangwo.xyz, port: 33227, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US-164.92.103.251-547, server: free.spcloud.us, port: 21011, type: trojan, password: 118fc04e-fb8c-4154-9092-352cf1958fcd, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US-20.247.115.226-540, server: nn03.nfeng6.pp.ua, port: 39940, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn03.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇺🇸 US-20.247.115.226-541, server: nn03.nfeng6.pp.ua, port: 60024, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn03.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇺🇸 US-20.247.115.226-542, server: nn03.nfeng6.pp.ua, port: 60029, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn03.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇺🇸 US-20.247.115.226-543, server: nn03.nfeng6.pp.ua, port: 60025, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn03.nfeng6.pp.ua%22%7D"}}, udp: true}
   - {name: 🇺🇸 US-20.247.115.226-546, server: nn03.nfeng6.pp.ua, port: 60027, type: vmess, uuid: 5b44b8de-2f75-3b34-bf41-584cd89e937a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22nn03.nfeng6.pp.ua%22%7D"}}, udp: true}
+  - {name: 🇺🇸 美国 CU 牛肉 待修, server: uszz22.bieqiangwo.xyz, port: 39395, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 2, server: 154.17.2.75, port: 3112, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 3, server: 154.208.10.97, port: 11361, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 4, server: 154.208.10.97, port: 1361, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 5, server: 154.208.10.97, port: 16225, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 6, server: 154.17.2.42, port: 3123, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 7, server: 154.17.2.168, port: 1233, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 8, server: 154.17.2.224, port: 361, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 9 （AEAD, server: 185.218.5.197, port: 224, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 直连 test, server: uszz22.bieqiangwo.xyz, port: 875, type: vmess, uuid: 6d896dd9-21ff-3844-a72a-332507486049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
+      - v2 adae test
+      - 🇨🇳 IEPL  台湾 1
+      - 🇨🇳 IEPL  台湾 2
+      - 🇨🇳 IEPL  台湾 3
+      - 🇨🇳 IEPL  台湾 4
+      - 🇨🇳 IEPL  台湾 5
+      - 🇨🇳 IEPL  台湾 6
+      - 🇨🇳 台湾 CN2 1
+      - 🇨🇳 台湾 test1
+      - 🇨🇳 台湾 直连 3
+      - 🇨🇳 台湾 直连 4
+      - 🇨🇳 台湾 直连 5
+      - 🇬🇧 英国 直连 （AEAD
       - 🇭🇰 HK-20.205.118.170-521
       - 🇭🇰 HK-20.205.118.170-522
       - 🇭🇰 HK-20.205.118.170-523
@@ -38,19 +120,88 @@ proxy-groups:
       - 🇭🇰 HK-20.205.125.236-525
       - 🇭🇰 HK-20.205.125.236-548
       - 🇭🇰 HK-43.154.72.145-526
+      - 🇭🇰 IEPL  香港  10
+      - 🇭🇰 IEPL  香港 1
+      - 🇭🇰 IEPL  香港 2
+      - 🇭🇰 IEPL  香港 3
+      - 🇭🇰 IEPL  香港 4
+      - 🇭🇰 IEPL  香港 5
+      - 🇭🇰 IEPL  香港 6(AEAD 需开启允许不安全tls)
+      - 🇭🇰 IEPL  香港 7（台区Netflix
+      - 🇭🇰 IEPL  香港 8（台区Netflix
+      - 🇭🇰 IEPL 香港 9(AEAD 需开启允许不安全tls)
+      - 🇭🇰 香港 te
+      - 🇭🇰 香港 直连 HGC1
+      - 🇭🇰 香港 直连 HKBN tls
+      - 🇭🇰 香港 直连 HKBN1
+      - 🇭🇰 香港 直连 腾讯云 2
+      - 🇭🇰 香港 直连 腾讯云 3
+      - 🇭🇰 香港 直连 腾讯云 4
+      - 🇭🇰 香港 移动 HKBN1
+      - 🇯🇵 IEPL  日本 1
+      - 🇯🇵 IEPL  日本 2
+      - 🇯🇵 IEPL  日本 3
+      - 🇯🇵 IEPL  日本 4
       - 🇯🇵 JP-35.79.15.53-007
+      - 🇯🇵 日本  流媒体全解锁1
+      - 🇯🇵 日本 SB
+      - 🇯🇵 日本 直连 1
+      - 🇯🇵 日本 直连 3
+      - 🇯🇵 日本 直连 流媒体 01
+      - 🇯🇵 日本 直连 流媒体 03
+      - 🇯🇵 日本 直连2 移动优化
+      - 🇯🇵 日本 移动 test1
+      - 🇰🇷 IEPL  韩国
+      - 🇷🇺 IEPL 俄罗斯
+      - 🇸🇬 IEPL  新加坡 1
+      - 🇸🇬 IEPL  新加坡 2
+      - 🇸🇬 IEPL  新加坡 3(AEAD 需开启允许不安全tls)
+      - 🇸🇬 IEPL  新加坡 4
+      - 🇸🇬 IEPL  新加坡 5
+      - 🇸🇬 IEPL  新加坡 6
+      - 🇸🇬 IEPL  新加坡 7
+      - 🇸🇬 新加坡 直连 2
+      - 🇸🇬 新加坡 直连 Azure
+      - 🇸🇬 新加坡 直连 流媒体 10
+      - 🇹🇷 IEPL  土耳其
+      - 🇺🇸 IEPL  美国 1
+      - 🇺🇸 IEPL  美国 2
+      - 🇺🇸 IEPL  美国 3
       - 🇺🇸 US-164.92.103.251-547
       - 🇺🇸 US-20.247.115.226-540
       - 🇺🇸 US-20.247.115.226-541
       - 🇺🇸 US-20.247.115.226-542
       - 🇺🇸 US-20.247.115.226-543
       - 🇺🇸 US-20.247.115.226-546
+      - 🇺🇸 美国 CU 牛肉 待修
+      - 🇺🇸 美国 直连 2
+      - 🇺🇸 美国 直连 3
+      - 🇺🇸 美国 直连 4
+      - 🇺🇸 美国 直连 5
+      - 🇺🇸 美国 直连 6
+      - 🇺🇸 美国 直连 7
+      - 🇺🇸 美国 直连 8
+      - 🇺🇸 美国 直连 9 （AEAD
+      - 🇺🇸 美国 直连 test
   - name: ⚡️ 延迟最低
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - v2 adae test
+      - 🇨🇳 IEPL  台湾 1
+      - 🇨🇳 IEPL  台湾 2
+      - 🇨🇳 IEPL  台湾 3
+      - 🇨🇳 IEPL  台湾 4
+      - 🇨🇳 IEPL  台湾 5
+      - 🇨🇳 IEPL  台湾 6
+      - 🇨🇳 台湾 CN2 1
+      - 🇨🇳 台湾 test1
+      - 🇨🇳 台湾 直连 3
+      - 🇨🇳 台湾 直连 4
+      - 🇨🇳 台湾 直连 5
+      - 🇬🇧 英国 直连 （AEAD
       - 🇭🇰 HK-20.205.118.170-521
       - 🇭🇰 HK-20.205.118.170-522
       - 🇭🇰 HK-20.205.118.170-523
@@ -62,13 +213,69 @@ proxy-groups:
       - 🇭🇰 HK-20.205.125.236-525
       - 🇭🇰 HK-20.205.125.236-548
       - 🇭🇰 HK-43.154.72.145-526
+      - 🇭🇰 IEPL  香港  10
+      - 🇭🇰 IEPL  香港 1
+      - 🇭🇰 IEPL  香港 2
+      - 🇭🇰 IEPL  香港 3
+      - 🇭🇰 IEPL  香港 4
+      - 🇭🇰 IEPL  香港 5
+      - 🇭🇰 IEPL  香港 6(AEAD 需开启允许不安全tls)
+      - 🇭🇰 IEPL  香港 7（台区Netflix
+      - 🇭🇰 IEPL  香港 8（台区Netflix
+      - 🇭🇰 IEPL 香港 9(AEAD 需开启允许不安全tls)
+      - 🇭🇰 香港 te
+      - 🇭🇰 香港 直连 HGC1
+      - 🇭🇰 香港 直连 HKBN tls
+      - 🇭🇰 香港 直连 HKBN1
+      - 🇭🇰 香港 直连 腾讯云 2
+      - 🇭🇰 香港 直连 腾讯云 3
+      - 🇭🇰 香港 直连 腾讯云 4
+      - 🇭🇰 香港 移动 HKBN1
+      - 🇯🇵 IEPL  日本 1
+      - 🇯🇵 IEPL  日本 2
+      - 🇯🇵 IEPL  日本 3
+      - 🇯🇵 IEPL  日本 4
       - 🇯🇵 JP-35.79.15.53-007
+      - 🇯🇵 日本  流媒体全解锁1
+      - 🇯🇵 日本 SB
+      - 🇯🇵 日本 直连 1
+      - 🇯🇵 日本 直连 3
+      - 🇯🇵 日本 直连 流媒体 01
+      - 🇯🇵 日本 直连 流媒体 03
+      - 🇯🇵 日本 直连2 移动优化
+      - 🇯🇵 日本 移动 test1
+      - 🇰🇷 IEPL  韩国
+      - 🇷🇺 IEPL 俄罗斯
+      - 🇸🇬 IEPL  新加坡 1
+      - 🇸🇬 IEPL  新加坡 2
+      - 🇸🇬 IEPL  新加坡 3(AEAD 需开启允许不安全tls)
+      - 🇸🇬 IEPL  新加坡 4
+      - 🇸🇬 IEPL  新加坡 5
+      - 🇸🇬 IEPL  新加坡 6
+      - 🇸🇬 IEPL  新加坡 7
+      - 🇸🇬 新加坡 直连 2
+      - 🇸🇬 新加坡 直连 Azure
+      - 🇸🇬 新加坡 直连 流媒体 10
+      - 🇹🇷 IEPL  土耳其
+      - 🇺🇸 IEPL  美国 1
+      - 🇺🇸 IEPL  美国 2
+      - 🇺🇸 IEPL  美国 3
       - 🇺🇸 US-164.92.103.251-547
       - 🇺🇸 US-20.247.115.226-540
       - 🇺🇸 US-20.247.115.226-541
       - 🇺🇸 US-20.247.115.226-542
       - 🇺🇸 US-20.247.115.226-543
       - 🇺🇸 US-20.247.115.226-546
+      - 🇺🇸 美国 CU 牛肉 待修
+      - 🇺🇸 美国 直连 2
+      - 🇺🇸 美国 直连 3
+      - 🇺🇸 美国 直连 4
+      - 🇺🇸 美国 直连 5
+      - 🇺🇸 美国 直连 6
+      - 🇺🇸 美国 直连 7
+      - 🇺🇸 美国 直连 8
+      - 🇺🇸 美国 直连 9 （AEAD
+      - 🇺🇸 美国 直连 test
   - name: 👉 国内网站
     type: select
     proxies:
@@ -125,50 +332,116 @@ proxy-groups:
       - 🇭🇰 HK-20.205.125.236-525
       - 🇭🇰 HK-20.205.125.236-548
       - 🇭🇰 HK-43.154.72.145-526
+      - 🇭🇰 IEPL  香港  10
+      - 🇭🇰 IEPL  香港 1
+      - 🇭🇰 IEPL  香港 2
+      - 🇭🇰 IEPL  香港 3
+      - 🇭🇰 IEPL  香港 4
+      - 🇭🇰 IEPL  香港 5
+      - 🇭🇰 IEPL  香港 6(AEAD 需开启允许不安全tls)
+      - 🇭🇰 IEPL  香港 7（台区Netflix
+      - 🇭🇰 IEPL  香港 8（台区Netflix
+      - 🇭🇰 IEPL 香港 9(AEAD 需开启允许不安全tls)
+      - 🇭🇰 香港 te
+      - 🇭🇰 香港 直连 HGC1
+      - 🇭🇰 香港 直连 HKBN tls
+      - 🇭🇰 香港 直连 HKBN1
+      - 🇭🇰 香港 直连 腾讯云 2
+      - 🇭🇰 香港 直连 腾讯云 3
+      - 🇭🇰 香港 直连 腾讯云 4
+      - 🇭🇰 香港 移动 HKBN1
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - 🇯🇵 IEPL  日本 1
+      - 🇯🇵 IEPL  日本 2
+      - 🇯🇵 IEPL  日本 3
+      - 🇯🇵 IEPL  日本 4
       - 🇯🇵 JP-35.79.15.53-007
+      - 🇯🇵 日本  流媒体全解锁1
+      - 🇯🇵 日本 SB
+      - 🇯🇵 日本 直连 1
+      - 🇯🇵 日本 直连 3
+      - 🇯🇵 日本 直连 流媒体 01
+      - 🇯🇵 日本 直连 流媒体 03
+      - 🇯🇵 日本 直连2 移动优化
+      - 🇯🇵 日本 移动 test1
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - 🇺🇸 IEPL  美国 1
+      - 🇺🇸 IEPL  美国 2
+      - 🇺🇸 IEPL  美国 3
       - 🇺🇸 US-164.92.103.251-547
       - 🇺🇸 US-20.247.115.226-540
       - 🇺🇸 US-20.247.115.226-541
       - 🇺🇸 US-20.247.115.226-542
       - 🇺🇸 US-20.247.115.226-543
       - 🇺🇸 US-20.247.115.226-546
+      - 🇺🇸 美国 CU 牛肉 待修
+      - 🇺🇸 美国 直连 2
+      - 🇺🇸 美国 直连 3
+      - 🇺🇸 美国 直连 4
+      - 🇺🇸 美国 直连 5
+      - 🇺🇸 美国 直连 6
+      - 🇺🇸 美国 直连 7
+      - 🇺🇸 美国 直连 8
+      - 🇺🇸 美国 直连 9 （AEAD
+      - 🇺🇸 美国 直连 test
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇨🇳 IEPL  台湾 1
+      - 🇨🇳 IEPL  台湾 2
+      - 🇨🇳 IEPL  台湾 3
+      - 🇨🇳 IEPL  台湾 4
+      - 🇨🇳 IEPL  台湾 5
+      - 🇨🇳 IEPL  台湾 6
+      - 🇨🇳 台湾 CN2 1
+      - 🇨🇳 台湾 test1
+      - 🇨🇳 台湾 直连 3
+      - 🇨🇳 台湾 直连 4
+      - 🇨🇳 台湾 直连 5
+      - 🇭🇰 IEPL  香港 7（台区Netflix
+      - 🇭🇰 IEPL  香港 8（台区Netflix
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 IEPL  新加坡 1
+      - 🇸🇬 IEPL  新加坡 2
+      - 🇸🇬 IEPL  新加坡 3(AEAD 需开启允许不安全tls)
+      - 🇸🇬 IEPL  新加坡 4
+      - 🇸🇬 IEPL  新加坡 5
+      - 🇸🇬 IEPL  新加坡 6
+      - 🇸🇬 IEPL  新加坡 7
+      - 🇸🇬 新加坡 直连 2
+      - 🇸🇬 新加坡 直连 Azure
+      - 🇸🇬 新加坡 直连 流媒体 10
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇰🇷 IEPL  韩国
   - name: 🌍 其他地区
     type: select
     proxies:
-      - DIRECT
+      - 🇬🇧 英国 直连 （AEAD
+      - 🇷🇺 IEPL 俄罗斯
+      - 🇹🇷 IEPL  土耳其
   - name: 📲 聊天软件
     type: select
     proxies:

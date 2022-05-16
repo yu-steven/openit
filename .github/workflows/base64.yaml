@@ -20,7 +20,7 @@ jobs:
          git config --local user.email "actions@github.com"
          git config --local user.name "GitHub Actions"
     - name: long
-      run: base64 url > long
+      run: base64 url > long -w 0
     - name: 提交更改1
       run: |
          git add long

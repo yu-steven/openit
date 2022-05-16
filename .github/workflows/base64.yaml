@@ -19,20 +19,20 @@ jobs:
       run: |                 
          git config --local user.email "actions@github.com"
          git config --local user.name "GitHub Actions"
-    - name: long
-      run: base64 url > long -w 0
+    - name: https
+      run: base64 url > https -w 0
     - name: 提交更改1
       run: |
-         git add long
+         git add https
          git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新订阅"
          git push origin main
-    - name: https&clash
+    - name: long&clash
       run: |
-         wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https
-         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/long&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
+         wget "http://0.0.0.0:25500/sub?target=v2ray&url=https://raw.githubusercontent.com/yu-steven/openit/main/https" -O long
+         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
     - name: 提交更改2
       run: |
-         git add https
+         git add long
          git add Clash.yaml
          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
          git push origin main

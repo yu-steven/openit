@@ -56,7 +56,7 @@ jobs:
     - name: 转译&同步
       run: |
          wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https
-         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/sub/nodes.yaml&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
+         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/sub/clash&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
     - name: 提交更改
       run: |
          git pull origin devmain

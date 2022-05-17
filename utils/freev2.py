@@ -18,6 +18,12 @@ sites=[
         "url":"https://www.ckcloud.xyz/",
         "reg_url":"https://www.ckcloud.xyz/api/v1/passport/auth/register",
         "sub":"https://www.ckcloud.xyz/api/v1/client/subscribe?token={token}"
+    },
+    {
+        "name":"jsmao",
+        "url":"https://jsmao.net/",
+        "reg_url":"https://jsmao.net/api/v1/passport/auth/register",
+        "sub":"https://jsmao.net/api/v1/client/subscribe?token={token}"
     }
 ]
 

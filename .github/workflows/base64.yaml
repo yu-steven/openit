@@ -34,7 +34,6 @@ jobs:
          wget "http://0.0.0.0:25500/sub?target=v2ray&url=https://raw.githubusercontent.com/yu-steven/openit/main/https" -O long
          wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
     - name: rm subconverter
-      run: |
-         rm -rf subconverter/
+      run: rm -rf subconverter/
     - name: 提交更改2
       run: ./.github/update-repo.sh

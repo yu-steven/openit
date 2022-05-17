@@ -16,7 +16,7 @@ jobs:
          tar -zxvf subconverter.tar.gz
          rm subconverter.tar.gz
          nohup ./subconverter/subconverter &
-    - name: 设置时间
+    - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 配置git
       run: |                 

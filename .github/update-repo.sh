@@ -1,5 +1,5 @@
 #!/bin/bash
-status_log=$(git status -sb)
+status_log=$(git status -s)
 # 这里使用的是 main 分支，根据需求自行修改
 if [ "$status_log" == "## main...origin/main" ];then
   echo "nothing to commit, working tree clean"

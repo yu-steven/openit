@@ -50,9 +50,9 @@ jobs:
          git add ./utils
          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
          git push origin devmain
-    # - name: 5分钟
-      # run: |
-         # sleep 5m
+    - name: 3分钟
+      run: |
+         sleep 3m
     - name: 转译&同步
       run: |
          wget "https://raw.githubusercontent.com/yu-steven/openit/main/long" -O https

@@ -5,6 +5,8 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: "%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD", server: 45.82.78.151, port: 80, type: vmess, uuid: bda51582-46f7-410c-b267-30b7f3681ac0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1\n", server: sg1.qingyun123.xyz, port: 10001, type: trojan, password: b5baea55-e768-4d65-bbe5-62cb473b29ad, skip-cert-verify: true, udp: true}
   - {name: AU_02 |52.14Mb, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
   - {name: CN_25 | 9.06Mb, server: bb01.nfeng6.pp.ua, port: 16040, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
   - {name: CN_27 | 7.46Mb, server: bb01.nfeng6.pp.ua, port: 16000, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
@@ -83,6 +85,8 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
+      - "%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD"
+      - "%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1\n"
       - AU_02 |52.14Mb
       - CN_25 | 9.06Mb
       - CN_27 | 7.46Mb
@@ -163,6 +167,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - "%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD"
+      - "%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1\n"
       - AU_02 |52.14Mb
       - CN_25 | 9.06Mb
       - CN_27 | 7.46Mb
@@ -331,6 +337,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - "%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1\n"
       - SG_180 |97.97Mb
       - 🇸🇬 新加坡R-tg频道:@ripaojiedian
       - 🇸🇬 新加坡_R_229

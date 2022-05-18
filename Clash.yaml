@@ -5,6 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 183.240.9.29:29982, server: 183.240.9.29, port: 29982, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 183.240.9.29:29984, server: 183.240.9.29, port: 29984, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 183.240.9.29:29988, server: 183.240.9.29, port: 29988, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 183.240.9.30:29980, server: 183.240.9.30, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true, udp: true}
   - {name: AU_02 |52.14Mb, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
   - {name: CN_25 | 9.06Mb, server: bb01.nfeng6.pp.ua, port: 16040, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
   - {name: CN_27 | 7.46Mb, server: bb01.nfeng6.pp.ua, port: 16000, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
@@ -107,6 +111,10 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
+      - 183.240.9.29:29982
+      - 183.240.9.29:29984
+      - 183.240.9.29:29988
+      - 183.240.9.30:29980
       - AU_02 |52.14Mb
       - CN_25 | 9.06Mb
       - CN_27 | 7.46Mb
@@ -211,6 +219,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 183.240.9.29:29982
+      - 183.240.9.29:29984
+      - 183.240.9.29:29988
+      - 183.240.9.30:29980
       - AU_02 |52.14Mb
       - CN_25 | 9.06Mb
       - CN_27 | 7.46Mb

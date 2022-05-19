@@ -35,25 +35,25 @@ jobs:
     - name: 提交更改2
       run: ./.github/update-repo.sh
   long:
-    needs: Encode & Translate
+    needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
   HTTPS:
-    needs: Encode & Translate
+    needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
   Clash:
-    needs: Encode & Translate
+    needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
   Quanx:
-    needs: Encode & Translate
+    needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN

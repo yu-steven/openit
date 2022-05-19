@@ -5,26 +5,22 @@ on:
        - 'url'
    workflow_dispatch:
 jobs:
-  job1: 
-    name: long
+  long: 
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
-  job2: 
-    name: HTTPS
+  HTTPS: 
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/git-yusteven/openit@main/https
-  job3: 
-    name: Clash.yaml
+  Clash: 
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
-  job4: 
-    name: Quanx.conf
+  Quanx: 
     runs-on: ubuntu-latest
     steps:
     - name: CDN

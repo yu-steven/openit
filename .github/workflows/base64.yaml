@@ -5,8 +5,7 @@ on:
       - 'url'
   workflow_dispatch:
 jobs:
-  my-job:
-    name: Encode & Translate
+  Encode & Translate:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -34,3 +33,27 @@ jobs:
          wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
     - name: 提交更改2
       run: ./.github/update-repo.sh
+  long:
+    needs: Encode & Translate
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
+  HTTPS:
+    needs: Encode & Translate
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
+  Clash:
+    needs: Encode & Translate
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
+  Quanx:
+    needs: Encode & Translate
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Quanx.conf

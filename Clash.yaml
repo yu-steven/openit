@@ -14,6 +14,7 @@ proxies:
   - {name: DigitalOcean 5|0.7x, server: 164.92.115.89, port: 31254, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
   - {name: DigitalOcean 6|0.7x, server: 164.92.107.59, port: 16455, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
   - {name: SG_180 |97.97Mb, server: sg1.ipv6b.my.id, port: 443, type: vmess, uuid: f4f7252a-7100-48e7-a2e5-b0334e845c06, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fastssh/73qdrc9jprtduwhvwtkvjrrvz39gr3/627f61f24960e/, headers: {Host: "%7B%22HOST%22:%22paypal.com%22,%22Host%22:%22paypal.com%22%7D"}}, udp: true}
+  - {name: TG搜ssrv2mianfei, server: bb1.158801.xyz, port: 22542, type: trojan, password: 1bd58d2e-5110-47a9-8f7b-5013d87bed39, sni: bb1.158801.xyz, skip-cert-verify: true, udp: true}
   - {name: TG频道@iosfulishare 🇧🇷 Azure 1|1x, server: 20.226.30.239, port: 45789, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
   - {name: TG频道@iosfulishare 🇬🇧 DigitalOcean 1|0.1x, server: 167.172.56.211, port: 14512, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
   - {name: TG频道@iosfulishare 🇬🇧 DigitalOcean 2|0.1x, server: 167.172.56.225, port: 54141, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
@@ -172,6 +173,7 @@ proxies:
   - {name: 🇬🇧 英国_R_366, server: iepl-hn.cctelescope.xyz, port: 14261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 67915:DHAhtFQpaO, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 🇭🇰 V1-香港 多台负载均衡 中继D | 1.5x, server: in04.dns2333.xyz, port: 63078, type: vmess, uuid: 26cda94e-fb7a-3ce3-9cca-d110505ad8be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
   - {name: 🇭🇰 _HK_香港, server: 165.154.225.230, port: 33080, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港, server: 120.233.151.134, port: 64112, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 67010:culGJ4dSkn, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 🇭🇰 香港-三网优化-强加密, server: 511hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 511hk.fans8.xyz}}, udp: true}
   - {name: 🇭🇰 香港_R_160, server: iepl-gz.safetelescope.cc, port: 64112, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 67915:DHAhtFQpaO, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 🇭🇰 香港_R_316, server: iepl-gz.safetelescope.cc, port: 10804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 67915:DHAhtFQpaO, obfs-param: ajax.microsoft.com, udp: true}
@@ -227,6 +229,7 @@ proxy-groups:
       - DigitalOcean 5|0.7x
       - DigitalOcean 6|0.7x
       - SG_180 |97.97Mb
+      - TG搜ssrv2mianfei
       - TG频道@iosfulishare 🇧🇷 Azure 1|1x
       - TG频道@iosfulishare 🇬🇧 DigitalOcean 1|0.1x
       - TG频道@iosfulishare 🇬🇧 DigitalOcean 2|0.1x
@@ -385,6 +388,7 @@ proxy-groups:
       - 🇬🇧 英国_R_366
       - 🇭🇰 V1-香港 多台负载均衡 中继D | 1.5x
       - 🇭🇰 _HK_香港
+      - 🇭🇰 香港
       - 🇭🇰 香港-三网优化-强加密
       - 🇭🇰 香港_R_160
       - 🇭🇰 香港_R_316
@@ -442,6 +446,7 @@ proxy-groups:
       - DigitalOcean 5|0.7x
       - DigitalOcean 6|0.7x
       - SG_180 |97.97Mb
+      - TG搜ssrv2mianfei
       - TG频道@iosfulishare 🇧🇷 Azure 1|1x
       - TG频道@iosfulishare 🇬🇧 DigitalOcean 1|0.1x
       - TG频道@iosfulishare 🇬🇧 DigitalOcean 2|0.1x
@@ -600,6 +605,7 @@ proxy-groups:
       - 🇬🇧 英国_R_366
       - 🇭🇰 V1-香港 多台负载均衡 中继D | 1.5x
       - 🇭🇰 _HK_香港
+      - 🇭🇰 香港
       - 🇭🇰 香港-三网优化-强加密
       - 🇭🇰 香港_R_160
       - 🇭🇰 香港_R_316
@@ -693,6 +699,7 @@ proxy-groups:
       - _HK_69
       - 🇭🇰 V1-香港 多台负载均衡 中继D | 1.5x
       - 🇭🇰 _HK_香港
+      - 🇭🇰 香港
       - 🇭🇰 香港-三网优化-强加密
       - 🇭🇰 香港_R_160
       - 🇭🇰 香港_R_316

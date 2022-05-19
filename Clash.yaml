@@ -75,6 +75,7 @@ proxies:
   - {name: _KR_32, server: 52.79.164.73, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _SG_95, server: 134.122.160.4, port: 12235, type: ss, cipher: aes-256-gcm, password: 1f9e7c79-ce39-44f3-bdbd-90ea117629b3, udp: true}
   - {name: _US_108, server: mgys.jindouyunjc.com, port: 1799, type: ss, cipher: chacha20-ietf-poly1305, password: 0c6e7be8-784d-4a0f-8bab-705a4f12c687, udp: true}
+  - {name: always自建, server: pokkk.alwaysdata.net, port: 443, type: vmess, uuid: 97352eff-1a63-4988-8597-e271448f8792, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pokkk.alwaysdata.net}}, udp: true}
   - {name: 乌克兰-三网优化-强加密, server: 422wkl.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 422wkl.fans8.xyz}}, udp: true}
   - {name: 乌克兰_R_521, server: ieplszhk-sz.cctelescope.xyz, port: 59578, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 67915:DHAhtFQpaO, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 🇦🇷 阿根廷_R_437, server: iepl-hn.cctelescope.xyz, port: 19563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 67915:DHAhtFQpaO, obfs-param: ajax.microsoft.com, udp: true}
@@ -198,6 +199,7 @@ proxy-groups:
       - _KR_32
       - _SG_95
       - _US_108
+      - always自建
       - 乌克兰-三网优化-强加密
       - 乌克兰_R_521
       - 🇦🇷 阿根廷_R_437
@@ -321,6 +323,7 @@ proxy-groups:
       - _KR_32
       - _SG_95
       - _US_108
+      - always自建
       - 乌克兰-三网优化-强加密
       - 乌克兰_R_521
       - 🇦🇷 阿根廷_R_437

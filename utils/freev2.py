@@ -8,9 +8,9 @@ sites=[
         "sub":"https://feiniaoyun.tk/api/v1/client/subscribe?token={token}"
     },
     {
-        "name":"kelecloud",
-        "url":"https://my.kelecloud.xyz/",
-        "reg_url":"https://my.kelecloud.xyz/api/v1/passport/auth/register",
+        "name":"勇敢猫猫",
+        "url":"https://698436.xyz/",
+        "reg_url":"https://698436.xyz/api/v1/passport/auth/register",
         "sub":"https://panel.kelecloud.xyz/api/v1/client/subscribe?token={token}"
     },
     {

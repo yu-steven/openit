@@ -5,6 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: Amazon 3|1x, server: 18.202.26.247, port: 12345, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
   - {name: CN_1913 |34.23Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_1914 |10.57Mb, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_1915 | 4.97Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
@@ -38,6 +39,20 @@ proxies:
   - {name: CN_1980 | 3.66Mb, server: nas5.travelerv2.xyz, port: 21871, type: vmess, uuid: b69f3735-a1a1-3dbf-889b-4594d140752f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22HOST%22:%22nas5.travelerv2.xyz%22,%22Host%22:%22nas5.travelerv2.xyz%22%7D"}}, udp: true}
   - {name: CN_1988_ 4.99Mb | 2.70Mb, server: 211.91.243.240, port: 31204, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: CN_1989_ 4.27Mb | 3.67Mb, server: 211.91.243.240, port: 31203, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: DigitalOcean 1|0.1x, server: 167.172.56.211, port: 14512, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 1|0.7x, server: 159.65.157.70, port: 61548, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 1|0.7x 2, server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 1|0.7x 3, server: 104.248.147.211, port: 38273, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 2|0.1x, server: 167.172.56.225, port: 54141, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 2|0.7x, server: 206.189.136.113, port: 46786, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 2|0.7x 2, server: 164.92.115.63, port: 43371, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 2|0.7x 3, server: 157.245.63.208, port: 48264, type: ss, cipher: aes-128-gcm, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 3|0.7x, server: 206.189.130.75, port: 17745, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 3|0.7x 2, server: 164.92.99.255, port: 46499, type: ss, cipher: aes-256-gcm, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 3|0.7x 3, server: 128.199.161.103, port: 47263, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 4|0.7x, server: 164.92.121.170, port: 61598, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 5|0.7x, server: 164.92.115.89, port: 31254, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: DigitalOcean 6|0.7x, server: 164.92.107.59, port: 16455, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
   - {name: HK_600_24.06Mb |133.90Mb, server: hkt.node.qchwnd.moe, port: 44609, type: trojan, password: 304202c3-75b2-49ce-b7d9-0a1f36a45f22, skip-cert-verify: true, udp: true}
   - {name: SG_2881 |11.15Mb, server: hy.hsichu.xyz, port: 443, type: trojan, password: HsCOkje2HH2PuRFb, skip-cert-verify: true, udp: true}
   - {name: US_4418 | 2.56Mb, server: 172.64.94.238, port: 2053, type: vmess, uuid: 80e098a1-f768-3dfb-b97f-6c3a5d34bcd8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: xxX3, headers: {Host: "%7B%22HOST%22:%22web1.wweblog.pw%22,%22Host%22:%22web1.wweblog.pw%22%7D"}}, udp: true}
@@ -73,11 +88,16 @@ proxies:
   - {name: 🇬🇧 英国*GB_4, server: cm-jm.okvpn.xyz, port: 20006, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 英国*GB_5, server: cm-jm.okvpn.xyz, port: 20006, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 英国Openit.ml, server: 167.172.56.225, port: 54141, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
+  - {name: 🇭🇰 广港BGP|DigitalOcean 4, server: gzbgp.gia.wiki, port: 30415, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: 🇭🇰 广港BGP|DigitalOcean 5, server: gzbgp.gia.wiki, port: 30416, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: 🇭🇰 广港BGP|DigitalOcean 6, server: gzbgp.gia.wiki, port: 30420, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
   - {name: 🇭🇰 香港*HK_1, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港*HK_2, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港*HK_3, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港*HK_4, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港Openit.ml, server: hkt.node.qchwnd.moe, port: 44609, type: trojan, password: 304202c3-75b2-49ce-b7d9-0a1f36a45f22, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国备用2|0.1x, server: awskr2.698436.xyz, port: 54356, type: ss, cipher: aes-256-gcm, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: 🇰🇷 韩国备用|0.1x, server: awskr1.698436.xyz, port: 46543, type: ss, cipher: aes-256-gcm, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
   - {name: 🇳🇱 荷兰Openit.ml, server: 213.183.59.190, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
   - {name: 🇷🇺 俄罗斯联邦Openit.ml, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
   - {name: 🇸🇬 新加坡*SG_1, server: cm-jm.okvpn.xyz, port: 20005, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
@@ -103,6 +123,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Amazon 3|1x
       - CN_1913 |34.23Mb
       - CN_1914 |10.57Mb
       - CN_1915 | 4.97Mb
@@ -136,6 +157,20 @@ proxy-groups:
       - CN_1980 | 3.66Mb
       - CN_1988_ 4.99Mb | 2.70Mb
       - CN_1989_ 4.27Mb | 3.67Mb
+      - DigitalOcean 1|0.1x
+      - DigitalOcean 1|0.7x
+      - DigitalOcean 1|0.7x 2
+      - DigitalOcean 1|0.7x 3
+      - DigitalOcean 2|0.1x
+      - DigitalOcean 2|0.7x
+      - DigitalOcean 2|0.7x 2
+      - DigitalOcean 2|0.7x 3
+      - DigitalOcean 3|0.7x
+      - DigitalOcean 3|0.7x 2
+      - DigitalOcean 3|0.7x 3
+      - DigitalOcean 4|0.7x
+      - DigitalOcean 5|0.7x
+      - DigitalOcean 6|0.7x
       - HK_600_24.06Mb |133.90Mb
       - SG_2881 |11.15Mb
       - US_4418 | 2.56Mb
@@ -171,11 +206,16 @@ proxy-groups:
       - 🇬🇧 英国*GB_4
       - 🇬🇧 英国*GB_5
       - 🇬🇧 英国Openit.ml
+      - 🇭🇰 广港BGP|DigitalOcean 4
+      - 🇭🇰 广港BGP|DigitalOcean 5
+      - 🇭🇰 广港BGP|DigitalOcean 6
       - 🇭🇰 香港*HK_1
       - 🇭🇰 香港*HK_2
       - 🇭🇰 香港*HK_3
       - 🇭🇰 香港*HK_4
       - 🇭🇰 香港Openit.ml
+      - 🇰🇷 韩国备用2|0.1x
+      - 🇰🇷 韩国备用|0.1x
       - 🇳🇱 荷兰Openit.ml
       - 🇷🇺 俄罗斯联邦Openit.ml
       - 🇸🇬 新加坡*SG_1
@@ -201,6 +241,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - Amazon 3|1x
       - CN_1913 |34.23Mb
       - CN_1914 |10.57Mb
       - CN_1915 | 4.97Mb
@@ -234,6 +275,20 @@ proxy-groups:
       - CN_1980 | 3.66Mb
       - CN_1988_ 4.99Mb | 2.70Mb
       - CN_1989_ 4.27Mb | 3.67Mb
+      - DigitalOcean 1|0.1x
+      - DigitalOcean 1|0.7x
+      - DigitalOcean 1|0.7x 2
+      - DigitalOcean 1|0.7x 3
+      - DigitalOcean 2|0.1x
+      - DigitalOcean 2|0.7x
+      - DigitalOcean 2|0.7x 2
+      - DigitalOcean 2|0.7x 3
+      - DigitalOcean 3|0.7x
+      - DigitalOcean 3|0.7x 2
+      - DigitalOcean 3|0.7x 3
+      - DigitalOcean 4|0.7x
+      - DigitalOcean 5|0.7x
+      - DigitalOcean 6|0.7x
       - HK_600_24.06Mb |133.90Mb
       - SG_2881 |11.15Mb
       - US_4418 | 2.56Mb
@@ -269,11 +324,16 @@ proxy-groups:
       - 🇬🇧 英国*GB_4
       - 🇬🇧 英国*GB_5
       - 🇬🇧 英国Openit.ml
+      - 🇭🇰 广港BGP|DigitalOcean 4
+      - 🇭🇰 广港BGP|DigitalOcean 5
+      - 🇭🇰 广港BGP|DigitalOcean 6
       - 🇭🇰 香港*HK_1
       - 🇭🇰 香港*HK_2
       - 🇭🇰 香港*HK_3
       - 🇭🇰 香港*HK_4
       - 🇭🇰 香港Openit.ml
+      - 🇰🇷 韩国备用2|0.1x
+      - 🇰🇷 韩国备用|0.1x
       - 🇳🇱 荷兰Openit.ml
       - 🇷🇺 俄罗斯联邦Openit.ml
       - 🇸🇬 新加坡*SG_1
@@ -339,6 +399,9 @@ proxy-groups:
     tolerance: 100
     proxies:
       - HK_600_24.06Mb |133.90Mb
+      - 🇭🇰 广港BGP|DigitalOcean 4
+      - 🇭🇰 广港BGP|DigitalOcean 5
+      - 🇭🇰 广港BGP|DigitalOcean 6
       - 🇭🇰 香港*HK_1
       - 🇭🇰 香港*HK_2
       - 🇭🇰 香港*HK_3
@@ -398,7 +461,8 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇰🇷 韩国备用2|0.1x
+      - 🇰🇷 韩国备用|0.1x
   - name: 🌍 其他地区
     type: select
     proxies:

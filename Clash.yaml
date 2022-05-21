@@ -5,8 +5,13 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: CN_1, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: CN_2, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
   - {name: CN_283_10.07Mb |51.93Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
   - {name: CN_292_10.21Mb |46.89Mb, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN_3, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: CN_46.14Mb, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: 中国-tg频道, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 🇨🇳 Cow Vagina 整理_🇨🇳_中国_1, server: 140.207.232.8, port: 26059, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Cow Vagina 整理_🇨🇳_中国_10, server: 183.232.48.148, port: 26046, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Cow Vagina 整理_🇨🇳_中国_11, server: 183.232.48.148, port: 26045, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -42,20 +47,34 @@ proxies:
   - {name: 🇨🇳 Cow Vagina 整理_🇨🇳_中国_7, server: 183.232.48.148, port: 26021, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Cow Vagina 整理_🇨🇳_中国_8, server: 183.232.48.148, port: 26020, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Cow Vagina 整理_🇨🇳_中国_9, server: iepl-zebra.19900101.xyz, port: 888, type: vmess, uuid: 1cfaa36d-9912-3433-b9bc-fd5b5085613d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 IEPL香港-tg频道, server: iepl-zebra.19900101.xyz, port: 4501, type: vmess, uuid: 1cfaa36d-9912-3433-b9bc-fd5b5085613d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-tg频道, server: 43.200.6.24, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇭🇰 香港-tg频道 2, server: 20.239.71.235, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 🇭🇰 香港-tg频道 3, server: 20.205.117.99, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
   - {name: 🇭🇰 香港01, server: azureeastasia.158801.xyz, port: 33001, type: trojan, password: 1cb75a72-5c60-49bf-8640-a7f0374a47a5, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港02, server: azureeastasia.158801.xyz, port: 34002, type: trojan, password: 1cb75a72-5c60-49bf-8640-a7f0374a47a5, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本-tg频道, server: ocrb2.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocrb2.moonfree.top}}, udp: true}
   - {name: 🇯🇵 日本01, server: azurejapaneast.158801.xyz, port: 34001, type: trojan, password: 1cb75a72-5c60-49bf-8640-a7f0374a47a5, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本02, server: azurejapaneast.158801.xyz, port: 34002, type: trojan, password: 1cb75a72-5c60-49bf-8640-a7f0374a47a5, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 Cow Vagina 整理_🇰🇷_韩国_35, server: 52.78.214.4, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇰🇷 TG频道@iosfulishare韩国2, server: 52.78.214.4, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 韩国-tg频道, server: 3.34.191.102, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 韩国-tg频道 2, server: 52.78.214.4, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 新加坡-tg频道, server: 54.255.233.172, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 新加坡-tg频道 2, server: 13.228.78.158, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_1
+      - CN_2
       - CN_283_10.07Mb |51.93Mb
       - CN_292_10.21Mb |46.89Mb
+      - CN_3
+      - CN_46.14Mb
+      - 中国-tg频道
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_1
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_10
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_11
@@ -91,20 +110,34 @@ proxy-groups:
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_7
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_8
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_9
+      - 🇭🇰 IEPL香港-tg频道
+      - 🇭🇰 香港-tg频道
+      - 🇭🇰 香港-tg频道 2
+      - 🇭🇰 香港-tg频道 3
       - 🇭🇰 香港01
       - 🇭🇰 香港02
+      - 🇯🇵 日本-tg频道
       - 🇯🇵 日本01
       - 🇯🇵 日本02
       - 🇰🇷 Cow Vagina 整理_🇰🇷_韩国_35
       - 🇰🇷 TG频道@iosfulishare韩国2
+      - 🇰🇷 韩国-tg频道
+      - 🇰🇷 韩国-tg频道 2
+      - 🇸🇬 新加坡-tg频道
+      - 🇸🇬 新加坡-tg频道 2
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - CN_1
+      - CN_2
       - CN_283_10.07Mb |51.93Mb
       - CN_292_10.21Mb |46.89Mb
+      - CN_3
+      - CN_46.14Mb
+      - 中国-tg频道
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_1
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_10
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_11
@@ -140,12 +173,21 @@ proxy-groups:
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_7
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_8
       - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_9
+      - 🇭🇰 IEPL香港-tg频道
+      - 🇭🇰 香港-tg频道
+      - 🇭🇰 香港-tg频道 2
+      - 🇭🇰 香港-tg频道 3
       - 🇭🇰 香港01
       - 🇭🇰 香港02
+      - 🇯🇵 日本-tg频道
       - 🇯🇵 日本01
       - 🇯🇵 日本02
       - 🇰🇷 Cow Vagina 整理_🇰🇷_韩国_35
       - 🇰🇷 TG频道@iosfulishare韩国2
+      - 🇰🇷 韩国-tg频道
+      - 🇰🇷 韩国-tg频道 2
+      - 🇸🇬 新加坡-tg频道
+      - 🇸🇬 新加坡-tg频道 2
   - name: 👉 国内网站
     type: select
     proxies:
@@ -191,6 +233,10 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - 🇭🇰 IEPL香港-tg频道
+      - 🇭🇰 香港-tg频道
+      - 🇭🇰 香港-tg频道 2
+      - 🇭🇰 香港-tg频道 3
       - 🇭🇰 香港01
       - 🇭🇰 香港02
   - name: 🇯🇵 日本节点
@@ -199,6 +245,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - 🇯🇵 日本-tg频道
       - 🇯🇵 日本01
       - 🇯🇵 日本02
   - name: 🇺🇲 美国节点
@@ -221,7 +268,8 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡-tg频道
+      - 🇸🇬 新加坡-tg频道 2
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -230,6 +278,8 @@ proxy-groups:
     proxies:
       - 🇰🇷 Cow Vagina 整理_🇰🇷_韩国_35
       - 🇰🇷 TG频道@iosfulishare韩国2
+      - 🇰🇷 韩国-tg频道
+      - 🇰🇷 韩国-tg频道 2
   - name: 🌍 其他地区
     type: select
     proxies:

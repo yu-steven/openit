@@ -5,330 +5,66 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "\r", server: 158.101.138.248, port: 44456, type: trojan, password: GETL8IszSG, skip-cert-verify: true, udp: true}
-  - {name: "+CN_16+|+2.52Mb\r", server: 14.29.124.168, port: 24097, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "+CN_23+|+2.53Mb\r", server: 14.29.124.168, port: 24098, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "+CN_234_+5.62Mb+|+9.63Mb\r", server: hncu.relay.qchwnd.moe, port: 44612, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+CN_235_+8.07Mb+|+6.55Mb\r", server: hncu.relay.qchwnd.moe, port: 44611, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+CN_238+|+2.10Mb\r", server: cm-jm.okvpn.xyz, port: 20009, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, skip-cert-verify: true, udp: true}
-  - {name: "+CN_35+|+1.97Mb\r", server: 14.29.124.168, port: 24055, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "+CN_36+|+2.53Mb\r", server: 14.29.124.168, port: 24042, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "+CN_38+|+2.94Mb\r", server: 14.29.124.168, port: 24088, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "+CN_39+|+2.52Mb\r", server: 14.29.124.168, port: 24036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "+CN_40+|+2.22Mb\r", server: 14.29.124.168, port: 24081, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "+CN_45+TG@peekfun+|12.25Mb\r", server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "+CN_49+TG@peekfun+|10.26Mb\r", server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "+CN_51+TG@peekfun+|32.38Mb\r", server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "+CN_88_12.56Mb+|18.00Mb\r", server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: "+FR_109_11.94Mb+|+6.27Mb\r", server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+GR_120_+4.97Mb+|+3.01Mb\r", server: 144.24.76.223, port: 44600, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+HK_131_95.41Mb+|31.73Mb\r", server: hkt.node.qchwnd.moe, port: 44609, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+KR_163_+4.53Mb+|+2.87Mb\r", server: 138.2.127.240, port: 44600, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+KR_166_+4.56Mb+|+3.68Mb\r", server: 129.154.53.120, port: 44600, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+RU_181_24.01Mb+|+6.52Mb\r", server: ru.node.qchwnd.moe, port: 44606, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "+US_254_+9.96Mb+|+4.34Mb\r", server: uk.node.qchwnd.moe, port: 44613, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: CN_1726_ 2.82Mb | 2.94Mb, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1753_ 3.30Mb | 3.19Mb, server: 211.91.243.240, port: 31215, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "CN_2\r\r\r", server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: "CN_283_10.07Mb |51.93Mb\r\r\r", server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "CN_292_10.21Mb |46.89Mb\r\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "CN_3\r\r\r", server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: CN_46 | 2.93Mb, server: 14.29.124.168, port: 24025, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "CN_46.14Mb\r\r\r", server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: CN_49 | 2.53Mb, server: 14.29.124.168, port: 24086, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_60 | 2.53Mb, server: 14.29.124.168, port: 24049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_74_ 0.81Mb |19.49Mb, server: 124.222.177.237, port: 443, type: vmess, uuid: 4a2faefb-e947-48c2-a9a3-403659433f36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: CN_75_ 4.73Mb | 3.32Mb, server: 175.178.163.153, port: 443, type: vmess, uuid: 4a2faefb-e947-48c2-a9a3-403659433f36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "US_18+|+3.10Mb\r", server: 20.205.117.99, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: "_+0.05Mb+|+1.92Mb\r", server: 103.172.116.9, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: "中国-tg频道\r\r\r", server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "🇨🇳 Cow Vagina 整理_🇨🇳_中国_17\r\r\r", server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 Cow Vagina 整理_🇨🇳_中国_20\r\r\r", server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 Cow Vagina 整理_🇨🇳_中国_24\r\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 Cow Vagina 整理_🇨🇳_中国_25\r\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 Cow Vagina 整理_🇨🇳_中国_27\r\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 Cow Vagina 整理_🇨🇳_中国_33\r\r\r", server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 Relay_🇨🇳CN-🇰🇷KR_191+|+2.77Mb\r", server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "🇨🇳 [VIP][BGP]台湾2\r", server: azhk.relay.qchwnd.moe, port: 44608, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 中国*16\r", server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "🇨🇳 中国*16\r\r\r", server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "🇨🇳 台湾*19\r", server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*19\r\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*20\r", server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*20\r\r\r", server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾*24, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*24\r\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing, server: jpaz6.xmrth-node.xyz, port: 13871, type: vmess, uuid: ff51ca4a-6050-3e26-a037-88b0dd62d138, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: TG@nodesharing 2, server: 20.239.71.235, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: TG@nodesharing 3, server: iepl-zebra.19900101.xyz, port: 4503, type: vmess, uuid: 1cfaa36d-9912-3433-b9bc-fd5b5085613d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing 4, server: 183.232.48.148, port: 26022, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing 5, server: 183.232.48.148, port: 26044, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing 6, server: 140.207.232.8, port: 26061, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing 7, server: iepl-zebra.19900101.xyz, port: 4504, type: vmess, uuid: 1cfaa36d-9912-3433-b9bc-fd5b5085613d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing 8, server: 138.2.127.240, port: 44600, type: trojan, password: de9361ff-23f3-41f1-b200-f4d8eb6ce87c, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing 9, server: smart.19900101.xyz, port: 11011, type: vmess, uuid: 1cfaa36d-9912-3433-b9bc-fd5b5085613d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 AiO_20220520_CA_加拿大_13, server: t01.tgfaka.com, port: 18443, type: trojan, password: 11400624-d9d2-444f-8751-8edaa0d94195, sni: douyincdn.com, skip-cert-verify: true, udp: true}
+  - {name: "🇨🇳 AiO_20220518_CN_中国_95\r\r", server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "🇨🇳 AiO_20220519_CN_中国_26\r\r", server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 Cow Vagina 整理_🇨🇳_中国_24, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
   - {name: "🇨🇳 台湾*26\r", server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*26\r\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*28\r", server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*28\r\r\r", server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*29\r", server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*29\r\r\r", server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*34\r", server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾*34\r\r\r", server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: "🇨🇳 台湾1\r", server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇫🇷 法国*TG:＠yzcloud_13\r", server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "🇫🇷 法国*TG:＠yzcloud_13\r\r\r", server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "🇫🇷 法国|Netflix\r", server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 [VIP][广港]印度尼西亚\r", server: gdcm3.relay.qchwnd.moe, port: 44607, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 [VIP][广港]台湾3\r", server: gdcm3.relay.qchwnd.moe, port: 44608, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 [VIP][广港]香港3•HGC\r", server: gdcm3.relay.qchwnd.moe, port: 44601, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 [VIP][广港]香港5•HKT\r", server: gdcm3.relay.qchwnd.moe, port: 44609, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 [VIP]香港4•HKT\r", server: hkt.node.qchwnd.moe, port: 44609, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 香港-tg频道 3\r\r\r", server: 20.205.117.99, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: "🇭🇰 香港02\r\r\r", server: azureeastasia.158801.xyz, port: 34002, type: trojan, password: 1cb75a72-5c60-49bf-8640-a7f0374a47a5, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 香港2•HGC\r", server: azhk.relay.qchwnd.moe, port: 44601, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇮🇩 [VIP]印度尼西亚1\r", server: azhk.relay.qchwnd.moe, port: 44607, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇮🇳 印度*TG:＠yzcloud_13\r", server: 206.189.136.113, port: 46786, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
-  - {name: "🇯🇵 [VIP][沪日]法国\r", server: hncu.relay.qchwnd.moe, port: 44612, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇯🇵 [VIP][沪日]美国2\r", server: hncu.relay.qchwnd.moe, port: 44611, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇯🇵 [VIP]英国|中日链路\r", server: hncu.relay.qchwnd.moe, port: 44613, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇯🇵 [沪日]俄罗斯2\r", server: hncu.relay.qchwnd.moe, port: 44606, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇯🇵 [沪日]美国1\r", server: hncu.relay.qchwnd.moe, port: 44610, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇯🇵 日本3|中日链路|Netflix\r", server: hncu.relay.qchwnd.moe, port: 44616, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇰🇷 [VIP]韩国1\r", server: 138.2.127.240, port: 44600, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇰🇷 [VIP]韩国2\r", server: 129.154.53.120, port: 44600, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇰🇷 [VIP]韩国4\r", server: 144.24.76.223, port: 44600, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇰🇷 [负载均衡]韩国1\r", server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇰🇷 韩国*17\r", server: 52.79.164.73, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "🇲🇾 马来西亚*6\r", server: 54.255.233.172, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "🇲🇾 马来西亚*6\r\r\r", server: 54.255.233.172, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "🇷🇺 俄罗斯*13\r", server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: "🇷🇺 俄罗斯*13\r\r\r", server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: "🇷🇺 俄罗斯1\r", server: ru.node.qchwnd.moe, port: 44606, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇸🇬 新加坡*1\r", server: 13.228.78.158, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "🇸🇬 新加坡*12\r\r\r", server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 1c0e4a18-4d7a-4231-a55d-1dee0fe6732a, udp: true}
-  - {name: "🇸🇬 新加坡*2\r\r\r", server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "🇸🇬 新加坡*4\r", server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: "🇸🇬 新加坡*4\r\r\r", server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: "🇸🇬 新加坡*7\r\r\r", server: 206.189.136.113, port: 46786, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
-  - {name: "🇸🇬 新加坡-tg频道\r\r\r", server: 54.255.233.172, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "🇸🇬 新加坡1|Netflix\r", server: gdcm3.relay.qchwnd.moe, port: 44605, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇸🇬 欢迎使用Welink345 请定期更新订阅\r", server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: 7def61a2-9aff-4691-ad6b-4564e9639b6d, skip-cert-verify: true, udp: true}
-  - {name: "🇺🇸 美国*22\r", server: 20.205.117.99, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: "🇺🇸 美国*22\r\r\r", server: 20.205.117.99, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: "🇺🇸 美国*37\r", server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 1c0e4a18-4d7a-4231-a55d-1dee0fe6732a, udp: true}
-  - {name: "🇺🇸 美国*37\r 2", server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 1c0e4a18-4d7a-4231-a55d-1dee0fe6732a, udp: true}
+  - {name: 🇷🇺 AiO_20220520_RU_俄罗斯联邦_11, server: 213.183.53.179, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 🇷🇺 AiO_20220520_RU_俄罗斯联邦_31, server: t07.tgfaka.com, port: 18443, type: trojan, password: 13ff9616-4cc8-4f09-9887-1053544b6343, sni: douyincdn.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "\r"
-      - "+CN_16+|+2.52Mb\r"
-      - "+CN_23+|+2.53Mb\r"
-      - "+CN_234_+5.62Mb+|+9.63Mb\r"
-      - "+CN_235_+8.07Mb+|+6.55Mb\r"
-      - "+CN_238+|+2.10Mb\r"
-      - "+CN_35+|+1.97Mb\r"
-      - "+CN_36+|+2.53Mb\r"
-      - "+CN_38+|+2.94Mb\r"
-      - "+CN_39+|+2.52Mb\r"
-      - "+CN_40+|+2.22Mb\r"
-      - "+CN_45+TG@peekfun+|12.25Mb\r"
-      - "+CN_49+TG@peekfun+|10.26Mb\r"
-      - "+CN_51+TG@peekfun+|32.38Mb\r"
-      - "+CN_88_12.56Mb+|18.00Mb\r"
-      - "+FR_109_11.94Mb+|+6.27Mb\r"
-      - "+GR_120_+4.97Mb+|+3.01Mb\r"
-      - "+HK_131_95.41Mb+|31.73Mb\r"
-      - "+KR_163_+4.53Mb+|+2.87Mb\r"
-      - "+KR_166_+4.56Mb+|+3.68Mb\r"
-      - "+RU_181_24.01Mb+|+6.52Mb\r"
-      - "+US_254_+9.96Mb+|+4.34Mb\r"
-      - CN_1726_ 2.82Mb | 2.94Mb
-      - CN_1753_ 3.30Mb | 3.19Mb
-      - "CN_2\r\r\r"
-      - "CN_283_10.07Mb |51.93Mb\r\r\r"
-      - "CN_292_10.21Mb |46.89Mb\r\r\r"
-      - "CN_3\r\r\r"
-      - CN_46 | 2.93Mb
-      - "CN_46.14Mb\r\r\r"
-      - CN_49 | 2.53Mb
-      - CN_60 | 2.53Mb
-      - CN_74_ 0.81Mb |19.49Mb
-      - CN_75_ 4.73Mb | 3.32Mb
-      - "US_18+|+3.10Mb\r"
-      - "_+0.05Mb+|+1.92Mb\r"
-      - "中国-tg频道\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_17\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_20\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_24\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_25\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_27\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_33\r\r\r"
-      - "🇨🇳 Relay_🇨🇳CN-🇰🇷KR_191+|+2.77Mb\r"
-      - "🇨🇳 [VIP][BGP]台湾2\r"
-      - "🇨🇳 中国*16\r"
-      - "🇨🇳 中国*16\r\r\r"
-      - "🇨🇳 台湾*19\r"
-      - "🇨🇳 台湾*19\r\r\r"
-      - "🇨🇳 台湾*20\r"
-      - "🇨🇳 台湾*20\r\r\r"
-      - 🇨🇳 台湾*24
-      - "🇨🇳 台湾*24\r\r\r"
+      - TG@nodesharing
+      - TG@nodesharing 2
+      - TG@nodesharing 3
+      - TG@nodesharing 4
+      - TG@nodesharing 5
+      - TG@nodesharing 6
+      - TG@nodesharing 7
+      - TG@nodesharing 8
+      - TG@nodesharing 9
+      - 🇨🇦 AiO_20220520_CA_加拿大_13
+      - "🇨🇳 AiO_20220518_CN_中国_95\r\r"
+      - "🇨🇳 AiO_20220519_CN_中国_26\r\r"
+      - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_24
       - "🇨🇳 台湾*26\r"
-      - "🇨🇳 台湾*26\r\r\r"
-      - "🇨🇳 台湾*28\r"
-      - "🇨🇳 台湾*28\r\r\r"
-      - "🇨🇳 台湾*29\r"
-      - "🇨🇳 台湾*29\r\r\r"
-      - "🇨🇳 台湾*34\r"
-      - "🇨🇳 台湾*34\r\r\r"
-      - "🇨🇳 台湾1\r"
-      - "🇫🇷 法国*TG:＠yzcloud_13\r"
-      - "🇫🇷 法国*TG:＠yzcloud_13\r\r\r"
-      - "🇫🇷 法国|Netflix\r"
-      - "🇭🇰 [VIP][广港]印度尼西亚\r"
-      - "🇭🇰 [VIP][广港]台湾3\r"
-      - "🇭🇰 [VIP][广港]香港3•HGC\r"
-      - "🇭🇰 [VIP][广港]香港5•HKT\r"
-      - "🇭🇰 [VIP]香港4•HKT\r"
-      - "🇭🇰 香港-tg频道 3\r\r\r"
-      - "🇭🇰 香港02\r\r\r"
-      - "🇭🇰 香港2•HGC\r"
-      - "🇮🇩 [VIP]印度尼西亚1\r"
-      - "🇮🇳 印度*TG:＠yzcloud_13\r"
-      - "🇯🇵 [VIP][沪日]法国\r"
-      - "🇯🇵 [VIP][沪日]美国2\r"
-      - "🇯🇵 [VIP]英国|中日链路\r"
-      - "🇯🇵 [沪日]俄罗斯2\r"
-      - "🇯🇵 [沪日]美国1\r"
-      - "🇯🇵 日本3|中日链路|Netflix\r"
-      - "🇰🇷 [VIP]韩国1\r"
-      - "🇰🇷 [VIP]韩国2\r"
-      - "🇰🇷 [VIP]韩国4\r"
-      - "🇰🇷 [负载均衡]韩国1\r"
-      - "🇰🇷 韩国*17\r"
-      - "🇲🇾 马来西亚*6\r"
-      - "🇲🇾 马来西亚*6\r\r\r"
-      - "🇷🇺 俄罗斯*13\r"
-      - "🇷🇺 俄罗斯*13\r\r\r"
-      - "🇷🇺 俄罗斯1\r"
-      - "🇸🇬 新加坡*1\r"
-      - "🇸🇬 新加坡*12\r\r\r"
-      - "🇸🇬 新加坡*2\r\r\r"
-      - "🇸🇬 新加坡*4\r"
-      - "🇸🇬 新加坡*4\r\r\r"
-      - "🇸🇬 新加坡*7\r\r\r"
-      - "🇸🇬 新加坡-tg频道\r\r\r"
-      - "🇸🇬 新加坡1|Netflix\r"
-      - "🇸🇬 欢迎使用Welink345 请定期更新订阅\r"
-      - "🇺🇸 美国*22\r"
-      - "🇺🇸 美国*22\r\r\r"
-      - "🇺🇸 美国*37\r"
-      - "🇺🇸 美国*37\r 2"
+      - 🇷🇺 AiO_20220520_RU_俄罗斯联邦_11
+      - 🇷🇺 AiO_20220520_RU_俄罗斯联邦_31
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "\r"
-      - "+CN_16+|+2.52Mb\r"
-      - "+CN_23+|+2.53Mb\r"
-      - "+CN_234_+5.62Mb+|+9.63Mb\r"
-      - "+CN_235_+8.07Mb+|+6.55Mb\r"
-      - "+CN_238+|+2.10Mb\r"
-      - "+CN_35+|+1.97Mb\r"
-      - "+CN_36+|+2.53Mb\r"
-      - "+CN_38+|+2.94Mb\r"
-      - "+CN_39+|+2.52Mb\r"
-      - "+CN_40+|+2.22Mb\r"
-      - "+CN_45+TG@peekfun+|12.25Mb\r"
-      - "+CN_49+TG@peekfun+|10.26Mb\r"
-      - "+CN_51+TG@peekfun+|32.38Mb\r"
-      - "+CN_88_12.56Mb+|18.00Mb\r"
-      - "+FR_109_11.94Mb+|+6.27Mb\r"
-      - "+GR_120_+4.97Mb+|+3.01Mb\r"
-      - "+HK_131_95.41Mb+|31.73Mb\r"
-      - "+KR_163_+4.53Mb+|+2.87Mb\r"
-      - "+KR_166_+4.56Mb+|+3.68Mb\r"
-      - "+RU_181_24.01Mb+|+6.52Mb\r"
-      - "+US_254_+9.96Mb+|+4.34Mb\r"
-      - CN_1726_ 2.82Mb | 2.94Mb
-      - CN_1753_ 3.30Mb | 3.19Mb
-      - "CN_2\r\r\r"
-      - "CN_283_10.07Mb |51.93Mb\r\r\r"
-      - "CN_292_10.21Mb |46.89Mb\r\r\r"
-      - "CN_3\r\r\r"
-      - CN_46 | 2.93Mb
-      - "CN_46.14Mb\r\r\r"
-      - CN_49 | 2.53Mb
-      - CN_60 | 2.53Mb
-      - CN_74_ 0.81Mb |19.49Mb
-      - CN_75_ 4.73Mb | 3.32Mb
-      - "US_18+|+3.10Mb\r"
-      - "_+0.05Mb+|+1.92Mb\r"
-      - "中国-tg频道\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_17\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_20\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_24\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_25\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_27\r\r\r"
-      - "🇨🇳 Cow Vagina 整理_🇨🇳_中国_33\r\r\r"
-      - "🇨🇳 Relay_🇨🇳CN-🇰🇷KR_191+|+2.77Mb\r"
-      - "🇨🇳 [VIP][BGP]台湾2\r"
-      - "🇨🇳 中国*16\r"
-      - "🇨🇳 中国*16\r\r\r"
-      - "🇨🇳 台湾*19\r"
-      - "🇨🇳 台湾*19\r\r\r"
-      - "🇨🇳 台湾*20\r"
-      - "🇨🇳 台湾*20\r\r\r"
-      - 🇨🇳 台湾*24
-      - "🇨🇳 台湾*24\r\r\r"
+      - TG@nodesharing
+      - TG@nodesharing 2
+      - TG@nodesharing 3
+      - TG@nodesharing 4
+      - TG@nodesharing 5
+      - TG@nodesharing 6
+      - TG@nodesharing 7
+      - TG@nodesharing 8
+      - TG@nodesharing 9
+      - 🇨🇦 AiO_20220520_CA_加拿大_13
+      - "🇨🇳 AiO_20220518_CN_中国_95\r\r"
+      - "🇨🇳 AiO_20220519_CN_中国_26\r\r"
+      - 🇨🇳 Cow Vagina 整理_🇨🇳_中国_24
       - "🇨🇳 台湾*26\r"
-      - "🇨🇳 台湾*26\r\r\r"
-      - "🇨🇳 台湾*28\r"
-      - "🇨🇳 台湾*28\r\r\r"
-      - "🇨🇳 台湾*29\r"
-      - "🇨🇳 台湾*29\r\r\r"
-      - "🇨🇳 台湾*34\r"
-      - "🇨🇳 台湾*34\r\r\r"
-      - "🇨🇳 台湾1\r"
-      - "🇫🇷 法国*TG:＠yzcloud_13\r"
-      - "🇫🇷 法国*TG:＠yzcloud_13\r\r\r"
-      - "🇫🇷 法国|Netflix\r"
-      - "🇭🇰 [VIP][广港]印度尼西亚\r"
-      - "🇭🇰 [VIP][广港]台湾3\r"
-      - "🇭🇰 [VIP][广港]香港3•HGC\r"
-      - "🇭🇰 [VIP][广港]香港5•HKT\r"
-      - "🇭🇰 [VIP]香港4•HKT\r"
-      - "🇭🇰 香港-tg频道 3\r\r\r"
-      - "🇭🇰 香港02\r\r\r"
-      - "🇭🇰 香港2•HGC\r"
-      - "🇮🇩 [VIP]印度尼西亚1\r"
-      - "🇮🇳 印度*TG:＠yzcloud_13\r"
-      - "🇯🇵 [VIP][沪日]法国\r"
-      - "🇯🇵 [VIP][沪日]美国2\r"
-      - "🇯🇵 [VIP]英国|中日链路\r"
-      - "🇯🇵 [沪日]俄罗斯2\r"
-      - "🇯🇵 [沪日]美国1\r"
-      - "🇯🇵 日本3|中日链路|Netflix\r"
-      - "🇰🇷 [VIP]韩国1\r"
-      - "🇰🇷 [VIP]韩国2\r"
-      - "🇰🇷 [VIP]韩国4\r"
-      - "🇰🇷 [负载均衡]韩国1\r"
-      - "🇰🇷 韩国*17\r"
-      - "🇲🇾 马来西亚*6\r"
-      - "🇲🇾 马来西亚*6\r\r\r"
-      - "🇷🇺 俄罗斯*13\r"
-      - "🇷🇺 俄罗斯*13\r\r\r"
-      - "🇷🇺 俄罗斯1\r"
-      - "🇸🇬 新加坡*1\r"
-      - "🇸🇬 新加坡*12\r\r\r"
-      - "🇸🇬 新加坡*2\r\r\r"
-      - "🇸🇬 新加坡*4\r"
-      - "🇸🇬 新加坡*4\r\r\r"
-      - "🇸🇬 新加坡*7\r\r\r"
-      - "🇸🇬 新加坡-tg频道\r\r\r"
-      - "🇸🇬 新加坡1|Netflix\r"
-      - "🇸🇬 欢迎使用Welink345 请定期更新订阅\r"
-      - "🇺🇸 美国*22\r"
-      - "🇺🇸 美国*22\r\r\r"
-      - "🇺🇸 美国*37\r"
-      - "🇺🇸 美国*37\r 2"
+      - 🇷🇺 AiO_20220520_RU_俄罗斯联邦_11
+      - 🇷🇺 AiO_20220520_RU_俄罗斯联邦_31
   - name: 👉 国内网站
     type: select
     proxies:
@@ -374,103 +110,48 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - "+HK_131_95.41Mb+|31.73Mb\r"
-      - "🇭🇰 [VIP][广港]印度尼西亚\r"
-      - "🇭🇰 [VIP][广港]台湾3\r"
-      - "🇭🇰 [VIP][广港]香港3•HGC\r"
-      - "🇭🇰 [VIP][广港]香港5•HKT\r"
-      - "🇭🇰 [VIP]香港4•HKT\r"
-      - "🇭🇰 香港-tg频道 3\r\r\r"
-      - "🇭🇰 香港02\r\r\r"
-      - "🇭🇰 香港2•HGC\r"
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - "🇯🇵 [VIP][沪日]法国\r"
-      - "🇯🇵 [VIP][沪日]美国2\r"
-      - "🇯🇵 [VIP]英国|中日链路\r"
-      - "🇯🇵 [沪日]俄罗斯2\r"
-      - "🇯🇵 [沪日]美国1\r"
-      - "🇯🇵 日本3|中日链路|Netflix\r"
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - "+US_254_+9.96Mb+|+4.34Mb\r"
-      - "US_18+|+3.10Mb\r"
-      - "🇯🇵 [VIP][沪日]美国2\r"
-      - "🇯🇵 [沪日]美国1\r"
-      - "🇺🇸 美国*22\r"
-      - "🇺🇸 美国*22\r\r\r"
-      - "🇺🇸 美国*37\r"
-      - "🇺🇸 美国*37\r 2"
+      - DIRECT
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - "🇨🇳 [VIP][BGP]台湾2\r"
-      - "🇨🇳 台湾*19\r"
-      - "🇨🇳 台湾*19\r\r\r"
-      - "🇨🇳 台湾*20\r"
-      - "🇨🇳 台湾*20\r\r\r"
-      - 🇨🇳 台湾*24
-      - "🇨🇳 台湾*24\r\r\r"
       - "🇨🇳 台湾*26\r"
-      - "🇨🇳 台湾*26\r\r\r"
-      - "🇨🇳 台湾*28\r"
-      - "🇨🇳 台湾*28\r\r\r"
-      - "🇨🇳 台湾*29\r"
-      - "🇨🇳 台湾*29\r\r\r"
-      - "🇨🇳 台湾*34\r"
-      - "🇨🇳 台湾*34\r\r\r"
-      - "🇨🇳 台湾1\r"
-      - "🇭🇰 [VIP][广港]台湾3\r"
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - "🇸🇬 新加坡*1\r"
-      - "🇸🇬 新加坡*12\r\r\r"
-      - "🇸🇬 新加坡*2\r\r\r"
-      - "🇸🇬 新加坡*4\r"
-      - "🇸🇬 新加坡*4\r\r\r"
-      - "🇸🇬 新加坡*7\r\r\r"
-      - "🇸🇬 新加坡-tg频道\r\r\r"
-      - "🇸🇬 新加坡1|Netflix\r"
+      - DIRECT
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - "+KR_163_+4.53Mb+|+2.87Mb\r"
-      - "+KR_166_+4.56Mb+|+3.68Mb\r"
-      - "🇨🇳 Relay_🇨🇳CN-🇰🇷KR_191+|+2.77Mb\r"
-      - "🇰🇷 [VIP]韩国1\r"
-      - "🇰🇷 [VIP]韩国2\r"
-      - "🇰🇷 [VIP]韩国4\r"
-      - "🇰🇷 [负载均衡]韩国1\r"
-      - "🇰🇷 韩国*17\r"
+      - DIRECT
   - name: 🌍 其他地区
     type: select
     proxies:
-      - "🇭🇰 [VIP][广港]印度尼西亚\r"
-      - "🇮🇩 [VIP]印度尼西亚1\r"
-      - "🇮🇳 印度*TG:＠yzcloud_13\r"
-      - "🇯🇵 [VIP]英国|中日链路\r"
-      - "🇯🇵 [沪日]俄罗斯2\r"
-      - "🇷🇺 俄罗斯*13\r"
-      - "🇷🇺 俄罗斯*13\r\r\r"
-      - "🇷🇺 俄罗斯1\r"
+      - 🇨🇦 AiO_20220520_CA_加拿大_13
+      - 🇷🇺 AiO_20220520_RU_俄罗斯联邦_11
+      - 🇷🇺 AiO_20220520_RU_俄罗斯联邦_31
   - name: 📲 聊天软件
     type: select
     proxies:

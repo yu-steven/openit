@@ -5,6 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 158.101.138.248:44456/, server: 158.101.138.248, port: 44456, type: trojan, password: GETL8IszSG, skip-cert-verify: true, udp: true}
   - {name: "CN_2\r\r", server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
   - {name: "CN_283_10.07Mb |51.93Mb\r\r", server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
   - {name: "CN_292_10.21Mb |46.89Mb\r\r", server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
@@ -91,6 +92,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 158.101.138.248:44456/
       - "CN_2\r\r"
       - "CN_283_10.07Mb |51.93Mb\r\r"
       - "CN_292_10.21Mb |46.89Mb\r\r"
@@ -177,6 +179,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 158.101.138.248:44456/
       - "CN_2\r\r"
       - "CN_283_10.07Mb |51.93Mb\r\r"
       - "CN_292_10.21Mb |46.89Mb\r\r"

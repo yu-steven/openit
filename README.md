@@ -17,7 +17,7 @@
  [git-clash]: ./Clash.yaml
  [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
- [svg-base64]: https://github.com/yu-steven/openit/actions/workflows/base64.yaml/badge.svg?branch=main
+ [svg-base64]: https://github.com/yu-steven/openit/actions/workflows/Nodes.yaml/badge.svg?branch=main
  [svg-clash]: https://github.com/yu-steven/openit/actions/workflows/Clash.yaml/badge.svg?branch=main&event=workflow_dispatch
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter

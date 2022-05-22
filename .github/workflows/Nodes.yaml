@@ -11,8 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: 启动subconverter
-      run: |
-         nohup ./subconverter/subconverter &
+      run: nohup ./subconverter/subconverter &
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 配置git

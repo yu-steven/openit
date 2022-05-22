@@ -10,11 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: 安装subconverter
+    - name: 启动subconverter
       run: |
-         cd utils
-         wget https://github.com/yu-steven/subconverter/releases/download/v0.7.2/subconverter_linux64.tar.gz -O subconverter.tar.gz
-         tar -zxvf subconverter.tar.gz&&rm subconverter.tar.gz
          nohup ./subconverter/subconverter &
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'

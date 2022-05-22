@@ -33,7 +33,7 @@ jobs:
     - name: clash
       run: wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&udp=true&sort=true" -O Clash.yaml
     - name: 提交更改2
-      run: chmod 777 ./.github/update-repo.sh&&./.github/update-repo.sh
+      run: ./.github/update-repo.sh
   long:
     needs: my-job
     runs-on: ubuntu-latest

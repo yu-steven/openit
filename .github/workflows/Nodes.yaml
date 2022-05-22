@@ -23,11 +23,11 @@ jobs:
          git config --local user.name "GitHub Actions"
     - name: https&long
       run: |
-         base64 url > https -w 0
          base64 url > long -w 0
+         base64 url > https -w 0
     - name: 提交更改1
       run: |
-         git add https
+         git add .
          git commit -m "$(date '+%Y.%m.%d %H:%M:%S')更新订阅"
          git push origin main
     - name: clash

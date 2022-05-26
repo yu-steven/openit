@@ -281,7 +281,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini)
 <br>订阅上传编码转换系统中其中核心功能引用tindy2013/subconverter仓库release中的subconverter, 并依靠GitHub action持续部署; 
-<br>节点可溯源 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/url)
+<br>节点源文件 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/url)
 <br>Quanx.conf 引用神机, blackmatrix7和lhie1的重写规则, KOP-XIAO/QuantumultX的js脚本、ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则和Koolson/Qure的图标
 
 著作权归作者所有，节点归IP所有者所有，规则、js脚本、代码、图标归创作所有者所有

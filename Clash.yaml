@@ -5,50 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Alien, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 3, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_1829_ 0.98Mb | 2.55Mb, server: 14.29.124.168, port: 24063, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1952_ 0.18Mb | 2.96Mb, server: 14.29.124.168, port: 24024, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_31 TG@peekfun | 2.03Mb, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_45 TG@peekfun |60.93Mb, server: 14.29.124.174, port: 11009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_48 TG@peekfun |56.68Mb, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_56 TG@peekfun |21.93Mb, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: CN_63 TG@peekfun |61.47Mb, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_64 TG@peekfun |60.25Mb, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_68 TG@peekfun | 5.52Mb, server: 183.31.9.149, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
-  - {name: CN_73 TG@peekfun | 1.93Mb, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: DE_60 TG@peekfun | 2.38Mb, server: s4.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: GB_65 TG@peekfun | 2.08Mb, server: s4.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: JP_103 TG@peekfun | 1.96Mb, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: JP_86 TG@peekfun | 5.58Mb, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: SG_2832_ 1.16Mb | 1.61Mb, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SG_2917_ 3.98Mb | 1.78Mb, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_151 TG@peekfun | 1.95Mb, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: US_158 TG@peekfun |22.08Mb, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: US_159 TG@peekfun | 5.76Mb, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: US_177 TG@peekfun | 2.61Mb, server: holidays.starspace.link, port: 443, type: trojan, password: XCPKaaV8I1rmb7Ai, skip-cert-verify: true, udp: true}
-  - {name: US_180 TG@peekfun | 3.37Mb, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, skip-cert-verify: true, udp: true}
-  - {name: US_181 TG@peekfun | 4.41Mb, server: living.starspace.link, port: 443, type: trojan, password: NNhSlVRhte1Vzw5D, skip-cert-verify: true, udp: true}
-  - {name: US_191 TG@peekfun |12.31Mb, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
-  - {name: US_3972_ 7.77Mb | 9.86Mb, server: 193.178.210.29, port: 443, type: trojan, password: iKR3Ft, skip-cert-verify: true, udp: true}
-  - {name: _ 0.07Mb | 2.55Mb, server: 14.29.124.168, port: 24054, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _ 0.09Mb | 3.49Mb, server: 213.183.59.206, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: _ 0.20Mb | 2.15Mb, server: 213.183.59.206, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _ 0.42Mb | 1.94Mb, server: 213.183.59.206, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _ 0.57Mb | 1.90Mb, server: 213.183.59.206, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: _ 2.14Mb | 2.00Mb, server: cmrelay01.yiyorelay.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: microsoft.com, udp: true}
-  - {name: _ 2.16Mb | 2.41Mb, server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: microsoft.com, udp: true}
-  - {name: _ 4.16Mb | 2.02Mb, server: 213.183.59.211, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _ 5.23Mb | 2.61Mb, server: 213.183.59.211, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _1406_ 4.12Mb | 1.60Mb, server: 213.226.71.209, port: 31251, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _1414_ 2.24Mb | 2.16Mb, server: russia.okzdns.com, port: 33306, type: trojan, password: 35a3b37b-9fb4-4b0c-91b4-2b3e738af930, skip-cert-verify: true, udp: true}
-  - {name: _1484_ 9.66Mb |10.42Mb, server: 213.226.71.209, port: 31251, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _1485_ 3.69Mb | 5.42Mb, server: 138.118.175.28, port: 31320, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _16.70Mb | 5.03Mb, server: 45.61.174.36, port: 31325, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _347_ 0.39Mb | 3.79Mb, server: 213.183.59.206, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: _352_ 4.28Mb | 3.11Mb, server: 213.183.59.211, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _379_ 3.27Mb | 2.15Mb, server: 213.183.59.211, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: CN_1803_ 0.19Mb |45.75Mb, server: 14.29.124.168, port: 24099, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1810_47.46Mb |53.80Mb, server: cdn2.myuuusss.com, port: 21111, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: CN_1816_ 2.63Mb |45.29Mb, server: 14.29.124.168, port: 24096, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1828_13.41Mb |13.20Mb, server: zh01lv5in01.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: 21d2158a-45a3-4c76-afc5-8a69cfcbf272, udp: true}
+  - {name: CN_1829_67.82Mb |88.08Mb, server: zh01lv5jp04.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: 21d2158a-45a3-4c76-afc5-8a69cfcbf272, udp: true}
+  - {name: CN_1835_ 2.77Mb |44.95Mb, server: 14.29.124.168, port: 24044, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1836_ 2.32Mb |46.82Mb, server: 14.29.124.168, port: 24074, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1840_ 1.80Mb |46.34Mb, server: 14.29.124.168, port: 24093, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1841_ 0.09Mb |48.98Mb, server: 14.29.124.168, port: 24079, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1850_ 2.78Mb |46.51Mb, server: 14.29.124.168, port: 24082, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1852_ 1.87Mb | 1.83Mb, server: 14.29.124.168, port: 24011, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1856_ 2.31Mb | 1.88Mb, server: 14.29.124.168, port: 24058, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1859_ 2.53Mb |41.55Mb, server: 14.29.124.168, port: 24013, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1862_ 2.57Mb |44.73Mb, server: 14.29.124.168, port: 24017, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1868_ 0.09Mb |16.69Mb, server: 14.29.124.168, port: 24061, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1870_ 2.55Mb |43.36Mb, server: 14.29.124.168, port: 24075, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1878_ 1.80Mb |48.84Mb, server: 14.29.124.168, port: 24059, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1882_41.38Mb |16.67Mb, server: gy.moonfree.top, port: 17253, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gy.moonfree.top}}, udp: true}
+  - {name: CN_2 | 1.74Mb, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: CN_27 TG@peekfun | 2.32Mb, server: 14.29.124.174, port: 11013, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_314_ 9.88Mb |66.15Mb, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_34 TG@peekfun |63.75Mb, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_35 TG@peekfun | 8.27Mb, server: 180.163.62.91, port: 10065, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_36 TG@peekfun |68.88Mb, server: 14.29.124.174, port: 11001, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_38 TG@peekfun |61.09Mb, server: 14.29.124.174, port: 11005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_41 TG@peekfun |67.58Mb, server: 14.29.124.174, port: 11012, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_44 TG@peekfun |67.51Mb, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_45 TG@peekfun |61.32Mb, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_47 TG@peekfun | 1.85Mb, server: 14.29.124.174, port: 11037, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_49 TG@peekfun |59.74Mb, server: 14.29.124.174, port: 11042, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_50 TG@peekfun |60.10Mb, server: 14.29.124.174, port: 11044, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_55 TG@peekfun | 8.81Mb, server: 183.31.9.149, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
+  - {name: CN_56 TG@peekfun | 3.06Mb, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: CN_57 TG@peekfun |77.73Mb, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: CN_60 TG@peekfun |10.54Mb, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: CN_61 TG@peekfun | 4.03Mb, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: FR_5 | 5.68Mb, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: HK_2338_ 3.43Mb | 1.79Mb, server: 165.154.225.230, port: 33080, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_80 TG@peekfun | 2.23Mb, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: LT_543 | 2.93Mb, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: LT_820_ 3.84Mb | 6.56Mb, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: RU_2741_ 3.05Mb | 5.58Mb, server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: RU_2742_17.43Mb | 5.62Mb, server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: Relay_-🇹🇼TW_04 | 2.14Mb, server: 14.29.124.168, port: 24055, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_-🇹🇼TW_06 | 1.83Mb, server: 14.29.124.168, port: 24098, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_-🇹🇼TW_07 |42.70Mb, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_-🇹🇼TW_08 | 2.12Mb, server: 14.29.124.168, port: 24070, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_-🇹🇼TW_12 |50.05Mb, server: 14.29.124.168, port: 24036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: SG_2839_ 3.76Mb | 3.37Mb, server: 43.156.7.182, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: US_125 TG@peekfun |23.41Mb, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: US_129 TG@peekfun |11.07Mb, server: s3.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: US_131 TG@peekfun | 1.63Mb, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: US_149 TG@peekfun | 2.91Mb, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+  - {name: _ 0.17Mb |42.75Mb, server: 14.29.124.168, port: 24023, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _ 0.79Mb | 2.42Mb, server: 213.183.59.214, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: _ 0.87Mb | 2.29Mb, server: 213.183.59.214, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: _ 1.04Mb | 2.24Mb, server: 213.183.59.214, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _ 1.20Mb | 4.65Mb, server: 213.183.59.214, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _ 1.24Mb | 2.38Mb, server: 213.183.59.214, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: _ 1.67Mb | 3.21Mb, server: 185.167.116.250, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: _ 1.82Mb | 2.35Mb, server: 213.183.59.214, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _ 1.95Mb |42.21Mb, server: 14.29.124.168, port: 24046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _ 1.98Mb | 2.22Mb, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
+  - {name: _ 1.98Mb | 2.31Mb, server: 213.183.59.214, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: _ 2.04Mb | 2.29Mb, server: cmrelay01.yiyorelay.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
+  - {name: _ 2.16Mb | 1.91Mb, server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: microsoft.com, udp: true}
+  - {name: _ 2.21Mb | 2.23Mb, server: cmrelay01.yiyorelay.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
+  - {name: _ 2.23Mb | 2.20Mb, server: cmrelay01.yiyorelay.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
+  - {name: _ 2.32Mb | 1.69Mb, server: 213.183.59.214, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _ 2.49Mb | 1.98Mb, server: 213.183.59.214, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _ 2.55Mb | 2.57Mb, server: 213.183.59.214, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _ 3.26Mb | 1.98Mb, server: 213.183.59.214, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _ 3.46Mb | 2.32Mb, server: 213.183.59.214, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: _ 3.60Mb | 2.49Mb, server: 213.183.59.214, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: _ 3.94Mb | 1.63Mb, server: 213.183.59.214, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: _ 4.18Mb |10.30Mb, server: cmrelay01.yiyorelay.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
+  - {name: _ 4.63Mb | 2.40Mb, server: 213.183.59.214, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: _ 4.67Mb | 2.20Mb, server: 213.183.59.214, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: _ 4.80Mb | 2.41Mb, server: 213.183.59.214, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: _ 5.43Mb | 2.25Mb, server: 213.183.59.214, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: _ 6.22Mb | 2.37Mb, server: 213.183.59.190, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _01 |15.20Mb, server: 54.214.170.7, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _07_ 2.06Mb | 2.30Mb, server: 14.29.124.168, port: 24073, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1049_ 0.16Mb |44.05Mb, server: 14.29.124.168, port: 24043, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1414_ 3.03Mb | 2.99Mb, server: 138.118.175.28, port: 31320, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _1426_15.03Mb |25.19Mb, server: 34.215.130.186, port: 10089, type: vmess, uuid: 3608c9dc-1eeb-48b0-b570-43074b4a0c9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _747_ 5.95Mb | 5.90Mb, server: 213.183.53.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
   - {name: h3816tw.droplet.today:20443, server: h3816tw.droplet.today, port: 20443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11445, server: h63956.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11545, server: h63956.droplet.today, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
@@ -62,82 +105,114 @@ proxies:
   - {name: h961684.droplet.today:11345, server: h961684.droplet.today, port: 11345, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11445, server: h961684.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11745, server: h961684.droplet.today, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 中国-420.6KB/s(Youtube:不良林), server: 521hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 521hk.fans8.xyz}}, udp: true}
-  - {name: 🇦🇺 TG频道＠yzcloud澳洲*1, server: iplc01.dns2333.xyz, port: 3211, type: vmess, uuid: cbd439c7-278c-30c7-a8de-f78dbe436349, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇦🇺 澳大利亚, server: s4.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_225 |90.74Mb, server: momuz.sulink.cn, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
-  - {name: 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 14, server: 14.29.124.168, port: 24073, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 38, server: 14.29.124.168, port: 24087, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 台湾01, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇫🇷 法国, server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国, server: uk.node.qchwnd.moe, port: 44613, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: uk.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 TG频道＠yzcloud香港*11, server: iplc01.dns2333.xyz, port: 3201, type: vmess, uuid: cbd439c7-278c-30c7-a8de-f78dbe436349, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 [VIP][广港]新加坡", server: gdcm3.relay.qchwnd.moe, port: 44605, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: "🇭🇰 [VIP]香港4•HKT", server: hkt.node.qchwnd.moe, port: 44609, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇩 印度尼西亚1, server: id.node.qchwnd.moe, port: 44607, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: id.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: "🇯🇵 [VIP][沪日]法国", server: hncu.relay.qchwnd.moe, port: 44612, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本•SoftBank, server: jpkirin.node.qchwnd.moe, port: 44616, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: jpkirin.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: "🇰🇷 [VIP]韩国1", server: 138.2.127.240, port: 44600, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: "🇰🇷 [负载均衡]韩国1", server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 TG频道＠yzcloud俄罗斯*2, server: in04.dns2333.xyz, port: 61071, type: vmess, uuid: cbd439c7-278c-30c7-a8de-f78dbe436349, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jkl-ru01.myn1des.com}}, udp: true}
-  - {name: 🇷🇺 俄罗斯1, server: ru.node.qchwnd.moe, port: 44606, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: ru.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡, server: linsg.node.qchwnd.moe, port: 44605, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 Relay_🇦🇺AU-🇦🇺AU_65 | 9.03Mb, server: 521hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 521hk.fans8.xyz}}, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_179 | 7.48Mb, server: 511hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 511hk.fans8.xyz}}, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_181 |19.42Mb, server: 51jp1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 51jp1.fans8.xyz}}, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_183 | 9.84Mb, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 330tw.fans8.xyz}}, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_184 | 7.09Mb, server: 426hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 426hk.fans8.xyz}}, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_185 | 9.75Mb, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_244 |58.02Mb, server: momuz.sulink.cn, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_268 |37.29Mb, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_239 |67.48Mb, server: 14.29.124.174, port: 11031, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_240 |16.99Mb, server: 14.29.124.174, port: 11043, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_242 |63.28Mb, server: 14.29.124.174, port: 11040, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_245 | 1.82Mb, server: 14.29.124.174, port: 11038, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇷🇺 Relay_🇷🇺RU-🇷🇺RU_785 | 3.25Mb, server: 422wkl.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 422wkl.fans8.xyz}}, udp: true}
   - {name: 🇺🇸 AWS美国, server: 34.215.130.186, port: 10089, type: vmess, uuid: 3608c9dc-1eeb-48b0-b570-43074b4a0c9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-316.6KB/s(Youtube:不良林), server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: iesei1ei.com}}, udp: true}
-  - {name: 🇺🇸 美国003, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国1, server: usgt.node.qchwnd.moe, port: 44610, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: usgt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜38, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜40, server: events.starspace.link, port: 443, type: trojan, password: 3RWFPCmWd4lYIMof, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1508 |21.46Mb, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: iesei1ei.com}}, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Alien
-      - Alien 2
-      - Alien 3
-      - CN_1829_ 0.98Mb | 2.55Mb
-      - CN_1952_ 0.18Mb | 2.96Mb
-      - CN_31 TG@peekfun | 2.03Mb
-      - CN_45 TG@peekfun |60.93Mb
-      - CN_48 TG@peekfun |56.68Mb
-      - CN_56 TG@peekfun |21.93Mb
-      - CN_63 TG@peekfun |61.47Mb
-      - CN_64 TG@peekfun |60.25Mb
-      - CN_68 TG@peekfun | 5.52Mb
-      - CN_73 TG@peekfun | 1.93Mb
-      - DE_60 TG@peekfun | 2.38Mb
-      - GB_65 TG@peekfun | 2.08Mb
-      - JP_103 TG@peekfun | 1.96Mb
-      - JP_86 TG@peekfun | 5.58Mb
-      - SG_2832_ 1.16Mb | 1.61Mb
-      - SG_2917_ 3.98Mb | 1.78Mb
-      - US_151 TG@peekfun | 1.95Mb
-      - US_158 TG@peekfun |22.08Mb
-      - US_159 TG@peekfun | 5.76Mb
-      - US_177 TG@peekfun | 2.61Mb
-      - US_180 TG@peekfun | 3.37Mb
-      - US_181 TG@peekfun | 4.41Mb
-      - US_191 TG@peekfun |12.31Mb
-      - US_3972_ 7.77Mb | 9.86Mb
-      - _ 0.07Mb | 2.55Mb
-      - _ 0.09Mb | 3.49Mb
-      - _ 0.20Mb | 2.15Mb
-      - _ 0.42Mb | 1.94Mb
-      - _ 0.57Mb | 1.90Mb
-      - _ 2.14Mb | 2.00Mb
-      - _ 2.16Mb | 2.41Mb
-      - _ 4.16Mb | 2.02Mb
-      - _ 5.23Mb | 2.61Mb
-      - _1406_ 4.12Mb | 1.60Mb
-      - _1414_ 2.24Mb | 2.16Mb
-      - _1484_ 9.66Mb |10.42Mb
-      - _1485_ 3.69Mb | 5.42Mb
-      - _16.70Mb | 5.03Mb
-      - _347_ 0.39Mb | 3.79Mb
-      - _352_ 4.28Mb | 3.11Mb
-      - _379_ 3.27Mb | 2.15Mb
+      - CN_1803_ 0.19Mb |45.75Mb
+      - CN_1810_47.46Mb |53.80Mb
+      - CN_1816_ 2.63Mb |45.29Mb
+      - CN_1828_13.41Mb |13.20Mb
+      - CN_1829_67.82Mb |88.08Mb
+      - CN_1835_ 2.77Mb |44.95Mb
+      - CN_1836_ 2.32Mb |46.82Mb
+      - CN_1840_ 1.80Mb |46.34Mb
+      - CN_1841_ 0.09Mb |48.98Mb
+      - CN_1850_ 2.78Mb |46.51Mb
+      - CN_1852_ 1.87Mb | 1.83Mb
+      - CN_1856_ 2.31Mb | 1.88Mb
+      - CN_1859_ 2.53Mb |41.55Mb
+      - CN_1862_ 2.57Mb |44.73Mb
+      - CN_1868_ 0.09Mb |16.69Mb
+      - CN_1870_ 2.55Mb |43.36Mb
+      - CN_1878_ 1.80Mb |48.84Mb
+      - CN_1882_41.38Mb |16.67Mb
+      - CN_2 | 1.74Mb
+      - CN_27 TG@peekfun | 2.32Mb
+      - CN_314_ 9.88Mb |66.15Mb
+      - CN_34 TG@peekfun |63.75Mb
+      - CN_35 TG@peekfun | 8.27Mb
+      - CN_36 TG@peekfun |68.88Mb
+      - CN_38 TG@peekfun |61.09Mb
+      - CN_41 TG@peekfun |67.58Mb
+      - CN_44 TG@peekfun |67.51Mb
+      - CN_45 TG@peekfun |61.32Mb
+      - CN_47 TG@peekfun | 1.85Mb
+      - CN_49 TG@peekfun |59.74Mb
+      - CN_50 TG@peekfun |60.10Mb
+      - CN_55 TG@peekfun | 8.81Mb
+      - CN_56 TG@peekfun | 3.06Mb
+      - CN_57 TG@peekfun |77.73Mb
+      - CN_60 TG@peekfun |10.54Mb
+      - CN_61 TG@peekfun | 4.03Mb
+      - FR_5 | 5.68Mb
+      - HK_2338_ 3.43Mb | 1.79Mb
+      - JP_80 TG@peekfun | 2.23Mb
+      - LT_543 | 2.93Mb
+      - LT_820_ 3.84Mb | 6.56Mb
+      - RU_2741_ 3.05Mb | 5.58Mb
+      - RU_2742_17.43Mb | 5.62Mb
+      - Relay_-🇹🇼TW_04 | 2.14Mb
+      - Relay_-🇹🇼TW_06 | 1.83Mb
+      - Relay_-🇹🇼TW_07 |42.70Mb
+      - Relay_-🇹🇼TW_08 | 2.12Mb
+      - Relay_-🇹🇼TW_12 |50.05Mb
+      - SG_2839_ 3.76Mb | 3.37Mb
+      - US_125 TG@peekfun |23.41Mb
+      - US_129 TG@peekfun |11.07Mb
+      - US_131 TG@peekfun | 1.63Mb
+      - US_149 TG@peekfun | 2.91Mb
+      - _ 0.17Mb |42.75Mb
+      - _ 0.79Mb | 2.42Mb
+      - _ 0.87Mb | 2.29Mb
+      - _ 1.04Mb | 2.24Mb
+      - _ 1.20Mb | 4.65Mb
+      - _ 1.24Mb | 2.38Mb
+      - _ 1.67Mb | 3.21Mb
+      - _ 1.82Mb | 2.35Mb
+      - _ 1.95Mb |42.21Mb
+      - _ 1.98Mb | 2.22Mb
+      - _ 1.98Mb | 2.31Mb
+      - _ 2.04Mb | 2.29Mb
+      - _ 2.16Mb | 1.91Mb
+      - _ 2.21Mb | 2.23Mb
+      - _ 2.23Mb | 2.20Mb
+      - _ 2.32Mb | 1.69Mb
+      - _ 2.49Mb | 1.98Mb
+      - _ 2.55Mb | 2.57Mb
+      - _ 3.26Mb | 1.98Mb
+      - _ 3.46Mb | 2.32Mb
+      - _ 3.60Mb | 2.49Mb
+      - _ 3.94Mb | 1.63Mb
+      - _ 4.18Mb |10.30Mb
+      - _ 4.63Mb | 2.40Mb
+      - _ 4.67Mb | 2.20Mb
+      - _ 4.80Mb | 2.41Mb
+      - _ 5.43Mb | 2.25Mb
+      - _ 6.22Mb | 2.37Mb
+      - _01 |15.20Mb
+      - _07_ 2.06Mb | 2.30Mb
+      - _1049_ 0.16Mb |44.05Mb
+      - _1414_ 3.03Mb | 2.99Mb
+      - _1426_15.03Mb |25.19Mb
+      - _747_ 5.95Mb | 5.90Mb
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -151,82 +226,114 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
-      - 中国-420.6KB/s(Youtube:不良林)
-      - 🇦🇺 TG频道＠yzcloud澳洲*1
-      - 🇦🇺 澳大利亚
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_225 |90.74Mb
-      - 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 14
-      - 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 38
-      - 🇨🇳 台湾01
-      - 🇫🇷 法国
-      - 🇬🇧 英国
-      - 🇭🇰 TG频道＠yzcloud香港*11
-      - 🇭🇰 [VIP][广港]新加坡
-      - 🇭🇰 [VIP]香港4•HKT
-      - 🇮🇩 印度尼西亚1
-      - 🇯🇵 [VIP][沪日]法国
-      - 🇯🇵 日本•SoftBank
-      - 🇰🇷 [VIP]韩国1
-      - 🇰🇷 [负载均衡]韩国1
-      - 🇷🇺 TG频道＠yzcloud俄罗斯*2
-      - 🇷🇺 俄罗斯1
-      - 🇸🇬 新加坡
+      - 🇦🇺 Relay_🇦🇺AU-🇦🇺AU_65 | 9.03Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_179 | 7.48Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_181 |19.42Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_183 | 9.84Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_184 | 7.09Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_185 | 9.75Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_244 |58.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_268 |37.29Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_239 |67.48Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_240 |16.99Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_242 |63.28Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_245 | 1.82Mb
+      - 🇷🇺 Relay_🇷🇺RU-🇷🇺RU_785 | 3.25Mb
       - 🇺🇸 AWS美国
-      - 🇺🇸 美国-316.6KB/s(Youtube:不良林)
-      - 🇺🇸 美国003
-      - 🇺🇸 美国1
-      - 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜38
-      - 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜40
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1508 |21.46Mb
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Alien
-      - Alien 2
-      - Alien 3
-      - CN_1829_ 0.98Mb | 2.55Mb
-      - CN_1952_ 0.18Mb | 2.96Mb
-      - CN_31 TG@peekfun | 2.03Mb
-      - CN_45 TG@peekfun |60.93Mb
-      - CN_48 TG@peekfun |56.68Mb
-      - CN_56 TG@peekfun |21.93Mb
-      - CN_63 TG@peekfun |61.47Mb
-      - CN_64 TG@peekfun |60.25Mb
-      - CN_68 TG@peekfun | 5.52Mb
-      - CN_73 TG@peekfun | 1.93Mb
-      - DE_60 TG@peekfun | 2.38Mb
-      - GB_65 TG@peekfun | 2.08Mb
-      - JP_103 TG@peekfun | 1.96Mb
-      - JP_86 TG@peekfun | 5.58Mb
-      - SG_2832_ 1.16Mb | 1.61Mb
-      - SG_2917_ 3.98Mb | 1.78Mb
-      - US_151 TG@peekfun | 1.95Mb
-      - US_158 TG@peekfun |22.08Mb
-      - US_159 TG@peekfun | 5.76Mb
-      - US_177 TG@peekfun | 2.61Mb
-      - US_180 TG@peekfun | 3.37Mb
-      - US_181 TG@peekfun | 4.41Mb
-      - US_191 TG@peekfun |12.31Mb
-      - US_3972_ 7.77Mb | 9.86Mb
-      - _ 0.07Mb | 2.55Mb
-      - _ 0.09Mb | 3.49Mb
-      - _ 0.20Mb | 2.15Mb
-      - _ 0.42Mb | 1.94Mb
-      - _ 0.57Mb | 1.90Mb
-      - _ 2.14Mb | 2.00Mb
-      - _ 2.16Mb | 2.41Mb
-      - _ 4.16Mb | 2.02Mb
-      - _ 5.23Mb | 2.61Mb
-      - _1406_ 4.12Mb | 1.60Mb
-      - _1414_ 2.24Mb | 2.16Mb
-      - _1484_ 9.66Mb |10.42Mb
-      - _1485_ 3.69Mb | 5.42Mb
-      - _16.70Mb | 5.03Mb
-      - _347_ 0.39Mb | 3.79Mb
-      - _352_ 4.28Mb | 3.11Mb
-      - _379_ 3.27Mb | 2.15Mb
+      - CN_1803_ 0.19Mb |45.75Mb
+      - CN_1810_47.46Mb |53.80Mb
+      - CN_1816_ 2.63Mb |45.29Mb
+      - CN_1828_13.41Mb |13.20Mb
+      - CN_1829_67.82Mb |88.08Mb
+      - CN_1835_ 2.77Mb |44.95Mb
+      - CN_1836_ 2.32Mb |46.82Mb
+      - CN_1840_ 1.80Mb |46.34Mb
+      - CN_1841_ 0.09Mb |48.98Mb
+      - CN_1850_ 2.78Mb |46.51Mb
+      - CN_1852_ 1.87Mb | 1.83Mb
+      - CN_1856_ 2.31Mb | 1.88Mb
+      - CN_1859_ 2.53Mb |41.55Mb
+      - CN_1862_ 2.57Mb |44.73Mb
+      - CN_1868_ 0.09Mb |16.69Mb
+      - CN_1870_ 2.55Mb |43.36Mb
+      - CN_1878_ 1.80Mb |48.84Mb
+      - CN_1882_41.38Mb |16.67Mb
+      - CN_2 | 1.74Mb
+      - CN_27 TG@peekfun | 2.32Mb
+      - CN_314_ 9.88Mb |66.15Mb
+      - CN_34 TG@peekfun |63.75Mb
+      - CN_35 TG@peekfun | 8.27Mb
+      - CN_36 TG@peekfun |68.88Mb
+      - CN_38 TG@peekfun |61.09Mb
+      - CN_41 TG@peekfun |67.58Mb
+      - CN_44 TG@peekfun |67.51Mb
+      - CN_45 TG@peekfun |61.32Mb
+      - CN_47 TG@peekfun | 1.85Mb
+      - CN_49 TG@peekfun |59.74Mb
+      - CN_50 TG@peekfun |60.10Mb
+      - CN_55 TG@peekfun | 8.81Mb
+      - CN_56 TG@peekfun | 3.06Mb
+      - CN_57 TG@peekfun |77.73Mb
+      - CN_60 TG@peekfun |10.54Mb
+      - CN_61 TG@peekfun | 4.03Mb
+      - FR_5 | 5.68Mb
+      - HK_2338_ 3.43Mb | 1.79Mb
+      - JP_80 TG@peekfun | 2.23Mb
+      - LT_543 | 2.93Mb
+      - LT_820_ 3.84Mb | 6.56Mb
+      - RU_2741_ 3.05Mb | 5.58Mb
+      - RU_2742_17.43Mb | 5.62Mb
+      - Relay_-🇹🇼TW_04 | 2.14Mb
+      - Relay_-🇹🇼TW_06 | 1.83Mb
+      - Relay_-🇹🇼TW_07 |42.70Mb
+      - Relay_-🇹🇼TW_08 | 2.12Mb
+      - Relay_-🇹🇼TW_12 |50.05Mb
+      - SG_2839_ 3.76Mb | 3.37Mb
+      - US_125 TG@peekfun |23.41Mb
+      - US_129 TG@peekfun |11.07Mb
+      - US_131 TG@peekfun | 1.63Mb
+      - US_149 TG@peekfun | 2.91Mb
+      - _ 0.17Mb |42.75Mb
+      - _ 0.79Mb | 2.42Mb
+      - _ 0.87Mb | 2.29Mb
+      - _ 1.04Mb | 2.24Mb
+      - _ 1.20Mb | 4.65Mb
+      - _ 1.24Mb | 2.38Mb
+      - _ 1.67Mb | 3.21Mb
+      - _ 1.82Mb | 2.35Mb
+      - _ 1.95Mb |42.21Mb
+      - _ 1.98Mb | 2.22Mb
+      - _ 1.98Mb | 2.31Mb
+      - _ 2.04Mb | 2.29Mb
+      - _ 2.16Mb | 1.91Mb
+      - _ 2.21Mb | 2.23Mb
+      - _ 2.23Mb | 2.20Mb
+      - _ 2.32Mb | 1.69Mb
+      - _ 2.49Mb | 1.98Mb
+      - _ 2.55Mb | 2.57Mb
+      - _ 3.26Mb | 1.98Mb
+      - _ 3.46Mb | 2.32Mb
+      - _ 3.60Mb | 2.49Mb
+      - _ 3.94Mb | 1.63Mb
+      - _ 4.18Mb |10.30Mb
+      - _ 4.63Mb | 2.40Mb
+      - _ 4.67Mb | 2.20Mb
+      - _ 4.80Mb | 2.41Mb
+      - _ 5.43Mb | 2.25Mb
+      - _ 6.22Mb | 2.37Mb
+      - _01 |15.20Mb
+      - _07_ 2.06Mb | 2.30Mb
+      - _1049_ 0.16Mb |44.05Mb
+      - _1414_ 3.03Mb | 2.99Mb
+      - _1426_15.03Mb |25.19Mb
+      - _747_ 5.95Mb | 5.90Mb
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -240,32 +347,21 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
-      - 中国-420.6KB/s(Youtube:不良林)
-      - 🇦🇺 TG频道＠yzcloud澳洲*1
-      - 🇦🇺 澳大利亚
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_225 |90.74Mb
-      - 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 14
-      - 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 38
-      - 🇨🇳 台湾01
-      - 🇫🇷 法国
-      - 🇬🇧 英国
-      - 🇭🇰 TG频道＠yzcloud香港*11
-      - 🇭🇰 [VIP][广港]新加坡
-      - 🇭🇰 [VIP]香港4•HKT
-      - 🇮🇩 印度尼西亚1
-      - 🇯🇵 [VIP][沪日]法国
-      - 🇯🇵 日本•SoftBank
-      - 🇰🇷 [VIP]韩国1
-      - 🇰🇷 [负载均衡]韩国1
-      - 🇷🇺 TG频道＠yzcloud俄罗斯*2
-      - 🇷🇺 俄罗斯1
-      - 🇸🇬 新加坡
+      - 🇦🇺 Relay_🇦🇺AU-🇦🇺AU_65 | 9.03Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_179 | 7.48Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_181 |19.42Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_183 | 9.84Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_184 | 7.09Mb
+      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_185 | 9.75Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_244 |58.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_268 |37.29Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_239 |67.48Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_240 |16.99Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_242 |63.28Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_245 | 1.82Mb
+      - 🇷🇺 Relay_🇷🇺RU-🇷🇺RU_785 | 3.25Mb
       - 🇺🇸 AWS美国
-      - 🇺🇸 美国-316.6KB/s(Youtube:不良林)
-      - 🇺🇸 美国003
-      - 🇺🇸 美国1
-      - 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜38
-      - 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜40
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1508 |21.46Mb
   - name: 👉 国内网站
     type: select
     proxies:
@@ -311,75 +407,59 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇭🇰 TG频道＠yzcloud香港*11
-      - 🇭🇰 [VIP][广港]新加坡
-      - 🇭🇰 [VIP]香港4•HKT
+      - HK_2338_ 3.43Mb | 1.79Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_239 |67.48Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_240 |16.99Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_242 |63.28Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_245 | 1.82Mb
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - JP_103 TG@peekfun | 1.96Mb
-      - JP_86 TG@peekfun | 5.58Mb
-      - 🇯🇵 [VIP][沪日]法国
-      - 🇯🇵 日本•SoftBank
+      - JP_80 TG@peekfun | 2.23Mb
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - US_151 TG@peekfun | 1.95Mb
-      - US_158 TG@peekfun |22.08Mb
-      - US_159 TG@peekfun | 5.76Mb
-      - US_177 TG@peekfun | 2.61Mb
-      - US_180 TG@peekfun | 3.37Mb
-      - US_181 TG@peekfun | 4.41Mb
-      - US_191 TG@peekfun |12.31Mb
-      - US_3972_ 7.77Mb | 9.86Mb
+      - US_125 TG@peekfun |23.41Mb
+      - US_129 TG@peekfun |11.07Mb
+      - US_131 TG@peekfun | 1.63Mb
+      - US_149 TG@peekfun | 2.91Mb
       - 🇺🇸 AWS美国
-      - 🇺🇸 美国-316.6KB/s(Youtube:不良林)
-      - 🇺🇸 美国003
-      - 🇺🇸 美国1
-      - 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜38
-      - 🇺🇸 ｜美国｜@ShareCentrePro｜openit.ml｜40
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1508 |21.46Mb
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 14
-      - 🇨🇳 Relay|🇹🇼TW|低速|TG频道FProxies整理|0524发布| 38
-      - 🇨🇳 台湾01
+      - Relay_-🇹🇼TW_04 | 2.14Mb
+      - Relay_-🇹🇼TW_06 | 1.83Mb
+      - Relay_-🇹🇼TW_07 |42.70Mb
+      - Relay_-🇹🇼TW_08 | 2.12Mb
+      - Relay_-🇹🇼TW_12 |50.05Mb
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - SG_2832_ 1.16Mb | 1.61Mb
-      - SG_2917_ 3.98Mb | 1.78Mb
-      - 🇭🇰 [VIP][广港]新加坡
-      - 🇸🇬 新加坡
+      - SG_2839_ 3.76Mb | 3.37Mb
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇰🇷 [VIP]韩国1
-      - 🇰🇷 [负载均衡]韩国1
+      - DIRECT
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇦🇺 TG频道＠yzcloud澳洲*1
-      - 🇦🇺 澳大利亚
-      - 🇬🇧 英国
-      - 🇮🇩 印度尼西亚1
-      - 🇷🇺 TG频道＠yzcloud俄罗斯*2
-      - 🇷🇺 俄罗斯1
+      - DIRECT
   - name: 📲 聊天软件
     type: select
     proxies:

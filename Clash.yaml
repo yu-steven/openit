@@ -5,188 +5,6 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "", server: vn06v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: t.akamaized.net}}, udp: true}
-  - {name: " 2", server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}, udp: true}
-  - {name: _AE_22, server: 193.123.86.165, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _AE_23, server: 193.123.66.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _AE_24, server: 193.123.66.22, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CA_180, server: t05.tgfaka.com, port: 18443, type: trojan, password: 543a952b-2261-4244-a9bb-30f902c19bf7, skip-cert-verify: true, udp: true}
-  - {name: _CN_100, server: shhkmmw.ggboynextdoor.best, port: 11003, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_101, server: shhkmmw.ggboynextdoor.best, port: 11103, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_102, server: shhkmmw.ggboynextdoor.best, port: 11005, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_103, server: shhkmmw.ggboynextdoor.best, port: 11105, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_104, server: shhkmmw.ggboynextdoor.best, port: 11004, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_105, server: shhkmmw.ggboynextdoor.best, port: 11104, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_106, server: shhkmmw.ggboynextdoor.best, port: 11006, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_107, server: shhkmmw.ggboynextdoor.best, port: 11106, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_108, server: shhkmmw.ggboynextdoor.best, port: 11001, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /websocket, headers: {Host: www.icloud.com}}, udp: true}
-  - {name: _CN_109, server: shhkmmw.ggboynextdoor.best, port: 11101, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_131, server: iepl-gz.safetelescope.cc, port: 64112, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: MzIzODE6QzJwSHlpUWZnbQ, obfs-param: YWpheC5taWNyb3NvZnQuY29t, udp: true}
-  - {name: _CN_133, server: mplsjs1.ggbbba.xyz, port: 56714, type: ss, cipher: aes-256-gcm, password: gDQ8kr1HdHEK5DGU, udp: true}
-  - {name: _CN_146, server: cdn2.myuuusss.com, port: 20003, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
-  - {name: _CN_152, server: iepl-gz.safetelescope.cc, port: 10804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: MzIzODE6QzJwSHlpUWZnbQ, obfs-param: YWpheC5taWNyb3NvZnQuY29t, udp: true}
-  - {name: _CN_158, server: 14.29.124.168, port: 24073, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_159, server: ieplszhk-sz.cctelescope.xyz, port: 50804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: MzIzODE6QzJwSHlpUWZnbQ, obfs-param: YWpheC5taWNyb3NvZnQuY29t, udp: true}
-  - {name: _CN_163, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_169, server: cdn2.myuuusss.com, port: 21111, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
-  - {name: _CN_170, server: cdn2.myuuusss.com, port: 21111, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
-  - {name: _CN_176, server: 14.29.124.174, port: 11005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_36, server: shhkmmw.ggboynextdoor.best, port: 11112, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_37, server: shhkmmw.ggboynextdoor.best, port: 21010, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_38, server: shhkmmw.ggboynextdoor.best, port: 11113, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_39, server: shhkmmw.ggboynextdoor.best, port: 11114, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_40, server: shhkmmw.ggboynextdoor.best, port: 11111, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_41, server: shhkmmw.ggboynextdoor.best, port: 11010, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_42, server: shhkmmw.ggboynextdoor.best, port: 11008, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_43, server: shhkmmw.ggboynextdoor.best, port: 11013, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_44, server: shhkmmw.ggboynextdoor.best, port: 11009, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_45, server: shhkmmw.ggboynextdoor.best, port: 11011, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_46, server: shhkmmw.ggboynextdoor.best, port: 11012, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_47, server: shhkmmw.ggboynextdoor.best, port: 11014, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_48, server: shhkmmw.ggboynextdoor.best, port: 11007, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_49, server: shhkmmw.ggboynextdoor.best, port: 11107, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_50, server: shhkmmw.ggboynextdoor.best, port: 11002, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_51, server: shhkmmw.ggboynextdoor.best, port: 11102, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_52, server: shhkmmw.ggboynextdoor.best, port: 11003, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_53, server: shhkmmw.ggboynextdoor.best, port: 11103, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_54, server: shhkmmw.ggboynextdoor.best, port: 11005, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_55, server: shhkmmw.ggboynextdoor.best, port: 11105, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_56, server: shhkmmw.ggboynextdoor.best, port: 11004, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_57, server: shhkmmw.ggboynextdoor.best, port: 11104, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_58, server: shhkmmw.ggboynextdoor.best, port: 11006, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_59, server: shhkmmw.ggboynextdoor.best, port: 11106, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_60, server: shhkmmw.ggboynextdoor.best, port: 11001, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /websocket, headers: {Host: www.icloud.com}}, udp: true}
-  - {name: _CN_61, server: shhkmmw.ggboynextdoor.best, port: 11101, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_88, server: shhkmmw.ggboynextdoor.best, port: 11112, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_89, server: shhkmmw.ggboynextdoor.best, port: 11113, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_90, server: shhkmmw.ggboynextdoor.best, port: 11114, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_91, server: shhkmmw.ggboynextdoor.best, port: 11111, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_92, server: shhkmmw.ggboynextdoor.best, port: 11013, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_93, server: shhkmmw.ggboynextdoor.best, port: 11009, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_94, server: shhkmmw.ggboynextdoor.best, port: 11011, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_95, server: shhkmmw.ggboynextdoor.best, port: 11012, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_96, server: shhkmmw.ggboynextdoor.best, port: 11007, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_97, server: shhkmmw.ggboynextdoor.best, port: 11107, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_98, server: shhkmmw.ggboynextdoor.best, port: 11002, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_99, server: shhkmmw.ggboynextdoor.best, port: 11102, type: vmess, uuid: 238e0caf-9daf-3083-8d13-031f8c218fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _DE_113, server: 165.22.93.103, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _DE_114, server: 80.78.132.177, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _DE_4, server: 165.22.93.103, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _DE_8, server: 80.78.132.177, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _HK_1, server: 210.0.158.220, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _HK_110, server: 210.0.158.220, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _HK_128, server: hkt.xn--y8jhmm6gn.com, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
-  - {name: _HK_129, server: hkt.xn--y8jhmm6gn.com, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
-  - {name: _HK_130, server: hkt.xn--y8jhmm6gn.com, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
-  - {name: _HK_28, server: 103.117.101.195, port: 31326, type: ss, cipher: aes-256-gcm, password: 5bb52bce-6983-40d1-96c2-e6867762a421, udp: true}
-  - {name: _HK_70, server: hkaz1.xmrth-node.xyz, port: 16076, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _HK_71, server: hkaz2.xmrth-node.xyz, port: 16077, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _HK_73, server: hkaz4.xmrth-node.xyz, port: 15866, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _HK_74, server: hgc1.xmrth-node.xyz, port: 16067, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _HK_75, server: hkaz1.xmrth-node.xyz, port: 16066, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _JP_124, server: 18.183.60.113, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _JP_125, server: 54.92.126.44, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _JP_126, server: 3.115.7.33, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _JP_168, server: cdn.jp-01.planb.cat, port: 443, type: trojan, password: 7eabc797-6279-495e-82fc-2457bc0125a0, skip-cert-verify: true, udp: true}
-  - {name: _JP_17, server: 18.183.60.113, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _JP_174, server: cdn.jp-02.planb.cat, port: 443, type: trojan, password: 7eabc797-6279-495e-82fc-2457bc0125a0, skip-cert-verify: true, udp: true}
-  - {name: _JP_178, server: 54.64.146.126, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _JP_18, server: 54.92.126.44, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _JP_19, server: 3.115.7.33, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _JP_62, server: jpaz3.xmrth-node.xyz, port: 15943, type: vmess, uuid: f727bfd8-122f-38a0-82b4-d98e61820d0e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _JP_63, server: jplin003.xmrth-node.xyz, port: 15901, type: vmess, uuid: f727bfd8-122f-38a0-82b4-d98e61820d0e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _JP_78, server: jpaz3.xmrth-node.xyz, port: 15943, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _KR_121, server: 13.124.101.223, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _KR_122, server: 15.164.93.66, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _KR_123, server: 52.79.250.6, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _KR_138, server: 13.125.226.65, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _KR_139, server: 3.36.100.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _KR_147, server: 3.35.207.65, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _KR_148, server: 3.38.214.176, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _KR_15, server: 13.124.101.223, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _KR_16, server: 15.164.93.66, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _KR_162, server: 3.36.100.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _KR_25, server: 3.39.250.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _KR_34, server: 3.39.250.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _NL_11, server: 185.126.148.186, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_117, server: 185.126.148.186, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_118, server: 185.126.148.209, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_119, server: 185.126.148.213, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_12, server: 185.126.148.209, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_120, server: 185.126.148.96, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_13, server: 185.126.148.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_14, server: 185.126.148.96, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_171, server: 213.183.59.214, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _NL_172, server: 213.183.59.214, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: _NL_173, server: 213.183.59.190, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: _NL_177, server: 213.183.59.214, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _NL_29, server: 185.126.148.186, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _RU_167, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: _SG_111, server: 165.22.53.6, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _SG_112, server: 206.189.156.88, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _SG_134, server: cmccctcu.xn--mesv7f5toqlp.club, port: 11112, type: trojan, password: 90b5b3f9-8273-4f04-8d11-b0f255fdb111, skip-cert-verify: true, udp: true}
-  - {name: _SG_135, server: 13.212.91.109, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _SG_136, server: 18.142.180.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _SG_137, server: 3.0.54.98, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _SG_140, server: cmccctcu.xn--mesv7f5toqlp.club, port: 11113, type: trojan, password: 121b663a-9127-4854-8161-c3dbb0ff5556, skip-cert-verify: true, udp: true}
-  - {name: _SG_141, server: cmccctcu.xn--mesv7f5toqlp.club, port: 11112, type: trojan, password: 121b663a-9127-4854-8161-c3dbb0ff5556, skip-cert-verify: true, udp: true}
-  - {name: _SG_142, server: cmccctcu.xn--mesv7f5toqlp.club, port: 11114, type: trojan, password: 121b663a-9127-4854-8161-c3dbb0ff5556, skip-cert-verify: true, udp: true}
-  - {name: _SG_143, server: cmccctcu.xn--mesv7f5toqlp.club, port: 11114, type: trojan, password: 90b5b3f9-8273-4f04-8d11-b0f255fdb111, skip-cert-verify: true, udp: true}
-  - {name: _SG_144, server: cmccctcu.xn--mesv7f5toqlp.club, port: 11113, type: trojan, password: 90b5b3f9-8273-4f04-8d11-b0f255fdb111, skip-cert-verify: true, udp: true}
-  - {name: _SG_2, server: 165.22.53.6, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _SG_3, server: 206.189.156.88, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _SG_30, server: sgp02ul.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: t.akamaized.net}}, udp: true}
-  - {name: _SG_85, server: sgaws004.xmrth-node.xyz, port: 14415, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _TW_10, server: hinet.xxcv.cc, port: 38443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _TW_115, server: 165.154.226.25, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _TW_116, server: hinet.xxcv.cc, port: 38443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _TW_166, server: bgp01.v2yyds.cc, port: 32133, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: _TW_65, server: tw1.xmrth-node.xyz, port: 15660, type: vmess, uuid: f727bfd8-122f-38a0-82b4-d98e61820d0e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _TW_86, server: tw1.xmrth-node.xyz, port: 15660, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _TW_9, server: 165.154.226.25, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_127, server: 155.248.172.87, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_132, server: 138.2.30.34, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
-  - {name: _US_145, server: 20.243.75.205, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: _US_149, server: 172.96.194.114, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
-  - {name: _US_150, server: 34.217.215.198, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_151, server: 35.85.52.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_153, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: _US_154, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: _US_155, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: _US_156, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: _US_157, server: 35.87.97.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_160, server: 20.24.66.53, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: _US_161, server: 20.24.66.53, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: _US_164, server: 20.243.75.205, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: _US_165, server: 20.243.75.205, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: _US_175, server: 45.137.97.205, port: 58000, type: trojan, password: 44ddff24-9b11-4879-8f70-7eb69c32e735, skip-cert-verify: true, udp: true}
-  - {name: _US_179, server: o20.trojan.tel, port: 38443, type: trojan, password: 543a952b-2261-4244-a9bb-30f902c19bf7, skip-cert-verify: true, udp: true}
-  - {name: _US_181, server: o19.trojan.tel, port: 38443, type: trojan, password: 543a952b-2261-4244-a9bb-30f902c19bf7, skip-cert-verify: true, udp: true}
-  - {name: _US_182, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
-  - {name: _US_20, server: 155.248.172.87, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_21, server: 141.147.180.118, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_26, server: 35.85.52.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_27, server: 35.87.97.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_33, server: 35.85.52.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_35, server: 35.87.97.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_5, server: 192.9.164.5, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_6, server: 192.9.180.187, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_64, server: jpaz1.xmrth-node.xyz, port: 15624, type: vmess, uuid: f727bfd8-122f-38a0-82b4-d98e61820d0e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_66, server: inap006.xmrth-node.xyz, port: 11865, type: vmess, uuid: f727bfd8-122f-38a0-82b4-d98e61820d0e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_67, server: inap007.xmrth-node.xyz, port: 15567, type: vmess, uuid: f727bfd8-122f-38a0-82b4-d98e61820d0e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_68, server: jpaz2.xmrth-node.xyz, port: 10141, type: vmess, uuid: f727bfd8-122f-38a0-82b4-d98e61820d0e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_69, server: hkaz004.xmrth-node.xyz, port: 15911, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_7, server: 192.9.180.14, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_72, server: hkaz3.xmrth-node.xyz, port: 16078, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_76, server: hkaz3.xmrth-node.xyz, port: 14390, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_77, server: jpaz1.xmrth-node.xyz, port: 11032, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_79, server: jpaz1.xmrth-node.xyz, port: 15624, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_80, server: jpaz2.xmrth-node.xyz, port: 14025, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_81, server: hkaz5.xmrth-node.xyz, port: 15843, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_82, server: hkaz6.xmrth-node.xyz, port: 15907, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_83, server: hkaz7.xmrth-node.xyz, port: 15908, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_84, server: sgaws001.xmrth-node.xyz, port: 15967, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _US_87, server: inap005.xmrth-node.xyz, port: 15555, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
   - {name: h3816tw.droplet.today:20443, server: h3816tw.droplet.today, port: 20443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11445, server: h63956.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11545, server: h63956.droplet.today, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
@@ -200,194 +18,68 @@ proxies:
   - {name: h961684.droplet.today:11345, server: h961684.droplet.today, port: 11345, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11445, server: h961684.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11745, server: h961684.droplet.today, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
+  - {name: ｜AE｜28, server: 193.123.66.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: ｜AE｜31, server: 193.123.86.165, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: ｜AE｜32, server: 193.123.66.22, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜CN｜17, server: cdn2.myuuusss.com, port: 21111, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: 🇨🇳 ｜CN｜18, server: cdn2.myuuusss.com, port: 20003, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: 🇨🇳 ｜CN｜27, server: cdn2.myuuusss.com, port: 21111, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: 🇨🇳 ｜CN｜3, server: 14.29.124.168, port: 24073, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜5, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜TW｜22, server: 165.154.226.25, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜TW｜23, server: hinet.xxcv.cc, port: 38443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜TW｜34, server: hinet.xxcv.cc, port: 38443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜TW｜56, server: bgp01.v2yyds.cc, port: 32133, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜TW｜8, server: 165.154.226.25, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 ｜DE｜33, server: 80.78.132.177, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 ｜DE｜36, server: 80.78.132.177, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 ｜DE｜45, server: 165.22.93.103, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 ｜DE｜52, server: 165.22.93.103, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 ｜HK｜14, server: 103.117.101.195, port: 31326, type: ss, cipher: aes-256-gcm, password: 5bb52bce-6983-40d1-96c2-e6867762a421, udp: true}
+  - {name: 🇭🇰 ｜HK｜19, server: 210.0.158.220, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ｜JP｜1, server: 18.183.60.113, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ｜JP｜25, server: 3.115.7.33, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ｜JP｜4, server: 54.92.126.44, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ｜JP｜7, server: 3.115.7.33, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ｜KR｜13, server: 15.164.93.66, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ｜KR｜15, server: 13.124.101.223, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ｜KR｜16, server: 3.36.100.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 ｜KR｜24, server: 3.36.100.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇳🇱 ｜NL｜37, server: 185.126.148.96, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜38, server: 185.126.148.213, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜40, server: 185.126.148.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜41, server: 185.126.148.209, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜43, server: 185.126.148.186, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜44, server: 185.126.148.186, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜49, server: 185.126.148.209, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜50, server: 185.126.148.96, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜51, server: 213.183.59.214, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 🇷🇺 ｜RU｜35, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 🇸🇬 ｜SG｜11, server: 3.0.54.98, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 ｜SG｜12, server: cmccctcu.xn--mesv7f5toqlp.club, port: 11112, type: trojan, password: 121b663a-9127-4854-8161-c3dbb0ff5556, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 ｜SG｜42, server: 206.189.156.88, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 ｜SG｜48, server: 165.22.53.6, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 ｜SG｜53, server: 165.22.53.6, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 ｜SG｜6, server: 18.142.180.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜10, server: 141.147.180.118, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜2, server: 155.248.172.87, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜20, server: 35.85.52.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜21, server: 35.85.52.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜26, server: 34.217.215.198, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜29, server: 35.87.97.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜30, server: 45.137.97.205, port: 58000, type: trojan, password: 44ddff24-9b11-4879-8f70-7eb69c32e735, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜39, server: 35.85.52.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜46, server: 192.9.180.187, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜47, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜54, server: 192.9.164.5, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜55, server: 192.9.180.14, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜9, server: 155.248.172.87, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ""
-      - " 2"
-      - _AE_22
-      - _AE_23
-      - _AE_24
-      - _CA_180
-      - _CN_100
-      - _CN_101
-      - _CN_102
-      - _CN_103
-      - _CN_104
-      - _CN_105
-      - _CN_106
-      - _CN_107
-      - _CN_108
-      - _CN_109
-      - _CN_131
-      - _CN_133
-      - _CN_146
-      - _CN_152
-      - _CN_158
-      - _CN_159
-      - _CN_163
-      - _CN_169
-      - _CN_170
-      - _CN_176
-      - _CN_36
-      - _CN_37
-      - _CN_38
-      - _CN_39
-      - _CN_40
-      - _CN_41
-      - _CN_42
-      - _CN_43
-      - _CN_44
-      - _CN_45
-      - _CN_46
-      - _CN_47
-      - _CN_48
-      - _CN_49
-      - _CN_50
-      - _CN_51
-      - _CN_52
-      - _CN_53
-      - _CN_54
-      - _CN_55
-      - _CN_56
-      - _CN_57
-      - _CN_58
-      - _CN_59
-      - _CN_60
-      - _CN_61
-      - _CN_88
-      - _CN_89
-      - _CN_90
-      - _CN_91
-      - _CN_92
-      - _CN_93
-      - _CN_94
-      - _CN_95
-      - _CN_96
-      - _CN_97
-      - _CN_98
-      - _CN_99
-      - _DE_113
-      - _DE_114
-      - _DE_4
-      - _DE_8
-      - _HK_1
-      - _HK_110
-      - _HK_128
-      - _HK_129
-      - _HK_130
-      - _HK_28
-      - _HK_70
-      - _HK_71
-      - _HK_73
-      - _HK_74
-      - _HK_75
-      - _JP_124
-      - _JP_125
-      - _JP_126
-      - _JP_168
-      - _JP_17
-      - _JP_174
-      - _JP_178
-      - _JP_18
-      - _JP_19
-      - _JP_62
-      - _JP_63
-      - _JP_78
-      - _KR_121
-      - _KR_122
-      - _KR_123
-      - _KR_138
-      - _KR_139
-      - _KR_147
-      - _KR_148
-      - _KR_15
-      - _KR_16
-      - _KR_162
-      - _KR_25
-      - _KR_34
-      - _NL_11
-      - _NL_117
-      - _NL_118
-      - _NL_119
-      - _NL_12
-      - _NL_120
-      - _NL_13
-      - _NL_14
-      - _NL_171
-      - _NL_172
-      - _NL_173
-      - _NL_177
-      - _NL_29
-      - _RU_167
-      - _SG_111
-      - _SG_112
-      - _SG_134
-      - _SG_135
-      - _SG_136
-      - _SG_137
-      - _SG_140
-      - _SG_141
-      - _SG_142
-      - _SG_143
-      - _SG_144
-      - _SG_2
-      - _SG_3
-      - _SG_30
-      - _SG_85
-      - _TW_10
-      - _TW_115
-      - _TW_116
-      - _TW_166
-      - _TW_65
-      - _TW_86
-      - _TW_9
-      - _US_127
-      - _US_132
-      - _US_145
-      - _US_149
-      - _US_150
-      - _US_151
-      - _US_153
-      - _US_154
-      - _US_155
-      - _US_156
-      - _US_157
-      - _US_160
-      - _US_161
-      - _US_164
-      - _US_165
-      - _US_175
-      - _US_179
-      - _US_181
-      - _US_182
-      - _US_20
-      - _US_21
-      - _US_26
-      - _US_27
-      - _US_33
-      - _US_35
-      - _US_5
-      - _US_6
-      - _US_64
-      - _US_66
-      - _US_67
-      - _US_68
-      - _US_69
-      - _US_7
-      - _US_72
-      - _US_76
-      - _US_77
-      - _US_79
-      - _US_80
-      - _US_81
-      - _US_82
-      - _US_83
-      - _US_84
-      - _US_87
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -401,194 +93,68 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
+      - ｜AE｜28
+      - ｜AE｜31
+      - ｜AE｜32
+      - 🇨🇳 ｜CN｜17
+      - 🇨🇳 ｜CN｜18
+      - 🇨🇳 ｜CN｜27
+      - 🇨🇳 ｜CN｜3
+      - 🇨🇳 ｜CN｜5
+      - 🇨🇳 ｜TW｜22
+      - 🇨🇳 ｜TW｜23
+      - 🇨🇳 ｜TW｜34
+      - 🇨🇳 ｜TW｜56
+      - 🇨🇳 ｜TW｜8
+      - 🇩🇪 ｜DE｜33
+      - 🇩🇪 ｜DE｜36
+      - 🇩🇪 ｜DE｜45
+      - 🇩🇪 ｜DE｜52
+      - 🇭🇰 ｜HK｜14
+      - 🇭🇰 ｜HK｜19
+      - 🇯🇵 ｜JP｜1
+      - 🇯🇵 ｜JP｜25
+      - 🇯🇵 ｜JP｜4
+      - 🇯🇵 ｜JP｜7
+      - 🇰🇷 ｜KR｜13
+      - 🇰🇷 ｜KR｜15
+      - 🇰🇷 ｜KR｜16
+      - 🇰🇷 ｜KR｜24
+      - 🇳🇱 ｜NL｜37
+      - 🇳🇱 ｜NL｜38
+      - 🇳🇱 ｜NL｜40
+      - 🇳🇱 ｜NL｜41
+      - 🇳🇱 ｜NL｜43
+      - 🇳🇱 ｜NL｜44
+      - 🇳🇱 ｜NL｜49
+      - 🇳🇱 ｜NL｜50
+      - 🇳🇱 ｜NL｜51
+      - 🇷🇺 ｜RU｜35
+      - 🇸🇬 ｜SG｜11
+      - 🇸🇬 ｜SG｜12
+      - 🇸🇬 ｜SG｜42
+      - 🇸🇬 ｜SG｜48
+      - 🇸🇬 ｜SG｜53
+      - 🇸🇬 ｜SG｜6
+      - 🇺🇸 ｜US｜10
+      - 🇺🇸 ｜US｜2
+      - 🇺🇸 ｜US｜20
+      - 🇺🇸 ｜US｜21
+      - 🇺🇸 ｜US｜26
+      - 🇺🇸 ｜US｜29
+      - 🇺🇸 ｜US｜30
+      - 🇺🇸 ｜US｜39
+      - 🇺🇸 ｜US｜46
+      - 🇺🇸 ｜US｜47
+      - 🇺🇸 ｜US｜54
+      - 🇺🇸 ｜US｜55
+      - 🇺🇸 ｜US｜9
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ""
-      - " 2"
-      - _AE_22
-      - _AE_23
-      - _AE_24
-      - _CA_180
-      - _CN_100
-      - _CN_101
-      - _CN_102
-      - _CN_103
-      - _CN_104
-      - _CN_105
-      - _CN_106
-      - _CN_107
-      - _CN_108
-      - _CN_109
-      - _CN_131
-      - _CN_133
-      - _CN_146
-      - _CN_152
-      - _CN_158
-      - _CN_159
-      - _CN_163
-      - _CN_169
-      - _CN_170
-      - _CN_176
-      - _CN_36
-      - _CN_37
-      - _CN_38
-      - _CN_39
-      - _CN_40
-      - _CN_41
-      - _CN_42
-      - _CN_43
-      - _CN_44
-      - _CN_45
-      - _CN_46
-      - _CN_47
-      - _CN_48
-      - _CN_49
-      - _CN_50
-      - _CN_51
-      - _CN_52
-      - _CN_53
-      - _CN_54
-      - _CN_55
-      - _CN_56
-      - _CN_57
-      - _CN_58
-      - _CN_59
-      - _CN_60
-      - _CN_61
-      - _CN_88
-      - _CN_89
-      - _CN_90
-      - _CN_91
-      - _CN_92
-      - _CN_93
-      - _CN_94
-      - _CN_95
-      - _CN_96
-      - _CN_97
-      - _CN_98
-      - _CN_99
-      - _DE_113
-      - _DE_114
-      - _DE_4
-      - _DE_8
-      - _HK_1
-      - _HK_110
-      - _HK_128
-      - _HK_129
-      - _HK_130
-      - _HK_28
-      - _HK_70
-      - _HK_71
-      - _HK_73
-      - _HK_74
-      - _HK_75
-      - _JP_124
-      - _JP_125
-      - _JP_126
-      - _JP_168
-      - _JP_17
-      - _JP_174
-      - _JP_178
-      - _JP_18
-      - _JP_19
-      - _JP_62
-      - _JP_63
-      - _JP_78
-      - _KR_121
-      - _KR_122
-      - _KR_123
-      - _KR_138
-      - _KR_139
-      - _KR_147
-      - _KR_148
-      - _KR_15
-      - _KR_16
-      - _KR_162
-      - _KR_25
-      - _KR_34
-      - _NL_11
-      - _NL_117
-      - _NL_118
-      - _NL_119
-      - _NL_12
-      - _NL_120
-      - _NL_13
-      - _NL_14
-      - _NL_171
-      - _NL_172
-      - _NL_173
-      - _NL_177
-      - _NL_29
-      - _RU_167
-      - _SG_111
-      - _SG_112
-      - _SG_134
-      - _SG_135
-      - _SG_136
-      - _SG_137
-      - _SG_140
-      - _SG_141
-      - _SG_142
-      - _SG_143
-      - _SG_144
-      - _SG_2
-      - _SG_3
-      - _SG_30
-      - _SG_85
-      - _TW_10
-      - _TW_115
-      - _TW_116
-      - _TW_166
-      - _TW_65
-      - _TW_86
-      - _TW_9
-      - _US_127
-      - _US_132
-      - _US_145
-      - _US_149
-      - _US_150
-      - _US_151
-      - _US_153
-      - _US_154
-      - _US_155
-      - _US_156
-      - _US_157
-      - _US_160
-      - _US_161
-      - _US_164
-      - _US_165
-      - _US_175
-      - _US_179
-      - _US_181
-      - _US_182
-      - _US_20
-      - _US_21
-      - _US_26
-      - _US_27
-      - _US_33
-      - _US_35
-      - _US_5
-      - _US_6
-      - _US_64
-      - _US_66
-      - _US_67
-      - _US_68
-      - _US_69
-      - _US_7
-      - _US_72
-      - _US_76
-      - _US_77
-      - _US_79
-      - _US_80
-      - _US_81
-      - _US_82
-      - _US_83
-      - _US_84
-      - _US_87
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -602,6 +168,62 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
+      - ｜AE｜28
+      - ｜AE｜31
+      - ｜AE｜32
+      - 🇨🇳 ｜CN｜17
+      - 🇨🇳 ｜CN｜18
+      - 🇨🇳 ｜CN｜27
+      - 🇨🇳 ｜CN｜3
+      - 🇨🇳 ｜CN｜5
+      - 🇨🇳 ｜TW｜22
+      - 🇨🇳 ｜TW｜23
+      - 🇨🇳 ｜TW｜34
+      - 🇨🇳 ｜TW｜56
+      - 🇨🇳 ｜TW｜8
+      - 🇩🇪 ｜DE｜33
+      - 🇩🇪 ｜DE｜36
+      - 🇩🇪 ｜DE｜45
+      - 🇩🇪 ｜DE｜52
+      - 🇭🇰 ｜HK｜14
+      - 🇭🇰 ｜HK｜19
+      - 🇯🇵 ｜JP｜1
+      - 🇯🇵 ｜JP｜25
+      - 🇯🇵 ｜JP｜4
+      - 🇯🇵 ｜JP｜7
+      - 🇰🇷 ｜KR｜13
+      - 🇰🇷 ｜KR｜15
+      - 🇰🇷 ｜KR｜16
+      - 🇰🇷 ｜KR｜24
+      - 🇳🇱 ｜NL｜37
+      - 🇳🇱 ｜NL｜38
+      - 🇳🇱 ｜NL｜40
+      - 🇳🇱 ｜NL｜41
+      - 🇳🇱 ｜NL｜43
+      - 🇳🇱 ｜NL｜44
+      - 🇳🇱 ｜NL｜49
+      - 🇳🇱 ｜NL｜50
+      - 🇳🇱 ｜NL｜51
+      - 🇷🇺 ｜RU｜35
+      - 🇸🇬 ｜SG｜11
+      - 🇸🇬 ｜SG｜12
+      - 🇸🇬 ｜SG｜42
+      - 🇸🇬 ｜SG｜48
+      - 🇸🇬 ｜SG｜53
+      - 🇸🇬 ｜SG｜6
+      - 🇺🇸 ｜US｜10
+      - 🇺🇸 ｜US｜2
+      - 🇺🇸 ｜US｜20
+      - 🇺🇸 ｜US｜21
+      - 🇺🇸 ｜US｜26
+      - 🇺🇸 ｜US｜29
+      - 🇺🇸 ｜US｜30
+      - 🇺🇸 ｜US｜39
+      - 🇺🇸 ｜US｜46
+      - 🇺🇸 ｜US｜47
+      - 🇺🇸 ｜US｜54
+      - 🇺🇸 ｜US｜55
+      - 🇺🇸 ｜US｜9
   - name: 👉 国内网站
     type: select
     proxies:
@@ -647,136 +269,70 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - _HK_1
-      - _HK_110
-      - _HK_128
-      - _HK_129
-      - _HK_130
-      - _HK_28
-      - _HK_70
-      - _HK_71
-      - _HK_73
-      - _HK_74
-      - _HK_75
+      - 🇭🇰 ｜HK｜14
+      - 🇭🇰 ｜HK｜19
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - _JP_124
-      - _JP_125
-      - _JP_126
-      - _JP_168
-      - _JP_17
-      - _JP_174
-      - _JP_178
-      - _JP_18
-      - _JP_19
-      - _JP_62
-      - _JP_63
-      - _JP_78
+      - 🇯🇵 ｜JP｜1
+      - 🇯🇵 ｜JP｜25
+      - 🇯🇵 ｜JP｜4
+      - 🇯🇵 ｜JP｜7
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - _US_127
-      - _US_132
-      - _US_145
-      - _US_149
-      - _US_150
-      - _US_151
-      - _US_153
-      - _US_154
-      - _US_155
-      - _US_156
-      - _US_157
-      - _US_160
-      - _US_161
-      - _US_164
-      - _US_165
-      - _US_175
-      - _US_179
-      - _US_181
-      - _US_182
-      - _US_20
-      - _US_21
-      - _US_26
-      - _US_27
-      - _US_33
-      - _US_35
-      - _US_5
-      - _US_6
-      - _US_64
-      - _US_66
-      - _US_67
-      - _US_68
-      - _US_69
-      - _US_7
-      - _US_72
-      - _US_76
-      - _US_77
-      - _US_79
-      - _US_80
-      - _US_81
-      - _US_82
-      - _US_83
-      - _US_84
-      - _US_87
+      - 🇺🇸 ｜US｜10
+      - 🇺🇸 ｜US｜2
+      - 🇺🇸 ｜US｜20
+      - 🇺🇸 ｜US｜21
+      - 🇺🇸 ｜US｜26
+      - 🇺🇸 ｜US｜29
+      - 🇺🇸 ｜US｜30
+      - 🇺🇸 ｜US｜39
+      - 🇺🇸 ｜US｜46
+      - 🇺🇸 ｜US｜47
+      - 🇺🇸 ｜US｜54
+      - 🇺🇸 ｜US｜55
+      - 🇺🇸 ｜US｜9
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - _TW_10
-      - _TW_115
-      - _TW_116
-      - _TW_166
-      - _TW_65
-      - _TW_86
-      - _TW_9
+      - 🇨🇳 ｜TW｜22
+      - 🇨🇳 ｜TW｜23
+      - 🇨🇳 ｜TW｜34
+      - 🇨🇳 ｜TW｜56
+      - 🇨🇳 ｜TW｜8
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - _SG_111
-      - _SG_112
-      - _SG_134
-      - _SG_135
-      - _SG_136
-      - _SG_137
-      - _SG_140
-      - _SG_141
-      - _SG_142
-      - _SG_143
-      - _SG_144
-      - _SG_2
-      - _SG_3
-      - _SG_30
-      - _SG_85
+      - 🇸🇬 ｜SG｜11
+      - 🇸🇬 ｜SG｜12
+      - 🇸🇬 ｜SG｜42
+      - 🇸🇬 ｜SG｜48
+      - 🇸🇬 ｜SG｜53
+      - 🇸🇬 ｜SG｜6
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - _KR_121
-      - _KR_122
-      - _KR_123
-      - _KR_138
-      - _KR_139
-      - _KR_147
-      - _KR_148
-      - _KR_15
-      - _KR_16
-      - _KR_162
-      - _KR_25
-      - _KR_34
+      - 🇰🇷 ｜KR｜13
+      - 🇰🇷 ｜KR｜15
+      - 🇰🇷 ｜KR｜16
+      - 🇰🇷 ｜KR｜24
   - name: 🌍 其他地区
     type: select
     proxies:

@@ -6,6 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: default_name, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr1t.moonfree.top}}, udp: true}
+  - {name: default_name_2, server: v1.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: "%7B%22host%22:%22v1.ssrsub.com%22%7D"}}, udp: true}
   - {name: h3816tw.droplet.today:20443, server: h3816tw.droplet.today, port: 20443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11445, server: h63956.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11545, server: h63956.droplet.today, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
@@ -19,7 +20,14 @@ proxies:
   - {name: h961684.droplet.today:11345, server: h961684.droplet.today, port: 11345, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11445, server: h961684.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11745, server: h961684.droplet.today, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
+  - {name: univstar_2, server: 116.129.254.65, port: 64078, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: univstar_3, server: 112.64.52.197, port: 64078, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: univstar_3 2, server: 159.27.115.21, port: 64071, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: v2rayse_test_4, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: ｜AE｜28, server: 193.123.66.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: ｜AE｜31, server: 193.123.86.165, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: ｜AE｜32, server: 193.123.66.22, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇪 Oracle迪拜-1号(电信网用户专享), server: 193.123.86.165, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇦🇪 Oracle迪拜-2号(电信网用户专享), server: 193.123.66.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇦🇪 Oracle迪拜-3号(电信网用户专享), server: 193.123.66.22, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 _AU_澳大利亚_2, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
@@ -29,54 +37,125 @@ proxies:
   - {name: 🇨🇳 _TW_台湾, server: tw99-direct.myn1des.com, port: 2096, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw99-direct.myn1des.com}}, udp: true}
   - {name: 🇨🇳 _TW_台湾 2, server: tw99-direct.myn1des.com, port: 2096, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw99-direct.myn1des.com}}, udp: true}
   - {name: 🇨🇳 _TW_台湾 3, server: tw99-direct.myn1des.com, port: 2096, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw99-direct.myn1des.com}}, udp: true}
+  - {name: 🇨🇳 台湾Hinet, server: hinet.xxcv.cc, port: 38443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 台湾SCloud | 直连, server: 165.154.226.25, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜CN｜18, server: cdn2.myuuusss.com, port: 20003, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: 🇨🇳 ｜CN｜3, server: 14.29.124.168, port: 24073, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 🇨🇳 ｜TW｜23, server: hinet.xxcv.cc, port: 38443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜TW｜56, server: bgp01.v2yyds.cc, port: 32133, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜TW｜8, server: 165.154.226.25, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国-1号, server: 80.78.132.177, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 ｜DE｜36, server: 80.78.132.177, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 法国Do2号, server: 165.22.93.103, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 _CN_中国->🇬🇧_GB_英国, server: cm-jm.okvpn.xyz, port: 20006, type: trojan, password: 2e1a3721-c322-40ed-8d23-881c7be90839, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港_1, server: gy.cwcsrsyby.xyz, port: 47515, type: vmess, uuid: 2a30f24e-c164-3f34-a99d-e9107655cf49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港_2, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
   - {name: 🇭🇰 香港HGC, server: 210.0.158.220, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港HKT, server: hkt.xn--y8jhmm6gn.com, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港M247-1号(移动网用户专享), server: 185.126.148.186, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港M247-2号(移动网用户专享), server: 185.126.148.209, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港M247-3号(移动网用户专享), server: 185.126.148.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港M247-4号(移动网用户专享), server: 185.126.148.96, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 Oracle日本东京-1号, server: 155.248.172.87, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Oracle日本东京-2号, server: 141.147.180.118, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Oracle日本东京-3号, server: 138.2.30.34, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 linode日本-1号, server: 139.162.124.250, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本东京亚马逊-1号, server: 18.183.60.113, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本东京亚马逊-2号, server: 54.92.126.44, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本东京亚马逊-3号, server: 3.115.7.33, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 ｜JP｜1, server: 18.183.60.113, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ｜JP｜25, server: 3.115.7.33, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 ｜JP｜4, server: 54.92.126.44, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 _KR_韩国, server: 3.35.207.65, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇰🇷 韩国亚马逊-1号, server: 13.124.101.223, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 韩国亚马逊-2号, server: 15.164.93.66, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 韩国亚马逊-3号, server: 52.79.250.6, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 _NL_荷兰_1, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇰🇷 ｜KR｜13, server: 15.164.93.66, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ｜KR｜15, server: 13.124.101.223, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ｜KR｜16, server: 3.36.100.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_1, server: 213.183.59.206, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_1 2, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_1 3, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_1 4, server: 213.183.59.206, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_12, server: 213.183.59.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_13, server: 213.183.59.206, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_14, server: 213.183.59.214, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_15, server: 213.183.59.214, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_2, server: 213.183.59.206, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_2 2, server: 213.183.59.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_2 3, server: 213.183.59.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_2 4, server: 213.183.59.206, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_21, server: 213.183.59.206, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_22, server: 213.183.59.206, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_23, server: 213.183.59.206, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_24, server: 213.183.59.214, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_25, server: 213.183.59.206, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
   - {name: 🇳🇱 _NL_荷兰_27, server: 213.183.59.206, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_3, server: 213.183.59.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_4, server: 213.183.59.206, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_4 2, server: 213.183.59.206, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_4 3, server: 213.183.59.206, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_5, server: 213.183.59.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_5 2, server: 213.183.59.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
   - {name: 🇳🇱 _NL_荷兰_6, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 🇳🇱 _NL_荷兰_6 2, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_6 2, server: 213.183.59.206, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_6 3, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
   - {name: 🇳🇱 _NL_荷兰_7, server: 213.183.59.214, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 🇳🇱 _NL_荷兰_7 2, server: 213.183.59.206, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 🇳🇱 ｜NL｜40, server: 185.126.148.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 ｜NL｜41, server: 185.126.148.209, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜43, server: 185.126.148.186, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 ｜NL｜50, server: 185.126.148.96, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜51, server: 213.183.59.214, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 🇷🇺 _RU_俄罗斯联邦_1, server: 213.183.53.208, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 🇷🇺 univstar-Moscow-Baxet, server: 159.27.115.21, port: 64071, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇷🇺 univstar-Moscow-Baxet 2, server: 112.64.52.197, port: 64071, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇷🇺 univstar-Moscow-Baxet_1, server: 120.232.214.156, port: 64071, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇷🇺 univstar-Moscow-Baxet_2, server: 120.232.82.139, port: 64071, type: vmess, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇷🇺 ｜RU｜35, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
   - {name: 🇸🇬 _CN_中国->🇸🇬_SG_新加坡, server: 116.129.253.191, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 _SG_新加坡, server: 180.215.196.10, port: 39043, type: vmess, uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇬 _SG_新加坡 2, server: 180.215.196.10, port: 39043, type: vmess, uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇬 _SG_新加坡 3, server: 180.215.196.10, port: 39043, type: vmess, uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇸🇬 _SG_新加坡 4, server: 180.215.196.10, port: 39043, type: vmess, uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇸🇬 _SG_新加坡 5, server: 18.142.180.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 _SG_新加坡 6, server: 180.215.196.10, port: 39043, type: vmess, uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国, server: sg1.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2, server: sg1.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3, server: sg1.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国 4, server: sg2.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国 5, server: sg1.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡DO-1号, server: 165.22.53.6, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡DO-2号, server: 206.189.156.88, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 ｜SG｜42, server: 206.189.156.88, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 ｜SG｜53, server: 165.22.53.6, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 _US_美国, server: 172.96.194.114, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
-  - {name: 🇺🇸 _US_美国 2, server: 45.61.174.36, port: 31325, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 _US_美国 3, server: awsxjp.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: awsxjp.moonfree.top}}, udp: true}
+  - {name: 🇸🇬 ｜SG｜6, server: 18.142.180.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 _US_美国, server: awsxjp.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: awsxjp.moonfree.top}}, udp: true}
+  - {name: 🇺🇸 _US_美国 2, server: awsxjp.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: awsxjp.moonfree.top}}, udp: true}
+  - {name: 🇺🇸 _US_美国 3, server: 35.87.97.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 _US_美国 4, server: 172.96.194.114, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: 🇺🇸 _US_美国 5, server: 45.61.174.36, port: 31325, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 _US_美国->🇨🇿_CZ_捷克_1, server: v5.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: "%7B%22host%22:%22v5.ssrsub.com%22%7D"}}, udp: true}
+  - {name: 🇺🇸 _US_美国->🇨🇿_CZ_捷克_2, server: v4.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: "%7B%22host%22:%22v4.ssrsub.com%22%7D"}}, udp: true}
   - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 _US_美国->🇫🇮_FI_芬兰, server: oz.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
-  - {name: 🇺🇸 _US_美国_1, server: 172.96.194.114, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: 🇺🇸 _US_美国->🇳🇱_NL_荷兰, server: 172.67.140.112, port: 443, type: vmess, uuid: 4ac06183-feca-48f8-9f7d-3355bd950e2a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22host%22:%22yzjd01-ublubeu.koyeb.app%22%7D"}}, udp: true}
+  - {name: 🇺🇸 _US_美国_1, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}}, udp: true}
+  - {name: 🇺🇸 _US_美国_1 2, server: 172.96.194.114, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: 🇺🇸 _US_美国_2, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: "%7B%22host%22:%22iesei1ei.com%22%7D"}}, udp: true}
+  - {name: 🇺🇸 _US_美国_2 2, server: 35.87.97.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇺🇸 _US_美国_3, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 _US_美国_6, server: ocrb2.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocrb2.moonfree.top}}, udp: true}
   - {name: 🇺🇸 ｜US｜10, server: 141.147.180.118, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜26, server: 34.217.215.198, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇺🇸 ｜US｜29, server: 35.87.97.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜30, server: 45.137.97.205, port: 58000, type: trojan, password: 44ddff24-9b11-4879-8f70-7eb69c32e735, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 ｜US｜46, server: 192.9.180.187, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 ｜US｜47, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜54, server: 192.9.164.5, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜55, server: 192.9.180.14, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜9, server: 155.248.172.87, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
@@ -84,6 +163,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - default_name
+      - default_name_2
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -97,7 +177,14 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
+      - univstar_2
+      - univstar_3
+      - univstar_3 2
+      - v2rayse_test_4
+      - ｜AE｜28
+      - ｜AE｜31
       - ｜AE｜32
+      - 🇦🇪 Oracle迪拜-1号(电信网用户专享)
       - 🇦🇪 Oracle迪拜-2号(电信网用户专享)
       - 🇦🇪 Oracle迪拜-3号(电信网用户专享)
       - 🇦🇺 _AU_澳大利亚_2
@@ -107,54 +194,125 @@ proxy-groups:
       - 🇨🇳 _TW_台湾
       - 🇨🇳 _TW_台湾 2
       - 🇨🇳 _TW_台湾 3
+      - 🇨🇳 台湾Hinet
       - 🇨🇳 台湾SCloud | 直连
+      - 🇨🇳 ｜CN｜18
+      - 🇨🇳 ｜CN｜3
       - 🇨🇳 ｜TW｜23
+      - 🇨🇳 ｜TW｜56
+      - 🇨🇳 ｜TW｜8
       - 🇩🇪 德国-1号
       - 🇩🇪 ｜DE｜36
       - 🇫🇷 法国Do2号
+      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港_1
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港_2
       - 🇭🇰 香港HGC
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港M247-1号(移动网用户专享)
       - 🇭🇰 香港M247-2号(移动网用户专享)
       - 🇭🇰 香港M247-3号(移动网用户专享)
+      - 🇭🇰 香港M247-4号(移动网用户专享)
       - 🇯🇵 Oracle日本东京-1号
+      - 🇯🇵 Oracle日本东京-2号
+      - 🇯🇵 Oracle日本东京-3号
       - 🇯🇵 _CN_中国->🇯🇵_JP_日本
+      - 🇯🇵 linode日本-1号
+      - 🇯🇵 日本东京亚马逊-1号
       - 🇯🇵 日本东京亚马逊-2号
       - 🇯🇵 日本东京亚马逊-3号
       - 🇯🇵 ｜JP｜1
+      - 🇯🇵 ｜JP｜25
       - 🇯🇵 ｜JP｜4
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国亚马逊-1号
       - 🇰🇷 韩国亚马逊-2号
       - 🇰🇷 韩国亚马逊-3号
+      - 🇰🇷 ｜KR｜13
+      - 🇰🇷 ｜KR｜15
+      - 🇰🇷 ｜KR｜16
       - 🇳🇱 _NL_荷兰_1
+      - 🇳🇱 _NL_荷兰_1 2
+      - 🇳🇱 _NL_荷兰_1 3
+      - 🇳🇱 _NL_荷兰_1 4
+      - 🇳🇱 _NL_荷兰_12
+      - 🇳🇱 _NL_荷兰_13
+      - 🇳🇱 _NL_荷兰_14
+      - 🇳🇱 _NL_荷兰_15
+      - 🇳🇱 _NL_荷兰_2
+      - 🇳🇱 _NL_荷兰_2 2
+      - 🇳🇱 _NL_荷兰_2 3
+      - 🇳🇱 _NL_荷兰_2 4
+      - 🇳🇱 _NL_荷兰_21
+      - 🇳🇱 _NL_荷兰_22
+      - 🇳🇱 _NL_荷兰_23
+      - 🇳🇱 _NL_荷兰_24
+      - 🇳🇱 _NL_荷兰_25
       - 🇳🇱 _NL_荷兰_27
+      - 🇳🇱 _NL_荷兰_3
+      - 🇳🇱 _NL_荷兰_4
+      - 🇳🇱 _NL_荷兰_4 2
+      - 🇳🇱 _NL_荷兰_4 3
+      - 🇳🇱 _NL_荷兰_5
+      - 🇳🇱 _NL_荷兰_5 2
       - 🇳🇱 _NL_荷兰_6
       - 🇳🇱 _NL_荷兰_6 2
+      - 🇳🇱 _NL_荷兰_6 3
       - 🇳🇱 _NL_荷兰_7
+      - 🇳🇱 _NL_荷兰_7 2
+      - 🇳🇱 ｜NL｜40
       - 🇳🇱 ｜NL｜41
+      - 🇳🇱 ｜NL｜43
       - 🇳🇱 ｜NL｜50
+      - 🇳🇱 ｜NL｜51
+      - 🇷🇺 _RU_俄罗斯联邦_1
+      - 🇷🇺 univstar-Moscow-Baxet
+      - 🇷🇺 univstar-Moscow-Baxet 2
+      - 🇷🇺 univstar-Moscow-Baxet_1
+      - 🇷🇺 univstar-Moscow-Baxet_2
       - 🇷🇺 ｜RU｜35
       - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _SG_新加坡 2
       - 🇸🇬 _SG_新加坡 3
+      - 🇸🇬 _SG_新加坡 4
+      - 🇸🇬 _SG_新加坡 5
+      - 🇸🇬 _SG_新加坡 6
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 4
+      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 5
       - 🇸🇬 新加坡DO-1号
+      - 🇸🇬 新加坡DO-2号
       - 🇸🇬 ｜SG｜42
       - 🇸🇬 ｜SG｜53
+      - 🇸🇬 ｜SG｜6
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克_1
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克_2
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
       - 🇺🇸 _US_美国->🇫🇮_FI_芬兰
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
       - 🇺🇸 _US_美国_1
+      - 🇺🇸 _US_美国_1 2
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 2
       - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_6
       - 🇺🇸 ｜US｜10
+      - 🇺🇸 ｜US｜26
       - 🇺🇸 ｜US｜29
+      - 🇺🇸 ｜US｜30
       - 🇺🇸 ｜US｜46
       - 🇺🇸 ｜US｜47
+      - 🇺🇸 ｜US｜54
+      - 🇺🇸 ｜US｜55
+      - 🇺🇸 ｜US｜9
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -162,6 +320,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - default_name
+      - default_name_2
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -175,7 +334,14 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
+      - univstar_2
+      - univstar_3
+      - univstar_3 2
+      - v2rayse_test_4
+      - ｜AE｜28
+      - ｜AE｜31
       - ｜AE｜32
+      - 🇦🇪 Oracle迪拜-1号(电信网用户专享)
       - 🇦🇪 Oracle迪拜-2号(电信网用户专享)
       - 🇦🇪 Oracle迪拜-3号(电信网用户专享)
       - 🇦🇺 _AU_澳大利亚_2
@@ -185,54 +351,125 @@ proxy-groups:
       - 🇨🇳 _TW_台湾
       - 🇨🇳 _TW_台湾 2
       - 🇨🇳 _TW_台湾 3
+      - 🇨🇳 台湾Hinet
       - 🇨🇳 台湾SCloud | 直连
+      - 🇨🇳 ｜CN｜18
+      - 🇨🇳 ｜CN｜3
       - 🇨🇳 ｜TW｜23
+      - 🇨🇳 ｜TW｜56
+      - 🇨🇳 ｜TW｜8
       - 🇩🇪 德国-1号
       - 🇩🇪 ｜DE｜36
       - 🇫🇷 法国Do2号
+      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港_1
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港_2
       - 🇭🇰 香港HGC
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港M247-1号(移动网用户专享)
       - 🇭🇰 香港M247-2号(移动网用户专享)
       - 🇭🇰 香港M247-3号(移动网用户专享)
+      - 🇭🇰 香港M247-4号(移动网用户专享)
       - 🇯🇵 Oracle日本东京-1号
+      - 🇯🇵 Oracle日本东京-2号
+      - 🇯🇵 Oracle日本东京-3号
       - 🇯🇵 _CN_中国->🇯🇵_JP_日本
+      - 🇯🇵 linode日本-1号
+      - 🇯🇵 日本东京亚马逊-1号
       - 🇯🇵 日本东京亚马逊-2号
       - 🇯🇵 日本东京亚马逊-3号
       - 🇯🇵 ｜JP｜1
+      - 🇯🇵 ｜JP｜25
       - 🇯🇵 ｜JP｜4
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国亚马逊-1号
       - 🇰🇷 韩国亚马逊-2号
       - 🇰🇷 韩国亚马逊-3号
+      - 🇰🇷 ｜KR｜13
+      - 🇰🇷 ｜KR｜15
+      - 🇰🇷 ｜KR｜16
       - 🇳🇱 _NL_荷兰_1
+      - 🇳🇱 _NL_荷兰_1 2
+      - 🇳🇱 _NL_荷兰_1 3
+      - 🇳🇱 _NL_荷兰_1 4
+      - 🇳🇱 _NL_荷兰_12
+      - 🇳🇱 _NL_荷兰_13
+      - 🇳🇱 _NL_荷兰_14
+      - 🇳🇱 _NL_荷兰_15
+      - 🇳🇱 _NL_荷兰_2
+      - 🇳🇱 _NL_荷兰_2 2
+      - 🇳🇱 _NL_荷兰_2 3
+      - 🇳🇱 _NL_荷兰_2 4
+      - 🇳🇱 _NL_荷兰_21
+      - 🇳🇱 _NL_荷兰_22
+      - 🇳🇱 _NL_荷兰_23
+      - 🇳🇱 _NL_荷兰_24
+      - 🇳🇱 _NL_荷兰_25
       - 🇳🇱 _NL_荷兰_27
+      - 🇳🇱 _NL_荷兰_3
+      - 🇳🇱 _NL_荷兰_4
+      - 🇳🇱 _NL_荷兰_4 2
+      - 🇳🇱 _NL_荷兰_4 3
+      - 🇳🇱 _NL_荷兰_5
+      - 🇳🇱 _NL_荷兰_5 2
       - 🇳🇱 _NL_荷兰_6
       - 🇳🇱 _NL_荷兰_6 2
+      - 🇳🇱 _NL_荷兰_6 3
       - 🇳🇱 _NL_荷兰_7
+      - 🇳🇱 _NL_荷兰_7 2
+      - 🇳🇱 ｜NL｜40
       - 🇳🇱 ｜NL｜41
+      - 🇳🇱 ｜NL｜43
       - 🇳🇱 ｜NL｜50
+      - 🇳🇱 ｜NL｜51
+      - 🇷🇺 _RU_俄罗斯联邦_1
+      - 🇷🇺 univstar-Moscow-Baxet
+      - 🇷🇺 univstar-Moscow-Baxet 2
+      - 🇷🇺 univstar-Moscow-Baxet_1
+      - 🇷🇺 univstar-Moscow-Baxet_2
       - 🇷🇺 ｜RU｜35
       - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _SG_新加坡 2
       - 🇸🇬 _SG_新加坡 3
+      - 🇸🇬 _SG_新加坡 4
+      - 🇸🇬 _SG_新加坡 5
+      - 🇸🇬 _SG_新加坡 6
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 4
+      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 5
       - 🇸🇬 新加坡DO-1号
+      - 🇸🇬 新加坡DO-2号
       - 🇸🇬 ｜SG｜42
       - 🇸🇬 ｜SG｜53
+      - 🇸🇬 ｜SG｜6
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克_1
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克_2
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
       - 🇺🇸 _US_美国->🇫🇮_FI_芬兰
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
       - 🇺🇸 _US_美国_1
+      - 🇺🇸 _US_美国_1 2
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 2
       - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_6
       - 🇺🇸 ｜US｜10
+      - 🇺🇸 ｜US｜26
       - 🇺🇸 ｜US｜29
+      - 🇺🇸 ｜US｜30
       - 🇺🇸 ｜US｜46
       - 🇺🇸 ｜US｜47
+      - 🇺🇸 ｜US｜54
+      - 🇺🇸 ｜US｜55
+      - 🇺🇸 ｜US｜9
   - name: 👉 国内网站
     type: select
     proxies:
@@ -278,9 +515,14 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港_1
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港_2
       - 🇭🇰 香港HGC
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港M247-1号(移动网用户专享)
       - 🇭🇰 香港M247-2号(移动网用户专享)
       - 🇭🇰 香港M247-3号(移动网用户专享)
+      - 🇭🇰 香港M247-4号(移动网用户专享)
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -288,10 +530,15 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 Oracle日本东京-1号
+      - 🇯🇵 Oracle日本东京-2号
+      - 🇯🇵 Oracle日本东京-3号
       - 🇯🇵 _CN_中国->🇯🇵_JP_日本
+      - 🇯🇵 linode日本-1号
+      - 🇯🇵 日本东京亚马逊-1号
       - 🇯🇵 日本东京亚马逊-2号
       - 🇯🇵 日本东京亚马逊-3号
       - 🇯🇵 ｜JP｜1
+      - 🇯🇵 ｜JP｜25
       - 🇯🇵 ｜JP｜4
   - name: 🇺🇲 美国节点
     type: url-test
@@ -303,17 +550,32 @@ proxy-groups:
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 4
+      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 5
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克_1
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克_2
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
       - 🇺🇸 _US_美国->🇫🇮_FI_芬兰
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
       - 🇺🇸 _US_美国_1
+      - 🇺🇸 _US_美国_1 2
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 2
       - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_6
       - 🇺🇸 ｜US｜10
+      - 🇺🇸 ｜US｜26
       - 🇺🇸 ｜US｜29
+      - 🇺🇸 ｜US｜30
       - 🇺🇸 ｜US｜46
       - 🇺🇸 ｜US｜47
+      - 🇺🇸 ｜US｜54
+      - 🇺🇸 ｜US｜55
+      - 🇺🇸 ｜US｜9
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -323,8 +585,11 @@ proxy-groups:
       - 🇨🇳 _TW_台湾
       - 🇨🇳 _TW_台湾 2
       - 🇨🇳 _TW_台湾 3
+      - 🇨🇳 台湾Hinet
       - 🇨🇳 台湾SCloud | 直连
       - 🇨🇳 ｜TW｜23
+      - 🇨🇳 ｜TW｜56
+      - 🇨🇳 ｜TW｜8
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -335,13 +600,19 @@ proxy-groups:
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _SG_新加坡 2
       - 🇸🇬 _SG_新加坡 3
+      - 🇸🇬 _SG_新加坡 4
+      - 🇸🇬 _SG_新加坡 5
+      - 🇸🇬 _SG_新加坡 6
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
       - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 4
+      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 5
       - 🇸🇬 新加坡DO-1号
+      - 🇸🇬 新加坡DO-2号
       - 🇸🇬 ｜SG｜42
       - 🇸🇬 ｜SG｜53
+      - 🇸🇬 ｜SG｜6
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -352,11 +623,16 @@ proxy-groups:
       - 🇰🇷 韩国亚马逊-1号
       - 🇰🇷 韩国亚马逊-2号
       - 🇰🇷 韩国亚马逊-3号
+      - 🇰🇷 ｜KR｜13
+      - 🇰🇷 ｜KR｜15
+      - 🇰🇷 ｜KR｜16
   - name: 🌍 其他地区
     type: select
     proxies:
       - 🇦🇺 _AU_澳大利亚_2
       - 🇩🇪 德国-1号
+      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - 🇷🇺 _RU_俄罗斯联邦_1
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
   - name: 📲 聊天软件
     type: select

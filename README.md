@@ -279,7 +279,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 本仓库采用 CC BY-SA 4.0 许可协议
 
-订阅上传编码转换系统中其中核心功能引用tindy2013/subconverter仓库release中的subconverter, 并依靠GitHub action持续部署;
+订阅上传编码转换系统中其中核心功能引用tindy2013/subconverter仓库, 并依靠GitHub action持续部署;
 节点源文件 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/url)
 
 Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini)

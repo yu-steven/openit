@@ -1,9 +1,7 @@
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-
+<h1 align="lefts">
 <a rel="openit" href="https://openit.ml">
-<img alt="Logo" height="85px" style="border-width:0" src="https://openit.ml/logo.png" />
- <h1 align="lefts">
-  Openit
+<img alt="Logo" height="73px" style="border-width:0" src="https://openit.ml/images/logo-pro.png" />
 </h1>
 
 <div align="center">
@@ -45,18 +43,7 @@
 <!--本订阅由Openit节点网络和互联网公开节点组成节点网络稳定且可持续发展,下为节点网络分布-->
 <!--稳定x安全=**贵**｜稳定x白嫖=**危险**｜安全x白嫖=**不稳定**｜稳定x~~安全~~x白嫖=**本仓库** 欢迎大家**Star！**-->
 ***
-*最后更新时间2022.5.1-00:00*<br>
- 
-**Openit测试版订阅现已开放！使用全自研后端，可使用api和订阅统计svg！(测试版订阅与统计，不代表最终品质)**<br>
- <div align="center">
-https://test.openit.ml/Clash.yaml<br>
-https://test.openit.ml/long<br>
-https://test.openit.ml/https<br>
-https://test.openit.ml/?svg<br>
-  <img alt="test" style="border-width:0" src="https://test.openit.ml/?svg" />
- </div>
- 
- 
+*最后更新时间2022.5.1-00:00*
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接，[点击蓝色字体](#由于可能的更新不及时下面给出以上软件github托管地址以及最后更新时间--返回)选择要下载的文件
 ## Windows
 首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://doc.openit.ml/tutorial/win-cfw-zh.html))配合v0.19.17版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置；如果您是因为更新订阅而被引导至此页面，说明您正在使用旧版Clash，已放置新版Clash和对应的汉化补丁下载链接(在上面)请放心使用

@@ -51,6 +51,7 @@ https://test.openit.ml/Clash.yaml<br>
 https://test.openit.ml/long<br>
 https://test.openit.ml/https<br>
 https://test.openit.ml/?svg<br>
+  <img alt="test" style="border-width:0" src="https://test.openit.ml/?svg" />
  </div>
  
  

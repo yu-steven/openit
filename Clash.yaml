@@ -6,24 +6,16 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: Alien, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 3, server: 43.129.200.215, port: 46232, type: vmess, uuid: a6174b94-7340-440c-a505-2acf39f591f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 4, server: 129.226.93.47, port: 54592, type: vmess, uuid: 5b1e77bf-a73c-4756-e64a-4f02ac35ed43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: DE_89 TG@peekfun | 1.65Mb, server: s4.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
   - {name: GB_91 TG@peekfun | 1.82Mb, server: s4.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
   - {name: JP_104 TG@peekfun | 3.05Mb, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: JP_2386_19.50Mb |66.09Mb, server: jp-01.dingzige.gq, port: 80, type: vmess, uuid: 64561d57-81a0-4a58-bf11-7adb4d1103fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp-01.dingzige.gq}}, udp: true}
   - {name: RU_131 TG@peekfun | 6.78Mb, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
   - {name: Relay__ 2.86Mb | 2.23Mb, server: jp1.v2yyds.cc, port: 32111, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: SG_2870_13.45Mb |47.87Mb, server: sg3.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
   - {name: US_147 TG@peekfun | 3.19Mb, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
   - {name: US_148 TG@peekfun | 2.68Mb, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
   - {name: US_164 TG@peekfun | 4.25Mb, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
   - {name: _1445_ 7.09Mb | 3.51Mb, server: 213.226.71.209, port: 31251, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _1455_ 3.10Mb |17.63Mb, server: 45.137.97.205, port: 58000, type: trojan, password: 44ddff24-9b11-4879-8f70-7eb69c32e735, skip-cert-verify: true, udp: true}
   - {name: h3816tw.droplet.today:20443, server: h3816tw.droplet.today, port: 20443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
-  - {name: h63956.droplet.today:11445, server: h63956.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
-  - {name: h63956.droplet.today:11545, server: h63956.droplet.today, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h890361.droplet.today:11445, server: h890361.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h890361.droplet.today:11545, server: h890361.droplet.today, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961359.droplet.today:11245, server: h961359.droplet.today, port: 11245, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
@@ -34,33 +26,75 @@ proxies:
   - {name: h961684.droplet.today:11345, server: h961684.droplet.today, port: 11345, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11445, server: h961684.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.droplet.today:11745, server: h961684.droplet.today, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
+  - {name: •国内节点软件点击测试没网正常，不影响使用, server: 127.0.0.1, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: •部分节点不定时随机下发，隐藏节点可正常使用, server: 127.0.0.1, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: ⌈TCP⌋ 华东｜镇江, server: to5monlvh1ycb77m.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ⌈广停⌋ 华东｜镇江, server: to5monlvh1ycb77m.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: ⌈绿通⌋ 华东｜镇江, server: 43.248.116.27, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 亚洲(yudou66.com 玉豆分享), server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 频道有破解vpn防失联, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: 🇪🇺 欧洲(yudou66.com 玉豆分享), server: oz.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
-  - {name: 🇭🇰 香港-tg频道：@bpjzx2 10, server: 120.232.190.86, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 🇭🇰 香港-tg频道：@bpjzx2 17, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 🇭🇰 香港3-tg频道:@ripaojiedian, server: 104.208.118.183, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 🇯🇵 日本-tg频道:@ripaojiedian, server: 52.140.213.211, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 🇰🇷 南韩-tg频道:@ripaojiedian, server: 20.196.206.47, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 🇰🇷 韩国-tg频道:@bpjzx2, server: 3.39.250.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 韩国-tg频道:@bpjzx2 2, server: 3.39.250.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇨🇳 ⌈443⌋ 海外｜台湾, server: vpot.giize.com, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇨🇳 ⌈80⌋ 海外｜台湾, server: vpot.giize.com, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇨🇳 ⌈TCP⌋ 华东｜镇江2, server: e5egpqdqo242obor.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ⌈广停⌋ 华东｜镇江2, server: e5egpqdqo242obor.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇨🇳 ⌈广停⌋ 海外｜台湾, server: vpot.giize.com, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇨🇳 ⌈绿通⌋ 华东｜镇江2, server: 43.248.116.28, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇩🇪 德国(yudou66.com 玉豆分享), server: s4.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 🇪🇺 欧洲(yudou66.com 玉豆分享), server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 🇪🇺 欧洲(yudou66.com 玉豆分享) 2, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇪🇺 欧洲(yudou66.com 玉豆分享) 3, server: 172.66.47.44, port: 2053, type: vmess, uuid: 80e098a1-f768-3dfb-b97f-6c3a5d34bcd8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: xxX2, headers: {Host: web1.wweblog.pw}}, udp: true}
+  - {name: 🇬🇧 英国(yudou66.com 玉豆分享), server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国(yudou66.com 玉豆分享) 2, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 ⌈443⌋ 海外｜香港, server: hk2.dsaver.site, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇭🇰 ⌈443⌋ 海外｜香港2, server: hk.dsaver.site, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇭🇰 ⌈80⌋ 海外｜香港, server: hk2.dsaver.site, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇭🇰 ⌈80⌋ 海外｜香港2, server: hk.dsaver.site, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇭🇰 ⌈TCP⌋ 海外｜香港, server: hk2.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 ⌈TCP⌋ 海外｜香港2, server: hk.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 ⌈广停⌋ 海外｜香港, server: hk2.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇭🇰 ⌈广停⌋ 海外｜香港2, server: hk.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇭🇰 ⌈绿通⌋ 海外｜香港, server: 20.187.82.236, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇭🇰 ⌈绿通⌋ 海外｜香港2, server: 152.67.208.114, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇭🇰 香港(yudou66.com 玉豆分享), server: 521hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 521hk.fans8.xyz}}, udp: true}
+  - {name: 🇯🇵 ⌈443⌋ 海外｜日本, server: jp.dsaver.site, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈443⌋ 海外｜日本2, server: jp2.dsaver.site, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈443⌋ 海外｜日本3, server: jp3.dsaver.site, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈443⌋ 海外｜日本4, server: jp4.dsaver.site, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈80⌋ 海外｜日本, server: jp.dsaver.site, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈80⌋ 海外｜日本2, server: jp2.dsaver.site, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈80⌋ 海外｜日本3, server: jp3.dsaver.site, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈80⌋ 海外｜日本4, server: jp4.dsaver.site, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇯🇵 ⌈TCP⌋ 海外｜日本, server: jp.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ⌈TCP⌋ 海外｜日本2, server: jp2.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ⌈TCP⌋ 海外｜日本3, server: jp3.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ⌈TCP⌋ 海外｜日本4, server: jp4.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ⌈广停⌋ 海外｜日本, server: jp.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇯🇵 ⌈广停⌋ 海外｜日本2, server: jp2.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇯🇵 ⌈广停⌋ 海外｜日本3, server: jp3.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇯🇵 ⌈广停⌋ 海外｜日本4, server: jp4.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇯🇵 ⌈绿通⌋ 海外｜日本, server: 3.112.198.249, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇯🇵 ⌈绿通⌋ 海外｜日本2, server: 13.250.97.85, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇯🇵 ⌈绿通⌋ 海外｜日本3, server: 52.140.221.167, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇯🇵 ⌈绿通⌋ 海外｜日本4, server: 172.104.124.121, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇯🇵 日本(yudou66.com 玉豆分享), server: jp1.v2yyds.cc, port: 32111, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, sni: jp1.v2yyds.cc, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ⌈443⌋ 海外｜韩国, server: kr.dsaver.site, port: 443, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇰🇷 ⌈80⌋ 海外｜韩国, server: kr.dsaver.site, port: 80, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇰🇷 ⌈TCP⌋ 海外｜韩国, server: kr.dsaver.site, port: 1089, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ⌈广停⌋ 海外｜韩国, server: kr.dsaver.site, port: 1082, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
+  - {name: 🇰🇷 ⌈绿通⌋ 海外｜韩国, server: 3.38.140.92, port: 46794, type: vmess, uuid: 7ea0f0d4-2f7d-405e-acd6-8bfffa528194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇷🇺 俄罗斯(yudou66.com 玉豆分享), server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 俄罗斯(yudou66.com 玉豆分享) 2, server: 422wkl.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 422wkl.fans8.xyz}}, udp: true}
   - {name: 🇷🇺 ｜RU｜35, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国, server: sg2.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2, server: sg1.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3, server: sg1.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡(ios小火箭软件|ioskaka.com), server: sg2.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 3, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 5, server: sg3.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 6, server: sg1.v2yyds.cc, port: 32110, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡-tg频道：@bpjzx2 11, server: 183.232.56.182, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 🇸🇬 新加坡-tg频道：@bpjzx2 13, server: 183.232.56.182, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 🇸🇬 新加坡-tg频道：@bpjzx2 14, server: 120.232.190.86, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 🇸🇬 新加坡-tg频道：@bpjzx2 15, server: 120.233.185.189, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 🇸🇬 新加坡-tg频道：@bpjzx2 8, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 🇸🇬 新加坡-tg频道：@bpjzx2 9, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: 🇸🇬 新加坡(yudou66.com 玉豆分享), server: 523hk1.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 523hk1.fans8.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡(yudou66.com 玉豆分享) 2, server: 521sg.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 521sg.fans8.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡(yudou66.com 玉豆分享) 3, server: v2ray3.bonds.id, port: 443, type: vmess, uuid: 014291fb-3808-4ae8-9303-e1f40d58bb4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /howdy, headers: {Host: v2ray3.bonds.id}}, udp: true}
   - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国(ios小火箭软件|ioskaka.com) 3, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国(yudou66.com 玉豆分享), server: 51us.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 51us.fans8.xyz}}, udp: true}
+  - {name: 🇺🇸 美国(yudou66.com 玉豆分享) 2, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国(yudou66.com 玉豆分享) 3, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}, udp: true}
   - {name: 🇺🇸 美国-tg频道:@ripaojiedian, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 ｜US｜30, server: 45.137.97.205, port: 58000, type: trojan, password: 44ddff24-9b11-4879-8f70-7eb69c32e735, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 ｜US｜47, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
@@ -69,24 +103,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
       - DE_89 TG@peekfun | 1.65Mb
       - GB_91 TG@peekfun | 1.82Mb
       - JP_104 TG@peekfun | 3.05Mb
-      - JP_2386_19.50Mb |66.09Mb
       - RU_131 TG@peekfun | 6.78Mb
       - Relay__ 2.86Mb | 2.23Mb
-      - SG_2870_13.45Mb |47.87Mb
       - US_147 TG@peekfun | 3.19Mb
       - US_148 TG@peekfun | 2.68Mb
       - US_164 TG@peekfun | 4.25Mb
       - _1445_ 7.09Mb | 3.51Mb
-      - _1455_ 3.10Mb |17.63Mb
       - h3816tw.droplet.today:20443
-      - h63956.droplet.today:11445
-      - h63956.droplet.today:11545
       - h890361.droplet.today:11445
       - h890361.droplet.today:11545
       - h961359.droplet.today:11245
@@ -97,33 +123,75 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
+      - •国内节点软件点击测试没网正常，不影响使用
+      - •部分节点不定时随机下发，隐藏节点可正常使用
+      - ⌈TCP⌋ 华东｜镇江
+      - ⌈广停⌋ 华东｜镇江
+      - ⌈绿通⌋ 华东｜镇江
+      - 亚洲(yudou66.com 玉豆分享)
       - 频道有破解vpn防失联
+      - 🇨🇳 ⌈443⌋ 海外｜台湾
+      - 🇨🇳 ⌈80⌋ 海外｜台湾
+      - 🇨🇳 ⌈TCP⌋ 华东｜镇江2
+      - 🇨🇳 ⌈广停⌋ 华东｜镇江2
+      - 🇨🇳 ⌈广停⌋ 海外｜台湾
+      - 🇨🇳 ⌈绿通⌋ 华东｜镇江2
+      - 🇩🇪 德国(yudou66.com 玉豆分享)
       - 🇪🇺 欧洲(yudou66.com 玉豆分享)
-      - 🇭🇰 香港-tg频道：@bpjzx2 10
-      - 🇭🇰 香港-tg频道：@bpjzx2 17
-      - 🇭🇰 香港3-tg频道:@ripaojiedian
-      - 🇯🇵 日本-tg频道:@ripaojiedian
-      - 🇰🇷 南韩-tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@bpjzx2
-      - 🇰🇷 韩国-tg频道:@bpjzx2 2
+      - 🇪🇺 欧洲(yudou66.com 玉豆分享) 2
+      - 🇪🇺 欧洲(yudou66.com 玉豆分享) 3
+      - 🇬🇧 英国(yudou66.com 玉豆分享)
+      - 🇬🇧 英国(yudou66.com 玉豆分享) 2
+      - 🇭🇰 ⌈443⌋ 海外｜香港
+      - 🇭🇰 ⌈443⌋ 海外｜香港2
+      - 🇭🇰 ⌈80⌋ 海外｜香港
+      - 🇭🇰 ⌈80⌋ 海外｜香港2
+      - 🇭🇰 ⌈TCP⌋ 海外｜香港
+      - 🇭🇰 ⌈TCP⌋ 海外｜香港2
+      - 🇭🇰 ⌈广停⌋ 海外｜香港
+      - 🇭🇰 ⌈广停⌋ 海外｜香港2
+      - 🇭🇰 ⌈绿通⌋ 海外｜香港
+      - 🇭🇰 ⌈绿通⌋ 海外｜香港2
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇯🇵 ⌈443⌋ 海外｜日本
+      - 🇯🇵 ⌈443⌋ 海外｜日本2
+      - 🇯🇵 ⌈443⌋ 海外｜日本3
+      - 🇯🇵 ⌈443⌋ 海外｜日本4
+      - 🇯🇵 ⌈80⌋ 海外｜日本
+      - 🇯🇵 ⌈80⌋ 海外｜日本2
+      - 🇯🇵 ⌈80⌋ 海外｜日本3
+      - 🇯🇵 ⌈80⌋ 海外｜日本4
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本2
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本3
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本4
+      - 🇯🇵 ⌈广停⌋ 海外｜日本
+      - 🇯🇵 ⌈广停⌋ 海外｜日本2
+      - 🇯🇵 ⌈广停⌋ 海外｜日本3
+      - 🇯🇵 ⌈广停⌋ 海外｜日本4
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本2
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本3
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本4
+      - 🇯🇵 日本(yudou66.com 玉豆分享)
+      - 🇰🇷 ⌈443⌋ 海外｜韩国
+      - 🇰🇷 ⌈80⌋ 海外｜韩国
+      - 🇰🇷 ⌈TCP⌋ 海外｜韩国
+      - 🇰🇷 ⌈广停⌋ 海外｜韩国
+      - 🇰🇷 ⌈绿通⌋ 海外｜韩国
+      - 🇷🇺 俄罗斯(yudou66.com 玉豆分享)
+      - 🇷🇺 俄罗斯(yudou66.com 玉豆分享) 2
       - 🇷🇺 ｜RU｜35
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com)
       - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 3
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 5
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 6
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 11
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 13
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 14
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 15
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 8
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 9
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享)
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享) 2
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享) 3
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
       - 🇺🇸 美国(ios小火箭软件|ioskaka.com) 3
+      - 🇺🇸 美国(yudou66.com 玉豆分享)
+      - 🇺🇸 美国(yudou66.com 玉豆分享) 2
+      - 🇺🇸 美国(yudou66.com 玉豆分享) 3
       - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇺🇸 ｜US｜30
       - 🇺🇸 ｜US｜47
   - name: ♻️ 自动选择
     type: url-test
@@ -132,24 +200,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
       - DE_89 TG@peekfun | 1.65Mb
       - GB_91 TG@peekfun | 1.82Mb
       - JP_104 TG@peekfun | 3.05Mb
-      - JP_2386_19.50Mb |66.09Mb
       - RU_131 TG@peekfun | 6.78Mb
       - Relay__ 2.86Mb | 2.23Mb
-      - SG_2870_13.45Mb |47.87Mb
       - US_147 TG@peekfun | 3.19Mb
       - US_148 TG@peekfun | 2.68Mb
       - US_164 TG@peekfun | 4.25Mb
       - _1445_ 7.09Mb | 3.51Mb
-      - _1455_ 3.10Mb |17.63Mb
       - h3816tw.droplet.today:20443
-      - h63956.droplet.today:11445
-      - h63956.droplet.today:11545
       - h890361.droplet.today:11445
       - h890361.droplet.today:11545
       - h961359.droplet.today:11245
@@ -160,33 +220,75 @@ proxy-groups:
       - h961684.droplet.today:11345
       - h961684.droplet.today:11445
       - h961684.droplet.today:11745
+      - •国内节点软件点击测试没网正常，不影响使用
+      - •部分节点不定时随机下发，隐藏节点可正常使用
+      - ⌈TCP⌋ 华东｜镇江
+      - ⌈广停⌋ 华东｜镇江
+      - ⌈绿通⌋ 华东｜镇江
+      - 亚洲(yudou66.com 玉豆分享)
       - 频道有破解vpn防失联
+      - 🇨🇳 ⌈443⌋ 海外｜台湾
+      - 🇨🇳 ⌈80⌋ 海外｜台湾
+      - 🇨🇳 ⌈TCP⌋ 华东｜镇江2
+      - 🇨🇳 ⌈广停⌋ 华东｜镇江2
+      - 🇨🇳 ⌈广停⌋ 海外｜台湾
+      - 🇨🇳 ⌈绿通⌋ 华东｜镇江2
+      - 🇩🇪 德国(yudou66.com 玉豆分享)
       - 🇪🇺 欧洲(yudou66.com 玉豆分享)
-      - 🇭🇰 香港-tg频道：@bpjzx2 10
-      - 🇭🇰 香港-tg频道：@bpjzx2 17
-      - 🇭🇰 香港3-tg频道:@ripaojiedian
-      - 🇯🇵 日本-tg频道:@ripaojiedian
-      - 🇰🇷 南韩-tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@bpjzx2
-      - 🇰🇷 韩国-tg频道:@bpjzx2 2
+      - 🇪🇺 欧洲(yudou66.com 玉豆分享) 2
+      - 🇪🇺 欧洲(yudou66.com 玉豆分享) 3
+      - 🇬🇧 英国(yudou66.com 玉豆分享)
+      - 🇬🇧 英国(yudou66.com 玉豆分享) 2
+      - 🇭🇰 ⌈443⌋ 海外｜香港
+      - 🇭🇰 ⌈443⌋ 海外｜香港2
+      - 🇭🇰 ⌈80⌋ 海外｜香港
+      - 🇭🇰 ⌈80⌋ 海外｜香港2
+      - 🇭🇰 ⌈TCP⌋ 海外｜香港
+      - 🇭🇰 ⌈TCP⌋ 海外｜香港2
+      - 🇭🇰 ⌈广停⌋ 海外｜香港
+      - 🇭🇰 ⌈广停⌋ 海外｜香港2
+      - 🇭🇰 ⌈绿通⌋ 海外｜香港
+      - 🇭🇰 ⌈绿通⌋ 海外｜香港2
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
+      - 🇯🇵 ⌈443⌋ 海外｜日本
+      - 🇯🇵 ⌈443⌋ 海外｜日本2
+      - 🇯🇵 ⌈443⌋ 海外｜日本3
+      - 🇯🇵 ⌈443⌋ 海外｜日本4
+      - 🇯🇵 ⌈80⌋ 海外｜日本
+      - 🇯🇵 ⌈80⌋ 海外｜日本2
+      - 🇯🇵 ⌈80⌋ 海外｜日本3
+      - 🇯🇵 ⌈80⌋ 海外｜日本4
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本2
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本3
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本4
+      - 🇯🇵 ⌈广停⌋ 海外｜日本
+      - 🇯🇵 ⌈广停⌋ 海外｜日本2
+      - 🇯🇵 ⌈广停⌋ 海外｜日本3
+      - 🇯🇵 ⌈广停⌋ 海外｜日本4
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本2
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本3
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本4
+      - 🇯🇵 日本(yudou66.com 玉豆分享)
+      - 🇰🇷 ⌈443⌋ 海外｜韩国
+      - 🇰🇷 ⌈80⌋ 海外｜韩国
+      - 🇰🇷 ⌈TCP⌋ 海外｜韩国
+      - 🇰🇷 ⌈广停⌋ 海外｜韩国
+      - 🇰🇷 ⌈绿通⌋ 海外｜韩国
+      - 🇷🇺 俄罗斯(yudou66.com 玉豆分享)
+      - 🇷🇺 俄罗斯(yudou66.com 玉豆分享) 2
       - 🇷🇺 ｜RU｜35
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com)
       - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 3
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 5
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 6
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 11
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 13
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 14
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 15
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 8
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 9
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享)
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享) 2
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享) 3
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
       - 🇺🇸 美国(ios小火箭软件|ioskaka.com) 3
+      - 🇺🇸 美国(yudou66.com 玉豆分享)
+      - 🇺🇸 美国(yudou66.com 玉豆分享) 2
+      - 🇺🇸 美国(yudou66.com 玉豆分享) 3
       - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇺🇸 ｜US｜30
       - 🇺🇸 ｜US｜47
   - name: 👉 国内网站
     type: select
@@ -233,9 +335,17 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇭🇰 香港-tg频道：@bpjzx2 10
-      - 🇭🇰 香港-tg频道：@bpjzx2 17
-      - 🇭🇰 香港3-tg频道:@ripaojiedian
+      - 🇭🇰 ⌈443⌋ 海外｜香港
+      - 🇭🇰 ⌈443⌋ 海外｜香港2
+      - 🇭🇰 ⌈80⌋ 海外｜香港
+      - 🇭🇰 ⌈80⌋ 海外｜香港2
+      - 🇭🇰 ⌈TCP⌋ 海外｜香港
+      - 🇭🇰 ⌈TCP⌋ 海外｜香港2
+      - 🇭🇰 ⌈广停⌋ 海外｜香港
+      - 🇭🇰 ⌈广停⌋ 海外｜香港2
+      - 🇭🇰 ⌈绿通⌋ 海外｜香港
+      - 🇭🇰 ⌈绿通⌋ 海外｜香港2
+      - 🇭🇰 香港(yudou66.com 玉豆分享)
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -243,8 +353,27 @@ proxy-groups:
     tolerance: 100
     proxies:
       - JP_104 TG@peekfun | 3.05Mb
-      - JP_2386_19.50Mb |66.09Mb
-      - 🇯🇵 日本-tg频道:@ripaojiedian
+      - 🇯🇵 ⌈443⌋ 海外｜日本
+      - 🇯🇵 ⌈443⌋ 海外｜日本2
+      - 🇯🇵 ⌈443⌋ 海外｜日本3
+      - 🇯🇵 ⌈443⌋ 海外｜日本4
+      - 🇯🇵 ⌈80⌋ 海外｜日本
+      - 🇯🇵 ⌈80⌋ 海外｜日本2
+      - 🇯🇵 ⌈80⌋ 海外｜日本3
+      - 🇯🇵 ⌈80⌋ 海外｜日本4
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本2
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本3
+      - 🇯🇵 ⌈TCP⌋ 海外｜日本4
+      - 🇯🇵 ⌈广停⌋ 海外｜日本
+      - 🇯🇵 ⌈广停⌋ 海外｜日本2
+      - 🇯🇵 ⌈广停⌋ 海外｜日本3
+      - 🇯🇵 ⌈广停⌋ 海外｜日本4
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本2
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本3
+      - 🇯🇵 ⌈绿通⌋ 海外｜日本4
+      - 🇯🇵 日本(yudou66.com 玉豆分享)
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -254,13 +383,12 @@ proxy-groups:
       - US_147 TG@peekfun | 3.19Mb
       - US_148 TG@peekfun | 2.68Mb
       - US_164 TG@peekfun | 4.25Mb
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
       - 🇺🇸 美国(ios小火箭软件|ioskaka.com) 3
+      - 🇺🇸 美国(yudou66.com 玉豆分享)
+      - 🇺🇸 美国(yudou66.com 玉豆分享) 2
+      - 🇺🇸 美国(yudou66.com 玉豆分享) 3
       - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇺🇸 ｜US｜30
       - 🇺🇸 ｜US｜47
   - name: 🇹🇼 台湾节点
     type: url-test
@@ -268,39 +396,38 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇨🇳 ⌈443⌋ 海外｜台湾
+      - 🇨🇳 ⌈80⌋ 海外｜台湾
+      - 🇨🇳 ⌈广停⌋ 海外｜台湾
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - SG_2870_13.45Mb |47.87Mb
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国 3
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com)
       - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 3
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 5
-      - 🇸🇬 新加坡(ios小火箭软件|ioskaka.com) 6
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 11
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 13
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 14
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 15
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 8
-      - 🇸🇬 新加坡-tg频道：@bpjzx2 9
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享)
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享) 2
+      - 🇸🇬 新加坡(yudou66.com 玉豆分享) 3
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇰🇷 南韩-tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@bpjzx2
-      - 🇰🇷 韩国-tg频道:@bpjzx2 2
+      - 🇰🇷 ⌈443⌋ 海外｜韩国
+      - 🇰🇷 ⌈80⌋ 海外｜韩国
+      - 🇰🇷 ⌈TCP⌋ 海外｜韩国
+      - 🇰🇷 ⌈广停⌋ 海外｜韩国
+      - 🇰🇷 ⌈绿通⌋ 海外｜韩国
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇩🇪 德国(yudou66.com 玉豆分享)
+      - 🇬🇧 英国(yudou66.com 玉豆分享)
+      - 🇬🇧 英国(yudou66.com 玉豆分享) 2
+      - 🇷🇺 俄罗斯(yudou66.com 玉豆分享)
+      - 🇷🇺 俄罗斯(yudou66.com 玉豆分享) 2
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
   - name: 📲 聊天软件
     type: select

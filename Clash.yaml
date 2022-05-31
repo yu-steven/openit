@@ -5,1011 +5,990 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "#", server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22tms.dingtalk.com%22%7D"}}, udp: true}
-  - {name: "##", server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22tms.dingtalk.com%22%7D"}}, udp: true}
-  - {name: "###", server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22tms.dingtalk.com%22%7D"}}, udp: true}
-  - {name: AE_01 TG@peekfun | 6.26Mb, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: AE_02 TG@peekfun | 7.06Mb, server: 217.138.193.6, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: AE_03 TG@peekfun | 6.55Mb, server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: AU_04 TG@peekfun | 8.40Mb, server: 185.167.116.38, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: AU_07 TG@peekfun | 7.97Mb, server: 185.167.116.38, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: AU_08 TG@peekfun | 1.94Mb, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: AU_11 TG@peekfun | 8.01Mb, server: 185.167.116.38, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: AU_12 TG@peekfun | 2.37Mb, server: 185.167.116.252, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: AU_13 TG@peekfun | 8.14Mb, server: 185.167.116.38, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: AU_15 TG@peekfun | 1.87Mb, server: 185.167.116.253, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: AU_17 TG@peekfun | 3.36Mb, server: 185.167.116.252, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: AU_18 TG@peekfun | 3.22Mb, server: 185.167.116.252, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: AU_19 TG@peekfun | 2.51Mb, server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: AU_20 TG@peekfun | 4.19Mb, server: 185.167.116.252, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: AU_21 TG@peekfun | 2.19Mb, server: 185.167.116.252, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: AU_23 TG@peekfun | 8.01Mb, server: 185.167.116.38, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: AU_24 TG@peekfun | 3.75Mb, server: 185.167.116.252, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: AU_27 TG@peekfun | 8.35Mb, server: 185.167.116.38, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: AU_28 TG@peekfun | 8.69Mb, server: 185.167.116.38, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: AU_31 TG@peekfun | 2.02Mb, server: 185.167.116.252, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: AU_32 TG@peekfun | 5.64Mb, server: 185.167.116.252, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: AU_33 TG@peekfun | 1.95Mb, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: AU_35 TG@peekfun | 7.99Mb, server: 43.200.6.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: AU_38 TG@peekfun | 7.96Mb, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_100 TG@peekfun | 2.06Mb, server: 14.29.124.174, port: 11050, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_101 TG@peekfun | 6.83Mb, server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_102 TG@peekfun |30.84Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_103 TG@peekfun | 2.71Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_104 TG@peekfun |43.50Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_105 TG@peekfun | 8.41Mb, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_106 TG@peekfun |11.38Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_107 TG@peekfun |11.50Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_108 TG@peekfun | 8.81Mb, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_109 TG@peekfun |21.34Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_110 TG@peekfun |98.00Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_111 TG@peekfun |41.69Mb, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_112 TG@peekfun | 7.28Mb, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_113 TG@peekfun | 7.35Mb, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: CN_114 TG@peekfun |21.10Mb, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: CN_115 TG@peekfun |54.38Mb, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: CN_118 TG@peekfun |33.67Mb, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_121 TG@peekfun | 6.18Mb, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: CN_173 |34.68Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_177 |43.70Mb, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_178 |48.10Mb, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_181 | 8.73Mb, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_186 |17.59Mb, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_187 |30.33Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_193 |33.42Mb, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_196 |15.05Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_197 |47.58Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_198 |14.22Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_2_16@1, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_4_16@3, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_5_16@4, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_67 TG@peekfun |57.74Mb, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_68 TG@peekfun |58.19Mb, server: 14.29.124.174, port: 11011, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_69 TG@peekfun | 2.34Mb, server: 14.29.124.174, port: 11035, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_70 TG@peekfun |66.99Mb, server: 14.29.124.174, port: 11047, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_73 TG@peekfun |59.97Mb, server: 14.29.124.174, port: 11041, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_74 TG@peekfun | 1.82Mb, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_75 TG@peekfun |62.38Mb, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_76 TG@peekfun |11.84Mb, server: 180.163.62.91, port: 10065, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_77 TG@peekfun |60.34Mb, server: 14.29.124.174, port: 11002, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_80 TG@peekfun | 2.27Mb, server: 14.29.124.174, port: 11009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_81 TG@peekfun |59.44Mb, server: 14.29.124.174, port: 11010, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_82 TG@peekfun | 1.17Mb, server: 14.29.124.174, port: 11012, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_84 TG@peekfun |62.79Mb, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_85 TG@peekfun |57.71Mb, server: 14.29.124.174, port: 11018, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_86 TG@peekfun |55.57Mb, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_87 TG@peekfun | 1.82Mb, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_88 TG@peekfun |60.50Mb, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_89 TG@peekfun | 1.90Mb, server: 14.29.124.174, port: 11036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_90 TG@peekfun | 2.36Mb, server: 14.29.124.174, port: 11037, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_92 TG@peekfun | 2.76Mb, server: 14.29.124.174, port: 11039, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_94 TG@peekfun | 2.09Mb, server: 14.29.124.174, port: 11042, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_95 TG@peekfun |54.67Mb, server: 14.29.124.174, port: 11043, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_97 TG@peekfun |56.95Mb, server: 14.29.124.174, port: 11046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CZ_124 TG@peekfun | 5.49Mb, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, skip-cert-verify: true, udp: true}
-  - {name: DE_125 TG@peekfun |26.99Mb, server: 5.183.179.141, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: DE_128 TG@peekfun | 2.07Mb, server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: DE_129 TG@peekfun | 2.32Mb, server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: DE_130 TG@peekfun | 2.39Mb, server: 5.183.179.170, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: DE_132 TG@peekfun | 5.56Mb, server: 5.183.179.137, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: DE_133 TG@peekfun | 2.27Mb, server: 5.183.179.170, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: DE_134 TG@peekfun |26.75Mb, server: 5.183.179.141, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: DE_135 TG@peekfun | 2.20Mb, server: 5.183.179.148, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: DE_136 TG@peekfun | 1.95Mb, server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: DE_137 TG@peekfun | 3.64Mb, server: 5.183.179.170, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: DE_138 TG@peekfun |27.55Mb, server: 5.183.179.141, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: DE_139 TG@peekfun |23.80Mb, server: 5.183.179.141, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: DE_146 TG@peekfun | 1.87Mb, server: 5.183.179.166, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: DE_148 TG@peekfun | 2.05Mb, server: 5.183.179.139, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: DE_150 TG@peekfun |15.00Mb, server: 5.183.179.141, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: DE_153 TG@peekfun | 2.39Mb, server: s4.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: GB_156 TG@peekfun |21.72Mb, server: 185.167.117.171, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: GB_157 TG@peekfun | 2.42Mb, server: s4.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: JP_174 TG@peekfun | 4.30Mb, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: JP_184 TG@peekfun |26.07Mb, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
-  - {name: KR_187 TG@peekfun | 6.51Mb, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
-  - {name: LT_189 TG@peekfun | 4.36Mb, server: 213.183.63.219, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: LT_190 TG@peekfun |36.58Mb, server: 213.183.53.202, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: LT_192 TG@peekfun | 8.09Mb, server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: LT_195 TG@peekfun |27.38Mb, server: 213.183.53.200, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: LT_197 TG@peekfun |34.52Mb, server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: LT_199 TG@peekfun |31.22Mb, server: 213.183.53.200, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: LT_201 TG@peekfun |35.67Mb, server: 213.183.53.208, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: LT_203 TG@peekfun | 2.66Mb, server: 213.183.63.218, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: LT_205 TG@peekfun |18.44Mb, server: 213.183.53.208, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: LT_206 TG@peekfun | 2.24Mb, server: 213.183.63.218, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: LT_209 TG@peekfun |34.50Mb, server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: LT_210 TG@peekfun |15.88Mb, server: 213.183.53.200, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: LT_211 TG@peekfun |10.85Mb, server: 213.183.53.200, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: LT_214 TG@peekfun | 6.62Mb, server: 213.183.53.177, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: LT_216 TG@peekfun |16.61Mb, server: 213.183.53.200, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: LT_217 TG@peekfun |16.82Mb, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: LT_218 TG@peekfun |15.09Mb, server: 213.183.53.200, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: LT_219 TG@peekfun |35.06Mb, server: 213.183.53.200, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: LT_220 TG@peekfun |34.99Mb, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: LT_221 TG@peekfun |29.02Mb, server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: LT_223 TG@peekfun |27.99Mb, server: 213.183.53.200, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: LT_224 TG@peekfun |22.05Mb, server: 213.183.53.200, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: LT_225 TG@peekfun |33.40Mb, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: LT_226 TG@peekfun | 5.52Mb, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: LT_227 TG@peekfun |32.46Mb, server: 213.183.53.200, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: LT_489 |10.69Mb, server: 213.183.63.218, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: NL_228 TG@peekfun |16.12Mb, server: 213.183.59.211, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: NL_229 TG@peekfun | 8.14Mb, server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: NL_230 TG@peekfun | 7.83Mb, server: 213.183.51.171, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: NL_231 TG@peekfun | 5.07Mb, server: 213.183.51.171, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: NL_232 TG@peekfun | 5.51Mb, server: 213.183.51.171, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: NL_233 TG@peekfun | 5.19Mb, server: 213.183.51.171, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: NL_234 TG@peekfun | 8.13Mb, server: 213.183.51.171, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: NL_235 TG@peekfun | 4.44Mb, server: 213.183.51.171, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: NL_237 TG@peekfun |24.18Mb, server: 213.183.51.172, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: NL_238 TG@peekfun |12.88Mb, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: NL_239 TG@peekfun |13.48Mb, server: 213.183.59.229, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: NL_241 TG@peekfun |11.91Mb, server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: NL_242 TG@peekfun |13.63Mb, server: 213.183.51.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: NL_243 TG@peekfun | 8.66Mb, server: 213.183.51.172, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: NL_244 TG@peekfun |10.53Mb, server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: NL_245 TG@peekfun |20.83Mb, server: 213.183.59.206, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: NL_246 TG@peekfun |22.76Mb, server: 213.183.51.172, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: NL_247 TG@peekfun |23.92Mb, server: 213.183.51.172, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: NL_248 TG@peekfun |25.28Mb, server: 213.183.59.206, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: NL_249 TG@peekfun |21.46Mb, server: 213.183.59.211, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: NL_250 TG@peekfun |10.18Mb, server: 213.183.51.171, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: NL_251 TG@peekfun |10.06Mb, server: 213.183.59.229, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: NL_252 TG@peekfun |23.85Mb, server: 213.183.51.172, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: NL_253 TG@peekfun |24.30Mb, server: 213.183.59.206, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: NL_254 TG@peekfun |18.84Mb, server: 213.183.59.211, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: NL_255 TG@peekfun |11.20Mb, server: 213.183.51.171, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: NL_257 TG@peekfun |23.55Mb, server: 213.183.59.206, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: NL_258 TG@peekfun |12.15Mb, server: 213.183.59.211, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: NL_259 TG@peekfun |31.01Mb, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: NL_260 TG@peekfun | 4.80Mb, server: 213.183.59.190, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: NL_261 TG@peekfun |12.97Mb, server: 213.183.59.211, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: NL_262 TG@peekfun | 9.22Mb, server: 213.183.51.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: NL_263 TG@peekfun | 5.31Mb, server: 213.183.51.171, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: NL_264 TG@peekfun |24.37Mb, server: 213.183.59.206, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: NL_265 TG@peekfun | 6.35Mb, server: 213.183.51.171, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: NL_266 TG@peekfun |12.23Mb, server: 213.183.51.171, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: NL_267 TG@peekfun | 5.39Mb, server: 213.183.51.171, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: NL_268 TG@peekfun | 4.55Mb, server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: NL_269 TG@peekfun |24.45Mb, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: NL_270 TG@peekfun | 4.99Mb, server: 213.183.51.171, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: NL_271 TG@peekfun | 5.61Mb, server: 213.183.51.171, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: NL_272 TG@peekfun | 7.35Mb, server: 213.183.51.171, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: NL_273 TG@peekfun | 5.00Mb, server: 213.183.51.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: NL_274 TG@peekfun | 8.24Mb, server: 213.183.51.171, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: NL_275 TG@peekfun |12.37Mb, server: 213.183.59.229, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: NL_276 TG@peekfun | 8.11Mb, server: 213.183.51.171, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: NL_277 TG@peekfun |23.77Mb, server: 213.183.51.172, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: NL_278 TG@peekfun | 9.44Mb, server: 213.183.59.211, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: NL_279 TG@peekfun |11.93Mb, server: 213.183.59.211, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: NL_280 TG@peekfun |23.56Mb, server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: NL_281 TG@peekfun | 2.31Mb, server: 213.183.59.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: NL_282 TG@peekfun | 5.12Mb, server: 213.183.59.214, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: NL_283 TG@peekfun |13.49Mb, server: 213.183.59.211, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: NL_285 TG@peekfun |23.76Mb, server: 213.183.59.206, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: RO_293 TG@peekfun | 2.09Mb, server: 185.126.116.117, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: RO_297 TG@peekfun | 9.11Mb, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: RU_2686_ 3.46Mb | 7.01Mb, server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: RU_302 TG@peekfun | 5.92Mb, server: 217.30.10.63, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: RU_303 TG@peekfun | 1.60Mb, server: 217.30.10.66, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: RU_305 TG@peekfun | 8.12Mb, server: 217.30.10.65, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: RU_308 TG@peekfun | 2.42Mb, server: 217.30.10.64, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: RU_312 TG@peekfun | 3.50Mb, server: 217.30.10.65, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: RU_316 TG@peekfun | 9.96Mb, server: 217.30.10.68, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: RU_320 TG@peekfun |10.01Mb, server: 217.30.10.64, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: RU_321 TG@peekfun |27.29Mb, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: RU_333 TG@peekfun |11.39Mb, server: 217.30.10.63, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: RU_339 TG@peekfun | 2.46Mb, server: 217.30.10.65, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: RU_341 TG@peekfun | 2.29Mb, server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: RU_342 TG@peekfun | 2.03Mb, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: RU_346 TG@peekfun | 8.52Mb, server: 217.30.10.64, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: RU_349 TG@peekfun |11.18Mb, server: 217.30.10.63, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: RU_356 TG@peekfun | 6.96Mb, server: 217.30.10.64, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: RU_357 TG@peekfun | 3.72Mb, server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: RU_360 TG@peekfun | 5.02Mb, server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: RU_363 TG@peekfun |10.04Mb, server: 217.30.10.65, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: RU_371 TG@peekfun |11.02Mb, server: 217.30.10.65, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: RU_373 TG@peekfun |10.49Mb, server: 217.30.10.63, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: RU_374 TG@peekfun |10.43Mb, server: 217.30.10.63, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: RU_382 TG@peekfun |10.94Mb, server: 217.30.10.66, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: RU_383 TG@peekfun | 5.09Mb, server: 217.30.10.63, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: RU_386 TG@peekfun |10.76Mb, server: 217.30.10.66, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: RU_41_16@40, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: RU_630 | 2.43Mb, server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: RU_637 | 2.49Mb, server: 217.30.10.64, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: RU_644 | 5.80Mb, server: 217.30.10.68, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: RU_656 | 5.13Mb, server: 217.30.10.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: RU_660 |19.72Mb, server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: RU_668 | 6.72Mb, server: 217.30.10.66, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: RU_677 | 6.33Mb, server: 217.30.10.67, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: RU_679 | 5.07Mb, server: 217.30.10.67, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: RU_694 |11.21Mb, server: 217.30.10.67, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: RU_740 | 2.39Mb, server: 217.30.10.63, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: UA_405 TG@peekfun | 8.03Mb, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
-  - {name: UA_406 TG@peekfun | 2.29Mb, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
-  - {name: UA_407 TG@peekfun | 5.91Mb, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, skip-cert-verify: true, udp: true}
-  - {name: UA_408 TG@peekfun | 6.36Mb, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, skip-cert-verify: true, udp: true}
-  - {name: UA_409 TG@peekfun | 6.68Mb, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: true, udp: true}
-  - {name: US5, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: US_410 TG@peekfun |31.91Mb, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_411 TG@peekfun |34.30Mb, server: 167.88.61.175, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_412 TG@peekfun |34.42Mb, server: 167.88.61.175, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_413 TG@peekfun |33.17Mb, server: 167.88.61.175, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_414 TG@peekfun |31.18Mb, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_415 TG@peekfun |20.54Mb, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_416 TG@peekfun | 5.65Mb, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_417 TG@peekfun |33.54Mb, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_418 TG@peekfun |33.70Mb, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_419 TG@peekfun |28.78Mb, server: 167.88.61.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_420 TG@peekfun |33.71Mb, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_421 TG@peekfun |33.14Mb, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_422 TG@peekfun | 8.38Mb, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_423 TG@peekfun | 8.33Mb, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_424 TG@peekfun |10.27Mb, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_425 TG@peekfun |20.25Mb, server: 167.88.63.82, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_426 TG@peekfun | 9.56Mb, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_427 TG@peekfun |13.53Mb, server: 167.88.63.82, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_428 TG@peekfun |28.76Mb, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_429 TG@peekfun |32.44Mb, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_430 TG@peekfun |27.27Mb, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_431 TG@peekfun |26.83Mb, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_432 TG@peekfun | 7.52Mb, server: 167.172.135.97, port: 25453, type: ss, cipher: aes-256-cfb, password: a40ff797db5c4b948cfe5a5234a0e74c, udp: true}
-  - {name: US_434 TG@peekfun |29.26Mb, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_435 TG@peekfun |27.00Mb, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_436 TG@peekfun |32.96Mb, server: 167.88.61.175, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_437 TG@peekfun |28.58Mb, server: 38.68.134.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_438 TG@peekfun |33.61Mb, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_439 TG@peekfun |26.53Mb, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_440 TG@peekfun |34.09Mb, server: 167.88.61.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_441 TG@peekfun |25.65Mb, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_442 TG@peekfun |10.84Mb, server: 167.88.61.175, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_443 TG@peekfun |19.31Mb, server: 167.88.63.82, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_444 TG@peekfun |22.58Mb, server: 167.88.63.82, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_445 TG@peekfun |20.55Mb, server: 167.88.63.82, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_446 TG@peekfun |17.46Mb, server: 167.88.63.82, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_447 TG@peekfun |14.30Mb, server: 167.88.63.82, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_448 TG@peekfun |23.11Mb, server: 167.88.63.82, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_449 TG@peekfun | 7.39Mb, server: 38.114.114.69, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_450 TG@peekfun |28.90Mb, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_451 TG@peekfun |29.21Mb, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_452 TG@peekfun |31.16Mb, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_453 TG@peekfun |32.33Mb, server: 38.114.114.67, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_454 TG@peekfun |23.32Mb, server: 38.114.114.67, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_455 TG@peekfun |32.47Mb, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_456 TG@peekfun |28.81Mb, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_457 TG@peekfun |31.17Mb, server: 38.114.114.67, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_458 TG@peekfun |30.51Mb, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_459 TG@peekfun | 8.96Mb, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_460 TG@peekfun |28.35Mb, server: 38.114.114.67, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_461 TG@peekfun | 9.93Mb, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_462 TG@peekfun | 7.68Mb, server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_463 TG@peekfun |31.37Mb, server: 38.114.114.67, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_464 TG@peekfun |31.66Mb, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_465 TG@peekfun |10.89Mb, server: 38.114.114.67, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_466 TG@peekfun |32.19Mb, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_467 TG@peekfun |26.39Mb, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_468 TG@peekfun |26.63Mb, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_469 TG@peekfun |28.50Mb, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_46_16@45, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
-  - {name: US_476 TG@peekfun | 8.58Mb, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
-  - {name: US_479 TG@peekfun | 6.19Mb, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: US_480 TG@peekfun | 5.52Mb, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: US_492 TG@peekfun | 3.25Mb, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
-  - {name: US_495 TG@peekfun | 7.40Mb, server: living.starspace.link, port: 443, type: trojan, password: NNhSlVRhte1Vzw5D, skip-cert-verify: true, udp: true}
-  - {name: US_497 TG@peekfun | 2.38Mb, server: snacks.starspace.link, port: 443, type: trojan, password: 0lbw6RXSl7eqCYMv, skip-cert-verify: true, udp: true}
-  - {name: US_502 TG@peekfun |19.52Mb, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
-  - {name: ZZ_510 TG@peekfun |33.23Mb, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_511 TG@peekfun |34.71Mb, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ_512 TG@peekfun |15.05Mb, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_513 TG@peekfun |23.72Mb, server: 169.197.141.15, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_514 TG@peekfun |17.39Mb, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_515 TG@peekfun |12.45Mb, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_516 TG@peekfun |32.55Mb, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_517 TG@peekfun |33.97Mb, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_518 TG@peekfun |16.51Mb, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_519 TG@peekfun |31.16Mb, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_520 TG@peekfun |29.76Mb, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_521 TG@peekfun |29.71Mb, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_522 TG@peekfun |32.59Mb, server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_523 TG@peekfun |29.81Mb, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_524 TG@peekfun |34.99Mb, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ_525 TG@peekfun |12.35Mb, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_526 TG@peekfun |31.33Mb, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_527 TG@peekfun |23.29Mb, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_528 TG@peekfun | 6.63Mb, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_529 TG@peekfun |30.00Mb, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_530 TG@peekfun |32.89Mb, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_531 TG@peekfun |26.77Mb, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_532 TG@peekfun |33.78Mb, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_533 TG@peekfun | 7.70Mb, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_534 TG@peekfun | 9.62Mb, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_536 TG@peekfun | 9.66Mb, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_537 TG@peekfun | 3.45Mb, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: ZZ_538 TG@peekfun | 3.08Mb, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 2, server: jp1.v2yyds.cc, port: 32111, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_167 |53.24Mb, server: 14.29.124.174, port: 11007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇯🇵 _JP_日本->🇺🇸_US_美国_1_9@15, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 _JP_日本->🇺🇸_US_美国_3_9@21, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇭 Bangkok - Thailand | STREAM | 1x, server: hkbn.jinxnet.xyz, port: 33944, type: vmess, uuid: 427bcba3-b7d4-3d6d-b334-8b684fa57d72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /helloworld, headers: {Host: "%7B%22Host%22:%22hkbn.jinxnet.xyz%22%7D"}}, udp: true}
-  - {name: 🇹🇷 Istanbul - Turkey | Media | 1.5x, server: azhk.102498.eu.org, port: 23941, type: vmess, uuid: 427bcba3-b7d4-3d6d-b334-8b684fa57d72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /helloworld, headers: {Host: "%7B%22Host%22:%22ist-tur.jinxnet.xyz%22%7D"}}, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1514 |29.80Mb, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
+  - {name: ｜AE｜openit.ml｜322, server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: ｜AE｜openit.ml｜323, server: 217.138.193.6, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: ｜AE｜openit.ml｜324, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: ｜BG｜openit.ml｜200, server: 213.183.63.218, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: ｜BG｜openit.ml｜216, server: 213.183.63.218, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: ｜BG｜openit.ml｜218, server: 213.183.63.218, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: ｜BG｜openit.ml｜225, server: 213.183.63.219, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: ｜CH｜openit.ml｜145, server: 185.126.116.117, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: ｜CZ｜openit.ml｜103, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: true, udp: true}
+  - {name: ｜CZ｜openit.ml｜104, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, skip-cert-verify: true, udp: true}
+  - {name: ｜CZ｜openit.ml｜105, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, skip-cert-verify: true, udp: true}
+  - {name: ｜CZ｜openit.ml｜106, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
+  - {name: ｜CZ｜openit.ml｜107, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
+  - {name: ｜CZ｜openit.ml｜247, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, skip-cert-verify: true, udp: true}
+  - {name: ｜RO｜openit.ml｜144, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜301, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜303, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜304, server: 185.167.116.252, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜305, server: 185.167.116.252, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜306, server: 185.167.116.38, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜307, server: 185.167.116.38, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜308, server: 185.167.116.252, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜309, server: 185.167.116.38, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜310, server: 185.167.116.252, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜311, server: 185.167.116.252, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜312, server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜313, server: 185.167.116.252, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜314, server: 185.167.116.252, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜315, server: 185.167.116.253, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜316, server: 185.167.116.38, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜317, server: 185.167.116.252, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜318, server: 185.167.116.38, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜319, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜320, server: 185.167.116.38, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: 🇦🇺 ｜AU｜openit.ml｜321, server: 185.167.116.38, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜248, server: 14.29.124.174, port: 11046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜249, server: 14.29.124.174, port: 11043, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜250, server: 14.29.124.174, port: 11042, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜251, server: 14.29.124.174, port: 11039, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜252, server: 14.29.124.174, port: 11037, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜253, server: 14.29.124.174, port: 11036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜254, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜255, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜256, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜257, server: 14.29.124.174, port: 11018, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜258, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜259, server: 14.29.124.174, port: 11012, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜260, server: 14.29.124.174, port: 11010, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜261, server: 14.29.124.174, port: 11009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜262, server: 14.29.124.174, port: 11002, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜263, server: 180.163.62.91, port: 10065, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜264, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜265, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜266, server: 14.29.124.174, port: 11041, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜267, server: 14.29.124.174, port: 11047, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜268, server: 14.29.124.174, port: 11035, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜269, server: 14.29.124.174, port: 11011, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜270, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜271, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜272, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜273, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜274, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜275, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜276, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜277, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜278, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜279, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜280, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜281, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜282, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜283, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜285, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜286, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜287, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜288, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜289, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜290, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜291, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜292, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜293, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜294, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜295, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜296, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜297, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜298, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜299, server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜300, server: 14.29.124.174, port: 11050, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 ｜CN｜openit.ml｜4, server: 14.29.124.174, port: 11007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜229, server: s4.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜231, server: s4.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜232, server: 5.183.179.141, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜233, server: 5.183.179.139, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜234, server: 5.183.179.166, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜235, server: 5.183.179.141, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜236, server: 5.183.179.141, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜237, server: 5.183.179.170, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜238, server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜239, server: 5.183.179.148, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜240, server: 5.183.179.141, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜241, server: 5.183.179.170, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜242, server: 5.183.179.137, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜243, server: 5.183.179.170, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜244, server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜245, server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇩🇪 ｜DE｜openit.ml｜246, server: 5.183.179.141, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇬🇧 ｜GB｜openit.ml｜230, server: 185.167.117.171, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 🇮🇳 ｜IN｜openit.ml｜38, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ｜JP｜openit.ml｜171, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇯🇵 ｜JP｜openit.ml｜227, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 ｜JP｜openit.ml｜5, server: jp1.v2yyds.cc, port: 32111, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 ｜KR｜openit.ml｜226, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜146, server: 213.183.59.206, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜147, server: 213.183.59.211, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜148, server: 213.183.59.214, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜149, server: 213.183.59.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜150, server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜151, server: 213.183.59.211, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜152, server: 213.183.59.211, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜153, server: 213.183.51.172, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜154, server: 213.183.51.171, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜155, server: 213.183.59.229, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜156, server: 213.183.51.171, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜157, server: 213.183.51.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜158, server: 213.183.51.171, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜159, server: 213.183.51.171, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜160, server: 213.183.51.171, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜161, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜162, server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜163, server: 213.183.51.171, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜164, server: 213.183.51.171, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜165, server: 213.183.51.171, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜166, server: 213.183.59.206, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜167, server: 213.183.51.171, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜168, server: 213.183.51.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜169, server: 213.183.59.211, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜170, server: 213.183.59.190, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜172, server: 213.183.59.211, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜173, server: 213.183.59.206, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜174, server: 213.183.51.171, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜175, server: 213.183.59.211, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜176, server: 213.183.59.206, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜177, server: 213.183.51.172, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜178, server: 213.183.59.229, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜179, server: 213.183.51.171, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜180, server: 213.183.59.211, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜181, server: 213.183.59.206, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜182, server: 213.183.51.172, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜183, server: 213.183.51.172, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜184, server: 213.183.59.206, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜185, server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜186, server: 213.183.51.172, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜187, server: 213.183.51.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜188, server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜189, server: 213.183.59.229, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜190, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜191, server: 213.183.51.172, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜192, server: 213.183.51.171, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜193, server: 213.183.51.171, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜194, server: 213.183.51.171, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜195, server: 213.183.51.171, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜196, server: 213.183.51.171, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜197, server: 213.183.51.171, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜198, server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 🇳🇱 ｜NL｜openit.ml｜199, server: 213.183.59.211, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜108, server: 217.30.10.63, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜109, server: 217.30.10.67, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜110, server: 217.30.10.67, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜111, server: 217.30.10.67, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜112, server: 217.30.10.66, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜113, server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜114, server: 217.30.10.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜115, server: 217.30.10.68, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜116, server: 217.30.10.64, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜117, server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜119, server: 217.30.10.66, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜120, server: 217.30.10.63, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜121, server: 217.30.10.66, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜122, server: 217.30.10.63, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜123, server: 217.30.10.63, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜124, server: 217.30.10.65, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜125, server: 217.30.10.65, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜126, server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜127, server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜128, server: 217.30.10.64, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜129, server: 217.30.10.63, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜130, server: 217.30.10.64, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜131, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜132, server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜133, server: 217.30.10.65, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜134, server: 217.30.10.63, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜136, server: 217.30.10.64, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜137, server: 217.30.10.68, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜138, server: 217.30.10.65, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜139, server: 217.30.10.64, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜140, server: 217.30.10.65, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜141, server: 217.30.10.66, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 🇵🇱 ｜PL｜openit.ml｜142, server: 217.30.10.63, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜118, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜135, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜143, server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜201, server: 213.183.53.200, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜202, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜203, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜204, server: 213.183.53.200, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜205, server: 213.183.53.200, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜206, server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜207, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜208, server: 213.183.53.200, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜209, server: 213.183.53.200, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜210, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜211, server: 213.183.53.200, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜212, server: 213.183.53.177, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜213, server: 213.183.53.200, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜214, server: 213.183.53.200, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜215, server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜217, server: 213.183.53.208, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜219, server: 213.183.53.208, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜220, server: 213.183.53.200, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜221, server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜222, server: 213.183.53.200, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜223, server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: 🇷🇺 ｜RU｜openit.ml｜224, server: 213.183.53.202, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: 🇸🇬 ｜SG｜openit.ml｜7, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 ｜SG｜openit.ml｜8, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜1, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜10, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜100, server: 167.88.61.175, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜101, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜102, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜11, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜12, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜13, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜14, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜15, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜16, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜17, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜18, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜19, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜2, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜20, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜21, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜22, server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜228, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜23, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜24, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜25, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜26, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜27, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜28, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜284, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜29, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜3, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜30, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜302, server: 43.200.6.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜31, server: 169.197.141.15, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜32, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜33, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜34, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜35, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜36, server: snacks.starspace.link, port: 443, type: trojan, password: 0lbw6RXSl7eqCYMv, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜37, server: living.starspace.link, port: 443, type: trojan, password: NNhSlVRhte1Vzw5D, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜39, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜40, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜41, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜42, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜43, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜44, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜45, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜46, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜47, server: 38.114.114.67, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜48, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜49, server: 38.114.114.67, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜50, server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜51, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜52, server: 38.114.114.67, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜53, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜54, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜55, server: 38.114.114.67, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜56, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜57, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜58, server: 38.114.114.67, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜59, server: 38.114.114.67, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜6, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜60, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜61, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜62, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜63, server: 38.114.114.69, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜64, server: 167.88.63.82, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜65, server: 167.88.63.82, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜66, server: 167.88.63.82, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜67, server: 167.88.63.82, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜68, server: 167.88.63.82, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜69, server: 167.88.63.82, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜70, server: 167.88.61.175, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜71, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜72, server: 167.88.61.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜73, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜74, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜75, server: 38.68.134.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜76, server: 167.88.61.175, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜77, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜78, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜79, server: 167.172.135.97, port: 25453, type: ss, cipher: aes-256-cfb, password: a40ff797db5c4b948cfe5a5234a0e74c, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜80, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜81, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜82, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜83, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜84, server: 167.88.63.82, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜85, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜86, server: 167.88.63.82, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜87, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜88, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜89, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜9, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜90, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜91, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜92, server: 167.88.61.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜93, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜94, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜95, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜96, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜97, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜98, server: 167.88.61.175, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇸 ｜US｜openit.ml｜99, server: 167.88.61.175, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "#"
-      - "##"
-      - "###"
-      - AE_01 TG@peekfun | 6.26Mb
-      - AE_02 TG@peekfun | 7.06Mb
-      - AE_03 TG@peekfun | 6.55Mb
-      - AU_04 TG@peekfun | 8.40Mb
-      - AU_07 TG@peekfun | 7.97Mb
-      - AU_08 TG@peekfun | 1.94Mb
-      - AU_11 TG@peekfun | 8.01Mb
-      - AU_12 TG@peekfun | 2.37Mb
-      - AU_13 TG@peekfun | 8.14Mb
-      - AU_15 TG@peekfun | 1.87Mb
-      - AU_17 TG@peekfun | 3.36Mb
-      - AU_18 TG@peekfun | 3.22Mb
-      - AU_19 TG@peekfun | 2.51Mb
-      - AU_20 TG@peekfun | 4.19Mb
-      - AU_21 TG@peekfun | 2.19Mb
-      - AU_23 TG@peekfun | 8.01Mb
-      - AU_24 TG@peekfun | 3.75Mb
-      - AU_27 TG@peekfun | 8.35Mb
-      - AU_28 TG@peekfun | 8.69Mb
-      - AU_31 TG@peekfun | 2.02Mb
-      - AU_32 TG@peekfun | 5.64Mb
-      - AU_33 TG@peekfun | 1.95Mb
-      - AU_35 TG@peekfun | 7.99Mb
-      - AU_38 TG@peekfun | 7.96Mb
-      - Alien 2
-      - CN_100 TG@peekfun | 2.06Mb
-      - CN_101 TG@peekfun | 6.83Mb
-      - CN_102 TG@peekfun |30.84Mb
-      - CN_103 TG@peekfun | 2.71Mb
-      - CN_104 TG@peekfun |43.50Mb
-      - CN_105 TG@peekfun | 8.41Mb
-      - CN_106 TG@peekfun |11.38Mb
-      - CN_107 TG@peekfun |11.50Mb
-      - CN_108 TG@peekfun | 8.81Mb
-      - CN_109 TG@peekfun |21.34Mb
-      - CN_110 TG@peekfun |98.00Mb
-      - CN_111 TG@peekfun |41.69Mb
-      - CN_112 TG@peekfun | 7.28Mb
-      - CN_113 TG@peekfun | 7.35Mb
-      - CN_114 TG@peekfun |21.10Mb
-      - CN_115 TG@peekfun |54.38Mb
-      - CN_118 TG@peekfun |33.67Mb
-      - CN_121 TG@peekfun | 6.18Mb
-      - CN_173 |34.68Mb
-      - CN_177 |43.70Mb
-      - CN_178 |48.10Mb
-      - CN_181 | 8.73Mb
-      - CN_186 |17.59Mb
-      - CN_187 |30.33Mb
-      - CN_193 |33.42Mb
-      - CN_196 |15.05Mb
-      - CN_197 |47.58Mb
-      - CN_198 |14.22Mb
-      - CN_2_16@1
-      - CN_4_16@3
-      - CN_5_16@4
-      - CN_67 TG@peekfun |57.74Mb
-      - CN_68 TG@peekfun |58.19Mb
-      - CN_69 TG@peekfun | 2.34Mb
-      - CN_70 TG@peekfun |66.99Mb
-      - CN_73 TG@peekfun |59.97Mb
-      - CN_74 TG@peekfun | 1.82Mb
-      - CN_75 TG@peekfun |62.38Mb
-      - CN_76 TG@peekfun |11.84Mb
-      - CN_77 TG@peekfun |60.34Mb
-      - CN_80 TG@peekfun | 2.27Mb
-      - CN_81 TG@peekfun |59.44Mb
-      - CN_82 TG@peekfun | 1.17Mb
-      - CN_84 TG@peekfun |62.79Mb
-      - CN_85 TG@peekfun |57.71Mb
-      - CN_86 TG@peekfun |55.57Mb
-      - CN_87 TG@peekfun | 1.82Mb
-      - CN_88 TG@peekfun |60.50Mb
-      - CN_89 TG@peekfun | 1.90Mb
-      - CN_90 TG@peekfun | 2.36Mb
-      - CN_92 TG@peekfun | 2.76Mb
-      - CN_94 TG@peekfun | 2.09Mb
-      - CN_95 TG@peekfun |54.67Mb
-      - CN_97 TG@peekfun |56.95Mb
-      - CZ_124 TG@peekfun | 5.49Mb
-      - DE_125 TG@peekfun |26.99Mb
-      - DE_128 TG@peekfun | 2.07Mb
-      - DE_129 TG@peekfun | 2.32Mb
-      - DE_130 TG@peekfun | 2.39Mb
-      - DE_132 TG@peekfun | 5.56Mb
-      - DE_133 TG@peekfun | 2.27Mb
-      - DE_134 TG@peekfun |26.75Mb
-      - DE_135 TG@peekfun | 2.20Mb
-      - DE_136 TG@peekfun | 1.95Mb
-      - DE_137 TG@peekfun | 3.64Mb
-      - DE_138 TG@peekfun |27.55Mb
-      - DE_139 TG@peekfun |23.80Mb
-      - DE_146 TG@peekfun | 1.87Mb
-      - DE_148 TG@peekfun | 2.05Mb
-      - DE_150 TG@peekfun |15.00Mb
-      - DE_153 TG@peekfun | 2.39Mb
-      - GB_156 TG@peekfun |21.72Mb
-      - GB_157 TG@peekfun | 2.42Mb
-      - JP_174 TG@peekfun | 4.30Mb
-      - JP_184 TG@peekfun |26.07Mb
-      - KR_187 TG@peekfun | 6.51Mb
-      - LT_189 TG@peekfun | 4.36Mb
-      - LT_190 TG@peekfun |36.58Mb
-      - LT_192 TG@peekfun | 8.09Mb
-      - LT_195 TG@peekfun |27.38Mb
-      - LT_197 TG@peekfun |34.52Mb
-      - LT_199 TG@peekfun |31.22Mb
-      - LT_201 TG@peekfun |35.67Mb
-      - LT_203 TG@peekfun | 2.66Mb
-      - LT_205 TG@peekfun |18.44Mb
-      - LT_206 TG@peekfun | 2.24Mb
-      - LT_209 TG@peekfun |34.50Mb
-      - LT_210 TG@peekfun |15.88Mb
-      - LT_211 TG@peekfun |10.85Mb
-      - LT_214 TG@peekfun | 6.62Mb
-      - LT_216 TG@peekfun |16.61Mb
-      - LT_217 TG@peekfun |16.82Mb
-      - LT_218 TG@peekfun |15.09Mb
-      - LT_219 TG@peekfun |35.06Mb
-      - LT_220 TG@peekfun |34.99Mb
-      - LT_221 TG@peekfun |29.02Mb
-      - LT_223 TG@peekfun |27.99Mb
-      - LT_224 TG@peekfun |22.05Mb
-      - LT_225 TG@peekfun |33.40Mb
-      - LT_226 TG@peekfun | 5.52Mb
-      - LT_227 TG@peekfun |32.46Mb
-      - LT_489 |10.69Mb
-      - NL_228 TG@peekfun |16.12Mb
-      - NL_229 TG@peekfun | 8.14Mb
-      - NL_230 TG@peekfun | 7.83Mb
-      - NL_231 TG@peekfun | 5.07Mb
-      - NL_232 TG@peekfun | 5.51Mb
-      - NL_233 TG@peekfun | 5.19Mb
-      - NL_234 TG@peekfun | 8.13Mb
-      - NL_235 TG@peekfun | 4.44Mb
-      - NL_237 TG@peekfun |24.18Mb
-      - NL_238 TG@peekfun |12.88Mb
-      - NL_239 TG@peekfun |13.48Mb
-      - NL_241 TG@peekfun |11.91Mb
-      - NL_242 TG@peekfun |13.63Mb
-      - NL_243 TG@peekfun | 8.66Mb
-      - NL_244 TG@peekfun |10.53Mb
-      - NL_245 TG@peekfun |20.83Mb
-      - NL_246 TG@peekfun |22.76Mb
-      - NL_247 TG@peekfun |23.92Mb
-      - NL_248 TG@peekfun |25.28Mb
-      - NL_249 TG@peekfun |21.46Mb
-      - NL_250 TG@peekfun |10.18Mb
-      - NL_251 TG@peekfun |10.06Mb
-      - NL_252 TG@peekfun |23.85Mb
-      - NL_253 TG@peekfun |24.30Mb
-      - NL_254 TG@peekfun |18.84Mb
-      - NL_255 TG@peekfun |11.20Mb
-      - NL_257 TG@peekfun |23.55Mb
-      - NL_258 TG@peekfun |12.15Mb
-      - NL_259 TG@peekfun |31.01Mb
-      - NL_260 TG@peekfun | 4.80Mb
-      - NL_261 TG@peekfun |12.97Mb
-      - NL_262 TG@peekfun | 9.22Mb
-      - NL_263 TG@peekfun | 5.31Mb
-      - NL_264 TG@peekfun |24.37Mb
-      - NL_265 TG@peekfun | 6.35Mb
-      - NL_266 TG@peekfun |12.23Mb
-      - NL_267 TG@peekfun | 5.39Mb
-      - NL_268 TG@peekfun | 4.55Mb
-      - NL_269 TG@peekfun |24.45Mb
-      - NL_270 TG@peekfun | 4.99Mb
-      - NL_271 TG@peekfun | 5.61Mb
-      - NL_272 TG@peekfun | 7.35Mb
-      - NL_273 TG@peekfun | 5.00Mb
-      - NL_274 TG@peekfun | 8.24Mb
-      - NL_275 TG@peekfun |12.37Mb
-      - NL_276 TG@peekfun | 8.11Mb
-      - NL_277 TG@peekfun |23.77Mb
-      - NL_278 TG@peekfun | 9.44Mb
-      - NL_279 TG@peekfun |11.93Mb
-      - NL_280 TG@peekfun |23.56Mb
-      - NL_281 TG@peekfun | 2.31Mb
-      - NL_282 TG@peekfun | 5.12Mb
-      - NL_283 TG@peekfun |13.49Mb
-      - NL_285 TG@peekfun |23.76Mb
-      - RO_293 TG@peekfun | 2.09Mb
-      - RO_297 TG@peekfun | 9.11Mb
-      - RU_2686_ 3.46Mb | 7.01Mb
-      - RU_302 TG@peekfun | 5.92Mb
-      - RU_303 TG@peekfun | 1.60Mb
-      - RU_305 TG@peekfun | 8.12Mb
-      - RU_308 TG@peekfun | 2.42Mb
-      - RU_312 TG@peekfun | 3.50Mb
-      - RU_316 TG@peekfun | 9.96Mb
-      - RU_320 TG@peekfun |10.01Mb
-      - RU_321 TG@peekfun |27.29Mb
-      - RU_333 TG@peekfun |11.39Mb
-      - RU_339 TG@peekfun | 2.46Mb
-      - RU_341 TG@peekfun | 2.29Mb
-      - RU_342 TG@peekfun | 2.03Mb
-      - RU_346 TG@peekfun | 8.52Mb
-      - RU_349 TG@peekfun |11.18Mb
-      - RU_356 TG@peekfun | 6.96Mb
-      - RU_357 TG@peekfun | 3.72Mb
-      - RU_360 TG@peekfun | 5.02Mb
-      - RU_363 TG@peekfun |10.04Mb
-      - RU_371 TG@peekfun |11.02Mb
-      - RU_373 TG@peekfun |10.49Mb
-      - RU_374 TG@peekfun |10.43Mb
-      - RU_382 TG@peekfun |10.94Mb
-      - RU_383 TG@peekfun | 5.09Mb
-      - RU_386 TG@peekfun |10.76Mb
-      - RU_41_16@40
-      - RU_630 | 2.43Mb
-      - RU_637 | 2.49Mb
-      - RU_644 | 5.80Mb
-      - RU_656 | 5.13Mb
-      - RU_660 |19.72Mb
-      - RU_668 | 6.72Mb
-      - RU_677 | 6.33Mb
-      - RU_679 | 5.07Mb
-      - RU_694 |11.21Mb
-      - RU_740 | 2.39Mb
-      - UA_405 TG@peekfun | 8.03Mb
-      - UA_406 TG@peekfun | 2.29Mb
-      - UA_407 TG@peekfun | 5.91Mb
-      - UA_408 TG@peekfun | 6.36Mb
-      - UA_409 TG@peekfun | 6.68Mb
-      - US5
-      - US_410 TG@peekfun |31.91Mb
-      - US_411 TG@peekfun |34.30Mb
-      - US_412 TG@peekfun |34.42Mb
-      - US_413 TG@peekfun |33.17Mb
-      - US_414 TG@peekfun |31.18Mb
-      - US_415 TG@peekfun |20.54Mb
-      - US_416 TG@peekfun | 5.65Mb
-      - US_417 TG@peekfun |33.54Mb
-      - US_418 TG@peekfun |33.70Mb
-      - US_419 TG@peekfun |28.78Mb
-      - US_420 TG@peekfun |33.71Mb
-      - US_421 TG@peekfun |33.14Mb
-      - US_422 TG@peekfun | 8.38Mb
-      - US_423 TG@peekfun | 8.33Mb
-      - US_424 TG@peekfun |10.27Mb
-      - US_425 TG@peekfun |20.25Mb
-      - US_426 TG@peekfun | 9.56Mb
-      - US_427 TG@peekfun |13.53Mb
-      - US_428 TG@peekfun |28.76Mb
-      - US_429 TG@peekfun |32.44Mb
-      - US_430 TG@peekfun |27.27Mb
-      - US_431 TG@peekfun |26.83Mb
-      - US_432 TG@peekfun | 7.52Mb
-      - US_434 TG@peekfun |29.26Mb
-      - US_435 TG@peekfun |27.00Mb
-      - US_436 TG@peekfun |32.96Mb
-      - US_437 TG@peekfun |28.58Mb
-      - US_438 TG@peekfun |33.61Mb
-      - US_439 TG@peekfun |26.53Mb
-      - US_440 TG@peekfun |34.09Mb
-      - US_441 TG@peekfun |25.65Mb
-      - US_442 TG@peekfun |10.84Mb
-      - US_443 TG@peekfun |19.31Mb
-      - US_444 TG@peekfun |22.58Mb
-      - US_445 TG@peekfun |20.55Mb
-      - US_446 TG@peekfun |17.46Mb
-      - US_447 TG@peekfun |14.30Mb
-      - US_448 TG@peekfun |23.11Mb
-      - US_449 TG@peekfun | 7.39Mb
-      - US_450 TG@peekfun |28.90Mb
-      - US_451 TG@peekfun |29.21Mb
-      - US_452 TG@peekfun |31.16Mb
-      - US_453 TG@peekfun |32.33Mb
-      - US_454 TG@peekfun |23.32Mb
-      - US_455 TG@peekfun |32.47Mb
-      - US_456 TG@peekfun |28.81Mb
-      - US_457 TG@peekfun |31.17Mb
-      - US_458 TG@peekfun |30.51Mb
-      - US_459 TG@peekfun | 8.96Mb
-      - US_460 TG@peekfun |28.35Mb
-      - US_461 TG@peekfun | 9.93Mb
-      - US_462 TG@peekfun | 7.68Mb
-      - US_463 TG@peekfun |31.37Mb
-      - US_464 TG@peekfun |31.66Mb
-      - US_465 TG@peekfun |10.89Mb
-      - US_466 TG@peekfun |32.19Mb
-      - US_467 TG@peekfun |26.39Mb
-      - US_468 TG@peekfun |26.63Mb
-      - US_469 TG@peekfun |28.50Mb
-      - US_46_16@45
-      - US_476 TG@peekfun | 8.58Mb
-      - US_479 TG@peekfun | 6.19Mb
-      - US_480 TG@peekfun | 5.52Mb
-      - US_492 TG@peekfun | 3.25Mb
-      - US_495 TG@peekfun | 7.40Mb
-      - US_497 TG@peekfun | 2.38Mb
-      - US_502 TG@peekfun |19.52Mb
-      - ZZ_510 TG@peekfun |33.23Mb
-      - ZZ_511 TG@peekfun |34.71Mb
-      - ZZ_512 TG@peekfun |15.05Mb
-      - ZZ_513 TG@peekfun |23.72Mb
-      - ZZ_514 TG@peekfun |17.39Mb
-      - ZZ_515 TG@peekfun |12.45Mb
-      - ZZ_516 TG@peekfun |32.55Mb
-      - ZZ_517 TG@peekfun |33.97Mb
-      - ZZ_518 TG@peekfun |16.51Mb
-      - ZZ_519 TG@peekfun |31.16Mb
-      - ZZ_520 TG@peekfun |29.76Mb
-      - ZZ_521 TG@peekfun |29.71Mb
-      - ZZ_522 TG@peekfun |32.59Mb
-      - ZZ_523 TG@peekfun |29.81Mb
-      - ZZ_524 TG@peekfun |34.99Mb
-      - ZZ_525 TG@peekfun |12.35Mb
-      - ZZ_526 TG@peekfun |31.33Mb
-      - ZZ_527 TG@peekfun |23.29Mb
-      - ZZ_528 TG@peekfun | 6.63Mb
-      - ZZ_529 TG@peekfun |30.00Mb
-      - ZZ_530 TG@peekfun |32.89Mb
-      - ZZ_531 TG@peekfun |26.77Mb
-      - ZZ_532 TG@peekfun |33.78Mb
-      - ZZ_533 TG@peekfun | 7.70Mb
-      - ZZ_534 TG@peekfun | 9.62Mb
-      - ZZ_536 TG@peekfun | 9.66Mb
-      - ZZ_537 TG@peekfun | 3.45Mb
-      - ZZ_538 TG@peekfun | 3.08Mb
-      - _油管：全网最强白嫖
-      - _油管：全网最强白嫖 2
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_167 |53.24Mb
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_1_9@15
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_3_9@21
-      - 🇹🇭 Bangkok - Thailand | STREAM | 1x
-      - 🇹🇷 Istanbul - Turkey | Media | 1.5x
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1514 |29.80Mb
+      - ｜AE｜openit.ml｜322
+      - ｜AE｜openit.ml｜323
+      - ｜AE｜openit.ml｜324
+      - ｜BG｜openit.ml｜200
+      - ｜BG｜openit.ml｜216
+      - ｜BG｜openit.ml｜218
+      - ｜BG｜openit.ml｜225
+      - ｜CH｜openit.ml｜145
+      - ｜CZ｜openit.ml｜103
+      - ｜CZ｜openit.ml｜104
+      - ｜CZ｜openit.ml｜105
+      - ｜CZ｜openit.ml｜106
+      - ｜CZ｜openit.ml｜107
+      - ｜CZ｜openit.ml｜247
+      - ｜RO｜openit.ml｜144
+      - 🇦🇺 ｜AU｜openit.ml｜301
+      - 🇦🇺 ｜AU｜openit.ml｜303
+      - 🇦🇺 ｜AU｜openit.ml｜304
+      - 🇦🇺 ｜AU｜openit.ml｜305
+      - 🇦🇺 ｜AU｜openit.ml｜306
+      - 🇦🇺 ｜AU｜openit.ml｜307
+      - 🇦🇺 ｜AU｜openit.ml｜308
+      - 🇦🇺 ｜AU｜openit.ml｜309
+      - 🇦🇺 ｜AU｜openit.ml｜310
+      - 🇦🇺 ｜AU｜openit.ml｜311
+      - 🇦🇺 ｜AU｜openit.ml｜312
+      - 🇦🇺 ｜AU｜openit.ml｜313
+      - 🇦🇺 ｜AU｜openit.ml｜314
+      - 🇦🇺 ｜AU｜openit.ml｜315
+      - 🇦🇺 ｜AU｜openit.ml｜316
+      - 🇦🇺 ｜AU｜openit.ml｜317
+      - 🇦🇺 ｜AU｜openit.ml｜318
+      - 🇦🇺 ｜AU｜openit.ml｜319
+      - 🇦🇺 ｜AU｜openit.ml｜320
+      - 🇦🇺 ｜AU｜openit.ml｜321
+      - 🇨🇳 ｜CN｜openit.ml｜248
+      - 🇨🇳 ｜CN｜openit.ml｜249
+      - 🇨🇳 ｜CN｜openit.ml｜250
+      - 🇨🇳 ｜CN｜openit.ml｜251
+      - 🇨🇳 ｜CN｜openit.ml｜252
+      - 🇨🇳 ｜CN｜openit.ml｜253
+      - 🇨🇳 ｜CN｜openit.ml｜254
+      - 🇨🇳 ｜CN｜openit.ml｜255
+      - 🇨🇳 ｜CN｜openit.ml｜256
+      - 🇨🇳 ｜CN｜openit.ml｜257
+      - 🇨🇳 ｜CN｜openit.ml｜258
+      - 🇨🇳 ｜CN｜openit.ml｜259
+      - 🇨🇳 ｜CN｜openit.ml｜260
+      - 🇨🇳 ｜CN｜openit.ml｜261
+      - 🇨🇳 ｜CN｜openit.ml｜262
+      - 🇨🇳 ｜CN｜openit.ml｜263
+      - 🇨🇳 ｜CN｜openit.ml｜264
+      - 🇨🇳 ｜CN｜openit.ml｜265
+      - 🇨🇳 ｜CN｜openit.ml｜266
+      - 🇨🇳 ｜CN｜openit.ml｜267
+      - 🇨🇳 ｜CN｜openit.ml｜268
+      - 🇨🇳 ｜CN｜openit.ml｜269
+      - 🇨🇳 ｜CN｜openit.ml｜270
+      - 🇨🇳 ｜CN｜openit.ml｜271
+      - 🇨🇳 ｜CN｜openit.ml｜272
+      - 🇨🇳 ｜CN｜openit.ml｜273
+      - 🇨🇳 ｜CN｜openit.ml｜274
+      - 🇨🇳 ｜CN｜openit.ml｜275
+      - 🇨🇳 ｜CN｜openit.ml｜276
+      - 🇨🇳 ｜CN｜openit.ml｜277
+      - 🇨🇳 ｜CN｜openit.ml｜278
+      - 🇨🇳 ｜CN｜openit.ml｜279
+      - 🇨🇳 ｜CN｜openit.ml｜280
+      - 🇨🇳 ｜CN｜openit.ml｜281
+      - 🇨🇳 ｜CN｜openit.ml｜282
+      - 🇨🇳 ｜CN｜openit.ml｜283
+      - 🇨🇳 ｜CN｜openit.ml｜285
+      - 🇨🇳 ｜CN｜openit.ml｜286
+      - 🇨🇳 ｜CN｜openit.ml｜287
+      - 🇨🇳 ｜CN｜openit.ml｜288
+      - 🇨🇳 ｜CN｜openit.ml｜289
+      - 🇨🇳 ｜CN｜openit.ml｜290
+      - 🇨🇳 ｜CN｜openit.ml｜291
+      - 🇨🇳 ｜CN｜openit.ml｜292
+      - 🇨🇳 ｜CN｜openit.ml｜293
+      - 🇨🇳 ｜CN｜openit.ml｜294
+      - 🇨🇳 ｜CN｜openit.ml｜295
+      - 🇨🇳 ｜CN｜openit.ml｜296
+      - 🇨🇳 ｜CN｜openit.ml｜297
+      - 🇨🇳 ｜CN｜openit.ml｜298
+      - 🇨🇳 ｜CN｜openit.ml｜299
+      - 🇨🇳 ｜CN｜openit.ml｜300
+      - 🇨🇳 ｜CN｜openit.ml｜4
+      - 🇩🇪 ｜DE｜openit.ml｜229
+      - 🇩🇪 ｜DE｜openit.ml｜231
+      - 🇩🇪 ｜DE｜openit.ml｜232
+      - 🇩🇪 ｜DE｜openit.ml｜233
+      - 🇩🇪 ｜DE｜openit.ml｜234
+      - 🇩🇪 ｜DE｜openit.ml｜235
+      - 🇩🇪 ｜DE｜openit.ml｜236
+      - 🇩🇪 ｜DE｜openit.ml｜237
+      - 🇩🇪 ｜DE｜openit.ml｜238
+      - 🇩🇪 ｜DE｜openit.ml｜239
+      - 🇩🇪 ｜DE｜openit.ml｜240
+      - 🇩🇪 ｜DE｜openit.ml｜241
+      - 🇩🇪 ｜DE｜openit.ml｜242
+      - 🇩🇪 ｜DE｜openit.ml｜243
+      - 🇩🇪 ｜DE｜openit.ml｜244
+      - 🇩🇪 ｜DE｜openit.ml｜245
+      - 🇩🇪 ｜DE｜openit.ml｜246
+      - 🇬🇧 ｜GB｜openit.ml｜230
+      - 🇮🇳 ｜IN｜openit.ml｜38
+      - 🇯🇵 ｜JP｜openit.ml｜171
+      - 🇯🇵 ｜JP｜openit.ml｜227
+      - 🇯🇵 ｜JP｜openit.ml｜5
+      - 🇰🇷 ｜KR｜openit.ml｜226
+      - 🇳🇱 ｜NL｜openit.ml｜146
+      - 🇳🇱 ｜NL｜openit.ml｜147
+      - 🇳🇱 ｜NL｜openit.ml｜148
+      - 🇳🇱 ｜NL｜openit.ml｜149
+      - 🇳🇱 ｜NL｜openit.ml｜150
+      - 🇳🇱 ｜NL｜openit.ml｜151
+      - 🇳🇱 ｜NL｜openit.ml｜152
+      - 🇳🇱 ｜NL｜openit.ml｜153
+      - 🇳🇱 ｜NL｜openit.ml｜154
+      - 🇳🇱 ｜NL｜openit.ml｜155
+      - 🇳🇱 ｜NL｜openit.ml｜156
+      - 🇳🇱 ｜NL｜openit.ml｜157
+      - 🇳🇱 ｜NL｜openit.ml｜158
+      - 🇳🇱 ｜NL｜openit.ml｜159
+      - 🇳🇱 ｜NL｜openit.ml｜160
+      - 🇳🇱 ｜NL｜openit.ml｜161
+      - 🇳🇱 ｜NL｜openit.ml｜162
+      - 🇳🇱 ｜NL｜openit.ml｜163
+      - 🇳🇱 ｜NL｜openit.ml｜164
+      - 🇳🇱 ｜NL｜openit.ml｜165
+      - 🇳🇱 ｜NL｜openit.ml｜166
+      - 🇳🇱 ｜NL｜openit.ml｜167
+      - 🇳🇱 ｜NL｜openit.ml｜168
+      - 🇳🇱 ｜NL｜openit.ml｜169
+      - 🇳🇱 ｜NL｜openit.ml｜170
+      - 🇳🇱 ｜NL｜openit.ml｜172
+      - 🇳🇱 ｜NL｜openit.ml｜173
+      - 🇳🇱 ｜NL｜openit.ml｜174
+      - 🇳🇱 ｜NL｜openit.ml｜175
+      - 🇳🇱 ｜NL｜openit.ml｜176
+      - 🇳🇱 ｜NL｜openit.ml｜177
+      - 🇳🇱 ｜NL｜openit.ml｜178
+      - 🇳🇱 ｜NL｜openit.ml｜179
+      - 🇳🇱 ｜NL｜openit.ml｜180
+      - 🇳🇱 ｜NL｜openit.ml｜181
+      - 🇳🇱 ｜NL｜openit.ml｜182
+      - 🇳🇱 ｜NL｜openit.ml｜183
+      - 🇳🇱 ｜NL｜openit.ml｜184
+      - 🇳🇱 ｜NL｜openit.ml｜185
+      - 🇳🇱 ｜NL｜openit.ml｜186
+      - 🇳🇱 ｜NL｜openit.ml｜187
+      - 🇳🇱 ｜NL｜openit.ml｜188
+      - 🇳🇱 ｜NL｜openit.ml｜189
+      - 🇳🇱 ｜NL｜openit.ml｜190
+      - 🇳🇱 ｜NL｜openit.ml｜191
+      - 🇳🇱 ｜NL｜openit.ml｜192
+      - 🇳🇱 ｜NL｜openit.ml｜193
+      - 🇳🇱 ｜NL｜openit.ml｜194
+      - 🇳🇱 ｜NL｜openit.ml｜195
+      - 🇳🇱 ｜NL｜openit.ml｜196
+      - 🇳🇱 ｜NL｜openit.ml｜197
+      - 🇳🇱 ｜NL｜openit.ml｜198
+      - 🇳🇱 ｜NL｜openit.ml｜199
+      - 🇵🇱 ｜PL｜openit.ml｜108
+      - 🇵🇱 ｜PL｜openit.ml｜109
+      - 🇵🇱 ｜PL｜openit.ml｜110
+      - 🇵🇱 ｜PL｜openit.ml｜111
+      - 🇵🇱 ｜PL｜openit.ml｜112
+      - 🇵🇱 ｜PL｜openit.ml｜113
+      - 🇵🇱 ｜PL｜openit.ml｜114
+      - 🇵🇱 ｜PL｜openit.ml｜115
+      - 🇵🇱 ｜PL｜openit.ml｜116
+      - 🇵🇱 ｜PL｜openit.ml｜117
+      - 🇵🇱 ｜PL｜openit.ml｜119
+      - 🇵🇱 ｜PL｜openit.ml｜120
+      - 🇵🇱 ｜PL｜openit.ml｜121
+      - 🇵🇱 ｜PL｜openit.ml｜122
+      - 🇵🇱 ｜PL｜openit.ml｜123
+      - 🇵🇱 ｜PL｜openit.ml｜124
+      - 🇵🇱 ｜PL｜openit.ml｜125
+      - 🇵🇱 ｜PL｜openit.ml｜126
+      - 🇵🇱 ｜PL｜openit.ml｜127
+      - 🇵🇱 ｜PL｜openit.ml｜128
+      - 🇵🇱 ｜PL｜openit.ml｜129
+      - 🇵🇱 ｜PL｜openit.ml｜130
+      - 🇵🇱 ｜PL｜openit.ml｜131
+      - 🇵🇱 ｜PL｜openit.ml｜132
+      - 🇵🇱 ｜PL｜openit.ml｜133
+      - 🇵🇱 ｜PL｜openit.ml｜134
+      - 🇵🇱 ｜PL｜openit.ml｜136
+      - 🇵🇱 ｜PL｜openit.ml｜137
+      - 🇵🇱 ｜PL｜openit.ml｜138
+      - 🇵🇱 ｜PL｜openit.ml｜139
+      - 🇵🇱 ｜PL｜openit.ml｜140
+      - 🇵🇱 ｜PL｜openit.ml｜141
+      - 🇵🇱 ｜PL｜openit.ml｜142
+      - 🇷🇺 ｜RU｜openit.ml｜118
+      - 🇷🇺 ｜RU｜openit.ml｜135
+      - 🇷🇺 ｜RU｜openit.ml｜143
+      - 🇷🇺 ｜RU｜openit.ml｜201
+      - 🇷🇺 ｜RU｜openit.ml｜202
+      - 🇷🇺 ｜RU｜openit.ml｜203
+      - 🇷🇺 ｜RU｜openit.ml｜204
+      - 🇷🇺 ｜RU｜openit.ml｜205
+      - 🇷🇺 ｜RU｜openit.ml｜206
+      - 🇷🇺 ｜RU｜openit.ml｜207
+      - 🇷🇺 ｜RU｜openit.ml｜208
+      - 🇷🇺 ｜RU｜openit.ml｜209
+      - 🇷🇺 ｜RU｜openit.ml｜210
+      - 🇷🇺 ｜RU｜openit.ml｜211
+      - 🇷🇺 ｜RU｜openit.ml｜212
+      - 🇷🇺 ｜RU｜openit.ml｜213
+      - 🇷🇺 ｜RU｜openit.ml｜214
+      - 🇷🇺 ｜RU｜openit.ml｜215
+      - 🇷🇺 ｜RU｜openit.ml｜217
+      - 🇷🇺 ｜RU｜openit.ml｜219
+      - 🇷🇺 ｜RU｜openit.ml｜220
+      - 🇷🇺 ｜RU｜openit.ml｜221
+      - 🇷🇺 ｜RU｜openit.ml｜222
+      - 🇷🇺 ｜RU｜openit.ml｜223
+      - 🇷🇺 ｜RU｜openit.ml｜224
+      - 🇸🇬 ｜SG｜openit.ml｜7
+      - 🇸🇬 ｜SG｜openit.ml｜8
+      - 🇺🇸 ｜US｜openit.ml｜1
+      - 🇺🇸 ｜US｜openit.ml｜10
+      - 🇺🇸 ｜US｜openit.ml｜100
+      - 🇺🇸 ｜US｜openit.ml｜101
+      - 🇺🇸 ｜US｜openit.ml｜102
+      - 🇺🇸 ｜US｜openit.ml｜11
+      - 🇺🇸 ｜US｜openit.ml｜12
+      - 🇺🇸 ｜US｜openit.ml｜13
+      - 🇺🇸 ｜US｜openit.ml｜14
+      - 🇺🇸 ｜US｜openit.ml｜15
+      - 🇺🇸 ｜US｜openit.ml｜16
+      - 🇺🇸 ｜US｜openit.ml｜17
+      - 🇺🇸 ｜US｜openit.ml｜18
+      - 🇺🇸 ｜US｜openit.ml｜19
+      - 🇺🇸 ｜US｜openit.ml｜2
+      - 🇺🇸 ｜US｜openit.ml｜20
+      - 🇺🇸 ｜US｜openit.ml｜21
+      - 🇺🇸 ｜US｜openit.ml｜22
+      - 🇺🇸 ｜US｜openit.ml｜228
+      - 🇺🇸 ｜US｜openit.ml｜23
+      - 🇺🇸 ｜US｜openit.ml｜24
+      - 🇺🇸 ｜US｜openit.ml｜25
+      - 🇺🇸 ｜US｜openit.ml｜26
+      - 🇺🇸 ｜US｜openit.ml｜27
+      - 🇺🇸 ｜US｜openit.ml｜28
+      - 🇺🇸 ｜US｜openit.ml｜284
+      - 🇺🇸 ｜US｜openit.ml｜29
+      - 🇺🇸 ｜US｜openit.ml｜3
+      - 🇺🇸 ｜US｜openit.ml｜30
+      - 🇺🇸 ｜US｜openit.ml｜302
+      - 🇺🇸 ｜US｜openit.ml｜31
+      - 🇺🇸 ｜US｜openit.ml｜32
+      - 🇺🇸 ｜US｜openit.ml｜33
+      - 🇺🇸 ｜US｜openit.ml｜34
+      - 🇺🇸 ｜US｜openit.ml｜35
+      - 🇺🇸 ｜US｜openit.ml｜36
+      - 🇺🇸 ｜US｜openit.ml｜37
+      - 🇺🇸 ｜US｜openit.ml｜39
+      - 🇺🇸 ｜US｜openit.ml｜40
+      - 🇺🇸 ｜US｜openit.ml｜41
+      - 🇺🇸 ｜US｜openit.ml｜42
+      - 🇺🇸 ｜US｜openit.ml｜43
+      - 🇺🇸 ｜US｜openit.ml｜44
+      - 🇺🇸 ｜US｜openit.ml｜45
+      - 🇺🇸 ｜US｜openit.ml｜46
+      - 🇺🇸 ｜US｜openit.ml｜47
+      - 🇺🇸 ｜US｜openit.ml｜48
+      - 🇺🇸 ｜US｜openit.ml｜49
+      - 🇺🇸 ｜US｜openit.ml｜50
+      - 🇺🇸 ｜US｜openit.ml｜51
+      - 🇺🇸 ｜US｜openit.ml｜52
+      - 🇺🇸 ｜US｜openit.ml｜53
+      - 🇺🇸 ｜US｜openit.ml｜54
+      - 🇺🇸 ｜US｜openit.ml｜55
+      - 🇺🇸 ｜US｜openit.ml｜56
+      - 🇺🇸 ｜US｜openit.ml｜57
+      - 🇺🇸 ｜US｜openit.ml｜58
+      - 🇺🇸 ｜US｜openit.ml｜59
+      - 🇺🇸 ｜US｜openit.ml｜6
+      - 🇺🇸 ｜US｜openit.ml｜60
+      - 🇺🇸 ｜US｜openit.ml｜61
+      - 🇺🇸 ｜US｜openit.ml｜62
+      - 🇺🇸 ｜US｜openit.ml｜63
+      - 🇺🇸 ｜US｜openit.ml｜64
+      - 🇺🇸 ｜US｜openit.ml｜65
+      - 🇺🇸 ｜US｜openit.ml｜66
+      - 🇺🇸 ｜US｜openit.ml｜67
+      - 🇺🇸 ｜US｜openit.ml｜68
+      - 🇺🇸 ｜US｜openit.ml｜69
+      - 🇺🇸 ｜US｜openit.ml｜70
+      - 🇺🇸 ｜US｜openit.ml｜71
+      - 🇺🇸 ｜US｜openit.ml｜72
+      - 🇺🇸 ｜US｜openit.ml｜73
+      - 🇺🇸 ｜US｜openit.ml｜74
+      - 🇺🇸 ｜US｜openit.ml｜75
+      - 🇺🇸 ｜US｜openit.ml｜76
+      - 🇺🇸 ｜US｜openit.ml｜77
+      - 🇺🇸 ｜US｜openit.ml｜78
+      - 🇺🇸 ｜US｜openit.ml｜79
+      - 🇺🇸 ｜US｜openit.ml｜80
+      - 🇺🇸 ｜US｜openit.ml｜81
+      - 🇺🇸 ｜US｜openit.ml｜82
+      - 🇺🇸 ｜US｜openit.ml｜83
+      - 🇺🇸 ｜US｜openit.ml｜84
+      - 🇺🇸 ｜US｜openit.ml｜85
+      - 🇺🇸 ｜US｜openit.ml｜86
+      - 🇺🇸 ｜US｜openit.ml｜87
+      - 🇺🇸 ｜US｜openit.ml｜88
+      - 🇺🇸 ｜US｜openit.ml｜89
+      - 🇺🇸 ｜US｜openit.ml｜9
+      - 🇺🇸 ｜US｜openit.ml｜90
+      - 🇺🇸 ｜US｜openit.ml｜91
+      - 🇺🇸 ｜US｜openit.ml｜92
+      - 🇺🇸 ｜US｜openit.ml｜93
+      - 🇺🇸 ｜US｜openit.ml｜94
+      - 🇺🇸 ｜US｜openit.ml｜95
+      - 🇺🇸 ｜US｜openit.ml｜96
+      - 🇺🇸 ｜US｜openit.ml｜97
+      - 🇺🇸 ｜US｜openit.ml｜98
+      - 🇺🇸 ｜US｜openit.ml｜99
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "#"
-      - "##"
-      - "###"
-      - AE_01 TG@peekfun | 6.26Mb
-      - AE_02 TG@peekfun | 7.06Mb
-      - AE_03 TG@peekfun | 6.55Mb
-      - AU_04 TG@peekfun | 8.40Mb
-      - AU_07 TG@peekfun | 7.97Mb
-      - AU_08 TG@peekfun | 1.94Mb
-      - AU_11 TG@peekfun | 8.01Mb
-      - AU_12 TG@peekfun | 2.37Mb
-      - AU_13 TG@peekfun | 8.14Mb
-      - AU_15 TG@peekfun | 1.87Mb
-      - AU_17 TG@peekfun | 3.36Mb
-      - AU_18 TG@peekfun | 3.22Mb
-      - AU_19 TG@peekfun | 2.51Mb
-      - AU_20 TG@peekfun | 4.19Mb
-      - AU_21 TG@peekfun | 2.19Mb
-      - AU_23 TG@peekfun | 8.01Mb
-      - AU_24 TG@peekfun | 3.75Mb
-      - AU_27 TG@peekfun | 8.35Mb
-      - AU_28 TG@peekfun | 8.69Mb
-      - AU_31 TG@peekfun | 2.02Mb
-      - AU_32 TG@peekfun | 5.64Mb
-      - AU_33 TG@peekfun | 1.95Mb
-      - AU_35 TG@peekfun | 7.99Mb
-      - AU_38 TG@peekfun | 7.96Mb
-      - Alien 2
-      - CN_100 TG@peekfun | 2.06Mb
-      - CN_101 TG@peekfun | 6.83Mb
-      - CN_102 TG@peekfun |30.84Mb
-      - CN_103 TG@peekfun | 2.71Mb
-      - CN_104 TG@peekfun |43.50Mb
-      - CN_105 TG@peekfun | 8.41Mb
-      - CN_106 TG@peekfun |11.38Mb
-      - CN_107 TG@peekfun |11.50Mb
-      - CN_108 TG@peekfun | 8.81Mb
-      - CN_109 TG@peekfun |21.34Mb
-      - CN_110 TG@peekfun |98.00Mb
-      - CN_111 TG@peekfun |41.69Mb
-      - CN_112 TG@peekfun | 7.28Mb
-      - CN_113 TG@peekfun | 7.35Mb
-      - CN_114 TG@peekfun |21.10Mb
-      - CN_115 TG@peekfun |54.38Mb
-      - CN_118 TG@peekfun |33.67Mb
-      - CN_121 TG@peekfun | 6.18Mb
-      - CN_173 |34.68Mb
-      - CN_177 |43.70Mb
-      - CN_178 |48.10Mb
-      - CN_181 | 8.73Mb
-      - CN_186 |17.59Mb
-      - CN_187 |30.33Mb
-      - CN_193 |33.42Mb
-      - CN_196 |15.05Mb
-      - CN_197 |47.58Mb
-      - CN_198 |14.22Mb
-      - CN_2_16@1
-      - CN_4_16@3
-      - CN_5_16@4
-      - CN_67 TG@peekfun |57.74Mb
-      - CN_68 TG@peekfun |58.19Mb
-      - CN_69 TG@peekfun | 2.34Mb
-      - CN_70 TG@peekfun |66.99Mb
-      - CN_73 TG@peekfun |59.97Mb
-      - CN_74 TG@peekfun | 1.82Mb
-      - CN_75 TG@peekfun |62.38Mb
-      - CN_76 TG@peekfun |11.84Mb
-      - CN_77 TG@peekfun |60.34Mb
-      - CN_80 TG@peekfun | 2.27Mb
-      - CN_81 TG@peekfun |59.44Mb
-      - CN_82 TG@peekfun | 1.17Mb
-      - CN_84 TG@peekfun |62.79Mb
-      - CN_85 TG@peekfun |57.71Mb
-      - CN_86 TG@peekfun |55.57Mb
-      - CN_87 TG@peekfun | 1.82Mb
-      - CN_88 TG@peekfun |60.50Mb
-      - CN_89 TG@peekfun | 1.90Mb
-      - CN_90 TG@peekfun | 2.36Mb
-      - CN_92 TG@peekfun | 2.76Mb
-      - CN_94 TG@peekfun | 2.09Mb
-      - CN_95 TG@peekfun |54.67Mb
-      - CN_97 TG@peekfun |56.95Mb
-      - CZ_124 TG@peekfun | 5.49Mb
-      - DE_125 TG@peekfun |26.99Mb
-      - DE_128 TG@peekfun | 2.07Mb
-      - DE_129 TG@peekfun | 2.32Mb
-      - DE_130 TG@peekfun | 2.39Mb
-      - DE_132 TG@peekfun | 5.56Mb
-      - DE_133 TG@peekfun | 2.27Mb
-      - DE_134 TG@peekfun |26.75Mb
-      - DE_135 TG@peekfun | 2.20Mb
-      - DE_136 TG@peekfun | 1.95Mb
-      - DE_137 TG@peekfun | 3.64Mb
-      - DE_138 TG@peekfun |27.55Mb
-      - DE_139 TG@peekfun |23.80Mb
-      - DE_146 TG@peekfun | 1.87Mb
-      - DE_148 TG@peekfun | 2.05Mb
-      - DE_150 TG@peekfun |15.00Mb
-      - DE_153 TG@peekfun | 2.39Mb
-      - GB_156 TG@peekfun |21.72Mb
-      - GB_157 TG@peekfun | 2.42Mb
-      - JP_174 TG@peekfun | 4.30Mb
-      - JP_184 TG@peekfun |26.07Mb
-      - KR_187 TG@peekfun | 6.51Mb
-      - LT_189 TG@peekfun | 4.36Mb
-      - LT_190 TG@peekfun |36.58Mb
-      - LT_192 TG@peekfun | 8.09Mb
-      - LT_195 TG@peekfun |27.38Mb
-      - LT_197 TG@peekfun |34.52Mb
-      - LT_199 TG@peekfun |31.22Mb
-      - LT_201 TG@peekfun |35.67Mb
-      - LT_203 TG@peekfun | 2.66Mb
-      - LT_205 TG@peekfun |18.44Mb
-      - LT_206 TG@peekfun | 2.24Mb
-      - LT_209 TG@peekfun |34.50Mb
-      - LT_210 TG@peekfun |15.88Mb
-      - LT_211 TG@peekfun |10.85Mb
-      - LT_214 TG@peekfun | 6.62Mb
-      - LT_216 TG@peekfun |16.61Mb
-      - LT_217 TG@peekfun |16.82Mb
-      - LT_218 TG@peekfun |15.09Mb
-      - LT_219 TG@peekfun |35.06Mb
-      - LT_220 TG@peekfun |34.99Mb
-      - LT_221 TG@peekfun |29.02Mb
-      - LT_223 TG@peekfun |27.99Mb
-      - LT_224 TG@peekfun |22.05Mb
-      - LT_225 TG@peekfun |33.40Mb
-      - LT_226 TG@peekfun | 5.52Mb
-      - LT_227 TG@peekfun |32.46Mb
-      - LT_489 |10.69Mb
-      - NL_228 TG@peekfun |16.12Mb
-      - NL_229 TG@peekfun | 8.14Mb
-      - NL_230 TG@peekfun | 7.83Mb
-      - NL_231 TG@peekfun | 5.07Mb
-      - NL_232 TG@peekfun | 5.51Mb
-      - NL_233 TG@peekfun | 5.19Mb
-      - NL_234 TG@peekfun | 8.13Mb
-      - NL_235 TG@peekfun | 4.44Mb
-      - NL_237 TG@peekfun |24.18Mb
-      - NL_238 TG@peekfun |12.88Mb
-      - NL_239 TG@peekfun |13.48Mb
-      - NL_241 TG@peekfun |11.91Mb
-      - NL_242 TG@peekfun |13.63Mb
-      - NL_243 TG@peekfun | 8.66Mb
-      - NL_244 TG@peekfun |10.53Mb
-      - NL_245 TG@peekfun |20.83Mb
-      - NL_246 TG@peekfun |22.76Mb
-      - NL_247 TG@peekfun |23.92Mb
-      - NL_248 TG@peekfun |25.28Mb
-      - NL_249 TG@peekfun |21.46Mb
-      - NL_250 TG@peekfun |10.18Mb
-      - NL_251 TG@peekfun |10.06Mb
-      - NL_252 TG@peekfun |23.85Mb
-      - NL_253 TG@peekfun |24.30Mb
-      - NL_254 TG@peekfun |18.84Mb
-      - NL_255 TG@peekfun |11.20Mb
-      - NL_257 TG@peekfun |23.55Mb
-      - NL_258 TG@peekfun |12.15Mb
-      - NL_259 TG@peekfun |31.01Mb
-      - NL_260 TG@peekfun | 4.80Mb
-      - NL_261 TG@peekfun |12.97Mb
-      - NL_262 TG@peekfun | 9.22Mb
-      - NL_263 TG@peekfun | 5.31Mb
-      - NL_264 TG@peekfun |24.37Mb
-      - NL_265 TG@peekfun | 6.35Mb
-      - NL_266 TG@peekfun |12.23Mb
-      - NL_267 TG@peekfun | 5.39Mb
-      - NL_268 TG@peekfun | 4.55Mb
-      - NL_269 TG@peekfun |24.45Mb
-      - NL_270 TG@peekfun | 4.99Mb
-      - NL_271 TG@peekfun | 5.61Mb
-      - NL_272 TG@peekfun | 7.35Mb
-      - NL_273 TG@peekfun | 5.00Mb
-      - NL_274 TG@peekfun | 8.24Mb
-      - NL_275 TG@peekfun |12.37Mb
-      - NL_276 TG@peekfun | 8.11Mb
-      - NL_277 TG@peekfun |23.77Mb
-      - NL_278 TG@peekfun | 9.44Mb
-      - NL_279 TG@peekfun |11.93Mb
-      - NL_280 TG@peekfun |23.56Mb
-      - NL_281 TG@peekfun | 2.31Mb
-      - NL_282 TG@peekfun | 5.12Mb
-      - NL_283 TG@peekfun |13.49Mb
-      - NL_285 TG@peekfun |23.76Mb
-      - RO_293 TG@peekfun | 2.09Mb
-      - RO_297 TG@peekfun | 9.11Mb
-      - RU_2686_ 3.46Mb | 7.01Mb
-      - RU_302 TG@peekfun | 5.92Mb
-      - RU_303 TG@peekfun | 1.60Mb
-      - RU_305 TG@peekfun | 8.12Mb
-      - RU_308 TG@peekfun | 2.42Mb
-      - RU_312 TG@peekfun | 3.50Mb
-      - RU_316 TG@peekfun | 9.96Mb
-      - RU_320 TG@peekfun |10.01Mb
-      - RU_321 TG@peekfun |27.29Mb
-      - RU_333 TG@peekfun |11.39Mb
-      - RU_339 TG@peekfun | 2.46Mb
-      - RU_341 TG@peekfun | 2.29Mb
-      - RU_342 TG@peekfun | 2.03Mb
-      - RU_346 TG@peekfun | 8.52Mb
-      - RU_349 TG@peekfun |11.18Mb
-      - RU_356 TG@peekfun | 6.96Mb
-      - RU_357 TG@peekfun | 3.72Mb
-      - RU_360 TG@peekfun | 5.02Mb
-      - RU_363 TG@peekfun |10.04Mb
-      - RU_371 TG@peekfun |11.02Mb
-      - RU_373 TG@peekfun |10.49Mb
-      - RU_374 TG@peekfun |10.43Mb
-      - RU_382 TG@peekfun |10.94Mb
-      - RU_383 TG@peekfun | 5.09Mb
-      - RU_386 TG@peekfun |10.76Mb
-      - RU_41_16@40
-      - RU_630 | 2.43Mb
-      - RU_637 | 2.49Mb
-      - RU_644 | 5.80Mb
-      - RU_656 | 5.13Mb
-      - RU_660 |19.72Mb
-      - RU_668 | 6.72Mb
-      - RU_677 | 6.33Mb
-      - RU_679 | 5.07Mb
-      - RU_694 |11.21Mb
-      - RU_740 | 2.39Mb
-      - UA_405 TG@peekfun | 8.03Mb
-      - UA_406 TG@peekfun | 2.29Mb
-      - UA_407 TG@peekfun | 5.91Mb
-      - UA_408 TG@peekfun | 6.36Mb
-      - UA_409 TG@peekfun | 6.68Mb
-      - US5
-      - US_410 TG@peekfun |31.91Mb
-      - US_411 TG@peekfun |34.30Mb
-      - US_412 TG@peekfun |34.42Mb
-      - US_413 TG@peekfun |33.17Mb
-      - US_414 TG@peekfun |31.18Mb
-      - US_415 TG@peekfun |20.54Mb
-      - US_416 TG@peekfun | 5.65Mb
-      - US_417 TG@peekfun |33.54Mb
-      - US_418 TG@peekfun |33.70Mb
-      - US_419 TG@peekfun |28.78Mb
-      - US_420 TG@peekfun |33.71Mb
-      - US_421 TG@peekfun |33.14Mb
-      - US_422 TG@peekfun | 8.38Mb
-      - US_423 TG@peekfun | 8.33Mb
-      - US_424 TG@peekfun |10.27Mb
-      - US_425 TG@peekfun |20.25Mb
-      - US_426 TG@peekfun | 9.56Mb
-      - US_427 TG@peekfun |13.53Mb
-      - US_428 TG@peekfun |28.76Mb
-      - US_429 TG@peekfun |32.44Mb
-      - US_430 TG@peekfun |27.27Mb
-      - US_431 TG@peekfun |26.83Mb
-      - US_432 TG@peekfun | 7.52Mb
-      - US_434 TG@peekfun |29.26Mb
-      - US_435 TG@peekfun |27.00Mb
-      - US_436 TG@peekfun |32.96Mb
-      - US_437 TG@peekfun |28.58Mb
-      - US_438 TG@peekfun |33.61Mb
-      - US_439 TG@peekfun |26.53Mb
-      - US_440 TG@peekfun |34.09Mb
-      - US_441 TG@peekfun |25.65Mb
-      - US_442 TG@peekfun |10.84Mb
-      - US_443 TG@peekfun |19.31Mb
-      - US_444 TG@peekfun |22.58Mb
-      - US_445 TG@peekfun |20.55Mb
-      - US_446 TG@peekfun |17.46Mb
-      - US_447 TG@peekfun |14.30Mb
-      - US_448 TG@peekfun |23.11Mb
-      - US_449 TG@peekfun | 7.39Mb
-      - US_450 TG@peekfun |28.90Mb
-      - US_451 TG@peekfun |29.21Mb
-      - US_452 TG@peekfun |31.16Mb
-      - US_453 TG@peekfun |32.33Mb
-      - US_454 TG@peekfun |23.32Mb
-      - US_455 TG@peekfun |32.47Mb
-      - US_456 TG@peekfun |28.81Mb
-      - US_457 TG@peekfun |31.17Mb
-      - US_458 TG@peekfun |30.51Mb
-      - US_459 TG@peekfun | 8.96Mb
-      - US_460 TG@peekfun |28.35Mb
-      - US_461 TG@peekfun | 9.93Mb
-      - US_462 TG@peekfun | 7.68Mb
-      - US_463 TG@peekfun |31.37Mb
-      - US_464 TG@peekfun |31.66Mb
-      - US_465 TG@peekfun |10.89Mb
-      - US_466 TG@peekfun |32.19Mb
-      - US_467 TG@peekfun |26.39Mb
-      - US_468 TG@peekfun |26.63Mb
-      - US_469 TG@peekfun |28.50Mb
-      - US_46_16@45
-      - US_476 TG@peekfun | 8.58Mb
-      - US_479 TG@peekfun | 6.19Mb
-      - US_480 TG@peekfun | 5.52Mb
-      - US_492 TG@peekfun | 3.25Mb
-      - US_495 TG@peekfun | 7.40Mb
-      - US_497 TG@peekfun | 2.38Mb
-      - US_502 TG@peekfun |19.52Mb
-      - ZZ_510 TG@peekfun |33.23Mb
-      - ZZ_511 TG@peekfun |34.71Mb
-      - ZZ_512 TG@peekfun |15.05Mb
-      - ZZ_513 TG@peekfun |23.72Mb
-      - ZZ_514 TG@peekfun |17.39Mb
-      - ZZ_515 TG@peekfun |12.45Mb
-      - ZZ_516 TG@peekfun |32.55Mb
-      - ZZ_517 TG@peekfun |33.97Mb
-      - ZZ_518 TG@peekfun |16.51Mb
-      - ZZ_519 TG@peekfun |31.16Mb
-      - ZZ_520 TG@peekfun |29.76Mb
-      - ZZ_521 TG@peekfun |29.71Mb
-      - ZZ_522 TG@peekfun |32.59Mb
-      - ZZ_523 TG@peekfun |29.81Mb
-      - ZZ_524 TG@peekfun |34.99Mb
-      - ZZ_525 TG@peekfun |12.35Mb
-      - ZZ_526 TG@peekfun |31.33Mb
-      - ZZ_527 TG@peekfun |23.29Mb
-      - ZZ_528 TG@peekfun | 6.63Mb
-      - ZZ_529 TG@peekfun |30.00Mb
-      - ZZ_530 TG@peekfun |32.89Mb
-      - ZZ_531 TG@peekfun |26.77Mb
-      - ZZ_532 TG@peekfun |33.78Mb
-      - ZZ_533 TG@peekfun | 7.70Mb
-      - ZZ_534 TG@peekfun | 9.62Mb
-      - ZZ_536 TG@peekfun | 9.66Mb
-      - ZZ_537 TG@peekfun | 3.45Mb
-      - ZZ_538 TG@peekfun | 3.08Mb
-      - _油管：全网最强白嫖
-      - _油管：全网最强白嫖 2
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_167 |53.24Mb
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_1_9@15
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_3_9@21
-      - 🇹🇭 Bangkok - Thailand | STREAM | 1x
-      - 🇹🇷 Istanbul - Turkey | Media | 1.5x
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1514 |29.80Mb
+      - ｜AE｜openit.ml｜322
+      - ｜AE｜openit.ml｜323
+      - ｜AE｜openit.ml｜324
+      - ｜BG｜openit.ml｜200
+      - ｜BG｜openit.ml｜216
+      - ｜BG｜openit.ml｜218
+      - ｜BG｜openit.ml｜225
+      - ｜CH｜openit.ml｜145
+      - ｜CZ｜openit.ml｜103
+      - ｜CZ｜openit.ml｜104
+      - ｜CZ｜openit.ml｜105
+      - ｜CZ｜openit.ml｜106
+      - ｜CZ｜openit.ml｜107
+      - ｜CZ｜openit.ml｜247
+      - ｜RO｜openit.ml｜144
+      - 🇦🇺 ｜AU｜openit.ml｜301
+      - 🇦🇺 ｜AU｜openit.ml｜303
+      - 🇦🇺 ｜AU｜openit.ml｜304
+      - 🇦🇺 ｜AU｜openit.ml｜305
+      - 🇦🇺 ｜AU｜openit.ml｜306
+      - 🇦🇺 ｜AU｜openit.ml｜307
+      - 🇦🇺 ｜AU｜openit.ml｜308
+      - 🇦🇺 ｜AU｜openit.ml｜309
+      - 🇦🇺 ｜AU｜openit.ml｜310
+      - 🇦🇺 ｜AU｜openit.ml｜311
+      - 🇦🇺 ｜AU｜openit.ml｜312
+      - 🇦🇺 ｜AU｜openit.ml｜313
+      - 🇦🇺 ｜AU｜openit.ml｜314
+      - 🇦🇺 ｜AU｜openit.ml｜315
+      - 🇦🇺 ｜AU｜openit.ml｜316
+      - 🇦🇺 ｜AU｜openit.ml｜317
+      - 🇦🇺 ｜AU｜openit.ml｜318
+      - 🇦🇺 ｜AU｜openit.ml｜319
+      - 🇦🇺 ｜AU｜openit.ml｜320
+      - 🇦🇺 ｜AU｜openit.ml｜321
+      - 🇨🇳 ｜CN｜openit.ml｜248
+      - 🇨🇳 ｜CN｜openit.ml｜249
+      - 🇨🇳 ｜CN｜openit.ml｜250
+      - 🇨🇳 ｜CN｜openit.ml｜251
+      - 🇨🇳 ｜CN｜openit.ml｜252
+      - 🇨🇳 ｜CN｜openit.ml｜253
+      - 🇨🇳 ｜CN｜openit.ml｜254
+      - 🇨🇳 ｜CN｜openit.ml｜255
+      - 🇨🇳 ｜CN｜openit.ml｜256
+      - 🇨🇳 ｜CN｜openit.ml｜257
+      - 🇨🇳 ｜CN｜openit.ml｜258
+      - 🇨🇳 ｜CN｜openit.ml｜259
+      - 🇨🇳 ｜CN｜openit.ml｜260
+      - 🇨🇳 ｜CN｜openit.ml｜261
+      - 🇨🇳 ｜CN｜openit.ml｜262
+      - 🇨🇳 ｜CN｜openit.ml｜263
+      - 🇨🇳 ｜CN｜openit.ml｜264
+      - 🇨🇳 ｜CN｜openit.ml｜265
+      - 🇨🇳 ｜CN｜openit.ml｜266
+      - 🇨🇳 ｜CN｜openit.ml｜267
+      - 🇨🇳 ｜CN｜openit.ml｜268
+      - 🇨🇳 ｜CN｜openit.ml｜269
+      - 🇨🇳 ｜CN｜openit.ml｜270
+      - 🇨🇳 ｜CN｜openit.ml｜271
+      - 🇨🇳 ｜CN｜openit.ml｜272
+      - 🇨🇳 ｜CN｜openit.ml｜273
+      - 🇨🇳 ｜CN｜openit.ml｜274
+      - 🇨🇳 ｜CN｜openit.ml｜275
+      - 🇨🇳 ｜CN｜openit.ml｜276
+      - 🇨🇳 ｜CN｜openit.ml｜277
+      - 🇨🇳 ｜CN｜openit.ml｜278
+      - 🇨🇳 ｜CN｜openit.ml｜279
+      - 🇨🇳 ｜CN｜openit.ml｜280
+      - 🇨🇳 ｜CN｜openit.ml｜281
+      - 🇨🇳 ｜CN｜openit.ml｜282
+      - 🇨🇳 ｜CN｜openit.ml｜283
+      - 🇨🇳 ｜CN｜openit.ml｜285
+      - 🇨🇳 ｜CN｜openit.ml｜286
+      - 🇨🇳 ｜CN｜openit.ml｜287
+      - 🇨🇳 ｜CN｜openit.ml｜288
+      - 🇨🇳 ｜CN｜openit.ml｜289
+      - 🇨🇳 ｜CN｜openit.ml｜290
+      - 🇨🇳 ｜CN｜openit.ml｜291
+      - 🇨🇳 ｜CN｜openit.ml｜292
+      - 🇨🇳 ｜CN｜openit.ml｜293
+      - 🇨🇳 ｜CN｜openit.ml｜294
+      - 🇨🇳 ｜CN｜openit.ml｜295
+      - 🇨🇳 ｜CN｜openit.ml｜296
+      - 🇨🇳 ｜CN｜openit.ml｜297
+      - 🇨🇳 ｜CN｜openit.ml｜298
+      - 🇨🇳 ｜CN｜openit.ml｜299
+      - 🇨🇳 ｜CN｜openit.ml｜300
+      - 🇨🇳 ｜CN｜openit.ml｜4
+      - 🇩🇪 ｜DE｜openit.ml｜229
+      - 🇩🇪 ｜DE｜openit.ml｜231
+      - 🇩🇪 ｜DE｜openit.ml｜232
+      - 🇩🇪 ｜DE｜openit.ml｜233
+      - 🇩🇪 ｜DE｜openit.ml｜234
+      - 🇩🇪 ｜DE｜openit.ml｜235
+      - 🇩🇪 ｜DE｜openit.ml｜236
+      - 🇩🇪 ｜DE｜openit.ml｜237
+      - 🇩🇪 ｜DE｜openit.ml｜238
+      - 🇩🇪 ｜DE｜openit.ml｜239
+      - 🇩🇪 ｜DE｜openit.ml｜240
+      - 🇩🇪 ｜DE｜openit.ml｜241
+      - 🇩🇪 ｜DE｜openit.ml｜242
+      - 🇩🇪 ｜DE｜openit.ml｜243
+      - 🇩🇪 ｜DE｜openit.ml｜244
+      - 🇩🇪 ｜DE｜openit.ml｜245
+      - 🇩🇪 ｜DE｜openit.ml｜246
+      - 🇬🇧 ｜GB｜openit.ml｜230
+      - 🇮🇳 ｜IN｜openit.ml｜38
+      - 🇯🇵 ｜JP｜openit.ml｜171
+      - 🇯🇵 ｜JP｜openit.ml｜227
+      - 🇯🇵 ｜JP｜openit.ml｜5
+      - 🇰🇷 ｜KR｜openit.ml｜226
+      - 🇳🇱 ｜NL｜openit.ml｜146
+      - 🇳🇱 ｜NL｜openit.ml｜147
+      - 🇳🇱 ｜NL｜openit.ml｜148
+      - 🇳🇱 ｜NL｜openit.ml｜149
+      - 🇳🇱 ｜NL｜openit.ml｜150
+      - 🇳🇱 ｜NL｜openit.ml｜151
+      - 🇳🇱 ｜NL｜openit.ml｜152
+      - 🇳🇱 ｜NL｜openit.ml｜153
+      - 🇳🇱 ｜NL｜openit.ml｜154
+      - 🇳🇱 ｜NL｜openit.ml｜155
+      - 🇳🇱 ｜NL｜openit.ml｜156
+      - 🇳🇱 ｜NL｜openit.ml｜157
+      - 🇳🇱 ｜NL｜openit.ml｜158
+      - 🇳🇱 ｜NL｜openit.ml｜159
+      - 🇳🇱 ｜NL｜openit.ml｜160
+      - 🇳🇱 ｜NL｜openit.ml｜161
+      - 🇳🇱 ｜NL｜openit.ml｜162
+      - 🇳🇱 ｜NL｜openit.ml｜163
+      - 🇳🇱 ｜NL｜openit.ml｜164
+      - 🇳🇱 ｜NL｜openit.ml｜165
+      - 🇳🇱 ｜NL｜openit.ml｜166
+      - 🇳🇱 ｜NL｜openit.ml｜167
+      - 🇳🇱 ｜NL｜openit.ml｜168
+      - 🇳🇱 ｜NL｜openit.ml｜169
+      - 🇳🇱 ｜NL｜openit.ml｜170
+      - 🇳🇱 ｜NL｜openit.ml｜172
+      - 🇳🇱 ｜NL｜openit.ml｜173
+      - 🇳🇱 ｜NL｜openit.ml｜174
+      - 🇳🇱 ｜NL｜openit.ml｜175
+      - 🇳🇱 ｜NL｜openit.ml｜176
+      - 🇳🇱 ｜NL｜openit.ml｜177
+      - 🇳🇱 ｜NL｜openit.ml｜178
+      - 🇳🇱 ｜NL｜openit.ml｜179
+      - 🇳🇱 ｜NL｜openit.ml｜180
+      - 🇳🇱 ｜NL｜openit.ml｜181
+      - 🇳🇱 ｜NL｜openit.ml｜182
+      - 🇳🇱 ｜NL｜openit.ml｜183
+      - 🇳🇱 ｜NL｜openit.ml｜184
+      - 🇳🇱 ｜NL｜openit.ml｜185
+      - 🇳🇱 ｜NL｜openit.ml｜186
+      - 🇳🇱 ｜NL｜openit.ml｜187
+      - 🇳🇱 ｜NL｜openit.ml｜188
+      - 🇳🇱 ｜NL｜openit.ml｜189
+      - 🇳🇱 ｜NL｜openit.ml｜190
+      - 🇳🇱 ｜NL｜openit.ml｜191
+      - 🇳🇱 ｜NL｜openit.ml｜192
+      - 🇳🇱 ｜NL｜openit.ml｜193
+      - 🇳🇱 ｜NL｜openit.ml｜194
+      - 🇳🇱 ｜NL｜openit.ml｜195
+      - 🇳🇱 ｜NL｜openit.ml｜196
+      - 🇳🇱 ｜NL｜openit.ml｜197
+      - 🇳🇱 ｜NL｜openit.ml｜198
+      - 🇳🇱 ｜NL｜openit.ml｜199
+      - 🇵🇱 ｜PL｜openit.ml｜108
+      - 🇵🇱 ｜PL｜openit.ml｜109
+      - 🇵🇱 ｜PL｜openit.ml｜110
+      - 🇵🇱 ｜PL｜openit.ml｜111
+      - 🇵🇱 ｜PL｜openit.ml｜112
+      - 🇵🇱 ｜PL｜openit.ml｜113
+      - 🇵🇱 ｜PL｜openit.ml｜114
+      - 🇵🇱 ｜PL｜openit.ml｜115
+      - 🇵🇱 ｜PL｜openit.ml｜116
+      - 🇵🇱 ｜PL｜openit.ml｜117
+      - 🇵🇱 ｜PL｜openit.ml｜119
+      - 🇵🇱 ｜PL｜openit.ml｜120
+      - 🇵🇱 ｜PL｜openit.ml｜121
+      - 🇵🇱 ｜PL｜openit.ml｜122
+      - 🇵🇱 ｜PL｜openit.ml｜123
+      - 🇵🇱 ｜PL｜openit.ml｜124
+      - 🇵🇱 ｜PL｜openit.ml｜125
+      - 🇵🇱 ｜PL｜openit.ml｜126
+      - 🇵🇱 ｜PL｜openit.ml｜127
+      - 🇵🇱 ｜PL｜openit.ml｜128
+      - 🇵🇱 ｜PL｜openit.ml｜129
+      - 🇵🇱 ｜PL｜openit.ml｜130
+      - 🇵🇱 ｜PL｜openit.ml｜131
+      - 🇵🇱 ｜PL｜openit.ml｜132
+      - 🇵🇱 ｜PL｜openit.ml｜133
+      - 🇵🇱 ｜PL｜openit.ml｜134
+      - 🇵🇱 ｜PL｜openit.ml｜136
+      - 🇵🇱 ｜PL｜openit.ml｜137
+      - 🇵🇱 ｜PL｜openit.ml｜138
+      - 🇵🇱 ｜PL｜openit.ml｜139
+      - 🇵🇱 ｜PL｜openit.ml｜140
+      - 🇵🇱 ｜PL｜openit.ml｜141
+      - 🇵🇱 ｜PL｜openit.ml｜142
+      - 🇷🇺 ｜RU｜openit.ml｜118
+      - 🇷🇺 ｜RU｜openit.ml｜135
+      - 🇷🇺 ｜RU｜openit.ml｜143
+      - 🇷🇺 ｜RU｜openit.ml｜201
+      - 🇷🇺 ｜RU｜openit.ml｜202
+      - 🇷🇺 ｜RU｜openit.ml｜203
+      - 🇷🇺 ｜RU｜openit.ml｜204
+      - 🇷🇺 ｜RU｜openit.ml｜205
+      - 🇷🇺 ｜RU｜openit.ml｜206
+      - 🇷🇺 ｜RU｜openit.ml｜207
+      - 🇷🇺 ｜RU｜openit.ml｜208
+      - 🇷🇺 ｜RU｜openit.ml｜209
+      - 🇷🇺 ｜RU｜openit.ml｜210
+      - 🇷🇺 ｜RU｜openit.ml｜211
+      - 🇷🇺 ｜RU｜openit.ml｜212
+      - 🇷🇺 ｜RU｜openit.ml｜213
+      - 🇷🇺 ｜RU｜openit.ml｜214
+      - 🇷🇺 ｜RU｜openit.ml｜215
+      - 🇷🇺 ｜RU｜openit.ml｜217
+      - 🇷🇺 ｜RU｜openit.ml｜219
+      - 🇷🇺 ｜RU｜openit.ml｜220
+      - 🇷🇺 ｜RU｜openit.ml｜221
+      - 🇷🇺 ｜RU｜openit.ml｜222
+      - 🇷🇺 ｜RU｜openit.ml｜223
+      - 🇷🇺 ｜RU｜openit.ml｜224
+      - 🇸🇬 ｜SG｜openit.ml｜7
+      - 🇸🇬 ｜SG｜openit.ml｜8
+      - 🇺🇸 ｜US｜openit.ml｜1
+      - 🇺🇸 ｜US｜openit.ml｜10
+      - 🇺🇸 ｜US｜openit.ml｜100
+      - 🇺🇸 ｜US｜openit.ml｜101
+      - 🇺🇸 ｜US｜openit.ml｜102
+      - 🇺🇸 ｜US｜openit.ml｜11
+      - 🇺🇸 ｜US｜openit.ml｜12
+      - 🇺🇸 ｜US｜openit.ml｜13
+      - 🇺🇸 ｜US｜openit.ml｜14
+      - 🇺🇸 ｜US｜openit.ml｜15
+      - 🇺🇸 ｜US｜openit.ml｜16
+      - 🇺🇸 ｜US｜openit.ml｜17
+      - 🇺🇸 ｜US｜openit.ml｜18
+      - 🇺🇸 ｜US｜openit.ml｜19
+      - 🇺🇸 ｜US｜openit.ml｜2
+      - 🇺🇸 ｜US｜openit.ml｜20
+      - 🇺🇸 ｜US｜openit.ml｜21
+      - 🇺🇸 ｜US｜openit.ml｜22
+      - 🇺🇸 ｜US｜openit.ml｜228
+      - 🇺🇸 ｜US｜openit.ml｜23
+      - 🇺🇸 ｜US｜openit.ml｜24
+      - 🇺🇸 ｜US｜openit.ml｜25
+      - 🇺🇸 ｜US｜openit.ml｜26
+      - 🇺🇸 ｜US｜openit.ml｜27
+      - 🇺🇸 ｜US｜openit.ml｜28
+      - 🇺🇸 ｜US｜openit.ml｜284
+      - 🇺🇸 ｜US｜openit.ml｜29
+      - 🇺🇸 ｜US｜openit.ml｜3
+      - 🇺🇸 ｜US｜openit.ml｜30
+      - 🇺🇸 ｜US｜openit.ml｜302
+      - 🇺🇸 ｜US｜openit.ml｜31
+      - 🇺🇸 ｜US｜openit.ml｜32
+      - 🇺🇸 ｜US｜openit.ml｜33
+      - 🇺🇸 ｜US｜openit.ml｜34
+      - 🇺🇸 ｜US｜openit.ml｜35
+      - 🇺🇸 ｜US｜openit.ml｜36
+      - 🇺🇸 ｜US｜openit.ml｜37
+      - 🇺🇸 ｜US｜openit.ml｜39
+      - 🇺🇸 ｜US｜openit.ml｜40
+      - 🇺🇸 ｜US｜openit.ml｜41
+      - 🇺🇸 ｜US｜openit.ml｜42
+      - 🇺🇸 ｜US｜openit.ml｜43
+      - 🇺🇸 ｜US｜openit.ml｜44
+      - 🇺🇸 ｜US｜openit.ml｜45
+      - 🇺🇸 ｜US｜openit.ml｜46
+      - 🇺🇸 ｜US｜openit.ml｜47
+      - 🇺🇸 ｜US｜openit.ml｜48
+      - 🇺🇸 ｜US｜openit.ml｜49
+      - 🇺🇸 ｜US｜openit.ml｜50
+      - 🇺🇸 ｜US｜openit.ml｜51
+      - 🇺🇸 ｜US｜openit.ml｜52
+      - 🇺🇸 ｜US｜openit.ml｜53
+      - 🇺🇸 ｜US｜openit.ml｜54
+      - 🇺🇸 ｜US｜openit.ml｜55
+      - 🇺🇸 ｜US｜openit.ml｜56
+      - 🇺🇸 ｜US｜openit.ml｜57
+      - 🇺🇸 ｜US｜openit.ml｜58
+      - 🇺🇸 ｜US｜openit.ml｜59
+      - 🇺🇸 ｜US｜openit.ml｜6
+      - 🇺🇸 ｜US｜openit.ml｜60
+      - 🇺🇸 ｜US｜openit.ml｜61
+      - 🇺🇸 ｜US｜openit.ml｜62
+      - 🇺🇸 ｜US｜openit.ml｜63
+      - 🇺🇸 ｜US｜openit.ml｜64
+      - 🇺🇸 ｜US｜openit.ml｜65
+      - 🇺🇸 ｜US｜openit.ml｜66
+      - 🇺🇸 ｜US｜openit.ml｜67
+      - 🇺🇸 ｜US｜openit.ml｜68
+      - 🇺🇸 ｜US｜openit.ml｜69
+      - 🇺🇸 ｜US｜openit.ml｜70
+      - 🇺🇸 ｜US｜openit.ml｜71
+      - 🇺🇸 ｜US｜openit.ml｜72
+      - 🇺🇸 ｜US｜openit.ml｜73
+      - 🇺🇸 ｜US｜openit.ml｜74
+      - 🇺🇸 ｜US｜openit.ml｜75
+      - 🇺🇸 ｜US｜openit.ml｜76
+      - 🇺🇸 ｜US｜openit.ml｜77
+      - 🇺🇸 ｜US｜openit.ml｜78
+      - 🇺🇸 ｜US｜openit.ml｜79
+      - 🇺🇸 ｜US｜openit.ml｜80
+      - 🇺🇸 ｜US｜openit.ml｜81
+      - 🇺🇸 ｜US｜openit.ml｜82
+      - 🇺🇸 ｜US｜openit.ml｜83
+      - 🇺🇸 ｜US｜openit.ml｜84
+      - 🇺🇸 ｜US｜openit.ml｜85
+      - 🇺🇸 ｜US｜openit.ml｜86
+      - 🇺🇸 ｜US｜openit.ml｜87
+      - 🇺🇸 ｜US｜openit.ml｜88
+      - 🇺🇸 ｜US｜openit.ml｜89
+      - 🇺🇸 ｜US｜openit.ml｜9
+      - 🇺🇸 ｜US｜openit.ml｜90
+      - 🇺🇸 ｜US｜openit.ml｜91
+      - 🇺🇸 ｜US｜openit.ml｜92
+      - 🇺🇸 ｜US｜openit.ml｜93
+      - 🇺🇸 ｜US｜openit.ml｜94
+      - 🇺🇸 ｜US｜openit.ml｜95
+      - 🇺🇸 ｜US｜openit.ml｜96
+      - 🇺🇸 ｜US｜openit.ml｜97
+      - 🇺🇸 ｜US｜openit.ml｜98
+      - 🇺🇸 ｜US｜openit.ml｜99
   - name: 👉 国内网站
     type: select
     proxies:
@@ -1055,94 +1034,122 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_167 |53.24Mb
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - JP_174 TG@peekfun | 4.30Mb
-      - JP_184 TG@peekfun |26.07Mb
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_1_9@15
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_3_9@21
+      - 🇯🇵 ｜JP｜openit.ml｜171
+      - 🇯🇵 ｜JP｜openit.ml｜227
+      - 🇯🇵 ｜JP｜openit.ml｜5
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - US5
-      - US_410 TG@peekfun |31.91Mb
-      - US_411 TG@peekfun |34.30Mb
-      - US_412 TG@peekfun |34.42Mb
-      - US_413 TG@peekfun |33.17Mb
-      - US_414 TG@peekfun |31.18Mb
-      - US_415 TG@peekfun |20.54Mb
-      - US_416 TG@peekfun | 5.65Mb
-      - US_417 TG@peekfun |33.54Mb
-      - US_418 TG@peekfun |33.70Mb
-      - US_419 TG@peekfun |28.78Mb
-      - US_420 TG@peekfun |33.71Mb
-      - US_421 TG@peekfun |33.14Mb
-      - US_422 TG@peekfun | 8.38Mb
-      - US_423 TG@peekfun | 8.33Mb
-      - US_424 TG@peekfun |10.27Mb
-      - US_425 TG@peekfun |20.25Mb
-      - US_426 TG@peekfun | 9.56Mb
-      - US_427 TG@peekfun |13.53Mb
-      - US_428 TG@peekfun |28.76Mb
-      - US_429 TG@peekfun |32.44Mb
-      - US_430 TG@peekfun |27.27Mb
-      - US_431 TG@peekfun |26.83Mb
-      - US_432 TG@peekfun | 7.52Mb
-      - US_434 TG@peekfun |29.26Mb
-      - US_435 TG@peekfun |27.00Mb
-      - US_436 TG@peekfun |32.96Mb
-      - US_437 TG@peekfun |28.58Mb
-      - US_438 TG@peekfun |33.61Mb
-      - US_439 TG@peekfun |26.53Mb
-      - US_440 TG@peekfun |34.09Mb
-      - US_441 TG@peekfun |25.65Mb
-      - US_442 TG@peekfun |10.84Mb
-      - US_443 TG@peekfun |19.31Mb
-      - US_444 TG@peekfun |22.58Mb
-      - US_445 TG@peekfun |20.55Mb
-      - US_446 TG@peekfun |17.46Mb
-      - US_447 TG@peekfun |14.30Mb
-      - US_448 TG@peekfun |23.11Mb
-      - US_449 TG@peekfun | 7.39Mb
-      - US_450 TG@peekfun |28.90Mb
-      - US_451 TG@peekfun |29.21Mb
-      - US_452 TG@peekfun |31.16Mb
-      - US_453 TG@peekfun |32.33Mb
-      - US_454 TG@peekfun |23.32Mb
-      - US_455 TG@peekfun |32.47Mb
-      - US_456 TG@peekfun |28.81Mb
-      - US_457 TG@peekfun |31.17Mb
-      - US_458 TG@peekfun |30.51Mb
-      - US_459 TG@peekfun | 8.96Mb
-      - US_460 TG@peekfun |28.35Mb
-      - US_461 TG@peekfun | 9.93Mb
-      - US_462 TG@peekfun | 7.68Mb
-      - US_463 TG@peekfun |31.37Mb
-      - US_464 TG@peekfun |31.66Mb
-      - US_465 TG@peekfun |10.89Mb
-      - US_466 TG@peekfun |32.19Mb
-      - US_467 TG@peekfun |26.39Mb
-      - US_468 TG@peekfun |26.63Mb
-      - US_469 TG@peekfun |28.50Mb
-      - US_46_16@45
-      - US_476 TG@peekfun | 8.58Mb
-      - US_479 TG@peekfun | 6.19Mb
-      - US_480 TG@peekfun | 5.52Mb
-      - US_492 TG@peekfun | 3.25Mb
-      - US_495 TG@peekfun | 7.40Mb
-      - US_497 TG@peekfun | 2.38Mb
-      - US_502 TG@peekfun |19.52Mb
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_1_9@15
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国_3_9@21
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1514 |29.80Mb
+      - 🇺🇸 ｜US｜openit.ml｜1
+      - 🇺🇸 ｜US｜openit.ml｜10
+      - 🇺🇸 ｜US｜openit.ml｜100
+      - 🇺🇸 ｜US｜openit.ml｜101
+      - 🇺🇸 ｜US｜openit.ml｜102
+      - 🇺🇸 ｜US｜openit.ml｜11
+      - 🇺🇸 ｜US｜openit.ml｜12
+      - 🇺🇸 ｜US｜openit.ml｜13
+      - 🇺🇸 ｜US｜openit.ml｜14
+      - 🇺🇸 ｜US｜openit.ml｜15
+      - 🇺🇸 ｜US｜openit.ml｜16
+      - 🇺🇸 ｜US｜openit.ml｜17
+      - 🇺🇸 ｜US｜openit.ml｜18
+      - 🇺🇸 ｜US｜openit.ml｜19
+      - 🇺🇸 ｜US｜openit.ml｜2
+      - 🇺🇸 ｜US｜openit.ml｜20
+      - 🇺🇸 ｜US｜openit.ml｜21
+      - 🇺🇸 ｜US｜openit.ml｜22
+      - 🇺🇸 ｜US｜openit.ml｜228
+      - 🇺🇸 ｜US｜openit.ml｜23
+      - 🇺🇸 ｜US｜openit.ml｜24
+      - 🇺🇸 ｜US｜openit.ml｜25
+      - 🇺🇸 ｜US｜openit.ml｜26
+      - 🇺🇸 ｜US｜openit.ml｜27
+      - 🇺🇸 ｜US｜openit.ml｜28
+      - 🇺🇸 ｜US｜openit.ml｜284
+      - 🇺🇸 ｜US｜openit.ml｜29
+      - 🇺🇸 ｜US｜openit.ml｜3
+      - 🇺🇸 ｜US｜openit.ml｜30
+      - 🇺🇸 ｜US｜openit.ml｜302
+      - 🇺🇸 ｜US｜openit.ml｜31
+      - 🇺🇸 ｜US｜openit.ml｜32
+      - 🇺🇸 ｜US｜openit.ml｜33
+      - 🇺🇸 ｜US｜openit.ml｜34
+      - 🇺🇸 ｜US｜openit.ml｜35
+      - 🇺🇸 ｜US｜openit.ml｜36
+      - 🇺🇸 ｜US｜openit.ml｜37
+      - 🇺🇸 ｜US｜openit.ml｜39
+      - 🇺🇸 ｜US｜openit.ml｜40
+      - 🇺🇸 ｜US｜openit.ml｜41
+      - 🇺🇸 ｜US｜openit.ml｜42
+      - 🇺🇸 ｜US｜openit.ml｜43
+      - 🇺🇸 ｜US｜openit.ml｜44
+      - 🇺🇸 ｜US｜openit.ml｜45
+      - 🇺🇸 ｜US｜openit.ml｜46
+      - 🇺🇸 ｜US｜openit.ml｜47
+      - 🇺🇸 ｜US｜openit.ml｜48
+      - 🇺🇸 ｜US｜openit.ml｜49
+      - 🇺🇸 ｜US｜openit.ml｜50
+      - 🇺🇸 ｜US｜openit.ml｜51
+      - 🇺🇸 ｜US｜openit.ml｜52
+      - 🇺🇸 ｜US｜openit.ml｜53
+      - 🇺🇸 ｜US｜openit.ml｜54
+      - 🇺🇸 ｜US｜openit.ml｜55
+      - 🇺🇸 ｜US｜openit.ml｜56
+      - 🇺🇸 ｜US｜openit.ml｜57
+      - 🇺🇸 ｜US｜openit.ml｜58
+      - 🇺🇸 ｜US｜openit.ml｜59
+      - 🇺🇸 ｜US｜openit.ml｜6
+      - 🇺🇸 ｜US｜openit.ml｜60
+      - 🇺🇸 ｜US｜openit.ml｜61
+      - 🇺🇸 ｜US｜openit.ml｜62
+      - 🇺🇸 ｜US｜openit.ml｜63
+      - 🇺🇸 ｜US｜openit.ml｜64
+      - 🇺🇸 ｜US｜openit.ml｜65
+      - 🇺🇸 ｜US｜openit.ml｜66
+      - 🇺🇸 ｜US｜openit.ml｜67
+      - 🇺🇸 ｜US｜openit.ml｜68
+      - 🇺🇸 ｜US｜openit.ml｜69
+      - 🇺🇸 ｜US｜openit.ml｜70
+      - 🇺🇸 ｜US｜openit.ml｜71
+      - 🇺🇸 ｜US｜openit.ml｜72
+      - 🇺🇸 ｜US｜openit.ml｜73
+      - 🇺🇸 ｜US｜openit.ml｜74
+      - 🇺🇸 ｜US｜openit.ml｜75
+      - 🇺🇸 ｜US｜openit.ml｜76
+      - 🇺🇸 ｜US｜openit.ml｜77
+      - 🇺🇸 ｜US｜openit.ml｜78
+      - 🇺🇸 ｜US｜openit.ml｜79
+      - 🇺🇸 ｜US｜openit.ml｜80
+      - 🇺🇸 ｜US｜openit.ml｜81
+      - 🇺🇸 ｜US｜openit.ml｜82
+      - 🇺🇸 ｜US｜openit.ml｜83
+      - 🇺🇸 ｜US｜openit.ml｜84
+      - 🇺🇸 ｜US｜openit.ml｜85
+      - 🇺🇸 ｜US｜openit.ml｜86
+      - 🇺🇸 ｜US｜openit.ml｜87
+      - 🇺🇸 ｜US｜openit.ml｜88
+      - 🇺🇸 ｜US｜openit.ml｜89
+      - 🇺🇸 ｜US｜openit.ml｜9
+      - 🇺🇸 ｜US｜openit.ml｜90
+      - 🇺🇸 ｜US｜openit.ml｜91
+      - 🇺🇸 ｜US｜openit.ml｜92
+      - 🇺🇸 ｜US｜openit.ml｜93
+      - 🇺🇸 ｜US｜openit.ml｜94
+      - 🇺🇸 ｜US｜openit.ml｜95
+      - 🇺🇸 ｜US｜openit.ml｜96
+      - 🇺🇸 ｜US｜openit.ml｜97
+      - 🇺🇸 ｜US｜openit.ml｜98
+      - 🇺🇸 ｜US｜openit.ml｜99
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1156,14 +1163,15 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 ｜SG｜openit.ml｜7
+      - 🇸🇬 ｜SG｜openit.ml｜8
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - KR_187 TG@peekfun | 6.51Mb
+      - 🇰🇷 ｜KR｜openit.ml｜226
   - name: 🌍 其他地区
     type: select
     proxies:

@@ -5,16 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0319tw05.fans8.xyz:443, server: 0319tw05.fans8.xyz, port: 443, type: trojan, password: c6799a1d-4a74-4683-919f-98b0a5046591, skip-cert-verify: true, udp: true}
-  - {name: 10, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 11, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 167.88.61.50:2375, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 167.88.61.50:2375 2, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 167.88.61.50:2376, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 167.88.61.50:3306, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 167.88.61.50:3306 2, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 167.88.61.50:5003, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 167.88.61.50:5003 2, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 167.88.61.50:5004, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 167.88.61.50:5004 2, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 167.88.61.50:7306, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
@@ -25,13 +20,11 @@ proxies:
   - {name: 167.88.61.50:8119 2, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: 167.88.63.60:2376, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 167.88.63.60:8091, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 169.197.142.39:3306, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 169.197.142.39:3306 2, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 169.197.142.39:5003, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 169.197.142.39:5003 2, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 169.197.142.39:5004, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 169.197.142.39:5004 2, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 169.197.142.39:5500, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 169.197.142.39:6679, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: 169.197.142.39:6679 2, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: 169.197.142.39:6697, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
@@ -47,7 +40,6 @@ proxies:
   - {name: 169.197.142.39:8882, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: 169.197.142.39:8882 2, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: 169.197.142.39:8888, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 169.197.142.39:9102, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: 169.197.142.99:2375, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 169.197.142.99:443, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: 169.197.142.99:443 2, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
@@ -70,85 +62,27 @@ proxies:
   - {name: 185.167.116.253:9011, server: 185.167.116.253, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
   - {name: 185.167.116.253:9073, server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
   - {name: 185.167.116.38:9046, server: 185.167.116.38, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 185.4.65.6:21247, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: 212.81.47.12:443, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: 212.81.47.13:443, server: 212.81.47.13, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 213.183.51.171:9001, server: 213.183.51.171, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 213.183.51.171:9050, server: 213.183.51.171, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 213.183.51.171:9070, server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 213.183.53.177:9003, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 213.183.53.179:9038, server: 213.183.53.179, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: 213.183.53.179:9045, server: 213.183.53.179, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 213.183.53.200:9010, server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: 213.183.53.200:9025, server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 213.183.53.200:9046, server: 213.183.53.200, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 213.183.53.200:9084, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 213.183.53.200:9097, server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: 213.183.53.214:9045, server: 213.183.53.214, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 213.183.59.206:9000, server: 213.183.59.206, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 213.183.59.206:9005, server: 213.183.59.206, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 213.183.59.206:9008, server: 213.183.59.206, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 213.183.59.206:9020, server: 213.183.59.206, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 213.183.59.206:9027, server: 213.183.59.206, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 213.183.59.206:9030, server: 213.183.59.206, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: 213.183.59.206:9037, server: 213.183.59.206, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: 213.183.59.206:9038, server: 213.183.59.206, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: 213.183.59.206:9041, server: 213.183.59.206, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 213.183.59.206:9042, server: 213.183.59.206, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 213.183.59.206:9043, server: 213.183.59.206, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 213.183.59.206:9045, server: 213.183.59.206, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 213.183.59.206:9053, server: 213.183.59.206, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 213.183.59.206:9056, server: 213.183.59.206, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 213.183.59.206:9060, server: 213.183.59.206, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 213.183.59.206:9070, server: 213.183.59.206, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 213.183.59.206:9073, server: 213.183.59.206, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: 213.183.59.206:9094, server: 213.183.59.206, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 213.183.59.206:9097, server: 213.183.59.206, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: 213.183.59.206:9098, server: 213.183.59.206, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 213.183.59.211:9000, server: 213.183.59.211, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 213.183.59.211:9006, server: 213.183.59.211, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 213.183.59.211:9007, server: 213.183.59.211, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: 213.183.59.211:9011, server: 213.183.59.211, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 213.183.59.211:9015, server: 213.183.59.211, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: 213.183.59.211:9018, server: 213.183.59.211, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 213.183.59.211:9032, server: 213.183.59.211, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: 213.183.59.211:9033, server: 213.183.59.211, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 213.183.59.211:9043, server: 213.183.59.211, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 213.183.59.211:9046, server: 213.183.59.211, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 213.183.59.211:9050, server: 213.183.59.211, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 213.183.59.211:9060, server: 213.183.59.211, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 213.183.59.211:9079, server: 213.183.59.211, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 213.183.59.211:9097, server: 213.183.59.211, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
   - {name: 213.183.59.214:9059, server: 213.183.59.214, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
   - {name: 217.138.193.6:803, server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: 217.138.193.6:809, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: 217.138.193.6:812, server: 217.138.193.6, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 217.30.10.63:9007, server: 217.30.10.63, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
   - {name: 217.30.10.63:9019, server: 217.30.10.63, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 217.30.10.63:9031, server: 217.30.10.63, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 217.30.10.63:9045, server: 217.30.10.63, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
   - {name: 217.30.10.63:9073, server: 217.30.10.63, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: 217.30.10.63:9093, server: 217.30.10.63, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 217.30.10.64:9018, server: 217.30.10.64, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 217.30.10.64:9073, server: 217.30.10.64, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
   - {name: 217.30.10.65:9015, server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
   - {name: 217.30.10.65:9056, server: 217.30.10.65, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 217.30.10.65:9088, server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
   - {name: 217.30.10.68:9006, server: 217.30.10.68, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
   - {name: 38.114.114.69:3306, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 38.114.114.69:3306 2, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 38.114.114.69:3389, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 38.114.114.69:3389 2, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 38.114.114.69:5001, server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 38.114.114.69:5001 2, server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 38.114.114.69:6379, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: 38.114.114.69:6679, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 38.114.114.69:6697, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: 38.114.114.69:8000, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 38.114.114.69:8008, server: 38.114.114.69, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: 38.114.114.69:8009, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: 38.114.114.69:8119, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 38.114.114.69:8119 2, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: 38.114.114.69:8881, server: 38.114.114.69, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: 38.114.114.69:9101, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: 38.114.114.69:9102, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
@@ -160,7 +94,6 @@ proxies:
   - {name: 38.68.135.18:5601, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 38.68.135.18:8090, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: 38.68.135.18:9101, server: 38.68.135.18, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 38.68.135.19:2376, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 38.68.135.19:3389, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 38.68.135.19:5003, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: 38.68.135.19:5004, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
@@ -171,49 +104,61 @@ proxies:
   - {name: 38.68.135.19:7306 2, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: 38.68.135.19:8118, server: 38.68.135.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: 38.68.135.19:9102, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 38.68.135.19:9102 2, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 5.183.179.166:9094, server: 5.183.179.166, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 5.183.179.170:9006, server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
   - {name: 5.183.179.170:9056, server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
   - {name: 5.183.179.170:9060, server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 7, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: "%7B%22Host%22:%22usa-dallas.lvuft.com%22%7D"}}, udp: true}
   - {name: 85.208.108.58:8080, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 85.208.108.58:8080 2, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 9, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: NL_318 TG@peekfun |16.07Mb, server: 213.183.59.211, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: Alien, server: 129.226.94.247, port: 15301, type: vmess, uuid: 16844453-6154-4808-bdda-a26741ebe677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR_170 TG@peekfun | 8.13Mb, server: 149.202.82.172, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: GB_187 TG@peekfun | 9.10Mb, server: 152.89.210.84, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: RU_315 TG@peekfun |10.55Mb, server: 217.30.10.64, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: RU_368 TG@peekfun |10.63Mb, server: 217.30.10.64, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: US_416 TG@peekfun |13.96Mb, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_420 TG@peekfun |21.84Mb, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_421 TG@peekfun |12.90Mb, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_422 TG@peekfun |24.31Mb, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_425 TG@peekfun |19.88Mb, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_426 TG@peekfun | 8.02Mb, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: US_426 TG@peekfun |27.85Mb, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: US_427 TG@peekfun |27.40Mb, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_428 TG@peekfun | 9.95Mb, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: US_430 TG@peekfun |33.93Mb, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: US_431 TG@peekfun |30.41Mb, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: US_433 TG@peekfun |18.50Mb, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_435 TG@peekfun |17.67Mb, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_436 TG@peekfun |14.16Mb, server: 38.68.134.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: US_436 TG@peekfun |22.70Mb, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_437 TG@peekfun | 9.08Mb, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: US_439 TG@peekfun |27.88Mb, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: US_440 TG@peekfun |25.76Mb, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_441 TG@peekfun |12.01Mb, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: US_441 TG@peekfun |30.74Mb, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_443 TG@peekfun | 9.53Mb, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_444 TG@peekfun |11.45Mb, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: US_444 TG@peekfun |27.09Mb, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_445 TG@peekfun |12.26Mb, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: US_445 TG@peekfun |27.19Mb, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_446 TG@peekfun | 9.40Mb, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: US_446 TG@peekfun |20.48Mb, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: US_446 TG@peekfun |24.07Mb, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_447 TG@peekfun |30.09Mb, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: US_448 TG@peekfun |16.61Mb, server: 142.202.48.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: US_448 TG@peekfun |17.90Mb, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_450 TG@peekfun |18.75Mb, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: US_450 TG@peekfun |21.41Mb, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_453 TG@peekfun |22.48Mb, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: US_453 TG@peekfun |23.85Mb, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_454 TG@peekfun |14.42Mb, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: US_454 TG@peekfun |21.83M, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: US_454 TG@peekfun |25.46Mb, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_456 TG@peekfun |11.48Mb, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: US_456 TG@peekfun |26.89Mb, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: US_459 TG@peekfun |26.30Mb, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: US_460 TG@peekfun |16.75Mb, server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: US_461 TG@peekfun |16.02Mb, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_462 TG@peekfun |16.87Mb, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
   - {name: US_462 TG@peekfun |22.88Mb, server: 38.68.134.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: US_463 TG@peekfun |25.51Mb, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: US_464 TG@peekfun |20.60Mb, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: US_465 TG@peekfun |16.38Mb, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_466 TG@peekfun |26.07Mb, server: 38.114.114.69, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_467 TG@peekfun |26.88Mb, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_468 TG@peekfun |29.91Mb, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_471 TG@peekfun |26.41Mb, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: US_472 TG@peekfun |33.45Mb, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: US_473 TG@peekfun |27.49Mb, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: US_474 TG@peekfun |22.85Mb, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
@@ -221,130 +166,57 @@ proxies:
   - {name: US_476 TG@peekfun |19.10Mb, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: US_477 TG@peekfun |17.71Mb, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: US_478 TG@peekfun |27.60Mb, server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_480 TG@peekfun |25.06Mb, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ZZ_496 TG@peekfun |13.17Mb, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ZZ_507 TG@peekfun |10.70Mb, server: 134.195.196.231, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_514 TG@peekfun |10.34Mb, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_515 TG@peekfun | 8.12Mb, server: 134.195.196.231, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: ZZ_515 TG@peekfun |17.73Mb, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ZZ_516 TG@peekfun |11.38Mb, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: ZZ_517 TG@peekfun |16.67Mb, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: ZZ_518 TG@peekfun |17.71Mb, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: ZZ_522 TG@peekfun |19.04Mb, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: ZZ_523 TG@peekfun |20.96Mb, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: ZZ_534 TG@peekfun |17.12Mb, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_535 TG@peekfun |16.14Mb, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_539 TG@peekfun |16.09Mb, server: 134.195.196.231, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_542 TG@peekfun |18.96Mb, server: 134.195.196.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: ZZ_549 TG@peekfun |24.37Mb, server: 134.195.196.231, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _油管：全网最强白嫖, server: 129.226.94.247, port: 15301, type: vmess, uuid: 16844453-6154-4808-bdda-a26741ebe677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: au2-1.nigirocloud.com:443, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: au2-2.nigirocloud.com:443, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: au2-3.nigirocloud.com:443, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: au2-4.nigirocloud.com:443, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: cz5.v2ce.com:443, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, skip-cert-verify: true, udp: true}
-  - {name: jgwdb3.gaox.ml:443 2, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
-  - {name: jgwhdlb3.gaox.ml:443, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
-  - {name: jgwld2.gaox.ml:443, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, skip-cert-verify: true, udp: true}
-  - {name: jp1.v2yyds.cc:32111, server: jp1.v2yyds.cc, port: 32111, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, skip-cert-verify: true, udp: true}
-  - {name: rooms.starspace.link:443, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
-  - {name: s256.s2022.xyz:38209, server: s256.s2022.xyz, port: 38209, type: trojan, password: c8054dfc-513e-3558-9d2a-bccd10494898, skip-cert-verify: true, udp: true}
-  - {name: s256.s2022.xyz:38209 2, server: s256.s2022.xyz, port: 38209, type: trojan, password: 95548a85-e567-364b-8fbe-e845e6ec8371, skip-cert-verify: true, udp: true}
-  - {name: storage.starspace.link:443, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
-  - {name: sxdx-nf.jiashumao.net:35401, server: sxdx-nf.jiashumao.net, port: 35401, type: trojan, password: bfaf0f2b-c727-32ea-ab28-25e438fda91f, skip-cert-verify: true, udp: true}
-  - {name: v2cross.com.01.v2ce.com:443, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, skip-cert-verify: true, udp: true}
-  - {name: v2cross.com.03.v2ce.com:443, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
-  - {name: v2cross.com.04.v2ce.com:443, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
-  - {name: v2cross.com.05.v2ce.com:443, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: true, udp: true}
-  - {name: www.anlot.tk:2352, server: www.anlot.tk, port: 2352, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: true, udp: true}
-  - {name: 「🇦🇪」专属二「解锁」✰, server: ek.shenseven.xyz, port: 52096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt47.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇦🇪」永恒眼「解锁」★★, server: fk.shenseven.xyz, port: 52087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt25.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇦🇪」鬼血刃「解锁」★★, server: zf.shenseven.xyz, port: 42083, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt43.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇦🇺」神之罚「中转」★, server: ek.shenseven.xyz, port: 25565, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt31.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇦🇺」神农鼎「中转」✰✰, server: fk.shenseven.xyz, port: 32096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt4.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇨🇦」封天印「中转」★★, server: sk.shenseven.xyz, port: 12087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt20.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇩🇪」昊天塔「直连」★, server: qt39.shenseven.xyz, port: 443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt39.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇬🇧」狂神铠「直连」★, server: qt23.shenseven.xyz, port: 2087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt23.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇬🇧」神之手「解锁」★★, server: ek.shenseven.xyz, port: 45443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt19.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」三叉戟「中转」★★, server: fk.shenseven.xyz, port: 21314, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt13.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」专属八「直连」✰, server: qt58.shenseven.xyz, port: 2083, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt58.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」专属六「直连」✰, server: qt56.shenseven.xyz, port: 2053, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt56.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」专属十「中转」✰, server: zf.shenseven.xyz, port: 31314, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt60.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」八蛛矛「中转」★★, server: aj.shenseven.xyz, port: 12053, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt21.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」兵主神「免流」★, server: ok.shenseven.xyz, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
-  - {name: 「🇭🇰」备用四「免流」★, server: qv39.shenseven.xyz, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao1.10010.com}}, udp: true}
-  - {name: 「🇭🇰」太苍枪「直连」★★, server: qt1.shenseven.xyz, port: 8443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt1.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」昆仑镜「解锁」★★, server: dk.shenseven.xyz, port: 32083, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt37.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」生死神「免流」★★★, server: by.shenseven.xyz, port: 443, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao1.10010.com}}, udp: true}
-  - {name: 「🇭🇰」神之器「免流」★★★, server: 20.24.192.138, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao1.10010.com}}, udp: true}
-  - {name: 「🇭🇰」福利一「直连」★, server: dk.shenseven.xyz, port: 2083, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt51.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」福利三「直连」★, server: qt53.shenseven.xyz, port: 8443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt53.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」福利二「直连」★, server: qt52.shenseven.xyz, port: 2053, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt52.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」福利五「直连」★, server: qt55.shenseven.xyz, port: 2096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt55.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」福利四「直连」★, server: qt54.shenseven.xyz, port: 2087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt54.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」紫月鞭「中转」★, server: dk.shenseven.xyz, port: 22022, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt36.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」红绣球「解锁」★★, server: zf.shenseven.xyz, port: 49443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt17.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」观音泪「中转」★★, server: ok.shenseven.xyz, port: 43443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt12.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇭🇰」轩辕剑「直连」★, server: 20.247.113.143, port: 443, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 「🇮🇳」炼妖壶「直连」✰, server: qt7.shenseven.xyz, port: 443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt7.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」专属三「解锁」✰, server: qt48.shenseven.xyz, port: 2087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt48.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」专属九「直连」✡, server: qt59.shenseven.xyz, port: 443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt59.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」乾坤罩「解锁」★★, server: yk.shenseven.xyz, port: 38443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt5.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」凉龙雀「中转」★★, server: ek.shenseven.xyz, port: 33443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt30.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」南华刀「中转」★★, server: dk.shenseven.xyz, port: 32096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt34.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」备用六「免流」✡, server: qv41.shenseven.xyz, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
-  - {name: 「🇯🇵」复活甲「直连」✡, server: qt10.shenseven.xyz, port: 443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt10.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」太极图「解锁」★, server: aj.shenseven.xyz, port: 52096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt42.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」恒古尺「解锁」★★, server: zf.shenseven.xyz, port: 32053, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt45.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」昊天塔「免流」★★, server: qv8.shenseven.xyz, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 「🇯🇵」昊天锤「中转」★★, server: zf.shenseven.xyz, port: 34443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt40.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」木马牛「直连」✡, server: qt28.shenseven.xyz, port: 1314, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt28.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」满甲雪「解锁」★, server: qt32.shenseven.xyz, port: 2087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt32.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」盘古斧「直连」✰, server: qt9.shenseven.xyz, port: 8443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt9.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」神之戒「直连」★, server: qt27.shenseven.xyz, port: 2087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt27.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」神之盾「解锁」★★, server: ek.shenseven.xyz, port: 12096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt26.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」辟邪剑「解锁」✰, server: aj.shenseven.xyz, port: 12096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt18.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」过河卒「解锁」✡, server: qt35.shenseven.xyz, port: 2053, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt35.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」霸王弓「中转」★★, server: dk.shenseven.xyz, port: 52096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt3.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇯🇵」鬼雕刀「直连」✡, server: qt24.shenseven.xyz, port: 2083, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt24.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇰🇷」九齿耙「解锁」★, server: dk.shenseven.xyz, port: 52087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt41.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇰🇷」光明剑「解锁」★, server: qv25.shenseven.xyz, port: 443, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
-  - {name: 「🇰🇷」开天斧「解锁」★★, server: cd.shenseven.xyz, port: 52122, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg2shenseven, headers: {Host: cd.shenseven.xyz}}, udp: true}
-  - {name: 「🇰🇷」恒古尺「解锁」★, server: 47.241.233.124, port: 443, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 「🇰🇷」昆仑镜「解锁」✰, server: qv6.shenseven.xyz, port: 8080, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pull-hls.free.video.10010.com}}, udp: true}
-  - {name: 「🇰🇷」焚天炎「BGP」✰, server: 159.138.130.126, port: 443, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cfyyds, headers: {Host: qv10.shenseven.xyz}}, udp: true}
-  - {name: 「🇰🇷」虚无炎「解锁」★, server: 111.19.167.81, port: 443, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cfyyds, headers: {Host: qv10.shenseven.xyz}}, udp: true}
-  - {name: 「🇰🇷」金箍棒「解锁」★★, server: zf.shenseven.xyz, port: 45687, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt15.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇳🇱」备用三「免流」✰, server: qv38.shenseven.xyz, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao1.10010.com}}, udp: true}
-  - {name: 「🇸🇬」冥王剑「中转」★, server: aj.shenseven.xyz, port: 32096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt22.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇸🇬」备用五「免流」✡, server: qv40.shenseven.xyz, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
-  - {name: 「🇸🇬」女娲石「中转」★, server: dk.shenseven.xyz, port: 52022, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt2.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇸🇬」崆峒印「直连」✡, server: qt6.shenseven.xyz, port: 8443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt6.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇸🇬」福利十「中转」★, server: zf.shenseven.xyz, port: 58443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt65.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇸🇬」素王剑「直连」✡, server: qt29.shenseven.xyz, port: 2022, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt29.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇸🇬」轩辕剑「直连」★, server: qt38.shenseven.xyz, port: 2022, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt38.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇹🇼」至尊骨「解锁」★★, server: zf.shenseven.xyz, port: 44444, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt44.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇺🇸」专属一「解锁」✰, server: qt46.shenseven.xyz, port: 2087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt46.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇺🇸」专属七「直连」✡, server: qt57.shenseven.xyz, port: 443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt57.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇺🇸」修罗剑「解锁」★★★, server: xz.shenseven.xyz, port: 54443, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
-  - {name: 「🇺🇸」刹那枪「中转」★★, server: ek.shenseven.xyz, port: 12087, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt33.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇺🇸」打神石「中转」✰, server: qt8.shenseven.xyz, port: 2096, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt8.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇺🇸」诛仙剑「解锁」✰, server: qt16.shenseven.xyz, port: 443, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt16.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇺🇸」金刚镯「解锁」★★, server: zf.shenseven.xyz, port: 32083, type: trojan, password: d67905ca-310f-45e2-90b8-3dd2d5eb9690, sni: qt11.shenseven.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「🇺🇸」鬼血刃「免流」★, server: qv28.shenseven.xyz, port: 80, type: vmess, uuid: d67905ca-310f-45e2-90b8-3dd2d5eb9690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}, udp: true}
-  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_119 |31.05Mb, server: 51jp1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 51jp1.fans8.xyz}}, udp: true}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_415 |22.38Mb, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 油管：全网最强白嫖, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 油管：全网最强白嫖 2, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 油管：全网最强白嫖 3, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 油管：全网最强白嫖 4, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：全网最强白嫖 5, server: 38.68.135.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 油管：全网最强白嫖 6, server: 38.68.135.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 油管：全网最强白嫖 7, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 油管：全网最强白嫖 8, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 油管：全网最强白嫖 9, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 油管：全网最强白嫖 10, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 油管：全网最强白嫖 11, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 油管：全网最强白嫖 12, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：全网最强白嫖 13, server: 169.197.142.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 油管：全网最强白嫖 14, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 油管：全网最强白嫖 15, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 油管：全网最强白嫖 16, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 油管：全网最强白嫖 17, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 油管：全网最强白嫖 18, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：全网最强白嫖 19, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：全网最强白嫖 20, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：全网最强白嫖 21, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: 油管：全网最强白嫖 22, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: 油管：全网最强白嫖 23, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: 油管：全网最强白嫖 24, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 油管：全网最强白嫖 25, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 0319tw05.fans8.xyz:443
-      - 10
-      - 11
-      - 167.88.61.50:2375
       - 167.88.61.50:2375 2
       - 167.88.61.50:2376
       - 167.88.61.50:3306
       - 167.88.61.50:3306 2
       - 167.88.61.50:5003
-      - 167.88.61.50:5003 2
       - 167.88.61.50:5004
       - 167.88.61.50:5004 2
       - 167.88.61.50:7306
@@ -355,13 +227,11 @@ proxy-groups:
       - 167.88.61.50:8119 2
       - 167.88.63.60:2376
       - 167.88.63.60:8091
-      - 169.197.142.39:3306
       - 169.197.142.39:3306 2
       - 169.197.142.39:5003
       - 169.197.142.39:5003 2
       - 169.197.142.39:5004
       - 169.197.142.39:5004 2
-      - 169.197.142.39:5500
       - 169.197.142.39:6679
       - 169.197.142.39:6679 2
       - 169.197.142.39:6697
@@ -377,7 +247,6 @@ proxy-groups:
       - 169.197.142.39:8882
       - 169.197.142.39:8882 2
       - 169.197.142.39:8888
-      - 169.197.142.39:9102
       - 169.197.142.99:2375
       - 169.197.142.99:443
       - 169.197.142.99:443 2
@@ -400,85 +269,27 @@ proxy-groups:
       - 185.167.116.253:9011
       - 185.167.116.253:9073
       - 185.167.116.38:9046
-      - 185.4.65.6:21247
-      - 212.81.47.12:443
       - 212.81.47.13:443
-      - 213.183.51.171:9001
-      - 213.183.51.171:9050
-      - 213.183.51.171:9070
-      - 213.183.53.177:9003
-      - 213.183.53.179:9038
-      - 213.183.53.179:9045
-      - 213.183.53.200:9010
-      - 213.183.53.200:9025
-      - 213.183.53.200:9046
-      - 213.183.53.200:9084
-      - 213.183.53.200:9097
-      - 213.183.53.214:9045
-      - 213.183.59.206:9000
-      - 213.183.59.206:9005
-      - 213.183.59.206:9008
-      - 213.183.59.206:9020
-      - 213.183.59.206:9027
-      - 213.183.59.206:9030
-      - 213.183.59.206:9037
-      - 213.183.59.206:9038
-      - 213.183.59.206:9041
-      - 213.183.59.206:9042
-      - 213.183.59.206:9043
-      - 213.183.59.206:9045
-      - 213.183.59.206:9053
-      - 213.183.59.206:9056
-      - 213.183.59.206:9060
-      - 213.183.59.206:9070
-      - 213.183.59.206:9073
-      - 213.183.59.206:9094
-      - 213.183.59.206:9097
-      - 213.183.59.206:9098
-      - 213.183.59.211:9000
-      - 213.183.59.211:9006
-      - 213.183.59.211:9007
-      - 213.183.59.211:9011
-      - 213.183.59.211:9015
-      - 213.183.59.211:9018
-      - 213.183.59.211:9032
-      - 213.183.59.211:9033
-      - 213.183.59.211:9043
-      - 213.183.59.211:9046
-      - 213.183.59.211:9050
-      - 213.183.59.211:9060
-      - 213.183.59.211:9079
-      - 213.183.59.211:9097
       - 213.183.59.214:9059
       - 217.138.193.6:803
       - 217.138.193.6:809
       - 217.138.193.6:812
-      - 217.30.10.63:9007
       - 217.30.10.63:9019
-      - 217.30.10.63:9031
-      - 217.30.10.63:9045
       - 217.30.10.63:9073
-      - 217.30.10.63:9093
-      - 217.30.10.64:9018
-      - 217.30.10.64:9073
       - 217.30.10.65:9015
       - 217.30.10.65:9056
-      - 217.30.10.65:9088
       - 217.30.10.68:9006
       - 38.114.114.69:3306
       - 38.114.114.69:3306 2
-      - 38.114.114.69:3389
       - 38.114.114.69:3389 2
       - 38.114.114.69:5001
       - 38.114.114.69:5001 2
       - 38.114.114.69:6379
       - 38.114.114.69:6679
-      - 38.114.114.69:6697
       - 38.114.114.69:8000
       - 38.114.114.69:8008
       - 38.114.114.69:8009
       - 38.114.114.69:8119
-      - 38.114.114.69:8119 2
       - 38.114.114.69:8881
       - 38.114.114.69:9101
       - 38.114.114.69:9102
@@ -490,7 +301,6 @@ proxy-groups:
       - 38.68.135.18:5601
       - 38.68.135.18:8090
       - 38.68.135.18:9101
-      - 38.68.135.19:2376
       - 38.68.135.19:3389
       - 38.68.135.19:5003
       - 38.68.135.19:5004
@@ -501,49 +311,61 @@ proxy-groups:
       - 38.68.135.19:7306 2
       - 38.68.135.19:8118
       - 38.68.135.19:9102
-      - 38.68.135.19:9102 2
-      - 5.183.179.166:9094
-      - 5.183.179.170:9006
       - 5.183.179.170:9056
       - 5.183.179.170:9060
-      - 7
       - 85.208.108.58:8080
       - 85.208.108.58:8080 2
-      - 9
-      - NL_318 TG@peekfun |16.07Mb
+      - Alien
+      - FR_170 TG@peekfun | 8.13Mb
+      - GB_187 TG@peekfun | 9.10Mb
+      - RU_315 TG@peekfun |10.55Mb
+      - RU_368 TG@peekfun |10.63Mb
+      - US_416 TG@peekfun |13.96Mb
+      - US_420 TG@peekfun |21.84Mb
+      - US_421 TG@peekfun |12.90Mb
+      - US_422 TG@peekfun |24.31Mb
+      - US_425 TG@peekfun |19.88Mb
+      - US_426 TG@peekfun | 8.02Mb
       - US_426 TG@peekfun |27.85Mb
       - US_427 TG@peekfun |27.40Mb
+      - US_428 TG@peekfun | 9.95Mb
       - US_430 TG@peekfun |33.93Mb
       - US_431 TG@peekfun |30.41Mb
       - US_433 TG@peekfun |18.50Mb
+      - US_435 TG@peekfun |17.67Mb
+      - US_436 TG@peekfun |14.16Mb
       - US_436 TG@peekfun |22.70Mb
+      - US_437 TG@peekfun | 9.08Mb
       - US_439 TG@peekfun |27.88Mb
       - US_440 TG@peekfun |25.76Mb
+      - US_441 TG@peekfun |12.01Mb
       - US_441 TG@peekfun |30.74Mb
+      - US_443 TG@peekfun | 9.53Mb
+      - US_444 TG@peekfun |11.45Mb
       - US_444 TG@peekfun |27.09Mb
+      - US_445 TG@peekfun |12.26Mb
       - US_445 TG@peekfun |27.19Mb
+      - US_446 TG@peekfun | 9.40Mb
       - US_446 TG@peekfun |20.48Mb
       - US_446 TG@peekfun |24.07Mb
-      - US_447 TG@peekfun |30.09Mb
       - US_448 TG@peekfun |16.61Mb
       - US_448 TG@peekfun |17.90Mb
+      - US_450 TG@peekfun |18.75Mb
       - US_450 TG@peekfun |21.41Mb
-      - US_453 TG@peekfun |22.48Mb
       - US_453 TG@peekfun |23.85Mb
+      - US_454 TG@peekfun |14.42Mb
       - US_454 TG@peekfun |21.83M
       - US_454 TG@peekfun |25.46Mb
+      - US_456 TG@peekfun |11.48Mb
       - US_456 TG@peekfun |26.89Mb
       - US_459 TG@peekfun |26.30Mb
       - US_460 TG@peekfun |16.75Mb
       - US_461 TG@peekfun |16.02Mb
+      - US_462 TG@peekfun |16.87Mb
       - US_462 TG@peekfun |22.88Mb
       - US_463 TG@peekfun |25.51Mb
       - US_464 TG@peekfun |20.60Mb
       - US_465 TG@peekfun |16.38Mb
-      - US_466 TG@peekfun |26.07Mb
-      - US_467 TG@peekfun |26.88Mb
-      - US_468 TG@peekfun |29.91Mb
-      - US_471 TG@peekfun |26.41Mb
       - US_472 TG@peekfun |33.45Mb
       - US_473 TG@peekfun |27.49Mb
       - US_474 TG@peekfun |22.85Mb
@@ -551,130 +373,57 @@ proxy-groups:
       - US_476 TG@peekfun |19.10Mb
       - US_477 TG@peekfun |17.71Mb
       - US_478 TG@peekfun |27.60Mb
-      - US_480 TG@peekfun |25.06Mb
+      - ZZ_496 TG@peekfun |13.17Mb
+      - ZZ_507 TG@peekfun |10.70Mb
+      - ZZ_514 TG@peekfun |10.34Mb
+      - ZZ_515 TG@peekfun | 8.12Mb
       - ZZ_515 TG@peekfun |17.73Mb
+      - ZZ_516 TG@peekfun |11.38Mb
       - ZZ_517 TG@peekfun |16.67Mb
       - ZZ_518 TG@peekfun |17.71Mb
       - ZZ_522 TG@peekfun |19.04Mb
       - ZZ_523 TG@peekfun |20.96Mb
       - ZZ_534 TG@peekfun |17.12Mb
-      - ZZ_535 TG@peekfun |16.14Mb
-      - ZZ_539 TG@peekfun |16.09Mb
-      - ZZ_542 TG@peekfun |18.96Mb
       - ZZ_549 TG@peekfun |24.37Mb
-      - _油管：全网最强白嫖
       - au2-1.nigirocloud.com:443
       - au2-2.nigirocloud.com:443
       - au2-3.nigirocloud.com:443
-      - au2-4.nigirocloud.com:443
-      - cz5.v2ce.com:443
-      - jgwdb3.gaox.ml:443 2
-      - jgwhdlb3.gaox.ml:443
-      - jgwld2.gaox.ml:443
-      - jp1.v2yyds.cc:32111
-      - rooms.starspace.link:443
-      - s256.s2022.xyz:38209
-      - s256.s2022.xyz:38209 2
-      - storage.starspace.link:443
-      - sxdx-nf.jiashumao.net:35401
-      - v2cross.com.01.v2ce.com:443
-      - v2cross.com.03.v2ce.com:443
-      - v2cross.com.04.v2ce.com:443
-      - v2cross.com.05.v2ce.com:443
-      - www.anlot.tk:2352
-      - 「🇦🇪」专属二「解锁」✰
-      - 「🇦🇪」永恒眼「解锁」★★
-      - 「🇦🇪」鬼血刃「解锁」★★
-      - 「🇦🇺」神之罚「中转」★
-      - 「🇦🇺」神农鼎「中转」✰✰
-      - 「🇨🇦」封天印「中转」★★
-      - 「🇩🇪」昊天塔「直连」★
-      - 「🇬🇧」狂神铠「直连」★
-      - 「🇬🇧」神之手「解锁」★★
-      - 「🇭🇰」三叉戟「中转」★★
-      - 「🇭🇰」专属八「直连」✰
-      - 「🇭🇰」专属六「直连」✰
-      - 「🇭🇰」专属十「中转」✰
-      - 「🇭🇰」八蛛矛「中转」★★
-      - 「🇭🇰」兵主神「免流」★
-      - 「🇭🇰」备用四「免流」★
-      - 「🇭🇰」太苍枪「直连」★★
-      - 「🇭🇰」昆仑镜「解锁」★★
-      - 「🇭🇰」生死神「免流」★★★
-      - 「🇭🇰」神之器「免流」★★★
-      - 「🇭🇰」福利一「直连」★
-      - 「🇭🇰」福利三「直连」★
-      - 「🇭🇰」福利二「直连」★
-      - 「🇭🇰」福利五「直连」★
-      - 「🇭🇰」福利四「直连」★
-      - 「🇭🇰」紫月鞭「中转」★
-      - 「🇭🇰」红绣球「解锁」★★
-      - 「🇭🇰」观音泪「中转」★★
-      - 「🇭🇰」轩辕剑「直连」★
-      - 「🇮🇳」炼妖壶「直连」✰
-      - 「🇯🇵」专属三「解锁」✰
-      - 「🇯🇵」专属九「直连」✡
-      - 「🇯🇵」乾坤罩「解锁」★★
-      - 「🇯🇵」凉龙雀「中转」★★
-      - 「🇯🇵」南华刀「中转」★★
-      - 「🇯🇵」备用六「免流」✡
-      - 「🇯🇵」复活甲「直连」✡
-      - 「🇯🇵」太极图「解锁」★
-      - 「🇯🇵」恒古尺「解锁」★★
-      - 「🇯🇵」昊天塔「免流」★★
-      - 「🇯🇵」昊天锤「中转」★★
-      - 「🇯🇵」木马牛「直连」✡
-      - 「🇯🇵」满甲雪「解锁」★
-      - 「🇯🇵」盘古斧「直连」✰
-      - 「🇯🇵」神之戒「直连」★
-      - 「🇯🇵」神之盾「解锁」★★
-      - 「🇯🇵」辟邪剑「解锁」✰
-      - 「🇯🇵」过河卒「解锁」✡
-      - 「🇯🇵」霸王弓「中转」★★
-      - 「🇯🇵」鬼雕刀「直连」✡
-      - 「🇰🇷」九齿耙「解锁」★
-      - 「🇰🇷」光明剑「解锁」★
-      - 「🇰🇷」开天斧「解锁」★★
-      - 「🇰🇷」恒古尺「解锁」★
-      - 「🇰🇷」昆仑镜「解锁」✰
-      - 「🇰🇷」焚天炎「BGP」✰
-      - 「🇰🇷」虚无炎「解锁」★
-      - 「🇰🇷」金箍棒「解锁」★★
-      - 「🇳🇱」备用三「免流」✰
-      - 「🇸🇬」冥王剑「中转」★
-      - 「🇸🇬」备用五「免流」✡
-      - 「🇸🇬」女娲石「中转」★
-      - 「🇸🇬」崆峒印「直连」✡
-      - 「🇸🇬」福利十「中转」★
-      - 「🇸🇬」素王剑「直连」✡
-      - 「🇸🇬」轩辕剑「直连」★
-      - 「🇹🇼」至尊骨「解锁」★★
-      - 「🇺🇸」专属一「解锁」✰
-      - 「🇺🇸」专属七「直连」✡
-      - 「🇺🇸」修罗剑「解锁」★★★
-      - 「🇺🇸」刹那枪「中转」★★
-      - 「🇺🇸」打神石「中转」✰
-      - 「🇺🇸」诛仙剑「解锁」✰
-      - 「🇺🇸」金刚镯「解锁」★★
-      - 「🇺🇸」鬼血刃「免流」★
-      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_119 |31.05Mb
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_415 |22.38Mb
+      - 油管：全网最强白嫖
+      - 油管：全网最强白嫖 2
+      - 油管：全网最强白嫖 3
+      - 油管：全网最强白嫖 4
+      - 油管：全网最强白嫖 5
+      - 油管：全网最强白嫖 6
+      - 油管：全网最强白嫖 7
+      - 油管：全网最强白嫖 8
+      - 油管：全网最强白嫖 9
+      - 油管：全网最强白嫖 10
+      - 油管：全网最强白嫖 11
+      - 油管：全网最强白嫖 12
+      - 油管：全网最强白嫖 13
+      - 油管：全网最强白嫖 14
+      - 油管：全网最强白嫖 15
+      - 油管：全网最强白嫖 16
+      - 油管：全网最强白嫖 17
+      - 油管：全网最强白嫖 18
+      - 油管：全网最强白嫖 19
+      - 油管：全网最强白嫖 20
+      - 油管：全网最强白嫖 21
+      - 油管：全网最强白嫖 22
+      - 油管：全网最强白嫖 23
+      - 油管：全网最强白嫖 24
+      - 油管：全网最强白嫖 25
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 0319tw05.fans8.xyz:443
-      - 10
-      - 11
-      - 167.88.61.50:2375
       - 167.88.61.50:2375 2
       - 167.88.61.50:2376
       - 167.88.61.50:3306
       - 167.88.61.50:3306 2
       - 167.88.61.50:5003
-      - 167.88.61.50:5003 2
       - 167.88.61.50:5004
       - 167.88.61.50:5004 2
       - 167.88.61.50:7306
@@ -685,13 +434,11 @@ proxy-groups:
       - 167.88.61.50:8119 2
       - 167.88.63.60:2376
       - 167.88.63.60:8091
-      - 169.197.142.39:3306
       - 169.197.142.39:3306 2
       - 169.197.142.39:5003
       - 169.197.142.39:5003 2
       - 169.197.142.39:5004
       - 169.197.142.39:5004 2
-      - 169.197.142.39:5500
       - 169.197.142.39:6679
       - 169.197.142.39:6679 2
       - 169.197.142.39:6697
@@ -707,7 +454,6 @@ proxy-groups:
       - 169.197.142.39:8882
       - 169.197.142.39:8882 2
       - 169.197.142.39:8888
-      - 169.197.142.39:9102
       - 169.197.142.99:2375
       - 169.197.142.99:443
       - 169.197.142.99:443 2
@@ -730,85 +476,27 @@ proxy-groups:
       - 185.167.116.253:9011
       - 185.167.116.253:9073
       - 185.167.116.38:9046
-      - 185.4.65.6:21247
-      - 212.81.47.12:443
       - 212.81.47.13:443
-      - 213.183.51.171:9001
-      - 213.183.51.171:9050
-      - 213.183.51.171:9070
-      - 213.183.53.177:9003
-      - 213.183.53.179:9038
-      - 213.183.53.179:9045
-      - 213.183.53.200:9010
-      - 213.183.53.200:9025
-      - 213.183.53.200:9046
-      - 213.183.53.200:9084
-      - 213.183.53.200:9097
-      - 213.183.53.214:9045
-      - 213.183.59.206:9000
-      - 213.183.59.206:9005
-      - 213.183.59.206:9008
-      - 213.183.59.206:9020
-      - 213.183.59.206:9027
-      - 213.183.59.206:9030
-      - 213.183.59.206:9037
-      - 213.183.59.206:9038
-      - 213.183.59.206:9041
-      - 213.183.59.206:9042
-      - 213.183.59.206:9043
-      - 213.183.59.206:9045
-      - 213.183.59.206:9053
-      - 213.183.59.206:9056
-      - 213.183.59.206:9060
-      - 213.183.59.206:9070
-      - 213.183.59.206:9073
-      - 213.183.59.206:9094
-      - 213.183.59.206:9097
-      - 213.183.59.206:9098
-      - 213.183.59.211:9000
-      - 213.183.59.211:9006
-      - 213.183.59.211:9007
-      - 213.183.59.211:9011
-      - 213.183.59.211:9015
-      - 213.183.59.211:9018
-      - 213.183.59.211:9032
-      - 213.183.59.211:9033
-      - 213.183.59.211:9043
-      - 213.183.59.211:9046
-      - 213.183.59.211:9050
-      - 213.183.59.211:9060
-      - 213.183.59.211:9079
-      - 213.183.59.211:9097
       - 213.183.59.214:9059
       - 217.138.193.6:803
       - 217.138.193.6:809
       - 217.138.193.6:812
-      - 217.30.10.63:9007
       - 217.30.10.63:9019
-      - 217.30.10.63:9031
-      - 217.30.10.63:9045
       - 217.30.10.63:9073
-      - 217.30.10.63:9093
-      - 217.30.10.64:9018
-      - 217.30.10.64:9073
       - 217.30.10.65:9015
       - 217.30.10.65:9056
-      - 217.30.10.65:9088
       - 217.30.10.68:9006
       - 38.114.114.69:3306
       - 38.114.114.69:3306 2
-      - 38.114.114.69:3389
       - 38.114.114.69:3389 2
       - 38.114.114.69:5001
       - 38.114.114.69:5001 2
       - 38.114.114.69:6379
       - 38.114.114.69:6679
-      - 38.114.114.69:6697
       - 38.114.114.69:8000
       - 38.114.114.69:8008
       - 38.114.114.69:8009
       - 38.114.114.69:8119
-      - 38.114.114.69:8119 2
       - 38.114.114.69:8881
       - 38.114.114.69:9101
       - 38.114.114.69:9102
@@ -820,7 +508,6 @@ proxy-groups:
       - 38.68.135.18:5601
       - 38.68.135.18:8090
       - 38.68.135.18:9101
-      - 38.68.135.19:2376
       - 38.68.135.19:3389
       - 38.68.135.19:5003
       - 38.68.135.19:5004
@@ -831,49 +518,61 @@ proxy-groups:
       - 38.68.135.19:7306 2
       - 38.68.135.19:8118
       - 38.68.135.19:9102
-      - 38.68.135.19:9102 2
-      - 5.183.179.166:9094
-      - 5.183.179.170:9006
       - 5.183.179.170:9056
       - 5.183.179.170:9060
-      - 7
       - 85.208.108.58:8080
       - 85.208.108.58:8080 2
-      - 9
-      - NL_318 TG@peekfun |16.07Mb
+      - Alien
+      - FR_170 TG@peekfun | 8.13Mb
+      - GB_187 TG@peekfun | 9.10Mb
+      - RU_315 TG@peekfun |10.55Mb
+      - RU_368 TG@peekfun |10.63Mb
+      - US_416 TG@peekfun |13.96Mb
+      - US_420 TG@peekfun |21.84Mb
+      - US_421 TG@peekfun |12.90Mb
+      - US_422 TG@peekfun |24.31Mb
+      - US_425 TG@peekfun |19.88Mb
+      - US_426 TG@peekfun | 8.02Mb
       - US_426 TG@peekfun |27.85Mb
       - US_427 TG@peekfun |27.40Mb
+      - US_428 TG@peekfun | 9.95Mb
       - US_430 TG@peekfun |33.93Mb
       - US_431 TG@peekfun |30.41Mb
       - US_433 TG@peekfun |18.50Mb
+      - US_435 TG@peekfun |17.67Mb
+      - US_436 TG@peekfun |14.16Mb
       - US_436 TG@peekfun |22.70Mb
+      - US_437 TG@peekfun | 9.08Mb
       - US_439 TG@peekfun |27.88Mb
       - US_440 TG@peekfun |25.76Mb
+      - US_441 TG@peekfun |12.01Mb
       - US_441 TG@peekfun |30.74Mb
+      - US_443 TG@peekfun | 9.53Mb
+      - US_444 TG@peekfun |11.45Mb
       - US_444 TG@peekfun |27.09Mb
+      - US_445 TG@peekfun |12.26Mb
       - US_445 TG@peekfun |27.19Mb
+      - US_446 TG@peekfun | 9.40Mb
       - US_446 TG@peekfun |20.48Mb
       - US_446 TG@peekfun |24.07Mb
-      - US_447 TG@peekfun |30.09Mb
       - US_448 TG@peekfun |16.61Mb
       - US_448 TG@peekfun |17.90Mb
+      - US_450 TG@peekfun |18.75Mb
       - US_450 TG@peekfun |21.41Mb
-      - US_453 TG@peekfun |22.48Mb
       - US_453 TG@peekfun |23.85Mb
+      - US_454 TG@peekfun |14.42Mb
       - US_454 TG@peekfun |21.83M
       - US_454 TG@peekfun |25.46Mb
+      - US_456 TG@peekfun |11.48Mb
       - US_456 TG@peekfun |26.89Mb
       - US_459 TG@peekfun |26.30Mb
       - US_460 TG@peekfun |16.75Mb
       - US_461 TG@peekfun |16.02Mb
+      - US_462 TG@peekfun |16.87Mb
       - US_462 TG@peekfun |22.88Mb
       - US_463 TG@peekfun |25.51Mb
       - US_464 TG@peekfun |20.60Mb
       - US_465 TG@peekfun |16.38Mb
-      - US_466 TG@peekfun |26.07Mb
-      - US_467 TG@peekfun |26.88Mb
-      - US_468 TG@peekfun |29.91Mb
-      - US_471 TG@peekfun |26.41Mb
       - US_472 TG@peekfun |33.45Mb
       - US_473 TG@peekfun |27.49Mb
       - US_474 TG@peekfun |22.85Mb
@@ -881,114 +580,46 @@ proxy-groups:
       - US_476 TG@peekfun |19.10Mb
       - US_477 TG@peekfun |17.71Mb
       - US_478 TG@peekfun |27.60Mb
-      - US_480 TG@peekfun |25.06Mb
+      - ZZ_496 TG@peekfun |13.17Mb
+      - ZZ_507 TG@peekfun |10.70Mb
+      - ZZ_514 TG@peekfun |10.34Mb
+      - ZZ_515 TG@peekfun | 8.12Mb
       - ZZ_515 TG@peekfun |17.73Mb
+      - ZZ_516 TG@peekfun |11.38Mb
       - ZZ_517 TG@peekfun |16.67Mb
       - ZZ_518 TG@peekfun |17.71Mb
       - ZZ_522 TG@peekfun |19.04Mb
       - ZZ_523 TG@peekfun |20.96Mb
       - ZZ_534 TG@peekfun |17.12Mb
-      - ZZ_535 TG@peekfun |16.14Mb
-      - ZZ_539 TG@peekfun |16.09Mb
-      - ZZ_542 TG@peekfun |18.96Mb
       - ZZ_549 TG@peekfun |24.37Mb
-      - _油管：全网最强白嫖
       - au2-1.nigirocloud.com:443
       - au2-2.nigirocloud.com:443
       - au2-3.nigirocloud.com:443
-      - au2-4.nigirocloud.com:443
-      - cz5.v2ce.com:443
-      - jgwdb3.gaox.ml:443 2
-      - jgwhdlb3.gaox.ml:443
-      - jgwld2.gaox.ml:443
-      - jp1.v2yyds.cc:32111
-      - rooms.starspace.link:443
-      - s256.s2022.xyz:38209
-      - s256.s2022.xyz:38209 2
-      - storage.starspace.link:443
-      - sxdx-nf.jiashumao.net:35401
-      - v2cross.com.01.v2ce.com:443
-      - v2cross.com.03.v2ce.com:443
-      - v2cross.com.04.v2ce.com:443
-      - v2cross.com.05.v2ce.com:443
-      - www.anlot.tk:2352
-      - 「🇦🇪」专属二「解锁」✰
-      - 「🇦🇪」永恒眼「解锁」★★
-      - 「🇦🇪」鬼血刃「解锁」★★
-      - 「🇦🇺」神之罚「中转」★
-      - 「🇦🇺」神农鼎「中转」✰✰
-      - 「🇨🇦」封天印「中转」★★
-      - 「🇩🇪」昊天塔「直连」★
-      - 「🇬🇧」狂神铠「直连」★
-      - 「🇬🇧」神之手「解锁」★★
-      - 「🇭🇰」三叉戟「中转」★★
-      - 「🇭🇰」专属八「直连」✰
-      - 「🇭🇰」专属六「直连」✰
-      - 「🇭🇰」专属十「中转」✰
-      - 「🇭🇰」八蛛矛「中转」★★
-      - 「🇭🇰」兵主神「免流」★
-      - 「🇭🇰」备用四「免流」★
-      - 「🇭🇰」太苍枪「直连」★★
-      - 「🇭🇰」昆仑镜「解锁」★★
-      - 「🇭🇰」生死神「免流」★★★
-      - 「🇭🇰」神之器「免流」★★★
-      - 「🇭🇰」福利一「直连」★
-      - 「🇭🇰」福利三「直连」★
-      - 「🇭🇰」福利二「直连」★
-      - 「🇭🇰」福利五「直连」★
-      - 「🇭🇰」福利四「直连」★
-      - 「🇭🇰」紫月鞭「中转」★
-      - 「🇭🇰」红绣球「解锁」★★
-      - 「🇭🇰」观音泪「中转」★★
-      - 「🇭🇰」轩辕剑「直连」★
-      - 「🇮🇳」炼妖壶「直连」✰
-      - 「🇯🇵」专属三「解锁」✰
-      - 「🇯🇵」专属九「直连」✡
-      - 「🇯🇵」乾坤罩「解锁」★★
-      - 「🇯🇵」凉龙雀「中转」★★
-      - 「🇯🇵」南华刀「中转」★★
-      - 「🇯🇵」备用六「免流」✡
-      - 「🇯🇵」复活甲「直连」✡
-      - 「🇯🇵」太极图「解锁」★
-      - 「🇯🇵」恒古尺「解锁」★★
-      - 「🇯🇵」昊天塔「免流」★★
-      - 「🇯🇵」昊天锤「中转」★★
-      - 「🇯🇵」木马牛「直连」✡
-      - 「🇯🇵」满甲雪「解锁」★
-      - 「🇯🇵」盘古斧「直连」✰
-      - 「🇯🇵」神之戒「直连」★
-      - 「🇯🇵」神之盾「解锁」★★
-      - 「🇯🇵」辟邪剑「解锁」✰
-      - 「🇯🇵」过河卒「解锁」✡
-      - 「🇯🇵」霸王弓「中转」★★
-      - 「🇯🇵」鬼雕刀「直连」✡
-      - 「🇰🇷」九齿耙「解锁」★
-      - 「🇰🇷」光明剑「解锁」★
-      - 「🇰🇷」开天斧「解锁」★★
-      - 「🇰🇷」恒古尺「解锁」★
-      - 「🇰🇷」昆仑镜「解锁」✰
-      - 「🇰🇷」焚天炎「BGP」✰
-      - 「🇰🇷」虚无炎「解锁」★
-      - 「🇰🇷」金箍棒「解锁」★★
-      - 「🇳🇱」备用三「免流」✰
-      - 「🇸🇬」冥王剑「中转」★
-      - 「🇸🇬」备用五「免流」✡
-      - 「🇸🇬」女娲石「中转」★
-      - 「🇸🇬」崆峒印「直连」✡
-      - 「🇸🇬」福利十「中转」★
-      - 「🇸🇬」素王剑「直连」✡
-      - 「🇸🇬」轩辕剑「直连」★
-      - 「🇹🇼」至尊骨「解锁」★★
-      - 「🇺🇸」专属一「解锁」✰
-      - 「🇺🇸」专属七「直连」✡
-      - 「🇺🇸」修罗剑「解锁」★★★
-      - 「🇺🇸」刹那枪「中转」★★
-      - 「🇺🇸」打神石「中转」✰
-      - 「🇺🇸」诛仙剑「解锁」✰
-      - 「🇺🇸」金刚镯「解锁」★★
-      - 「🇺🇸」鬼血刃「免流」★
-      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_119 |31.05Mb
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_415 |22.38Mb
+      - 油管：全网最强白嫖
+      - 油管：全网最强白嫖 2
+      - 油管：全网最强白嫖 3
+      - 油管：全网最强白嫖 4
+      - 油管：全网最强白嫖 5
+      - 油管：全网最强白嫖 6
+      - 油管：全网最强白嫖 7
+      - 油管：全网最强白嫖 8
+      - 油管：全网最强白嫖 9
+      - 油管：全网最强白嫖 10
+      - 油管：全网最强白嫖 11
+      - 油管：全网最强白嫖 12
+      - 油管：全网最强白嫖 13
+      - 油管：全网最强白嫖 14
+      - 油管：全网最强白嫖 15
+      - 油管：全网最强白嫖 16
+      - 油管：全网最强白嫖 17
+      - 油管：全网最强白嫖 18
+      - 油管：全网最强白嫖 19
+      - 油管：全网最强白嫖 20
+      - 油管：全网最强白嫖 21
+      - 油管：全网最强白嫖 22
+      - 油管：全网最强白嫖 23
+      - 油管：全网最强白嫖 24
+      - 油管：全网最强白嫖 25
   - name: 👉 国内网站
     type: select
     proxies:
@@ -1041,46 +672,59 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_415 |22.38Mb
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - US_416 TG@peekfun |13.96Mb
+      - US_420 TG@peekfun |21.84Mb
+      - US_421 TG@peekfun |12.90Mb
+      - US_422 TG@peekfun |24.31Mb
+      - US_425 TG@peekfun |19.88Mb
+      - US_426 TG@peekfun | 8.02Mb
       - US_426 TG@peekfun |27.85Mb
       - US_427 TG@peekfun |27.40Mb
+      - US_428 TG@peekfun | 9.95Mb
       - US_430 TG@peekfun |33.93Mb
       - US_431 TG@peekfun |30.41Mb
       - US_433 TG@peekfun |18.50Mb
+      - US_435 TG@peekfun |17.67Mb
+      - US_436 TG@peekfun |14.16Mb
       - US_436 TG@peekfun |22.70Mb
+      - US_437 TG@peekfun | 9.08Mb
       - US_439 TG@peekfun |27.88Mb
       - US_440 TG@peekfun |25.76Mb
+      - US_441 TG@peekfun |12.01Mb
       - US_441 TG@peekfun |30.74Mb
+      - US_443 TG@peekfun | 9.53Mb
+      - US_444 TG@peekfun |11.45Mb
       - US_444 TG@peekfun |27.09Mb
+      - US_445 TG@peekfun |12.26Mb
       - US_445 TG@peekfun |27.19Mb
+      - US_446 TG@peekfun | 9.40Mb
       - US_446 TG@peekfun |20.48Mb
       - US_446 TG@peekfun |24.07Mb
-      - US_447 TG@peekfun |30.09Mb
       - US_448 TG@peekfun |16.61Mb
       - US_448 TG@peekfun |17.90Mb
+      - US_450 TG@peekfun |18.75Mb
       - US_450 TG@peekfun |21.41Mb
-      - US_453 TG@peekfun |22.48Mb
       - US_453 TG@peekfun |23.85Mb
+      - US_454 TG@peekfun |14.42Mb
       - US_454 TG@peekfun |21.83M
       - US_454 TG@peekfun |25.46Mb
+      - US_456 TG@peekfun |11.48Mb
       - US_456 TG@peekfun |26.89Mb
       - US_459 TG@peekfun |26.30Mb
       - US_460 TG@peekfun |16.75Mb
       - US_461 TG@peekfun |16.02Mb
+      - US_462 TG@peekfun |16.87Mb
       - US_462 TG@peekfun |22.88Mb
       - US_463 TG@peekfun |25.51Mb
       - US_464 TG@peekfun |20.60Mb
       - US_465 TG@peekfun |16.38Mb
-      - US_466 TG@peekfun |26.07Mb
-      - US_467 TG@peekfun |26.88Mb
-      - US_468 TG@peekfun |29.91Mb
-      - US_471 TG@peekfun |26.41Mb
       - US_472 TG@peekfun |33.45Mb
       - US_473 TG@peekfun |27.49Mb
       - US_474 TG@peekfun |22.85Mb
@@ -1088,7 +732,6 @@ proxy-groups:
       - US_476 TG@peekfun |19.10Mb
       - US_477 TG@peekfun |17.71Mb
       - US_478 TG@peekfun |27.60Mb
-      - US_480 TG@peekfun |25.06Mb
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1113,8 +756,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 「🇨🇦」封天印「中转」★★
-      - 「🇸🇬」崆峒印「直连」✡
+      - DIRECT
   - name: 📲 聊天软件
     type: select
     proxies:

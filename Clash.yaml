@@ -5,9 +5,125 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 169.197.142.39:8881, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: AE openit.ml, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: AU_115, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_149, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_16, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_21, server: 212.81.47.17, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_270, server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: AU_291, server: 212.81.47.14, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: AU_4, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_61, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_62 |44.08Mb, server: 185.167.116.24, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: AU_67 |43.18Mb, server: 185.167.116.24, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: AU_7, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, skip-cert-verify: true, udp: true}
+  - {name: AU_72, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_72 |44.08Mb, server: 185.167.116.24, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: AU_74 |42.24Mb, server: 185.167.116.24, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: AU_76 |45.00Mb, server: 185.167.116.24, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: AU_79 |43.84Mb, server: 185.167.116.24, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: AU_80 |42.96Mb, server: 185.167.116.24, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: AU_87 |42.39Mb, server: 185.167.116.24, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: AU_88 |42.62Mb, server: 185.167.116.24, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
   - {name: BG openit.ml, server: 213.183.63.218, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: CN_100, server: 0a39e00.ga.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_102, server: 5fc3d08.pe.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pe.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_103, server: 0a39e00.gc.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_104, server: 32e3a78.pg.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pg.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_106, server: 5fc3d08.ga.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_107, server: c0fd425.ga.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_109, server: 5fc3d08.gc.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_111, server: 0a39e00.ga.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_112, server: 0a39e00.gb.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_113, server: 32e3a78.ga.gladns.com, port: 3385, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_114, server: c0fd425.gb.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_116, server: c0fd425.gc.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_153, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_321, server: cn.zzv01.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
+  - {name: CN_322, server: cn.zzv06.infonode.xyz, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv06.infonode.xyz}}, udp: true}
+  - {name: CN_323, server: cn.zzv01.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
+  - {name: CN_325, server: cn.zzv02.infonode.xyz, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv02.infonode.xyz}}, udp: true}
+  - {name: CN_326, server: cn.zzv07.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv07.infonode.xyz}}, udp: true}
+  - {name: CN_328, server: cn.zzv12.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv12.infonode.xyz}}, udp: true}
+  - {name: CN_35, server: 116.162.33.235, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 116.162.33.235}}, udp: true}
+  - {name: CN_36, server: 116.162.33.235, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 116.162.33.235}}, udp: true}
+  - {name: CN_47, server: cn.zzv02.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv02.infonode.xyz}}, udp: true}
+  - {name: CN_73, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_84, server: 32e3a78.pa.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_86, server: 5fc3d08.gc.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_87, server: c0fd425.ga.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_88, server: c0fd425.gc.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_89, server: 32e3a78.ga.gladns.com, port: 3384, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_90, server: 5fc3d08.ga.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_91, server: 5fc3d08.pg.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pg.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_92, server: 32e3a78.pc.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_94, server: 5fc3d08.gb.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_95, server: 5fc3d08.ga.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_96, server: 5fc3d08.gc.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_97, server: 0a39e00.gb.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_98, server: 5fc3d08.gb.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: DE_307, server: 213.226.71.209, port: 31251, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: FR_75, server: 51.210.179.47, port: 31225, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: FR_85, server: 51.210.179.47, port: 31225, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: GB_228, server: 45.61.173.125, port: 31224, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: HK_288, server: gy02.20220512.cyou, port: 34567, type: trojan, password: 7ed7b710-d331-43df-8e37-a1d330409ed2, sni: gy02.20220512.cyou, skip-cert-verify: true, udp: true}
+  - {name: HK_289, server: gy01.20220512.cyou, port: 34567, type: trojan, password: 7ed7b710-d331-43df-8e37-a1d330409ed2, sni: gy01.20220512.cyou, skip-cert-verify: true, udp: true}
+  - {name: HK_296, server: sxdx-nf.jiashumao.net, port: 35401, type: trojan, password: bfaf0f2b-c727-32ea-ab28-25e438fda91f, skip-cert-verify: true, udp: true}
+  - {name: HK_298, server: hkbn.jinxnet.xyz, port: 33944, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /helloworld, headers: {Host: hkbn.jinxnet.xyz}}, udp: true}
+  - {name: HK_300, server: azhk.102498.eu.org, port: 23941, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /helloworld, headers: {Host: azhk.102498.eu.org}}, udp: true}
+  - {name: HK_50, server: 523hk2.fans8.xyz, port: 443, type: trojan, password: dfa2821d-0418-4427-8f17-cef26d02370f, skip-cert-verify: true, udp: true}
+  - {name: HK_84, server: hk.azure.fnyun.cyou, port: 16443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.azure.fnyun.cyou}}, udp: true}
+  - {name: HK_99, server: c0fd425.pa.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pa.gladns.com, skip-cert-verify: true, udp: true}
   - {name: HU openit.ml, server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130, udp: true}
+  - {name: IN_12, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: IN_13, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, skip-cert-verify: true, udp: true}
+  - {name: JP_104, server: 0a39e00.pd.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pd.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP_161, server: 12345678jp.158801.xyz, port: 80, type: vmess, uuid: 336ecc0a-8e8d-4ddc-a4e6-e2fcadaa2987, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: 12345678jp.158801.xyz}}, udp: true}
+  - {name: JP_247, server: 12345678jp.158801.xyz, port: 40005, type: trojan, password: f349abee-2ea2-41c2-86cb-eb7140c62526, skip-cert-verify: true, udp: true}
+  - {name: JP_250, server: 12345678jp.158801.xyz, port: 40002, type: trojan, password: f349abee-2ea2-41c2-86cb-eb7140c62526, skip-cert-verify: true, udp: true}
+  - {name: JP_259, server: 12345678jp.158801.xyz, port: 40001, type: trojan, password: f349abee-2ea2-41c2-86cb-eb7140c62526, skip-cert-verify: true, udp: true}
+  - {name: JP_260, server: 12345678jp.158801.xyz, port: 40004, type: trojan, password: f349abee-2ea2-41c2-86cb-eb7140c62526, skip-cert-verify: true, udp: true}
+  - {name: JP_70, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: JP_76, server: sh.moonfree.top, port: 11262, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sh.moonfree.top}}, udp: true}
+  - {name: JP_92, server: jp.azure.fnyun.cyou, port: 26443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp.azure.fnyun.cyou}}, udp: true}
+  - {name: KR_88, server: kr.azure.fnyun.cyou, port: 36443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.azure.fnyun.cyou}}, udp: true}
+  - {name: RU_24, server: ru1.direct.iepl.pw, port: 443, type: trojan, password: 389ea04b-99fb-47db-9252-80046b6bfe3e, sni: ru1.direct.iepl.pw, skip-cert-verify: true, udp: true}
+  - {name: SG_178, server: 129.226.94.31, port: 21509, type: vmess, uuid: fbeb626c-8095-4e3b-aaf6-5a57971955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_195, server: 129.226.215.95, port: 43613, type: vmess, uuid: 9e1be3ad-911d-4dcc-822f-f8f8e79f62e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_27, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: SG_319, server: 129.226.216.4, port: 35562, type: vmess, uuid: 48409bbd-a9ee-4d9e-f725-4c81cc0d5009, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_346, server: 129.226.214.28, port: 15430, type: vmess, uuid: 6e9a4ae9-e60b-4cea-af9f-9de18d37404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_347, server: 161.117.224.49, port: 29235, type: vmess, uuid: 71090d6b-ae98-4b7e-8367-bc1c700a75c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_40, server: 129.226.95.71, port: 56916, type: vmess, uuid: 29d4cfd8-9aea-4796-9320-b2b9234fc141, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_468, server: 129.226.94.145, port: 51848, type: vmess, uuid: ad4757f1-e28c-47b8-970c-51b232c653d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_80, server: 180.215.196.10, port: 39043, type: vmess, uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 180.215.196.10}}, udp: true}
+  - {name: SG_86, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: SG_99, server: sg.azure.fnyun.cyou, port: 46443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg.azure.fnyun.cyou}}, udp: true}
+  - {name: TW_110, server: c0fd425.pi.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pi.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW_93, server: c0fd425.pd.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pd.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: US_1069 | 19.92Mb, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_1120 | 16.97Mb, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_123, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, skip-cert-verify: true, udp: true}
+  - {name: US_135, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
+  - {name: US_159, server: 45.61.174.36, port: 31325, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_17, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, skip-cert-verify: true, udp: true}
+  - {name: US_186, server: v1.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v1.ssrsub.com}}, udp: true}
+  - {name: US_191, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
+  - {name: US_312, server: v3.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v3.ssrsub.com}}, udp: true}
+  - {name: US_344, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: US_38, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: US_60, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: US_966 | 13.78Mb, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_969 | 14.48Mb, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Unknown_180, server: v2.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v2.ssrsub.com}}, udp: true}
+  - {name: Unknown_301, server: rn.102498.eu.org, port: 2053, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: rn.102498.eu.org}}, udp: true}
+  - {name: Unknown_302, server: nl.102498.eu.org, port: 2053, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: nl.102498.eu.org}}, udp: true}
+  - {name: Unknown_303, server: fr.102498.eu.org, port: 2053, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: fr.102498.eu.org}}, udp: true}
+  - {name: Unknown_304, server: rk59.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rk59.moonfree.top}}, udp: true}
+  - {name: Unknown_56, server: rackedgeuk510.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rackedgeuk510.moonfree.top}}, udp: true}
+  - {name: Unknown_61, server: v5.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v5.ssrsub.com}}, udp: true}
+  - {name: Unknown_81, server: sg01.czsx1624.tk, port: 443, type: vmess, uuid: d002b422-eace-4e01-bf58-e4bb0bcfe7af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3a8545177/, headers: {Host: sg01.czsx1624.tk}}, udp: true}
   - {name: h3816tw.droplet.today:20443, server: h3816tw.droplet.today, port: 20443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11445, server: h63956.droplet.today, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.droplet.today:11545, server: h63956.droplet.today, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
@@ -70,7 +186,9 @@ proxies:
   - {name: 🇨🇦 CA openit.ml 14, server: 134.195.196.231, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 🇨🇳 CN openit.ml, server: 523hk2.fans8.xyz, port: 443, type: trojan, password: dfa2821d-0418-4427-8f17-cef26d02370f, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN openit.ml 2, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 HINET/AZHK, server: az.gunangzhui.cloud, port: 41534, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hinet.ddag.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW openit.ml, server: yqy2351.china-cdn-net.com, port: 2351, type: trojan, password: ab048302-7224-3e63-96bd-dbde4dfd6afd, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾, server: 331tw9.fans8.xyz, port: 443, type: trojan, password: dfa2821d-0418-4427-8f17-cef26d02370f, sni: 331tw9.fans8.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE openit.ml, server: 161.97.66.81, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: E4gyHkKwJGyG, udp: true}
   - {name: 🇬🇧 GB openit.ml, server: 152.89.210.84, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
   - {name: 🇬🇧 GB openit.ml 2, server: 152.89.210.105, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
@@ -90,8 +208,13 @@ proxies:
   - {name: 🇭🇰 HK openit.ml, server: gy02.20220512.cyou, port: 34567, type: trojan, password: 7ed7b710-d331-43df-8e37-a1d330409ed2, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK openit.ml 2, server: az.gunangzhui.cloud, port: 12716, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK openit.ml 3, server: gy01.20220512.cyou, port: 34567, type: trojan, password: 7ed7b710-d331-43df-8e37-a1d330409ed2, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港, server: iplc.wenxuedianzishu.xyz, port: 10101, type: vmess, uuid: b76e8ec5-f6ce-34d4-8416-99b9c1cb0b8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇮🇳 IN openit.ml, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP openit.ml, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Tokyo-Hdtidc, server: 185.202.103.202, port: 22148, type: vmess, uuid: 13c29b2a-3425-4425-9e73-a1ead7bf9728, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "🇯🇵 [免流]日本 A", server: 20.222.12.59, port: 80, type: vmess, uuid: 26467dec-9f2b-4114-9c42-c8cc97493690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 🇰🇷 韩国, server: 20.196.195.216, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.196.195.216}}, udp: true}
+  - {name: 🇲🇾 MY|马来西亚, server: mlxy-zf.jiashumao.net, port: 27171, type: trojan, password: bfaf0f2b-c727-32ea-ab28-25e438fda91f, sni: mlxy.jiashumao.net, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL openit.ml, server: 213.183.59.206, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
   - {name: 🇳🇱 NL openit.ml 2, server: 213.183.59.214, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
   - {name: 🇳🇱 NL openit.ml 3, server: 213.183.59.206, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
@@ -150,6 +273,8 @@ proxies:
   - {name: 🇷🇺 RU openit.ml 16, server: 213.183.53.207, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
   - {name: 🇷🇺 RU openit.ml 17, server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
   - {name: 🇸🇬 SG openit.ml, server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
+  - {name: 🇸🇬 SG|新加坡, server: sg-zf.jiashumao.net, port: 29465, type: trojan, password: bfaf0f2b-c727-32ea-ab28-25e438fda91f, sni: sg.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: "🇸🇬 日本👇[建议每3天更新一次订阅]", server: 194.156.231.35, port: 80, type: vmess, uuid: 26467dec-9f2b-4114-9c42-c8cc97493690, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
   - {name: 🇺🇸 US openit.ml, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
   - {name: 🇺🇸 US openit.ml 2, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: 🇺🇸 US openit.ml 3, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
@@ -181,9 +306,125 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 169.197.142.39:8881
       - AE openit.ml
+      - AU_115
+      - AU_149
+      - AU_16
+      - AU_21
+      - AU_270
+      - AU_291
+      - AU_4
+      - AU_61
+      - AU_62 |44.08Mb
+      - AU_67 |43.18Mb
+      - AU_7
+      - AU_72
+      - AU_72 |44.08Mb
+      - AU_74 |42.24Mb
+      - AU_76 |45.00Mb
+      - AU_79 |43.84Mb
+      - AU_80 |42.96Mb
+      - AU_87 |42.39Mb
+      - AU_88 |42.62Mb
       - BG openit.ml
+      - CN_100
+      - CN_102
+      - CN_103
+      - CN_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_116
+      - CN_153
+      - CN_321
+      - CN_322
+      - CN_323
+      - CN_325
+      - CN_326
+      - CN_328
+      - CN_35
+      - CN_36
+      - CN_47
+      - CN_73
+      - CN_84
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - DE_307
+      - FR_75
+      - FR_85
+      - GB_228
+      - HK_288
+      - HK_289
+      - HK_296
+      - HK_298
+      - HK_300
+      - HK_50
+      - HK_84
+      - HK_99
       - HU openit.ml
+      - IN_12
+      - IN_13
+      - JP_104
+      - JP_161
+      - JP_247
+      - JP_250
+      - JP_259
+      - JP_260
+      - JP_70
+      - JP_76
+      - JP_92
+      - KR_88
+      - RU_24
+      - SG_178
+      - SG_195
+      - SG_27
+      - SG_319
+      - SG_346
+      - SG_347
+      - SG_40
+      - SG_468
+      - SG_80
+      - SG_86
+      - SG_99
+      - TW_110
+      - TW_93
+      - US_1069 | 19.92Mb
+      - US_1120 | 16.97Mb
+      - US_123
+      - US_135
+      - US_159
+      - US_17
+      - US_186
+      - US_191
+      - US_312
+      - US_344
+      - US_38
+      - US_60
+      - US_966 | 13.78Mb
+      - US_969 | 14.48Mb
+      - Unknown_180
+      - Unknown_301
+      - Unknown_302
+      - Unknown_303
+      - Unknown_304
+      - Unknown_56
+      - Unknown_61
+      - Unknown_81
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -246,7 +487,9 @@ proxy-groups:
       - 🇨🇦 CA openit.ml 14
       - 🇨🇳 CN openit.ml
       - 🇨🇳 CN openit.ml 2
+      - 🇨🇳 HINET/AZHK
       - 🇨🇳 TW openit.ml
+      - 🇨🇳 台湾
       - 🇩🇪 DE openit.ml
       - 🇬🇧 GB openit.ml
       - 🇬🇧 GB openit.ml 2
@@ -266,8 +509,13 @@ proxy-groups:
       - 🇭🇰 HK openit.ml
       - 🇭🇰 HK openit.ml 2
       - 🇭🇰 HK openit.ml 3
+      - 🇭🇰 香港
       - 🇮🇳 IN openit.ml
       - 🇯🇵 JP openit.ml
+      - 🇯🇵 Tokyo-Hdtidc
+      - 🇯🇵 [免流]日本 A
+      - 🇰🇷 韩国
+      - 🇲🇾 MY|马来西亚
       - 🇳🇱 NL openit.ml
       - 🇳🇱 NL openit.ml 2
       - 🇳🇱 NL openit.ml 3
@@ -326,6 +574,8 @@ proxy-groups:
       - 🇷🇺 RU openit.ml 16
       - 🇷🇺 RU openit.ml 17
       - 🇸🇬 SG openit.ml
+      - 🇸🇬 SG|新加坡
+      - 🇸🇬 日本👇[建议每3天更新一次订阅]
       - 🇺🇸 US openit.ml
       - 🇺🇸 US openit.ml 2
       - 🇺🇸 US openit.ml 3
@@ -357,9 +607,125 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 169.197.142.39:8881
       - AE openit.ml
+      - AU_115
+      - AU_149
+      - AU_16
+      - AU_21
+      - AU_270
+      - AU_291
+      - AU_4
+      - AU_61
+      - AU_62 |44.08Mb
+      - AU_67 |43.18Mb
+      - AU_7
+      - AU_72
+      - AU_72 |44.08Mb
+      - AU_74 |42.24Mb
+      - AU_76 |45.00Mb
+      - AU_79 |43.84Mb
+      - AU_80 |42.96Mb
+      - AU_87 |42.39Mb
+      - AU_88 |42.62Mb
       - BG openit.ml
+      - CN_100
+      - CN_102
+      - CN_103
+      - CN_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_116
+      - CN_153
+      - CN_321
+      - CN_322
+      - CN_323
+      - CN_325
+      - CN_326
+      - CN_328
+      - CN_35
+      - CN_36
+      - CN_47
+      - CN_73
+      - CN_84
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - DE_307
+      - FR_75
+      - FR_85
+      - GB_228
+      - HK_288
+      - HK_289
+      - HK_296
+      - HK_298
+      - HK_300
+      - HK_50
+      - HK_84
+      - HK_99
       - HU openit.ml
+      - IN_12
+      - IN_13
+      - JP_104
+      - JP_161
+      - JP_247
+      - JP_250
+      - JP_259
+      - JP_260
+      - JP_70
+      - JP_76
+      - JP_92
+      - KR_88
+      - RU_24
+      - SG_178
+      - SG_195
+      - SG_27
+      - SG_319
+      - SG_346
+      - SG_347
+      - SG_40
+      - SG_468
+      - SG_80
+      - SG_86
+      - SG_99
+      - TW_110
+      - TW_93
+      - US_1069 | 19.92Mb
+      - US_1120 | 16.97Mb
+      - US_123
+      - US_135
+      - US_159
+      - US_17
+      - US_186
+      - US_191
+      - US_312
+      - US_344
+      - US_38
+      - US_60
+      - US_966 | 13.78Mb
+      - US_969 | 14.48Mb
+      - Unknown_180
+      - Unknown_301
+      - Unknown_302
+      - Unknown_303
+      - Unknown_304
+      - Unknown_56
+      - Unknown_61
+      - Unknown_81
       - h3816tw.droplet.today:20443
       - h63956.droplet.today:11445
       - h63956.droplet.today:11545
@@ -422,7 +788,9 @@ proxy-groups:
       - 🇨🇦 CA openit.ml 14
       - 🇨🇳 CN openit.ml
       - 🇨🇳 CN openit.ml 2
+      - 🇨🇳 HINET/AZHK
       - 🇨🇳 TW openit.ml
+      - 🇨🇳 台湾
       - 🇩🇪 DE openit.ml
       - 🇬🇧 GB openit.ml
       - 🇬🇧 GB openit.ml 2
@@ -442,8 +810,13 @@ proxy-groups:
       - 🇭🇰 HK openit.ml
       - 🇭🇰 HK openit.ml 2
       - 🇭🇰 HK openit.ml 3
+      - 🇭🇰 香港
       - 🇮🇳 IN openit.ml
       - 🇯🇵 JP openit.ml
+      - 🇯🇵 Tokyo-Hdtidc
+      - 🇯🇵 [免流]日本 A
+      - 🇰🇷 韩国
+      - 🇲🇾 MY|马来西亚
       - 🇳🇱 NL openit.ml
       - 🇳🇱 NL openit.ml 2
       - 🇳🇱 NL openit.ml 3
@@ -502,6 +875,8 @@ proxy-groups:
       - 🇷🇺 RU openit.ml 16
       - 🇷🇺 RU openit.ml 17
       - 🇸🇬 SG openit.ml
+      - 🇸🇬 SG|新加坡
+      - 🇸🇬 日本👇[建议每3天更新一次订阅]
       - 🇺🇸 US openit.ml
       - 🇺🇸 US openit.ml 2
       - 🇺🇸 US openit.ml 3
@@ -572,22 +947,57 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - HK_288
+      - HK_289
+      - HK_296
+      - HK_298
+      - HK_300
+      - HK_50
+      - HK_84
+      - HK_99
+      - 🇨🇳 HINET/AZHK
       - 🇭🇰 HK openit.ml
       - 🇭🇰 HK openit.ml 2
       - 🇭🇰 HK openit.ml 3
+      - 🇭🇰 香港
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - JP_104
+      - JP_161
+      - JP_247
+      - JP_250
+      - JP_259
+      - JP_260
+      - JP_70
+      - JP_76
+      - JP_92
       - 🇯🇵 JP openit.ml
+      - 🇯🇵 [免流]日本 A
+      - 🇸🇬 日本👇[建议每3天更新一次订阅]
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - US_1069 | 19.92Mb
+      - US_1120 | 16.97Mb
+      - US_123
+      - US_135
+      - US_159
+      - US_17
+      - US_186
+      - US_191
+      - US_312
+      - US_344
+      - US_38
+      - US_60
+      - US_966 | 13.78Mb
+      - US_969 | 14.48Mb
       - 🇺🇸 US openit.ml
       - 🇺🇸 US openit.ml 2
       - 🇺🇸 US openit.ml 3
@@ -619,21 +1029,37 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - TW_110
+      - TW_93
       - 🇨🇳 TW openit.ml
+      - 🇨🇳 台湾
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - SG_178
+      - SG_195
+      - SG_27
+      - SG_319
+      - SG_346
+      - SG_347
+      - SG_40
+      - SG_468
+      - SG_80
+      - SG_86
+      - SG_99
       - 🇸🇬 SG openit.ml
+      - 🇸🇬 SG|新加坡
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - KR_88
+      - 🇰🇷 韩国
   - name: 🌍 其他地区
     type: select
     proxies:

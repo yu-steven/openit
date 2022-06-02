@@ -15,28 +15,28 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: 迁出代码
+    - name: Checkout
       uses: actions/checkout@v3
-    - name: 安装Python
-      uses: actions/setup-python@v3
+    - name: Setup Python
+      uses: actions/setup-python@v3.1.2
       with:
         python-version: '3.x'
-    - name: 加载缓存
+    - name: Cache
       uses: actions/cache@v2
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-    - name: 设置时区
+    - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: 安装依赖
+    - name: requirements
       run: |
         pip install -r ./utils/requirements.txt
-    - name: 执行任务
+    - name: main.py
       run: |
         python ./utils/main.py
-    - name: Commit
+    - name: Push
       run: |
         git pull origin main
         git config --global user.name "GitHub Actions"

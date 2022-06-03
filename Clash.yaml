@@ -5,423 +5,84 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_292 |29.89Mb, server: dd004.zhuan666.top, port: 11604, type: ss, cipher: chacha20-ietf-poly1305, password: 8c313190-4d93-43f3-b557-fe0ffe4c260a, udp: true}
-  - {name: CN_335 |27.20Mb, server: rr006.zhuan666.top, port: 11206, type: ss, cipher: chacha20-ietf-poly1305, password: 8c313190-4d93-43f3-b557-fe0ffe4c260a, udp: true}
-  - {name: CN_433 |42.29Mb, server: 120.233.186.71, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_437 |39.51Mb, server: cn.speedabc.xyz, port: 42004, type: trojan, password: af630252-aecc-45cf-b174-5e0782396874, skip-cert-verify: true, udp: true}
-  - {name: CN_442 |33.02Mb, server: 103.56.62.145, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_444 |38.30Mb, server: 103.56.62.145, port: 3382, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_446 |34.06Mb, server: 103.56.60.235, port: 3385, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_447 |39.16Mb, server: 103.56.60.235, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_449 |21.64Mb, server: 103.56.60.185, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_454 |85.92Mb, server: 120.233.186.71, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_455 |51.31Mb, server: 120.233.186.71, port: 3382, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_463 |49.54Mb, server: 120.233.186.59, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_472 |53.34Mb, server: 120.233.186.59, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_473 |49.00Mb, server: 120.233.186.59, port: 3382, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_475 |49.99Mb, server: 120.233.186.250, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_476 |46.87Mb, server: 120.233.186.250, port: 3385, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_481 |66.75Mb, server: 120.233.186.204, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_496 |43.16Mb, server: 120.233.186.71, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_498 |62.36Mb, server: 120.233.186.71, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_499 |58.39Mb, server: 120.233.186.71, port: 3383, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_503 |46.77Mb, server: 120.233.186.59, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_507 |47.53Mb, server: 120.233.186.250, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_512 |48.50Mb, server: 120.233.186.250, port: 3382, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_514 |47.06Mb, server: 120.233.186.204, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_515 |52.57Mb, server: 120.233.186.204, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_516 |59.13Mb, server: 120.233.186.204, port: 3382, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_530 |58.22Mb, server: 120.233.186.204, port: 3382, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_532 |57.45Mb, server: 120.233.186.204, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_533 |62.31Mb, server: 120.233.186.204, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_535 |51.64Mb, server: 120.233.186.250, port: 3382, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_536 |58.26Mb, server: 120.233.186.250, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_537 |23.54Mb, server: 120.233.186.250, port: 3385, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_542 |33.08Mb, server: 103.56.62.145, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_544 |34.82Mb, server: 103.56.62.145, port: 3385, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_546 |24.13Mb, server: 103.56.62.145, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_547 |35.77Mb, server: 103.56.62.145, port: 3385, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_548 |41.04Mb, server: 103.56.62.145, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_549 |38.30Mb, server: 103.56.62.145, port: 3382, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_552 |39.44Mb, server: 103.56.60.235, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_555 |55.47Mb, server: 120.233.186.204, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_556 |38.87Mb, server: 103.56.62.145, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_559 |35.99Mb, server: 103.56.62.145, port: 3385, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_560 |18.29Mb, server: 103.56.62.145, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_562 |33.81Mb, server: 103.56.62.145, port: 3382, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_564 |47.25Mb, server: 120.233.186.250, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_566 |59.95Mb, server: 120.233.186.59, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_569 |33.79Mb, server: 120.233.186.59, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_570 |41.99Mb, server: 103.56.60.185, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_573 |51.30Mb, server: 120.233.186.71, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_575 |45.50Mb, server: 120.233.186.71, port: 3382, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: GB_2282_ 6.72Mb | 6.22Mb, server: 152.89.210.84, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: HK_607_32.16Mb | 7.66Mb, server: ziyeya.xyz, port: 8585, type: vmess, uuid: 60c7900f-4518-4514-a67b-a1402cea7239, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ziyeya.xyz}}, udp: true}
-  - {name: HK_609_ 6.45Mb |71.42Mb, server: 119.28.129.97, port: 44662, type: vmess, uuid: 5e6147f2-c349-40fc-f1ba-b5507a793a95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_610_35.59Mb | 8.50Mb, server: 119.28.92.125, port: 7654, type: vmess, uuid: 9481e525-557b-485d-8b64-ec14270974d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 103.238.213.96:989, server: 103.238.213.96, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 119.28.129.97:44662, server: 119.28.129.97, port: 44662, type: vmess, uuid: 5e6147f2-c349-40fc-f1ba-b5507a793a95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 119.28.129.97:44662 2, server: 119.28.129.97, port: 44662, type: vmess, uuid: 5e6147f2-c349-40fc-f1ba-b5507a793a95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 120.233.185.189:11814, server: 120.233.185.189, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: 120.233.186.250:3389, server: 120.233.186.250, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 120.233.186.250:3389 2, server: 120.233.186.250, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 120.233.186.250:3389 3, server: 120.233.186.250, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 139.9.88.116:5800, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 146.19.196.125:31244, server: 146.19.196.125, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 162.250.191.136:31250, server: 162.250.191.136, port: 31250, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 185.160.24.217:812, server: 185.160.24.217, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 185.4.65.6:21247, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 20.187.79.61:3389, server: 20.187.79.61, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 83.229.73.60:50003, server: 83.229.73.60, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130, udp: true}
+  - {name: FR_12 | 7.62Mb, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: GB_538 | 6.84Mb, server: 152.89.210.105, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: HK_101 TG@peekfun |89.53Mb, server: 20.187.79.61, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: Openit自建节点 EU1, server: 148.251.50.26, port: 12302, type: vmess, uuid: f5630858-c00a-4ecc-81fe-24a9fef4b82b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: Phoenix, server: 37.120.219.218, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: TW_526_50.95Mb |13.16Mb, server: 60.249.3.231, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: US_158 TG@peekfun |16.52Mb, server: www.nubility.ml, port: 443, type: trojan, password: 9a2c5cc6ef, skip-cert-verify: true, udp: true}
-  - {name: US_3828_ 5.99Mb | 8.70Mb, server: 172.67.196.147, port: 2095, type: vmess, uuid: 477fb2a0-daf4-3041-b6f6-5de3f42ecc69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _105_29.36Mb |11.74Mb, server: usa004.369boy.com, port: 14001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, sni: usa004.369boy.com, skip-cert-verify: true, udp: true}
-  - {name: _1382_22.71Mb | 6.69Mb, server: mic.vxtrans.com, port: 4683, type: vmess, uuid: ed15ba6e-81f8-4ab3-a575-b9ba4340ef49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _1386_ 2.61Mb | 7.37Mb, server: 162.250.191.136, port: 31250, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _1387_40.25Mb |53.57Mb, server: sha-cu-001.omo-m0m.com, port: 5602, type: trojan, password: 9d6a601d-8593-39b5-8861-86ac78c0c5ad, skip-cert-verify: true, udp: true}
-  - {name: _1395_31.27Mb |58.17Mb, server: 60.249.3.126, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1398_29.17Mb |58.99Mb, server: 60.249.3.227, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1399_18.44Mb |37.57Mb, server: 60.249.3.226, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1401_12.20Mb |11.19Mb, server: 60.249.3.227, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1412_20.93Mb |56.32Mb, server: 60.249.3.125, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1428_23.48Mb |46.43Mb, server: 60.249.3.126, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1432_29.27Mb |43.63Mb, server: 60.249.3.126, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1435_16.75Mb |46.62Mb, server: 60.249.3.226, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1436_ 9.07Mb |28.09Mb, server: 60.249.3.231, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1444_ 3.09Mb | 5.26Mb, server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1446_ 2.86Mb | 4.37Mb, server: 103.172.116.113, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1448_33.98Mb |26.47Mb, server: 20.210.229.72, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1449_20.96Mb |57.25Mb, server: 20.210.229.72, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1451_19.78Mb |82.24Mb, server: 20.187.79.61, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1453_33.62Mb |12.60Mb, server: 120.233.186.71, port: 3382, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1454_19.19Mb |49.75Mb, server: 120.233.186.71, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1455_38.58Mb | 6.77Mb, server: 103.56.60.185, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1456_29.16Mb |39.91Mb, server: 120.233.186.59, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1457_ 9.86Mb |25.94Mb, server: 120.233.186.59, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1459_ 7.56Mb | 9.87Mb, server: 103.56.62.145, port: 3382, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1460_18.61Mb |17.20Mb, server: 103.56.62.145, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1461_21.76Mb |41.91Mb, server: 103.56.62.145, port: 3385, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1462_65.74Mb | 7.12Mb, server: 103.56.62.145, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1464_73.26Mb |61.18Mb, server: 103.56.60.235, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1465_ 8.14Mb | 9.58Mb, server: 103.56.62.145, port: 3382, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1466_24.91Mb |44.53Mb, server: 103.56.62.145, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1467_21.56Mb |22.72Mb, server: 103.56.62.145, port: 3385, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1468_42.38Mb | 8.70Mb, server: 103.56.62.145, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1469_22.53Mb | 8.34Mb, server: 60.249.3.226, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1470_16.28Mb |10.86Mb, server: 103.56.62.145, port: 3385, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1482_51.99Mb |10.03Mb, server: 120.233.186.250, port: 3382, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1484_17.09Mb | 7.58Mb, server: 120.233.186.204, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1485_14.23Mb | 7.82Mb, server: 120.233.186.250, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1486_ 9.79Mb |10.41Mb, server: 120.233.186.59, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1489_17.45Mb |66.39Mb, server: 120.233.186.71, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1491_53.57Mb |29.43Mb, server: 120.233.186.204, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1492_23.77Mb |44.50Mb, server: 120.233.186.250, port: 3385, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1493_10.81Mb | 9.80Mb, server: 120.233.186.250, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1494_43.88Mb |10.38Mb, server: 120.233.186.59, port: 3382, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1495_20.74Mb | 4.62Mb, server: 120.233.186.59, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1497_44.33Mb | 8.70Mb, server: 120.233.186.71, port: 3382, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1498_35.83Mb |12.56Mb, server: 120.233.186.71, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1499_13.84Mb |95.73Mb, server: 120.233.186.71, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1500_30.84Mb | 7.98Mb, server: 103.56.60.185, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1501_25.32Mb |10.51Mb, server: 103.56.60.235, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1502_24.55Mb |57.44Mb, server: 103.56.60.235, port: 3385, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1503_ 9.56Mb |20.61Mb, server: 103.56.62.145, port: 3382, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1504_38.24Mb |15.54Mb, server: 103.56.62.145, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1519_ 6.20Mb |16.28Mb, server: 134.195.101.32, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1521_50.70Mb |38.81Mb, server: 29d78fe.nf.gladns.com, port: 3389, type: trojan, password: 8c72bafbd4837610, sni: 29d78fe.nf.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: _1526_23.69Mb |50.90Mb, server: 60.249.3.125, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1531_14.76Mb | 6.64Mb, server: 20.187.79.61, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1532_43.35Mb |80.12Mb, server: 20.187.100.205, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1533_23.77Mb |89.72Mb, server: 20.187.100.205, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1534_42.34Mb |88.70Mb, server: 20.187.100.205, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1535_41.25Mb |99.53Mb, server: 20.187.79.61, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1536_37.64Mb | 4.71Mb, server: 20.210.229.72, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1537_10.39Mb |55.57Mb, server: 211.72.35.153, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1538_23.99Mb |13.20Mb, server: 211.72.35.158, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1539_20.61Mb |24.40Mb, server: 211.72.35.158, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1540_17.04Mb |17.09Mb, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1541_24.17Mb |25.15Mb, server: 211.72.35.158, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1542_29.75Mb |10.74Mb, server: 60.249.3.125, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _303_34.67Mb |37.27Mb, server: rr006.zhuan666.top, port: 11206, type: ss, cipher: chacha20-ietf-poly1305, password: 8c313190-4d93-43f3-b557-fe0ffe4c260a, udp: true}
-  - {name: _304_32.44Mb |34.26Mb, server: dd004.zhuan666.top, port: 11604, type: ss, cipher: chacha20-ietf-poly1305, password: 8c313190-4d93-43f3-b557-fe0ffe4c260a, udp: true}
-  - {name: _34_ 2.83Mb | 5.90Mb, server: hk003.369boy.com, port: 32502, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, sni: hk003.369boy.com, skip-cert-verify: true, udp: true}
-  - {name: _38_52.99Mb |29.07Mb, server: qt27.godseven.xyz, port: 2087, type: trojan, password: 37650a79-2337-4087-a468-3e29ceb7e14e, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_134 | 7.46Mb, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 330tw.fans8.xyz}}, udp: true}
-  - {name: 🇮🇱 Speedy Quark Israel 🇮🇱 Haifa 1, server: 83.229.73.60, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130, udp: true}
-  - {name: 🇯🇵 ufo Japan 🇯🇵 Tokyo 5, server: 185.160.24.217, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇷🇺 Moscow, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: 🇻🇳 Aloha Vietnam 🇻🇳 Ho Chi Minh City, server: 103.238.213.96, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _1367_18.99Mb |10.14Mb, server: 29d78fe.pi.gladns.com, port: 3389, type: trojan, password: 8c72bafbd4837610, sni: 29d78fe.pi.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: _36_28.29Mb |23.93Mb, server: jpjsq.tro.jpxl.xyz, port: 13000, type: trojan, password: f022bceb-e464-490d-9f7e-fc10310cfebd, sni: jpjsq.tro.jpxl.xyz, skip-cert-verify: true, udp: true}
+  - {name: jpaz3.xmrth-node.xyz:15945, server: jpaz3.xmrth-node.xyz, port: 15945, type: vmess, uuid: 3053c66e-9e57-30ba-b8fe-d0cdeabc0fa5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: jpaz3.xmrth-node.xyz}}, udp: true}
+  - {name: usa004.369boy.com:14001, server: usa004.369boy.com, port: 14001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, sni: usa004.369boy.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_292 |29.89Mb
-      - CN_335 |27.20Mb
-      - CN_433 |42.29Mb
-      - CN_437 |39.51Mb
-      - CN_442 |33.02Mb
-      - CN_444 |38.30Mb
-      - CN_446 |34.06Mb
-      - CN_447 |39.16Mb
-      - CN_449 |21.64Mb
-      - CN_454 |85.92Mb
-      - CN_455 |51.31Mb
-      - CN_463 |49.54Mb
-      - CN_472 |53.34Mb
-      - CN_473 |49.00Mb
-      - CN_475 |49.99Mb
-      - CN_476 |46.87Mb
-      - CN_481 |66.75Mb
-      - CN_496 |43.16Mb
-      - CN_498 |62.36Mb
-      - CN_499 |58.39Mb
-      - CN_503 |46.77Mb
-      - CN_507 |47.53Mb
-      - CN_512 |48.50Mb
-      - CN_514 |47.06Mb
-      - CN_515 |52.57Mb
-      - CN_516 |59.13Mb
-      - CN_530 |58.22Mb
-      - CN_532 |57.45Mb
-      - CN_533 |62.31Mb
-      - CN_535 |51.64Mb
-      - CN_536 |58.26Mb
-      - CN_537 |23.54Mb
-      - CN_542 |33.08Mb
-      - CN_544 |34.82Mb
-      - CN_546 |24.13Mb
-      - CN_547 |35.77Mb
-      - CN_548 |41.04Mb
-      - CN_549 |38.30Mb
-      - CN_552 |39.44Mb
-      - CN_555 |55.47Mb
-      - CN_556 |38.87Mb
-      - CN_559 |35.99Mb
-      - CN_560 |18.29Mb
-      - CN_562 |33.81Mb
-      - CN_564 |47.25Mb
-      - CN_566 |59.95Mb
-      - CN_569 |33.79Mb
-      - CN_570 |41.99Mb
-      - CN_573 |51.30Mb
-      - CN_575 |45.50Mb
-      - GB_2282_ 6.72Mb | 6.22Mb
-      - HK_607_32.16Mb | 7.66Mb
-      - HK_609_ 6.45Mb |71.42Mb
-      - HK_610_35.59Mb | 8.50Mb
+      - 103.238.213.96:989
+      - 119.28.129.97:44662
+      - 119.28.129.97:44662 2
+      - 120.233.185.189:11814
+      - 120.233.186.250:3389
+      - 120.233.186.250:3389 2
+      - 120.233.186.250:3389 3
+      - 139.9.88.116:5800
+      - 146.19.196.125:31244
+      - 162.250.191.136:31250
+      - 185.160.24.217:812
+      - 185.4.65.6:21247
+      - 20.187.79.61:3389
+      - 83.229.73.60:50003
+      - FR_12 | 7.62Mb
+      - GB_538 | 6.84Mb
+      - HK_101 TG@peekfun |89.53Mb
       - Openit自建节点 EU1
-      - Phoenix
-      - TW_526_50.95Mb |13.16Mb
-      - US_158 TG@peekfun |16.52Mb
-      - US_3828_ 5.99Mb | 8.70Mb
-      - _105_29.36Mb |11.74Mb
-      - _1382_22.71Mb | 6.69Mb
-      - _1386_ 2.61Mb | 7.37Mb
-      - _1387_40.25Mb |53.57Mb
-      - _1395_31.27Mb |58.17Mb
-      - _1398_29.17Mb |58.99Mb
-      - _1399_18.44Mb |37.57Mb
-      - _1401_12.20Mb |11.19Mb
-      - _1412_20.93Mb |56.32Mb
-      - _1428_23.48Mb |46.43Mb
-      - _1432_29.27Mb |43.63Mb
-      - _1435_16.75Mb |46.62Mb
-      - _1436_ 9.07Mb |28.09Mb
-      - _1444_ 3.09Mb | 5.26Mb
-      - _1446_ 2.86Mb | 4.37Mb
-      - _1448_33.98Mb |26.47Mb
-      - _1449_20.96Mb |57.25Mb
-      - _1451_19.78Mb |82.24Mb
-      - _1453_33.62Mb |12.60Mb
-      - _1454_19.19Mb |49.75Mb
-      - _1455_38.58Mb | 6.77Mb
-      - _1456_29.16Mb |39.91Mb
-      - _1457_ 9.86Mb |25.94Mb
-      - _1459_ 7.56Mb | 9.87Mb
-      - _1460_18.61Mb |17.20Mb
-      - _1461_21.76Mb |41.91Mb
-      - _1462_65.74Mb | 7.12Mb
-      - _1464_73.26Mb |61.18Mb
-      - _1465_ 8.14Mb | 9.58Mb
-      - _1466_24.91Mb |44.53Mb
-      - _1467_21.56Mb |22.72Mb
-      - _1468_42.38Mb | 8.70Mb
-      - _1469_22.53Mb | 8.34Mb
-      - _1470_16.28Mb |10.86Mb
-      - _1482_51.99Mb |10.03Mb
-      - _1484_17.09Mb | 7.58Mb
-      - _1485_14.23Mb | 7.82Mb
-      - _1486_ 9.79Mb |10.41Mb
-      - _1489_17.45Mb |66.39Mb
-      - _1491_53.57Mb |29.43Mb
-      - _1492_23.77Mb |44.50Mb
-      - _1493_10.81Mb | 9.80Mb
-      - _1494_43.88Mb |10.38Mb
-      - _1495_20.74Mb | 4.62Mb
-      - _1497_44.33Mb | 8.70Mb
-      - _1498_35.83Mb |12.56Mb
-      - _1499_13.84Mb |95.73Mb
-      - _1500_30.84Mb | 7.98Mb
-      - _1501_25.32Mb |10.51Mb
-      - _1502_24.55Mb |57.44Mb
-      - _1503_ 9.56Mb |20.61Mb
-      - _1504_38.24Mb |15.54Mb
-      - _1519_ 6.20Mb |16.28Mb
-      - _1521_50.70Mb |38.81Mb
-      - _1526_23.69Mb |50.90Mb
-      - _1531_14.76Mb | 6.64Mb
-      - _1532_43.35Mb |80.12Mb
-      - _1533_23.77Mb |89.72Mb
-      - _1534_42.34Mb |88.70Mb
-      - _1535_41.25Mb |99.53Mb
-      - _1536_37.64Mb | 4.71Mb
-      - _1537_10.39Mb |55.57Mb
-      - _1538_23.99Mb |13.20Mb
-      - _1539_20.61Mb |24.40Mb
-      - _1540_17.04Mb |17.09Mb
-      - _1541_24.17Mb |25.15Mb
-      - _1542_29.75Mb |10.74Mb
-      - _303_34.67Mb |37.27Mb
-      - _304_32.44Mb |34.26Mb
-      - _34_ 2.83Mb | 5.90Mb
-      - _38_52.99Mb |29.07Mb
-      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_134 | 7.46Mb
-      - 🇮🇱 Speedy Quark Israel 🇮🇱 Haifa 1
-      - 🇯🇵 ufo Japan 🇯🇵 Tokyo 5
-      - 🇷🇺 Moscow
-      - 🇻🇳 Aloha Vietnam 🇻🇳 Ho Chi Minh City
+      - _1367_18.99Mb |10.14Mb
+      - _36_28.29Mb |23.93Mb
+      - jpaz3.xmrth-node.xyz:15945
+      - usa004.369boy.com:14001
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CN_292 |29.89Mb
-      - CN_335 |27.20Mb
-      - CN_433 |42.29Mb
-      - CN_437 |39.51Mb
-      - CN_442 |33.02Mb
-      - CN_444 |38.30Mb
-      - CN_446 |34.06Mb
-      - CN_447 |39.16Mb
-      - CN_449 |21.64Mb
-      - CN_454 |85.92Mb
-      - CN_455 |51.31Mb
-      - CN_463 |49.54Mb
-      - CN_472 |53.34Mb
-      - CN_473 |49.00Mb
-      - CN_475 |49.99Mb
-      - CN_476 |46.87Mb
-      - CN_481 |66.75Mb
-      - CN_496 |43.16Mb
-      - CN_498 |62.36Mb
-      - CN_499 |58.39Mb
-      - CN_503 |46.77Mb
-      - CN_507 |47.53Mb
-      - CN_512 |48.50Mb
-      - CN_514 |47.06Mb
-      - CN_515 |52.57Mb
-      - CN_516 |59.13Mb
-      - CN_530 |58.22Mb
-      - CN_532 |57.45Mb
-      - CN_533 |62.31Mb
-      - CN_535 |51.64Mb
-      - CN_536 |58.26Mb
-      - CN_537 |23.54Mb
-      - CN_542 |33.08Mb
-      - CN_544 |34.82Mb
-      - CN_546 |24.13Mb
-      - CN_547 |35.77Mb
-      - CN_548 |41.04Mb
-      - CN_549 |38.30Mb
-      - CN_552 |39.44Mb
-      - CN_555 |55.47Mb
-      - CN_556 |38.87Mb
-      - CN_559 |35.99Mb
-      - CN_560 |18.29Mb
-      - CN_562 |33.81Mb
-      - CN_564 |47.25Mb
-      - CN_566 |59.95Mb
-      - CN_569 |33.79Mb
-      - CN_570 |41.99Mb
-      - CN_573 |51.30Mb
-      - CN_575 |45.50Mb
-      - GB_2282_ 6.72Mb | 6.22Mb
-      - HK_607_32.16Mb | 7.66Mb
-      - HK_609_ 6.45Mb |71.42Mb
-      - HK_610_35.59Mb | 8.50Mb
+      - 103.238.213.96:989
+      - 119.28.129.97:44662
+      - 119.28.129.97:44662 2
+      - 120.233.185.189:11814
+      - 120.233.186.250:3389
+      - 120.233.186.250:3389 2
+      - 120.233.186.250:3389 3
+      - 139.9.88.116:5800
+      - 146.19.196.125:31244
+      - 162.250.191.136:31250
+      - 185.160.24.217:812
+      - 185.4.65.6:21247
+      - 20.187.79.61:3389
+      - 83.229.73.60:50003
+      - FR_12 | 7.62Mb
+      - GB_538 | 6.84Mb
+      - HK_101 TG@peekfun |89.53Mb
       - Openit自建节点 EU1
-      - Phoenix
-      - TW_526_50.95Mb |13.16Mb
-      - US_158 TG@peekfun |16.52Mb
-      - US_3828_ 5.99Mb | 8.70Mb
-      - _105_29.36Mb |11.74Mb
-      - _1382_22.71Mb | 6.69Mb
-      - _1386_ 2.61Mb | 7.37Mb
-      - _1387_40.25Mb |53.57Mb
-      - _1395_31.27Mb |58.17Mb
-      - _1398_29.17Mb |58.99Mb
-      - _1399_18.44Mb |37.57Mb
-      - _1401_12.20Mb |11.19Mb
-      - _1412_20.93Mb |56.32Mb
-      - _1428_23.48Mb |46.43Mb
-      - _1432_29.27Mb |43.63Mb
-      - _1435_16.75Mb |46.62Mb
-      - _1436_ 9.07Mb |28.09Mb
-      - _1444_ 3.09Mb | 5.26Mb
-      - _1446_ 2.86Mb | 4.37Mb
-      - _1448_33.98Mb |26.47Mb
-      - _1449_20.96Mb |57.25Mb
-      - _1451_19.78Mb |82.24Mb
-      - _1453_33.62Mb |12.60Mb
-      - _1454_19.19Mb |49.75Mb
-      - _1455_38.58Mb | 6.77Mb
-      - _1456_29.16Mb |39.91Mb
-      - _1457_ 9.86Mb |25.94Mb
-      - _1459_ 7.56Mb | 9.87Mb
-      - _1460_18.61Mb |17.20Mb
-      - _1461_21.76Mb |41.91Mb
-      - _1462_65.74Mb | 7.12Mb
-      - _1464_73.26Mb |61.18Mb
-      - _1465_ 8.14Mb | 9.58Mb
-      - _1466_24.91Mb |44.53Mb
-      - _1467_21.56Mb |22.72Mb
-      - _1468_42.38Mb | 8.70Mb
-      - _1469_22.53Mb | 8.34Mb
-      - _1470_16.28Mb |10.86Mb
-      - _1482_51.99Mb |10.03Mb
-      - _1484_17.09Mb | 7.58Mb
-      - _1485_14.23Mb | 7.82Mb
-      - _1486_ 9.79Mb |10.41Mb
-      - _1489_17.45Mb |66.39Mb
-      - _1491_53.57Mb |29.43Mb
-      - _1492_23.77Mb |44.50Mb
-      - _1493_10.81Mb | 9.80Mb
-      - _1494_43.88Mb |10.38Mb
-      - _1495_20.74Mb | 4.62Mb
-      - _1497_44.33Mb | 8.70Mb
-      - _1498_35.83Mb |12.56Mb
-      - _1499_13.84Mb |95.73Mb
-      - _1500_30.84Mb | 7.98Mb
-      - _1501_25.32Mb |10.51Mb
-      - _1502_24.55Mb |57.44Mb
-      - _1503_ 9.56Mb |20.61Mb
-      - _1504_38.24Mb |15.54Mb
-      - _1519_ 6.20Mb |16.28Mb
-      - _1521_50.70Mb |38.81Mb
-      - _1526_23.69Mb |50.90Mb
-      - _1531_14.76Mb | 6.64Mb
-      - _1532_43.35Mb |80.12Mb
-      - _1533_23.77Mb |89.72Mb
-      - _1534_42.34Mb |88.70Mb
-      - _1535_41.25Mb |99.53Mb
-      - _1536_37.64Mb | 4.71Mb
-      - _1537_10.39Mb |55.57Mb
-      - _1538_23.99Mb |13.20Mb
-      - _1539_20.61Mb |24.40Mb
-      - _1540_17.04Mb |17.09Mb
-      - _1541_24.17Mb |25.15Mb
-      - _1542_29.75Mb |10.74Mb
-      - _303_34.67Mb |37.27Mb
-      - _304_32.44Mb |34.26Mb
-      - _34_ 2.83Mb | 5.90Mb
-      - _38_52.99Mb |29.07Mb
-      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_134 | 7.46Mb
-      - 🇮🇱 Speedy Quark Israel 🇮🇱 Haifa 1
-      - 🇯🇵 ufo Japan 🇯🇵 Tokyo 5
-      - 🇷🇺 Moscow
-      - 🇻🇳 Aloha Vietnam 🇻🇳 Ho Chi Minh City
+      - _1367_18.99Mb |10.14Mb
+      - _36_28.29Mb |23.93Mb
+      - jpaz3.xmrth-node.xyz:15945
+      - usa004.369boy.com:14001
   - name: 👉 国内网站
     type: select
     proxies:
@@ -467,31 +128,28 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - HK_607_32.16Mb | 7.66Mb
-      - HK_609_ 6.45Mb |71.42Mb
-      - HK_610_35.59Mb | 8.50Mb
+      - HK_101 TG@peekfun |89.53Mb
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 ufo Japan 🇯🇵 Tokyo 5
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - US_158 TG@peekfun |16.52Mb
-      - US_3828_ 5.99Mb | 8.70Mb
+      - DIRECT
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - TW_526_50.95Mb |13.16Mb
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204

@@ -57,6 +57,7 @@
 [Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.20_CN/app.asar
 ## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SS最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X(经实验,Arm版的Clash会出现xxx.app已损坏,即使使用传统方法仍无法解决)但是经过Rosetta 2转译的Clash(intel)不受影响，仍可以使用！
+Oneclick 在mac下确实可用，但是如果能用其他的就用其他的。
 >**.7z文件如何解压？**
 使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**
 ### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
@@ -67,6 +68,8 @@
 [![点击跳转至Mac App Store][macos-black]][Quantumult X]
 ### Surge(Arm) *$49.99* App内购买
 [![点击跳转至Mac App Store][macos-black]][Surge]
+### One Click(Arm) *Free*
+[![点击跳转至Mac App Store][macos-black]][One-click]
 
 [ss-NG]: https://ghproxy.com/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.20/Clash.for.Windows-0.19.20.dmg
@@ -78,6 +81,7 @@
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
 [Surge]: https://apps.apple.com/app/surge-4/id1442620678
+[One-click]: https://apps.apple.com/us/app/oneclick-safe-easy-fast/id1545555197
 [macos-black]: https://gitlab.com/yu-steven/tag/-/raw/main/macos-black.svg
 ### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 [![点击跳转至Mac App Store][macos-black]](https://apps.apple.com/app/the-unarchiver/id425424353)

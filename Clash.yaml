@@ -5,240 +5,116 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_206, server: 165.154.225.230, port: 33080, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: CA_235|10.63Mb, server: 165.154.225.230, port: 33080, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN1, server: 120.233.185.114, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: CN100, server: 120.233.185.113, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN101, server: 120.233.185.116, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN102, server: 120.233.185.116, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: CN103, server: 120.233.185.115, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN104, server: 120.233.185.119, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: CN105, server: 120.233.185.119, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN106, server: 120.233.185.119, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN107, server: 120.233.185.119, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN108, server: 120.233.185.115, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN109, server: 120.233.185.113, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN11, server: 120.233.185.114, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN110, server: 120.233.185.119, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN111, server: 120.233.185.119, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN112, server: 120.233.185.119, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN113, server: 120.233.185.115, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN114, server: 120.233.185.113, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN115, server: 120.233.185.112, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN116, server: 120.233.185.118, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN117, server: 116.129.253.106, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN118, server: 120.233.185.113, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN119, server: 120.233.185.115, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: CN12, server: 120.233.185.114, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN120, server: 120.233.185.115, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN121, server: 120.233.185.113, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN122, server: 120.233.185.115, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN123, server: 120.233.185.112, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: CN124, server: 120.233.185.119, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN125, server: 120.233.185.113, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN126, server: 120.233.185.115, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN127, server: 120.233.185.118, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN128, server: 120.233.185.116, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN129, server: 120.233.185.116, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN13, server: 116.129.253.107, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN130, server: 120.233.185.119, port: 29000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN131, server: 120.233.185.119, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN132, server: 120.233.185.119, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN133, server: 120.233.185.115, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN134, server: 120.233.185.119, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN135, server: 120.233.185.118, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN136, server: 120.233.185.115, port: 29000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN137, server: 120.233.185.118, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN138, server: 120.233.185.119, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN139, server: 120.233.185.115, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN14, server: 116.129.253.103, port: 44000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN140, server: 116.129.253.104, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN142, server: 116.129.253.102, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN143, server: 116.129.253.103, port: 52000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN145, server: 120.233.185.118, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN146, server: 120.233.185.116, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN147, server: 120.233.185.115, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN148, server: 116.129.253.102, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN149, server: 116.129.253.104, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN15, server: 116.129.253.102, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN151, server: 116.129.253.102, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN152, server: 116.129.253.102, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN153, server: 116.129.253.103, port: 50000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN154, server: 116.129.253.101, port: 33300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN155, server: 116.129.253.103, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN156, server: 116.129.253.103, port: 49000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN157, server: 116.129.253.102, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN158, server: 116.129.253.104, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN159, server: 116.129.253.103, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN16, server: 116.129.253.107, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN160, server: 116.129.253.102, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN161, server: 116.129.253.103, port: 53000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN162, server: 116.129.253.103, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN163, server: 116.129.253.103, port: 51000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN164, server: 116.129.253.102, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN165, server: 116.129.253.102, port: 29000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN166, server: 116.129.253.102, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN167, server: 116.129.253.102, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN168, server: 116.129.253.103, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN169, server: 116.129.253.101, port: 31100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN17, server: 116.129.253.103, port: 39700, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN170, server: 116.129.253.101, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN171, server: 116.129.253.101, port: 30001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN172, server: 116.129.253.101, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN173, server: 116.129.253.101, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN174, server: 116.129.253.101, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN175, server: 116.129.253.101, port: 46000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN176, server: 116.129.253.101, port: 45000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN177, server: 116.129.253.101, port: 44001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN178, server: 116.129.253.101, port: 42001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN179, server: 116.129.253.101, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN18, server: 116.129.253.103, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN180, server: 120.233.185.119, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN181, server: 116.129.253.103, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN183, server: 116.129.253.101, port: 49001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN184, server: 116.129.253.104, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN185, server: 120.233.185.116, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN187, server: 116.129.253.104, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN188, server: 116.129.253.104, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN189, server: 116.129.253.104, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN19, server: 116.129.253.103, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN191, server: hk64.fans8.xyz, port: 443, type: trojan, password: 9c289eb1-59b1-49ff-9c80-9a3c879c654e, skip-cert-verify: true, udp: true}
-  - {name: CN20, server: 116.129.253.103, port: 45000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN21, server: 116.129.253.103, port: 38000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN22, server: 116.129.253.107, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN23, server: 116.129.253.106, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN24, server: 116.129.253.103, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN25, server: 116.129.253.102, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN26, server: 116.129.253.103, port: 39600, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN27, server: 116.129.253.103, port: 39400, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: CN28, server: 116.129.253.103, port: 39300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN29, server: 116.129.253.102, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN3, server: 120.233.185.114, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN30, server: 116.129.253.103, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN31, server: 116.129.253.103, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN32, server: 116.129.253.102, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN34, server: 116.129.253.103, port: 39900, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN35, server: 116.129.253.103, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN36, server: 116.129.253.103, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN37, server: 116.129.253.103, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN38, server: 116.129.253.103, port: 42000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN39, server: 116.129.253.102, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN4, server: 120.233.185.114, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN40, server: 116.129.253.102, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN41, server: 116.129.253.103, port: 39200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN42, server: 116.129.253.102, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN43, server: 116.129.253.101, port: 33200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN44, server: 116.129.253.102, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN45, server: 116.129.253.103, port: 39800, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN46, server: 116.129.253.103, port: 39100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN47, server: 116.129.253.102, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN48, server: 116.129.253.107, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN49, server: 116.129.253.106, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN50, server: 116.129.253.106, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN51, server: 116.129.253.106, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN52, server: 116.129.253.102, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN53, server: 116.129.253.101, port: 32200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN54, server: 116.129.253.107, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN55, server: 116.129.253.107, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN56, server: 116.129.253.103, port: 39000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN57, server: 120.233.185.116, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN58, server: 120.233.185.115, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN59, server: 120.233.185.113, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN6, server: 120.233.185.114, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN60, server: 116.129.253.103, port: 46000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN61, server: 116.129.253.102, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN62, server: 120.233.185.117, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN63, server: 116.129.253.103, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN64, server: 120.233.185.119, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN65, server: 120.233.185.117, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN66, server: 116.129.253.103, port: 39500, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN67, server: 120.233.185.119, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN68, server: 120.233.185.113, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN69, server: 116.129.253.107, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN7, server: 120.233.185.114, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN70, server: 120.233.185.113, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN71, server: 120.233.185.113, port: 10000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN72, server: 120.233.185.112, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN73, server: 120.233.185.116, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: CN74, server: 120.233.185.113, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN75, server: 120.233.185.117, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN76, server: 120.233.185.115, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN77, server: 120.233.185.112, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN78, server: 120.233.185.115, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN79, server: 116.129.253.103, port: 38100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN8, server: 120.233.185.114, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN80, server: 120.233.185.119, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN81, server: 120.233.185.117, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN82, server: 120.233.185.116, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN83, server: 120.233.185.118, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN84, server: 120.233.185.119, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN85, server: 120.233.185.119, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN86, server: 120.233.185.119, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN87, server: 120.233.185.117, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN88, server: 120.233.185.117, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN89, server: 120.233.185.116, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN9, server: 120.233.185.114, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN90, server: 120.233.185.112, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN91, server: 116.129.253.102, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN92, server: 120.233.185.119, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN93, server: 120.233.185.113, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN94, server: 120.233.185.112, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN95, server: 120.233.185.112, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN96, server: 120.233.185.115, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN97, server: 120.233.185.115, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN98, server: 120.233.185.115, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN99, server: 120.233.185.117, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
+  - {name: CN_186, server: 14.29.124.174, port: 11042, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_191 | 5.61Mb, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_272_ 4.38Mb | 3.63Mb, server: mc.xiaohouzi.club, port: 28325, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mc.xiaohouzi.club}}, udp: true}
-  - {name: CN_33 TG@peekfun |55.38Mb, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: FR_5 | 8.22Mb, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: CN_193, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: CN_195, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22HOST%22:%22ingress-i1.onebox6.org%22,%22Host%22:%22ingress-i1.onebox6.org%22%7D"}}, udp: true}
+  - {name: CN_196, server: shcu.alinkrelay.com, port: 44608, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, skip-cert-verify: true, udp: true}
+  - {name: FR_222, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422}, udp: true}
+  - {name: FR_223, server: fr.n.optage.moe, port: 44612, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, skip-cert-verify: true, udp: true}
+  - {name: HK_228, server: hkaz4.xmrth-node.xyz, port: 15379, type: vmess, uuid: e23a5542-8e62-3572-9afb-6640d61d91b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: HK_229, server: hgc1.xmrth-node.xyz, port: 16067, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: HK_234, server: hkv2.xxnmsl.com, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22HOST%22:%22tms.dingtalk.com%22,%22Host%22:%22tms.dingtalk.com%22%7D"}}, udp: true}
+  - {name: HK_236, server: hkaz004.xmrth-node.xyz, port: 15911, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: HK_238, server: hkaz001.xmrth-node.xyz, port: 16063, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: HK_239, server: hkaz5.xmrth-node.xyz, port: 15904, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: HK_241, server: hkt.xn--y8jhmm6gn.com, port: 38443, type: trojan, password: 9cbbeb3c-d2b6-482c-97c1-1e037f0102f2, skip-cert-verify: true, udp: true}
+  - {name: HK_242, server: hkt.xn--y8jhmm6gn.com, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: HK_243, server: hk002.369boy.com, port: 10087, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: HK_244, server: gy01.20220512.cyou, port: 34568, type: trojan, password: acf34fb3-6fed-40c6-b6ab-b5bedf5827a2, skip-cert-verify: true, udp: true}
+  - {name: HK_245, server: hk001.369boy.com, port: 30156, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: HK_247, server: gy01.20220512.cyou, port: 34568, type: trojan, password: 7ed7b710-d331-43df-8e37-a1d330409ed2, skip-cert-verify: true, udp: true}
+  - {name: HK_248, server: 185.126.148.96, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
   - {name: JP_251 | 2.47Mb, server: azrb.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇺🇸US_373, server: 23.225.57.222, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120211331422}, udp: true}
-  - {name: Relay_-🇩🇪DE_03, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_256, server: 20.210.247.122, port: 80, type: vmess, uuid: df8278e6-1526-47cb-9f49-fbef8c001c64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22HOST%22:%22tms.dingtalk.com%22,%22Host%22:%22tms.dingtalk.com%22%7D"}}, udp: true}
+  - {name: JP_257, server: jplin004.xmrth-node.xyz, port: 16034, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: JP_261, server: jpaws006.xmrth-node.xyz, port: 15863, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: JP_262, server: jplin005.xmrth-node.xyz, port: 15698, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: JP_263, server: jpaws006.xmrth-node.xyz, port: 15863, type: vmess, uuid: 568843ce-b0c3-3a26-8b33-4d128e014076, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: JP_264, server: 139.162.124.250, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: JP_265, server: azrb.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
+  - {name: JP_266, server: 155.248.172.87, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
+  - {name: KR_268, server: 158.247.213.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: KR_269, server: kraws005.xmrth-node.xyz, port: 16079, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: KR_272, server: kraws001.xmrth-node.xyz, port: 15859, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: KR_277, server: kraws004.xmrth-node.xyz, port: 15975, type: vmess, uuid: 16b00fc9-a284-3063-90c9-de55a2b5cb61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: KR_281, server: kraws001.xmrth-node.xyz, port: 15859, type: vmess, uuid: 568843ce-b0c3-3a26-8b33-4d128e014076, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: NL_338, server: 213.183.59.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: NL_341, server: 213.183.59.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: NL_346, server: 213.183.59.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: RU_393, server: 213.183.53.200, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: RU_394, server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: RU_395, server: 213.183.53.200, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: RU_397, server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: RU_398, server: 213.183.53.200, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: RU_401, server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: RU_404, server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: RU_405, server: 213.183.53.200, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: RU_409, server: 213.183.53.200, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: RU_410, server: 213.183.53.200, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: RU_411, server: 213.183.53.200, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: RU_412, server: 213.183.53.200, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: RU_413, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
   - {name: Relay_-🇭🇰HK_1462, server: gy01.20220512.cyou, port: 34568, type: trojan, password: 5d07c2f7-830b-4e29-aeb1-67cd98293ec6, skip-cert-verify: true, udp: true}
   - {name: Relay_-🇹🇼TW_1557, server: n04.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: VjJ0U1QyRXdNSGRsU0ZKVVlsZG9iMVpxUmtwbFJsSklUVlU1YTJKVmNGTT0, udp: true}
   - {name: Relay_-🇺🇸US_126, server: n1.emovpn.xyz, port: 1268, type: ss, cipher: chacha20-ietf-poly1305, password: 7873b1a3-c122-4109-b102-2c6ea507d920, udp: true}
   - {name: Relay_-🇺🇸US_127, server: n1.emovpn.xyz, port: 1268, type: ss, cipher: chacha20-ietf-poly1305, password: 07cd243d-d66e-4904-805e-d1ee4929d32e, udp: true}
-  - {name: Relay_-🇺🇸US_128, server: n1.emovpn.xyz, port: 1268, type: ss, cipher: chacha20-ietf-poly1305, password: 1680a93a-c342-49d6-9e01-9c043ca0557d, udp: true}
-  - {name: Relay_-🇺🇸US_1748, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: f0de3134-aef4-45b5-a135-3a82321bbac6, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
   - {name: Relay__ 4.58Mb |12.34Mb, server: 194.156.230.198, port: 31242, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: Relay__ 6.03Mb | 6.87Mb, server: 162.250.191.136, port: 31250, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: Relay_🇧🇬BG-🇧🇬BG_2026, server: fr.n.optage.moe, port: 44612, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁+ZZ-🇹🇼TW_160+|17.25Mb, server: 134.195.101.32, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁+ZZ-🇹🇼TW_161+|16.86Mb, server: 134.195.101.32, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_166+|15.22Mb, server: 134.195.101.32, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_167+|17.09Mb, server: 134.195.101.32, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: SG_382 | 5.33Mb, server: linsg.n.optage.moe, port: 44605, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, skip-cert-verify: true, udp: true}
-  - {name: US_2633, server: 20.210.216.169, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: US_2849, server: 20.214.201.81, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: US_33, server: 172.104.206.42, port: 31221, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁 ZZ-🇹🇼TW_160 |17.25Mb, server: 134.195.101.32, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: SG_420, server: v2ray3.bonds.id, port: 443, type: vmess, uuid: 014291fb-3808-4ae8-9303-e1f40d58bb4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /howdy, headers: {Host: v2ray3.bonds.id}}, udp: true}
+  - {name: SG_430, server: linsg.n.optage.moe, port: 44605, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, skip-cert-verify: true, udp: true}
+  - {name: TW_197, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: "%7B%22HOST%22:%22330tw.fans8.xyz%22,%22Host%22:%22330tw.fans8.xyz%22%7D"}}, udp: true}
   - {name: US_358 | 7.46Mb, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
-  - {name: US_478 |13.49Mb, server: 96.45.188.199, port: 80, type: vmess, uuid: 5d37c20f-2176-47ac-c61a-a6529c6fba42, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: US_489 |24.38Mb, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: f0de3134-aef4-45b5-a135-3a82321bbac6, skip-cert-verify: true, udp: true}
-  - {name: US_74, server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
-  - {name: VN_494 |26.90Mb, server: vietnam.hn7.shopvpn.net, port: 80, type: vmess, uuid: 23959a9d-be8b-45d7-b284-5a3f9f29039a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vietnam.hn7.shopvpn.net}}, udp: true}
-  - {name: ZZ_3094, server: 103.159.132.36, port: 45631, type: ss, cipher: chacha20-ietf-poly1305, password: gY0L846Wt5a5DG0Z, udp: true}
-  - {name: ZZ_46, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_524, server: 96.45.188.199, port: 80, type: vmess, uuid: 5d37c20f-2176-47ac-c61a-a6529c6fba42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /home, headers: {Host: "%7B%22HOST%22:%2296.45.188.199%22,%22Host%22:%2296.45.188.199%22%7D"}}, udp: true}
+  - {name: US_529, server: inap002.xmrth-node.xyz, port: 15667, type: vmess, uuid: 568843ce-b0c3-3a26-8b33-4d128e014076, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%7B%22HOST%22:%22www.baidu.com%22,%22Host%22:%22www.baidu.com%22%7D"}}, udp: true}
+  - {name: US_538, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: "%7B%22HOST%22:%22vus2.0bad.com%22,%22Host%22:%22vus2.0bad.com%22%7D"}}, udp: true}
+  - {name: US_545, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: _ 2.32Mb | 2.68Mb, server: 213.183.59.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _02, server: 165.154.225.230, port: 33080, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _119, server: 213.183.59.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: _120, server: 213.183.59.177, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _03, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: _08, server: 144.91.109.75, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: revC4XzAemkX, udp: true}
+  - {name: _09, server: 155.133.130.93, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: uOaNBB7dlKXH, udp: true}
+  - {name: _10, server: 185.204.1.253, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: V29BpbtkhWZr, udp: true}
+  - {name: _101, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
+  - {name: _103, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: _108, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: _116, server: 165.154.243.157, port: 48002, type: trojan, password: 9cbbeb3c-d2b6-482c-97c1-1e037f0102f2, skip-cert-verify: true, udp: true}
+  - {name: _117, server: 185.126.148.209, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: _118, server: 185.126.148.186, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: _120, server: 185.126.148.213, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: _120 2, server: 213.183.59.177, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _124, server: 155.248.172.87, port: 28443, type: trojan, password: c94c922d-c833-48c1-b9d1-81c8b7b826f9, skip-cert-verify: true, udp: true}
+  - {name: _126, server: s233.s2022.xyz, port: 39747, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
+  - {name: _127, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: _127 | 4.82Mb, server: xjp.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
-  - {name: _137 |12.38Mb, server: tw1.arthas.cf, port: 10444, type: trojan, password: z11rTIEys9, skip-cert-verify: true, udp: true}
+  - {name: _128, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: _129, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, skip-cert-verify: true, udp: true}
+  - {name: _13, server: 77.83.247.20, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ihtUBnhX69ji, udp: true}
+  - {name: _130, server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: _134, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: true, udp: true}
+  - {name: _136, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
+  - {name: _138, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
   - {name: _139, server: 144.91.109.71, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: V8stXKscUpkN, udp: true}
+  - {name: _14, server: 144.91.109.71, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: V8stXKscUpkN, udp: true}
   - {name: _140, server: 144.91.109.75, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: revC4XzAemkX, udp: true}
+  - {name: _141, server: shs.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
   - {name: _141 | 2.73Mb, server: shs.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
-  - {name: _142 |31.80Mb, server: tw.ssssv2.xyz, port: 17001, type: trojan, password: d2673e07-cfd1-41e4-abc8-2780c1dc9e41, skip-cert-verify: true, udp: true}
+  - {name: _142, server: azhk.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
   - {name: _1425, server: 158.247.213.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: _143 |15.77Mb, server: shcm.pdjc.cc, port: 42000, type: trojan, password: 8d0db1d1-62a2-4d8b-b272-e4f364e064c6, skip-cert-verify: true, udp: true}
-  - {name: _1535_11.39Mb+|+4.55Mb, server: 103.56.60.235, port: 3381, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: _1575_11.18Mb+|+4.14Mb, server: 103.56.62.145, port: 3381, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: _557, server: 213.183.59.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: _144, server: shcm.pdjc.cc, port: 42000, type: trojan, password: 8d0db1d1-62a2-4d8b-b272-e4f364e064c6, skip-cert-verify: true, udp: true}
+  - {name: _145, server: 198.200.51.219, port: 26969, type: trojan, password: 8d0db1d1-62a2-4d8b-b272-e4f364e064c6, sni: us-05.bbbb.pw, skip-cert-verify: true, udp: true}
+  - {name: _24, server: b5d28a9.sd.gladns.com, port: 8474, type: ss, cipher: chacha20-ietf-poly1305, password: a501c82c72d790b8, udp: true}
+  - {name: _43, server: 161.97.68.139, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 94dvoW0TdKRq, udp: true}
   - {name: _558, server: 213.183.59.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _559, server: 213.183.59.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _561, server: 213.183.59.177, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: _562, server: 213.183.59.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _563, server: 213.183.59.177, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
   - {name: _564, server: 213.183.59.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
   - {name: _565, server: 213.183.59.177, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
   - {name: _566, server: 213.183.59.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
@@ -246,42 +122,35 @@ proxies:
   - {name: _569, server: 213.183.59.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
   - {name: _570, server: 213.183.59.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
   - {name: _571, server: 213.183.59.177, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: _572, server: 213.183.59.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
   - {name: _573, server: 213.183.59.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
   - {name: _574, server: 213.183.59.177, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
   - {name: _575, server: 213.183.59.177, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
   - {name: _576, server: 213.183.59.177, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
   - {name: _577, server: 213.183.59.177, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _578, server: 213.183.59.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
   - {name: _579, server: 213.183.59.177, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _580, server: 213.183.59.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
   - {name: _581, server: 213.183.59.177, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
   - {name: _582, server: 213.183.59.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: _583, server: 213.183.59.177, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
   - {name: _584, server: 213.183.59.177, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
   - {name: _585, server: 213.183.59.177, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: _586, server: 213.183.59.177, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
   - {name: _587, server: 213.183.59.177, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
   - {name: _588, server: 213.183.59.177, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: _589, server: 213.183.59.177, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _590, server: 213.183.59.177, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _59, server: 213.183.53.200, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
   - {name: _591, server: 213.183.59.177, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: _594, server: 213.183.59.177, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _595, server: 213.183.59.177, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
   - {name: _596, server: 213.183.59.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
   - {name: _597, server: 213.183.59.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
   - {name: _598, server: 213.183.59.177, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
   - {name: _599, server: 213.183.59.177, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: _60, server: 146.56.96.252, port: 2333, type: ssr, cipher: aes-256-cfb, password: doub.io, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
   - {name: _600, server: 213.183.59.177, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
   - {name: _601, server: 213.183.59.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _602, server: 213.183.59.177, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _68, server: 527hk5.fans8.xyz, port: 443, type: trojan, password: 9c289eb1-59b1-49ff-9c80-9a3c879c654e, skip-cert-verify: true, udp: true}
   - {name: _696, server: 213.183.59.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: _704, server: 213.183.59.177, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: _729, server: 213.183.59.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _844, server: 37.61.223.23, port: 18760, type: ss, cipher: chacha20-ietf-poly1305, password: hg49$WH8943g3, udp: true}
-  - {name: _88 | 5.17Mb, server: bai-piao-wang-zhe10.98848.xyz, port: 22168, type: trojan, password: mDmaAWoWXB, skip-cert-verify: true, udp: true}
+  - {name: _88, server: sghe.tjvpn.org, port: 443, type: trojan, password: 253152b0-e018-11ec-b935-225401db9d57, sni: video.joox.com, skip-cert-verify: true, udp: true}
   - {name: _92 | 3.18Mb, server: 527hk5.fans8.xyz, port: 443, type: trojan, password: 9c289eb1-59b1-49ff-9c80-9a3c879c654e, skip-cert-verify: true, udp: true}
+  - {name: _93, server: gy01.20220512.cyou, port: 34568, type: trojan, password: 5d07c2f7-830b-4e29-aeb1-67cd98293ec6, skip-cert-verify: true, udp: true}
   - {name: _94 | 7.26Mb, server: hk64.fans8.xyz, port: 443, type: trojan, password: 9c289eb1-59b1-49ff-9c80-9a3c879c654e, skip-cert-verify: true, udp: true}
+  - {name: _95, server: xjp.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
+  - {name: _97, server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: h3816tw.strongpipe.live:20443, server: h3816tw.strongpipe.live, port: 20443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h517439.strongpipe.live:11745, server: h517439.strongpipe.live, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h63956.strongpipe.live:11445, server: h63956.strongpipe.live, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
@@ -294,471 +163,147 @@ proxies:
   - {name: h961684.strongpipe.live:11245, server: h961684.strongpipe.live, port: 11245, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.strongpipe.live:11445, server: h961684.strongpipe.live, port: 11445, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.strongpipe.live:11745, server: h961684.strongpipe.live, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+1, server: tt01.kuli888.xyz, port: 35358, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: tw.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+10, server: az01.kuli888.xyz, port: 443, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: az01dacjdcndacc.kulime.space, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+11, server: hk04.kuli888.xyz, port: 8080, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: hk04.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+12, server: v1hugang3.kuli888.xyz, port: 11150, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: hk05.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+13, server: hk06.kuli888.xyz, port: 12520, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: hk06.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+15, server: v1hugang5.kuli888.xyz, port: 10028, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: hk06.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+16, server: v1shengang.kuli888.xyz, port: 52016, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: vdfasfeffawkje.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+3, server: v1tw01.kuli888.xyz, port: 52035, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: tw02.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+4, server: riben.kuli888.xyz, port: 443, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: yinghua03dasfasfvaev.kulime.space, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+5, server: us.kuli888.xyz, port: 35256, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: us.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+6, server: hk07.kuli888.xyz, port: 443, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: safwv07dawjncwsdc.kulime.space, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+7, server: v1az03.kuli888.xyz, port: 443, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: v1az03.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+8, server: az05feiy.kuli888.xyz, port: 443, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: fy05dascefbb.kulime.space, skip-cert-verify: true, udp: true}
-  - {name: tg@univstar6+9, server: az06dcjhh.kuli888.xyz, port: 443, type: trojan, password: 0c987039-dad5-3c6a-b7a5-21444e2eddae, sni: az06feiydwf.kulime.space, skip-cert-verify: true, udp: true}
-  - {name: univstar-KualaLumpur-TMNet-dip, server: 116.129.253.102, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-LAX-Multacom_1, server: 116.129.253.101, port: 49001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-LAX-Multacom_2, server: 116.129.253.101, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-LAX-Multacom_4, server: 116.129.253.101, port: 46000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-LAX-Multacom_5, server: 116.129.253.101, port: 45000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-LAX-Multacom_6, server: 116.129.253.101, port: 44001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-LAX-Multacom_7, server: 116.129.253.101, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-Novosibirsk-Rostelecom-dip_1, server: 116.129.253.104, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-Novosibirsk-Rostelecom-dip_2, server: 116.129.253.104, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-Novosibirsk-Rostelecom-dip_3, server: 116.129.253.104, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-Novosibirsk-Rostelecom-dip_4, server: 116.129.253.104, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-Seoul-VPC, server: 116.129.253.103, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: univstar-TR-Bursa-Bursabil, server: 120.233.185.116, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
   - {name: "|11.07Mb", server: 161.97.68.139, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 94dvoW0TdKRq, udp: true}
-  - {name: "|11.11Mb", server: 83.150.217.62, port: 44612, type: trojan, password: 1529baee-f263-48a4-b95b-ac0a49814268, skip-cert-verify: true, udp: true}
   - {name: "|11.93Mb", server: 155.133.130.93, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: uOaNBB7dlKXH, udp: true}
-  - {name: "|17.47Mb", server: 120.233.186.71, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: "|27.80Mb", server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422}, udp: true}
-  - {name: "|41.16Mb", server: 14.29.124.174, port: 11018, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "|27.80Mb", server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422}, udp: true}
   - {name: "|45.53Mb", server: cn.zzv02.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv02.infonode.xyz}}, udp: true}
-  - {name: "|458.82Mb", server: 139.162.47.114, port: 44605, type: trojan, password: 1529baee-f263-48a4-b95b-ac0a49814268, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 Relay_Relay_🇨🇦CA-🇨🇦CA_132🇨🇦CA-🇨🇦CA_130 | 3.83Mb, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 331tw.fans8.xyz}}, udp: true}
-  - {name: 🇨🇦 Relay_Relay_🇨🇦CA-🇨🇦CA_135🇨🇦CA-🇨🇦CA_135 | 2.18Mb, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 331tw.fans8.xyz}}, udp: true}
-  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_05, server: 527hk1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}, udp: true}
-  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_133, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
-  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_27, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
-  - {name: 🇨🇳 Relay_Relay_🇨🇳CN-🇩🇪DE_204🇨🇳CN-🇩🇪DE_200 | 1.92Mb, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
-  - {name: 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_168🇨🇳CN-🇭🇰HK_166 |55.03Mb, server: 14.29.124.174, port: 11010, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_05, server: 527hk1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_27, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
   - {name: 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_182🇨🇳CN-🇭🇰HK_175 | 2.03Mb, server: 14.29.124.174, port: 11042, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 Relay_Relay_🇨🇳CN-🇹🇼TW_176🇨🇳CN-🇹🇼TW_181 |41.95Mb, server: 14.29.124.168, port: 24007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_09, server: ingress-i2.onebox6.org, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i2.onebox6.org}}, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_252, server: b5d28a9.sd.gladns.com, port: 8474, type: ss, cipher: chacha20-ietf-poly1305, password: a501c82c72d790b8, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_2114, server: 112.64.105.203, port: 44605, type: trojan, password: 1529baee-f263-48a4-b95b-ac0a49814268, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2106, server: 120.233.186.71, port: 3381, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2110, server: 103.56.60.235, port: 3381, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2117, server: shcu.alinkrelay.com, port: 44608, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2121, server: 120.233.186.71, port: 3381, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_242, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_243, server: 103.56.60.235, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_245, server: 103.56.60.235, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_246, server: 103.56.62.145, port: 3381, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_248, server: 103.56.62.145, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_253, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_71+|20.25Mb, server: 120.233.186.71, port: 3381, type: trojan, password: ca4596fb9bc63cf2, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_77+|10.05Mb, server: 103.56.60.235, port: 3381, type: trojan, password: d66013c645b93c5c, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 univstar-台北Hinet, server: 116.129.253.104, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇨🇳 univstar-台北Hinet-dip_1, server: 116.129.253.104, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇨🇳 univstar-台北Hinet-dip_2, server: 116.129.253.104, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
   - {name: 🇫🇮 _FI_芬兰, server: 185.204.1.253, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: V29BpbtkhWZr, udp: true}
   - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_2141, server: gy01.20220512.cyou, port: 34568, type: trojan, password: acf34fb3-6fed-40c6-b6ab-b5bedf5827a2, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_264_ 7.45Mb | 8.62Mb, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: 8f4832f7-a51b-4049-9060-0422c3223e76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk1.ningmengshui.xyz}}, udp: true}
   - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_598, server: hk001.369boy.com, port: 30156, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_601, server: hk003.369boy.com, port: 32502, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_602, server: gy01.20220512.cyou, port: 34568, type: trojan, password: 7ed7b710-d331-43df-8e37-a1d330409ed2, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 univstar-香港EC2_1, server: 116.129.253.103, port: 52000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港EC2_2_1, server: 120.233.185.113, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港EC2_2_2, server: 116.129.253.101, port: 33300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港LeaseWeb-nf_1, server: 120.233.185.115, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港LeaseWeb-nf_2, server: 120.233.185.115, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港LeaseWeb_10, server: 120.233.185.119, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港LeaseWeb_12, server: 120.233.185.119, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港LeaseWeb_13, server: 120.233.185.119, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港LeaseWeb_18, server: 120.233.185.115, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
   - {name: 🇭🇰 univstar-香港LeaseWeb_5, server: 120.233.185.119, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港LeaseWeb_7, server: 120.233.185.119, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_10, server: 116.129.253.102, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_11, server: 116.129.253.102, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_12, server: 116.129.253.102, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_13, server: 116.129.253.102, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_14_1, server: 116.129.253.102, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_14_2, server: 120.233.185.115, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_15_1, server: 116.129.253.102, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_16_1, server: 116.129.253.101, port: 32200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_18, server: 120.233.185.117, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_19, server: 120.233.185.117, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_1_1, server: 120.233.185.119, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_1_2, server: 116.129.253.103, port: 53000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_20, server: 120.233.185.117, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_21, server: 120.233.185.117, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_22, server: 120.233.185.117, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_23, server: 120.233.185.117, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_24, server: 120.233.185.113, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_25, server: 120.233.185.113, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_26, server: 120.233.185.113, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_27, server: 120.233.185.113, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_28, server: 120.233.185.113, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_29, server: 120.233.185.113, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_2_1, server: 120.233.185.119, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_2_2, server: 116.129.253.103, port: 51000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_30, server: 120.233.185.113, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_3_1, server: 120.233.185.119, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_3_2, server: 116.129.253.103, port: 50000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
   - {name: 🇭🇰 univstar-香港Leaseweb_4_1, server: 116.129.253.103, port: 46000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_4_2, server: 120.233.185.119, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_5_1, server: 116.129.253.103, port: 45000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_5_2, server: 120.233.185.119, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_6_1, server: 116.129.253.103, port: 44000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_6_2, server: 120.233.185.119, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_7, server: 116.129.253.103, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_8_1, server: 116.129.253.103, port: 42000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_8_2, server: 120.233.185.119, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_9_1, server: 116.129.253.103, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Leaseweb_9_2, server: 120.233.185.119, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_10, server: 120.233.185.116, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_12, server: 120.233.185.116, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_13, server: 120.233.185.116, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_14, server: 120.233.185.116, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_15, server: 120.233.185.116, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_16, server: 120.233.185.118, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_17, server: 120.233.185.118, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_18, server: 120.233.185.112, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_19, server: 120.233.185.112, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_1_1, server: 120.233.185.115, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_1_2, server: 116.129.253.103, port: 49000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_20, server: 120.233.185.112, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_21, server: 120.233.185.112, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
   - {name: 🇭🇰 univstar-香港Nearoute-dip_22, server: 120.233.185.112, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_2_1, server: 120.233.185.115, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_2_2, server: 116.129.253.103, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_3_1, server: 120.233.185.115, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_3_2, server: 116.129.253.103, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_4, server: 120.233.185.117, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_6, server: 120.233.185.114, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute-dip_9, server: 120.233.185.116, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute_1, server: 120.233.185.113, port: 10000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute_2, server: 120.233.185.118, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute_3, server: 120.233.185.118, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nearoute_5, server: 120.233.185.112, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud-dip_1, server: 120.233.185.115, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud-dip_2, server: 120.233.185.115, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud-dip_3, server: 120.233.185.115, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud-dip_4, server: 120.233.185.115, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud-dip_5, server: 120.233.185.113, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud_1, server: 120.233.185.116, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud_2, server: 120.233.185.116, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇭🇰 univstar-香港Nerocloud_3, server: 120.233.185.113, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
   - {name: 🇮🇱 _IL_以色列, server: 77.83.247.20, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ihtUBnhX69ji, udp: true}
   - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_2206, server: 8kr.pronetworklink.net, port: 443, type: trojan, password: 996f11d5-3bb8-4243-9bda-4559ca93445d, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Datacamp_1, server: 116.129.253.102, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Datacamp_2, server: 116.129.253.102, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Datacamp_3, server: 116.129.253.102, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Datacamp_4, server: 116.129.253.102, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Datacamp_5, server: 116.129.253.102, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_1, server: 116.129.253.103, port: 39900, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_10, server: 116.129.253.103, port: 39000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_11, server: 116.129.253.103, port: 38100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_12, server: 116.129.253.103, port: 38000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_13, server: 116.129.253.103, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_14, server: 116.129.253.103, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_15, server: 116.129.253.103, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_16, server: 116.129.253.103, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_17, server: 116.129.253.103, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_18, server: 116.129.253.103, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_19, server: 116.129.253.103, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_2, server: 116.129.253.103, port: 39800, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_20, server: 116.129.253.103, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_3, server: 116.129.253.103, port: 39700, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_4, server: 116.129.253.103, port: 39600, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_5, server: 116.129.253.103, port: 39500, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_6, server: 116.129.253.103, port: 39400, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_7, server: 116.129.253.103, port: 39300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_8, server: 116.129.253.103, port: 39200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇯🇵 univstar-Tokyo-Nerocloud_9, server: 116.129.253.103, port: 39100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇷🇺 Relay_🇷🇺RU-🇷🇺RU_25, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
   - {name: 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2682, server: sghe.tjvpn.org, port: 443, type: trojan, password: 253152b0-e018-11ec-b935-225401db9d57, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2761, server: linsg.n.optage.moe, port: 44605, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_1, server: 116.129.253.102, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_10, server: 116.129.253.102, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_2, server: 116.129.253.102, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_3, server: 116.129.253.102, port: 29000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_4, server: 116.129.253.102, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_5, server: 116.129.253.102, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_6, server: 116.129.253.102, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_7, server: 116.129.253.102, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_8, server: 116.129.253.102, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean-nf_9, server: 116.129.253.102, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_1, server: 116.129.253.107, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_2_1, server: 116.129.253.107, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_2_2, server: 120.233.185.113, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_3, server: 116.129.253.107, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_4, server: 116.129.253.107, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_5, server: 116.129.253.107, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_6, server: 116.129.253.107, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_7, server: 116.129.253.106, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-DigitalOcean_8, server: 116.129.253.101, port: 31100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-FDCservers-dip_1, server: 116.129.253.101, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-FDCservers-dip_2, server: 116.129.253.101, port: 30001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-FDCservers_2, server: 120.233.185.117, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Linode_1, server: 116.129.253.106, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Linode_2, server: 116.129.253.106, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Linode_3, server: 116.129.253.106, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Linode_4, server: 116.129.253.106, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Nerocloud, server: 120.233.185.115, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Nerocloud_1, server: 116.129.253.107, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Nerocloud_2, server: 116.129.253.103, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 univstar-SG-Nerocloud_3, server: 116.129.253.101, port: 33200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇸🇬 新加坡直连, server: xjp.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, sni: xjp.ziqiyun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2655, server: cn.zzv01.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2656, server: cn.zzv05.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv05.infonode.xyz}}, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2663, server: cn.zzv12.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv12.infonode.xyz}}, udp: true}
   - {name: 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2671, server: cn.zzv07.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv07.infonode.xyz}}, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2672, server: cn.zzv06.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv06.infonode.xyz}}, udp: true}
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_3058, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}, udp: true}
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_3082, server: tj-15.t8737.shop, port: 11223, type: trojan, password: afbba9fe-80f3-4fbd-837c-35ede864fea6, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_3085, server: azrb.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_3086, server: 16us.pronetworklink.net, port: 443, type: trojan, password: 996f11d5-3bb8-4243-9bda-4559ca93445d, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_3087, server: tj-13.t8737.shop, port: 11223, type: trojan, password: afbba9fe-80f3-4fbd-837c-35ede864fea6, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 120.233.186.71, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 univstar-US-Minden-Multacom, server: 116.129.253.101, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇺🇸 univstar-US-SantaClarita-Multacom, server: 116.129.253.101, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 166268:I4o21k, obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ, udp: true}
-  - {name: 🇺🇸 美国直连, server: shs.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, sni: shs.ziqiyun.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_206
       - CA_235|10.63Mb
-      - CN1
       - CN100
-      - CN101
-      - CN102
       - CN103
-      - CN104
       - CN105
-      - CN106
-      - CN107
-      - CN108
-      - CN109
-      - CN11
-      - CN110
-      - CN111
-      - CN112
-      - CN113
-      - CN114
-      - CN115
-      - CN116
-      - CN117
-      - CN118
-      - CN119
       - CN12
-      - CN120
-      - CN121
-      - CN122
-      - CN123
       - CN124
-      - CN125
-      - CN126
-      - CN127
-      - CN128
-      - CN129
-      - CN13
-      - CN130
-      - CN131
-      - CN132
-      - CN133
-      - CN134
-      - CN135
-      - CN136
-      - CN137
-      - CN138
-      - CN139
-      - CN14
-      - CN140
-      - CN142
-      - CN143
-      - CN145
-      - CN146
-      - CN147
-      - CN148
-      - CN149
-      - CN15
-      - CN151
-      - CN152
-      - CN153
-      - CN154
-      - CN155
-      - CN156
-      - CN157
-      - CN158
-      - CN159
-      - CN16
-      - CN160
-      - CN161
-      - CN162
-      - CN163
-      - CN164
-      - CN165
-      - CN166
-      - CN167
-      - CN168
-      - CN169
-      - CN17
-      - CN170
-      - CN171
-      - CN172
-      - CN173
-      - CN174
-      - CN175
-      - CN176
-      - CN177
-      - CN178
-      - CN179
-      - CN18
-      - CN180
-      - CN181
-      - CN183
-      - CN184
-      - CN185
-      - CN187
-      - CN188
-      - CN189
-      - CN19
-      - CN191
-      - CN20
-      - CN21
-      - CN22
-      - CN23
-      - CN24
-      - CN25
-      - CN26
-      - CN27
       - CN28
-      - CN29
-      - CN3
-      - CN30
-      - CN31
-      - CN32
-      - CN34
-      - CN35
-      - CN36
-      - CN37
-      - CN38
-      - CN39
-      - CN4
-      - CN40
-      - CN41
-      - CN42
-      - CN43
-      - CN44
-      - CN45
-      - CN46
-      - CN47
-      - CN48
-      - CN49
-      - CN50
-      - CN51
-      - CN52
-      - CN53
-      - CN54
-      - CN55
-      - CN56
-      - CN57
-      - CN58
-      - CN59
-      - CN6
-      - CN60
-      - CN61
-      - CN62
-      - CN63
-      - CN64
-      - CN65
-      - CN66
-      - CN67
-      - CN68
-      - CN69
-      - CN7
-      - CN70
-      - CN71
-      - CN72
-      - CN73
       - CN74
-      - CN75
-      - CN76
-      - CN77
-      - CN78
-      - CN79
-      - CN8
-      - CN80
-      - CN81
-      - CN82
-      - CN83
-      - CN84
-      - CN85
-      - CN86
-      - CN87
-      - CN88
-      - CN89
-      - CN9
-      - CN90
-      - CN91
-      - CN92
-      - CN93
-      - CN94
-      - CN95
-      - CN96
-      - CN97
-      - CN98
-      - CN99
+      - CN_186
       - CN_191 | 5.61Mb
-      - CN_272_ 4.38Mb | 3.63Mb
-      - CN_33 TG@peekfun |55.38Mb
-      - FR_5 | 8.22Mb
+      - CN_193
+      - CN_195
+      - CN_196
+      - FR_222
+      - FR_223
+      - HK_228
+      - HK_229
+      - HK_234
+      - HK_236
+      - HK_238
+      - HK_239
+      - HK_241
+      - HK_242
+      - HK_243
+      - HK_244
+      - HK_245
+      - HK_247
+      - HK_248
       - JP_251 | 2.47Mb
-      - Pool_🇺🇸US_373
-      - Relay_-🇩🇪DE_03
+      - JP_256
+      - JP_257
+      - JP_261
+      - JP_262
+      - JP_263
+      - JP_264
+      - JP_265
+      - JP_266
+      - KR_268
+      - KR_269
+      - KR_272
+      - KR_277
+      - KR_281
+      - NL_338
+      - NL_341
+      - NL_346
+      - RU_393
+      - RU_394
+      - RU_395
+      - RU_397
+      - RU_398
+      - RU_401
+      - RU_404
+      - RU_405
+      - RU_409
+      - RU_410
+      - RU_411
+      - RU_412
+      - RU_413
       - Relay_-🇭🇰HK_1462
       - Relay_-🇹🇼TW_1557
       - Relay_-🇺🇸US_126
       - Relay_-🇺🇸US_127
-      - Relay_-🇺🇸US_128
-      - Relay_-🇺🇸US_1748
       - Relay__ 4.58Mb |12.34Mb
       - Relay__ 6.03Mb | 6.87Mb
       - Relay_🇧🇬BG-🇧🇬BG_2026
-      - Relay_🏁+ZZ-🇹🇼TW_160+|17.25Mb
-      - Relay_🏁+ZZ-🇹🇼TW_161+|16.86Mb
-      - Relay_🏁ZZ-🇹🇼TW_166+|15.22Mb
-      - Relay_🏁ZZ-🇹🇼TW_167+|17.09Mb
-      - SG_382 | 5.33Mb
-      - US_2633
-      - US_2849
-      - US_33
+      - Relay_🏁 ZZ-🇹🇼TW_160 |17.25Mb
+      - SG_420
+      - SG_430
+      - TW_197
       - US_358 | 7.46Mb
-      - US_478 |13.49Mb
-      - US_489 |24.38Mb
-      - US_74
-      - VN_494 |26.90Mb
-      - ZZ_3094
-      - ZZ_46
+      - US_524
+      - US_529
+      - US_538
+      - US_545
       - _ 2.32Mb | 2.68Mb
-      - _02
-      - _119
+      - _03
+      - _08
+      - _09
+      - _10
+      - _101
+      - _103
+      - _108
+      - _116
+      - _117
+      - _118
       - _120
+      - _120 2
+      - _124
+      - _126
+      - _127
       - _127 | 4.82Mb
-      - _137 |12.38Mb
+      - _128
+      - _129
+      - _13
+      - _130
+      - _134
+      - _136
+      - _138
       - _139
+      - _14
       - _140
+      - _141
       - _141 | 2.73Mb
-      - _142 |31.80Mb
+      - _142
       - _1425
-      - _143 |15.77Mb
-      - _1535_11.39Mb+|+4.55Mb
-      - _1575_11.18Mb+|+4.14Mb
-      - _557
+      - _144
+      - _145
+      - _24
+      - _43
       - _558
-      - _559
-      - _561
-      - _562
-      - _563
       - _564
       - _565
       - _566
@@ -766,42 +311,35 @@ proxy-groups:
       - _569
       - _570
       - _571
-      - _572
       - _573
       - _574
       - _575
       - _576
       - _577
-      - _578
       - _579
-      - _580
       - _581
       - _582
-      - _583
       - _584
       - _585
-      - _586
       - _587
       - _588
-      - _589
-      - _590
+      - _59
       - _591
-      - _594
-      - _595
       - _596
       - _597
       - _598
       - _599
+      - _60
       - _600
       - _601
-      - _602
+      - _68
       - _696
-      - _704
-      - _729
-      - _844
-      - _88 | 5.17Mb
+      - _88
       - _92 | 3.18Mb
+      - _93
       - _94 | 7.26Mb
+      - _95
+      - _97
       - h3816tw.strongpipe.live:20443
       - h517439.strongpipe.live:11745
       - h63956.strongpipe.live:11445
@@ -814,471 +352,147 @@ proxy-groups:
       - h961684.strongpipe.live:11245
       - h961684.strongpipe.live:11445
       - h961684.strongpipe.live:11745
-      - tg@univstar6+1
-      - tg@univstar6+10
-      - tg@univstar6+11
-      - tg@univstar6+12
-      - tg@univstar6+13
-      - tg@univstar6+15
-      - tg@univstar6+16
-      - tg@univstar6+3
-      - tg@univstar6+4
-      - tg@univstar6+5
-      - tg@univstar6+6
-      - tg@univstar6+7
-      - tg@univstar6+8
-      - tg@univstar6+9
-      - univstar-KualaLumpur-TMNet-dip
-      - univstar-LAX-Multacom_1
-      - univstar-LAX-Multacom_2
-      - univstar-LAX-Multacom_4
-      - univstar-LAX-Multacom_5
-      - univstar-LAX-Multacom_6
-      - univstar-LAX-Multacom_7
-      - univstar-Novosibirsk-Rostelecom-dip_1
-      - univstar-Novosibirsk-Rostelecom-dip_2
-      - univstar-Novosibirsk-Rostelecom-dip_3
-      - univstar-Novosibirsk-Rostelecom-dip_4
-      - univstar-Seoul-VPC
-      - univstar-TR-Bursa-Bursabil
       - "|11.07Mb"
-      - "|11.11Mb"
       - "|11.93Mb"
-      - "|17.47Mb"
       - "|27.80Mb"
-      - "|41.16Mb"
       - "|45.53Mb"
-      - "|458.82Mb"
-      - 🇨🇦 Relay_Relay_🇨🇦CA-🇨🇦CA_132🇨🇦CA-🇨🇦CA_130 | 3.83Mb
-      - 🇨🇦 Relay_Relay_🇨🇦CA-🇨🇦CA_135🇨🇦CA-🇨🇦CA_135 | 2.18Mb
       - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_05
-      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_133
       - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_27
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇩🇪DE_204🇨🇳CN-🇩🇪DE_200 | 1.92Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_168🇨🇳CN-🇭🇰HK_166 |55.03Mb
       - 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_182🇨🇳CN-🇭🇰HK_175 | 2.03Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇹🇼TW_176🇨🇳CN-🇹🇼TW_181 |41.95Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_252
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_2114
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2106
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2110
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2117
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2121
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_242
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_243
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_245
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_246
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_248
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_253
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_71+|20.25Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_77+|10.05Mb
-      - 🇨🇳 univstar-台北Hinet
-      - 🇨🇳 univstar-台北Hinet-dip_1
-      - 🇨🇳 univstar-台北Hinet-dip_2
       - 🇫🇮 _FI_芬兰
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_2141
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_264_ 7.45Mb | 8.62Mb
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_598
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_601
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_602
-      - 🇭🇰 univstar-香港EC2_1
-      - 🇭🇰 univstar-香港EC2_2_1
-      - 🇭🇰 univstar-香港EC2_2_2
-      - 🇭🇰 univstar-香港LeaseWeb-nf_1
-      - 🇭🇰 univstar-香港LeaseWeb-nf_2
-      - 🇭🇰 univstar-香港LeaseWeb_10
-      - 🇭🇰 univstar-香港LeaseWeb_12
-      - 🇭🇰 univstar-香港LeaseWeb_13
-      - 🇭🇰 univstar-香港LeaseWeb_18
       - 🇭🇰 univstar-香港LeaseWeb_5
-      - 🇭🇰 univstar-香港LeaseWeb_7
-      - 🇭🇰 univstar-香港Leaseweb_10
-      - 🇭🇰 univstar-香港Leaseweb_11
-      - 🇭🇰 univstar-香港Leaseweb_12
-      - 🇭🇰 univstar-香港Leaseweb_13
-      - 🇭🇰 univstar-香港Leaseweb_14_1
-      - 🇭🇰 univstar-香港Leaseweb_14_2
-      - 🇭🇰 univstar-香港Leaseweb_15_1
-      - 🇭🇰 univstar-香港Leaseweb_16_1
-      - 🇭🇰 univstar-香港Leaseweb_18
-      - 🇭🇰 univstar-香港Leaseweb_19
-      - 🇭🇰 univstar-香港Leaseweb_1_1
-      - 🇭🇰 univstar-香港Leaseweb_1_2
-      - 🇭🇰 univstar-香港Leaseweb_20
-      - 🇭🇰 univstar-香港Leaseweb_21
-      - 🇭🇰 univstar-香港Leaseweb_22
-      - 🇭🇰 univstar-香港Leaseweb_23
-      - 🇭🇰 univstar-香港Leaseweb_24
-      - 🇭🇰 univstar-香港Leaseweb_25
-      - 🇭🇰 univstar-香港Leaseweb_26
-      - 🇭🇰 univstar-香港Leaseweb_27
-      - 🇭🇰 univstar-香港Leaseweb_28
-      - 🇭🇰 univstar-香港Leaseweb_29
-      - 🇭🇰 univstar-香港Leaseweb_2_1
-      - 🇭🇰 univstar-香港Leaseweb_2_2
-      - 🇭🇰 univstar-香港Leaseweb_30
-      - 🇭🇰 univstar-香港Leaseweb_3_1
-      - 🇭🇰 univstar-香港Leaseweb_3_2
       - 🇭🇰 univstar-香港Leaseweb_4_1
-      - 🇭🇰 univstar-香港Leaseweb_4_2
-      - 🇭🇰 univstar-香港Leaseweb_5_1
-      - 🇭🇰 univstar-香港Leaseweb_5_2
-      - 🇭🇰 univstar-香港Leaseweb_6_1
-      - 🇭🇰 univstar-香港Leaseweb_6_2
-      - 🇭🇰 univstar-香港Leaseweb_7
-      - 🇭🇰 univstar-香港Leaseweb_8_1
-      - 🇭🇰 univstar-香港Leaseweb_8_2
-      - 🇭🇰 univstar-香港Leaseweb_9_1
-      - 🇭🇰 univstar-香港Leaseweb_9_2
-      - 🇭🇰 univstar-香港Nearoute-dip_10
-      - 🇭🇰 univstar-香港Nearoute-dip_12
-      - 🇭🇰 univstar-香港Nearoute-dip_13
-      - 🇭🇰 univstar-香港Nearoute-dip_14
-      - 🇭🇰 univstar-香港Nearoute-dip_15
-      - 🇭🇰 univstar-香港Nearoute-dip_16
-      - 🇭🇰 univstar-香港Nearoute-dip_17
-      - 🇭🇰 univstar-香港Nearoute-dip_18
-      - 🇭🇰 univstar-香港Nearoute-dip_19
-      - 🇭🇰 univstar-香港Nearoute-dip_1_1
-      - 🇭🇰 univstar-香港Nearoute-dip_1_2
-      - 🇭🇰 univstar-香港Nearoute-dip_20
-      - 🇭🇰 univstar-香港Nearoute-dip_21
       - 🇭🇰 univstar-香港Nearoute-dip_22
-      - 🇭🇰 univstar-香港Nearoute-dip_2_1
-      - 🇭🇰 univstar-香港Nearoute-dip_2_2
-      - 🇭🇰 univstar-香港Nearoute-dip_3_1
-      - 🇭🇰 univstar-香港Nearoute-dip_3_2
-      - 🇭🇰 univstar-香港Nearoute-dip_4
-      - 🇭🇰 univstar-香港Nearoute-dip_6
-      - 🇭🇰 univstar-香港Nearoute-dip_9
-      - 🇭🇰 univstar-香港Nearoute_1
-      - 🇭🇰 univstar-香港Nearoute_2
-      - 🇭🇰 univstar-香港Nearoute_3
-      - 🇭🇰 univstar-香港Nearoute_5
-      - 🇭🇰 univstar-香港Nerocloud-dip_1
-      - 🇭🇰 univstar-香港Nerocloud-dip_2
-      - 🇭🇰 univstar-香港Nerocloud-dip_3
-      - 🇭🇰 univstar-香港Nerocloud-dip_4
-      - 🇭🇰 univstar-香港Nerocloud-dip_5
-      - 🇭🇰 univstar-香港Nerocloud_1
-      - 🇭🇰 univstar-香港Nerocloud_2
-      - 🇭🇰 univstar-香港Nerocloud_3
       - 🇮🇱 _IL_以色列
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_2206
-      - 🇯🇵 univstar-Tokyo-Datacamp_1
-      - 🇯🇵 univstar-Tokyo-Datacamp_2
-      - 🇯🇵 univstar-Tokyo-Datacamp_3
-      - 🇯🇵 univstar-Tokyo-Datacamp_4
-      - 🇯🇵 univstar-Tokyo-Datacamp_5
-      - 🇯🇵 univstar-Tokyo-Nerocloud_1
-      - 🇯🇵 univstar-Tokyo-Nerocloud_10
-      - 🇯🇵 univstar-Tokyo-Nerocloud_11
-      - 🇯🇵 univstar-Tokyo-Nerocloud_12
-      - 🇯🇵 univstar-Tokyo-Nerocloud_13
-      - 🇯🇵 univstar-Tokyo-Nerocloud_14
-      - 🇯🇵 univstar-Tokyo-Nerocloud_15
-      - 🇯🇵 univstar-Tokyo-Nerocloud_16
-      - 🇯🇵 univstar-Tokyo-Nerocloud_17
-      - 🇯🇵 univstar-Tokyo-Nerocloud_18
-      - 🇯🇵 univstar-Tokyo-Nerocloud_19
-      - 🇯🇵 univstar-Tokyo-Nerocloud_2
-      - 🇯🇵 univstar-Tokyo-Nerocloud_20
-      - 🇯🇵 univstar-Tokyo-Nerocloud_3
-      - 🇯🇵 univstar-Tokyo-Nerocloud_4
-      - 🇯🇵 univstar-Tokyo-Nerocloud_5
-      - 🇯🇵 univstar-Tokyo-Nerocloud_6
-      - 🇯🇵 univstar-Tokyo-Nerocloud_7
-      - 🇯🇵 univstar-Tokyo-Nerocloud_8
-      - 🇯🇵 univstar-Tokyo-Nerocloud_9
-      - 🇷🇺 Relay_🇷🇺RU-🇷🇺RU_25
       - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2682
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2761
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_1
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_10
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_2
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_3
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_4
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_5
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_6
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_7
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_8
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_9
-      - 🇸🇬 univstar-SG-DigitalOcean_1
-      - 🇸🇬 univstar-SG-DigitalOcean_2_1
-      - 🇸🇬 univstar-SG-DigitalOcean_2_2
-      - 🇸🇬 univstar-SG-DigitalOcean_3
-      - 🇸🇬 univstar-SG-DigitalOcean_4
-      - 🇸🇬 univstar-SG-DigitalOcean_5
-      - 🇸🇬 univstar-SG-DigitalOcean_6
-      - 🇸🇬 univstar-SG-DigitalOcean_7
-      - 🇸🇬 univstar-SG-DigitalOcean_8
-      - 🇸🇬 univstar-SG-FDCservers-dip_1
-      - 🇸🇬 univstar-SG-FDCservers-dip_2
-      - 🇸🇬 univstar-SG-FDCservers_2
-      - 🇸🇬 univstar-SG-Linode_1
-      - 🇸🇬 univstar-SG-Linode_2
-      - 🇸🇬 univstar-SG-Linode_3
-      - 🇸🇬 univstar-SG-Linode_4
-      - 🇸🇬 univstar-SG-Nerocloud
-      - 🇸🇬 univstar-SG-Nerocloud_1
-      - 🇸🇬 univstar-SG-Nerocloud_2
-      - 🇸🇬 univstar-SG-Nerocloud_3
-      - 🇸🇬 新加坡直连
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2655
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2656
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2663
       - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2671
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2672
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3058
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3082
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3085
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3086
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3087
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 univstar-US-Minden-Multacom
-      - 🇺🇸 univstar-US-SantaClarita-Multacom
-      - 🇺🇸 美国直连
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA_206
       - CA_235|10.63Mb
-      - CN1
       - CN100
-      - CN101
-      - CN102
       - CN103
-      - CN104
       - CN105
-      - CN106
-      - CN107
-      - CN108
-      - CN109
-      - CN11
-      - CN110
-      - CN111
-      - CN112
-      - CN113
-      - CN114
-      - CN115
-      - CN116
-      - CN117
-      - CN118
-      - CN119
       - CN12
-      - CN120
-      - CN121
-      - CN122
-      - CN123
       - CN124
-      - CN125
-      - CN126
-      - CN127
-      - CN128
-      - CN129
-      - CN13
-      - CN130
-      - CN131
-      - CN132
-      - CN133
-      - CN134
-      - CN135
-      - CN136
-      - CN137
-      - CN138
-      - CN139
-      - CN14
-      - CN140
-      - CN142
-      - CN143
-      - CN145
-      - CN146
-      - CN147
-      - CN148
-      - CN149
-      - CN15
-      - CN151
-      - CN152
-      - CN153
-      - CN154
-      - CN155
-      - CN156
-      - CN157
-      - CN158
-      - CN159
-      - CN16
-      - CN160
-      - CN161
-      - CN162
-      - CN163
-      - CN164
-      - CN165
-      - CN166
-      - CN167
-      - CN168
-      - CN169
-      - CN17
-      - CN170
-      - CN171
-      - CN172
-      - CN173
-      - CN174
-      - CN175
-      - CN176
-      - CN177
-      - CN178
-      - CN179
-      - CN18
-      - CN180
-      - CN181
-      - CN183
-      - CN184
-      - CN185
-      - CN187
-      - CN188
-      - CN189
-      - CN19
-      - CN191
-      - CN20
-      - CN21
-      - CN22
-      - CN23
-      - CN24
-      - CN25
-      - CN26
-      - CN27
       - CN28
-      - CN29
-      - CN3
-      - CN30
-      - CN31
-      - CN32
-      - CN34
-      - CN35
-      - CN36
-      - CN37
-      - CN38
-      - CN39
-      - CN4
-      - CN40
-      - CN41
-      - CN42
-      - CN43
-      - CN44
-      - CN45
-      - CN46
-      - CN47
-      - CN48
-      - CN49
-      - CN50
-      - CN51
-      - CN52
-      - CN53
-      - CN54
-      - CN55
-      - CN56
-      - CN57
-      - CN58
-      - CN59
-      - CN6
-      - CN60
-      - CN61
-      - CN62
-      - CN63
-      - CN64
-      - CN65
-      - CN66
-      - CN67
-      - CN68
-      - CN69
-      - CN7
-      - CN70
-      - CN71
-      - CN72
-      - CN73
       - CN74
-      - CN75
-      - CN76
-      - CN77
-      - CN78
-      - CN79
-      - CN8
-      - CN80
-      - CN81
-      - CN82
-      - CN83
-      - CN84
-      - CN85
-      - CN86
-      - CN87
-      - CN88
-      - CN89
-      - CN9
-      - CN90
-      - CN91
-      - CN92
-      - CN93
-      - CN94
-      - CN95
-      - CN96
-      - CN97
-      - CN98
-      - CN99
+      - CN_186
       - CN_191 | 5.61Mb
-      - CN_272_ 4.38Mb | 3.63Mb
-      - CN_33 TG@peekfun |55.38Mb
-      - FR_5 | 8.22Mb
+      - CN_193
+      - CN_195
+      - CN_196
+      - FR_222
+      - FR_223
+      - HK_228
+      - HK_229
+      - HK_234
+      - HK_236
+      - HK_238
+      - HK_239
+      - HK_241
+      - HK_242
+      - HK_243
+      - HK_244
+      - HK_245
+      - HK_247
+      - HK_248
       - JP_251 | 2.47Mb
-      - Pool_🇺🇸US_373
-      - Relay_-🇩🇪DE_03
+      - JP_256
+      - JP_257
+      - JP_261
+      - JP_262
+      - JP_263
+      - JP_264
+      - JP_265
+      - JP_266
+      - KR_268
+      - KR_269
+      - KR_272
+      - KR_277
+      - KR_281
+      - NL_338
+      - NL_341
+      - NL_346
+      - RU_393
+      - RU_394
+      - RU_395
+      - RU_397
+      - RU_398
+      - RU_401
+      - RU_404
+      - RU_405
+      - RU_409
+      - RU_410
+      - RU_411
+      - RU_412
+      - RU_413
       - Relay_-🇭🇰HK_1462
       - Relay_-🇹🇼TW_1557
       - Relay_-🇺🇸US_126
       - Relay_-🇺🇸US_127
-      - Relay_-🇺🇸US_128
-      - Relay_-🇺🇸US_1748
       - Relay__ 4.58Mb |12.34Mb
       - Relay__ 6.03Mb | 6.87Mb
       - Relay_🇧🇬BG-🇧🇬BG_2026
-      - Relay_🏁+ZZ-🇹🇼TW_160+|17.25Mb
-      - Relay_🏁+ZZ-🇹🇼TW_161+|16.86Mb
-      - Relay_🏁ZZ-🇹🇼TW_166+|15.22Mb
-      - Relay_🏁ZZ-🇹🇼TW_167+|17.09Mb
-      - SG_382 | 5.33Mb
-      - US_2633
-      - US_2849
-      - US_33
+      - Relay_🏁 ZZ-🇹🇼TW_160 |17.25Mb
+      - SG_420
+      - SG_430
+      - TW_197
       - US_358 | 7.46Mb
-      - US_478 |13.49Mb
-      - US_489 |24.38Mb
-      - US_74
-      - VN_494 |26.90Mb
-      - ZZ_3094
-      - ZZ_46
+      - US_524
+      - US_529
+      - US_538
+      - US_545
       - _ 2.32Mb | 2.68Mb
-      - _02
-      - _119
+      - _03
+      - _08
+      - _09
+      - _10
+      - _101
+      - _103
+      - _108
+      - _116
+      - _117
+      - _118
       - _120
+      - _120 2
+      - _124
+      - _126
+      - _127
       - _127 | 4.82Mb
-      - _137 |12.38Mb
+      - _128
+      - _129
+      - _13
+      - _130
+      - _134
+      - _136
+      - _138
       - _139
+      - _14
       - _140
+      - _141
       - _141 | 2.73Mb
-      - _142 |31.80Mb
+      - _142
       - _1425
-      - _143 |15.77Mb
-      - _1535_11.39Mb+|+4.55Mb
-      - _1575_11.18Mb+|+4.14Mb
-      - _557
+      - _144
+      - _145
+      - _24
+      - _43
       - _558
-      - _559
-      - _561
-      - _562
-      - _563
       - _564
       - _565
       - _566
@@ -1286,42 +500,35 @@ proxy-groups:
       - _569
       - _570
       - _571
-      - _572
       - _573
       - _574
       - _575
       - _576
       - _577
-      - _578
       - _579
-      - _580
       - _581
       - _582
-      - _583
       - _584
       - _585
-      - _586
       - _587
       - _588
-      - _589
-      - _590
+      - _59
       - _591
-      - _594
-      - _595
       - _596
       - _597
       - _598
       - _599
+      - _60
       - _600
       - _601
-      - _602
+      - _68
       - _696
-      - _704
-      - _729
-      - _844
-      - _88 | 5.17Mb
+      - _88
       - _92 | 3.18Mb
+      - _93
       - _94 | 7.26Mb
+      - _95
+      - _97
       - h3816tw.strongpipe.live:20443
       - h517439.strongpipe.live:11745
       - h63956.strongpipe.live:11445
@@ -1334,231 +541,31 @@ proxy-groups:
       - h961684.strongpipe.live:11245
       - h961684.strongpipe.live:11445
       - h961684.strongpipe.live:11745
-      - tg@univstar6+1
-      - tg@univstar6+10
-      - tg@univstar6+11
-      - tg@univstar6+12
-      - tg@univstar6+13
-      - tg@univstar6+15
-      - tg@univstar6+16
-      - tg@univstar6+3
-      - tg@univstar6+4
-      - tg@univstar6+5
-      - tg@univstar6+6
-      - tg@univstar6+7
-      - tg@univstar6+8
-      - tg@univstar6+9
-      - univstar-KualaLumpur-TMNet-dip
-      - univstar-LAX-Multacom_1
-      - univstar-LAX-Multacom_2
-      - univstar-LAX-Multacom_4
-      - univstar-LAX-Multacom_5
-      - univstar-LAX-Multacom_6
-      - univstar-LAX-Multacom_7
-      - univstar-Novosibirsk-Rostelecom-dip_1
-      - univstar-Novosibirsk-Rostelecom-dip_2
-      - univstar-Novosibirsk-Rostelecom-dip_3
-      - univstar-Novosibirsk-Rostelecom-dip_4
-      - univstar-Seoul-VPC
-      - univstar-TR-Bursa-Bursabil
       - "|11.07Mb"
-      - "|11.11Mb"
       - "|11.93Mb"
-      - "|17.47Mb"
       - "|27.80Mb"
-      - "|41.16Mb"
       - "|45.53Mb"
-      - "|458.82Mb"
-      - 🇨🇦 Relay_Relay_🇨🇦CA-🇨🇦CA_132🇨🇦CA-🇨🇦CA_130 | 3.83Mb
-      - 🇨🇦 Relay_Relay_🇨🇦CA-🇨🇦CA_135🇨🇦CA-🇨🇦CA_135 | 2.18Mb
       - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_05
-      - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_133
       - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_27
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇩🇪DE_204🇨🇳CN-🇩🇪DE_200 | 1.92Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_168🇨🇳CN-🇭🇰HK_166 |55.03Mb
       - 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_182🇨🇳CN-🇭🇰HK_175 | 2.03Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇹🇼TW_176🇨🇳CN-🇹🇼TW_181 |41.95Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_252
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_2114
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2106
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2110
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2117
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2121
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_242
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_243
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_245
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_246
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_248
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_253
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_71+|20.25Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_77+|10.05Mb
-      - 🇨🇳 univstar-台北Hinet
-      - 🇨🇳 univstar-台北Hinet-dip_1
-      - 🇨🇳 univstar-台北Hinet-dip_2
       - 🇫🇮 _FI_芬兰
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_2141
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_264_ 7.45Mb | 8.62Mb
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_598
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_601
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_602
-      - 🇭🇰 univstar-香港EC2_1
-      - 🇭🇰 univstar-香港EC2_2_1
-      - 🇭🇰 univstar-香港EC2_2_2
-      - 🇭🇰 univstar-香港LeaseWeb-nf_1
-      - 🇭🇰 univstar-香港LeaseWeb-nf_2
-      - 🇭🇰 univstar-香港LeaseWeb_10
-      - 🇭🇰 univstar-香港LeaseWeb_12
-      - 🇭🇰 univstar-香港LeaseWeb_13
-      - 🇭🇰 univstar-香港LeaseWeb_18
       - 🇭🇰 univstar-香港LeaseWeb_5
-      - 🇭🇰 univstar-香港LeaseWeb_7
-      - 🇭🇰 univstar-香港Leaseweb_10
-      - 🇭🇰 univstar-香港Leaseweb_11
-      - 🇭🇰 univstar-香港Leaseweb_12
-      - 🇭🇰 univstar-香港Leaseweb_13
-      - 🇭🇰 univstar-香港Leaseweb_14_1
-      - 🇭🇰 univstar-香港Leaseweb_14_2
-      - 🇭🇰 univstar-香港Leaseweb_15_1
-      - 🇭🇰 univstar-香港Leaseweb_16_1
-      - 🇭🇰 univstar-香港Leaseweb_18
-      - 🇭🇰 univstar-香港Leaseweb_19
-      - 🇭🇰 univstar-香港Leaseweb_1_1
-      - 🇭🇰 univstar-香港Leaseweb_1_2
-      - 🇭🇰 univstar-香港Leaseweb_20
-      - 🇭🇰 univstar-香港Leaseweb_21
-      - 🇭🇰 univstar-香港Leaseweb_22
-      - 🇭🇰 univstar-香港Leaseweb_23
-      - 🇭🇰 univstar-香港Leaseweb_24
-      - 🇭🇰 univstar-香港Leaseweb_25
-      - 🇭🇰 univstar-香港Leaseweb_26
-      - 🇭🇰 univstar-香港Leaseweb_27
-      - 🇭🇰 univstar-香港Leaseweb_28
-      - 🇭🇰 univstar-香港Leaseweb_29
-      - 🇭🇰 univstar-香港Leaseweb_2_1
-      - 🇭🇰 univstar-香港Leaseweb_2_2
-      - 🇭🇰 univstar-香港Leaseweb_30
-      - 🇭🇰 univstar-香港Leaseweb_3_1
-      - 🇭🇰 univstar-香港Leaseweb_3_2
       - 🇭🇰 univstar-香港Leaseweb_4_1
-      - 🇭🇰 univstar-香港Leaseweb_4_2
-      - 🇭🇰 univstar-香港Leaseweb_5_1
-      - 🇭🇰 univstar-香港Leaseweb_5_2
-      - 🇭🇰 univstar-香港Leaseweb_6_1
-      - 🇭🇰 univstar-香港Leaseweb_6_2
-      - 🇭🇰 univstar-香港Leaseweb_7
-      - 🇭🇰 univstar-香港Leaseweb_8_1
-      - 🇭🇰 univstar-香港Leaseweb_8_2
-      - 🇭🇰 univstar-香港Leaseweb_9_1
-      - 🇭🇰 univstar-香港Leaseweb_9_2
-      - 🇭🇰 univstar-香港Nearoute-dip_10
-      - 🇭🇰 univstar-香港Nearoute-dip_12
-      - 🇭🇰 univstar-香港Nearoute-dip_13
-      - 🇭🇰 univstar-香港Nearoute-dip_14
-      - 🇭🇰 univstar-香港Nearoute-dip_15
-      - 🇭🇰 univstar-香港Nearoute-dip_16
-      - 🇭🇰 univstar-香港Nearoute-dip_17
-      - 🇭🇰 univstar-香港Nearoute-dip_18
-      - 🇭🇰 univstar-香港Nearoute-dip_19
-      - 🇭🇰 univstar-香港Nearoute-dip_1_1
-      - 🇭🇰 univstar-香港Nearoute-dip_1_2
-      - 🇭🇰 univstar-香港Nearoute-dip_20
-      - 🇭🇰 univstar-香港Nearoute-dip_21
       - 🇭🇰 univstar-香港Nearoute-dip_22
-      - 🇭🇰 univstar-香港Nearoute-dip_2_1
-      - 🇭🇰 univstar-香港Nearoute-dip_2_2
-      - 🇭🇰 univstar-香港Nearoute-dip_3_1
-      - 🇭🇰 univstar-香港Nearoute-dip_3_2
-      - 🇭🇰 univstar-香港Nearoute-dip_4
-      - 🇭🇰 univstar-香港Nearoute-dip_6
-      - 🇭🇰 univstar-香港Nearoute-dip_9
-      - 🇭🇰 univstar-香港Nearoute_1
-      - 🇭🇰 univstar-香港Nearoute_2
-      - 🇭🇰 univstar-香港Nearoute_3
-      - 🇭🇰 univstar-香港Nearoute_5
-      - 🇭🇰 univstar-香港Nerocloud-dip_1
-      - 🇭🇰 univstar-香港Nerocloud-dip_2
-      - 🇭🇰 univstar-香港Nerocloud-dip_3
-      - 🇭🇰 univstar-香港Nerocloud-dip_4
-      - 🇭🇰 univstar-香港Nerocloud-dip_5
-      - 🇭🇰 univstar-香港Nerocloud_1
-      - 🇭🇰 univstar-香港Nerocloud_2
-      - 🇭🇰 univstar-香港Nerocloud_3
       - 🇮🇱 _IL_以色列
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_2206
-      - 🇯🇵 univstar-Tokyo-Datacamp_1
-      - 🇯🇵 univstar-Tokyo-Datacamp_2
-      - 🇯🇵 univstar-Tokyo-Datacamp_3
-      - 🇯🇵 univstar-Tokyo-Datacamp_4
-      - 🇯🇵 univstar-Tokyo-Datacamp_5
-      - 🇯🇵 univstar-Tokyo-Nerocloud_1
-      - 🇯🇵 univstar-Tokyo-Nerocloud_10
-      - 🇯🇵 univstar-Tokyo-Nerocloud_11
-      - 🇯🇵 univstar-Tokyo-Nerocloud_12
-      - 🇯🇵 univstar-Tokyo-Nerocloud_13
-      - 🇯🇵 univstar-Tokyo-Nerocloud_14
-      - 🇯🇵 univstar-Tokyo-Nerocloud_15
-      - 🇯🇵 univstar-Tokyo-Nerocloud_16
-      - 🇯🇵 univstar-Tokyo-Nerocloud_17
-      - 🇯🇵 univstar-Tokyo-Nerocloud_18
-      - 🇯🇵 univstar-Tokyo-Nerocloud_19
-      - 🇯🇵 univstar-Tokyo-Nerocloud_2
-      - 🇯🇵 univstar-Tokyo-Nerocloud_20
-      - 🇯🇵 univstar-Tokyo-Nerocloud_3
-      - 🇯🇵 univstar-Tokyo-Nerocloud_4
-      - 🇯🇵 univstar-Tokyo-Nerocloud_5
-      - 🇯🇵 univstar-Tokyo-Nerocloud_6
-      - 🇯🇵 univstar-Tokyo-Nerocloud_7
-      - 🇯🇵 univstar-Tokyo-Nerocloud_8
-      - 🇯🇵 univstar-Tokyo-Nerocloud_9
-      - 🇷🇺 Relay_🇷🇺RU-🇷🇺RU_25
       - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2682
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2761
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_1
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_10
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_2
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_3
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_4
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_5
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_6
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_7
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_8
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_9
-      - 🇸🇬 univstar-SG-DigitalOcean_1
-      - 🇸🇬 univstar-SG-DigitalOcean_2_1
-      - 🇸🇬 univstar-SG-DigitalOcean_2_2
-      - 🇸🇬 univstar-SG-DigitalOcean_3
-      - 🇸🇬 univstar-SG-DigitalOcean_4
-      - 🇸🇬 univstar-SG-DigitalOcean_5
-      - 🇸🇬 univstar-SG-DigitalOcean_6
-      - 🇸🇬 univstar-SG-DigitalOcean_7
-      - 🇸🇬 univstar-SG-DigitalOcean_8
-      - 🇸🇬 univstar-SG-FDCservers-dip_1
-      - 🇸🇬 univstar-SG-FDCservers-dip_2
-      - 🇸🇬 univstar-SG-FDCservers_2
-      - 🇸🇬 univstar-SG-Linode_1
-      - 🇸🇬 univstar-SG-Linode_2
-      - 🇸🇬 univstar-SG-Linode_3
-      - 🇸🇬 univstar-SG-Linode_4
-      - 🇸🇬 univstar-SG-Nerocloud
-      - 🇸🇬 univstar-SG-Nerocloud_1
-      - 🇸🇬 univstar-SG-Nerocloud_2
-      - 🇸🇬 univstar-SG-Nerocloud_3
-      - 🇸🇬 新加坡直连
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2655
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2656
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2663
       - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2671
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2672
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3058
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3082
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3085
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3086
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3087
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 univstar-US-Minden-Multacom
-      - 🇺🇸 univstar-US-SantaClarita-Multacom
-      - 🇺🇸 美国直连
   - name: 👉 国内网站
     type: select
     proxies:
@@ -1604,97 +611,29 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - HK_228
+      - HK_229
+      - HK_234
+      - HK_236
+      - HK_238
+      - HK_239
+      - HK_241
+      - HK_242
+      - HK_243
+      - HK_244
+      - HK_245
+      - HK_247
+      - HK_248
       - Relay_-🇭🇰HK_1462
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_168🇨🇳CN-🇭🇰HK_166 |55.03Mb
       - 🇨🇳 Relay_Relay_🇨🇳CN-🇭🇰HK_182🇨🇳CN-🇭🇰HK_175 | 2.03Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_09
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_2141
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_264_ 7.45Mb | 8.62Mb
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_598
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_601
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_602
-      - 🇭🇰 univstar-香港EC2_1
-      - 🇭🇰 univstar-香港EC2_2_1
-      - 🇭🇰 univstar-香港EC2_2_2
-      - 🇭🇰 univstar-香港LeaseWeb-nf_1
-      - 🇭🇰 univstar-香港LeaseWeb-nf_2
-      - 🇭🇰 univstar-香港LeaseWeb_10
-      - 🇭🇰 univstar-香港LeaseWeb_12
-      - 🇭🇰 univstar-香港LeaseWeb_13
-      - 🇭🇰 univstar-香港LeaseWeb_18
       - 🇭🇰 univstar-香港LeaseWeb_5
-      - 🇭🇰 univstar-香港LeaseWeb_7
-      - 🇭🇰 univstar-香港Leaseweb_10
-      - 🇭🇰 univstar-香港Leaseweb_11
-      - 🇭🇰 univstar-香港Leaseweb_12
-      - 🇭🇰 univstar-香港Leaseweb_13
-      - 🇭🇰 univstar-香港Leaseweb_14_1
-      - 🇭🇰 univstar-香港Leaseweb_14_2
-      - 🇭🇰 univstar-香港Leaseweb_15_1
-      - 🇭🇰 univstar-香港Leaseweb_16_1
-      - 🇭🇰 univstar-香港Leaseweb_18
-      - 🇭🇰 univstar-香港Leaseweb_19
-      - 🇭🇰 univstar-香港Leaseweb_1_1
-      - 🇭🇰 univstar-香港Leaseweb_1_2
-      - 🇭🇰 univstar-香港Leaseweb_20
-      - 🇭🇰 univstar-香港Leaseweb_21
-      - 🇭🇰 univstar-香港Leaseweb_22
-      - 🇭🇰 univstar-香港Leaseweb_23
-      - 🇭🇰 univstar-香港Leaseweb_24
-      - 🇭🇰 univstar-香港Leaseweb_25
-      - 🇭🇰 univstar-香港Leaseweb_26
-      - 🇭🇰 univstar-香港Leaseweb_27
-      - 🇭🇰 univstar-香港Leaseweb_28
-      - 🇭🇰 univstar-香港Leaseweb_29
-      - 🇭🇰 univstar-香港Leaseweb_2_1
-      - 🇭🇰 univstar-香港Leaseweb_2_2
-      - 🇭🇰 univstar-香港Leaseweb_30
-      - 🇭🇰 univstar-香港Leaseweb_3_1
-      - 🇭🇰 univstar-香港Leaseweb_3_2
       - 🇭🇰 univstar-香港Leaseweb_4_1
-      - 🇭🇰 univstar-香港Leaseweb_4_2
-      - 🇭🇰 univstar-香港Leaseweb_5_1
-      - 🇭🇰 univstar-香港Leaseweb_5_2
-      - 🇭🇰 univstar-香港Leaseweb_6_1
-      - 🇭🇰 univstar-香港Leaseweb_6_2
-      - 🇭🇰 univstar-香港Leaseweb_7
-      - 🇭🇰 univstar-香港Leaseweb_8_1
-      - 🇭🇰 univstar-香港Leaseweb_8_2
-      - 🇭🇰 univstar-香港Leaseweb_9_1
-      - 🇭🇰 univstar-香港Leaseweb_9_2
-      - 🇭🇰 univstar-香港Nearoute-dip_10
-      - 🇭🇰 univstar-香港Nearoute-dip_12
-      - 🇭🇰 univstar-香港Nearoute-dip_13
-      - 🇭🇰 univstar-香港Nearoute-dip_14
-      - 🇭🇰 univstar-香港Nearoute-dip_15
-      - 🇭🇰 univstar-香港Nearoute-dip_16
-      - 🇭🇰 univstar-香港Nearoute-dip_17
-      - 🇭🇰 univstar-香港Nearoute-dip_18
-      - 🇭🇰 univstar-香港Nearoute-dip_19
-      - 🇭🇰 univstar-香港Nearoute-dip_1_1
-      - 🇭🇰 univstar-香港Nearoute-dip_1_2
-      - 🇭🇰 univstar-香港Nearoute-dip_20
-      - 🇭🇰 univstar-香港Nearoute-dip_21
       - 🇭🇰 univstar-香港Nearoute-dip_22
-      - 🇭🇰 univstar-香港Nearoute-dip_2_1
-      - 🇭🇰 univstar-香港Nearoute-dip_2_2
-      - 🇭🇰 univstar-香港Nearoute-dip_3_1
-      - 🇭🇰 univstar-香港Nearoute-dip_3_2
-      - 🇭🇰 univstar-香港Nearoute-dip_4
-      - 🇭🇰 univstar-香港Nearoute-dip_6
-      - 🇭🇰 univstar-香港Nearoute-dip_9
-      - 🇭🇰 univstar-香港Nearoute_1
-      - 🇭🇰 univstar-香港Nearoute_2
-      - 🇭🇰 univstar-香港Nearoute_3
-      - 🇭🇰 univstar-香港Nearoute_5
-      - 🇭🇰 univstar-香港Nerocloud-dip_1
-      - 🇭🇰 univstar-香港Nerocloud-dip_2
-      - 🇭🇰 univstar-香港Nerocloud-dip_3
-      - 🇭🇰 univstar-香港Nerocloud-dip_4
-      - 🇭🇰 univstar-香港Nerocloud-dip_5
-      - 🇭🇰 univstar-香港Nerocloud_1
-      - 🇭🇰 univstar-香港Nerocloud_2
-      - 🇭🇰 univstar-香港Nerocloud_3
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1702,45 +641,34 @@ proxy-groups:
     tolerance: 100
     proxies:
       - JP_251 | 2.47Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_252
+      - JP_256
+      - JP_257
+      - JP_261
+      - JP_262
+      - JP_263
+      - JP_264
+      - JP_265
+      - JP_266
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_2206
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2655
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2656
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2663
       - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2671
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2672
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - Pool_🇺🇸US_373
       - Relay_-🇺🇸US_126
       - Relay_-🇺🇸US_127
-      - Relay_-🇺🇸US_128
-      - Relay_-🇺🇸US_1748
-      - US_2633
-      - US_2849
-      - US_33
       - US_358 | 7.46Mb
-      - US_478 |13.49Mb
-      - US_489 |24.38Mb
-      - US_74
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2655
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2656
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2663
+      - US_524
+      - US_529
+      - US_538
+      - US_545
       - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2671
-      - 🇺🇸 Relay_🇺🇸US-🇯🇵JP_2672
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3058
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3082
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3085
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3086
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_3087
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 univstar-US-Minden-Multacom
-      - 🇺🇸 univstar-US-SantaClarita-Multacom
-      - 🇺🇸 美国直连
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1748,74 +676,29 @@ proxy-groups:
     tolerance: 100
     proxies:
       - Relay_-🇹🇼TW_1557
-      - Relay_🏁+ZZ-🇹🇼TW_160+|17.25Mb
-      - Relay_🏁+ZZ-🇹🇼TW_161+|16.86Mb
-      - Relay_🏁ZZ-🇹🇼TW_166+|15.22Mb
-      - Relay_🏁ZZ-🇹🇼TW_167+|17.09Mb
-      - 🇨🇳 Relay_Relay_🇨🇳CN-🇹🇼TW_176🇨🇳CN-🇹🇼TW_181 |41.95Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2106
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2110
+      - Relay_🏁 ZZ-🇹🇼TW_160 |17.25Mb
+      - TW_197
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2117
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2121
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_242
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_243
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_245
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_246
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_248
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_253
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_71+|20.25Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_77+|10.05Mb
-      - 🇨🇳 univstar-台北Hinet
-      - 🇨🇳 univstar-台北Hinet-dip_1
-      - 🇨🇳 univstar-台北Hinet-dip_2
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - SG_382 | 5.33Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_2114
+      - SG_420
+      - SG_430
       - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2682
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2761
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_1
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_10
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_2
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_3
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_4
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_5
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_6
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_7
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_8
-      - 🇸🇬 univstar-SG-DigitalOcean-nf_9
-      - 🇸🇬 univstar-SG-DigitalOcean_1
-      - 🇸🇬 univstar-SG-DigitalOcean_2_1
-      - 🇸🇬 univstar-SG-DigitalOcean_2_2
-      - 🇸🇬 univstar-SG-DigitalOcean_3
-      - 🇸🇬 univstar-SG-DigitalOcean_4
-      - 🇸🇬 univstar-SG-DigitalOcean_5
-      - 🇸🇬 univstar-SG-DigitalOcean_6
-      - 🇸🇬 univstar-SG-DigitalOcean_7
-      - 🇸🇬 univstar-SG-DigitalOcean_8
-      - 🇸🇬 univstar-SG-FDCservers-dip_1
-      - 🇸🇬 univstar-SG-FDCservers-dip_2
-      - 🇸🇬 univstar-SG-FDCservers_2
-      - 🇸🇬 univstar-SG-Linode_1
-      - 🇸🇬 univstar-SG-Linode_2
-      - 🇸🇬 univstar-SG-Linode_3
-      - 🇸🇬 univstar-SG-Linode_4
-      - 🇸🇬 univstar-SG-Nerocloud
-      - 🇸🇬 univstar-SG-Nerocloud_1
-      - 🇸🇬 univstar-SG-Nerocloud_2
-      - 🇸🇬 univstar-SG-Nerocloud_3
-      - 🇸🇬 新加坡直连
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - KR_268
+      - KR_269
+      - KR_272
+      - KR_277
+      - KR_281
   - name: 🌍 其他地区
     type: select
     proxies:

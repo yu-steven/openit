@@ -298,7 +298,8 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 [![图片，加载不出来就不看吧](https://openit.ml/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### *Shadowrocket*支持的协议  [返回](#ios)
 [![图片，没啥，有软件之后就知道了](https://openit.ml/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
-*Telegram* [*@yusteven*](https://t.me/yusteven)&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;*Since 2021.12.23*
+*Telegram* [*@yusteven*](https://t.me/yusteven)
+<br>*"created_at": "2021-12-13T08:41:28Z",*
 <!--都看到这儿了，还不给个Star？-->
 <!--![openit](https://count.getloli.com/get/@openit?theme=asoul)-->
 [^1]: https://www.bandisoft.com/bandizip/dl.php?std-all

@@ -126,6 +126,14 @@ proxies:
   - {name: h961684.strongpipe.live:11743, server: h961684.strongpipe.live, port: 11743, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.strongpipe.live:11744, server: h961684.strongpipe.live, port: 11744, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.strongpipe.live:11745, server: h961684.strongpipe.live, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-IPLC专线01, server: 80.251.216.194, port: 29577, type: vmess, uuid: f03691e4-8903-4f31-8095-ea54c4c2a3b5, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-IPLC专线02, server: 45.78.59.84, port: 29577, type: vmess, uuid: f03691e4-8903-4f31-8095-ea54c4c2a3b5, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本-IPLC专线01, server: 45.78.6.207, port: 29577, type: ss, cipher: aes-256-gcm, password: x2XdRxsjCpjTfWB9, udp: true}
+  - {name: 🇯🇵 日本-IPLC专线02, server: 45.78.6.3, port: 29577, type: ss, cipher: aes-256-gcm, password: x2XdRxsjCpjTfWB9, udp: true}
+  - {name: 🇰🇷 韩国专线01, server: 104.255.65.112, port: 30718, type: vmess, uuid: f0f63386-d747-4d44-8d16-6e2d254f0ed3, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡-IPLC专线01, server: 104.255.66.30, port: 29577, type: vmess, uuid: f03691e4-8903-4f31-8095-ea54c4c2a3b5, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡-IPLC专线02, server: 23.83.224.101, port: 29577, type: vmess, uuid: f03691e4-8903-4f31-8095-ea54c4c2a3b5, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国-中美专线03, server: 45.78.10.149, port: 30718, type: ss, cipher: aes-256-gcm, password: LdsggNJYj8n54H8v, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -253,6 +261,14 @@ proxy-groups:
       - h961684.strongpipe.live:11743
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
+      - 🇭🇰 香港-IPLC专线01
+      - 🇭🇰 香港-IPLC专线02
+      - 🇯🇵 日本-IPLC专线01
+      - 🇯🇵 日本-IPLC专线02
+      - 🇰🇷 韩国专线01
+      - 🇸🇬 新加坡-IPLC专线01
+      - 🇸🇬 新加坡-IPLC专线02
+      - 🇺🇸 美国-中美专线03
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -380,6 +396,14 @@ proxy-groups:
       - h961684.strongpipe.live:11743
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
+      - 🇭🇰 香港-IPLC专线01
+      - 🇭🇰 香港-IPLC专线02
+      - 🇯🇵 日本-IPLC专线01
+      - 🇯🇵 日本-IPLC专线02
+      - 🇰🇷 韩国专线01
+      - 🇸🇬 新加坡-IPLC专线01
+      - 🇸🇬 新加坡-IPLC专线02
+      - 🇺🇸 美国-中美专线03
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -406,6 +430,7 @@ proxy-groups:
       - US_157 TG@peekfun | 4.20Mb
       - US_161 TG@peekfun |41.07Mb
       - US_190_ 8.21Mb |27.29Mb
+      - 🇺🇸 美国-中美专线03
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -426,7 +451,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇰🇷 韩国专线01
   - name: 🌍 其他地区
     type: select
     proxies:

@@ -296,7 +296,7 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 | --- | --- | --- |
 
 # Time in Stars
-<!--替换成仓库和名字就可以用了-->
+<!--替换成自己的仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/yu-steven/openit.svg)](https://starchart.cc/yu-steven/openit)
 
 #### *Quantumult X* UI界面  [返回](#ios)

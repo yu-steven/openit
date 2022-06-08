@@ -294,6 +294,10 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 <!--替换成仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/yu-steven/openit.svg)](https://starchart.cc/yu-steven/openit)
 
+## 捐助
+https://Patreon.com/Openit
+
+
 #### *Quantumult X* UI界面  [返回](#ios)
 [![图片，加载不出来就不看吧](https://raw.githubusercontent.com/yu-steven/openit/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### *Shadowrocket*支持的协议  [返回](#ios)

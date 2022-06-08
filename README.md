@@ -293,7 +293,7 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 
 # 捐助
 [![要饭专家](https://raw.githubusercontent.com/yu-steven/openit/main/images/donate-1.jpg)](https://www.patreon.com/openit)
-点击上方🔝图片进行赞助
+点击上方⬆️图片进行捐助
 
 # Time in Stars
 <!--替换成自己的仓库和名字就可以用了-->

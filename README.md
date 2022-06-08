@@ -292,8 +292,8 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。
 
 # 捐助
-![要饭专家](https://raw.githubusercontent.com/yu-steven/openit/main/images/donate-1.jpg)
-<a href="https://www.patreon.com/bePatron?u=75141215" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+[![要饭专家](https://raw.githubusercontent.com/yu-steven/openit/main/images/donate-1.jpg)](https://www.patreon.com/openit)
+
 
 # Time in Stars
 <!--替换成自己的仓库和名字就可以用了-->

@@ -294,7 +294,7 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 # 捐助
 https://Patreon.com/Openit
 
-## Time in Stars
+# Time in Stars
 <!--替换成仓库和名字就可以用了-->
 [![Stargazers over time](https://starchart.cc/yu-steven/openit.svg)](https://starchart.cc/yu-steven/openit)
 

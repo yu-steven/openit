@@ -27,6 +27,7 @@ jobs:
       run: |
          wget "http://0.0.0.0:25500/sub?target=mixed&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&emoji=true" -O long || true
          wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&config=https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini&emoji=true&fdn=true&sort=true&udp=true" -O Clash.yaml || true
+         wget "http://0.0.0.0:25500/sub?target=quanx&url=https://gist.githubusercontent.com/yu-steven/7543393c0db8b1a3dd477cb4f5676c33/raw/55eb6909a083ccfece031341c3067914ea43760c/https
     - name: 提交更改2
       run: ./.github/update-repo.sh || true
   long:

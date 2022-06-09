@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v4.0.0
       with:
         python-version: '3.x'
     - name: 设置时区
@@ -26,6 +26,7 @@ jobs:
     - name: long & clash
       run: |
          python -m http.server &
+         sleep 6
          ./utils/subconverter/subconverter -g &
     - name: 提交更改2
       run: ./.github/update-repo.sh || true

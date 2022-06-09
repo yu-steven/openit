@@ -5,8 +5,14 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 103.177.244.31:443, server: 103.177.244.31, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a1e041734a14, udp: true}
+  - {name: 120.241.236.150:53101, server: 120.241.236.150, port: 53101, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
   - {name: 14.29.124.174:11035, server: 14.29.124.174, port: 11035, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 141.147.168.238:28443, server: 141.147.168.238, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 155.248.162.12:28443, server: 155.248.162.12, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 212.81.47.18:443, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: 35.78.118.63:28443, server: 35.78.118.63, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 54.199.133.35:28443, server: 54.199.133.35, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: CN_103 TG@peekfun |39.72Mb, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: CN_146🇨🇳CN_184 |22.30Mb, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_148🇨🇳CN_177 |14.23Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
@@ -147,10 +153,13 @@ proxies:
   - {name: h961684.strongpipe.live:11744, server: h961684.strongpipe.live, port: 11744, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: h961684.strongpipe.live:11745, server: h961684.strongpipe.live, port: 11745, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: true, udp: true}
   - {name: krcc4.feethree.top:9038, server: krcc4.feethree.top, port: 9038, type: trojan, password: 5218d9b5-e17c-3577-95f3-5cd510620c24, sni: krcc4.feethree.top, skip-cert-verify: true, udp: true}
+  - {name: pass2.jiasuyuan.shop:63221, server: pass2.jiasuyuan.shop, port: 63221, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
+  - {name: 乌克兰_R_521, server: ieplszhk-sz.cctelescope.xyz, port: 59578, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 广州, server: 175.178.163.153, port: 443, type: vmess, uuid: 9b4d4f9c-c5bf-4a3b-a6ea-f675989d9cbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 春川, server: chunchuan-02.aikala.shop, port: 80, type: vmess, uuid: eb605789-7873-46e5-8ce5-edf4f1eba751, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
   - {name: 🇦🇺 AU 15, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU 239, server: 192.9.183.183, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU 250, server: 212.81.47.14, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 🇦🇺 AU 257, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU 279, server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU 283, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 101, server: hnyd.xxcv.cc, port: 20030, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
@@ -166,7 +175,6 @@ proxies:
   - {name: 🇨🇳 CN 135, server: gzyd2.xxcv.cc, port: 20110, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 141, server: 120.241.236.152, port: 52101, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
   - {name: 🇨🇳 CN 142, server: hnyd.xxcv.cc, port: 20020, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 143, server: 120.241.236.150, port: 53101, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
   - {name: 🇨🇳 CN 144, server: Intranet.dedicated.line.monaiyun.top, port: 53101, type: vmess, uuid: 5bea4a9f-9c1f-355d-afd4-9ff3ee081143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 148, server: hnyd.xxcv.cc, port: 20110, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 149, server: gy.feethree.top, port: 42529, type: vmess, uuid: 6efebf2f-e675-4798-a3f0-c9b225701800, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: "%257B%2522host%2522:%2522www.anlocl.ga%2522%257D"}}, udp: true}
@@ -204,11 +212,16 @@ proxies:
   - {name: 🇨🇳 CN 27, server: cu-cs.okvpn.xyz, port: 20006, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 28, server: cm-gz.okvpn.xyz, port: 20006, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 29, server: gycd1.csccdd.xyz, port: 52340, type: vmess, uuid: 1dc13504-e4ba-3c49-8e0b-6a3eb4e40335, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: "%257B%2522host%2522:%2522gycd1.csccdd.xyz%2522%257D"}}, udp: true}
-  - {name: 🇨🇳 CN 296, server: pass2.jiasuyuan.shop, port: 63221, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
   - {name: 🇨🇳 CN 99, server: gzyd1.xxcv.cc, port: 20090, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 5, server: 67tw01.fans8.xyz, port: 443, type: trojan, password: 332cf3f1-47d5-454d-a6ae-fdffdbe7e85e, sni: 67tw01.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾03, server: 59.125.98.29, port: 443, type: ss, cipher: aes-256-gcm, password: 301c9d6c6e14, udp: true}
+  - {name: 🇨🇳 台湾_R_318, server: iepl-gz.safetelescope.cc, port: 10802, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇨🇳 台湾|北葵提取, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, udp: true}
   - {name: 🇩🇪 DE 3, server: 172.104.244.36, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 4, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: edge.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国, server: 18.185.91.14, port: 44579, type: vmess, uuid: 892ec020-7a66-4c4e-ac31-d8cfa183cec7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国🇩🇪-中转, server: 148.100.79.206, port: 1000, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec5c33a-8389-47b1-a2b0-1dc284fb9675, udp: true}
+  - {name: 🇬🇧 英国_R_228, server: sh163.safetelescope.cc, port: 10006, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 🇭🇰 HK 103, server: 20.239.82.7, port: 6003, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 124, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 132, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
@@ -240,6 +253,8 @@ proxies:
   - {name: 🇭🇰 HK 96, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 97, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 98, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港, server: aly.ziqiyun.xyz, port: 11137, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
+  - {name: 🇭🇰 香港 2, server: 120.232.240.58, port: 45239, type: vmess, uuid: ae8d31e3-a942-4db3-9b80-7e04f24364d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |, server: HJ001.xiba1.xyz, port: 20754, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
@@ -249,19 +264,27 @@ proxies:
   - {name: 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港_R_446, server: ieplszhk-sz.cctelescope.xyz, port: 50804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇭🇰 香港|北葵提取, server: 154.221.22.201, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a11a783e60ec, udp: true}
   - {name: 🇯🇵 JP 139, server: 175.41.237.24, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 172, server: 54.199.133.35, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 192, server: 155.248.162.12, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 226, server: 141.147.168.238, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 8, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本, server: gy.ziqiyun.xyz, port: 44041, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
+  - {name: 🇯🇵 日本 2, server: gy02.20220512.cyou, port: 34567, type: trojan, password: 207eed47-ffdd-4bd4-91c1-719ac25c9cee, sni: gy02.20220512.cyou, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本高速, server: crus2.gzfxd.xyz, port: 16616, type: vmess, uuid: 6bd0b1ce-3a65-487b-86eb-012f6b0bfc3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: crus2.gzfxd.xyz}}, udp: true}
   - {name: 🇰🇷 KR 175, server: 144.24.87.99, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 KR 18, server: 146.56.45.173, port: 21365, type: vmess, uuid: 49526417-e201-4949-8055-81b0fb264be5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 KR 188, server: 144.24.90.94, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 KR 195, server: 144.24.77.154, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 KR 46, server: 193.122.122.208, port: 26471, type: vmess, uuid: 35137513-8f0a-4f74-84f8-ef9f5a8f85a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 甲骨文-韩国🇰🇷春川-Tr, server: jgwcc.356930.xyz, port: 10022, type: trojan, password: 8ec5c33a-8389-47b1-a2b0-1dc284fb9675, sni: jgwcc.356930.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国|北葵提取, server: 27.102.106.171, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 40d5089833fc, udp: true}
+  - {name: 🇰🇷 韩国🇰🇷春川-解锁Netflix, server: jgwcc.356930.xyz, port: 10021, type: vmess, uuid: 0d19129c-a925-4f21-8252-849838959a64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwcc.356930.xyz}}, udp: true}
+  - {name: 🇰🇷 韩国🇰🇷春川-解锁Netflix 2, server: jgwcc.356930.xyz, port: 10021, type: vmess, uuid: 8ec5c33a-8389-47b1-a2b0-1dc284fb9675, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwcc.356930.xyz}}, udp: true}
   - {name: 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |, server: HJ001.xiba1.xyz, port: 20749, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t", server: 20.239.82.7, port: 6004, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |, server: 20.239.82.7, port: 6003, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 俄罗斯_R_323, server: gzyd-01.cctelescope.xyz, port: 26096, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇸🇪 瑞典_R_362, server: iepl-hn.cctelescope.xyz, port: 20098, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 🇸🇬 SG 2, server: 67sg01.fans8.xyz, port: 443, type: trojan, password: 332cf3f1-47d5-454d-a6ae-fdffdbe7e85e, sni: 67sg01.fans8.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |, server: AZQT001.xiba1.xyz, port: 20737, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
@@ -272,11 +295,19 @@ proxies:
   - {name: 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |, server: AZQT001.xiba1.xyz, port: 20733, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡80端口, server: crus1.gzfxd.xyz, port: 80, type: vmess, uuid: 6bd0b1ce-3a65-487b-86eb-012f6b0bfc3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: crus1.gzfxd.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡|北葵提取, server: 27.124.38.41, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8cad99fbe8b9, udp: true}
+  - {name: 🇸🇬 新加坡高速, server: crus5.gzfxd.xyz, port: 16616, type: vmess, uuid: 6bd0b1ce-3a65-487b-86eb-012f6b0bfc3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: crus5.gzfxd.xyz}}, udp: true}
+  - {name: 🇹🇭 泰国_R_520, server: ieplszhk-sz.cctelescope.xyz, port: 54402, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇹🇷 土耳其_R_458, server: iepl-hn.cctelescope.xyz, port: 26563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
   - {name: 🇺🇸 US 1, server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 189, server: 23.225.77.192, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 203, server: 23.225.77.226, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 204, server: 23.225.77.187, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 218, server: 23.225.77.222, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国, server: gy.ziqiyun.xyz, port: 17565, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
+  - {name: 🇺🇸 美国 2, server: ehez.dingzige.gq, port: 80, type: vmess, uuid: 9b4d4f9c-c5bf-4a3b-a6ea-f675989d9cbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dingzi, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 美国 3, server: 120.232.240.58, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: ae8d31e3-a942-4db3-9b80-7e04f24364d8, udp: true}
   - {name: "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t", server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t", server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t", server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
@@ -285,14 +316,22 @@ proxies:
   - {name: 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国01, server: 107.167.2.186, port: 443, type: ss, cipher: aes-256-gcm, password: 93310e8db124, udp: true}
+  - {name: 🇺🇸 美国|北葵提取, server: 67.229.154.34, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: b4b2140ea45e, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -433,10 +472,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -452,7 +494,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -490,11 +531,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -526,6 +572,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -535,19 +583,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -558,11 +614,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -571,13 +635,21 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -718,10 +790,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -737,7 +812,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -775,11 +849,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -811,6 +890,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -820,19 +901,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -843,11 +932,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -856,14 +953,22 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -1004,10 +1109,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -1023,7 +1131,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -1061,11 +1168,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -1097,6 +1209,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -1106,19 +1220,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -1129,11 +1251,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -1142,6 +1272,8 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1160,8 +1292,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -1302,10 +1440,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -1321,7 +1462,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -1359,11 +1499,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -1395,6 +1540,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -1404,19 +1551,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -1427,11 +1582,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -1440,6 +1603,8 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1451,6 +1616,11 @@ proxy-groups:
       - h3816tw.strongpipe.live:20447
       - h3816tw.strongpipe.live:20448
       - h3816tw.strongpipe.live:20449
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -1460,14 +1630,22 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -1608,10 +1786,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -1627,7 +1808,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -1665,11 +1845,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -1701,6 +1886,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -1710,19 +1897,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -1733,11 +1928,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -1746,13 +1949,21 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -1893,10 +2104,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -1912,7 +2126,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -1950,11 +2163,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -1986,6 +2204,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -1995,19 +2215,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -2018,11 +2246,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -2031,14 +2267,22 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -2179,10 +2423,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -2198,7 +2445,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -2236,11 +2482,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -2272,6 +2523,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -2281,19 +2534,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -2304,11 +2565,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -2317,6 +2586,8 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2332,8 +2603,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 103.177.244.31:443
+      - 120.241.236.150:53101
       - 14.29.124.174:11035
+      - 141.147.168.238:28443
+      - 155.248.162.12:28443
+      - 212.81.47.18:443
       - 35.78.118.63:28443
+      - 54.199.133.35:28443
       - CN_103 TG@peekfun |39.72Mb
       - CN_146🇨🇳CN_184 |22.30Mb
       - CN_148🇨🇳CN_177 |14.23Mb
@@ -2474,10 +2751,13 @@ proxy-groups:
       - h961684.strongpipe.live:11744
       - h961684.strongpipe.live:11745
       - krcc4.feethree.top:9038
+      - pass2.jiasuyuan.shop:63221
+      - 乌克兰_R_521
+      - 广州
+      - 春川
       - 🇦🇺 AU 15
       - 🇦🇺 AU 239
       - 🇦🇺 AU 250
-      - 🇦🇺 AU 257
       - 🇦🇺 AU 279
       - 🇦🇺 AU 283
       - 🇨🇳 CN 101
@@ -2493,7 +2773,6 @@ proxy-groups:
       - 🇨🇳 CN 135
       - 🇨🇳 CN 141
       - 🇨🇳 CN 142
-      - 🇨🇳 CN 143
       - 🇨🇳 CN 144
       - 🇨🇳 CN 148
       - 🇨🇳 CN 149
@@ -2531,11 +2810,16 @@ proxy-groups:
       - 🇨🇳 CN 27
       - 🇨🇳 CN 28
       - 🇨🇳 CN 29
-      - 🇨🇳 CN 296
       - 🇨🇳 CN 99
       - 🇨🇳 TW 5
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾_R_318
+      - 🇨🇳 台湾|北葵提取
       - 🇩🇪 DE 3
       - 🇩🇪 DE 4
+      - 🇩🇪 德国
+      - 🇩🇪 德国🇩🇪-中转
+      - 🇬🇧 英国_R_228
       - 🇭🇰 HK 103
       - 🇭🇰 HK 124
       - 🇭🇰 HK 132
@@ -2567,6 +2851,8 @@ proxy-groups:
       - 🇭🇰 HK 96
       - 🇭🇰 HK 97
       - 🇭🇰 HK 98
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
       - 🇭🇰 香港  | Trojan | B | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | B | 0.05x | 白银 | 原生IP |
       - 🇭🇰 香港 | Trojan | C | 1.0x | 黃金 | 港區流媒體解鎖 |
@@ -2576,19 +2862,27 @@ proxy-groups:
       - 🇭🇰 香港 | Trojan | F | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | H | 1.0x | 黃金 | 港區流媒體解鎖 |
       - 🇭🇰 香港 | Trojan | J | 1.0x | 黃金 | 港區流媒體解鎖 |
+      - 🇭🇰 香港_R_446
+      - 🇭🇰 香港|北葵提取
       - 🇯🇵 JP 139
-      - 🇯🇵 JP 172
-      - 🇯🇵 JP 192
-      - 🇯🇵 JP 226
       - 🇯🇵 JP 8
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本高速
       - 🇰🇷 KR 175
       - 🇰🇷 KR 18
       - 🇰🇷 KR 188
       - 🇰🇷 KR 195
       - 🇰🇷 KR 46
+      - 🇰🇷 甲骨文-韩国🇰🇷春川-Tr
+      - 🇰🇷 韩国|北葵提取
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix
+      - 🇰🇷 韩国🇰🇷春川-解锁Netflix 2
       - 🇲🇾 马来西亚 | Trojan | 白銀 | 0.05x | 原生动态IP | A |
       - "🇲🇾 马来西亚 | Trojan | 體驗套餐 | B | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
       - 🇲🇾 马来西亚 | Trojan | 體驗節點 |  A | 1 | 20.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇷🇺 俄罗斯_R_323
+      - 🇸🇪 瑞典_R_362
       - 🇸🇬 SG 2
       - 🇸🇬 新加坡  | Trojan | A | 0.05x | 白银 | AZ |
       - 🇸🇬 新加坡  | Trojan | A | 2.0x | 青铜 |  AZ |
@@ -2599,11 +2893,19 @@ proxy-groups:
       - 🇸🇬 新加坡  | Trojan | E | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | F | 2.0x | 青铜 |  AZ |
       - 🇸🇬 新加坡  | Trojan | H | 2.0x | 青铜 |  AZ |
+      - 🇸🇬 新加坡80端口
+      - 🇸🇬 新加坡|北葵提取
+      - 🇸🇬 新加坡高速
+      - 🇹🇭 泰国_R_520
+      - 🇹🇷 土耳其_R_458
       - 🇺🇸 US 1
       - 🇺🇸 US 189
       - 🇺🇸 US 203
       - 🇺🇸 US 204
       - 🇺🇸 US 218
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
       - "🇺🇸 美国  | Trojan | A | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | D | 2.0x | 青銅 | AZ |\t"
       - "🇺🇸 美国  | Trojan | E | 2.0x | 青銅 | AZ |\t"
@@ -2612,6 +2914,8 @@ proxy-groups:
       - 🇺🇸 美国 | Trojan | 體驗節點 | B | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | C | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
       - 🇺🇸 美国 | Trojan | 體驗節點 | D | 10.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+      - 🇺🇸 美国01
+      - 🇺🇸 美国|北葵提取
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

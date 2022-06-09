@@ -38,7 +38,7 @@ jobs:
     - name: 提交更改1
       run: ./.github/update-repo.sh || true
     - name: long & clash
-      run: ./utils/subconverter/subconverter -g && mv ./utils/subconverter/long ./long && mv ./utils/subconverter/Clash.yaml ./Clash.yaml
+      run: ./utils/subconverter/subconverter -g && mv ./utils/subconverter/long ./long || true && mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
     - name: 提交更改2
       run: ./.github/update-repo.sh || true
   long:

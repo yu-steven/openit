@@ -25,10 +25,10 @@ jobs:
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: requirements
       run: |
-        pip install -r ./utils/requirements.txt
+        pip install -r ./utils/freev2/requirements.txt
     - name: get.py
       run: |
-        python ./utils/get.py
+        python ./utils/freev2/main.py
     - name: Push
       run: |
         git pull origin main

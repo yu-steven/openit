@@ -7,10 +7,10 @@ on:
 jobs:
   bf-job:
     name: Collecting & Speedtest
-    runs-on: macos-12
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4.0.0
+    - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
     - name: Timezone

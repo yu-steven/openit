@@ -20,6 +20,7 @@ jobs:
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          mv ./utils/subconverter/https ./https || true
+         base64 -d long > url
     - name: 提交更改
       run: ./.github/update-repo.sh || true
   long:

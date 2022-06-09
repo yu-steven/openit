@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: 启动subconverter
-      run: ./utils/subconverter/subconverter &
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 配置git
@@ -24,9 +22,7 @@ jobs:
     - name: 提交更改1
       run: ./.github/update-repo.sh || true
     - name: long & clash
-      run: |
-         wget "http://0.0.0.0:25500/sub?target=mixed&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&emoji=true" -O long || true
-         wget "http://0.0.0.0:25500/sub?target=clash&url=https://raw.githubusercontent.com/yu-steven/openit/main/https&config=sub/rule.ini&emoji=true&fdn=true&sort=true&udp=true" -O Clash.yaml || true
+      run: ./utils/subconverter/subconverter -g &
     - name: 提交更改2
       run: ./.github/update-repo.sh || true
   long:

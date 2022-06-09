@@ -8,12 +8,6 @@ sites=[
         "sub":"https://feiniaoyun.tk/api/v1/client/subscribe?token={token}"
     },
     {
-        "name":"698436",
-        "url":"https://698436.xyz/",
-        "reg_url":"https://698436.xyz/api/v1/passport/auth/register",
-        "sub":"https://698436.xyz/api/v1/client/subscribe?token={token}"
-    },
-    {
         "name":"ckcloud",
         "url":"https://www.ckcloud.xyz/",
         "reg_url":"https://www.ckcloud.xyz/api/v1/passport/auth/register",

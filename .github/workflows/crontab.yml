@@ -21,14 +21,21 @@ jobs:
       uses: actions/setup-python@v4.0.0
       with:
         python-version: '3.x'
+    - name: cache
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: requirements
       run: |
-        pip install -r ./utils/requirements.txt
+        pip install -r ./utils/freev2/requirements.txt
     - name: main.py
       run: |
-        python ./utils/main.py
+        python ./utils/freev2/main.py
     - name: Push
       run: |
         git pull origin main

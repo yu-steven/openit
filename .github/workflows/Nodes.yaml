@@ -18,13 +18,6 @@ jobs:
          git config --local user.name "GitHub Actions"
     - name: url > https
       run: base64 url > https -w 0
-    - name: chmod
-      run: |
-         cd utils/clashcheck/
-         chmod +777 clash-darwinamd64
-         chmod +777 clash-darwinarm64
-         chmod +777 clash-linuxamd64
-         chmod +777 clash-windowsamd64.exe
     - name: 提交更改1
       run: ./.github/update-repo.sh || true
     - name: long & clash

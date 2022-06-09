@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 配置git
@@ -17,12 +20,13 @@ jobs:
          git config --local user.email "actions@github.com"
          git config --local user.name "GitHub Actions"
     - name: url > https
-      run: |
-         base64 url > https -w 0
+      run: base64 url > https -w 0
     - name: 提交更改1
       run: ./.github/update-repo.sh || true
     - name: long & clash
-      run: ./utils/subconverter/subconverter -g &
+      run: |
+         python -m http.server &
+         ./utils/subconverter/subconverter -g &
     - name: 提交更改2
       run: ./.github/update-repo.sh || true
   long:

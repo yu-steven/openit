@@ -24,7 +24,9 @@ jobs:
     - name: requirements
       run: pip install -r ./utils/clashcheck/requirements.txt
     - name: main.py
-      run: python ./utils/clashcheck/main.py
+      run: |
+         cd utils/clashcheck/
+         python ./utils/clashcheck/main.py
     - name: 提交更改
       run: ./.github/update-repo.sh || true
   my-job:

@@ -14,13 +14,14 @@ jobs:
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 配置git
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
-    - name: url > https
-      run: base64 url > https -w 0
-    - name: 提交更改1
-      run: ./.github/update-repo.sh || true
-    - name: long & clash
-      run: ./utils/subconverter/subconverter -g && mv ./utils/subconverter/long ./long || true && mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
-    - name: 提交更改2
+    - name: subconverter
+      run: |
+         ./utils/subconverter/subconverter -g
+         mv ./utils/subconverter/long ./long || true
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
+         mv ./utils/subconverter/https ./https || true
+         base64 -d long > url || true
+    - name: 提交更改
       run: ./.github/update-repo.sh || true
   long:
     needs: my-job

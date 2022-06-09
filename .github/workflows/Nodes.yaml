@@ -28,7 +28,7 @@ jobs:
     - name: main.py
       run: cd utils/clashcheck/ && python main.py
     - name: push
-      run: git pull&&./.github/update-repo.sh || true
+      run: ./.github/update-repo.sh || true
   my-job:
     name: Encode & Translate
     needs: bf-job

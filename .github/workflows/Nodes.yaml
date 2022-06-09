@@ -13,14 +13,20 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
+    - uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: requirements
-      run: |
-        pip install -r ./utils/requirements.txt
+      run: pip install -r ./utils/clashcheck/requirements.txt
     - name: main.py
-      run: |
-        python ./utils/main.py
+      run: python ./utils/clashcheck/main.py
+    - name: 提交更改
+      run: ./.github/update-repo.sh || true
   my-job:
     name: Encode & Translate
     needs: bf-job

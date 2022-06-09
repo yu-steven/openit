@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4.0.0
-      with:
-        python-version: '3.x'
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 配置git
@@ -24,10 +21,7 @@ jobs:
     - name: 提交更改1
       run: ./.github/update-repo.sh || true
     - name: long & clash
-      run: |
-         python -m http.server &
-         sleep 6
-         ./utils/subconverter/subconverter -g &
+      run: ./utils/subconverter/subconverter -g && mv ./utils/subconverter/long ./long && mv ./utils/subconverter/Clash.yaml ./Clash.yaml
     - name: 提交更改2
       run: ./.github/update-repo.sh || true
   long:

@@ -28,4 +28,4 @@ jobs:
       - name: Crawling
         run: cd utils/pool/ && python main.py
       - name: push
-        run: ./.github/update-repo.sh || true
+        run: git pull && ./.github/update-repo.sh || true

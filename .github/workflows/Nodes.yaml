@@ -33,9 +33,8 @@ jobs:
          ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
-         chmod +777 ./.github/url.sh
          ./.github/url.sh > ./1
-         base64 -d long > 2 || true
+         base64 -d long > 2
          cat 1 2 > url && rm 1 2
     - name: 提交更改
       run: ./.github/update-repo.sh || true

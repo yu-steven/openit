@@ -36,6 +36,7 @@ jobs:
          ./.github/url.sh > ./1
          base64 -d long > 2
          cat 1 2 > url && rm 1 2
+         base64 url > https
     - name: 提交更改
       run: ./.github/update-repo.sh || true
   long:

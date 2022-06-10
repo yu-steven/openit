@@ -19,10 +19,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
       - name: Timezone
-        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'&&cd ./utils/pool/
       - name: requirements.txt
-        run: pip install -r ./utils/pool/requirements.txt
+        run: pip install -r requirements.txt
       - name: Crawling
-        run: python ./utils/pool/main.py
+        run: python main.py
       - name: push
         run: git pull&&./.github/update-repo.sh

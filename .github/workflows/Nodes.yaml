@@ -7,6 +7,17 @@ on:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 jobs:
+  bf-job:
+    name: Collecting
+    run-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: 配置git
+      run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
+    - name: base64
+      run: base64 url > pool&&mv ./pool ./utils/subconverter/pool
+    - name: 提交更改
+      run: ./.github/update-repo.sh || true
   my-job:
     name: Encode & Translate
     runs-on: ubuntu-latest
@@ -18,9 +29,7 @@ jobs:
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: subconverter
       run: |
-         cd utils/subconverter/
-         base64 url > pool
-         subconverter -g
+         ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          mv ./utils/subconverter/https ./https || true

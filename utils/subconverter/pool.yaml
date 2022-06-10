@@ -5,39 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "bai-piao-wang-zhe10.98848.xyz:", server: bai-piao-wang-zhe10.98848.xyz, port: 0, type: trojan, password: mDmaAWoWXB, skip-cert-verify: true, udp: true}
-  - {name: JP, server: 18.183.213.25, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 14.29.124.168:2, server: 14.29.124.168, port: 2, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.174:1, server: 14.29.124.174, port: 1, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +44,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +55,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "bai-piao-wang-zhe10.98848.xyz:"
-      - JP
       - 14.29.124.168:2
-      - 14.29.124.174:1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

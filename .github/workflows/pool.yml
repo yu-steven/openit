@@ -20,8 +20,8 @@ jobs:
             ${{ runner.os }}-pip-
       - name: Timezone
         run: sudo timedatectl set-timezone 'Asia/Shanghai'
-      - name: cd
-        run: cd utils/pool/
+      - name: git init
+        run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
       - name: requirements.txt
         run: pip install -r ./utils/pool/requirements.txt
       - name: Crawling

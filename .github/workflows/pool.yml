@@ -1,0 +1,22 @@
+name: 'Automatic crawl'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+      - name: requirements.txt
+        run: pip install -r requirements.txt
+      - name: Crawling
+        run: python ./utils/pool/main.py
+      - name: push
+        run: git pull&&./.github/update-repo.sh

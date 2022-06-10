@@ -36,7 +36,7 @@ jobs:
          mv ./utils/subconverter/https ./https || true
          base64 -d long > url || true
     - name: 提交更改
-      run: ./.github/update-repo.sh || true
+      run: git pull&&./.github/update-repo.sh || true
   long:
     needs: my-job
     runs-on: ubuntu-latest

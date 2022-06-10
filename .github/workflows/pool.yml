@@ -15,7 +15,7 @@ jobs:
       - name: Timezone
         run: sudo timedatectl set-timezone 'Asia/Shanghai'
       - name: requirements.txt
-        run: pip install -r requirements.txt
+        run: pip install -r ./utils/pool/requirements.txt
       - name: Crawling
         run: python ./utils/pool/main.py
       - name: push

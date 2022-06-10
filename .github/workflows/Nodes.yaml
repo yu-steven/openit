@@ -18,7 +18,9 @@ jobs:
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: subconverter
       run: |
-         ./utils/subconverter/subconverter -g
+         cd utils/subconverter/
+         base64 url > pool
+         subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          mv ./utils/subconverter/https ./https || true

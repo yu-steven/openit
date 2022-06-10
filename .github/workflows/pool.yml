@@ -1,11 +1,12 @@
-name: 'pool'
+name: pool
 
 on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 jobs:
-  crawl:
+  myjob:
+    name: Collecting 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

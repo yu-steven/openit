@@ -17,7 +17,7 @@ jobs:
     - name: base64
       run: base64 url > pool&&mv ./pool ./utils/subconverter/pool
     - name: 提交更改
-      run: ./.github/update-repo.sh || git pull && ./.github/update-repo.sh
+      run: ./.github/update-repo.sh
   my-job:
     name: Encode & Translate
     needs: bf-job
@@ -38,7 +38,7 @@ jobs:
          cat 1 2 > url && rm 1 2
          base64 url > https
     - name: 提交更改
-      run: ./.github/update-repo.sh || git pull && ./.github/update-repo.sh
+      run: ./.github/update-repo.sh
   long:
     needs: my-job
     runs-on: ubuntu-latest

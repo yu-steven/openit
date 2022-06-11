@@ -15,7 +15,7 @@ jobs:
     - name: 配置git
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: base64
-      run: base64 url > pool&&mv ./pool ./utils/pool/pool
+      run: base64 url > pool -w 0 && mv ./pool ./utils/pool/pool
     - name: 提交更改
       run: ./.github/update-repo.sh
   my-job:

@@ -18,7 +18,8 @@ jobs:
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: subconverter
       run: |
-         ./utils/subconverter/subconverter -g --artifact "long" "clash"
+         ./utils/subconverter/subconverter -g --artifact "long" 
+         ./utils/subconverter/subconverter -g --artifact "clash"
          mv ./utils/subconverter/long ./long
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml
          ./.github/url.sh > ./1

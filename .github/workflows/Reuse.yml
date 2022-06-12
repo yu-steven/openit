@@ -14,10 +14,15 @@ jobs:
       run: |
          git config --local user.email "actions@github.com"
          git config --local user.name "GitHub Actions"
-    - name: 写入文件
+    - name: pool
       run: |
          sed -i '/^$/d' url
          base64 url > pool -w 0
          mv ./pool ./utils/pool/pool
-    - name: 提交更改
-      run: ./.github/update-repo.sh
+    - run: ./.github/update-repo.sh
+    - name: pool.yaml
+      run: |
+         subconverter -g --artifact "pool"
+         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
+         sed -i '1,6d' ./utils/pool/pool.yaml
+    - run: ./.github/update-repo.sh

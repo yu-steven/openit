@@ -7,6 +7,29 @@ on:
   #   - cron: '*/15 * * * *'
   workflow_dispatch:
 jobs:
+  bf-job:
+    name: Reuse
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git init
+      run: |
+         git config --local user.email "actions@github.com"
+         git config --local user.name "GitHub Actions"
+    - name: pool
+      run: |
+         sed -i '/^$/d' url
+         base64 url > pool -w 0
+         mv ./pool ./utils/pool/pool
+    - run: ./.github/update-repo.sh
+    - name: pool.yaml
+      run: |
+         ./utils/subconverter/subconverter -g --artifact "pool"
+         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
+         sed -i '1,6d' ./utils/pool/pool.yaml
+    - run: ./.github/update-repo.sh
   my-job:
     name: Encode & Translate
     runs-on: ubuntu-latest

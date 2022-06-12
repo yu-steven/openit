@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: 设置时区
+    - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: 配置git
+    - name: git init
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: subconverter
       run: |

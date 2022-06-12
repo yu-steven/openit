@@ -15,7 +15,7 @@ jobs:
     - name: 配置git
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: base64
-      run: sed '/^$/d' url && base64 url > pool -w 0 && mv ./pool ./utils/pool/pool #开头sed命令是删除空白行
+      run: sed '/^$/d' url && base64 url > pool -w 0 && mv ./pool ./utils/pool/pool #sed命令删除空白行
     - name: 提交更改
       run: ./.github/update-repo.sh
   my-job:

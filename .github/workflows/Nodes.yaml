@@ -27,8 +27,7 @@ jobs:
          base64 -d long | tee 2 url
          cat 1 2 > 3 && rm 1 2
          base64 3 > https -w 0 && rm 3
-    - name: 提交更改
-      run: ./.github/update-repo.sh
+    - name: run: ./.github/update-repo.sh
   long:
     needs: my-job
     runs-on: ubuntu-latest

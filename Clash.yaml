@@ -5,10 +5,34 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: Amazon_Frankfurt, server: 18.157.150.212, port: 44579, type: vmess, uuid: 892ec020-7a66-4c4e-ac31-d8cfa183cec7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _1, server: 51.81.223.0, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _2, server: 51.81.223.4, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _3, server: 51.81.223.6, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _4, server: 51.81.223.8, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "| 春川 | NF |", server: chunchuan-01.aikala.shop, port: 80, type: vmess, uuid: c2b378ae-6ef6-49fd-bf8e-72cd2af55de4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
+  - {name: "| 春川 | NF | 2", server: chunchuan-02.aikala.shop, port: 80, type: vmess, uuid: c2b378ae-6ef6-49fd-bf8e-72cd2af55de4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
+  - {name: 广州, server: 175.178.163.153, port: 443, type: vmess, uuid: 9b4d4f9c-c5bf-4a3b-a6ea-f675989d9cbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 白嫖, server: data-hk-v1.heisey.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 白嫖 2, server: data-us-v1.shwjfkw.cn, port: 50401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 白嫖 3, server: data-tw-v1.shwjfkw.cn, port: 50221, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 白嫖 4, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 白嫖 5, server: data-jp-v1.heisey.cn, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 白嫖 6, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 白嫖 7, server: data-hk-v2.shwjfkw.cn, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 白嫖 8, server: data-hk-v2.heisey.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22tv.cctv.com%22%7D"}}, udp: true}
+  - {name: 高速, server: ziyeya.xyz, port: 8989, type: vmess, uuid: 256c4c89-f7f8-4a23-b2bf-552b008bf409, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ziyeya.xyz}}, udp: true}
+  - {name: 高速 2, server: ziyeya.xyz, port: 8989, type: vmess, uuid: f6a3fde1-45e2-414f-bb49-cf1eceb55d85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ziyeya.xyz}}, udp: true}
   - {name: ｜BG｜https://fk.myue.cc/｜66, server: 213.183.63.221, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
   - {name: ｜FI｜https://fk.myue.cc/｜17, server: 185.204.1.253, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: V29BpbtkhWZr, udp: true}
   - {name: 🇦🇺 ｜AU｜https://fk.myue.cc/｜74, server: kr04.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 ｜CA｜https://fk.myue.cc/｜79, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x, server: in01.dns220607.com, port: 64087, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /biteb, headers: {Host: sg-balancer.tencent.best}}, udp: true}
+  - {name: 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x, server: in02.dns220607.com, port: 64087, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /biteb, headers: {Host: sg-balancer.tencent.best}}, udp: true}
+  - {name: 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x, server: in03.dns220607.com, port: 64087, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /biteb, headers: {Host: sg-balancer.tencent.best}}, udp: true}
+  - {name: 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x, server: in01.dns220607.com, port: 64086, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /biteb, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
+  - {name: 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x, server: in02.dns220607.com, port: 64086, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /biteb, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
+  - {name: 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x, server: in03.dns220607.com, port: 64086, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /biteb, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
   - {name: 🇨🇳 台湾1, server: 103.177.32.202, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 99a98b14cf3a, udp: true}
   - {name: 🇨🇳 台湾2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, udp: true}
   - {name: 🇨🇳 台湾4, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, udp: true}
@@ -49,21 +73,42 @@ proxies:
   - {name: 🇫🇷 ｜FR｜https://fk.myue.cc/｜32, server: 155.133.130.93, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: uOaNBB7dlKXH, udp: true}
   - {name: 🇫🇷 ｜FR｜https://fk.myue.cc/｜61, server: 149.202.82.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 🇬🇧 ｜GB｜https://fk.myue.cc/｜63, server: 89.238.165.226, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇭🇰 V1-香港 多台负载均衡 中继A | 2x, server: in01.dns220607.com, port: 64078, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
+  - {name: 🇭🇰 V1-香港 多台负载均衡 中继B | 2x, server: in02.dns220607.com, port: 64078, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
+  - {name: 🇭🇰 V1-香港 多台负载均衡 中继C | 2x, server: in03.dns220607.com, port: 64078, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
+  - {name: 🇭🇰 V1-香港 多台负载均衡 中继D | 2x, server: in04.dns220607.com, port: 64078, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
+  - {name: 🇭🇰 香港 B02^ 江港隧道, server: gz.syhwdz.top, port: 35663, type: ss, cipher: chacha20-ietf-poly1305, password: 4298ec29-9a37-4f2d-9c8a-5dc466893eb1, udp: true}
+  - {name: 🇭🇰 香港 B03^, server: relaybgp_pro.flyxxl.xyz, port: 45601, type: ss, cipher: chacha20-ietf-poly1305, password: 4298ec29-9a37-4f2d-9c8a-5dc466893eb1, udp: true}
+  - {name: 🇭🇰 香港 V1 | A 移动中转 1x, server: cm2.fanqiecn.xyz, port: 10020, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm2.fanqiecn.xyz}}, udp: true}
+  - {name: 🇭🇰 香港 V1 | A 联通中转 1x, server: cu.fanqiecn.xyz, port: 10020, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.fanqiecn.xyz}}, udp: true}
+  - {name: 🇭🇰 香港 V1 | B 移动中转 1x, server: cm2.fanqiecn.xyz, port: 10021, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm2.fanqiecn.xyz}}, udp: true}
   - {name: 🇭🇰 香港1, server: 103.233.251.211, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 127ed1400716, udp: true}
   - {name: 🇭🇰 香港2, server: 103.233.251.211, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 127ed1400716, udp: true}
   - {name: 🇭🇰 香港3, server: 154.221.22.201, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a11a783e60ec, udp: true}
   - {name: 🇭🇰 香港4, server: 154.221.22.201, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a11a783e60ec, udp: true}
+  - {name: 🇭🇰 香港v1-v2ray, server: jisu74.yaya89.xyz, port: 51174, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu74.yaya89.xyz}}, udp: true}
+  - {name: 🇭🇰 香港v2-v2ray, server: jisu105.yaya89.xyz, port: 51105, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu105.yaya89.xyz}}, udp: true}
+  - {name: 🇭🇰 香港v3-v2ray, server: jisu59.yaya89.xyz, port: 51159, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu59.yaya89.xyz}}, udp: true}
+  - {name: 🇭🇰 香港v4-v2ray, server: jisu78.yaya89.xyz, port: 50078, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu78.yaya89.xyz}}, udp: true}
+  - {name: 🇭🇰 香港v5-v2ray, server: jisu82.yaya89.xyz, port: 51182, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu82.yaya89.xyz}}, udp: true}
+  - {name: 🇭🇰 香港v6-v2ray, server: jisu65.yaya89.xyz, port: 50065, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu65.yaya89.xyz}}, udp: true}
   - {name: 🇭🇰 ｜HK｜https://fk.myue.cc/｜1, server: s233.s2022.xyz, port: 39747, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 ｜HK｜https://fk.myue.cc/｜26, server: s244.s2022.xyz, port: 30300, type: trojan, password: 44742458-ae53-3490-aeb6-a1a23d54c2be, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 ｜HK｜https://fk.myue.cc/｜29, server: AZHJ001.xiba1.xyz, port: 20722, type: trojan, password: 6089bbd2-2bef-3ee3-a329-1b1a4339d7ed, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 ｜HK｜https://fk.myue.cc/｜4, server: s69.s2022.xyz, port: 30661, type: trojan, password: 7d46f885-c7e4-30d4-8a00-36aa6530b0cf, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 ｜HK｜https://fk.myue.cc/｜47, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: 6089bbd2-2bef-3ee3-a329-1b1a4339d7ed, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 ｜HK｜https://fk.myue.cc/｜53, server: hkcn2.doubledou.win, port: 4588, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Amazon_Tokyo, server: 54.65.100.2, port: 44573, type: vmess, uuid: 892ec020-7a66-4c4e-ac31-d8cfa183cec7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本, server: gy01.20220512.cyou, port: 37762, type: trojan, password: 207eed47-ffdd-4bd4-91c1-719ac25c9cee, sni: gy01.20220512.cyou, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 2, server: gy02.20220512.cyou, port: 37762, type: trojan, password: 207eed47-ffdd-4bd4-91c1-719ac25c9cee, sni: gy02.20220512.cyou, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本1, server: 103.177.244.31, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a1e041734a14, udp: true}
   - {name: 🇯🇵 日本2, server: 103.177.244.31, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a1e041734a14, udp: true}
   - {name: 🇯🇵 ｜JP｜https://fk.myue.cc/｜24, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 ｜JP｜https://fk.myue.cc/｜7, server: jp.useanlo.cf, port: 6523, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 ｜JP｜https://fk.myue.cc/｜76, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 V1 | A 移动中转 1x, server: cm.fanqiecn.xyz, port: 10002, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.fanqiecn.xyz}}, udp: true}
+  - {name: 🇰🇷 韩国 V1 | A 联通中转 1x, server: cu.fanqiecn.xyz, port: 10002, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.fanqiecn.xyz}}, udp: true}
+  - {name: 🇰🇷 韩国 V1 | B 联通中转 1x, server: cu.fanqiecn.xyz, port: 10006, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.fanqiecn.xyz}}, udp: true}
   - {name: 🇰🇷 韩国1, server: 27.102.106.171, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 40d5089833fc, udp: true}
   - {name: 🇰🇷 韩国2, server: 27.102.66.214, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4b7c2bae5095, udp: true}
   - {name: 🇰🇷 韩国3, server: 27.102.106.171, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 40d5089833fc, udp: true}
@@ -72,14 +117,27 @@ proxies:
   - {name: 🇰🇷 ｜KR｜https://fk.myue.cc/｜67, server: hg.053111.xyz, port: 443, type: trojan, password: d4435b69-3d08-d58a-919f-7f1707150ecb, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 ｜KR｜https://fk.myue.cc/｜75, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
   - {name: 🇵🇱 ｜PL｜https://fk.myue.cc/｜22, server: 51.77.53.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇷🇺 V1-俄罗斯01 中继B 1.2x, server: in02.dns220607.com, port: 64071, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: biteb-ru01.myn1des.com}}, udp: true}
+  - {name: 🇷🇺 V1-俄罗斯01 中继C 1.2x, server: in03.dns220607.com, port: 64071, type: vmess, uuid: 4a3fd26a-6e53-3eba-b9f3-13ec92173082, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: biteb-ru01.myn1des.com}}, udp: true}
+  - {name: 🇷🇺 莫斯科, server: 46.17.42.135, port: 44368, type: vmess, uuid: 892ec020-7a66-4c4e-ac31-d8cfa183cec7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇷🇺 ｜RU｜https://fk.myue.cc/｜58, server: t02.ssrsub.com, port: 18443, type: trojan, password: f736834f-1fc8-4738-9884-9afe0eb0d818, sni: douyincdn.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore NETFLIX, server: sg-cn.teacher2050.com, port: 43508, type: trojan, password: E44523FE-B9E4-BD49-AEAF-DBABE701D016, sni: sg-cn.teacher2050.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡, server: gzyd.qlyun.xyz, port: 64663, type: ss, cipher: aes-128-gcm, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
   - {name: 🇸🇬 新加坡1, server: 27.124.38.41, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8cad99fbe8b9, udp: true}
   - {name: 🇸🇬 新加坡2, server: 27.124.38.41, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8cad99fbe8b9, udp: true}
+  - {name: 🇸🇬 新加坡NF1-v2ray, server: jisu119.yaya89.xyz, port: 50119, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu119.yaya89.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡NF2-v2ray, server: jisu115.yaya89.xyz, port: 50115, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu115.yaya89.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡NF3-v2ray, server: jisu75.yaya89.xyz, port: 51175, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu75.yaya89.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡NF4-v2ray, server: jisu98.yaya89.xyz, port: 50098, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu98.yaya89.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡NF5-v2ray, server: jisu136.yaya89.xyz, port: 51136, type: vmess, uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jisu136.yaya89.xyz}}, udp: true}
   - {name: 🇸🇬 ｜SG｜https://fk.myue.cc/｜2, server: s296.s2022.xyz, port: 41716, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 ｜SG｜https://fk.myue.cc/｜39, server: trojan1.udpgw.com, port: 443, type: trojan, password: affae2e0-e84b-11ec-b09f-1239d0255272, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 ｜SG｜https://fk.myue.cc/｜43, server: s285.s2022.xyz, port: 35798, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 ｜SG｜https://fk.myue.cc/｜60, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 97fdf760-7bbf-11eb-8e14-1239d0255272, skip-cert-verify: true, udp: true}
   - {name: 🇹🇭 泰国1, server: 119.59.127.153, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 161df779f26d, udp: true}
+  - {name: 🇺🇸 美国 B01, server: relaybgp_pro.flyxxl.xyz, port: 45431, type: ss, cipher: chacha20-ietf-poly1305, password: 4298ec29-9a37-4f2d-9c8a-5dc466893eb1, udp: true}
+  - {name: 🇺🇸 美国 西部 V1 | A 移动中转 1x, server: cm.fanqiecn.xyz, port: 10013, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.fanqiecn.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 西部 V1 | A 联通中转 1x, server: cu.fanqiecn.xyz, port: 10013, type: vmess, uuid: 013e00fa-5fe8-395a-8767-68ce9c864483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.fanqiecn.xyz}}, udp: true}
   - {name: 🇺🇸 美国1, server: 67.198.210.66, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 3e4a431348b9, udp: true}
   - {name: 🇺🇸 美国2, server: 67.229.101.66, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d73446755f5d, udp: true}
   - {name: 🇺🇸 美国3, server: 174.139.49.26, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a69428cc1964, udp: true}
@@ -114,10 +172,34 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -158,21 +240,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -181,14 +284,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3
@@ -222,10 +338,34 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -266,21 +406,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -289,14 +450,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3
@@ -331,10 +505,34 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -375,21 +573,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -398,14 +617,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3
@@ -452,10 +684,34 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -496,21 +752,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -519,14 +796,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3
@@ -559,24 +849,69 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
       - 🇨🇳 台湾5
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -617,21 +952,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -640,14 +996,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3
@@ -681,10 +1050,34 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -725,21 +1118,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -748,14 +1162,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3
@@ -790,10 +1217,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -834,21 +1285,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -857,14 +1329,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3
@@ -908,10 +1393,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Amazon_Frankfurt
+      - _1
+      - _2
+      - _3
+      - _4
+      - "| 春川 | NF |"
+      - "| 春川 | NF | 2"
+      - 广州
+      - 白嫖
+      - 白嫖 2
+      - 白嫖 3
+      - 白嫖 4
+      - 白嫖 5
+      - 白嫖 6
+      - 白嫖 7
+      - 白嫖 8
+      - 高速
+      - 高速 2
       - ｜BG｜https://fk.myue.cc/｜66
       - ｜FI｜https://fk.myue.cc/｜17
       - 🇦🇺 ｜AU｜https://fk.myue.cc/｜74
       - 🇨🇦 ｜CA｜https://fk.myue.cc/｜79
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继B 1.5x
+      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
       - 🇨🇳 台湾1
       - 🇨🇳 台湾2
       - 🇨🇳 台湾4
@@ -952,21 +1461,42 @@ proxy-groups:
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜32
       - 🇫🇷 ｜FR｜https://fk.myue.cc/｜61
       - 🇬🇧 ｜GB｜https://fk.myue.cc/｜63
+      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继B | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
+      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
+      - 🇭🇰 香港 B02^ 江港隧道
+      - 🇭🇰 香港 B03^
+      - 🇭🇰 香港 V1 | A 移动中转 1x
+      - 🇭🇰 香港 V1 | A 联通中转 1x
+      - 🇭🇰 香港 V1 | B 移动中转 1x
       - 🇭🇰 香港1
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港v1-v2ray
+      - 🇭🇰 香港v2-v2ray
+      - 🇭🇰 香港v3-v2ray
+      - 🇭🇰 香港v4-v2ray
+      - 🇭🇰 香港v5-v2ray
+      - 🇭🇰 香港v6-v2ray
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜1
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜26
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜29
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜4
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜47
       - 🇭🇰 ｜HK｜https://fk.myue.cc/｜53
+      - 🇯🇵 Amazon_Tokyo
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
       - 🇯🇵 日本1
       - 🇯🇵 日本2
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜24
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜7
       - 🇯🇵 ｜JP｜https://fk.myue.cc/｜76
+      - 🇰🇷 韩国 V1 | A 移动中转 1x
+      - 🇰🇷 韩国 V1 | A 联通中转 1x
+      - 🇰🇷 韩国 V1 | B 联通中转 1x
       - 🇰🇷 韩国1
       - 🇰🇷 韩国2
       - 🇰🇷 韩国3
@@ -975,14 +1505,27 @@ proxy-groups:
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜67
       - 🇰🇷 ｜KR｜https://fk.myue.cc/｜75
       - 🇵🇱 ｜PL｜https://fk.myue.cc/｜22
+      - 🇷🇺 V1-俄罗斯01 中继B 1.2x
+      - 🇷🇺 V1-俄罗斯01 中继C 1.2x
+      - 🇷🇺 莫斯科
       - 🇷🇺 ｜RU｜https://fk.myue.cc/｜58
+      - 🇸🇬 Singapore NETFLIX
+      - 🇸🇬 新加坡
       - 🇸🇬 新加坡1
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡NF1-v2ray
+      - 🇸🇬 新加坡NF2-v2ray
+      - 🇸🇬 新加坡NF3-v2ray
+      - 🇸🇬 新加坡NF4-v2ray
+      - 🇸🇬 新加坡NF5-v2ray
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜2
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜39
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜43
       - 🇸🇬 ｜SG｜https://fk.myue.cc/｜60
       - 🇹🇭 泰国1
+      - 🇺🇸 美国 B01
+      - 🇺🇸 美国 西部 V1 | A 移动中转 1x
+      - 🇺🇸 美国 西部 V1 | A 联通中转 1x
       - 🇺🇸 美国1
       - 🇺🇸 美国2
       - 🇺🇸 美国3

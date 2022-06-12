@@ -26,5 +26,4 @@ jobs:
       run: pip install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd utils/clashcheck/ && python main.py
-    - name: push
-      run: ./.github/update-repo.sh
+    - run: ./.github/update-repo.sh

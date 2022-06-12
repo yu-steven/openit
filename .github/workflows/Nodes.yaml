@@ -33,7 +33,8 @@ jobs:
          ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
-         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml || true
+         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
+         sed -i '1,6d' pool.yaml
          ./.github/url.sh > ./1
          base64 -d long | tee 2 url
          cat 1 2 > 3 && rm 1 2

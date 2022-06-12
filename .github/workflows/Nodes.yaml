@@ -32,7 +32,7 @@ jobs:
     - run: ./.github/update-repo.sh
   my-job:
     name: Encode & Translate
-    need: Reuse
+    needs: bf-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3

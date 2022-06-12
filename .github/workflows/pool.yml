@@ -27,5 +27,4 @@ jobs:
         run: pip install -r ./utils/pool/requirements.txt
       - name: main.py
         run: cd utils/pool/ && python main.py
-      - name: push
-        run: ./.github/update-repo.sh
+      - run: ./.github/update-repo.sh

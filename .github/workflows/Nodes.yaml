@@ -38,7 +38,7 @@ jobs:
          cat 1 2 > 3 && rm 1 2
          base64 3 > https -w 0 && rm 3
     - name: 提交更改
-      run: ./.github/update-repo.sh || true
+      run: ./.github/update-repo.sh || printf "\033[33m WARNING: hmm \033[0m\n";
   long:
     needs: my-job
     runs-on: ubuntu-latest

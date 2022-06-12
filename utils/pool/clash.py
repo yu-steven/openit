@@ -7,6 +7,16 @@ import flag
 
 def push(list):
     country_count = {}
+    ss_supported_ciphers = ['aes-128-gcm', 'aes-192-gcm', 'aes-256-gcm',
+                            'aes-128-cfb', 'aes-192-cfb', 'aes-256-cfb', 'aes-128-ctr', 'aes-192-ctr', 'aes-256-ctr',
+                            'rc4-md5', 'chacha20-ietf', 'xchacha20', 'chacha20-ietf-poly1305',
+                            'xchacha20-ietf-poly1305']
+    ssr_supported_obfs = ['plain', 'http_simple', 'http_post', 'random_head', 'tls1.2_ticket_auth',
+                          'tls1.2_ticket_fastauth']
+    ssr_supported_protocol = ['origin', 'auth_sha1_v4', 'auth_aes128_md5', 'auth_aes128_sha1', 'auth_chain_a',
+                              'auth_chain_b']
+    vmess_supported_ciphers = ['auto', 'aes-128-gcm', 'chacha20-poly1305', 'none']
+    passlist = []
     iplist = {}
     passlist = []
     count = 1
@@ -292,94 +302,147 @@ def push(list):
         for i in tqdm(range(int(len(list))), desc="Parse"):
             try:
                 x = list[i]
-                try:
-                    float(x['password'])
-                except:
+                if x['type'] == 'ss':
                     try:
-                        float(x['uuid'])
-                    except:
-                        try:
-                            if x['tls'] in [True, False]:
-                                pass
-                            else:
-                                continue
-                        except:
-                            pass
-                        try:
-                            ip = str(socket.gethostbyname(x["server"]))
-                        except:
-                            ip = str(x["server"])
+                        ip = str(socket.gethostbyname(x["server"]))
+                        x['port'] = int(x['port'])
                         try:
                             country = str(countrify.get(ip)['country']['iso_code'])
                         except:
                             country = 'UN'
-                        if country == 'TW' or country == 'MO' or country == 'HK':
-                            flagcountry = 'CN'
-                        else:
-                            flagcountry = country
+                        if x['cipher'] not in ss_supported_ciphers:
+                            continue
+                        if country != 'CN':
+                            if ip in iplist:
+                                continue
+                            else:
+                                iplist.append(ip)
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSS'
+                    except:
+                        continue
+                elif x['type'] == 'ssr':
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                        x['port'] = int(x['port'])
                         try:
-                            country_count[country] = country_count[country] + 1
-                            x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                            country = str(countrify.get(ip)['country']['iso_code'])
                         except:
-                            country_count[country] = 1
-                            x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-
-                        if 'password' in x:
-                            if x['password'] != 'null' and x['password'] is not None:
-                                x['password'] = str(x['password'])
-                            else:
+                            country = 'UN'
+                        if x['cipher'] not in ss_supported_ciphers:
+                            continue
+                        if x['obfs'] not in ssr_supported_obfs:
+                            continue
+                        if x['protocol'] not in ssr_supported_protocol:
+                            continue
+                        if country != 'CN':
+                            if ip in iplist:
                                 continue
-                        elif 'uuid' in x:
-                            if x['uuid'] != 'null' and x['uuid'] is not None:
-                                x['uuid'] = str(x['uuid'])
                             else:
+                                iplist.append(ip)
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
+                    except:
+                        continue
+                elif x['type'] == 'vmess':
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                        x['port'] = int(x['port'])
+                        try:
+                            country = str(countrify.get(ip)['country']['iso_code'])
+                        except:
+                            country = 'UN'
+                        if 'udp' in x:
+                            if x['udp'] not in [False, True]:
                                 continue
-                        if 'cipher' in x:
-                            if x['cipher'] == 'null' or x['cipher'] == None:
+                        if 'tls' in x:
+                            if x['tls'] not in [False, True]:
                                 continue
-
-                        if ip in iplist:
-                            if country == "CN" or country == "HK":
-                                if x['port'] not in iplist[ip]:
-                                    iplist[ip].append(x['port'])
-                                    try:
-                                        if x['uuid'] not in passlist:
-                                            passlist.append(x['uuid'])
-                                    except:
-                                        if x['password'] not in passlist:
-                                            passlist.append(x['password'])
-                                    clash['proxies'].append(x)
-                                    clash['proxy-groups'][0]['proxies'].append(x['name'])
-                                    clash['proxy-groups'][1]['proxies'].append(x['name'])
-                                    count = count + 1
-                            else:
-                                pass
-                        else:
-                            iplist[ip] = []
-                            iplist[ip].append(x['port'])
-                            try:
-                                if x['uuid'] not in passlist:
-                                    passlist.append(x['uuid'])
-                            except:
-                                try:
-                                    if x['password'] not in passlist:
-                                        passlist.append(x['password'])
-                                except:
-                                    if x['type'] == 'http':
-                                        pass
-                                    try:
-                                        if x['psk'] not in passlist:
-                                            passlist.append(x['psk'])
-                                    except:
-                                        if x['type'] != 'http':
-                                            continue
-                            clash['proxies'].append(x)
-                            clash['proxy-groups'][0]['proxies'].append(x['name'])
-                            clash['proxy-groups'][1]['proxies'].append(x['name'])
-                            count = count + 1
+                        if 'skip-cert-verify' in x:
+                            if x['skip-cert-verify'] not in [False, True]:
+                                continue
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'VMS'
+                    except:
+                        print(x)
+                        continue
+                elif x['type'] == 'trojan':
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                        x['port'] = int(x['port'])
+                        try:
+                            country = str(countrify.get(ip)['country']['iso_code'])
+                        except:
+                            country = 'UN'
+                        if 'udp' in x:
+                            if x['udp'] not in [False, True]:
+                                continue
+                        if 'skip-cert-verify' in x:
+                            if x['skip-cert-verify'] not in [False, True]:
+                                continue
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'TJN'
+                    except:
+                        continue
+                elif x['type'] == 'snell':
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                        x['port'] = int(x['port'])
+                        try:
+                            country = str(countrify.get(ip)['country']['iso_code'])
+                        except:
+                            country = 'UN'
+                        if 'udp' in x:
+                            if x['udp'] not in [False, True]:
+                                continue
+                        if 'skip-cert-verify' in x:
+                            if x['skip-cert-verify'] not in [False, True]:
+                                continue
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SNL'
+                    except:
+                        continue
+                elif x['type'] == 'http':
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                        x['port'] = int(x['port'])
+                        if 'tls' in x:
+                            if x['tls'] not in [False, True]:
+                                continue
+                        try:
+                            country = str(countrify.get(ip)['country']['iso_code'])
+                        except:
+                            country = 'UN'
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'HTT'
+                    except:
+                        continue
+                elif x['type'] == 'socks5':
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                        x['port'] = int(x['port'])
+                        if 'tls' in x:
+                            if x['tls'] not in [False, True]:
+                                continue
+                        if 'udp' in x:
+                            if x['udp'] not in [False, True]:
+                                continue
+                        if 'skip-cert-verify' in x:
+                            if x['skip-cert-verify'] not in [False, True]:
+                                continue
+                        try:
+                            country = str(countrify.get(ip)['country']['iso_code'])
+                        except:
+                            country = 'UN'
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'HTS'
+                    except:
+                        continue
+                else:
+                    print(x)
+                    print('unsupported')
+                    continue
+                clash['proxies'].append(x)
+                clash['proxy-groups'][0]['proxies'].append(x['name'])
+                clash['proxy-groups'][1]['proxies'].append(x['name'])
+                count = count + 1
             except:
-                print(list[i])
-                pass
+                continue
+                #print(list[i])
+                #pass
 
     with open('output.yaml', 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)

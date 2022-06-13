@@ -35,7 +35,7 @@ jobs:
   st-job:
     name: Speedtest
     needs: cl-job
-    runs-on: [self-hosted, C1]
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
@@ -80,25 +80,25 @@ jobs:
     - run: ./.github/update-repo.sh
 
   long:
-    needs: st-job
+    needs: et-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
   HTTPS:
-    needs: st-job
+    needs: et-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
   Clash:
-    needs: st-job
+    needs: et-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
   Quanx:
-   needs: st-job
+   needs: et-job
    runs-on: ubuntu-latest
    steps:
    - name: CDN

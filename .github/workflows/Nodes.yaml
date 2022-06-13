@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  1--job:
+  cl-job:
     name: Collecting 
     runs-on: ubuntu-latest
     steps:
@@ -32,9 +32,9 @@ jobs:
       run: cd utils/pool/ && python main.py
     - run: ./.github/update-repo.sh
 
-  2--job:
+  st-job:
     name: Speedtest
-    needs: 1--job
+    needs: cl-job
     runs-on: [self-hosted, C1]
     steps:
     - uses: actions/checkout@v3
@@ -57,9 +57,9 @@ jobs:
       run: cd utils/clashcheck/ && python main.py
     - run: ./.github/update-repo.sh
 
-  3--job:
+  et-job:
     name: Encode & Translate
-    needs: 2--job
+    needs: et-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -80,25 +80,25 @@ jobs:
     - run: ./.github/update-repo.sh
 
   long:
-    needs: 3--job
+    needs: et-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
   HTTPS:
-    needs: 3--job
+    needs: et-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
   Clash:
-    needs: 3--job
+    needs: et-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
   Quanx:
-   needs: 3--job
+   needs: et-job
    runs-on: ubuntu-latest
    steps:
    - name: CDN

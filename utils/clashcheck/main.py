@@ -14,7 +14,7 @@ import subprocess
 
 
 def check(alive, proxy, apiurl,sema,timeout):
-    r = requests.get(url=apiurl + '/proxies/'+str(proxy['name'])+'/delay?url=https://gstatic.com/generate_204&timeout='+str(timeout))
+    r = requests.get(url=apiurl + '/proxies/'+str(proxy['name'])+'/delay?url=http://gstatic.com/generate_204&timeout='+str(timeout))
     response = json.loads(r.text)
     try:
         if response['delay'] > 0:

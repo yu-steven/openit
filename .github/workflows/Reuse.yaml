@@ -18,7 +18,6 @@ jobs:
          git config --local user.name "GitHub Actions"
     - name: pool
       run: |
-         sed -i '/^$/d' url
          base64 url > pool -w 0
          mv ./pool ./utils/pool/pool
     - run: ./.github/update-repo.sh

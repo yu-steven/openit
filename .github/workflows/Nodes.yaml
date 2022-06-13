@@ -59,7 +59,7 @@ jobs:
 
   et-job:
     name: Encode & Translate
-    needs: et-job
+    needs: st-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -80,25 +80,25 @@ jobs:
     - run: ./.github/update-repo.sh
 
   long:
-    needs: et-job
+    needs: st-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
   HTTPS:
-    needs: et-job
+    needs: st-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
   Clash:
-    needs: et-job
+    needs: st-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
   Quanx:
-   needs: et-job
+   needs: st-job
    runs-on: ubuntu-latest
    steps:
    - name: CDN

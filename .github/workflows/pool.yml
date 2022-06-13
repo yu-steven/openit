@@ -9,22 +9,22 @@ jobs:
     name: Collecting 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-      - name: Timezone
-        run: sudo timedatectl set-timezone 'Asia/Shanghai'
-      - name: git init
-        run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
-      - name: requirements.txt
-        run: pip install -r ./utils/pool/requirements.txt
-      - name: main.py
-        run: cd utils/pool/ && python main.py
-      - run: ./.github/update-repo.sh
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git init
+      run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
+    - name: requirements.txt
+      run: pip install -r ./utils/pool/requirements.txt
+    - name: main.py
+      run: cd utils/pool/ && python main.py
+    - run: ./.github/update-repo.sh

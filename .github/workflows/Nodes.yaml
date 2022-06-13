@@ -31,15 +31,13 @@ jobs:
 
   st-job:
     name: Speedtest
-    # needs: cl-job
+    needs: cl-job
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
-      with:
-        cache: 'pip'
-        python-version: '3.9'
-        architecture: 'x64'
+    # - uses: actions/setup-python@v4
+    #   with:
+    #     python-version: '3.x'
     - uses: actions/cache@v3
       with:
         path: ~/.cache/pip
@@ -51,9 +49,9 @@ jobs:
     - name: git init
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: requirements.txt
-      run: pip install -r ./utils/clashcheck/requirements.txt
+      run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
-      run: cd utils/clashcheck/ && python main.py
+      run: cd utils/clashcheck/ && python3 main.py
     - run: ./.github/update-repo.sh
 
   et-job:

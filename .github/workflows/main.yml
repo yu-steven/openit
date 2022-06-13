@@ -1,0 +1,22 @@
+name: Nodes
+on: 
+  # schedule:
+  #   - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  st-job:
+    name: Speedtest
+    runs-on: self-hosted
+    steps:
+    - run: |
+         wget -O proxypoolcheck https://github.com/Sansui233/proxypoolCheck/releases/download/v0.3.1/proxypoolCheck-linux-amd64-v0.3.1.gz
+         ./proxypoolcheck -c https://github.com/yu-steven/openit/blob/main/sub/check.yaml
+         sleep 15m
+         wget -O check http://127.0.0.1:7777/clash/proxies
+         cat check
+
+
+
+
+

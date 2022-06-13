@@ -7,29 +7,55 @@ on:
   #   - cron: '*/15 * * * *'
   workflow_dispatch:
 jobs:
-  bf-job:
-    name: Reuse
+  1--job:
+    name: Collecting 
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Timezone
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+      - name: git init
+        run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
+      - name: requirements.txt
+        run: pip install -r ./utils/pool/requirements.txt
+      - name: main.py
+        run: cd utils/pool/ && python main.py
+      - run: ./.github/update-repo.sh
+
+  2--job:
+    name: Speedtest
+    runs-on: [self-hosted, C1]
+    steps:
     - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git init
-      run: |
-         git config --local user.email "actions@github.com"
-         git config --local user.name "GitHub Actions"
-    - name: pool
-      run: |
-         base64 url > pool -w 0
-         mv ./pool ./utils/pool/pool
+      run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
+    - name: requirements.txt
+      run: pip install -r ./utils/clashcheck/requirements.txt
+    - name: main.py
+      run: cd utils/clashcheck/ && python main.py
     - run: ./.github/update-repo.sh
-    - name: pool.yaml
-      run: |
-         ./utils/subconverter/subconverter -g --artifact "pool"
-         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
-         sed -i '1,6d' ./utils/pool/pool.yaml
-    - run: ./.github/update-repo.sh
-  my-job:
+
+  3--job:
     name: Encode & Translate
     needs: bf-job
     runs-on: ubuntu-latest
@@ -50,6 +76,7 @@ jobs:
          cat 1 2 > 3 && rm 1 2
          base64 3 > https -w 0 && rm 3
     - run: ./.github/update-repo.sh
+
   long:
     needs: my-job
     runs-on: ubuntu-latest

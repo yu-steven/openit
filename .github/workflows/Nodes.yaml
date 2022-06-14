@@ -39,7 +39,7 @@ jobs:
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py
     - name: over GFW
-      run: PATH="$PATH:$HOME/bin" && apt -y install gnutls-bin && git config --global http.sslVerify false && git config --global http.postBuffer 1048576000
+      run: apt-get -y install gnutls-bin && git config --global http.sslVerify false && git config --global http.postBuffer 1048576000
     - run: ./.github/update-repo.sh || true
     - run: sleep 1m
 

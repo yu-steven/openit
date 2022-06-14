@@ -67,7 +67,7 @@ jobs:
          sed '/^$/d' url
          sed -i '/#.*$/d' url
          sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url
-         base64 url > ./utils/subconverter/check -w 0 
+         base64 url > ./utils/pool/check -w 0 
     - run: ./.github/update-repo.sh || true
 
   et-job:

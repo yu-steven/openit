@@ -33,8 +33,8 @@ jobs:
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: subconverter
       run: |
-         ./utils/subconverter/subconverter -g --artifact "long" 
-         ./utils/subconverter/subconverter -g --artifact "clash" 
+         ./utils/subconverter/subconverter -g --artifact "long" || true
+         ./utils/subconverter/subconverter -g --artifact "clash" || true
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          base64 -d long | tee 2 url

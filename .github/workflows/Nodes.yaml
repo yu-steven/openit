@@ -64,7 +64,7 @@ jobs:
          ./utils/subconverter/subconverter -g --artifact "rm"
          mv ./utils/subconverter/rm ./rm
          base64 -d rm > url && rm rm
-         sed '#.*$' url
+         sed -i '#.*$' url
          sort -u url -o url
          base64 url > ./utils/pool/check -w 0 
          ./.github/url.sh > ./1

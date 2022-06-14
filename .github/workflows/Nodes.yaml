@@ -50,7 +50,7 @@ jobs:
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git init
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
-    - nane: rm
+    - name: rm
       run: | 
          cd ./utils/subconverter/
          subconverter -g --artifact "rm"

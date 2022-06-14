@@ -62,11 +62,9 @@ jobs:
       run: ./utils/subconverter/subconverter -g --artifact "rm"
     - name: rm
       run: | 
-         mv ./utils/subconverter/rm ./rm
-         base64 -d rm > url && rm rm
-         # sed -ri 's/(#)[^]*/\#/'  url
-         sed -i '501,$d' url
-         sort -u url -o url
+         mv ./utils/subconverter/rm0 ./rm1
+         base64 -d rm1 > rm2 && rm rm1
+         ./utils/rm/index.js && rm rm2
          base64 url > ./utils/pool/check -w 0 
          ./.github/url.sh > ./1
          cp ./url ./2

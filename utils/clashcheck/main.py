@@ -11,7 +11,16 @@ import yaml
 import requests
 import shutil
 import subprocess
+import geoip2.database
 
+def geoip_update(url):
+        print('Downloading Country.mmdb...')
+        try:
+            request.urlretrieve(url, './utils/clashcheck/Country.mmdb')
+            print('Success!\n')
+        except Exception:
+            print('Failed!\n')
+            pass
 
 def check(alive, proxy, apiurl,sema,timeout):
     try:

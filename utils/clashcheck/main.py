@@ -51,7 +51,7 @@ def check(alive, proxy, apiurl,sema,timeout):
 
 
 if __name__ == '__main__':
-    geoip_update('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb')
+    geoip_update('https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb')
     with Manager() as manager:
         if not os.path.exists('./temp'):
             os.mkdir('temp')

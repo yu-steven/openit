@@ -38,8 +38,12 @@ jobs:
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py
-    - run: ./.github/update-repo.sh
-    - run: sleep 3m
+    - run: ./.github/update-repo.sh || true
+    - run: sleep 1m
+    - run: ./.github/update-repo.sh || true
+    - run: sleep 1m
+    - run: ./.github/update-repo.sh || true
+    - run: sleep 1m
 
   et-job:
     name: Encode & Translate
@@ -55,8 +59,8 @@ jobs:
       run: |
          ./utils/subconverter/subconverter -g --artifact "long" 
          ./utils/subconverter/subconverter -g --artifact "clash"
-         mv ./utils/subconverter/long ./long
-         mv ./utils/subconverter/Clash.yaml ./Clash.yaml
+         mv ./utils/subconverter/long ./long || true
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          base64 -d long | tee 2 url
          ./.github/url.sh > ./1
          cat 1 2 > 3 && rm 1 2

@@ -85,6 +85,7 @@ jobs:
          ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true
+         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml || true
          base64 -d long | tee 2 url
          ./.github/url.sh > ./1
          cat 1 2 > 3 && rm 1 2

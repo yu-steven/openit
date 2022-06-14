@@ -2,23 +2,17 @@ import requests,random,string
 
 sites=[
     {
-        "name":"feiniao",
-        "url":"https://feiniaoyun.tk/",
-        "reg_url":"https://feiniaoyun.tk/api/v1/passport/auth/register",
-        "sub":"https://feiniaoyun.tk/api/v1/client/subscribe?token={token}"
+        "name": "feiniao",
+        "url": "https://feiniaoyun.tk/",
+        "reg_url": "https://feiniaoyun.tk/api/v1/passport/auth/register",
+        "sub": "https://feiniaoyun.tk/api/v1/client/subscribe?token={token}",
     },
     {
-        "name":"ckcloud",
-        "url":"https://www.ckcloud.xyz/",
-        "reg_url":"https://www.ckcloud.xyz/api/v1/passport/auth/register",
-        "sub":"https://www.ckcloud.xyz/api/v1/client/subscribe?token={token}"
+        "name": "ckcloud",
+        "url": "https://nocnet.cloud/",
+        "reg_url": "https://nocnet.cloud/api/v1/passport/auth/register",
+        "sub": "https://nocnet.cloud/api/v1/client/subscribe?token={token}",
     },
-    {
-        "name":"circlecloud123",
-        "url":"https://circlecloud123.com/",
-        "reg_url":"https://circlecloud123.com/api/v1/passport/auth/register",
-        "sub":"https://circlecloud123.com/api/v1/client/subscribe?token={token}"
-    }
 ]
 
 class tempsite():

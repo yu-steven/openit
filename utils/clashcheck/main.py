@@ -11,16 +11,6 @@ import yaml
 import requests
 import shutil
 import subprocess
-import geoip2.database
-
-def geoip(url):
-        print('Downloading Country.mmdb...')
-        try:
-            request.urlretrieve(url, './utils/clashcheck/Country.mmdb')
-            print('Success!\n')
-        except Exception:
-            print('Failed!\n')
-            pass
 
 def check(alive, proxy, apiurl,sema,timeout):
     try:
@@ -51,7 +41,6 @@ def check(alive, proxy, apiurl,sema,timeout):
 
 
 if __name__ == '__main__':
-    geoip('https://download.fastgit.org/Loyalsoldier/geoip/release/Country.mmdb')
     with Manager() as manager:
         if not os.path.exists('./temp'):
             os.mkdir('temp')

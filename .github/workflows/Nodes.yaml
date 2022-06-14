@@ -39,7 +39,7 @@ jobs:
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py
     - name: over GFW
-      run: apt -y install gnutls-bin && git config --global http.sslVerify false && git config --global http.postBuffer 1048576000
+      run: PATH="$PATH:$HOME/bin" && apt -y install gnutls-bin && git config --global http.sslVerify false && git config --global http.postBuffer 1048576000
     - run: ./.github/update-repo.sh || true
     - run: sleep 1m
 
@@ -53,10 +53,17 @@ jobs:
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git init
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
+    - name: cut
+      run: |
+         ./utils/subconverter/subconverter -g --artifact "cut" 
+         mv ./utils/subconverter/cut ./cut || true
+         baee64 -d cut && sed -n 'G; /^\(.*\n\).*\n\1/d; h; P'
+    - run: ./.github/update-repo.sh
+    - run: sleep 1m
     - name: subconverter
       run: |
          ./utils/subconverter/subconverter -g --artifact "long" 
-         ./utils/subconverter/subconverter -g --artifact "clash"
+         ./utils/subconverter/subconverter -g --artifact "clash" 
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          base64 -d long | tee 2 url

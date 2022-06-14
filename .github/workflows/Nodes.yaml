@@ -36,6 +36,8 @@ jobs:
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
+    - name: Country.mmdb
+      run: wget -O Country.mmdb https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py
     - run: ./.github/update-repo.sh || true

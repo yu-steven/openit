@@ -82,13 +82,16 @@ jobs:
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git init
-      run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
+      run: | 
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
     - name: subconverter
       run: | 
          ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true
-         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml || true
+         rm ./utils/subconverter/pool.yaml
     - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./utils/pool/pool.yaml
 
   long:

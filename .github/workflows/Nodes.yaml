@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  cl-job: #input ./utils/pool/config.yaml
+  cl-job: #input./utils/pool/config.yaml
     name: Collecting 
     runs-on: ubuntu-latest
     steps:
@@ -25,9 +25,9 @@ jobs:
       run: pip install -r ./utils/pool/requirements.txt
     - name: main.py
       run: cd utils/pool/ && python main.py
-    - run: ./.github/update-repo.sh || true   #output ./utils/pool/output.yaml
+    - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
-  cc-job: #input ./utils/clashcheck/config.yaml
+  cc-job: #input./utils/clashcheck/config.yaml
     name: ClashCheck
     # needs: cl-job
     runs-on: ubuntu-latest
@@ -44,9 +44,9 @@ jobs:
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
-    - run: ./.github/update-repo.sh || true   #output ./utils/clashcheck/check.yaml
+    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
 
-  rm-job: #input ./utils/clashcheck/check.yaml
+  rm-job: #input./utils/clashcheck/check.yaml
     name: rm
     needs: cc-job
     runs-on: ubuntu-latest
@@ -68,9 +68,9 @@ jobs:
          sed -i '/#.*$/d' url
          sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url
          base64 url > ./utils/pool/check -w 0 
-    - run: ./.github/update-repo.sh || true   #output ./url & ./utils/pool/check
+    - run: ./.github/update-repo.sh || true   #output./url & ./utils/pool/check
 
-  et-job: #input ./utils/pool/check
+  et-job: #input./utils/pool/check
     name: Encode & Translate
     needs: rm-job
     runs-on: ubuntu-latest
@@ -90,7 +90,7 @@ jobs:
          base64 -d long > ./2
          cat 1 2 > 3 && rm 1 2
          base64 3 > https -w 0 && rm 3
-    - run: ./.github/update-repo.sh || true   #output ./long & ./Clash.yaml & ./https
+    - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./https
 
   long:
     needs: et-job

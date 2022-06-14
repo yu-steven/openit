@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  st-job:
-    name: Speedtest
+  cc-job:
+    name: ClashCheck
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
@@ -23,7 +23,7 @@ jobs:
 
   et-job:
     name: Encode & Translate
-    needs: st-job
+    needs: cc-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3

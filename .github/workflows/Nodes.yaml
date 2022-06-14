@@ -23,7 +23,6 @@ jobs:
     - name: main.py
       run: cd utils/pool/ && python main.py
     - run: ./.github/update-repo.sh
-    - run: sleep 5m
 
   cc-job:
     name: ClashCheck
@@ -40,7 +39,6 @@ jobs:
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py
     - run: ./.github/update-repo.sh || true
-    - run: sleep 3m
 
   et-job:
     name: Encode & Translate

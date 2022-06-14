@@ -1,12 +1,33 @@
+
 name: Nodes
 on: 
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
+  cl-job:
+    name: Collecting 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git init
+      run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
+    - name: requirements.txt
+      run: pip install -r ./utils/pool/requirements.txt
+    - name: main.py
+      run: cd utils/pool/ && python main.py
+    - run: ./.github/update-repo.sh
+    - run: sleep 5m
+
   cc-job:
     name: ClashCheck
+    needs: cl-job
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
@@ -18,8 +39,8 @@ jobs:
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py
-    - run: ./.github/update-repo.sh
-    - run: sleep 1m
+    - run: ./.github/update-repo.sh || true
+    - run: sleep 3m
 
   et-job:
     name: Encode & Translate
@@ -34,14 +55,14 @@ jobs:
     - name: subconverter
       run: |
          ./utils/subconverter/subconverter -g --artifact "long" || true
-         ./utils/subconverter/subconverter -g --artifact "clash" || true
+         ./utils/subconverter/subconverter -g --artifact "clash" ||true
          mv ./utils/subconverter/long ./long || true
-         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true
          base64 -d long | tee 2 url
          ./.github/url.sh > ./1
          cat 1 2 > 3 && rm 1 2
          base64 3 > https -w 0 && rm 3
-    - run: ./.github/update-repo.sh || true
+    - run: ./.github/update-repo.sh
 
   long:
     needs: et-job

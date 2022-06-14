@@ -43,8 +43,8 @@ jobs:
          cd ./utils/subconverter/
          subconverter -g --artifact "long"
          base64 -d long > url && rm long
-         sed -i '/#.*$/d' url #删除“#”后的字符
-         sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url #去重
+         sed -i '/#.*$/d' url
+         sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url
          base64 url > check -w 0 && rm url
     - run: ./.github/update-repo.sh || true
 

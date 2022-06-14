@@ -52,8 +52,8 @@ jobs:
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: rm
       run: | 
-         cd ./utils/subconverter/
-         subconverter -g --artifact "rm"
+         ./utils/subconverter/subconverter -g --artifact "rm"
+         mv ./utils/subconverter/rm ./rm
          base64 -d rm > url && rm rm
          sed -i '/#.*$/d' url
          sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url

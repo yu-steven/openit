@@ -13,7 +13,7 @@ import shutil
 import subprocess
 import geoip2.database
 
-def geoip2.database(url):
+def geoip_update(url):
         print('Downloading Country.mmdb...')
         try:
             request.urlretrieve(url, './utils/clashcheck/Country.mmdb')
@@ -51,6 +51,7 @@ def check(alive, proxy, apiurl,sema,timeout):
 
 
 if __name__ == '__main__':
+    geoip_update('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb')
     with Manager() as manager:
         if not os.path.exists('./temp'):
             os.mkdir('temp')

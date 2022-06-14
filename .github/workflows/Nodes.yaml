@@ -41,7 +41,7 @@ jobs:
          ./.github/url.sh > ./1
          cat 1 2 > 3 && rm 1 2
          base64 3 > https -w 0 && rm 3
-    - run: ./.github/update-repo.sh
+    - run: ./.github/update-repo.sh || true
 
   long:
     needs: et-job

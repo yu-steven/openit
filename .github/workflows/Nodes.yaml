@@ -18,7 +18,7 @@ jobs:
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py
-    - run: ./.github/update-repo.sh || true
+    - run: ./.github/update-repo.sh
     - run: sleep 1m
 
   et-job:

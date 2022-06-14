@@ -51,6 +51,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git init
@@ -64,7 +67,7 @@ jobs:
       run: | 
          mv ./utils/subconverter/rm0 ./rm1
          base64 -d rm1 > rm2 && rm rm1
-         ./utils/rm/index.js && rm rm2
+         ./utils/rm/index.js && rm rm2 && mv ./utils/rm/url ./url
          base64 url > ./utils/pool/check -w 0 
          ./.github/url.sh > ./1
          cp ./url ./2

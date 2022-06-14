@@ -13,7 +13,7 @@ import shutil
 import subprocess
 import geoip2.database
 
-def geoip_update(url):
+def geoip2.database(url):
         print('Downloading Country.mmdb...')
         try:
             request.urlretrieve(url, './utils/clashcheck/Country.mmdb')

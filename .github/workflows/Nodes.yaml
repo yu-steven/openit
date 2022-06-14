@@ -68,9 +68,12 @@ jobs:
          sed -i '/#.*$/d' url
          sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url
          base64 url > ./utils/pool/check -w 0 
-    - run: ./.github/update-repo.sh || true   #output./url & ./utils/pool/check
+         ./.github/url.sh > ./1
+         cat 1 2 > 3 && rm 1 2
+         base64 3 > https -w 0 && rm 3
+    - run: ./.github/update-repo.sh || true   #output./url & ./https & ./utils/pool/check
 
-  et-job: #input./utils/pool/check
+  et-job: #input./utils/pool/check & ./utils/pool/pool
     name: Encode & Translate
     needs: rm-job
     runs-on: ubuntu-latest
@@ -86,11 +89,7 @@ jobs:
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true
          mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml || true
-         ./.github/url.sh > ./1
-         base64 -d long > ./2
-         cat 1 2 > 3 && rm 1 2
-         base64 3 > https -w 0 && rm 3
-    - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./https
+    - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./utils/pool/pool.yaml
 
   long:
     needs: et-job

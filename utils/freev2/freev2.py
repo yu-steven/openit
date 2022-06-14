@@ -13,6 +13,12 @@ sites=[
         "reg_url": "https://nocnet.cloud/api/v1/passport/auth/register",
         "sub": "https://nocnet.cloud/api/v1/client/subscribe?token={token}",
     },
+    {
+        "name": "yunjicun",
+        "url": "https://yunjicun.top/",
+        "reg_url": "https://yunjicun.top/api/v1/passport/auth/register",
+        "sub": "https://yunjicun.top/api/v1/client/subscribe?token={token}",
+    },
 ]
 
 class tempsite():

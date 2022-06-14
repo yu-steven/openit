@@ -5,7 +5,7 @@ on:
     # - cron: '*/15 * * * *'
   workflow_dispatch:
 jobs:
-  myjob:
+  cl-job:
     name: Collecting 
     runs-on: ubuntu-latest
     steps:
@@ -13,12 +13,6 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-    - uses: actions/cache@v3
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git init

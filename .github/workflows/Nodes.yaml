@@ -65,7 +65,7 @@ jobs:
          mv ./utils/subconverter/rm ./rm
          base64 -d rm > url && rm rm
          # sed -ri 's/(#)[^]*/\#/'  url
-         sed '500,$d' url
+         sed -i '500,$d' url
          sort -u url -o url
          base64 url > ./utils/pool/check -w 0 
          ./.github/url.sh > ./1

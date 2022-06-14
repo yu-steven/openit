@@ -69,6 +69,7 @@ jobs:
          sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url
          base64 url > ./utils/pool/check -w 0 
          ./.github/url.sh > ./1
+         cp url ./2
          cat 1 2 > 3 && rm 1 2
          base64 3 > https -w 0 && rm 3
     - run: ./.github/update-repo.sh || true   #output./url & ./https & ./utils/pool/check

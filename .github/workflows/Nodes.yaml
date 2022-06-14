@@ -38,6 +38,14 @@ jobs:
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
+    - name: 去重
+      run: | 
+         cd ./utils/subconverter/
+         subconverter -g --artifact "long"
+         base64 -d long > url && rm long
+         sed -i '/#.*$/d' url #删除“#”后的字符
+         sed -i -n 'G; /^\(.*\n\).*\n\1/d; h; P' url #去重
+         base64 url > check -w 0 && rm url
     - run: ./.github/update-repo.sh || true
 
   et-job:
@@ -51,7 +59,7 @@ jobs:
     - name: git init
       run: git config --local user.email "actions@github.com"&&git config --local user.name "GitHub Actions"
     - name: subconverter
-      run: |
+      run: | 
          ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true

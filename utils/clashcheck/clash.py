@@ -11,7 +11,7 @@ def push(list, outfile):
             {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
              'interval': 300}, {'name': 'Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,Proxy']}
-    with maxminddb.open_database('GeoLite2-Country.mmdb') as countrify:
+    with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
             try:

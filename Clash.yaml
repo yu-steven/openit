@@ -5,94 +5,476 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN 103, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: 🇨🇳 CN 1449, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: 🇨🇳 CN 193, server: 14.29.124.168, port: 24001, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 2638, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: 🇨🇳 CN 2726, server: 116.129.254.212, port: 48617, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: Vm0weGQxTXdNVWRYV0doV1ltdHdUMVp0TVc5V01XeFZVMnhPYWxac1dqQmFWVll3Vm14YWMyTkliRmRpVkZaeVdWZDRZV014WkhGU2JIQk9VbTVDZVZkV1VrdFRNVTVIVm01T2FGSnVRbGhXYlRWRFZFWmFWbGRyV2xGVlZEQTU=, udp: true}
-  - {name: 🇨🇳 CN 2954, server: 116.129.254.212, port: 48607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: 🇨🇳 CN 2961, server: 116.129.254.212, port: 48603, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: 🇨🇳 CN 521, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: 🇨🇳 CN 529, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: 🇨🇳 CN 537, server: 116.129.254.212, port: 48606, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
+  - {name: CZ, server: cz.vce.com, port: 0, type: trojan, password: HTrovQkamDxNfaD, skip-cert-verify: true, udp: true}
+  - {name: CZ 2, server: vcross.com..vce.com, port: 0, type: trojan, password: ZDdLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
+  - {name: CZ 3, server: vcross.com..vce.com, port: 0, type: trojan, password: ZDdLSBXiMrmzdLd, sni: vcross.com..vce.com, skip-cert-verify: true, udp: true}
+  - {name: CZ 4, server: t.ssrsub.com, port: 0, type: trojan, password: ff-fc---afeebd, skip-cert-verify: true, udp: true}
+  - {name: CZ 5, server: t.ssrsub.com, port: 0, type: trojan, password: ff-fc---afeebd, sni: douyincdn.com, skip-cert-verify: true, udp: true}
+  - {name: CZ 6, server: vcross.com..vce.com, port: 0, type: trojan, password: gLlCYBipVwrYF, skip-cert-verify: true, udp: true}
+  - {name: CZ 7, server: vcross.com..vce.com, port: 0, type: trojan, password: kGrwqmBnEKUsDwE, skip-cert-verify: true, udp: true}
+  - {name: CZ 8, server: vcross.com..vce.com, port: 0, type: trojan, password: kGrwqmBnEKUsDwE, sni: vcross.com..vce.com, skip-cert-verify: true, udp: true}
+  - {name: CZ 9, server: vcross.com..vce.com, port: 0, type: trojan, password: mMQqJBxbhiRvgg, skip-cert-verify: true, udp: true}
+  - {name: CZ 10, server: vcross.com..vce.com, port: 0, type: trojan, password: vGWCNNfBHwSYmM, skip-cert-verify: true, udp: true}
+  - {name: CZ 11, server: ce.rutracker-cn.com, port: 0, type: trojan, password: yyCwxRVYhyfSY, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 AU, server: jgwxn.gaox.ml, port: 0, type: trojan, password: cbda-af-ff-bf-fabcbf, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 AU 2, server: ..., port: 0, type: trojan, password: yFqNCPmVfpXJz, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 AU 3, server: ..., port: 0, type: trojan, password: yFqNCPmVfpXJz, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 AU 4, server: au-.nigirocloud.com, port: 0, type: trojan, password: yFqNCPmVfpXJz, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 AU 5, server: au-.nigirocloud.com, port: 0, type: trojan, password: yFqNCPmVfpXJz, sni: au-.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN, server: sg-cn.teacher.com, port: 0, type: trojan, password: EFE-BE-BD-AEAF-DBABED, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2, server: sg-cn.teacher.com, port: 0, type: trojan, password: EFE-BE-BD-AEAF-DBABED, sni: sg-cn.teacher.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 3, server: cm.spacez.cloud, port: 0, type: trojan, password: caad-d--e-fab, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4, server: cm.spacez.cloud, port: 0, type: trojan, password: caad-d--e-fab, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 5, server: cu-cs.okvpn.xyz, port: 0, type: trojan, password: ebaab--a-af-faa, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 6, server: cu-cs.okvpn.xyz, port: 0, type: trojan, password: ebaab--a-af-faa, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 TW, server: tw.fans.xyz, port: 0, type: trojan, password: bbdffa-e-d-aab-abcbd, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 TW 2, server: tw.fans.xyz, port: 0, type: trojan, password: bbdffa-e-d-aab-abcbd, sni: tw.fans.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE, server: tt.tjvpn.top, port: 0, type: trojan, password: cbcdf-b-c-a-abaeed, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 2, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 3, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, sni: edge.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 4, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, sni: s.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB, server: jgwld.gaox.ml, port: 0, type: trojan, password: ba-fac--abff-eaadc, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 2, server: jgwld.gaox.ml, port: 0, type: trojan, password: dc-b---dce, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 3, server: jgwld.gaox.ml, port: 0, type: trojan, password: dfdaaa---aa-beef, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 4, server: jgwld.gaox.ml, port: 0, type: trojan, password: dfdaaa---aa-beef, sni: jgwld.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 5, server: jgwld.gaox.ml, port: 0, type: trojan, password: ec-c-a-d-bdc, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK, server: AZHJ.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 2, server: AZHJ.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: ssl.ssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 3, server: AZQT.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 4, server: AZQT.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: ssl.ssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 5, server: HJ.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 6, server: HJ.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: ssl.ssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 7, server: azgy.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 8, server: azgy.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: azgy.xiba.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 9, server: azgy.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: ssl.ssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 10, server: azhj.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 11, server: azhj.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: azhj.xiba.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 12, server: azhj.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: ssl.ssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 13, server: azqt.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 14, server: azqt.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: azqt.xiba.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 15, server: azqt.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: ssl.ssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 16, server: hj.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 17, server: hj.xiba.xyz, port: 0, type: trojan, password: -fc-e--ffccaaa, sni: hj.xiba.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 18, server: anonymousnetwork.ga, port: 0, type: trojan, password: Roy., skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 19, server: zou.zz.shop, port: 0, type: trojan, password: faa-c-b-c-faccf, sni: hk.zzk.me, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN, server: jgwhdlb.gaox.ml, port: 0, type: trojan, password: -cba---bdaa, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN 2, server: jgwhdlb.gaox.ml, port: 0, type: trojan, password: baaf-bc--bd-ccdaea, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN 3, server: jgwhdlb.gaox.ml, port: 0, type: trojan, password: ecb-cb-b-c-dcfedfa, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP, server: jgwdb.gaox.ml, port: 0, type: trojan, password: ad-ee-df-bf-dcae, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 2, server: jgwdb.gaox.ml, port: 0, type: trojan, password: daf-ff--be-aabca, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 3, server: jgwdb.gaox.ml, port: 0, type: trojan, password: dd-d--f-fdfda, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 4, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 5, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, sni: edge.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 6, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, sni: s.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 7, server: jp.useanlo.cf, port: 0, type: trojan, password: fa-be-c-beea-baf, sni: jp.useanlo.cf, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR, server: kr.wangxd.life, port: 0, type: trojan, password: accc-ee-cf-c-fcde, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 2, server: kr.wangxd.life, port: 0, type: trojan, password: accc-ee-cf-c-fcde, sni: kr.wangxd.life, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 3, server: jgwcc.gaox.ml, port: 0, type: trojan, password: bd-ee--ab-becb, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 4, server: jgwcc.gaox.ml, port: 0, type: trojan, password: bf-ea-c-bef-cbea, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 5, server: jgwcc.gaox.ml, port: 0, type: trojan, password: bf-ea-c-bef-cbea, sni: jgwcc.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 6, server: ..., port: 0, type: trojan, password: cb---c-bf, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 7, server: ..., port: 0, type: trojan, password: cb---c-bf, sni: az.qianchenzi.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 8, server: krcc.feethree.top, port: 0, type: trojan, password: fa-be-c-beea-baf, sni: krcc.feethree.top, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 9, server: jgw.gaox.ml, port: 0, type: trojan, password: fe-be-fd-ba-abb, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG, server: w.udpgw.com, port: 0, type: trojan, password: -eb-ec-aa-d, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 2, server: trojan.udpgw.com, port: 0, type: trojan, password: affaee-eb-ec-bf-d, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 3, server: trojan.udpgw.com, port: 0, type: trojan, password: affaee-eb-ec-bf-d, sni: trojan.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 4, server: hk.fans.xyz, port: 0, type: trojan, password: bbdffa-e-d-aab-abcbd, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 5, server: hk.fans.xyz, port: 0, type: trojan, password: bbdffa-e-d-aab-abcbd, sni: hk.fans.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 6, server: sghe.tjvpn.org, port: 0, type: trojan, password: bc-eec-ec-b-dbd, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 7, server: tj-sg.yiyodns.xyz, port: 0, type: trojan, password: c--a-ad-acb, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 8, server: w.udpgw.com, port: 0, type: trojan, password: c-eb-ec-f-d, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 9, server: trojan.udpgw.com, port: 0, type: trojan, password: ceaa-eb-ec-da-d, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 10, server: tj-sg.yiyodns.xyz, port: 0, type: trojan, password: dafee-be-f-bdfc-eabc, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 11, server: tj-sg.yiyodns.xyz, port: 0, type: trojan, password: dafee-be-f-bdfc-eabc, sni: tj-sg.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 12, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 13, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, sni: s.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 14, server: www.anloao.cf, port: 0, type: trojan, password: fa-be-c-beea-baf, sni: www.anloao.cf, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 15, server: w.udpgw.com, port: 0, type: trojan, password: fec-eb-ec-ab-d, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 16, server: sg.sharecentrepro.tk, port: 0, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 17, server: sg.sharecentrepro.tk, port: 0, type: trojan, password: sharecentre, sni: sg.sharecentrepro.tk, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US, server: fhcarm.gaox.ml, port: 0, type: trojan, password: -ce-cc-f-dcebf, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2, server: fhcarm.gaox.ml, port: 0, type: trojan, password: -ce-cc-f-dcebf, sni: fhcarm.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3, server: mc.vpshax.ml, port: 0, type: trojan, password: aca-d--b-cfae, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4, server: lsj.wangxd.life, port: 0, type: trojan, password: accc-ee-cf-c-fcde, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 5, server: lsj.wangxd.life, port: 0, type: trojan, password: accc-ee-cf-c-fcde, sni: lsj.wangxd.life, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 6, server: tj-us.yiyodns.xyz, port: 0, type: trojan, password: c--a-ad-acb, sni: tj-us.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 7, server: bai-piao-wang-zhe..xyz, port: 0, type: trojan, password: cbaede-ed--a-fefab, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 8, server: bai-piao-wang-zhe..xyz, port: 0, type: trojan, password: cbaede-ed--a-fefab, sni: bai-piao-wang-zhe..xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 9, server: tj-us.yiyodns.xyz, port: 0, type: trojan, password: dafee-be-f-bdfc-eabc, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 10, server: tj-us.yiyodns.xyz, port: 0, type: trojan, password: dafee-be-f-bdfc-eabc, sni: tj-us.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 11, server: fhcamd.gaox.ml, port: 0, type: trojan, password: dbfbfc-cf-a--dca, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 12, server: fhcamd.gaox.ml, port: 0, type: trojan, password: dbfbfc-cf-a--dca, sni: fhcamd.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 13, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 14, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, sni: edge.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 15, server: s.hazz.win, port: 0, type: trojan, password: dfbfd-fd--a-cdaf, sni: s.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 16, server: ..., port: 0, type: trojan, password: e-d--fb-edfbbd, sni: v-px-.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 17, server: fhcamd.gaox.ml, port: 0, type: trojan, password: efa-e--b-cb, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 18, server: fhcarm.gaox.ml, port: 0, type: trojan, password: fbd-ffe-c-b-aebf, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 19, server: bai-piao-wang-zhe..xyz, port: 0, type: trojan, password: mDmaAWoWXB, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 20, server: ussc.scsevers.cf, port: 0, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 21, server: cd.rutracker-cn.com, port: 0, type: trojan, password: ukMzuFSmIXDvgWh, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
     proxies:
       - 💡 自动选择
       - ☁️ 全球直连
-      - 🇨🇳 CN 103
-      - 🇨🇳 CN 1449
-      - 🇨🇳 CN 193
-      - 🇨🇳 CN 2638
-      - 🇨🇳 CN 2726
-      - 🇨🇳 CN 2954
-      - 🇨🇳 CN 2961
-      - 🇨🇳 CN 521
-      - 🇨🇳 CN 529
-      - 🇨🇳 CN 537
+      - CZ
+      - CZ 2
+      - CZ 3
+      - CZ 4
+      - CZ 5
+      - CZ 6
+      - CZ 7
+      - CZ 8
+      - CZ 9
+      - CZ 10
+      - CZ 11
+      - 🇦🇺 AU
+      - 🇦🇺 AU 2
+      - 🇦🇺 AU 3
+      - 🇦🇺 AU 4
+      - 🇦🇺 AU 5
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 TW
+      - 🇨🇳 TW 2
+      - 🇩🇪 DE
+      - 🇩🇪 DE 2
+      - 🇩🇪 DE 3
+      - 🇩🇪 DE 4
+      - 🇬🇧 GB
+      - 🇬🇧 GB 2
+      - 🇬🇧 GB 3
+      - 🇬🇧 GB 4
+      - 🇬🇧 GB 5
+      - 🇭🇰 HK
+      - 🇭🇰 HK 2
+      - 🇭🇰 HK 3
+      - 🇭🇰 HK 4
+      - 🇭🇰 HK 5
+      - 🇭🇰 HK 6
+      - 🇭🇰 HK 7
+      - 🇭🇰 HK 8
+      - 🇭🇰 HK 9
+      - 🇭🇰 HK 10
+      - 🇭🇰 HK 11
+      - 🇭🇰 HK 12
+      - 🇭🇰 HK 13
+      - 🇭🇰 HK 14
+      - 🇭🇰 HK 15
+      - 🇭🇰 HK 16
+      - 🇭🇰 HK 17
+      - 🇭🇰 HK 18
+      - 🇭🇰 HK 19
+      - 🇮🇳 IN
+      - 🇮🇳 IN 2
+      - 🇮🇳 IN 3
+      - 🇯🇵 JP
+      - 🇯🇵 JP 2
+      - 🇯🇵 JP 3
+      - 🇯🇵 JP 4
+      - 🇯🇵 JP 5
+      - 🇯🇵 JP 6
+      - 🇯🇵 JP 7
+      - 🇰🇷 KR
+      - 🇰🇷 KR 2
+      - 🇰🇷 KR 3
+      - 🇰🇷 KR 4
+      - 🇰🇷 KR 5
+      - 🇰🇷 KR 6
+      - 🇰🇷 KR 7
+      - 🇰🇷 KR 8
+      - 🇰🇷 KR 9
+      - 🇸🇬 SG
+      - 🇸🇬 SG 2
+      - 🇸🇬 SG 3
+      - 🇸🇬 SG 4
+      - 🇸🇬 SG 5
+      - 🇸🇬 SG 6
+      - 🇸🇬 SG 7
+      - 🇸🇬 SG 8
+      - 🇸🇬 SG 9
+      - 🇸🇬 SG 10
+      - 🇸🇬 SG 11
+      - 🇸🇬 SG 12
+      - 🇸🇬 SG 13
+      - 🇸🇬 SG 14
+      - 🇸🇬 SG 15
+      - 🇸🇬 SG 16
+      - 🇸🇬 SG 17
+      - 🇺🇸 US
+      - 🇺🇸 US 2
+      - 🇺🇸 US 3
+      - 🇺🇸 US 4
+      - 🇺🇸 US 5
+      - 🇺🇸 US 6
+      - 🇺🇸 US 7
+      - 🇺🇸 US 8
+      - 🇺🇸 US 9
+      - 🇺🇸 US 10
+      - 🇺🇸 US 11
+      - 🇺🇸 US 12
+      - 🇺🇸 US 13
+      - 🇺🇸 US 14
+      - 🇺🇸 US 15
+      - 🇺🇸 US 16
+      - 🇺🇸 US 17
+      - 🇺🇸 US 18
+      - 🇺🇸 US 19
+      - 🇺🇸 US 20
+      - 🇺🇸 US 21
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN 103
-      - 🇨🇳 CN 1449
-      - 🇨🇳 CN 193
-      - 🇨🇳 CN 2638
-      - 🇨🇳 CN 2726
-      - 🇨🇳 CN 2954
-      - 🇨🇳 CN 2961
-      - 🇨🇳 CN 521
-      - 🇨🇳 CN 529
-      - 🇨🇳 CN 537
+      - CZ
+      - CZ 2
+      - CZ 3
+      - CZ 4
+      - CZ 5
+      - CZ 6
+      - CZ 7
+      - CZ 8
+      - CZ 9
+      - CZ 10
+      - CZ 11
+      - 🇦🇺 AU
+      - 🇦🇺 AU 2
+      - 🇦🇺 AU 3
+      - 🇦🇺 AU 4
+      - 🇦🇺 AU 5
+      - 🇨🇳 CN
+      - 🇨🇳 CN 2
+      - 🇨🇳 CN 3
+      - 🇨🇳 CN 4
+      - 🇨🇳 CN 5
+      - 🇨🇳 CN 6
+      - 🇨🇳 TW
+      - 🇨🇳 TW 2
+      - 🇩🇪 DE
+      - 🇩🇪 DE 2
+      - 🇩🇪 DE 3
+      - 🇩🇪 DE 4
+      - 🇬🇧 GB
+      - 🇬🇧 GB 2
+      - 🇬🇧 GB 3
+      - 🇬🇧 GB 4
+      - 🇬🇧 GB 5
+      - 🇭🇰 HK
+      - 🇭🇰 HK 2
+      - 🇭🇰 HK 3
+      - 🇭🇰 HK 4
+      - 🇭🇰 HK 5
+      - 🇭🇰 HK 6
+      - 🇭🇰 HK 7
+      - 🇭🇰 HK 8
+      - 🇭🇰 HK 9
+      - 🇭🇰 HK 10
+      - 🇭🇰 HK 11
+      - 🇭🇰 HK 12
+      - 🇭🇰 HK 13
+      - 🇭🇰 HK 14
+      - 🇭🇰 HK 15
+      - 🇭🇰 HK 16
+      - 🇭🇰 HK 17
+      - 🇭🇰 HK 18
+      - 🇭🇰 HK 19
+      - 🇮🇳 IN
+      - 🇮🇳 IN 2
+      - 🇮🇳 IN 3
+      - 🇯🇵 JP
+      - 🇯🇵 JP 2
+      - 🇯🇵 JP 3
+      - 🇯🇵 JP 4
+      - 🇯🇵 JP 5
+      - 🇯🇵 JP 6
+      - 🇯🇵 JP 7
+      - 🇰🇷 KR
+      - 🇰🇷 KR 2
+      - 🇰🇷 KR 3
+      - 🇰🇷 KR 4
+      - 🇰🇷 KR 5
+      - 🇰🇷 KR 6
+      - 🇰🇷 KR 7
+      - 🇰🇷 KR 8
+      - 🇰🇷 KR 9
+      - 🇸🇬 SG
+      - 🇸🇬 SG 2
+      - 🇸🇬 SG 3
+      - 🇸🇬 SG 4
+      - 🇸🇬 SG 5
+      - 🇸🇬 SG 6
+      - 🇸🇬 SG 7
+      - 🇸🇬 SG 8
+      - 🇸🇬 SG 9
+      - 🇸🇬 SG 10
+      - 🇸🇬 SG 11
+      - 🇸🇬 SG 12
+      - 🇸🇬 SG 13
+      - 🇸🇬 SG 14
+      - 🇸🇬 SG 15
+      - 🇸🇬 SG 16
+      - 🇸🇬 SG 17
+      - 🇺🇸 US
+      - 🇺🇸 US 2
+      - 🇺🇸 US 3
+      - 🇺🇸 US 4
+      - 🇺🇸 US 5
+      - 🇺🇸 US 6
+      - 🇺🇸 US 7
+      - 🇺🇸 US 8
+      - 🇺🇸 US 9
+      - 🇺🇸 US 10
+      - 🇺🇸 US 11
+      - 🇺🇸 US 12
+      - 🇺🇸 US 13
+      - 🇺🇸 US 14
+      - 🇺🇸 US 15
+      - 🇺🇸 US 16
+      - 🇺🇸 US 17
+      - 🇺🇸 US 18
+      - 🇺🇸 US 19
+      - 🇺🇸 US 20
+      - 🇺🇸 US 21
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 HK
+      - 🇭🇰 HK 2
+      - 🇭🇰 HK 3
+      - 🇭🇰 HK 4
+      - 🇭🇰 HK 5
+      - 🇭🇰 HK 6
+      - 🇭🇰 HK 7
+      - 🇭🇰 HK 8
+      - 🇭🇰 HK 9
+      - 🇭🇰 HK 10
+      - 🇭🇰 HK 11
+      - 🇭🇰 HK 12
+      - 🇭🇰 HK 13
+      - 🇭🇰 HK 14
+      - 🇭🇰 HK 15
+      - 🇭🇰 HK 16
+      - 🇭🇰 HK 17
+      - 🇭🇰 HK 18
+      - 🇭🇰 HK 19
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP
+      - 🇯🇵 JP 2
+      - 🇯🇵 JP 3
+      - 🇯🇵 JP 4
+      - 🇯🇵 JP 5
+      - 🇯🇵 JP 6
+      - 🇯🇵 JP 7
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇺🇸 US
+      - 🇺🇸 US 2
+      - 🇺🇸 US 3
+      - 🇺🇸 US 4
+      - 🇺🇸 US 5
+      - 🇺🇸 US 6
+      - 🇺🇸 US 7
+      - 🇺🇸 US 8
+      - 🇺🇸 US 9
+      - 🇺🇸 US 10
+      - 🇺🇸 US 11
+      - 🇺🇸 US 12
+      - 🇺🇸 US 13
+      - 🇺🇸 US 14
+      - 🇺🇸 US 15
+      - 🇺🇸 US 16
+      - 🇺🇸 US 17
+      - 🇺🇸 US 18
+      - 🇺🇸 US 19
+      - 🇺🇸 US 20
+      - 🇺🇸 US 21
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇨🇳 TW
+      - 🇨🇳 TW 2
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 SG
+      - 🇸🇬 SG 2
+      - 🇸🇬 SG 3
+      - 🇸🇬 SG 4
+      - 🇸🇬 SG 5
+      - 🇸🇬 SG 6
+      - 🇸🇬 SG 7
+      - 🇸🇬 SG 8
+      - 🇸🇬 SG 9
+      - 🇸🇬 SG 10
+      - 🇸🇬 SG 11
+      - 🇸🇬 SG 12
+      - 🇸🇬 SG 13
+      - 🇸🇬 SG 14
+      - 🇸🇬 SG 15
+      - 🇸🇬 SG 16
+      - 🇸🇬 SG 17
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇰🇷 KR
+      - 🇰🇷 KR 2
+      - 🇰🇷 KR 3
+      - 🇰🇷 KR 4
+      - 🇰🇷 KR 5
+      - 🇰🇷 KR 6
+      - 🇰🇷 KR 7
+      - 🇰🇷 KR 8
+      - 🇰🇷 KR 9
   - name: 🌍 其他地区
     type: select
     proxies:
-      - DIRECT
+      - 🇦🇺 AU
+      - 🇦🇺 AU 2
+      - 🇦🇺 AU 3
+      - 🇦🇺 AU 4
+      - 🇦🇺 AU 5
+      - 🇩🇪 DE
+      - 🇩🇪 DE 2
+      - 🇩🇪 DE 3
+      - 🇩🇪 DE 4
+      - 🇬🇧 GB
+      - 🇬🇧 GB 2
+      - 🇬🇧 GB 3
+      - 🇬🇧 GB 4
+      - 🇬🇧 GB 5
+      - 🇮🇳 IN
+      - 🇮🇳 IN 2
+      - 🇮🇳 IN 3
   - name: 👉 国内网站
     type: select
     proxies:

@@ -58,9 +58,10 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
+    - name: subconverter
+      run: ./utils/subconverter/subconverter -g --artifact "rm"
     - name: rm
       run: | 
-         ./utils/subconverter/subconverter -g --artifact "rm"
          mv ./utils/subconverter/rm ./rm
          base64 -d rm > url && rm rm
          sed -ri 's/(#)[^]*/\#/'  url

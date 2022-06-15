@@ -26,7 +26,7 @@ jobs:
       run: cd ./utils/pool/ && python main.py
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
-  cc-job: #input./utils/pool/output.yaml
+  cc-job: #input./utils/clashcheck/config.yaml
     name: ClashCheck
     # needs: cl-job
     runs-on: ubuntu-latest

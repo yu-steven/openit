@@ -26,26 +26,7 @@ jobs:
       run: cd ./utils/pool/ && python main.py
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
-  cc-job: #input./utils/clashcheck/config.yaml
-    name: ClashCheck
-    # needs: cl-job
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Timezone
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: git init
-      run: | 
-         git config pull.rebase false
-         git config --local user.name "GitHub Actions"
-         git config --local user.email "actions@github.com"
-    - name: requirements.txt
-      run: pip3 install -r ./utils/clashcheck/requirements.txt
-    - name: main.py
-      run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
-    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
-
-  rm-job: #input./utils/clashcheck/check.yaml
+  rm-job: #input./utils/pool/output.yaml
     name: rm
     needs: cc-job
     runs-on: ubuntu-latest
@@ -72,13 +53,32 @@ jobs:
     - name: url & https & check
       run: | 
          rm ./utils/rm/rm1 ./utils/rm/rm2
-         mv ./utils/rm/url ./url
-         base64 ./url > ./utils/pool/check -w 0 
-         ./.github/url.sh > ./1
-         cp ./url ./2
-         cat 1 2 > 3 && rm 1 2
-         base64 3 > https -w 0 && rm 3
-    - run: ./.github/update-repo.sh || true   #output./url & ./https & ./utils/pool/check
+         mv ./utils/rm/url ./utils/pool/output-rm
+         base64 ./utils/pool/output-rm > ./utils/pool/output-rm-b64 -w 0 && rm output-rm
+         ./.github/update-repo.sh || true   #output ./utils/pool/output-rm-b64
+         sleep 1m
+         ./utils/subconverter/subconverter -g --artifact "output"
+         mv ./utils/subconverter/output.yaml ./utils/pool/output.yaml
+    - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
+
+  cc-job: #input./utils/clashcheck/config.yaml
+    name: ClashCheck
+    # needs: cl-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git init
+      run: | 
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: requirements.txt
+      run: pip3 install -r ./utils/clashcheck/requirements.txt
+    - name: main.py
+      run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
+    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
 
   et-job: #input./utils/pool/check & ./utils/pool/pool
     name: Encode & Translate

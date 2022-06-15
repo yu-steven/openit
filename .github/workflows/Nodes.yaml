@@ -71,6 +71,7 @@ jobs:
          mv ./utils/rm/url ./url
          base64 url > ./utils/pool/check -w 0 
     - name: https
+      run: | 
          ./.github/url.sh > ./1
          cp ./url ./2
          cat 1 2 > 3 && rm 1 2

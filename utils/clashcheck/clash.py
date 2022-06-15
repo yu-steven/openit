@@ -51,7 +51,7 @@ with maxminddb.open_database('GeoLite2-Country.mmdb') as countrify:
             # print(list[i])
             # pass
 
-    with open(outfile, 'w') as writer:
+with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
 
 

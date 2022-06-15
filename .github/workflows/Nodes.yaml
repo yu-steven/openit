@@ -69,8 +69,8 @@ jobs:
          cd ./utils/rm/
          base64 -d rm1 > rm2 && rm rm1
          npm run start && rm rm2
-         mv ./utils/rm/url ./url
-         base64 ./url > ./utils/pool/check -w 0 
+         cd ./ && mv ./utils/rm/url ./url
+         base64 url > ./utils/pool/check -w 0 
     - name: https
       run: | 
          ./.github/url.sh > ./1

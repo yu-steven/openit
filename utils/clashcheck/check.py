@@ -7,7 +7,6 @@ def check(alive, proxy, apiurl, sema, timeout, testurl):
         r = requests.get(url=apiurl + '/proxies/' + str(
             proxy['name']) + '/delay?url='+testurl+'&timeout=' + str(timeout), timeout=10)
         response = json.loads(r.text)
-        print(response)
         if response['delay'] > 0:
             alive.append(proxy)
     except:

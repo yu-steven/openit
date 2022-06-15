@@ -53,7 +53,7 @@ jobs:
     - name: output-rm-b64 & output.yaml
       run: | #input./utils/rm/rm3
          rm ./utils/rm/rm1 ./utils/rm/rm2
-         base64 ./utils/rm/rm3 > ./utils/pool/output-rm-b64 -w 0 && rm rm3
+         base64 ./utils/rm/rm3 > ./utils/pool/output-rm-b64 -w 0 && rm ./utils/rm/rm3
          ./.github/update-repo.sh || true   #output./utils/pool/output-rm-b64
          sleep 1m
          #input./utils/pool/output-rm-b64

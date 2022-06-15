@@ -14,10 +14,10 @@ sites=[
         "sub": "https://nocnet.cloud/api/v1/client/subscribe?token={token}",
     },
     {
-        "name": "yunjicun",
-        "url": "https://yunjicun.top/",
-        "reg_url": "https://yunjicun.top/api/v1/passport/auth/register",
-        "sub": "https://yunjicun.top/api/v1/client/subscribe?token={token}",
+        "name": "xdmyyds",
+        "url": "https://xdmyyds.com/",
+        "reg_url": "https://xdmyyds.com/api/v1/passport/auth/register",
+        "sub": "https://xdmyyds.com/api/v1/client/subscribe?token={token}",
     },
 ]
 

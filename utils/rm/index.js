@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs');
 let urls = fs.readFileSync('./rm2','utf8');
 
 let urlList = urls.split('\n');

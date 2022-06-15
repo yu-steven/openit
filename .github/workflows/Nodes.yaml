@@ -67,7 +67,7 @@ jobs:
       run: | 
          mv ./utils/subconverter/rm1 ./rm1
          base64 -d rm1 > rm2 && rm rm1
-         npm run start && rm rm2
+         cd ./utils/rm && npm run start && rm rm2
          mv ./utils/rm/url ./url
          base64 url > ./utils/pool/check -w 0 
     - name: https

@@ -1,7 +1,7 @@
 name: Nodes
 on: 
-  # schedule:
-    # - cron: '*/40 * * * *'
+  schedule:
+    - cron: '*/40 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -26,44 +26,9 @@ jobs:
       run: cd ./utils/pool/ && python main.py
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
-  rm-job: #input./utils/pool/output.yaml
-    name: rm
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - name: Timezone
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: git init
-      run: | 
-         git config pull.rebase false
-         git config --local user.name "GitHub Actions"
-         git config --local user.email "actions@github.com"
-    - name: subconverter
-      run: ./utils/subconverter/subconverter -g --artifact "rm"   #output./utils/subconverter/rm1
-    - name: rm
-      run: | #input./utils/subconverter/rm1
-         mv ./utils/subconverter/rm1 ./utils/rm/rm1
-         cd ./utils/rm/
-         base64 -d rm1 > rm2 #output./utils/rm/rm2
-         #input./utils/rm/rm2
-         npm run start #output./utils/rm/rm3
-    - name: output-rm-b64 & output.yaml
-      run: | #input./utils/rm/rm3
-         rm ./utils/rm/rm1 ./utils/rm/rm2
-         base64 ./utils/rm/rm3 > ./utils/pool/output-rm-b64 -w 0 && rm ./utils/rm/rm3
-         ./.github/update-repo.sh || true   #output./utils/pool/output-rm-b64
-         sleep 1m
-         #input./utils/pool/output-rm-b64
-         ./utils/subconverter/subconverter -g --artifact "output"
-         mv ./utils/subconverter/output.yaml ./utils/pool/output.yaml
-    - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
-
   cc-job: #input./utils/pool/output.yaml
     name: ClashCheck
-    needs: rm-job
+    # needs: cl-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -80,9 +45,44 @@ jobs:
       run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
     - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
 
-  et-job: #input./utils/clashcheck/check.yaml & ./utils/pool/pool & ./utils/pool/output.yaml
-    name: Encode & Translate
+  rm-job: #input./utils/clashcheck/check.yaml
+    name: rm
     needs: cc-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git init
+      run: | 
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: subconverter
+      run: ./utils/subconverter/subconverter -g --artifact "rm"
+    - name: rm
+      run: | 
+         mv ./utils/subconverter/rm1 ./utils/rm/rm1
+         cd ./utils/rm/
+         base64 -d rm1 > rm2
+         npm run start
+    - name: url & https & check
+      run: | 
+         rm ./utils/rm/rm1 ./utils/rm/rm2
+         mv ./utils/rm/url ./url
+         base64 ./url > ./utils/pool/check -w 0 
+         ./.github/url.sh > ./1
+         cp ./url ./2
+         cat 1 2 > 3 && rm 1 2
+         base64 3 > https -w 0 && rm 3
+    - run: ./.github/update-repo.sh || true   #output./url & ./https & ./utils/pool/check
+
+  et-job: #input./utils/pool/check & ./utils/pool/pool
+    name: Encode & Translate
+    needs: rm-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -94,20 +94,12 @@ jobs:
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
     - name: subconverter
-      run: | #input./utils/clashcheck/check.yaml & ./utils/pool/pool & ./utils/pool/output.yaml
-         ./utils/subconverter/subconverter -g #output./utils/subconverter/long & ./utils/subconverter/Clash.yaml & ./utils/subconverter/pool.yaml & ./utils/subconverter/rm1 & ./utils/subconverter/output.yaml
+      run: | 
+         ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true
-         rm ./utils/subconverter/pool.yaml ./utils/subconverter/rm1 ./utils/subconverter/output.yaml
-         #input./long
-         base64 -d ./long | tee url 2 #output./url &./2
-         #input./.github/url.sh
-         ./.github/url.sh > ./1 #output./1
-         #input./1 & ./2
-         cat 1 2 > 3 && rm 1 2 #output./3
-         #input./3
-         base64 3 > https -w 0 && rm 3 #output./https
-    - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./url & ./https
+         rm ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
+    - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./utils/pool/pool.yaml
 
   long:
     needs: et-job

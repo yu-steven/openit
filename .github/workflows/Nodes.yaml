@@ -62,8 +62,7 @@ jobs:
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
     - name: subconverter
-      run: |
-         ./utils/subconverter/subconverter -g --artifact "rm"
+      run: ./utils/subconverter/subconverter -g --artifact "rm"
     - name: rm
       run: | 
          mv ./utils/subconverter/rm1 ./rm1

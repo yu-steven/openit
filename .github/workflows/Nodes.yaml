@@ -28,7 +28,6 @@ jobs:
 
   rm-job: #input./utils/pool/output.yaml
     name: rm
-    needs: cc-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -64,7 +63,7 @@ jobs:
 
   cc-job: #input./utils/pool/output.yaml
     name: ClashCheck
-    # needs: cl-job
+    needs: rm-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -83,7 +82,7 @@ jobs:
 
   et-job: #input./utils/clashcheck/check.yaml & ./utils/pool/pool & ./utils/pool/output.yaml
     name: Encode & Translate
-    needs: rm-job
+    needs: cc-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3

@@ -88,7 +88,7 @@ Oneclick 在mac下确实可用，但是如果能用其他的就用其他的。
 ##### [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者的解决方法](https://www.macwk.com/article/macos-file-damage)
 
 ## Android
-首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,附带箭头方向的是Google play地址),还有魔改ss和v2rayNG其次，魔改ss可以支持更多类型的节点；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Matsuri(中文名“茉莉”)作为SagerNet的一个分支，功能强大，很多人在用；Surfboard是一个与Surge配置兼容的代理实用工具；SS与SSR支持自己的协议
+首推Google play[^3]的Clash,没有条件可以下载apk安装包进行安装(蓝字是软件apk安装包地址,对应蓝字下方的是Google play地址),还有魔改ss和v2rayNG其次，魔改ss可以支持更多类型的节点；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Matsuri(中文名“茉莉”)作为SagerNet的一个分支，功能强大，很多人在用；Surfboard是一个与Surge配置兼容的代理实用工具；SS与SSR支持自己的协议
 
  <!--教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜-->
 ### [SS][apk-ss]

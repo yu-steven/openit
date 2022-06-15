@@ -23,7 +23,7 @@ jobs:
     - name: requirements.txt
       run: pip install -r ./utils/pool/requirements.txt
     - name: main.py
-      run: cd utils/pool/ && python main.py
+      run: cd ./utils/pool/ && python main.py
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
   cc-job: #input./utils/clashcheck/config.yaml
@@ -42,7 +42,7 @@ jobs:
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
-      run: cd utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
+      run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
     - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
 
   rm-job: #input./utils/clashcheck/check.yaml
@@ -65,9 +65,10 @@ jobs:
       run: ./utils/subconverter/subconverter -g --artifact "rm"
     - name: rm
       run: | 
-         mv ./utils/subconverter/rm1 ./rm1
+         mv ./utils/subconverter/rm1 ./utils/rm/rm1
+         cd ./utils/rm/
          base64 -d rm1 > rm2 && rm rm1
-         cd ./utils/rm && npm run start && rm rm2
+         npm run start && rm rm2
          mv ./utils/rm/url ./url
          base64 url > ./utils/pool/check -w 0 
     - name: https

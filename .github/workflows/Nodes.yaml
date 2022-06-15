@@ -69,9 +69,8 @@ jobs:
          cd ./utils/rm/
          base64 -d rm1 > rm2 && rm rm1
          npm run start && rm rm2
-         chmod +777 ./utils/rm/url
-         mv ./utils/rm/url ./url
-         #base64 url > ./utils/pool/check -w 0 
+         cat url > ./url
+         base64 ./url > ./utils/pool/check -w 0 
     - name: https
       run: | 
          ./.github/url.sh > ./1

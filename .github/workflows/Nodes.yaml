@@ -97,7 +97,7 @@ jobs:
          ./utils/subconverter/subconverter -g
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true
-         rm ./utils/subconverter/pool.yaml
+         rm ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
     - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./utils/pool/pool.yaml
 
   long:

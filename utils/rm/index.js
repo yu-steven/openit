@@ -60,4 +60,4 @@ for(let i=0;i<finalList.length;i++){
     }
 }
 console.log(`去重完成 \n总共${urlList.length}个节点，去重${urlList.length-finalURLs.length}个节点，剩余${finalURLs.length}个节点。`)
-fs.writeFileSync('./url',finalURLs.join('\n'))
+fs.writeFileSync('./rm3',finalURLs.join('\n'))

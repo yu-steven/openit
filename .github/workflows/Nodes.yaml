@@ -30,7 +30,8 @@ jobs:
   cc-job: #input./utils/clashcheck/config.yaml
     name: ClashCheck
     # needs: cl-job
-    runs-on: self-hosted
+    # runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: Timezone

@@ -67,7 +67,7 @@ def checkenv():
         if os.path.exists(mmdbfl):
             os.remove(mmdbfl)
         Countrymmdb = requests.get(
-            url='https://ghproxy.com/https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb')
+            url='https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb')
         os.makedirs('~/.config/clash/', exist_ok=True)
         with open(mmdbfl, 'wb') as writep:
             writep.write(Countrymmdb.content)
@@ -77,7 +77,7 @@ def checkenv():
         if os.path.exists(mmdbfl):
             os.remove(mmdbfl)
         Countrymmdb = requests.get(
-            url='https://ghproxy.com/https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb')
+            url='https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb')
         os.makedirs('~/.config/clash/', exist_ok=True)
         with open(mmdbfl, 'wb') as writep:
             writep.write(Countrymmdb.content)

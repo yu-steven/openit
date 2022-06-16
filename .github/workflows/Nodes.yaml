@@ -45,7 +45,7 @@ jobs:
          git config protocol.https.allow always
          pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
     - name: Country.mmdb
-      run: wget -P ./.config/clash/ https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O Country.mmdb 
+      run: wget -P ./.config/clash/ https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O Country.mmdb 
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py

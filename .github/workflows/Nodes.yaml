@@ -64,6 +64,7 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
+    - run: sleep 3m
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py

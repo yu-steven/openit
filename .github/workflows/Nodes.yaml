@@ -33,6 +33,7 @@ jobs:
     runs-on: self-hosted #python git pip
     # runs-on: ubuntu-latest
     steps:
+    - run: git config --local url."https://hub.fastgit.xyz/".insteadOf https://github.com/
     - uses: actions/checkout@v3
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
@@ -41,7 +42,7 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-         git config --global url."https://github.com/".insteadOf "https://hub.fastgit.xyz/"
+         git config --local url."https://github.com/".insteadOf "https://hub.fastgit.xyz/"
          git config protocol.https.allow always
          pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
     - name: requirements.txt

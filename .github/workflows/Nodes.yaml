@@ -28,7 +28,7 @@ jobs:
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
   ccu-job: #input./utils/clashcheck/config.yaml
-    name: ClashCheck
+    name: ClashCheck-ubuntu
     # needs: cl-job
     # runs-on: self-hosted
     runs-on: ubuntu-latest
@@ -51,7 +51,7 @@ jobs:
     - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
 
   ccs-job: #input./utils/clashcheck/config.yaml
-    name: ClashCheck
+    name: ClashCheck-self
     # needs: cl-job
     runs-on: self-hosted
     # runs-on: ubuntu-latest

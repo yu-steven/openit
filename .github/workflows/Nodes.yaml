@@ -63,29 +63,38 @@ jobs:
     - name: git init
       run: | 
          git config pull.rebase false
-         git config --local user.name "GitHub Actions"
+         git config --local user.name "
+GitHub Actions"
          git config --local user.email "actions@github.com"
-    - name: subconverter
-      run: ./utils/subconverter/subconverter -g --artifact "rm"
+    - name: subconverter #input./utils/clashcheck/check.yaml
+      run: ./utils/subconverter/subconverter -g --artifact "rm" #output./utils/subconverter/rm1
     - name: rm
-      run: | 
+      run: | #input./utils/subconverter/rm1
          mv ./utils/subconverter/rm1 ./utils/rm/rm1
          cd ./utils/rm/
-         base64 -d rm1 > rm2
-         npm install
-         npm start
+         #input./utils/rm/rm1
+         base64 -d rm1 > rm2 #output./utils/rm/rm2
+         npm install #input./utils/rm/package-lock.json
+         #input./utils/rm/rm2
+         npm start #output./utils/rm/url
     - name: url & https & check
-      run: | 
+      run: | #input./utils/rm/url ./url ./.github/url.sh ./1 ./2 ./3
          rm ./utils/rm/rm1 ./utils/rm/rm2
-         mv ./utils/rm/url ./url
-         base64 ./url > ./utils/pool/check -w 0 
-         ./.github/url.sh > ./1
-         cp ./url ./2
-         cat 1 2 > 3 && rm 1 2
-         base64 3 > https -w 0 && rm 3
-    - run: ./.github/update-repo.sh || true   #output./url & ./https & ./utils/pool/check
+         #input./utils/rm/url
+         mv ./utils/rm/url ./url #output./url
+         #input./url
+         base64 ./url > ./utils/pool/check -w 0 #output./utils/pool/check
+         #input./.github/url.sh
+         ./.github/url.sh > ./1 #output./1
+         #input./url
+         cp ./url ./2 output./2
+         #input./1 ./2
+         cat 1 2 > 3 && rm 1 2 #output./3
+         #input./3
+         base64 3 > https -w 0 && rm 3 #output./https
+    - run: ./.github/update-repo.sh || true   #output./url ./https ./utils/pool/check
 
-  et-job: #input./utils/pool/check & ./utils/pool/pool
+  et-job: #input./utils/pool/check ./utils/pool/pool
     name: Encode & Translate
     needs: rm-job
     runs-on: ubuntu-latest

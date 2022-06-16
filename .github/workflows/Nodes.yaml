@@ -64,9 +64,9 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-         git config --global url."https://hub.fastgit.xyz/".insteadOf "https://github.com/"
+         git config --local url."https://hub.fastgit.xyz/".insteadOf "https://github.com/"
          git config protocol.https.allow always
-         pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+         pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py

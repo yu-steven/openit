@@ -30,8 +30,6 @@ def init():
     baseurl = '127.0.0.1:' + str(api_port)
     apiurl = 'http://'+baseurl
 
-    # clash config to use with testing
-4
     # filter config files
     proxyconfig = filter(proxyconfig)
 

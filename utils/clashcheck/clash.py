@@ -132,11 +132,11 @@ def filter(config):
                                 ss_omit_ip_dupe = ss_omit_ip_dupe + 1
                                 continue
                             else:
-                                iplist.append(ip)
+                                iplist[ip] = []
+                                iplist[ip].append(x['port'])
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSS'
                         authentication = 'password'
                     except:
-                        print("shit went wrong " + x)
                         continue
                 elif x['type'] == 'ssr':
                     try:
@@ -151,6 +151,7 @@ def filter(config):
                                 continue
                             else:
                                 iplist.append(ip)
+                                iplist[ip].append(x['port'])
                         authentication = 'password'
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
                     except:
@@ -166,12 +167,11 @@ def filter(config):
                         if 'skip-cert-verify' in x:
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
-                        if 'cipher' not in vmess_supported_ciphers:
+                        if x['cipher'] not in vmess_supported_ciphers:
                             continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'VMS'
                         authentication = 'uuid'
                     except:
-                        print(x)
                         continue
                 elif x['type'] == 'trojan':
                     try:
@@ -203,7 +203,7 @@ def filter(config):
                             if x['tls'] not in [False, True]:
                                 continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'HTT'
-                        #authentication = 'userpass'
+                        # authentication = 'userpass'
                     except:
                         continue
                 elif x['type'] == 'socks5':
@@ -218,7 +218,7 @@ def filter(config):
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SK5'
-                        #authentication = 'userpass'
+                        # authentication = 'userpass'
                     except:
                         continue
                 else:
@@ -247,7 +247,7 @@ def filter(config):
                 count = count + 1
 
             except:
-                print('shitwentwrong')
+                print('shitwentwrong' + str(x))
                 continue
 
     return clash

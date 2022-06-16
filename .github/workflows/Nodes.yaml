@@ -1,8 +1,8 @@
 name: Nodes
 on: 
-  schedule:
-    - cron: '*/32 0-14 * * *'
-    - cron: '51 14-23 * * *'
+  # schedule:
+    # - cron: '*/32 0-14 * * *'
+    # - cron: '51 14-23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -41,11 +41,7 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-         git config --local url."https://github.com/".insteadOf "https://hub.fastgit.xyz/"
-         git config protocol.https.allow always
          pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-    - name: Country.mmdb
-      run: wget -P ./.config/clash/ https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O Country.mmdb 
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py

@@ -27,30 +27,7 @@ jobs:
       run: cd ./utils/pool/ && python main.py
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
-  ccu-job: #input./utils/clashcheck/config.yaml
-    name: ClashCheck-ubuntu
-    # needs: cl-job
-    # runs-on: self-hosted
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-    - name: Timezone
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: git init
-      run: | 
-         git config pull.rebase false
-         git config --local user.name "GitHub Actions"
-         git config --local user.email "actions@github.com"
-    - name: requirements.txt
-      run: pip3 install -r ./utils/clashcheck/requirements.txt
-    - name: main.py
-      run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
-    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
-
-  ccs-job: #input./utils/clashcheck/config.yaml
+  cc-job: #input./utils/clashcheck/config.yaml
     name: ClashCheck-self
     # needs: cl-job
     runs-on: self-hosted #python git pip
@@ -64,19 +41,21 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-         git config --local url."https://hub.fastgit.xyz/".insteadOf "https://github.com/"
+         git config --local url."https://github.com/".insteadOf "https://hub.fastgit.xyz/"
          git config protocol.https.allow always
          pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+    - name: Country.mmdb
+      run: wget -P ./.config/clash/ https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O Country.mmdb 
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
     - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
-    # - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml;重复步骤以缓解有概率的push失败
+    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml;重复步骤以缓解有概率的push失败
 
   rm-job: #input./utils/clashcheck/check.yaml
     name: rm
-    needs: ccs-job
+    needs: cc-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3

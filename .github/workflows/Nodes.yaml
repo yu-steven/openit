@@ -42,7 +42,8 @@ jobs:
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
          pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-    - run: wget https://ghproxy.com/https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb -O ~/.config/clash/Country.mmdb
+    - name: Country.mmdb
+      run: wget https://ghproxy.com/https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb -O ~/.config/clash/Country.mmdb
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py

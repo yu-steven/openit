@@ -53,7 +53,7 @@ jobs:
   ccs-job: #input./utils/clashcheck/config.yaml
     name: ClashCheck-self
     # needs: cl-job
-    runs-on: self-hosted
+    runs-on: self-hosted #python git pip
     # runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -64,6 +64,8 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
+         git config --global url."https://hub.fastgit.xyz/".insteadOf "https://github.com/"
+         git config protocol.https.allow always
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: test

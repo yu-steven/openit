@@ -71,7 +71,7 @@ jobs:
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
-    # - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
+    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
     # - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml;重复步骤以缓解有概率的push失败
 
   rm-job: #input./utils/clashcheck/check.yaml

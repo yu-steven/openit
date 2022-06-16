@@ -1,8 +1,13 @@
 import yaml
 import socket
 import maxminddb
-from tqdm import tqdm
+import platform
+import os
+import requests
 import flag
+from tqdm import tqdm
+from pathlib import Path
+
 
 def push(list, outfile):
     country_count = {}

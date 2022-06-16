@@ -69,8 +69,6 @@ jobs:
          pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
-    - name: test
-      run: wget -P ./.config/clash/ https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O Country.mmdb
     - name: main.py
       run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
     # - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
@@ -78,7 +76,7 @@ jobs:
 
   rm-job: #input./utils/clashcheck/check.yaml
     name: rm
-    needs: ccu-job
+    needs: ccs-job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3

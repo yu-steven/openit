@@ -86,7 +86,7 @@ jobs:
          #input./.github/url.sh
          ./.github/url.sh > ./1 #output./1
          #input./url
-         cp ./url ./2 output./2
+         cp ./url ./2 #output./2
          #input./1 ./2
          cat 1 2 > 3 && rm 1 2 #output./3
          #input./3
@@ -107,12 +107,13 @@ jobs:
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
     - name: subconverter
-      run: | 
-         ./utils/subconverter/subconverter -g
+      run: | #input./utils/pool/check ./utils/pool/pool ./utils/clashcheck/check.yaml
+         ./utils/subconverter/subconverter -g 
+         #output./utils/subconverter/long ./utils/subconverter/Clash.yaml ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
          mv ./utils/subconverter/long ./long || true
-         mv ./utils/subconverter/Clash.yaml ./Clash.yaml ||true
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          rm ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
-    - run: ./.github/update-repo.sh || true   #output./long & ./Clash.yaml & ./utils/pool/pool.yaml
+    - run: ./.github/update-repo.sh || true   #output./long ./Clash.yaml
 
   long:
     needs: et-job
@@ -137,4 +138,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: CDN
-      run: sleep 0.01 #curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Quanx.conf
+      run: true #curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Quanx.conf

@@ -30,9 +30,9 @@ jobs:
   cc-job: #input./utils/clashcheck/config.yaml
     name: ClashCheck
     # needs: cl-job
-    runs-on: self-hosted #python git pip
-    # runs-on: ubuntu-latest
-    steps:
+    # runs-on: self-hosted #python git pip和镜像
+    runs-on: ubuntu-latest
+    steps: 
     - uses: actions/checkout@v3
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
@@ -41,15 +41,13 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-         pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-    - name: Country.mmdb
-      run: wget https://ghproxy.com/https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb -O ~/.config/clash/Country.mmdb
+         # pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
     - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
-    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml;重复步骤以缓解有概率的push失败
+    # - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml;重复步骤以缓解有概率的push失败
 
   rm-job: #input./utils/clashcheck/check.yaml
     name: rm

@@ -27,7 +27,30 @@ jobs:
       run: cd ./utils/pool/ && python main.py
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
-  cc-job: #input./utils/clashcheck/config.yaml
+  ccu-job: #input./utils/clashcheck/config.yaml
+    name: ClashCheck
+    # needs: cl-job
+    # runs-on: self-hosted
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git init
+      run: | 
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: requirements.txt
+      run: pip3 install -r ./utils/clashcheck/requirements.txt
+    - name: main.py
+      run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
+    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
+
+  ccs-job: #input./utils/clashcheck/config.yaml
     name: ClashCheck
     # needs: cl-job
     runs-on: self-hosted

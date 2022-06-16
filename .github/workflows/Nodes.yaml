@@ -66,6 +66,8 @@ jobs:
          git config --local user.email "actions@github.com"
     - name: requirements.txt
       run: pip3 install -r ./utils/clashcheck/requirements.txt
+    - name: test
+      run: wget -P ./.config/clash/ https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O Country.mmdb
     - name: main.py
       run: cd ./utils/clashcheck/ && python3 main.py && python3 main.py && python3 main.py
     # - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml

@@ -292,7 +292,7 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 所有节点均来自互联网，非盈利为目的，仅供大家交流学习使用，请在订阅完后24小时之内删除，出现一切问题本站作者概不负责。
 
 
-# Num about Sub
+# Num in Sub
 [![svg](https://opit.cf/api?svg)](https://opit.cf/api?svg)
 # Time in Stars
 <!--替换成自己的仓库和名字就可以用了-->

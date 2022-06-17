@@ -73,6 +73,8 @@ def checkenv():
         exit(1)
     print('Running on '+ operating_system)
 
+    return clashname, operating_system
+
 def filter(config):
     list = config["proxies"]
     # print(list)

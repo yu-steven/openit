@@ -71,9 +71,7 @@ def checkenv():
     else:
         print('Unsupported Platform')
         exit(1)
-
-return clashname, operating_system
-
+    print('Running on '+ operating_system)
 
 def filter(config):
     list = config["proxies"]

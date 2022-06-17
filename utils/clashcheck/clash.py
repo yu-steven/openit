@@ -59,33 +59,18 @@ def checkenv():
     home = str(Path.home())
     mmdbfl = home + '/.config/clash/Country.mmdb'
     operating_system = str(platform.platform())
-    if operating_system.startswith('macOS'):
-        if 'arm64' in operating_system:
-            clashname = './clash-darwinarm64'
+        if operating_system.startswith('macOS'):
+            if 'arm64' in operating_system:
+                clashname='./clash-darwinarm64'
+            else:
+                clashname='./clash-darwinamd64'
+        elif operating_system.startswith('Linux'):
+            clashname='./clash-linuxamd64'
+        elif operating_system.startswith('Windows'):
+            clashname='clash-windowsamd64.exe'
         else:
-            clashname = './clash-darwinamd64'
-        if os.path.exists(mmdbfl):
-            os.remove(mmdbfl)
-        Countrymmdb = requests.get(
-            url='https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb')
-        os.makedirs('~/.config/clash/', exist_ok=True)
-        with open(mmdbfl, 'wb') as writep:
-            writep.write(Countrymmdb.content)
-
-    elif operating_system.startswith('Linux'):
-        clashname = './clash-linuxamd64'
-        if os.path.exists(mmdbfl):
-            os.remove(mmdbfl)
-        Countrymmdb = requests.get(
-            url='https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb')
-        os.makedirs('~/.config/clash/', exist_ok=True)
-        with open(mmdbfl, 'wb') as writep:
-            writep.write(Countrymmdb.content)
-    elif operating_system.startswith('Windows'):
-        clashname = 'clash-windowsamd64.exe'
-    else:
-        print('Unsupported Platform')
-        exit(1)
+            print('Unsupported Platform')
+            exit(1)
 
     return clashname, operating_system
 

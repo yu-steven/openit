@@ -20,7 +20,7 @@ jobs:
     - name: pool
       run: | 
          sed -i '/^$/d' url
-         sed -i '/sub:///d' url
+         sed -i '/sub:/d' url
          base64 url > pool -w 0
          mv ./pool ./utils/pool/pool
     - run: ./.github/update-repo.sh

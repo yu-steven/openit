@@ -21,7 +21,6 @@ jobs:
       run: | 
          sed -i '/^$/d' url
          sed -i '/sub:/d' url
-         sort url > url
          base64 url > pool -w 0
          mv ./pool ./utils/pool/pool
     - run: ./.github/update-repo.sh

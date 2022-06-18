@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  cl-job: #input./utils/pool/config.yaml
-    name: Collecting 
+  cs-job: #input./utils/pool/config.yaml
+    name: Collecting & Speedtest
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -25,32 +25,11 @@ jobs:
       run: pip install -r ./utils/pool/requirements.txt
     - name: main.py
       run: cd ./utils/pool/ && python main.py
-    - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
-
-  cc-job: #input./utils/clashcheck/config.yaml
-    name: ClashCheck
-    # needs: cl-job
-    # runs-on: self-hosted #python git pip和镜像
-    runs-on: ubuntu-latest
-    steps: 
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-    - name: Timezone
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: init
-      run: | 
-         git config pull.rebase false
-         git config --local user.name "GitHub Actions"
-         git config --local user.email "actions@github.com"
-         # pip config set local.index-url https://pypi.tuna.tsinghua.edu.cn/simple
     - name: requirements.txt
       run: pip install -r ./utils/clashcheck/requirements.txt
     - name: main.py
       run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py
-    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml
-    # - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/check.yaml;重复步骤以缓解有概率的push失败
+    - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml
 
   rm-job: #input./utils/clashcheck/check.yaml
     name: rm

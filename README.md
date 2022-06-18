@@ -189,12 +189,14 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ##### 如何使用美区Apple ID下载付费软件？
 
 ## Linux
-在Linux上使用相关软件，主要意图是协议转换（即将ss,vmess等协议转换为htto,sock5等协议）。
+在Linux上使用相关软件，主要意图是协议转换（即将ss,vmess等协议转换为http,socks5等协议）。
+
 当然，如果您在Linux上有办公，写代码等需求，您也可以使用这些软件以连接国际网络。
 您可以在此下载并使用这些软件。
-### [Clash](https://github.com/Dreamacro/clash/releases/)｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
+### [Clash](https://github.com/Dreamacro/clash/releases/)｜[v2rayA] | [Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
 
 [clash]: https://github.com/Dreamacro/clash/releases/
+[v2rayA]: https://github.com/v2rayA/v2rayA/releases/
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
 ## Android TV
 您可以通过在智能电视上安装相关应用来观看Netflix,Disney+等内容。
@@ -235,6 +237,9 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases`
 *2022.5.5--v1.7.7*
+### v2rayA for Win
+` https://github.com/v2rayA/v2rayA/releases`
+*2022.4.20--v1.5.7*
 ### v2rayU for Mac
 ` https://github.com/yanue/V2rayU/releases`
 *2021.6.22--v3.2.0*

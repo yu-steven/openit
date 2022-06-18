@@ -285,7 +285,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 本仓库采用 CC BY-SA 4.0 许可协议
 
-订阅收集测速筛选编码转换全自动一体化系统中，其中收集部分引用daycat/pyray仓库，测速筛选部分引用daycat/clashcheck仓库，编码转换部分引用tindy2013/subconverter仓库, 依靠GitHub action持续集成持续交付持续部署
+OpenPCRS系统中，其中收集部分引用daycat/pyray仓库，测速筛选部分引用daycat/clashcheck仓库，去重改名部分引用wu-mx/URLignore仓库，编码转换部分引用tindy2013/subconverter仓库, 依靠GitHub action持续集成持续交付持续部署
 <br>节点源文件 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/url)
 
 Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/sub/rule.ini)

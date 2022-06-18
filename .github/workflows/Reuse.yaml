@@ -19,8 +19,9 @@ jobs:
          git config --local user.email "actions@github.com"
     - name: pool
       run: | 
-         sed -i '/^sub:/d' url
-         sed -i -r '/^\s*$/d' url
+         sed -i '/^sub:/d' url #删除以sub:开头的行
+         sed -i '/^$/d' url #删除空白行
+         sed -i -r '/^\s*$/d' url #删除带有空格或制表符的空行
          base64 url > pool -w 0
          mv ./pool ./utils/pool/pool
     - run: ./.github/update-repo.sh

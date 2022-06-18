@@ -11,8 +11,12 @@ module.exports={
         let domainReg = /[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+.?/g
         let ipReg = /((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)(\.((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)){3}/
         if(ipReg.test(name)){
-            let geo = geoip.lookup(name)
-            return geo.country
+            let geo = geoip.lookup(name);
+            if(geo == null){
+                        return 'unknown'
+                    }else{
+                        return geo.country
+                    }
         }else if(domainReg.test(name)){
             try{
                 let address = await resolver.resolve4(name);

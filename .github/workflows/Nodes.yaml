@@ -24,7 +24,7 @@ jobs:
     - name: requirements.txt 1
       run: pip install -r ./utils/pool/requirements.txt
     - name: pool
-      run: cd ./utils/pool/ && python main.py && mv ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
+      run: cd ./utils/pool/ && python main.py && cd && mv ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
     - name: requirements.txt 2
       run: pip install -r ./utils/clashcheck/requirements.txt
     - name: clashcheck

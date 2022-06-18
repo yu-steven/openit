@@ -26,8 +26,10 @@ jobs:
       run: | 
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
-    - name: pool
-      run: cd ./utils/pool/ && python main.py && cd && mv ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
+    # - name: pool
+      # run: cd ./utils/pool/ && python main.py
+    - name: move
+      run: mv ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
     - name: clashcheck
       run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py
     - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml

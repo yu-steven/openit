@@ -28,8 +28,8 @@ jobs:
          pip install -r ./utils/clashcheck/requirements.txt
     - name: pool #input./utils/pool/config.yaml
       run: cd ./utils/pool/ && python main.py #output./utils/pool/output.yaml
-    - name: move
-      run: mv ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
+    - name: copy
+      run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
     - name: clashcheck #input./utils/clashcheck/config.yaml
       run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py #output./utils/clashcheck/check.yaml
     - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml

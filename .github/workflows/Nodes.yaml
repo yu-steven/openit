@@ -27,7 +27,7 @@ jobs:
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
     - name: pool #input./utils/pool/config.yaml
-      run: cd ./utils/pool/ && timeout -k 30s 12m python main.py #output./utils/pool/output.yaml
+      run: cd ./utils/pool/ && timeout -k 30s 12m python main.py || true #output./utils/pool/output.yaml
     - name: copy
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
     - name: clashcheck #input./utils/clashcheck/config.yaml

@@ -67,9 +67,9 @@ async function run(){
     }
 
     //批量测试国家
-//     for(let i=0;i<finalList.length;i++){
-//         finalList[i].country = await location.get(finalList[i].address)
-//     }
+    for(let i=0;i<finalList.length;i++){
+        finalList[i].country = await location.get(finalList[i].address)
+    }
 
     //变回链接
     for(let i=0;i<finalList.length;i++){

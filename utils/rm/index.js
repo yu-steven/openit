@@ -1,8 +1,9 @@
 const fs = require('fs')
 const location = require('./location')
 const config = require('./config')
+const major = require('./major')
 
-let urls = fs.readFileSync('./rm2','utf8');
+let urls = fs.readFileSync('./url','utf8');
 let flags = JSON.parse(fs.readFileSync('./flags.json','utf8'))
 
 let urlList = urls.split('\n');
@@ -48,6 +49,11 @@ async function run(){
                 let ssrAddress = ssrData.split(':')[0];
                 resList.push({type: 'ssr', data:ssrData.replace(/remarks=\w+?&/,'remarks={name}&'),address:ssrAddress});
                 break
+            case 'https':
+                let httpsData = url.split('://')[1].split('#')[0];
+                let httpsAddress = Buffer.from(httpsData.split('?')[0],"base64").toString('utf8').split('@')[1].split(':')[0]
+                resList.push({type: 'https',data:httpsData,address:httpsAddress})
+                break
             default:
                 break
         }
@@ -74,8 +80,13 @@ async function run(){
     //变回链接
     for(let i=0;i<finalList.length;i++){
         let item = finalList[i];
+        let name;
         countryCount[finalList[i].country]++
-        let name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+' '+countryCount[finalList[i].country]+config.nodeAddName
+        if(config.enableMediaUnlockTest === true){
+            name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+' '+countryCount[finalList[i].country]+' | {{result}}'+config.nodeAddName
+        }else{
+            name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+' '+countryCount[finalList[i].country]+config.nodeAddName
+        }
         switch (item.type){
             case 'vmess':
                 item.data.ps = (name).toString();
@@ -90,6 +101,9 @@ async function run(){
             case 'ssr':
                 urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'));
                 break
+            case 'https':
+                urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))
+                break
             default:
                 break
         }
@@ -103,7 +117,12 @@ async function run(){
         }
     }
     console.log(`去重完成，总共${urlList.length}个节点，去重${urlList.length-finalURLs.length}个节点，剩余${finalURLs.length}个节点。`)
-    fs.writeFileSync('./url',finalURLs.join('\n'))
+    fs.writeFileSync('./out',finalURLs.join('\n'))
 }
 
-run()
+run().then(async ()=>{
+    if(config.enableMediaUnlockTest){
+        console.log('即将开始流媒体测试...')
+        await major.start()
+    }
+})

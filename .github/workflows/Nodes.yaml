@@ -25,10 +25,10 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-    - name: requirements.txt
-      run: pip install -r ./utils/pool/requirements.txt
-    - name: main.py
-      run: cd ./utils/pool/ && python main.py
+    # - name: requirements.txt
+      # run: pip install -r ./utils/pool/requirements.txt
+    # - name: main.py
+      # run: cd ./utils/pool/ && python main.py
     - name: requirements.txt
       run: pip install -r ./utils/clashcheck/requirements.txt
     - name: main.py

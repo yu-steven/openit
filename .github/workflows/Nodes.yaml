@@ -32,7 +32,7 @@ jobs:
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
     - name: clashcheck #input./utils/clashcheck/config.yaml
       run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py #output./utils/clashcheck/check.yaml
-    - run: ./.github/update-repo.sh || true   #output./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml
+    - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml
 
   rr-job: #input./utils/clashcheck/check.yaml
     name: Remove & Remark

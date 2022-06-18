@@ -3,7 +3,7 @@ const location = require('./location')
 const config = require('./config')
 const major = require('./major')
 
-let urls = fs.readFileSync('./url','utf8');
+let urls = fs.readFileSync('./out','utf8');
 let flags = JSON.parse(fs.readFileSync('./flags.json','utf8'))
 
 let urlList = urls.split('\n');

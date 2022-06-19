@@ -13,5 +13,11 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-    - run: cd ./utils/rm/ && tar -zxvf subconverter_linux64.tar.gz
+    - run: | 
+         chmod +x subconverter.exe
+         chmod +x subconverter-linux64
+         chmod +x subconverter-linux32
+         chmod +x subconverter-ia32.exe
+         chmod +x subconverter-amd64.exe
+         cd ./utils/rm/ && tar -zxvf subconverter_linux64.tar.gz
     - run: ./.github/update-repo.sh

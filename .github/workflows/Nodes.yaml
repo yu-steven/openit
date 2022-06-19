@@ -52,7 +52,7 @@ jobs:
          git config --local user.email "actions@github.com"
     - name: subconverter #input./utils/clashcheck/check.yaml
       run: ./utils/subconverter/subconverter -g --artifact "rm" #output./utils/subconverter/rm1
-    - name: rr
+    - name: Remove & Remark
       run: | #input./utils/subconverter/rm1
          mv ./utils/subconverter/rm1 ./utils/rm/rm1
          cd ./utils/rm/

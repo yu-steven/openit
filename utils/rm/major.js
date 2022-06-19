@@ -20,7 +20,7 @@ async function startClash(){
         let subProgress = cp.spawn(getPath('clash'),['-f','./config.yml'],{cwd:path.join(process.cwd())})
         subProgress.stdout.on('data',(d)=>{
             let dataAfter = Buffer.from(d).toString('utf8')
-            if(dataAfter.includes('level=info msg="RESTful API listening at: [::]:9090"')){
+            if(dataAfter.includes('level=info msg="RESTful API listening at: [::]:38888"')){
                 res()
             }
         })
@@ -34,12 +34,12 @@ async function convert(){
         res.end(base64)
     })).listen(7867);
     let result = await axios('http://127.0.0.1:25500/sub?target=clash&remove_emoji=false&url=http%3A%2F%2F127.0.0.1%3A7867%2F');
-    fs.writeFileSync('config.yml',result.data)
+    fs.writeFileSync('config.yml',result.data.replace('7890','6688').replace('7891','6699').replace('9090','38888'))
 }
 
 async function startSub(){
     return new Promise((res,rej)=>{
-        let subProgress = cp.spawn(getPath('subconverter'),[],{cwd:path.join(process.cwd(),'/subconverter/')})
+        let subProgress = cp.spawn(getPath('subconverter'),[],{cwd:path.join(process.cwd(),'./subconverter/'),shell:true})
         subProgress.stderr.on('data',(d)=>{
             let dataAfter = Buffer.from(d).toString('utf8')
             if(dataAfter.includes('Startup completed. Serving HTTP @ http://0.0.0.0:25500')){
@@ -50,6 +50,8 @@ async function startSub(){
 }
 
 async function start(){
+    file = fs.readFileSync('out',"utf-8")
+    list = parser.read('out')
     await startSub();
     console.log('Subconverter start ok!!!');
     await convert();
@@ -58,9 +60,9 @@ async function start(){
     console.log('Clash ok!!!');
     clash = Clash({
         secret: '',
-        api: 'http://127.0.0.1:9090'
+        api: 'http://127.0.0.1:38888'
     });
-    await axios.patch('http://127.0.0.1:9090/configs',{"mode":"Global"});
+    await axios.patch('http://127.0.0.1:38888/configs',{"mode":"Global"});
     await test();
     await finish();
     process.exit(0);
@@ -71,20 +73,20 @@ async function test(){
     for(let i=0;i<list.length;i++){
         let proxy = list[i];
         proxy.media = {netflix:'',bilibili:'',disney:''}
-        await axios.put('http://127.0.0.1:9090/proxies/'+encodeURIComponent('🔰 节点选择'),{"name":proxy.name})
+        await axios.put('http://127.0.0.1:38888/proxies/'+encodeURIComponent('🔰 节点选择'),{"name":proxy.name})
         //bilibili 港澳台
         try{
             let res = await axios.get('https://api.bilibili.com/pgc/player/web/playurl?avid=18281381&cid=29892777&qn=0&type=&otype=json&ep_id=183799&fourk=1&fnver=0&fnval=16&session=${randsession}&module=bangumi',{proxy: {
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: 7890,
+                    port: 6688,
                 }});
             if(res.data.code === 0){
                 try{
                     let res2 = await axios.get('https://api.bilibili.com/pgc/player/web/playurl?avid=50762638&cid=100279344&qn=0&type=&otype=json&ep_id=268176&fourk=1&fnver=0&fnval=16&session=${randsession}&module=bangumi',{proxy: {
                             protocol: 'http',
                             host: '127.0.0.1',
-                            port: 7890,
+                            port: 6688,
                         }});
                     if(res2.data.code === 0 ){
                         proxy.media.bilibili = 'B(T)'
@@ -105,7 +107,7 @@ async function test(){
             let res = await axios.get('https://www.netflix.com/title/81215567',{proxy: {
                 protocol: 'http',
                     host: '127.0.0.1',
-                    port: 7890,
+                    port: 6688,
             }})
             if(res.status === 200 || res.status === 301){
                 proxy.media.netflix = 'N'
@@ -126,7 +128,7 @@ async function test(){
             let res = await axios.get('https://www.disneyplus.com',{proxy: {
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: 7890,
+                    port: 6688,
                 }})
             if(res.status === 200){
                 proxy.media.disney = 'D'
@@ -181,9 +183,9 @@ module.exports = {async start(){
         console.log('Clash ok!!!');
         clash = Clash({
             secret: '',
-            api: 'http://127.0.0.1:9090'
+            api: 'http://127.0.0.1:38888'
         });
-        await axios.patch('http://127.0.0.1:9090/configs',{"mode":"Global"});
+        await axios.patch('http://127.0.0.1:38888/configs',{"mode":"Global"});
         await test();
         await finish();
         console.log(' ');
@@ -204,9 +206,9 @@ function getPath(i){
                 }
             }else if(os.platform() === 'linux'){
                 if(os.arch() === 'ia32'){
-                    return './clash/clash-linux-386'
+                    return path.join(process.cwd()+'/clash/clash-linux-386')
                 }else if(os.arch() === 'x64'){
-                    return './clash/clash-linux-amd64'
+                    return path.join(process.cwd()+'/clash/clash-linux-amd64')
                 }else{
                     throw 'Your arch is not supported.Only support x86 and x64.'
                 }
@@ -216,17 +218,17 @@ function getPath(i){
         case 'subconverter':
             if(os.platform() === 'win32'){
                 if(os.arch() === 'ia32'){
-                    return 'subconverter-ia32.exe'
+                    return './subconverter/subconverter-ia32.exe'
                 }else if(os.arch() === 'x64'){
-                    return 'subconverter-amd64.exe'
+                    return './subconverter/subconverter-amd64.exe'
                 }else{
                     throw 'Your arch is not supported.Only support x86 and x64.'
                 }
             }else if(os.platform() === 'linux'){
                 if(os.arch() === 'ia32'){
-                    return 'subconverter-linux32'
+                    return path.join(process.cwd()+'/subconverter/subconverter-linux32')
                 }else if(os.arch() === 'x64'){
-                    return 'subconverter-linux64'
+                    return path.join(process.cwd()+'/subconverter/subconverter-linux64')
                 }else{
                     throw 'Your arch is not supported.Only support x86 and x64.'
                 }

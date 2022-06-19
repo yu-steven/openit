@@ -1,0 +1,12 @@
+name: gzip
+on: 
+  workflow_dispatch:
+
+jobs:
+  cs-job: #input./utils/pool/config.yaml ./utils/clashcheck/config.yaml
+    name: Collecting & Speedtest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: cd ./utils/rm/ && tar -zxvf subconverter_linux64.tar.gz
+    - run: ./.github/update-repo.sh

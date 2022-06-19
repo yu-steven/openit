@@ -14,10 +14,10 @@ jobs:
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
     - run: | 
-         cd ./utils/rm/clash/
-         chmod +x clash-linux-386
-         chmod +x clash-linux-amd64
-         chmod +x clash-windows-386.exe
-         chmod +x clash-windows-amd64.exe
+         cd ./utils/rm/
+         chmod +x subconverter-linux64
+         # chmod +x clash-linux-amd64
+         # chmod +x clash-windows-386.exe
+         # chmod +x clash-windows-amd64.exe
          # cd ./utils/rm/ && tar -zxvf subconverter_linux64.tar.gz
     - run: ./.github/update-repo.sh

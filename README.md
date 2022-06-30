@@ -73,8 +73,8 @@ Oneclick 在mac下确实可用，但是如果能用其他的就用其他的。
 [![点击跳转至Mac App Store][macos-black]][Quantumult X]
 ### Surge(Arm) *$49.99* App内购买
 [![点击跳转至Mac App Store][macos-black]][Surge]
-### One Click(Arm) *Free*
-[![点击跳转至Mac App Store][macos-black]][One-click]
+### OneClick(Arm) *Free*
+[![点击跳转至Mac App Store][macos-black]][one-click]
 
 [ss-NG]: https://ghproxy.com/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22.dmg
@@ -86,7 +86,7 @@ Oneclick 在mac下确实可用，但是如果能用其他的就用其他的。
 [Shadowrocket]: https://apps.apple.com/app/shadowrocket/id932747118
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
 [Surge]: https://apps.apple.com/app/surge-4/id1442620678
-[One-click]: https://apps.apple.com/us/app/oneclick-safe-easy-fast/id1545555197
+[one-click]: https://apps.apple.com/us/app/oneclick-safe-easy-fast/id1545555197
 [macos-black]: https://gitlab.com/yu-steven/tag/-/raw/main/macos-black.svg
 ### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 [![点击跳转至Mac App Store][macos-black]](https://apps.apple.com/app/the-unarchiver/id425424353)

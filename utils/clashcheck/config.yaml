@@ -1,0 +1,7 @@
+http-port: 23940 #port to run http proxy on
+api-port: 23941 #api port
+threads: 100 #线程数，指一次扫描多少个节点
+source: input.yaml #你的输入文件名, 注意必须是clash配置文件格式, 此处是input.yaml
+outfile: check.yaml #你的输出文件名, 注意输出文件也是clash配置文件格式, 此处是check.yaml
+test-url: https://www.google.com/generate_204 #延迟测试地址, 可以更改
+timeout: 3000 #测试的超时界限, timeout in miliseconds

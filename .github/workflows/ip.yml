@@ -1,0 +1,13 @@
+name: ip
+on:
+  workflow_dispatch:
+jobs:
+  Collecting:
+    runs-on: ubuntu-latest
+    steps:
+    - name: ifconfig.me
+      run: |
+         curl ifconfig.me
+    - name: ipinfo.io
+      run: |
+         curl ipinfo.io

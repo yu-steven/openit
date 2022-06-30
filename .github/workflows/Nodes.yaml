@@ -1,0 +1,151 @@
+name: Nodes
+
+on: 
+  schedule: #これは UTC+0         #これは UTC+8
+    - cron: '*/34 0-8 * * 1-5'   #工作日 上午8:00 - 下午4:00
+    - cron: '*/24 8-14 * * 1-5'  #工作日 下午4:00 - 下午10:00
+    - cron: '*/54 14-21 * * 1-5' #工作日 下午10:00 - 次日凌晨5:00
+    - cron: '*/24 21-23 * * 1-5' #工作日 次日凌晨5:00 - 次日上午8:00
+    - cron: '*/24 * * * 0,6'     #休息日 全天候
+  workflow_dispatch: #手动调试按钮
+
+
+
+jobs: 
+
+  re-job: 
+    name: Reuse
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3     #git clone
+    - name: init
+      run: | #配置git上传用户名和邮箱
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: pool.yaml
+      run: | #input./utils/pool/pool
+         ./utils/subconverter/subconverter -g --artifact "pool"
+         sed -i '1,6d' ./utils/subconverter/pool.yaml #删除pool.yaml开头1-6行
+         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
+    - run: ./.github/update-repo.sh || true   #output./utils/pool/pool.yaml
+
+  cs-job: #input./utils/pool/config.yaml ./utils/clashcheck/config.yaml
+    name: Collecting & Speedtest
+    needs: re-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3     #git clone
+    - uses: actions/setup-python@v4 #python环境
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+    - name: Timezone #UTC+0 → UTC+8
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: init
+      run: | #配置git上传用户名和邮箱
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: requirements.txt
+      run: | #安装python包
+         pip install -r ./utils/pool/requirements.txt
+         pip install -r ./utils/clashcheck/requirements.txt
+    - name: pool #input./utils/pool/config.yaml
+      run: cd ./utils/pool/ && timeout -k 30s 15m python main.py || true #output./utils/pool/output.yaml
+    - name: copy
+      run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml
+    - name: clashcheck #input./utils/clashcheck/config.yaml
+      run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py #output./utils/clashcheck/check.yaml
+    - run: ./.github/update-repo.sh || true   #output./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml
+
+  rr-job: #input./utils/clashcheck/check.yaml
+    name: Remove & Remark
+    needs: cs-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3   #git clone
+    - uses: actions/setup-node@v3 #Node.js环境
+      with:
+        node-version: 16
+    - name: Timezone #UTC+0 → UTC+8
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: init
+      run: | #配置git上传用户名、邮箱和安装npm包
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+         cd ./utils/rm/ && npm ci
+    - name: subconverter #input./utils/clashcheck/check.yaml
+      run: ./utils/subconverter/subconverter -g --artifact "rm" #output./utils/subconverter/rm1
+    - name: Remove & Remark
+      run: | #input./utils/subconverter/rm1
+         mv ./utils/subconverter/rm1 ./utils/rm/rm1
+         cd ./utils/rm/
+         #input./utils/rm/rm1
+         base64 -d rm1 > rm2 #output./utils/rm/rm2
+         #input./utils/rm/rm2
+         npm start #output./utils/rm/out
+    - name: url & https & check
+      run: | #input./utils/rm/url ./url ./.github/url.sh ./1 ./2 ./3
+         rm ./utils/rm/rm1 ./utils/rm/rm2 #./utils/rm/out #./utils/rm/config.yml #清理垃圾
+         #input./utils/rm/out
+         mv ./utils/rm/out ./url #output./url
+         #input./url
+         base64 ./url > ./utils/pool/check -w 0 #output./utils/pool/check
+         #input./.github/url.sh
+         ./.github/url.sh > ./1 #output./1
+         #input./url
+         cp ./url ./2 #output./2
+         #input./1 ./2
+         cat 1 2 > 3 && rm 1 2 #output./3
+         #input./3
+         base64 3 > https -w 0 && rm 3 #output./https
+    - run: ./.github/update-repo.sh || true   #output./url ./https ./utils/pool/check
+
+  et-job: #input./utils/pool/check ./utils/pool/pool
+    name: Encode & Translate
+    needs: rr-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3 #git clone
+    - name: Timezone #UTC+0 → UTC+8
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: init
+      run: | 
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: subconverter
+      run: | #input./utils/pool/check ./utils/pool/pool ./utils/clashcheck/check.yaml
+         ./utils/subconverter/subconverter -g 
+         #output./utils/subconverter/long ./utils/subconverter/Clash.yaml ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
+         mv ./utils/subconverter/long ./long || true
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
+         rm ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
+    - run: ./.github/update-repo.sh || true   #output./long ./Clash.yaml
+
+  long: #jsdelivr CDN同步
+    needs: et-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
+  HTTPS: #jsdelivr CDN同步
+    needs: et-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
+  Clash: #jsdelivr CDN同步
+    needs: et-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
+  Quanx: #jsdelivr CDN同步
+    needs: et-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Quanx.conf

@@ -1,0 +1,38 @@
+##########################################
+## https://github.com/daycat/proxypool ###
+##########################################
+
+
+# your domain
+domain: 128.199.181.154
+port:                 # default 12580
+
+# source list file
+source-files:
+  # use local file
+  # - ./source.yaml
+  # use web file
+  - https://raw.githubusercontent.com/yu-steven/openit/main/sub/source.yaml
+
+# ======= 可选项，留空使用default值  =======
+
+# postgresql database info
+database_url: ""
+
+# interval between each crawling
+crawl-interval: 20    # v0.5.x default 60 (minutes)
+crontime:             # v0.4.x default 60 (minutes). Deprecated in the newest version
+
+# speed test
+speedtest: false       # default false. Warning: this will consume large network resources.
+speedtest-interval: 30 # default 720 (min)
+connection: 10        # default 5. The number of speed test connections simultaneously
+timeout: 5            # default 10 (seconds).
+## active proxy speed test
+active-interval:      # default 60 (min)
+active-frequency:     # default 100 (requests per interval)
+active-max-number:    # default 100. If more than this number of active proxies, the extra will be deprecated by speed
+
+# cloudflare api
+cf_email: ""
+cf_key: ""

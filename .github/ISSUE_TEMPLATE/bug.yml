@@ -1,0 +1,61 @@
+name: Bug 报告
+description: 反馈关于订阅链接的错误
+title: "B: "
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请简练，概括的提出你的问题并写到上方的输入框内( ͡° ͜ʖ ͡°)同时也请通过搜索确认是否有人提出过相同问题。
+  - type: input
+    id: bug-url
+    attributes:
+      label: 出现问题的订阅链接
+      description: 告诉我你使用的哪个订阅链接出现问题了🤔（包括旧的订阅链接）
+      placeholder: https://openit.ml/example
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 你使用的是哪个应用程序？
+      description: 可多选，不在范围内的和选择路由器的请在下方详细描述.
+      multiple: true
+      options:
+        - SS
+        - SSR
+        - 魔改ss
+        - v2rayN
+        - v2rayNG
+        - Shadowrocket
+        - Quantumult X
+        - ClashX
+        - Clash for Windows
+        - Clash for Android
+        - Stash
+        - Surge
+        - Qv2ray
+        - Matsuri
+        - OneClick
+        - SagerNet
+        - Kitsunebi
+        - Surfboard
+        - passwall
+        - openclash
+        - helloworld 
+        - shadowsocksR Plus+
+    validations:
+      required: false
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现方式
+      description: "你如何触发这个错误？请一步一步地指导我们完成它."
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true

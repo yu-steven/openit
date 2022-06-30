@@ -1,0 +1,31 @@
+name: Question 问题
+description: 提出你的疑惑🤔
+title: "Q: "
+labels: question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        发表issues时请记住: 这是真的吗？有必要吗？是善良的吗？
+  - type: textarea
+    id: repro
+    attributes:
+      label: 详细说明
+      description: 直接的诉说出你的疑问和担忧( ͡° ͜ʖ ͡°)
+      value: |
+        什么: 
+        怎么: 
+        为什么: 
+      render: bash
+    validations:
+      required: true
+  - type: checkboxes
+    id: cat-preferences
+    attributes:
+      label: 这里有一些承诺需要阅读
+      options:
+        - label: 我会广泛传播这个项目
+        - label: 这是我深思熟虑提出的问题
+          required: true
+        - label: 我承诺遵守社区指导方针
+          required: true

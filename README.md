@@ -208,7 +208,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 电视性能主要偏重于视频解码性能，网络解析方面性能较差，可能会造成意想不到的卡顿等情况。 我们建议您通过软路由进行协议转换，再通过智能电视连接
 ### ｜[SS](https://ghproxy.com/https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.2.6/shadowsocks-tv--universal-v5.2.6.apk)｜
 ***
-##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址以及最后更新时间  [返回🔙](#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接或者有更多软件需求请从此处选择要下载的文件)
+##### 由于**可能的**更新不及时，下面给出以上软件GitHub托管地址以及最后更新时间  [返回🔙](#为加快github文件下载速度已为所有文件进行加速如不信任本仓库链接或者有更多软件需求请在此处选择要下载的文件)
 链接全部指向releases(软件包)地址，可以删除地址结尾的releases转到仓库主页，在releases后面加上.atom可以进行RSS订阅，选择困难者**勿入**
 ## ShadowSocks
 ### Windows

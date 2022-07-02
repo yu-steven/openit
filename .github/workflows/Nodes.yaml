@@ -39,8 +39,8 @@ jobs:
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
-    #- name: pool #input./utils/pool/config.yaml
-      #run: cd ./utils/pool/ && timeout -k 30s 15m python main.py || true #output./utils/pool/output.yaml
+    - name: pool #input./utils/pool/config.yaml
+      run: cd ./utils/pool/ && timeout -k 30s 15m python main.py || true #output./utils/pool/output.yaml
     - name: copy pool to clashcheck #input./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output./utils/clashcheck/input.yaml
     - name: clashcheck #because./utils/pool/config.yaml so input./utils/clashcheck/input.yaml
@@ -82,25 +82,25 @@ jobs:
          rm ./utils/subconverter/check ./utils/subconverter/pool.yaml ./utils/subconverter/rm1 #delete ../check ../pool.yaml ../rm1
     - run: ./.github/update-repo.sh || true   #output./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml
 
-  long: #jsdelivr CDN同步
+  long: #jsdelivr long同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
-  HTTPS: #jsdelivr CDN同步
+  HTTPS: #jsdelivr HTTPS同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
-  Clash: #jsdelivr CDN同步
+  Clash: #jsdelivr Clash同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
-  Quanx: #jsdelivr CDN同步
+  Quanx: #jsdelivr Quanx同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:

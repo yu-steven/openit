@@ -27,7 +27,7 @@ jobs:
         cache: 'pip'                #pip cache
     - name: Timezone #UTC+0 → UTC+8
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: git init
+    - name: git
       run: | #配置git的上传用户名和邮箱
          git config pull.rebase false
          git config --local user.name "GitHub Actions"

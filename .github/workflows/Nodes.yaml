@@ -26,7 +26,7 @@ jobs:
     - name: pool.yaml
       run: | #input./utils/pool/pool
          ./utils/subconverter/subconverter -g --artifact "pool"
-         sed -i '1,6d' ./utils/subconverter/pool.yaml #删除pool.yaml开头1-6行
+         sed -i '1,28d' ./utils/subconverter/pool.yaml #删除pool.yaml开头1-6行
          mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
     - run: ./.github/update-repo.sh || true   #output./utils/pool/pool.yaml
 

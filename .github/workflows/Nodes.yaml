@@ -78,7 +78,7 @@ jobs:
          #output./utils/subconverter/long ./utils/subconverter/Clash.yaml ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
-         # rm ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
+         rm ./utils/subconverter/check ./utils/subconverter/pool.yaml ./utils/subconverter/rm1 delete ../check ../pool.yaml ../rm1
     - run: ./.github/update-repo.sh || true   #output./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml
 
   long: #jsdelivr CDN同步

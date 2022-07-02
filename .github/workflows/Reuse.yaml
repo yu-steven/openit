@@ -22,5 +22,8 @@ jobs:
          sed -i '/^sub:/d' url #删除以sub:开头的行
          sed -i '/^$/d' url #删除空白行
          sed -i -r '/^\s*$/d' url #删除带有空格或制表符的空行
-         base64 ./url > ./utils/pool/pool -w 0
+         base64 ./url > ./utils/subconverter/pool -w 0
+         ./utils/subconverter/subconverter -g --artifact "pool" && rm ./utils/subconverter/pool
+         sed -i '1,34d' ./utils/subconverter/pool.yaml #删除pool.yaml开头1-6行
+         mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
     - run: ./.github/update-repo.sh

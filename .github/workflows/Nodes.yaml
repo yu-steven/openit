@@ -41,23 +41,24 @@ jobs:
          pip install -r ./utils/clashcheck/requirements.txt
     - name: pool #input./utils/pool/config.yaml
       run: cd ./utils/pool/ && timeout -k 30s 15m python main.py || true #output./utils/pool/output.yaml
-    - name: copy #input./utils/pool/output.yaml
+    - name: copy pool to clashcheck #input./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output./utils/clashcheck/input.yaml
     - name: clashcheck #because./utils/pool/config.yaml so input./utils/clashcheck/input.yaml
       run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py #output./utils/clashcheck/check.yaml
-    - name: copy #input./utils/clashcheck/check.yaml
+    - name: copy clashcheck to subconverter #input./utils/clashcheck/check.yaml
       run: cp ./utils/clashcheck/check.yaml ./utils/subconverter/rm0 #output./utils/subconverter/rm0
     - name: subconverter #input./utils/subconverter/rm0
       run:  ./utils/subconverter/subconverter -g --artifact "rm" && rm ./utils/subconverter/rm0 #delete./utils/subconverter/rm0 & output./utils/subconverter/rm1
+    - name: move subconverter to Remove & Remark #input./utils/subconverter/rm1
+      run: mv ./utils/subconverter/rm1 ./utils/rm/rm1 #output./utils/rm/rm1
     - name: Remove & Remark
-      run: | #input./utils/subconverter/rm1
-         mv ./utils/subconverter/rm1 ./utils/rm/rm1
+      run: | #input./utils/rm/rm1
          cd ./utils/rm/
          #input./utils/rm/rm1
          base64 -d rm1 > rm2  #output./utils/rm/rm2
          #input./utils/rm/rm2
          npm start            #output./utils/rm/out
-    - name: url & https & check
+    - name: url & https
       run: | #input./utils/rm/out ./url ./.github/url.sh ./1 ./2 ./3
          rm ./utils/rm/rm1 ./utils/rm/rm2 #delete./utils/rm/rm1 & ./utils/rm/rm2
          #input./utils/rm/out
@@ -78,7 +79,7 @@ jobs:
          #output./utils/subconverter/long ./utils/subconverter/Clash.yaml ./utils/subconverter/pool.yaml ./utils/subconverter/rm1
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
-         rm ./utils/subconverter/check ./utils/subconverter/pool.yaml ./utils/subconverter/rm1 delete ../check ../pool.yaml ../rm1
+         rm ./utils/subconverter/check ./utils/subconverter/pool.yaml ./utils/subconverter/rm1 #delete ../check ../pool.yaml ../rm1
     - run: ./.github/update-repo.sh || true   #output./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml
 
   long: #jsdelivr CDN同步

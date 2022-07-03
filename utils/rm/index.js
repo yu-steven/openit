@@ -89,8 +89,11 @@ async function run(){
         }
         switch (item.type){
             case 'vmess':
+                try{
                 item.data.ps = (name).toString();
-                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'));
+                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'))}catch(e){
+                    console.log('err')
+                }
                 break
             case 'trojan':
                 try{
@@ -99,13 +102,22 @@ async function run(){
                 }
                 break
             case 'ss':
-                urlCountryList[finalList[i].country].push('ss://'+item.data+'#'+(name).toString())
+                try{
+                urlCountryList[finalList[i].country].push('ss://'+item.data+'#'+(name).toString())}catch(e){
+                    console.log('err')
+                }
                 break
             case 'ssr':
-                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'));
+                try{
+                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))}catch(e){
+                    console.log('err')
+                }
                 break
             case 'https':
-                urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))
+                try{
+                urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))}catch(e){
+                    console.log('err')
+                }
                 break
             default:
                 break

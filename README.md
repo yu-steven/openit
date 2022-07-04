@@ -191,7 +191,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [教程]: https://limbopro.com/archives/3846.html
 [神机规则]: https://merlinblog.xyz/wiki/quanx.html
 ##### [如何创建美区Apple ID？](https://shadowsockshelp.github.io/Shadowsocks/apple-id.html)
-##### [购买App Store美区账户和付费软件入口](https://fk.myue.cc/)
+##### [购买美区Apple ID和App Store付费软件入口](https://fk.myue.cc/)
 
 ## Linux
 在Linux上使用相关软件，主要意图是协议转换（即将ss,vmess等协议转换为http,socks5等协议）。

@@ -19,7 +19,7 @@
  [svg-nodes]: https://github.com/yu-steven/openit/actions/workflows/Nodes.yaml/badge.svg?branch=main
  [svg-clash]: https://github.com/yu-steven/openit/actions/workflows/Clash.yaml/badge.svg
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
- [svg-counter]: https://github-watch.vercel.app/api/counter
+ [svg-counter]: https://github-watch.vercel.app
 
 </div>
 

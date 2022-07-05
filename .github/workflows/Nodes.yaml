@@ -80,7 +80,8 @@ jobs:
          mv ./utils/subconverter/long ./long || true
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
          rm ./utils/subconverter/check ./utils/subconverter/pool.yaml ./utils/subconverter/rm1 #delete ../check ../pool.yaml ../rm1
-    - run: ./.github/update-repo.sh || true   #output ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml
+    - name: git push
+      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml to GitHub
 
   long: #jsdelivr long同步
     needs: my-job

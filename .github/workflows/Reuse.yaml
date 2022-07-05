@@ -27,4 +27,5 @@ jobs:
          ./utils/subconverter/subconverter -g --artifact "pool" && rm ./utils/subconverter/pool
          sed -i '1,34d' ./utils/subconverter/pool.yaml #删除pool.yaml开头1-34行
          mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
-    - run: ./.github/update-repo.sh
+    - name: git push
+      run: git pull origin main && git add . && git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库" && git push origin main

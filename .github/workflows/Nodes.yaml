@@ -42,7 +42,7 @@ jobs:
          pip install -r ./utils/clashcheck/requirements.txt
     - name: pool #input ./utils/pool/config.yaml
       run: cd ./utils/pool/ && timeout -k 30s 18m python main.py || true #output ./utils/pool/output.yaml
-    - name: copy pool to subconverter input ./utils/pool/output.yaml
+    - name: copy pool to subconverter #input ./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/subconverter/input.yaml #output ./utils/subconverter/input.yaml
     - name: subconverter #input ./utils/subconverter/input.yaml
       run: ./utils/subconverter/subconverter -g --artifact "filter" && rm ./utils/subconverter/input.yaml #delete ./utils/subconverter/input.yaml & output ./utils/subconverter/output.yaml

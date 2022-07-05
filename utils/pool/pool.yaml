@@ -6,6 +6,10 @@ proxies:
   - {name: CN 4｜openit.ml, server: hr04.mellanox.info, port: 25104, type: ssr, cipher: rc4-md5, password: zftvha, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
   - {name: 香港 中继 02, server: bgp.jsqpro.me, port: 30002, type: ssr, cipher: chacha20-ietf, password: yPKrexXaVMAXFfez, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 23558:rIb6sG, obfs-param: 644fe23558.download.windowsupdate.com, udp: true}
   - {name: 香港 中继 01, server: bgp.jsqpro.me, port: 30001, type: ssr, cipher: chacha20-ietf, password: yPKrexXaVMAXFfez, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 23558:rIb6sG, obfs-param: 644fe23558.download.windowsupdate.com, udp: true}
+  - {name: ID8电信联通专线 限速3M, server: 172.64.84.233, port: 443, type: vmess, uuid: 7e07431e-accd-30cc-a60b-a8c9eb13f284, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xxX3, headers: {Host: "%7B%22Host%22:%22testgroup2.091.se%22%7D"}}, udp: true}
+  - {name: ID10电信联通专线 限速3M, server: 172.64.93.136, port: 443, type: vmess, uuid: 7e07431e-accd-30cc-a60b-a8c9eb13f284, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xxX5, headers: {Host: "%7B%22Host%22:%22testgroup2.091.se%22%7D"}}, udp: true}
+  - {name: ID7电信联通 限速3M, server: 172.64.147.71, port: 443, type: vmess, uuid: 7e07431e-accd-30cc-a60b-a8c9eb13f284, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xxX2, headers: {Host: "%7B%22Host%22:%22testgroup2.091.se%22%7D"}}, udp: true}
+  - {name: ID9 电信联通专线 限速3M, server: 172.66.42.101, port: 443, type: vmess, uuid: 7e07431e-accd-30cc-a60b-a8c9eb13f284, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xxX4, headers: {Host: "%7B%22Host%22:%22testgroup2.091.se%22%7D"}}, udp: true}
   - {name: 香港 中继 04, server: bgp.jsqpro.me, port: 30004, type: ssr, cipher: chacha20-ietf, password: yPKrexXaVMAXFfez, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 23558:rIb6sG, obfs-param: 644fe23558.download.windowsupdate.com, udp: true}
   - {name: 香港 中继 03, server: bgp.jsqpro.me, port: 30003, type: ssr, cipher: chacha20-ietf, password: yPKrexXaVMAXFfez, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 23558:rIb6sG, obfs-param: 644fe23558.download.windowsupdate.com, udp: true}
   - {name: CN 5｜openit.ml, server: gzyd1.52147.top, port: 30010, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: download.windowsupdate1.com, skip-cert-verify: true, udp: true}
@@ -137,6 +141,10 @@ proxy-groups:
       - CN 4｜openit.ml
       - 香港 中继 02
       - 香港 中继 01
+      - ID8电信联通专线 限速3M
+      - ID10电信联通专线 限速3M
+      - ID7电信联通 限速3M
+      - ID9 电信联通专线 限速3M
       - 香港 中继 04
       - 香港 中继 03
       - CN 5｜openit.ml
@@ -268,6 +276,10 @@ proxy-groups:
       - CN 4｜openit.ml
       - 香港 中继 02
       - 香港 中继 01
+      - ID8电信联通专线 限速3M
+      - ID10电信联通专线 限速3M
+      - ID7电信联通 限速3M
+      - ID9 电信联通专线 限速3M
       - 香港 中继 04
       - 香港 中继 03
       - CN 5｜openit.ml

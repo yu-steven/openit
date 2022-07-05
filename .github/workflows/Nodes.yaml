@@ -42,14 +42,8 @@ jobs:
          pip install -r ./utils/clashcheck/requirements.txt
     - name: pool #input ./utils/pool/config.yaml
       run: cd ./utils/pool/ && timeout -k 30s 18m python main.py || true #output ./utils/pool/output.yaml
-    - name: copy pool to subconverter #input ./utils/pool/output.yaml
-      run: cp ./utils/pool/output.yaml ./utils/subconverter/input.yaml #output ./utils/subconverter/input.yaml
-    - name: subconverter #input ./utils/subconverter/input.yaml
-      run: ./utils/subconverter/subconverter -g --artifact "filter" && rm ./utils/subconverter/input.yaml #delete ./utils/subconverter/input.yaml & output ./utils/subconverter/output.yaml
-    - name: fix output
-      run: cd ./utils/subconverter/ && sed -i '/ !<str>/d' output.yaml #delete [ !<str>] to fix output.yaml
-    - name: move subconverter to clashcheck #input ./utils/subconverter/output.yaml
-      run: mv ./utils/subconverter/output.yaml ./utils/clashcheck/input.yaml #output ./utils/clashcheck/input.yaml
+    - name: copy pool to clashcheck #input ./utils/pool/output.yaml
+      run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output ./utils/clashcheck/input.yaml
     - name: clashcheck #because ./utils/clashcheck/config.yaml so input ./utils/clashcheck/input.yaml
       run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py #output ./utils/clashcheck/check.yaml
     - name: copy clashcheck to subconverter #input ./utils/clashcheck/check.yaml

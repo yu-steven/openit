@@ -40,8 +40,8 @@ jobs:
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
-    - name: pool #input ./utils/pool/config.yaml
-      run: cd ./utils/pool/ && timeout -k 30s 18m python main.py || true #output ./utils/pool/output.yaml
+    # - name: pool #input ./utils/pool/config.yaml
+      # run: cd ./utils/pool/ && timeout -k 30s 18m python main.py || true #output ./utils/pool/output.yaml
     - name: copy pool to subconverter #input ./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/subconverter/input.yaml #output ./utils/subconverter/input.yaml
     - name: subconverter #input ./utils/subconverter/input.yaml

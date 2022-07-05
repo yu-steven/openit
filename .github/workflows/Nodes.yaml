@@ -34,7 +34,8 @@ jobs:
          git config --local user.email "actions@github.com"
     - name: npm
       run: | #安裝npm包
-         cd ./utils/rm/ && npm ci
+         cd ./utils/rm/
+         npm ci
     - name: pip
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt

@@ -15,7 +15,7 @@ def init():
         http_port = config['http-port']
         api_port = config['api-port']
         threads = config['threads']
-        source = str(config['source'])
+        source = config['source'])
         timeout = config['timeout']
         testurl = config['test-url']
         outfile = config['outfile']

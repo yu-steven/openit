@@ -290,7 +290,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 本仓库采用 CC BY-SA 4.0 许可协议
 
-![openpcrs](https://raw.githubusercontent.com/yu-steven/openit/main/images/Openit_PCRS.PNG)
+![openpcrs](https://gitlab.com/yu-steven/openit/-/raw/main/images/Openit_PCRS.PNG)
 OpenPCRS系统中，其中收集部分引用daycat/pyray仓库，测速筛选部分引用daycat/clashcheck仓库，去重改名部分引用wu-mx/URLignore仓库，编码转换部分引用tindy2013/subconverter仓库, 依靠GitHub action持续集成持续交付持续部署
 <br>节点源文件 [➡️ 此处](https://raw.githubusercontent.com/yu-steven/openit/main/url)
 
@@ -308,9 +308,9 @@ Clash.yaml 使用的路由规则在 [➡️ 此处](https://raw.githubuserconten
 [![Stargazers over time](https://starchart.cc/yu-steven/openit.svg)](https://starchart.cc/yu-steven/openit)
 
 #### *Quantumult X* UI界面  [返回](#ios)
-[![图片，加载不出来就不看吧](https://raw.githubusercontent.com/yu-steven/openit/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
+[![图片，加载不出来就不看吧](https://gitlab.com/yu-steven/openit/-/raw/main/images/quanx.JPG "是不是炒鸡漂亮呀")](https://apps.apple.com/app/quantumult-x/id1443988620)
 #### *Shadowrocket*支持的协议  [返回](#ios)
-[![图片，没啥，有软件之后就知道了](https://raw.githubusercontent.com/yu-steven/openit/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
+[![图片，没啥，有软件之后就知道了](https://gitlab.com/yu-steven/openit/-/raw/main/images/Shadowrocket.JPG "是不是支持很多呀")](https://apps.apple.com/app/shadowrocket/id932747118)
 *Telegram* [*@yusteven*](https://t.me/yusteven)
 <br>"created_at": "2021-12-13T08:41:28Z"
 <!--都看到这儿了，还不给个Star？-->

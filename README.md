@@ -8,16 +8,16 @@
  [![name-license][svg-license]][git-license]
  [![name-telegram][svg-telegram]][telegram]
  [![name-nodes][svg-nodes]][git-nodes]
- [![name-clash][svg-clash]][git-clash]
+ [![name-checkly][svg-checkly]][git-checkly]
  ![刷新一下][svg-counter]
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
  [git-license]: ./LICENSE
  [git-nodes]: ./url
- [git-clash]: ./Clash.yaml
+ [git-checkly]: https://openit.checklyhq.com
  [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
  [svg-nodes]: https://github.com/yu-steven/openit/actions/workflows/Nodes.yaml/badge.svg?branch=main
- [svg-clash]: https://api.checklyhq.com/v1/badges/checks/9acbc467-2304-4c06-889f-86ef23f0716c?style=flat&theme=default
+ [svg-checkly]: https://api.checklyhq.com/v1/badges/checks/9acbc467-2304-4c06-889f-86ef23f0716c?style=flat&theme=default&responseTime=true
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  [svg-counter]: https://github-watch.vercel.app/api/counter
 

@@ -276,7 +276,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2022.7.2 09:24 --- v0.19.23*
 
 ` https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases`
-*2022.7.2 10:25 --- v0.19.23*
+*2022.7.1 15:18 --- v0.19.23*
 ### Clash-core
 ` https://github.com/Dreamacro/clash/releases`
 *2022.6.19 13:27 --- v1.11.0*

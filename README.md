@@ -56,7 +56,7 @@
 
 [ss]: https://ghproxy.com/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://ghproxy.com/https://github.com/2dust/v2rayN/releases/download/5.23/v2rayN-Core.zip
+[v2rayN]: https://ghproxy.com/https://github.com/2dust/v2rayN/releases/download/5.26/v2rayN-Core.zip
 [clash]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22-win.7z
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 [Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.22_CN/app.asar
@@ -213,78 +213,78 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ## ShadowSocks
 ### Windows
 ` https://github.com/shadowsocks/shadowsocks-windows/releases`
-*2022.2.8---v4.4.1.0*
+*2022.2.8 19:39 --- v4.4.1.0*
 ### macOS
 ` https://github.com/shadowsocks/ShadowsocksX-NG/releases`
-*2019.11.13---v1.9.4*
+*2019.11.13 10:18 --- v1.9.4*
 ### Android / TV
 ` https://github.com/shadowsocks/shadowsocks-android/releases`
-*2021.9.17---v5.2.6*
+*2021.9.17 10:37 --- v5.2.6*
 ### ShadowSocks-core
 ` https://github.com/shadowsocks/shadowsocks-libev/releases`
-*2022.9.15---v3.3.5*
+*2022.9.15 10:53 --- v3.3.5*
 
 ## ShadowSocksR
 ### Windows
 ` https://github.com/shadowsocksrr/shadowsocksr-csharp/releases`
-*2019.4.21---v4.9.2*
+*2019.4.21 21:00 --- v4.9.2*
 ### Android / TV
 ` https://github.com/shadowsocksrr/shadowsocksr-android/releases`
-*2018.5.9---v3.5.4*
+*2018.3.9 15:00 --- v3.5.4*
 ### ShadowSocksR-core
 ` https://github.com/shadowsocksrr/shadowsocksr-libev`
-*2016.12.29---v2.5.6*
+*2016.12.29 07:00 --- v2.5.6*
 
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
-*2022.6.26---v5.27*
+*2022.6.12 19:49 --- v5.26*
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases`
-*2022.5.5--v1.7.7*
+*2022.7.5 08:43 --- v1.7.16*
 ### v2rayA for Win
 ` https://github.com/v2rayA/v2rayA/releases`
-*2022.4.20--v1.5.7*
+*2022.6.18 22:51 --- v1.5.7*
 ### v2rayU for Mac
 ` https://github.com/yanue/V2rayU/releases`
-*2021.6.22--v3.2.0*
+*2021.6.22 23:17 --- v3.2.0*
 ### v2rayX for Mac
 ` https://github.com/Cenmrev/V2RayX/releases`
-*2019.2.14--v1.5.1*
+*2019.2.14 11:51 --- v1.5.1*
 ### v2ray-core
 ` https://github.com/v2fly/v2ray-core/releases`
-*2022.6.13--v4.45.1*
+*2022.6.13 07:29 --- v4.45.1*
 ### Xray-core
 ` https://github.com/XTLS/Xray-core/releases`
-*2022.6.13--v1.5.8*
+*2022.6.13 07:47 --- v1.5.8*
 
 ## Clash
 ### Win / Mac
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases`
-*2022.6.23---v0.19.22*
+*2022.7.1 11:21 --- v0.19.23*
 ### Android / TV
 ` https://github.com/Kr328/ClashForAndroid/releases`
-*2022.1.15---v2.5.4*
+*2022.7.2 11:40 --- v2.5.11*
 ### ClashN for Win
 ` https://github.com/2dust/clashN/releases`
-*2022.6.13---v1.13*
+*2022.7.5 18:10 --- v1.15*
 ### ClashX for Mac
 ` https://github.com/yichengchen/clashX/releases`
-*2022.1.8---v1.90.0*
+*2022.6.22 21:20 --- v1.94.0*
 ### Clash 汉化补丁 for Win
 ` https://github.com/BoyceLig/Clash_Chinese_Patch/releases`
-*2022.6.23---v0.19.22*
+*2022.7.2 09:24 --- v0.19.23*
 
 ` https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases`
-*2022.6.23---v0.19.22*
+*2022.7.2 10:25 --- v0.19.23*
 ### Clash-core
 ` https://github.com/Dreamacro/clash/releases`
-*2022.6.20---v1.11.0*
+*2022.6.19 13:27 --- v1.11.0*
 
 ## Qv2ray
 ### Win/Mac/Linux
 ` https://github.com/Qv2ray/Qv2ray/releases`
-*2021.6.17---v2.7.0* **The End**
+*2021.8.17 11:41 --- v2.7.0* **The End**
 ***
 # 声明
 

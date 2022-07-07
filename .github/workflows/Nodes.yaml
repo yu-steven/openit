@@ -41,7 +41,7 @@ jobs:
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
     - name: pool #input ./utils/pool/config.yaml
-      run: cd ./utils/pool/ && timeout -k 30s 18m python main.py || true #output ./utils/pool/output.yaml
+      run: cd ./utils/pool/ && timeout -k 10s 3m python main.py || true #output ./utils/pool/output.yaml
     - name: copy pool to clashcheck #input ./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output ./utils/clashcheck/input.yaml
     - name: clashcheck #because ./utils/clashcheck/config.yaml so input ./utils/clashcheck/input.yaml

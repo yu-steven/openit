@@ -30,8 +30,8 @@ jobs:
     - name: git
       run: | #配置git的上传用户名和邮箱
          git config pull.rebase false
-         # git config --local user.name "GitHub Actions"
-         # git config --local user.email "actions@github.com"
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
     - name: npm
       run: | #安裝npm包
          cd ./utils/rm/

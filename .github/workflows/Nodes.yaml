@@ -15,18 +15,18 @@ jobs:
 
   my-job: 
     name: Max Job
-    runs-on: [self-hosted, HK]
+    runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v3     #git clone
-    # - uses: actions/setup-node@v3   #Node.js环境
-      # with:
-        # node-version: 16            #node.js 16
-    # - uses: actions/setup-python@v4 #python环境
-      # with:
-        # python-version: '3.x'       #python 3.x
-        # cache: 'pip'                #pip cache
-    # - name: Timezone #UTC+0 → UTC+8
-      # run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - uses: actions/setup-node@v3   #Node.js环境
+      with:
+        node-version: 16            #node.js 16
+    - uses: actions/setup-python@v4 #python环境
+      with:
+        python-version: '3.x'       #python 3.x
+        cache: 'pip'                #pip cache
+    - name: Timezone #UTC+0 → UTC+8
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git
       run: | #配置git的上传用户名和邮箱
          git config pull.rebase false

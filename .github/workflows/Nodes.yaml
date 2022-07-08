@@ -45,7 +45,7 @@ jobs:
     - name: copy pool to clashcheck #input ./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output ./utils/clashcheck/input.yaml
     - name: clashcheck #because ./utils/clashcheck/config.yaml so input ./utils/clashcheck/input.yaml
-      run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py #output ./utils/clashcheck/check.yaml
+      run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py && rm input.yaml #delete ./utils/clashcheck/input.yaml & output ./utils/clashcheck/check.yaml
     - name: copy clashcheck to subconverter #input ./utils/clashcheck/check.yaml
       run: cp ./utils/clashcheck/check.yaml ./utils/subconverter/rm0 #output ./utils/subconverter/rm0
     - name: subconverter #input ./utils/subconverter/rm0

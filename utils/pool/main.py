@@ -63,7 +63,7 @@ if __name__ == '__main__':
             for p in processes:
                 p.join()
             end = time.time()
-            print("爬到了节点 in " + "{:.2f}".format(end-start) + " seconds")
+            print("在长风的库爬到了节点 in " + "{:.2f}".format(end-start) + " seconds")
         except:
             end = time.time()
             print("没有在长风的库爬到节点 in " + "{:.2f}".format(end-start) + " seconds")

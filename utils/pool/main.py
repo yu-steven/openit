@@ -51,18 +51,18 @@ if __name__ == '__main__':
         processes=[]
         try:
             start = time.time()
-            # for i in **********:
-            #     p = Process(target=***, args=(proxy_list, i))
-            #      p.start()
-            #     processes.append(p)
-            # for p in processes:
-            #     p.join()
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()
                 processes.append(p)
             for p in processes:
                 p.join()
+            # for i in filenames:
+            #     p = Process(target=fetch, args=(proxy_list, i))
+            #     p.start()
+            #     processes.append(p)
+            # for p in processes:
+            #     p.join()
             end = time.time()
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
         except:

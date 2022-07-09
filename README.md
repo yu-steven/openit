@@ -48,7 +48,7 @@
 ***
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接或者有更多软件需求请在[此处](#由于可能的更新不及时下面给出以上软件github托管地址以及最后更新时间--返回)选择要下载的文件
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://doc.openit.ml/tutorial/win-cfw-zh.html))配合v0.19.20版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://doc.opit.top/tutorial/win-cfw-zh.html))配合v0.19.20版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置
 >**.7z文件如何解压？**
 可以使用Bandizip[^1]进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
@@ -131,7 +131,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 <img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
-### [魔改ss](https://openit.ml/images/Shadowsocks_4.8.5.apk)
+### [魔改ss](https://opit.top/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
@@ -149,7 +149,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [google-play]: https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg
 
 ## iOS
-首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点([教程](https://doc.openit.ml/tutorial/ios-shadowrocket.html)); 
+首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点([教程](https://doc.opit.top/tutorial/ios-shadowrocket.html)); 
 Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x则更贵;
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则构造HTTP请求、HTTPS解密和MitM等功能(软件也就越贵)同时[UI方面](#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
 Stash是Clash规则在iOS平台的最佳选择，完整适配Clash Premium;

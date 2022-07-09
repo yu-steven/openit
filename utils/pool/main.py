@@ -38,12 +38,13 @@ if __name__ == '__main__':
         directories, total = get_file_list()
         data = parse(directories)
         try:
+            sfiles = len(subscribe_links)
             tfiles = len(data[current_date]) + len(subscribe_links)
             processes=[]
             filenames = list()
             filenames = data[current_date]
         except KeyError:
-            print("Failed: 长风的库没有Clash配置文件")
+            print("Success: 共" + str(sfiles) + "个Clash配置文件")
         else:
             print("Success: 共" + str(tfiles) + "个Clash配置文件")
 
@@ -63,10 +64,10 @@ if __name__ == '__main__':
             for p in processes:
                 p.join()
             end = time.time()
-            print("在长风的库爬到了节点 in " + "{:.2f}".format(end-start) + " seconds")
+            print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
         except:
             end = time.time()
-            print("没有在长风的库爬到节点 in " + "{:.2f}".format(end-start) + " seconds")
+            print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
 
         proxy_list=list(proxy_list)
         proxies = makeclash(proxy_list)

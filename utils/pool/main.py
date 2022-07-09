@@ -50,14 +50,17 @@ if __name__ == '__main__':
 
         processes=[]
         try:
+            start = time.time()
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()
                 processes.append(p)
             for p in processes:
                 p.join()
+            end = time.time()
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
         except:
+            end = time.time()
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
 
         proxy_list=list(proxy_list)

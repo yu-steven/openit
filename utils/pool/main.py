@@ -24,7 +24,7 @@ def url(proxy_list, link):
             data_out.append(x)
         proxy_list.append(data_out)
     except:
-        print("Error in fetching "+ link )
+        print("Error in collecting "+ link )
 
 proxy_list=[]
 if __name__ == '__main__':

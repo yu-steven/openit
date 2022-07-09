@@ -56,17 +56,8 @@ if __name__ == '__main__':
                 processes.append(p)
             for p in processes:
                 p.join()
-            start = time.time()
-            for i in filenames:
-                p = Process(target=fetch, args=(proxy_list, i))
-                p.start()
-                processes.append(p)
-            for p in processes:
-                p.join()
-            end = time.time()
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
         except:
-            end = time.time()
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
 
         proxy_list=list(proxy_list)

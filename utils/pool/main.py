@@ -66,7 +66,7 @@ if __name__ == '__main__':
             print("爬到了节点 in " + "{:.2f}".format(end-start) + " seconds")
         except:
             end = time.time()
-            print("没有爬到节点 in " + "{:.2f}".format(end-start) + " seconds")
+            print("没有在长风的库爬到节点 in " + "{:.2f}".format(end-start) + " seconds")
 
         proxy_list=list(proxy_list)
         proxies = makeclash(proxy_list)

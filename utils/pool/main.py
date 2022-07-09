@@ -51,7 +51,7 @@ if __name__ == '__main__':
         processes=[]
         try:
             start = time.time()
-            # for i in subscribe_links:
+            # for i in **********:
             #     p = Process(target=***, args=(proxy_list, i))
             #      p.start()
             #     processes.append(p)

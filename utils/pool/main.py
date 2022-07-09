@@ -43,7 +43,7 @@ if __name__ == '__main__':
             filenames = list()
             filenames = data[current_date]
         except KeyError:
-            print("Failed: 没有Clash配置文件")
+            print("Failed: 长风的库没有Clash配置文件")
         else:
             print("Success: 共" + str(tfiles) + "个Clash配置文件")
 

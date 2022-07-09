@@ -48,7 +48,7 @@
 ***
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接或者有更多软件需求请在[此处](#由于可能的更新不及时下面给出以上软件github托管地址以及最后更新时间--返回)选择要下载的文件
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://doc.opit.top/tutorial/win-cfw-zh.html))配合v0.19.20版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置
+首推v2rayN和Clash，v2rayN支持格式众多；Clash英文界面需要汉化([Clash汉化补丁] / [教程](https://doc.opit.top/tutorial/win-cfw-zh.html))配合v0.19.22版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置
 >**.7z文件如何解压？**
 可以使用Bandizip[^1]进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]

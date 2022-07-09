@@ -25,19 +25,19 @@
 
 
 **Base64**
-```https://openit.ml/long```
+```https://opit.top/long```
 **通用**
 
 **小火箭**
-```https://openit.ml/https```
+```https://opit.top/https```
 **专用**
 
 **Clash**
-```https://openit.ml/Clash.yaml```
+```https://opit.top/Clash.yaml```
 **专用**
 
 **Quanx**
-```https://openit.ml/Quanx.conf```
+```https://opit.top/Quanx.conf```
 **专用**
 
 <!--**节点备注里**-->

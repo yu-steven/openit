@@ -37,7 +37,12 @@ if __name__ == '__main__':
         with open('config.yaml', 'r') as reader:
             config = yaml.load(reader,Loader=SafeLoader)
         subscribe_links = config['sub']
-        if config['sources']['changfeng'] == True:
+        try:
+            cfoss_opt = bool(config['sources']['changfeng'])
+        except:
+            print("No options set for CFOSS crawl, hence crawling from this repository is disabled")
+            cfoss_opt = False
+        if cfoss_opt == True:
             directories, total = get_file_list()
             data = parse(directories)
             print(str(len(data[current_date])) + " clash configs found in ChangfengOSS")

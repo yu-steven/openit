@@ -83,9 +83,9 @@ async function run(){
         let name;
         countryCount[finalList[i].country]++
         if(config.enableMediaUnlockTest === true){
-            name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+' '+countryCount[finalList[i].country]+' | {{result}}'+config.nodeAddName
+            name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+'_'+countryCount[finalList[i].country]+'｜{{result}}'+config.nodeAddName
         }else{
-            name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+' '+countryCount[finalList[i].country]+config.nodeAddName
+            name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+'_'+countryCount[finalList[i].country]+config.nodeAddName
         }
         switch (item.type){
             case 'vmess':

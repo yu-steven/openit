@@ -91,32 +91,37 @@ async function run(){
             case 'vmess':
                 try{
                 item.data.ps = (name).toString();
-                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'))}catch(e){
-                    console.log('err')
+                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'))
+                }catch(e){
+                    console.log('vmess node err')
                 }
                 break
             case 'trojan':
                 try{
-                urlCountryList[finalList[i].country].push('trojan://'+item.data+'#'+(name).toString())}catch(e){
-                    console.log('err')
+                urlCountryList[finalList[i].country].push('trojan://'+item.data+'#'+(name).toString())
+                }catch(e){
+                    console.log('trojan node err')
                 }
                 break
             case 'ss':
                 try{
-                urlCountryList[finalList[i].country].push('ss://'+item.data+'#'+(name).toString())}catch(e){
-                    console.log('err')
+                urlCountryList[finalList[i].country].push('ss://'+item.data+'#'+(name).toString())
+                }catch(e){
+                    console.log('ss node err')
                 }
                 break
             case 'ssr':
                 try{
-                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))}catch(e){
-                    console.log('err')
+                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))
+                }catch(e){
+                    console.log('ssr node err')
                 }
                 break
             case 'https':
                 try{
-                urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))}catch(e){
-                    console.log('err')
+                urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))
+                }catch(e){
+                    console.log('https node err')
                 }
                 break
             default:

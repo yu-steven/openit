@@ -17,7 +17,7 @@
  [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic
  [svg-nodes]: https://github.com/yu-steven/openit/actions/workflows/Nodes.yaml/badge.svg?branch=main
- [svg-checkly]: https://api.checklyhq.com/v1/badges/checks/0555e24e-7904-4b7a-bade-e90370867097?style=flat&theme=default&responseTime=true
+ [svg-checkly]: https://api.checklyhq.com/v1/badges/checks/94ecef57-aedb-47e1-94d8-d8247ea02d9f?style=flat&theme=default&responseTime=true
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
  <!--[svg-counter]: https://github-watch.vercel.app/api/counter-->
 

@@ -5,10 +5,10 @@
 
 <div align="center">
 
- [![name-license][svg-license]][git-license]
- [![name-telegram][svg-telegram]][telegram]
  [![name-nodes][svg-nodes]][git-nodes]
  [![name-checkly][svg-checkly]][git-checkly]
+ [![name-license][svg-license]][git-license]
+ [![name-telegram][svg-telegram]][telegram]
  <!--![刷新一下][svg-counter]-->
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
  [git-license]: ./LICENSE

@@ -11,8 +11,8 @@
  [![name-telegram][svg-telegram]][telegram]
  <!--![刷新一下][svg-counter]-->
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
- [git-license]: ./LICENSE
  [git-nodes]: ./url
+ [git-license]: ./LICENSE
  [git-checkly]: https://openit.checklyhq.com
  [telegram]: https://t.me/ShareCentrePro
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=plastic

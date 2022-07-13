@@ -9,7 +9,7 @@
  [![name-telegram][svg-telegram]][telegram]
  [![name-nodes][svg-nodes]][git-nodes]
  [![name-checkly][svg-checkly]][git-checkly]
- ![刷新一下][svg-counter]
+ <!--![刷新一下][svg-counter]-->
 <!--此处隔开，不然无法正确编译；这是注释文本，不会显示-->
  [git-license]: ./LICENSE
  [git-nodes]: ./url
@@ -19,7 +19,7 @@
  [svg-nodes]: https://github.com/yu-steven/openit/actions/workflows/Nodes.yaml/badge.svg?branch=main
  [svg-checkly]: https://api.checklyhq.com/v1/badges/checks/0555e24e-7904-4b7a-bade-e90370867097?style=flat&theme=default&responseTime=true
  [svg-telegram]: https://img.shields.io/badge/Telegram-@ShareCentrePro-blue.svg?style=plastic
- [svg-counter]: https://github-watch.vercel.app/api/counter
+ <!--[svg-counter]: https://github-watch.vercel.app/api/counter-->
 
 </div>
 

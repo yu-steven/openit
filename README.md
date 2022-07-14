@@ -33,7 +33,7 @@
 ```https://openit.daycat.space/https```
 
 **Clash**
-```https://openit.daycat.space/Clash```
+```https://openit.daycat.space/clash```
 
 **Quanx**
 ```https://openit.daycat.space/qx```

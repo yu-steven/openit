@@ -28,19 +28,15 @@
 
 **Base64**
 ```https://openit.daycat.space/long```
-**通用**
 
 **小火箭**
 ```https://openit.daycat.space/long```
-**专用**
 
 **Clash**
 ```https://openit.daycat.space/long```
-**专用**
 
 **Quanx**
 ```https://openit.daycat.space/long```
-**专用**
 
 <!--**节点备注里**-->
 <!--<br>**N** = 完全解锁Netflix｜**N(-)** = 解锁Netflix自制剧  <br>**D** = Disney+｜**B** = B站港澳台｜**B(T)** = 台湾专属-->

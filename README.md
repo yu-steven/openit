@@ -30,13 +30,13 @@
 ```https://openit.daycat.space/long```
 
 **小火箭**
-```https://openit.daycat.space/long```
+```https://openit.daycat.space/https```
 
 **Clash**
-```https://openit.daycat.space/long```
+```https://openit.daycat.space/Clash```
 
 **Quanx**
-```https://openit.daycat.space/long```
+```https://openit.daycat.space/qx```
 
 <!--**节点备注里**-->
 <!--<br>**N** = 完全解锁Netflix｜**N(-)** = 解锁Netflix自制剧  <br>**D** = Disney+｜**B** = B站港澳台｜**B(T)** = 台湾专属-->

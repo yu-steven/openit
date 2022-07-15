@@ -52,18 +52,18 @@
 ### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
  <!--教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray-->
 
-[ss]: https://ghproxy.com/https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
-[ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://ghproxy.com/https://github.com/2dust/v2rayN/releases/download/5.26/v2rayN-Core.zip
-[clash]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22-win.7z
-[qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.22_CN/app.asar
+[ss]: https://cdn.jsdelivr.net/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
+[ssr]: https://cdn.jsdelivr.net/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
+[v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.26/v2rayN-Core.zip
+[clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22-win.7z
+[qv2ray]: https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
+[Clash汉化补丁]: https://cdn.jsdelivr.net/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.22_CN/app.asar
 ## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SS最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X(经实验,Arm版的Clash会出现xxx.app已损坏,即使使用传统方法仍无法解决)但是经过Rosetta 2转译的Clash(intel)不受影响，仍可以使用！
 OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 >**.7z文件如何解压？**
 使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**
-### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
+### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
  <!--｜SS｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge｜v2rayX｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程-->
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
@@ -74,7 +74,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 ### OneClick(Arm) *Free*
 [![点击跳转至Mac App Store][macos-black]][one-click]
 
-[ss-NG]: https://ghproxy.com/https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
+[ss-NG]: https://cdn.jsdelivr.net/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22.dmg
 [clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22-arm64.dmg
 [clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.91.1/ClashX.dmg
@@ -134,12 +134,12 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
-[apk-clash]: https://ghproxy.com/https://github.com/Kr328/ClashForAndroid/releases/
+[apk-clash]: https://cdn.jsdelivr.net/Kr328/ClashForAndroid/releases/
 [apk-Matsuri]: https://f-droid.org/repo/moe.matsuri.lite_725.apk
 [apk-SagerNet]: https://apkpure.com/kitsunebi/io.nekohasekai.sagernet/download
 [apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
 [apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download
-[apk-ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
+[apk-ssr]: https://cdn.jsdelivr.net/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
 [google-ss]: https://play.google.com/store/apps/details?id=com.github.shadowsocks
 [google-v2rayng]: https://play.google.com/store/apps/details?id=com.v2ray.ang
 [google-clash]: https://play.google.com/store/apps/details?id=com.github.kr328.clash
@@ -196,7 +196,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 当然，如果您在Linux上有办公，写代码等需求，您也可以使用这些软件以连接国际网络。
 您可以在此下载并使用这些软件。
-### [Clash](https://github.com/Dreamacro/clash/releases/)｜[v2rayA] | [Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
+### [Clash](https://github.com/Dreamacro/clash/releases/)｜[v2rayA] | [Qv2ray](https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
 
 [clash]: https://github.com/Dreamacro/clash/releases/
 [v2rayA]: https://github.com/v2rayA/v2rayA/releases/

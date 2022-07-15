@@ -129,7 +129,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 <img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
-### [魔改ss](https://opit.top/images/Shadowsocks_4.8.5.apk)
+### [魔改ss](https://raw.gitfast.tk/yu-steven/openit/main/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download

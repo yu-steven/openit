@@ -57,7 +57,7 @@
 [v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.26/v2rayN-Core.zip
 [clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22-win.7z
 [qv2ray]: https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://cdn.jsdelivr.net/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.22_CN/app.asar
+[Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.22_CN/app.asar
 ## macOS
 首推Clash，稳定通用，但需要订阅转换！ClashX和Clash一样的内核，前者更加轻量化，SS最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X(经实验,Arm版的Clash会出现xxx.app已损坏,即使使用传统方法仍无法解决)但是经过Rosetta 2转译的Clash(intel)不受影响，仍可以使用！
 OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
@@ -129,7 +129,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 <img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
-### [魔改ss](https://raw.gitfast.tk/yu-steven/openit/main/images/Shadowsocks_4.8.5.apk)
+### [魔改ss](https://raw.gitslow.tk/yu-steven/openit/main/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
@@ -139,7 +139,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [apk-SagerNet]: https://apkpure.com/kitsunebi/io.nekohasekai.sagernet/download
 [apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
 [apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download
-[apk-ssr]: https://cdn.jsdelivr.net/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
+[apk-ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
 [google-ss]: https://play.google.com/store/apps/details?id=com.github.shadowsocks
 [google-v2rayng]: https://play.google.com/store/apps/details?id=com.v2ray.ang
 [google-clash]: https://play.google.com/store/apps/details?id=com.github.kr328.clash

@@ -63,7 +63,7 @@
 OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 >**.7z文件如何解压？**
 使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**
-### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
+### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
  <!--｜SS｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge｜v2rayX｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程-->
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]

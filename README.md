@@ -27,16 +27,16 @@
 
 
 **Base64**
-```https://openit.daycat.space/long```
+```https://openit.ml/long```
 
 **小火箭**
-```https://openit.daycat.space/https```
+```https://openit.ml/https```
 
 **Clash**
-```https://openit.daycat.space/clash```
+```https://openit.ml/Clash.yaml```
 
 **Quanx**
-```https://openit.daycat.space/qx```
+```https://openit.ml/Quanx.conf```
 
 **不同订阅之间的区别**
 <br>**Base64** 订阅可在大多数翻墙软件中使用 

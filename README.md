@@ -198,10 +198,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ##### [购买美区Apple ID、App Store付费软件入口](https://fk.myue.cc/)
 
 ## Linux
-在Linux上使用相关软件，主要意图是协议转换（即将ss,vmess等协议转换为http,socks5等协议）。
-
-当然，如果您在Linux上有办公，写代码等需求，您也可以使用这些软件以连接国际网络。
-您可以在此下载并使用这些软件。
+如果您在Linux上有办公，写代码等需求，您可以使用这些软件以连接国际网络。
 ### [Clash](https://github.com/Dreamacro/clash/releases/)｜[v2rayA] | [Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage)
 
 [clash]: https://github.com/Dreamacro/clash/releases/

@@ -84,25 +84,25 @@ jobs:
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml to GitHub
 
-  long: #jsdelivr long同步
+  long: #jsDelivr long同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
-  HTTPS: #jsdelivr HTTPS同步
+  HTTPS: #jsDelivr HTTPS同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
-  Clash: #jsdelivr Clash同步
+  Clash: #jsDelivr Clash同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:
     - name: CDN
       run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
-  Quanx: #jsdelivr Quanx同步
+  Quanx: #jsDelivr Quanx同步
     needs: my-job
     runs-on: ubuntu-latest
     steps:

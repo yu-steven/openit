@@ -34,6 +34,7 @@ if __name__ == '__main__':
         proxy_list = manager.list()
         current_date = time.strftime("%Y_%m_%d", time.localtime())
         print("Today is: " + current_date)
+        start = time.time()
         with open('config.yaml', 'r') as reader:
             config = yaml.load(reader,Loader=SafeLoader)
         subscribe_links = config['sub']
@@ -52,7 +53,6 @@ if __name__ == '__main__':
 
         processes=[]
         try:
-            start = time.time()
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()

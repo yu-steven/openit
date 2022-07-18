@@ -52,6 +52,7 @@ if __name__ == '__main__':
             print("Success: " + str(tfiles) + " Clash files")
 
         processes=[]
+
         try:
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))

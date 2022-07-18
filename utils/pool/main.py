@@ -12,7 +12,7 @@ headers = {'User-Agent': 'ClashforWindows/0.19.23', 'Accept': '*/*', 'Accept-Enc
 def fetch(proxy_list, filename):
     current_date = time.strftime("%Y_%m_%d", time.localtime())
     baseurl = 'https://raw.githubusercontent.com/changfengoss/pub/main/data/'
-    working = yaml.safe_load(requests.get(url=baseurl + current_date + '/' + filename, timeout=30).text)
+    working = yaml.safe_load(requests.get(url=baseurl + current_date + '/' + filename, timeout=100).text)
     data_out = []
     for x in working['proxies']:
         data_out.append(x)
@@ -21,7 +21,7 @@ def fetch(proxy_list, filename):
 def url(proxy_list, link):
     try:
         data_out=[]
-        working = yaml.safe_load(requests.get(url=link,timeout=30, headers=headers).text)
+        working = yaml.safe_load(requests.get(url=link,timeout=100, headers=headers).text)
         for x in working['proxies']:
             data_out.append(x)
         proxy_list.append(data_out)

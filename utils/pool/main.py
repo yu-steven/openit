@@ -7,7 +7,7 @@ import time
 import yaml
 import requests
 
-headers = {'User-Agent': 'ClashforWindows/0.19.23', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+headers = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
 
 def fetch(proxy_list, filename):
     current_date = time.strftime("%Y_%m_%d", time.localtime())

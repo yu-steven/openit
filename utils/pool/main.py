@@ -34,7 +34,7 @@ if __name__ == '__main__':
         proxy_list = manager.list()
         current_date = time.strftime("%Y_%m_%d", time.localtime())
         print("Today is: " + current_date)
-        start = time.time()
+        start = time.time() #time start
         with open('config.yaml', 'r') as reader:
             config = yaml.load(reader,Loader=SafeLoader)
         subscribe_links = config['sub']
@@ -66,10 +66,10 @@ if __name__ == '__main__':
             #     processes.append(p)
             # for p in processes:
             #     p.join()
-            end = time.time()
+            end = time.time() #time end
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
         except:
-            end = time.time()
+            end = time.time() #time end
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
 
         proxy_list=list(proxy_list)

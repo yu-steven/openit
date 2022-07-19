@@ -46,8 +46,9 @@ jobs:
       run: cp ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
       run:  ./utils/subconverter/subconverter -g --artifact "re" && rm ./utils/subconverter/check.yaml #output ./utils/subconverter/check
-    - name: url & https
+    - name: url & https & long
       run: | #input ./utils/subconverter/check
+         cp ./utils/subconverter/check ./long
          base64 -d ./utils/subconverter/check > ./url     #output ./url
          #input ./.github/url.sh
          ./.github/url.sh > ./1        #output ./1
@@ -57,15 +58,14 @@ jobs:
          cat 1 2 > 3 && rm 1 2         #delete ./1 ./2 & output ./3
          #input ./3
          base64 3 > https -w 0 && rm 3 #delete ./3 & output ./https
-    - name: long & Clash.yaml
+    - name: Clash.yaml
       run: | #input ./utils/subconverter/check
-         ./utils/subconverter/subconverter -g 
-         #output ./utils/subconverter/long ./utils/subconverter/Clash.yaml ./utils/subconverter/pool.yaml
-         mv ./utils/subconverter/long ./long || true
+         ./utils/subconverter/subconverter -g --artifact "clash"
+         #output ./utils/subconverter/Clash.yaml
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
-         rm ./utils/subconverter/check ./utils/subconverter/pool.yaml #delete ./utils/subconverter/check ./utils/subconverter/pool.yaml
+         rm ./utils/subconverter/check #delete ./utils/subconverter/check
     - name: git push
-      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/input.yaml ./utils/clashcheck/check.yaml to GitHub
+      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/check.yaml to GitHub
 
   long: #jsDelivr long同步
     needs: my-job

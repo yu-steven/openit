@@ -32,10 +32,6 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-    - name: npm
-      run: | #安裝npm包
-         cd ./utils/rm/
-         npm ci
     - name: pip
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
@@ -57,8 +53,6 @@ jobs:
          cd ./utils/rm/
          #input ./utils/rm/rm1
          base64 -d rm1 > rm2   #output ./utils/rm/rm2
-         #input ./utils/rm/rm2
-         npm start             #output ./utils/rm/out
     - name: url & https
       run: | #input ./utils/rm/out
          rm ./utils/rm/rm1 ./utils/rm/rm2 #delete ./utils/rm/rm1 & ./utils/rm/rm2

@@ -48,9 +48,7 @@ jobs:
       run:  ./utils/subconverter/subconverter -g --artifact "re" && rm ./utils/subconverter/check.yaml #output ./utils/subconverter/check
     - name: url & https
       run: | #input ./utils/subconverter/check
-         #input ./utils/subconverter/check
-         base64 -d ./utils/subconverter/check ./url     #output ./url
-         #input ./url
+         base64 -d ./utils/subconverter/check > ./url     #output ./url
          #input ./.github/url.sh
          ./.github/url.sh > ./1        #output ./1
          #input ./url

@@ -1,7 +1,5 @@
 const fs = require('fs')
-const location = require('./location')
 const config = require('./config')
-const major = require('./major')
 
 let urls = fs.readFileSync('./rm2','utf8');
 let flags = JSON.parse(fs.readFileSync('./flags.json','utf8'))

@@ -1,5 +1,5 @@
 module.exports={
-    nodeAddName:' → t.me/s/SCINV',
+    nodeAddName:' → https://t.me/xingchen0829',
     dnsServers:['8.8.8.8','1.1.1.1'],
     enableMediaUnlockTest:false
 }

@@ -63,7 +63,7 @@ jobs:
          cat 1 2 > 3 && rm 1 2         #delete ./1 ./2 & output ./3
          #input ./3
          base64 3 > https -w 0 && rm 3 #delete ./3 & output ./https
-         base64 ./url ./long
+         base64 ./url > ./long
     - name: Clash.yaml
       run: | #input ./utils/subconverter/check
          ./utils/subconverter/subconverter -g --artifact "clash"

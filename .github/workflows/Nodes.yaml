@@ -42,7 +42,7 @@ jobs:
     - name: copy clashcheck to clash2base64 #input ./utils/clashcheck/check.yaml
       run: cp ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
-      run:  ./utils/subconverter/subconverter -g --artifact "re" && rm ./utils/subconverter/check.yaml #output ./utils/subconverter/check
+      run:  ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm ./utils/subconverter/check.yaml #output ./utils/subconverter/check
     - name: url & https & long
       run: | #input ./utils/subconverter/check
          cp ./utils/subconverter/check ./long

@@ -56,7 +56,7 @@ jobs:
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https & long
       run: | #input ./utils/rm/out
-         rm ./utils/rm/url
+         rm ./utils/rm/url             #delete ./utils/rm/url
          mv ./utils/rm/out ./url       #output ./url
          #input ./.github/url.sh
          ./.github/url.sh > ./1        #output ./1

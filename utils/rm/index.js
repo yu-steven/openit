@@ -83,20 +83,40 @@ async function run(){
         let name = emojiList[countryList.indexOf(finalList[i].country)]+finalList[i].country+' '+countryCount[finalList[i].country]+config.nodeAddName
         switch (item.type){
             case 'vmess':
+                try{
                 item.data.ps = (name).toString();
-                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'));
+                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'))
+                }catch(e){
+                    console.log('vmess node err')
+                }
                 break
             case 'trojan':
+                try{
                 urlCountryList[finalList[i].country].push('trojan://'+item.data+'#'+(name).toString())
+                }catch(e){
+                    console.log('trojan node err')
+                }
                 break
             case 'ss':
+                try{
                 urlCountryList[finalList[i].country].push('ss://'+item.data+'#'+(name).toString())
+                }catch(e){
+                    console.log('ss node err')
+                }
                 break
             case 'ssr':
-                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'));
+                try{
+                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))
+                }catch(e){
+                    console.log('ssr node err')
+                }
                 break
             case 'https':
+                try{
                 urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))
+                }catch(e){
+                    console.log('https node err')
+                }
                 break
             default:
                 break

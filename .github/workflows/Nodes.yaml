@@ -49,14 +49,12 @@ jobs:
     - name: copy clashcheck to clash2base64 #input ./utils/clashcheck/check.yaml
       run: cp ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
-      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm ./utils/subconverter/check.yaml && mv ./utils/subconverter/check ./utils/rm/url #delete ./utils/subconverter/check.yaml & output ./utils/rm/url
-    - name: remove & rename
+      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm ./utils/subconverter/check.yaml && base64 -d ./utils/subconverter/check > ./utils/rm/url #delete ./utils/subconverter/check.yaml & output ./utils/rm/url
+    - name: remove & rename #input ./utils/rm/url
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https & long
       run: | #input ./utils/rm/out
-         mv ./utils/rm/out ./utils/subconverter/check
-         cp ./utils/subconverter/check ./long
-         base64 -d ./utils/subconverter/check > ./url #output ./url
+         mv ./utils/rm/out ./url       #output ./url
          #input ./.github/url.sh
          ./.github/url.sh > ./1        #output ./1
          #input ./url
@@ -65,6 +63,7 @@ jobs:
          cat 1 2 > 3 && rm 1 2         #delete ./1 ./2 & output ./3
          #input ./3
          base64 3 > https -w 0 && rm 3 #delete ./3 & output ./https
+         base64 ./url ./long
     - name: Clash.yaml
       run: | #input ./utils/subconverter/check
          ./utils/subconverter/subconverter -g --artifact "clash"

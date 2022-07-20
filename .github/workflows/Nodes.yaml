@@ -32,14 +32,14 @@ jobs:
          git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-    - name: pip
-      run: | #安装pip包
-         pip install -r ./utils/pool/requirements.txt
-         pip install -r ./utils/clashcheck/requirements.txt
     - name: npm
       run: | #安装npm包
          cd ./utils/rm/
          npm ci
+    - name: pip
+      run: | #安装pip包
+         pip install -r ./utils/pool/requirements.txt
+         pip install -r ./utils/clashcheck/requirements.txt
     - name: pool #input ./utils/pool/config.yaml
       run: cd ./utils/pool/ && python main.py #output ./utils/pool/output.yaml
     - name: copy pool to clashcheck #input ./utils/pool/output.yaml

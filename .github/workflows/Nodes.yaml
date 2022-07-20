@@ -71,7 +71,7 @@ jobs:
       run: | #input ./utils/subconverter/check
          ./utils/subconverter/subconverter -g --artifact "clash"
          #output ./utils/subconverter/Clash.yaml
-         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true #output ./Clash.yaml
          rm ./utils/subconverter/check #delete ./utils/subconverter/check
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/check.yaml to GitHub

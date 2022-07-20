@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v3     #git clone
+    - uses: actions/setup-node@v3   #Node.js环境
+      with:
+        node-version: '16.x'        #Node.js 16.x
     - uses: actions/setup-python@v4 #python环境
       with:
         python-version: '3.x'       #python 3.x
@@ -33,6 +36,10 @@ jobs:
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
+    - name: npm
+      run: | 安装npm包
+         cd ./utils/rm/
+         npm ci
     - name: pool #input ./utils/pool/config.yaml
       run: cd ./utils/pool/ && python main.py #output ./utils/pool/output.yaml
     - name: copy pool to clashcheck #input ./utils/pool/output.yaml
@@ -42,9 +49,12 @@ jobs:
     - name: copy clashcheck to clash2base64 #input ./utils/clashcheck/check.yaml
       run: cp ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
-      run:  ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm ./utils/subconverter/check.yaml #output ./utils/subconverter/check
+      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm ./utils/subconverter/check.yaml && mv ./utils/subconverter/check ./utils/rm/url #delete ./utils/subconverter/check.yaml & output ./utils/rm/url
+    - name: remove & rename
+      run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https & long
-      run: | #input ./utils/subconverter/check
+      run: | #input ./utils/rm/out
+         mv ./utils/rm/out ./utils/subconverter/check
          cp ./utils/subconverter/check ./long
          base64 -d ./utils/subconverter/check > ./url #output ./url
          #input ./.github/url.sh

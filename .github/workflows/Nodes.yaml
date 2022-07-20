@@ -50,12 +50,13 @@ jobs:
       run: cp ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
       run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm ./utils/subconverter/check.yaml #delete ./utils/subconverter/check.yaml & output ./utils/subconverter/check
-    - name: base64 decode #input ./utils/subconverter/check
+    - name: base64 decode #because utils/subconverter/generate.ini so input ./utils/subconverter/check
       run: base64 -d ./utils/subconverter/check > ./utils/rm/url #output ./utils/rm/url
     - name: remove & rename #input ./utils/rm/url
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https & long
       run: | #input ./utils/rm/out
+         rm ./utils/rm/url
          mv ./utils/rm/out ./url       #output ./url
          #input ./.github/url.sh
          ./.github/url.sh > ./1        #output ./1

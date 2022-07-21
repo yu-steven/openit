@@ -1,5 +1,5 @@
 #!/bin/bash
-name=openitsub
+name=Openit
 line=`sed -n '$=' url`
 time=`date "+%Y.%m.%d %H:%M:%S"`
 

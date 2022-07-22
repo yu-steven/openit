@@ -67,6 +67,7 @@ jobs:
          #input ./3
          base64 3 > https -w 0 && rm 3 #delete ./3 & output ./https
          base64 ./url > ./long -w 0
+         sort url -o url #排序并修改至url文件，突出增删的节点    output ./url
     - name: Clash.yaml
       run: | #input ./utils/subconverter/check
          ./utils/subconverter/subconverter -g --artifact "clash"

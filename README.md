@@ -1,6 +1,6 @@
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"><img align="right" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 # <img align=left src="https://gitlab.com/yu-steven/openit/-/raw/main/images/logo_mini.PNG" width=100 height=100> Openit  
-<h4> Powered by <font color="green">Openit PCRS</font></h4>
+<h6> Powered by <font color="green">Openit PCRS</font></h6>
 
 
 <div align="center">

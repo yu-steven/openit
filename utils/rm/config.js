@@ -1,4 +1,4 @@
 module.exports={
     nodeAddName:' → TG@SCINV',
-    dnsServers:['8.8.8.8','1.1.1.1']
+    dnsServers:['223.5.5.5','114.114.114.114']
 }

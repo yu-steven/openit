@@ -120,7 +120,7 @@ async function run(){
             }
         }
     }
-    console.log(`去重完成\n一共${urlList.length}个节点，去重${urlList.length-finalURLs.length}个节点，剩余${finalURLs.length}个节点`)
+    console.log(`去重改名完成\n一共${urlList.length}个节点，去重${urlList.length-finalURLs.length}个节点，剩余${finalURLs.length}个节点`)
     fs.writeFileSync('./out',finalURLs.join('\n'))
 }
 

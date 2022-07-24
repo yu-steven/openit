@@ -91,8 +91,7 @@ async function run(){
             case 'trojan':
                 try{
                 urlCountryList[finalList[i].country].push('trojan://'+item.data+'#'+(name).toString())
-                }catch(e){console.log('trojan node err')
-                }
+                }catch(e){console.log('trojan node err')}
                 break
             case 'ss':
                 try{

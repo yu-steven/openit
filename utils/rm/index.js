@@ -31,27 +31,27 @@ async function run(){
             case 'vmess':
                 let vmessJSON = JSON.parse(Buffer.from(url.split('://')[1], 'base64').toString('utf-8'));
                 vmessJSON.ps = null
-                resList.push({type: 'vmess', data: vmessJSON,address:vmessJSON.add});
+                resList.push({type: 'vmess', data: vmessJSON, address: vmessJSON.add});
                 break
             case 'trojan':
                 let trojanData = url.split('://')[1];
                 let trojanAddress = trojanData.split('@')[1].split('?')[0].split(':')[0];
-                resList.push({type: 'trojan', data: trojanData.split('#')[0],address:trojanAddress})
+                resList.push({type: 'trojan', data: trojanData.split('#')[0], address: trojanAddress})
                 break
             case 'ss':
                 let ssData = url.split('://')[1];
                 let ssAddress = ssData.split('@')[1].split('#')[0].split(':')[0];
-                resList.push({type: 'ss', data: ssData.split('#')[0],address:ssAddress})
+                resList.push({type: 'ss', data: ssData.split('#')[0], address: ssAddress})
                 break
             case 'ssr':
                 let ssrData = Buffer.from(url.split('://')[1], 'base64').toString('utf-8');
                 let ssrAddress = ssrData.split(':')[0];
-                resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/,'remarks={name}&'),address:ssrAddress});
+                resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/,'remarks={name}&'), address: ssrAddress});
                 break
             case 'https':
                 let httpsData = url.split('://')[1].split('#')[0];
                 let httpsAddress = Buffer.from(httpsData.split('?')[0],"base64").toString('utf8').split('@')[1].split(':')[0]
-                resList.push({type: 'https',data: httpsData,address:httpsAddress})
+                resList.push({type: 'https',data: httpsData, address: httpsAddress})
                 break
             default:
                 break

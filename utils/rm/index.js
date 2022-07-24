@@ -46,12 +46,12 @@ async function run(){
             case 'ssr':
                 let ssrData = Buffer.from(url.split('://')[1], 'base64').toString('utf-8');
                 let ssrAddress = ssrData.split(':')[0];
-                resList.push({type: 'ssr', data:ssrData.replace(/remarks=\w+?&/,'remarks={name}&'),address:ssrAddress});
+                resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/,'remarks={name}&'),address:ssrAddress});
                 break
             case 'https':
                 let httpsData = url.split('://')[1].split('#')[0];
                 let httpsAddress = Buffer.from(httpsData.split('?')[0],"base64").toString('utf8').split('@')[1].split(':')[0]
-                resList.push({type: 'https',data:httpsData,address:httpsAddress})
+                resList.push({type: 'https',data: httpsData,address:httpsAddress})
                 break
             default:
                 break

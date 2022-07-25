@@ -63,7 +63,7 @@ jobs:
          cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
          base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
          base64 url > long -w 0        #output ./long
-         sort url -o url #排序并修改至url文件，突出增删的节点 output ./url
+         sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
          cp ./long ./utils/subconverter/long #将long代入subconverter的bade642clash
     - name: Clash.yaml
       run: | #input ./utils/subconverter/long

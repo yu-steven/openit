@@ -45,11 +45,11 @@ jobs:
     - name: copy pool to clashcheck #input ./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output ./utils/clashcheck/input.yaml
     - name: clashcheck #because ./utils/clashcheck/config.yaml so input ./utils/clashcheck/input.yaml
-      run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py && rm input.yaml #delete ./utils/clashcheck/input.yaml & output ./utils/clashcheck/check.yaml
+      run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py && rm input.yaml #output ./utils/clashcheck/check.yaml & delete ./utils/clashcheck/input.yaml
     - name: move clashcheck to clash2base64 #input ./utils/clashcheck/check.yaml
       run: mv ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
-      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" #output ./utils/subconverter/check
+      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
     - name: base64 decode #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check
       run: base64 -d ./utils/subconverter/check > ./utils/rm/url && rm ./utils/subconverter/check #output ./utils/rm/url & delete ./utils/subconverter/check
     - name: remove & rename #input ./utils/rm/url

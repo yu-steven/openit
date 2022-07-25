@@ -31,7 +31,7 @@ async function run(){
             case 'vmess':
                 let vmessJSON = JSON.parse(Buffer.from(url.split('://')[1], 'base64').toString('utf-8'));
                 vmessJSON.ps = null
-                resList.push({type: 'vmess', data: vmessJSON, address: vmessJSON.add});
+                resList.push({type: 'vmess', data: vmessJSON, address: vmessJSON.add})
                 break
             case 'trojan':
                 let trojanData = url.split('://')[1];
@@ -46,7 +46,7 @@ async function run(){
             case 'ssr':
                 let ssrData = Buffer.from(url.split('://')[1], 'base64').toString('utf-8');
                 let ssrAddress = ssrData.split(':')[0];
-                resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/,'remarks={name}&'), address: ssrAddress});
+                resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/,'remarks={name}&'), address: ssrAddress})
                 break
             case 'https':
                 let httpsData = url.split('://')[1].split('#')[0];
@@ -85,7 +85,7 @@ async function run(){
             case 'vmess':
                 try{
                 item.data.ps = (name).toString();
-                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'));
+                urlCountryList[finalList[i].country].push('vmess://'+Buffer.from(JSON.stringify(item.data),'utf8').toString('base64'))
                 }catch(e){console.log('vmess node err')}
                 break
             case 'trojan':
@@ -100,7 +100,7 @@ async function run(){
                 break
             case 'ssr':
                 try{
-                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'));
+                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))
                 }catch(e){console.log('ssr node err')}
                 break
             case 'https':

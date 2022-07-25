@@ -58,17 +58,13 @@ jobs:
       run: | #input ./utils/rm/out
          rm ./utils/rm/url             #delete ./utils/rm/url
          mv ./utils/rm/out ./url       #output ./url
-         #input ./.github/url.sh
          ./.github/url.sh > ./1        #output ./1
-         #input ./url
-         cp ./url ./2                  #output ./2
-         #input ./1 ./2
-         cat 1 2 > 3 && rm 1 2         #delete ./1 ./2 & output ./3
-         #input ./3
-         base64 3 > https -w 0 && rm 3 #delete ./3 & output ./https
-         base64 ./url > ./long -w 0    #output ./long
-         cp ./long ./utils/subconverter/long #将long代入bade642clash的subconverter
-         sort url -o url #排序并修改至url文件，突出增删的节点    output ./url
+         cp url 2                      #output ./2
+         cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
+         base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
+         base64 url > long -w 0        #output ./long
+         sort url -o url #排序并修改至url文件，突出增删的节点 output ./url
+         cp ./long ./utils/subconverter/long #将long代入subconverter的bade642clash
     - name: Clash.yaml
       run: | #input ./utils/subconverter/long
          ./utils/subconverter/subconverter -g --artifact "base642clash"

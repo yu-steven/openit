@@ -76,7 +76,7 @@ jobs:
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true #output ./Clash.yaml
          rm ./utils/subconverter/long #delete ./utils/subconverter/long
     - name: git push
-      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/clashcheck/check.yaml to GitHub
+      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml to GitHub
 
   long: #jsDelivr long同步
     needs: my-job

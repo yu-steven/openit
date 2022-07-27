@@ -13,7 +13,7 @@ dns:
 {% endif %}
 dns:
   enable: true #是否启用dns false
-  ipv6: false
+  ipv6: true
   listen: 0.0.0.0:53
   enhanced-mode: redir-host # 模式：redir-host或fake-ip
   fake-ip-range: 198.18.0.1/16 
@@ -29,12 +29,10 @@ dns:
   fallback:
      - 8.8.8.8 #谷歌DNS
      - 1.1.1.1 #Cloudflare DNS
-     - tls://dns.rubyfish.cn:853
-     - tls://1.0.0.1:853
-     - tls://dns.google:853
+     - https://dns.google/dns-query #谷歌Doh
+     - https://dns.daycat.space/dns-query #openit/daycat Doh
+     - https://cloudflare-dns.com/dns-query #cf Doh
      - https://dns.rubyfish.cn/dns-query
-     - https://cloudflare-dns.com/dns-query
-     - https://dns.google/dns-query
   fallback-filter:
      geoip: true #默认
      ipcidr: #在这个网段内的 IP 地址会被考虑为被污染的 IP

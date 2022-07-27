@@ -27,8 +27,6 @@ dns:
      - 117.50.10.10 #ONE DNS纯净版 直接返回其真实的响应结果
      - 114.114.114.114 #114DNS
   fallback:
-     - 8.8.8.8 #谷歌DNS
-     - 1.1.1.1 #Cloudflare DNS
      - https://dns.google/dns-query #谷歌Doh
      - https://dns.daycat.space/dns-query #openit/daycat Doh
      - https://cloudflare-dns.com/dns-query #cf Doh

@@ -63,6 +63,7 @@ jobs:
          cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
          base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
          sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
+         cp ./https ./utils/subconverter/https 讲https文件引入subconverter
     - name: Clash.yaml
       run: | #input ./utils/subconverter/https
          ./utils/subconverter/subconverter -g --artifact "clash"

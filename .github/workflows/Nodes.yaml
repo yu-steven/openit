@@ -62,15 +62,15 @@ jobs:
          cp url 2                      #output ./2
          cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
          base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
-         base64 url > long -w 0        #output ./long
          sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
-         cp ./long ./utils/subconverter/long #将long代入subconverter的bade642clash
     - name: Clash.yaml
-      run: | #input ./utils/subconverter/long
-         ./utils/subconverter/subconverter -g --artifact "base642clash"
-         #output ./utils/subconverter/Clash.yaml
+      run: | #input ./utils/subconverter/https
+         ./utils/subconverter/subconverter -g --artifact "clash"
+         ./utils/subconverter/subconverter -g --artifact "long"
+         #output ./utils/subconverter/Clash.yaml ./utils/subconverter/long
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true #output ./Clash.yaml
-         rm ./utils/subconverter/long #delete ./utils/subconverter/long
+         mv ./utils/subconverter/long ./long || true #output ./Clash.yaml
+         rm ./utils/subconverter/https #delete ./utils/subconverter/https
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml to GitHub
 

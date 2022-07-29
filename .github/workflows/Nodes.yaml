@@ -54,7 +54,7 @@ jobs:
       run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url  && rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check
     - name: remove & rename #input ./utils/rm/url
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
-    - name: url & https & long
+    - name: url & https
       run: | #input ./utils/rm/out
          rm ./utils/rm/url             #delete ./utils/rm/url
          mv ./utils/rm/out ./url       #output ./url
@@ -64,7 +64,7 @@ jobs:
          base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
          sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
          cp ./https ./utils/subconverter/https #将https文件引入subconverter
-    - name: Clash.yaml
+    - name: long & Clash.yaml
       run: | #input ./utils/subconverter/https
          ./utils/subconverter/subconverter -g --artifact "clash"
          ./utils/subconverter/subconverter -g --artifact "long"

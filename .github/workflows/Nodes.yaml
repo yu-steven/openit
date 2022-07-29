@@ -51,7 +51,7 @@ jobs:
     - name: clash2base64 #input ./utils/subconverter/check.yaml
       run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
     - name: base64 decode #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check
-      run: base64 -d ./utils/subconverter/check > ./utils/rm/url && rm ./utils/subconverter/check #output ./utils/rm/url & delete ./utils/subconverter/check
+      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url  && rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check
     - name: remove & rename #input ./utils/rm/url
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https & long

@@ -76,9 +76,13 @@ dns:
      - https://doh.pub/dns-query #腾讯DNS over HTTPS
      - https://dns.alidns.com/dns-query #阿里DNS over HTTPS
      - https://dns.rubyfish.cn/dns-query #红鱼DNS over HTTPS
-  fallback: #遇到CN以外的ip和fallback-filter中的地址用如下DNS解析
+  fallback: #遇到CN以外的ip和fallback-filter中的条件用如下DNS解析
+     - https://8.8.4.4/dns-query #Google Doh
+     - https://8.8.8.8/dns-query #Google Doh
      - https://dns.google/dns-query #Google Doh
      - https://dns.daycat.space/dns-query #openit/daycat Doh
+     - https://1.0.0.1/dns-query #Cloudflare Doh
+     - https://1.1.1.1/dns-query #Cloudflare Doh
      - https://cloudflare-dns.com/dns-query #Cloudflare Doh
   fallback-filter:
     geoip: true

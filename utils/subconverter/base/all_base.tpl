@@ -64,27 +64,30 @@ dns:
     - "*.ipv6.microsoft.com"
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
-  default-nameserver:
+  default-nameserver: #解析Doh域名的ip
     - 119.29.29.29
     - 223.5.5.5
-  nameserver:
+  nameserver: #clash首次解析
      - 223.5.5.5 #阿里DNS
      - 180.76.76.76 #百度DNS
      - 119.29.29.29 #腾讯DNS
      - 117.50.10.10 #ONE DNS
      - 114.114.114.114 #114DNS
-  fallback:
-     - https://doh.pub/dns-query #dns.pub Doh
+     - https://doh.pub/dns-query #腾讯DNS over HTTPS
+     - https://dns.alidns.com/dns-query #阿里DNS over HTTPS
+     - https://dns.rubyfish.cn/dns-query #红鱼DNS over HTTPS
+  fallback: #遇到CN以外的ip和fallback-filter中的地址用如下DNS解析
      - https://dns.google/dns-query #Google Doh
      - https://dns.daycat.space/dns-query #openit/daycat Doh
      - https://cloudflare-dns.com/dns-query #Cloudflare Doh
   fallback-filter:
     geoip: true
-    ipcidr:
+    geoip-code: CN
+    ipcidr: #nameserver中解析到这里的域名用fallback
       - 240.0.0.0/4
       - 127.0.0.1/8
       - 0.0.0.0/32
-    domain:
+    domain: #这些域名直接fallback
       - +.google.com
       - +.facebook.com
       - +.twitter.com

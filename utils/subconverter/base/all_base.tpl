@@ -81,10 +81,10 @@ dns:
     - https://8.8.4.4/dns-query #Google Doh
     - https://8.8.8.8/dns-query #Google Doh
     - https://dns.google/dns-query #Google Doh
-    - https://dns.daycat.space/dns-query #openit/daycat Doh
     - https://1.0.0.1/dns-query #Cloudflare Doh
     - https://1.1.1.1/dns-query #Cloudflare Doh
     - https://cloudflare-dns.com/dns-query #Cloudflare Doh
+    - https://dns.daycat.space/dns-query #openit/daycat Doh
   fallback-filter:
     geoip: true
     geoip-code: CN

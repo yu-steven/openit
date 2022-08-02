@@ -64,7 +64,7 @@ dns:
     - "*.ipv6.microsoft.com"
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
-  default-nameserver: #解析Doh域名的ip
+  default-nameserver: #解析Doh域名的DNS
     - 119.29.29.29
     - 223.5.5.5
   nameserver: #clash首次解析

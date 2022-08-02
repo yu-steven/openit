@@ -74,6 +74,7 @@ dns:
     - 117.50.10.10 #ONE DNS
     - 114.114.114.114 #114DNS
     - https://doh.pub/dns-query #腾讯DNS over HTTPS
+    - https://sm2.doh.pub/dns-query #腾讯DNS over HTTPS(国密)
     - https://dns.alidns.com/dns-query #阿里DNS over HTTPS
     - https://dns.rubyfish.cn/dns-query #红鱼DNS over HTTPS
   fallback: #遇到CN以外的ip和fallback-filter中的条件用如下DNS解析

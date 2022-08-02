@@ -13,28 +13,87 @@ dns:
 {% endif %}
 dns:
   enable: true #是否启用dns false
-  ipv6: true
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host # 模式：redir-host或fake-ip
-  fake-ip-range: 198.18.0.1/16 
-  fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
-     - '*.lan'
-     - localhost.ptlogin2.qq.com
+  ipv6: false
+  # listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "dns.msftncsi.com"
+    - "www.msftncsi.com"
+    - "www.msftconnecttest.com"
+    - "stun.*.*.*"
+    - "stun.*.*"
+    - miwifi.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - netis.cc
+    - router.asus.com
+    - repeater.asus.com
+    - routerlogin.com
+    - routerlogin.net
+    - tendawifi.com
+    - tendawifi.net
+    - tplinklogin.net
+    - tplinkwifi.net
+    - tplinkrepeater.net
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
   nameserver:
      - 223.5.5.5 #阿里DNS
      - 180.76.76.76 #百度DNS
      - 119.29.29.29 #腾讯DNS
-     - 117.50.10.10 #ONE DNS纯净版 直接返回其真实的响应结果
+     - 117.50.10.10 #ONE DNS
      - 114.114.114.114 #114DNS
   fallback:
-     - https://dns.google/dns-query #谷歌Doh
+     - https://doh.pub/dns-query #dns.pub Doh
+     - https://dns.google/dns-query #Google Doh
      - https://dns.daycat.space/dns-query #openit/daycat Doh
-     - https://cloudflare-dns.com/dns-query #cf Doh
-     - https://dns.rubyfish.cn/dns-query
+     - https://cloudflare-dns.com/dns-query #Cloudflare Doh
   fallback-filter:
-     geoip: true #默认
-     ipcidr: #在这个网段内的 IP 地址会被考虑为被污染的 IP
-       - 240.0.0.0/4
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 127.0.0.1/8
+      - 0.0.0.0/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~

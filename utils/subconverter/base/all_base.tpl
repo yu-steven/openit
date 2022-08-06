@@ -64,10 +64,8 @@ dns:
     - "*.ipv6.microsoft.com"
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
-  default-nameserver: #解析Doh域名的DNS
-    - 223.5.5.5
-    - 119.29.29.29
-    - 114.114.114.114
+  default-nameserver: #解析Dot/Doh域名的DNS
+    - 9.9.9.9
   nameserver: #clash首次解析
     - 1.2.4.8 #CNNIC sDNS
     - 210.2.4.8 #CNNIC sDNS
@@ -84,6 +82,12 @@ dns:
     - 117.50.10.10 #OneDNS
     - 114.114.114.114 #114DNS
     - 114.114.115.115 #114DNS
+    - 202.38.64.1 #中科大DNS
+    - 202.112.20.131 #中科大DNS
+    - 202.141.160.95 #中科大DNS
+    - 202.141.160.99 #中科大DNS
+    - 202.141.176.95 #中科大DNS
+    - 202.141.176.99 #中科大DNS
     - tls://dot.pub:853 #腾讯DNS over TLS
     - tls://1.12.12.12:853 #腾讯DNS over TLS(IP)
     - tls://120.53.53.53:853 #腾讯DNS over TLS(IP)

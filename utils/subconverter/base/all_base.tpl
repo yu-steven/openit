@@ -65,11 +65,11 @@ dns:
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
   default-nameserver: #解析Doh域名的DNS
-    - 119.29.29.29
     - 223.5.5.5
+    - 119.29.29.29
   nameserver: #clash首次解析
     - 223.5.5.5 #阿里DNS
-    - 223.6.6.6
+    - 223.6.6.6 #阿里DNS
     - 180.76.76.76 #百度DNS
     - 119.28.28.28 #腾讯DNS
     - 119.29.29.29 #腾讯DNS
@@ -90,8 +90,8 @@ dns:
   fallback: #遇到CN以外的ip和fallback-filter中的条件用如下DNS解析
     - 1.0.0.1 #Cloudflare DNS
     - 1.1.1.1 #Cloudflare DNS
-    - 8.8.4.4 Google DNS
-    - 8.8.8.8 Google DNS
+    - 8.8.4.4 #Google DNS
+    - 8.8.8.8 #Google DNS
     - 208.67.220.220 #OpenDNS
     - 208.67.220.222 #OpenDNS
     - 208.67.222.220 #OpenDNS
@@ -120,10 +120,10 @@ dns:
     - tls://j.iqiq.io:853 #passcloud Dot 江西九江双线 BGP 节点
     - tls://c.passcloud.xyz:853 #passcloud Dot 南方广州 BGP 节点
     - tls://x.passcloud.xyz:853 #passcloud Dot 华东上海 BGP 节点
-    - https://a.passcloud.xyz/hk  #passcloud Doh HK
-    - https://a.passcloud.xyz/am  #passcloud Doh AM
-    - https://a.passcloud.xyz/us  #passcloud Doh US
-    - https://a.passcloud.xyz/sz  #passcloud Doh SZ
+    - https://a.passcloud.xyz/hk #passcloud Doh HK
+    - https://a.passcloud.xyz/am #passcloud Doh AM
+    - https://a.passcloud.xyz/us #passcloud Doh US
+    - https://a.passcloud.xyz/sz #passcloud Doh SZ
     - https://a.passcloud.xyz/cdn #passcloud Doh CDN
     - https://a.passcloud.xyz/dns-query #passcloud Doh Anycast
     - https://worldwide.passcloud.xyz/dns-query #passcloud Doh Worldwide CDN

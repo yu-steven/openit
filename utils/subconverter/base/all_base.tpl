@@ -69,22 +69,64 @@ dns:
     - 223.5.5.5
   nameserver: #clash首次解析
     - 223.5.5.5 #阿里DNS
+    - 223.6.6.6
     - 180.76.76.76 #百度DNS
+    - 119.28.28.28 #腾讯DNS
     - 119.29.29.29 #腾讯DNS
+    - 52.80.52.52 #ONE DNS
     - 117.50.10.10 #ONE DNS
     - 114.114.114.114 #114DNS
+    - 114.114.115.115 #114DNS
+    - tls://dot.pub:853 #腾讯DNS over TLS
+    - tls://1.12.12.12:853 #腾讯DNS over TLS(IP)
+    - tls://120.53.53.53:853 #腾讯DNS over TLS(IP)
     - https://doh.pub/dns-query #腾讯DNS over HTTPS
     - https://sm2.doh.pub/dns-query #腾讯DNS over HTTPS(国密)
+    - https://1.12.12.12/dns-query #腾讯DNS over HTTPS(IP)
+    - https://120.53.53.53/dns-query #腾讯DNS over HTTPS(IP)
     - https://dns.alidns.com/dns-query #阿里DNS over HTTPS
+    - https://doh.dns.sb/dns-query #DNS.SB DNS over HTTPS
     - https://dns.rubyfish.cn/dns-query #红鱼DNS over HTTPS
   fallback: #遇到CN以外的ip和fallback-filter中的条件用如下DNS解析
-    - https://8.8.4.4/dns-query #Google Doh
-    - https://8.8.8.8/dns-query #Google Doh
+    - 1.0.0.1 #Cloudflare DNS
+    - 1.1.1.1 #Cloudflare DNS
+    - 8.8.4.4 Google DNS
+    - 8.8.8.8 Google DNS
+    - 208.67.220.220 #OpenDNS
+    - 208.67.220.222 #OpenDNS
+    - 208.67.222.220 #OpenDNS
+    - 208.67.222.222 #OpenDNS
+    - 80.80.80.80 #freenom DNS
+    - 80.80.81.81 #freenom DNS
+    - https://dns.quad9.net/dns-query #IBM Doh
+    - https://dns9.quad9.net/dns-query #IBM Doh
+    - tls://dns.google:853 #Google Dot
+    - https://8.8.4.4/dns-query #Google Doh(IP)
+    - https://8.8.8.8/dns-query #Google Doh(IP)
     - https://dns.google/dns-query #Google Doh
-    - https://1.0.0.1/dns-query #Cloudflare Doh
-    - https://1.1.1.1/dns-query #Cloudflare Doh
+    - tls://1.0.0.1:853 #Cloudflare Dot(IP)
+    - tls://1.1.1.1:853 #Cloudflare Dot(IP)
+    - tls://one.one.one.one #Cloudflare Dot
+    - tls://1dot1dot1dot1.cloudflare-dns.com #Cloudflare Dot
+    - https://1.0.0.1/dns-query #Cloudflare Doh(IP)
+    - https://1.1.1.1/dns-query #Cloudflare Doh(IP)
     - https://cloudflare-dns.com/dns-query #Cloudflare Doh
     - https://dns.daycat.space/dns-query #openit/daycat Doh
+    - https://dns.adguard.com/dns-query #AdGuard Doh
+    - https://dns-family.adguard.com/dns-query #AdGuard Doh
+    - https://dns-unfiltered.adguard.com/dns-query #AdGuard Doh
+    - tls://b.iqiq.io:853 #passcloud Dot 华北北京 BGP 节点
+    - tls://h.iqiq.io:853 #passcloud Dot 海南岛海口/三亚 BGP 节点
+    - tls://j.iqiq.io:853 #passcloud Dot 江西九江双线 BGP 节点
+    - tls://c.passcloud.xyz:853 #passcloud Dot 南方广州 BGP 节点
+    - tls://x.passcloud.xyz:853 #passcloud Dot 华东上海 BGP 节点
+    - https://a.passcloud.xyz/hk  #passcloud Doh HK
+    - https://a.passcloud.xyz/am  #passcloud Doh AM
+    - https://a.passcloud.xyz/us  #passcloud Doh US
+    - https://a.passcloud.xyz/sz  #passcloud Doh SZ
+    - https://a.passcloud.xyz/cdn #passcloud Doh CDN
+    - https://a.passcloud.xyz/dns-query #passcloud Doh Anycast
+    - https://worldwide.passcloud.xyz/dns-query #passcloud Doh Worldwide CDN
   fallback-filter:
     geoip: true
     geoip-code: CN

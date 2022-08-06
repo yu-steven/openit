@@ -67,14 +67,21 @@ dns:
   default-nameserver: #解析Doh域名的DNS
     - 223.5.5.5
     - 119.29.29.29
+    - 114.114.114.114
   nameserver: #clash首次解析
+    - 1.2.4.8 #CNNIC sDNS
+    - 210.2.4.8 #CNNIC sDNS
     - 223.5.5.5 #阿里DNS
     - 223.6.6.6 #阿里DNS
     - 180.76.76.76 #百度DNS
     - 119.28.28.28 #腾讯DNS
     - 119.29.29.29 #腾讯DNS
-    - 52.80.52.52 #ONE DNS
-    - 117.50.10.10 #ONE DNS
+    - 101.226.4.6 #360 DNS 派
+    - 218.30.118.6 #360 DNS 派
+    - 123.125.81.6 #360 DNS 派
+    - 140.207.198.6 #360 DNS 派
+    - 52.80.52.52 #OneDNS
+    - 117.50.10.10 #OneDNS
     - 114.114.114.114 #114DNS
     - 114.114.115.115 #114DNS
     - tls://dot.pub:853 #腾讯DNS over TLS
@@ -88,16 +95,63 @@ dns:
     - https://doh.dns.sb/dns-query #DNS.SB DNS over HTTPS
     - https://dns.rubyfish.cn/dns-query #红鱼DNS over HTTPS
   fallback: #遇到CN以外的ip和fallback-filter中的条件用如下DNS解析
-    - 1.0.0.1 #Cloudflare DNS
-    - 1.1.1.1 #Cloudflare DNS
+    - 9.9.9.9 #IBM DNS
+    - 149.112.112.112 #IBM DNS
     - 8.8.4.4 #Google DNS
     - 8.8.8.8 #Google DNS
+    - 1.0.0.1 #Cloudflare DNS
+    - 1.1.1.1 #Cloudflare DNS
     - 208.67.220.220 #OpenDNS
     - 208.67.220.222 #OpenDNS
     - 208.67.222.220 #OpenDNS
     - 208.67.222.222 #OpenDNS
+    - 195.46.39.39 #SafeDNS
+    - 195.46.39.40 #SafeDNS
+    - 168.95.1.1 #HiNet DNS
+    - 203.80.96.10 #HKBN DNS
+    - 168.95.192.1 #HiNet DNS
+    - 164.124.101.2 #LG U+ DNS
+    - 164.124.107.9 #LG U+ DNS
+    - 203.248.252.2 #LG U+ DNS
+    - 203.248.242.2 #LG U+ DNS
     - 80.80.80.80 #freenom DNS
     - 80.80.81.81 #freenom DNS
+    - 199.85.126.10 #norton DNS
+    - 199.85.127.10 #norton DNS
+    - 168.126.63.1 #KT olleh DNS
+    - 168.126.63.2 #KT olleh DNS
+    - 139.175.252.16 #Seednet DNS
+    - 139.175.55.244 #Seednet DNS
+    - 202.45.84.58 #和记环球电讯 DNS
+    - 202.45.84.59 #和记环球电讯 DNS
+    - 8.26.56.26 #Comodo SecureDNS
+    - 23.253.163.53 #Alternate DNS
+    - 77.88.8.1 #Yandex Public DNS
+    - 77.88.8.8 #Yandex Public DNS
+    - 89.233.43.71   #UncensoredDNS
+    - 91.239.100.100 #UncensoredDNS
+    - 198.101.242.72 #Alternate DNS
+    - 8.20.247.20 #Comodo SecureDNS
+    - 64.6.64.6 #Verisign Public DNS
+    - 64.6.65.6 #Verisign Public DNS
+    - 209.244.0.3 #Level3 Public DNS
+    - 209.244.0.4 #Level3 Public DNS
+    - 210.220.163.82 #SK Broadband DNS
+    - 219.250.36.130 #SK Broadband DNS
+    - 202.14.67.4 #Pacific SuperNet DNS
+    - 84.200.69.80 #DNS.WATCH Public DNS
+    - 84.200.70.40 #DNS.WATCH Public DNS
+    - 202.14.67.14 #Pacific SuperNet DNS
+    - 156.154.70.1 #Neustar Recursive DNS
+    - 156.154.71.1 #Neustar Recursive DNS
+    - 216.146.35.35 #ORACLE Dyn Public DNS
+    - 216.146.36.36 #ORACLE Dyn Public DNS
+    - 77.109.148.136 #xiala.net Public DNS
+    - 77.109.148.137 #xiala.net Public DNS
+    - 101.101.101.101 #TWNIC Quad101 Public DNS
+    - 101.102.103.104 #TWNIC Quad101 Public DNS
+    - 74.82.42.42 #Hurricane Electric Public DNS
+    - 66.220.18.42 #Hurricane Electric Public DNS
     - https://dns.quad9.net/dns-query #IBM Doh
     - https://dns9.quad9.net/dns-query #IBM Doh
     - tls://dns.google:853 #Google Dot

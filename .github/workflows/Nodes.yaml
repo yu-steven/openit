@@ -63,15 +63,15 @@ jobs:
          cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
          base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
          sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
-         cp ./https ./utils/subconverter/https #将https文件引入subconverter
+         base64 ./url > ./utils/subconverter/base64 -w 0 #url文件base64编码引入subconverter
     - name: long & Clash.yaml
-      run: | #input ./utils/subconverter/https
+      run: | #input ./utils/subconverter/base64
          ./utils/subconverter/subconverter -g --artifact "clash"
          ./utils/subconverter/subconverter -g --artifact "long"
          #output ./utils/subconverter/Clash.yaml ./utils/subconverter/long
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true #output ./Clash.yaml
          mv ./utils/subconverter/long ./long || true #output ./Clash.yaml
-         rm ./utils/subconverter/https #delete ./utils/subconverter/https
+         rm ./utils/subconverter/base64 #delete ./utils/subconverter/base64
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml to GitHub
 

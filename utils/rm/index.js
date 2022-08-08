@@ -34,9 +34,9 @@ async function run(){
                 resList.push({type: 'vmess', data: vmessJSON, address: vmessJSON.add})
                 break
             case 'trojan':
-                let trojanData = url.split('://')[1];
+                let trojanData = url.split('://')[1].split('#')[0];
                 let trojanAddress = trojanData.split('@')[1].split('?')[0].split(':')[0];
-                resList.push({type: 'trojan', data: trojanData.split('#')[0], address: trojanAddress})
+                resList.push({type: 'trojan', data: trojanData, address: trojanAddress})
                 break
             case 'ss':
                 let ssData = url.split('://')[1].split('#')[0];

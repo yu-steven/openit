@@ -39,9 +39,9 @@ async function run(){
                 resList.push({type: 'trojan', data: trojanData.split('#')[0], address: trojanAddress})
                 break
             case 'ss':
-                let ssData = url.split('://')[1];
+                let ssData = url.split('://')[1].split('#')[0];
                 let ssAddress = ssData.split('@')[1].split('#')[0].split(':')[0];
-                resList.push({type: 'ss', data: ssData.split('#')[0], address: ssAddress})
+                resList.push({type: 'ss', data: ssData, address: ssAddress})
                 break
             case 'ssr':
                 let ssrData = Buffer.from(url.split('://')[1], 'base64').toString('utf-8');
@@ -51,7 +51,7 @@ async function run(){
             case 'https':
                 let httpsData = url.split('://')[1].split('#')[0];
                 let httpsAddress = Buffer.from(httpsData.split('?')[0],"base64").toString('utf8').split('@')[1].split(':')[0]
-                resList.push({type: 'https',data: httpsData, address: httpsAddress})
+                resList.push({type: 'https', data: httpsData, address: httpsAddress})
                 break
             default:
                 break

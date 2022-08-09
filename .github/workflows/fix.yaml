@@ -1,0 +1,31 @@
+name: Fix
+on: 
+  push:
+    paths:
+      - 'sub/url2'
+  workflow_dispatch:
+
+jobs:
+  re-job:
+    name: Fix
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git init
+      run: | 
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: sub/url2
+      run: | 
+        cd ./sub
+        sed -i 's/^[ \t]*//g' url2 #删除行头空格和tab，对齐行头
+        sed -i '/^sub:/d' url2     #删除以sub:开头的行
+        sed -i '/^$/d' url2        #删除空白行
+        sed -i -r '/^\s*$/d' url2  #删除带有空格或制表符的空行
+    - name: subconverter
+      run: | 
+        base64 ./sub/url2 > ./utils/subconverter/b64 -w 0
+        ./utils/subconverter/subconverter -g --artifact "fix" && rm ./utils/subconverter/b64
+        base64 -d ./utils/subconverter/fix > ./sub/url2 && rm ./utils/subconverter/fix

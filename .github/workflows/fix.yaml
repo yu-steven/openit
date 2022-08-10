@@ -29,5 +29,6 @@ jobs:
         base64 ./sub/url2 > ./utils/subconverter/b64 -w 0
         ./utils/subconverter/subconverter -g --artifact "fix" && rm ./utils/subconverter/b64
         base64 -d ./utils/subconverter/fix > ./sub/url2 && rm ./utils/subconverter/fix
+        cd ./sub/ && sort url2 -o url2 #排序url2
     - name: git push
       run: git pull origin main && git add . && git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库" && git push origin main

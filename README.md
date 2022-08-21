@@ -60,7 +60,7 @@
 
 [ss]: https://cdn.jsdelivr.net/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://cdn.jsdelivr.net/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.26/v2rayN-Core.zip
+[v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.34/v2rayN-Core.zip
 [clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.19.27/Clash.for.Windows-0.19.27-win.7z
 [qv2ray]: https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 [Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.27_CN/app.asar
@@ -241,16 +241,16 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
-*2022.6.12 19:49 --- v5.26*
+*2022.8.18 21:26 --- v5.34*
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases`
-*2022.7.5 08:43 --- v1.7.16*
+*2022.8.13 09:35 --- v1.7.18*
 ### v2rayA for Win
 ` https://github.com/v2rayA/v2rayA/releases`
 *2022.6.18 22:51 --- v1.5.7*
 ### v2rayU for Mac
 ` https://github.com/yanue/V2rayU/releases`
-*2021.6.22 23:17 --- v3.2.0*
+*2021.8.19 21:47 --- v3.3.0*
 ### v2rayX for Mac
 ` https://github.com/Cenmrev/V2RayX/releases`
 *2019.2.14 11:51 --- v1.5.1*
@@ -259,7 +259,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2019.11.24 --- v2.1.3*
 ### v2ray-core
 ` https://github.com/v2fly/v2ray-core/releases`
-*2022.6.13 07:29 --- v4.45.1*
+*2022.6.13 07:29 --- v5.0.8*
 ### Xray-core
 ` https://github.com/XTLS/Xray-core/releases`
 *2022.6.13 07:47 --- v1.5.8*

@@ -62,8 +62,8 @@ jobs:
          cp url 2                      #output ./2
          cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
          base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
-         sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
          base64 ./url > ./utils/subconverter/base64 -w 0 #url文件base64编码引入subconverter
+         sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
     - name: long & Clash.yaml
       run: | #input ./utils/subconverter/base64
          ./utils/subconverter/subconverter -g --artifact "clash"

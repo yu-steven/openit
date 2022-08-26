@@ -1,4 +1,4 @@
 module.exports={
-    nodeAddName:' → openit.link',
+    nodeAddName:' → openitsub.com',
     dnsServers:['223.5.5.5','114.114.114.114']
 }

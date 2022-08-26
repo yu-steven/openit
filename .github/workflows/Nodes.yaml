@@ -51,7 +51,7 @@ jobs:
     - name: clash2base64 #input ./utils/subconverter/check.yaml
       run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
     - name: base64 decode #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check
-      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && wget -O base64 https://pre.paimon.gq/base64 && base64 -d base64 > paimon && cat ./utils/rm/url1 ./sub/url2 ./paimon > ./utils/rm/url  && rm ./utils/subconverter/check ./utils/rm/url1 ./base64 ./paimon  #output ./utils/rm/url & delete ./utils/subconverter/check
+      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && wget -O base64 https://pre.paimon.gq/base64 && mv ./base64 ./utils/subconverter/base64 && ./utils/subconverter/subconverter -g --artifact "re" && rm ./utils/subconverter/base64 && mv ./utils/subconverter/base ./base && base64 -d base > nodes && rm base && cat ./utils/rm/url1 ./sub/url2 ./nodes > ./utils/rm/url && rm ./utils/subconverter/check ./utils/rm/url1 ./nodes  #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
     - name: remove & rename #input ./utils/rm/url
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https

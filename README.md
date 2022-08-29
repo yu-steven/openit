@@ -191,7 +191,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [ipk-loon]: https://apps.apple.com/app/loon/id1373567447
 [ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197
 [ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
-[svg-apple]: https://gitlab.com/yu-steven/tag/-/raw/main/ios-black.svg
+[svg-apple]: https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/ios-black.svg
 [教程]: https://limbopro.com/archives/3846.html
 [神机规则]: https://merlinblog.xyz/wiki/quanx.html
 ##### [如何创建美区Apple ID？](https://shadowsockshelp.github.io/Shadowsocks/apple-id.html)

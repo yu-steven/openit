@@ -65,8 +65,7 @@
 [qv2ray]: https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
 [Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.27_CN/app.asar
 ## macOS
-首推Clash，界面美观，**只支持英文**且需要订阅转换！ClashX和Clash一样的内核，ClashX同样需要订阅转换但是**支持简体中文**，SS最后一次更新则是2019.11.13；M1芯片还可以使用Clash(Arm)&iPhone/iPad版的Shadowrocket&Quantumult X 
-Arm版的Clash(Arm)和经过Rosetta 2转译的Clash(intel)可供使用
+首推Clash，界面美观，**只支持英文**且需要订阅转换！ClashX和Clash一样的内核，ClashX同样需要订阅转换但是**支持简体中文**，SS最后一次更新则是2019.11.13；M1芯片还可以使用iPhone/iPad版的Shadowrocket & Quantumult X & Arm版的Clash(Arm)和经过Rosetta 2转译的Clash(intel)
 OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 >**.7z文件如何解压？**
 使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**

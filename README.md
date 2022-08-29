@@ -91,7 +91,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
 [Surge]: https://apps.apple.com/app/surge-4/id1442620678
 [one-click]: https://apps.apple.com/us/app/oneclick-safe-easy-fast/id1545555197
-[macos-black]: https://gitlab.com/yu-steven/tag/-/raw/main/macos-black.svg
+[macos-black]: /yu-steven/tag/-/raw/main/macos-black.svg
 ### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 [![点击跳转至Mac App Store][macos-black]](https://apps.apple.com/app/the-unarchiver/id425424353)
 ##### [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者的解决方法](https://www.macwk.com/article/macos-file-damage)
@@ -102,17 +102,17 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
  <!--教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜-->
 ### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://github.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [v2rayNG][apk-v2rayng]
 <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://github.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Clash][apk-clash]
 <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://github.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Matsuri][apk-Matsuri]
@@ -122,20 +122,20 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 
 ### [SagerNet][apk-SagerNet]
 <a href="https://play.google.com/store/apps/details?id=io.nekohasekai.sagernet" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://github.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Kitsunebi][apk-Kitsunebi]
 <a href="https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://github.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
 ### [Surfboard][apk-surfboard]
 <a href="https://play.google.com/store/apps/details?id=com.getsurfboard" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg" />
+<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://github.com/yu-steven/tag/-/raw/main/google-play.svg" />
 </a>
 
-### [魔改ss](https://raw.gitslow.tk/yu-steven/openit/main/images/Shadowsocks_4.8.5.apk)
+### [魔改ss](https://raw.gitfast.tk/yu-steven/openit/main/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download

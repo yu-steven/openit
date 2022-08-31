@@ -61,9 +61,9 @@
 [ss]: https://cdn.jsdelivr.net/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://cdn.jsdelivr.net/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
 [v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.34/v2rayN-Core.zip
-[clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.19.27/Clash.for.Windows-0.19.27-win.7z
+[clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.19.29/Clash.for.Windows-0.19.29-win.7z
 [qv2ray]: https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.27_CN/app.asar
+[Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.29_CN/app.asar
 ## macOS
 首推Clash，界面美观，**只支持英文**且需要订阅转换！ClashX和Clash一样的内核，ClashX同样需要订阅转换但是**支持简体中文**，SS最后一次更新则是2019.11.13；M1芯片还可以使用iPhone/iPad版的Shadowrocket & Quantumult X & Arm版的Clash(Arm)和经过Rosetta 2转译的Clash(intel)
 OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
@@ -81,8 +81,8 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [![点击跳转至Mac App Store][macos-black]][one-click]
 
 [ss-NG]: https://cdn.jsdelivr.net/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.27/Clash.for.Windows-0.19.27.dmg
-[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.27/Clash.for.Windows-0.19.27-arm64.dmg
+[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.29/Clash.for.Windows-0.19.29.dmg
+[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.29/Clash.for.Windows-0.19.29-arm64.dmg
 [clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.91.1/ClashX.dmg
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [v2rayU]: https://ghproxy.com/https://github.com/yanue/V2rayU/releases/download/3.2.0/V2rayU.dmg
@@ -267,25 +267,25 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ## Clash
 ### Win / Mac
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases`
-*2022.8.19 15:57 --- v0.19.27*
+*2022.8.27 15:53 --- v0.19.29*
 ### Android / TV
 ` https://github.com/Kr328/ClashForAndroid/releases`
 *2022.7.2 11:40 --- v2.5.11*
 ### ClashN for Win
 ` https://github.com/2dust/clashN/releases`
-*2022.8.12 02:22 --- v1.20*
+*2022.8.30 18:20 --- v1.21*
 ### ClashX for Mac
 ` https://github.com/yichengchen/clashX/releases`
 *2022.6.22 21:20 --- v1.94.0*
 ### Clash 汉化补丁 for Win
 ` https://github.com/BoyceLig/Clash_Chinese_Patch/releases`
-*2022.8.19 20:45 --- v0.19.27*
+*2022.8.27 17:02 --- v0.19.29*
 
 ` https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases`
-*2022.8.19 18:57 --- v0.19.27*
+*2022.8.27 21:51 --- v0.19.29*
 ### Clash-core
 ` https://github.com/Dreamacro/clash/releases`
-*2022.6.19 13:27 --- v1.11.0*
+*2022.8.19 22:08 --- v1.11.8*
 
 ## Qv2ray
 ### Win/Mac/Linux

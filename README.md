@@ -244,7 +244,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2022.8.18 21:26 --- v5.34*
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases`
-*2022.8.13 09:35 --- v1.7.18*
+*2022.8.30 17:43 --- v1.7.19*
 ### v2rayA for Win
 ` https://github.com/v2rayA/v2rayA/releases`
 *2022.6.18 22:51 --- v1.5.7*
@@ -262,7 +262,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2022.6.13 07:29 --- v5.0.8*
 ### Xray-core
 ` https://github.com/XTLS/Xray-core/releases`
-*2022.6.13 07:47 --- v1.5.8*
+*2022.8.28 11:32 --- v1.5.10*
 
 ## Clash
 ### Win / Mac

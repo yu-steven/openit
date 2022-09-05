@@ -137,15 +137,15 @@ def push(list):
                         continue
                 else:
                     continue
-                if ip in iplist:
-                     if country != 'CN':
-                         continue
-                     else:
-                         if x[authentication] in passlist:
-                             continue
-                         else:
-                             passlist.append(x['authentication'])
-                             pass
+               if ip in iplist:
+                    if country != 'CN':
+                        continue
+                    else:
+                        if x[authentication] in passlist:
+                            continue
+                        else:
+                            passlist.append(x['authentication'])
+                            pass
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
                 clash['proxy-groups'][1]['proxies'].append(x['name'])

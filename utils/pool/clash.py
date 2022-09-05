@@ -154,6 +154,5 @@ def push(list):
                 continue
                 # print(list[i])
                 # pass
-    print(ss_omit_ip_dupe)
     with open('output.yaml', 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)

@@ -1,6 +1,6 @@
 import time
 from multiprocessing import Process, Manager, Semaphore
-from clash import push, checkenv, filter
+from clash import push, filter
 from check import check
 from tqdm import tqdm
 from init import init, cleanup

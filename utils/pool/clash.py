@@ -52,7 +52,6 @@ def push(list):
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSS'
                         authentication = 'password'
                     except:
-                        print("shit went wrong " + x)
                         continue
                 elif x['type'] == 'ssr':
                     try:
@@ -87,7 +86,6 @@ def push(list):
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'VMS'
                         authentication = 'uuid'
                     except:
-                        print(x)
                         continue
                 elif x['type'] == 'trojan':
                     try:
@@ -138,8 +136,6 @@ def push(list):
                     except:
                         continue
                 else:
-                    print(x)
-                    print('unsupported')
                     continue
                 if ip in iplist:
                     if country != 'CN':

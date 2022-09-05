@@ -67,8 +67,8 @@ def push(list):
                                 continue
                             else:
                                 iplist.append(ip)
-                        authentication = 'password'
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
+                        authentication = 'password'
                     except:
                         continue
                 elif x['type'] == 'vmess':

@@ -137,15 +137,7 @@ def push(list):
                         continue
                 else:
                     continue
-                if ip in iplist:
-                    if country != 'CN':
-                        continue
-                    else:
-                        if x[authentication] in passlist:
-                            continue
-                        else:
-                            passlist.append(x['authentication'])
-                            pass
+
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
@@ -154,6 +146,5 @@ def push(list):
                 continue
                 # print(list[i])
                 # pass
-    print(ss_omit_ip_dupe)
     with open('output.yaml', 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)

@@ -137,7 +137,7 @@ def push(list):
                         continue
                 else:
                     continue
-               if ip in iplist:
+                if ip in iplist:
                     if country != 'CN':
                         continue
                     else:

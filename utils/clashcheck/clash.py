@@ -111,13 +111,8 @@ def filter(config):
                         if x['cipher'] not in ss_supported_ciphers:
                             ss_omit_cipher_unsupported = ss_omit_cipher_unsupported + 1
                             continue
-                        if country != 'CN':
-                            if ip in iplist:
-                                ss_omit_ip_dupe = ss_omit_ip_dupe + 1
-                                continue
-                            else:
-                                iplist[ip] = []
-                                iplist[ip].append(x['port'])
+                            iplist[ip] = []
+                            iplist[ip].append(x['port'])
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSS'
                         authentication = 'password'
                     except:
@@ -130,12 +125,8 @@ def filter(config):
                             continue
                         if x['protocol'] not in ssr_supported_protocol:
                             continue
-                        if country != 'CN':
-                            if ip in iplist:
-                                continue
-                            else:
-                                iplist.append(ip)
-                                iplist[ip].append(x['port'])
+                            iplist.append(ip)
+                            iplist[ip].append(x['port'])
                         authentication = 'password'
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
                     except:

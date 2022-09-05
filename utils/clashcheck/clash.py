@@ -71,7 +71,7 @@ def checkenv():
     else:
         print('Unsupported Platform')
         exit(1)
-    print('Running on '+ operating_system)
+    # print('Running on '+ operating_system)
 
     return clashname, operating_system
 

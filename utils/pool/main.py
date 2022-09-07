@@ -60,12 +60,12 @@ if __name__ == '__main__':
                 processes.append(p)
             for p in processes:
                 p.join()
-            # for i in filenames:
-            #     p = Process(target=fetch, args=(proxy_list, i))
-            #     p.start()
-            #     processes.append(p)
-            # for p in processes:
-            #     p.join()
+            for i in filenames:
+                p = Process(target=fetch, args=(proxy_list, i))
+                p.start()
+                processes.append(p)
+            for p in processes:
+                p.join()
             end = time.time() #time end
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
         except:

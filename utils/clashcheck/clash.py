@@ -67,7 +67,7 @@ def checkenv():
     elif operating_system.startswith('Windows'):
         clashname='clash-windowsamd64.exe'
     else:
-        print('Unsupported Platform')
+        print('不支持的系统')
         exit(1)
     # print('Running on '+ operating_system)
 
@@ -206,8 +206,8 @@ def filter(config):
                     except:
                         continue
                 else:
-                    print(x)
-                    print('unsupported')
+                    #print(x)
+                    #print('unsupported')
                     continue
                 if ip in iplist and x['port'] in iplist[ip]:
                     if country != 'CN':
@@ -231,7 +231,7 @@ def filter(config):
                 count = count + 1
 
             except:
-                print('shitwentwrong' + str(x))
+                #print('shitwentwrong' + str(x))
                 continue
 
     return clash

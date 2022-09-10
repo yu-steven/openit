@@ -1,8 +1,8 @@
+import os
 import yaml
 import socket
 import maxminddb
 import platform
-import os
 import requests
 import flag
 from tqdm import tqdm
@@ -63,7 +63,10 @@ def checkenv():
         else:
             clashname='./clash-darwinamd64'
     elif operating_system.startswith('Linux'):
-        clashname='./clash-linuxamd64'
+        if 'amd64' in operating_system:
+            clashname='./clash-linuxamd64'
+        else:
+            clashname='./clash-linuxarm64'
     elif operating_system.startswith('Windows'):
         clashname='clash-windowsamd64.exe'
     else:

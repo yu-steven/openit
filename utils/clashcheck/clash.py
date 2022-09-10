@@ -66,7 +66,7 @@ def checkenv():
         if 'x86_64' in operating_system:
             clashname='./clash-linuxamd64'
         else:
-            clashname='./clash-linuxarm64'
+            clashname='./clash-linuxarm64' #armv8
     elif operating_system.startswith('Windows'):
         clashname='clash-windowsamd64.exe'
     else:

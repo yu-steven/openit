@@ -63,17 +63,20 @@ jobs:
          cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
          base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
          base64 ./url > ./utils/subconverter/base64 -w 0 #url文件base64编码引入subconverter
+         cp ./utils/pool/output.yaml ./utils/subconverter/output.yaml #output.yaml节点池引入subconverter
          sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
     - name: long & Clash.yaml
-      run: | #input ./utils/subconverter/base64
+      run: | #input ./utils/subconverter/base64 ./utils/subconverter/output.yaml
          ./utils/subconverter/subconverter -g --artifact "clash"
          ./utils/subconverter/subconverter -g --artifact "long"
-         #output ./utils/subconverter/Clash.yaml ./utils/subconverter/long
+         ./utils/subconverter/subconverter -g --artifact "output"
+         #output ./utils/subconverter/Clash.yaml ./utils/subconverter/long ./utils/subconverter/output.txt
          mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true #output ./Clash.yaml
-         mv ./utils/subconverter/long ./long || true #output ./Clash.yaml
-         rm ./utils/subconverter/base64 #delete ./utils/subconverter/base64
+         mv ./utils/subconverter/long ./long || true #output ./long
+         mv ./utils/subconverter/output.txt ./utils/pool/output.txt || true #output ./utils/pool/output.txt
+         rm ./utils/subconverter/base64 ./utils/subconverter/output.yaml  #delete ./utils/subconverter/base64 ./utils/subconverter/output.yaml
     - name: git push
-      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml to GitHub
+      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
 
   long: #jsDelivr long同步
     needs: my-job

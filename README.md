@@ -83,7 +83,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [ss-NG]: https://cdn.jsdelivr.net/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.2/Clash.for.Windows-0.20.2.dmg
 [clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.2/Clash.for.Windows-0.20.2-arm64.dmg
-[clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.91.1/ClashX.dmg
+[clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.95.1/ClashX.dmg
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [v2rayU]: https://ghproxy.com/https://github.com/yanue/V2rayU/releases/download/3.2.0/V2rayU.dmg
 [Surge(intel)]: https://nssurge.com/

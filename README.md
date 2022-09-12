@@ -203,7 +203,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 
 [clash]: https://github.com/Dreamacro/clash/releases/
 [v2rayA]: https://github.com/v2rayA/v2rayA/releases/
-[v2rayL]: https://ghproxy.com/https://github.com/jiangxufeng/v2rayL/releases/download/2.1.3/v2rayLui-v2.1.3.zip
+[v2rayL]: https://cdn.jsdelivr.net/jiangxufeng/v2rayL/releases/download/2.1.3/v2rayLui-v2.1.3.zip
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage
 
 ## Android TV

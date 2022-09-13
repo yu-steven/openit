@@ -36,18 +36,12 @@ jobs:
       run: | #安装npm包
          cd ./utils/rm/
          npm ci
-         npm install -g pkg
-    - name: test
-      run: | 
-         cd ./utils/rm/
-         pkg index.js -o index
-         git add index
     - name: pip
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
-    #- name: pool #input ./utils/pool/config.yaml
-      #run: cd ./utils/pool/ && python main.py #output ./utils/pool/output.yaml
+    - name: pool #input ./utils/pool/config.yaml
+      run: cd ./utils/pool/ && python main.py #output ./utils/pool/output.yaml
     - name: copy pool to clashcheck #input ./utils/pool/output.yaml
       run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output ./utils/clashcheck/input.yaml
     - name: clashcheck #because ./utils/clashcheck/config.yaml so input ./utils/clashcheck/input.yaml
@@ -59,7 +53,7 @@ jobs:
     - name: base64 decode #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check
       run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url && rm ./utils/subconverter/check ./utils/rm/url1   #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
     - name: remove & rename #input ./utils/rm/url
-      run: cd ./utils/rm/ && node index.js #output ./utils/rm/out
+      run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https
       run: | #input ./utils/rm/out
          rm ./utils/rm/url             #delete ./utils/rm/url

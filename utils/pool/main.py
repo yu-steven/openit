@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
         processes=[]
 
-        try:
+        try: #Process开启多线程
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()

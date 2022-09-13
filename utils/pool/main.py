@@ -1,11 +1,11 @@
+import time
+import yaml
+import requests
 from crawl import get_file_list, get_proxies
 from parse import parse, makeclash
 from clash import push
 from multiprocessing import Process, Manager
 from yaml.loader import SafeLoader
-import time
-import yaml
-import requests
 
 headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive', 'User-Agent': 'v2rayN/5.34'}
 

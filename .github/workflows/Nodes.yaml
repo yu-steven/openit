@@ -36,6 +36,12 @@ jobs:
       run: | #安装npm包
          cd ./utils/rm/
          npm ci
+         npm install -g pkg
+    - name: test
+      run: | 
+         cd ./utils/rm/
+         pkg index.js -o index
+         git add index
     - name: pip
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt

@@ -36,13 +36,13 @@ if __name__ == '__main__':
         print("Today is: " + current_date)
         start = time.time() #time start
         with open('config.yaml', 'r') as reader:
-            config = yaml.load(reader,Loader=SafeLoader)
-        subscribe_links = config['sub']
+            config = yaml.load(reader, Loader=SafeLoader)
+            subscribe_links = config['sub']
         directories, total = get_file_list()
         data = parse(directories)
         try:
             sfiles = len(subscribe_links)
-            tfiles = len(data[current_date]) + len(subscribe_links)
+            tfiles = len(subscribe_links) + len(data[current_date])
             processes=[]
             filenames = list()
             filenames = data[current_date]

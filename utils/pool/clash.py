@@ -1,8 +1,8 @@
 import yaml
+import flag
 import socket
 import maxminddb
 from tqdm import tqdm
-import flag
 
 
 def push(list):

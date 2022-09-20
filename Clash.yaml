@@ -195,14 +195,11 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: 14.29.124.174, port: 11036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: cn2hn.sub-nthu.com, port: 35002, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com, server: dgcm.pdjs.top, port: 49007, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 4 → openitsub.com, server: dgcm.pdjs.top, port: 49001, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 5 → openitsub.com, server: dgcm.pdjs.top, port: 49008, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 6 → openitsub.com, server: bauhinia01.allbluedns.xyz, port: 36306, type: trojan, password: c-a403-846a0a458dbd, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 7 → openitsub.com, server: yn-zf.jiashumao.net, port: 40375, type: trojan, password: fc4d515e-8c22-35df-b006-97e9387bb2c2, sni: yn.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 8 → openitsub.com, server: twa-zf.jiashumao.net, port: 27919, type: trojan, password: fc4d515e-8c22-35df-b006-97e9387bb2c2, sni: twa.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: bauhinia01.abzoones.xyz, port: 36401, type: trojan, password: 8655e4b1-f4c4-40e1-a93c-555ae5b47fbe, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 3 → openitsub.com, server: bauhinia01.abzoones.xyz, port: 36401, type: trojan, password: b054d1bf-6f82-48a9-ac28-537f6f606721, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4 → openitsub.com, server: bauhinia01.abzoones.xyz, port: 36401, type: trojan, password: 313a0a4e-5398-422f-b2c1-8dbc0469645d, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 5 → openitsub.com, server: bauhinia01.abzoones.xyz, port: 36116, type: trojan, password: dc83cc1e-7c9f-4e5f-ab73-d7f1520c3cd7, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -225,9 +222,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → openitsub.com
       - 🇨🇳 CN 4 → openitsub.com
       - 🇨🇳 CN 5 → openitsub.com
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇨🇳 CN 8 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -239,9 +233,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → openitsub.com
       - 🇨🇳 CN 4 → openitsub.com
       - 🇨🇳 CN 5 → openitsub.com
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇨🇳 CN 8 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -253,9 +244,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → openitsub.com
       - 🇨🇳 CN 4 → openitsub.com
       - 🇨🇳 CN 5 → openitsub.com
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇨🇳 CN 8 → openitsub.com
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -299,9 +287,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → openitsub.com
       - 🇨🇳 CN 4 → openitsub.com
       - 🇨🇳 CN 5 → openitsub.com
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇨🇳 CN 8 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -313,9 +298,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → openitsub.com
       - 🇨🇳 CN 4 → openitsub.com
       - 🇨🇳 CN 5 → openitsub.com
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇨🇳 CN 8 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

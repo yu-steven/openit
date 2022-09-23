@@ -100,7 +100,7 @@ async function run(){
                 break
             case 'ssr':
                 try{
-                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))
+                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64').replace(/+/, "-")),'utf8').toString('base64'))
                 }catch(e){console.log('ssr node err')}
                 break
             case 'https':

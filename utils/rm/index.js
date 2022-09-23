@@ -44,9 +44,9 @@ async function run(){
                 resList.push({type: 'ss', data: ssData, address: ssAddress})
                 break
             case 'ssr':
-                let ssrData = Buffer.from(url.split('://')[1].replace(/_/,"/"), 'base64').toString('utf-8');
+                let ssrData = Buffer.from(url.split('://')[1].replace(/_/, "/"), 'base64').toString('utf-8');
                 let ssrAddress = ssrData.split(':')[0];
-                resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/,"remarks={name}&"), address: ssrAddress})
+                resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/, "remarks={name}&"), address: ssrAddress})
                 break
             case 'https':
                 let httpsData = url.split('://')[1].split('#')[0];
@@ -100,7 +100,7 @@ async function run(){
                 break
             case 'ssr':
                 try{
-                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}',Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))
+                urlCountryList[finalList[i].country].push('ssr://'+Buffer.from(item.data.replace('{name}', Buffer.from((name).toString(),'utf8').toString('base64')),'utf8').toString('base64'))
                 }catch(e){console.log('ssr node err')}
                 break
             case 'https':

@@ -2,6 +2,7 @@ const fs = require('fs')
 const location = require('./location')
 const config = require('./config')
 
+//此处输入, 当前默认'./url'
 let urls = fs.readFileSync('./url','utf8');
 let flags = JSON.parse(fs.readFileSync('./flags.json','utf8'))
 
@@ -121,6 +122,7 @@ async function run(){
         }
     }
     console.log(`去重改名完成\n一共${urlList.length}个节点，去重${urlList.length-finalURLs.length}个节点，剩余${finalURLs.length}个节点`)
+    //此处输出, 当前默认'./out'
     fs.writeFileSync('./out',finalURLs.join('\n'))
 }
 

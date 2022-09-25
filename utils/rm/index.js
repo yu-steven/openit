@@ -45,7 +45,7 @@ async function run(){
                 resList.push({type: 'ss', data: ssData, address: ssAddress})
                 break
             case 'ssr':
-                let ssrData = Buffer.from(url.split('://')[1].replace('_','/'), 'base64').toString('utf-8');
+                let ssrData = Buffer.from(url.split('://')[1].replace('_', '/'), 'base64').toString('utf-8');
                 let ssrAddress = ssrData.split(':')[0];
                 resList.push({type: 'ssr', data: ssrData.replace(/remarks=\w+?&/, "remarks={name}&"), address: ssrAddress})
                 break

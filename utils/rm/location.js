@@ -13,7 +13,7 @@ module.exports={
         if(ipReg.test(name)){
             let geo = geoip.lookup(name);
             if(geo == null){
-                        return 'unknown'
+                        return 'UN'
                     }else{
                         return geo.country
                     }
@@ -23,18 +23,18 @@ module.exports={
                 if(address !== null){
                     let geo = geoip.lookup(address[0])
                     if(geo == null){
-                        return 'unknown'
+                        return 'UN'
                     }else{
                         return geo.country
                     }
                 }else{
-                    return 'unknown'
+                    return 'UN'
                 }
             }catch(e){
-                return 'unknown'
+                return 'UN'
             }
         }else{
-            return 'unknown'
+            return 'UN'
         }
     }
 }

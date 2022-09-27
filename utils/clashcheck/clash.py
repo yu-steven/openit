@@ -70,7 +70,7 @@ def checkenv():
     elif operating_system.startswith('Windows'):
         clashname='clash-windowsamd64.exe'
     else:
-        print('不支持的系统')
+        print('Never mind')
         exit(1)
     # print('Running on '+ operating_system)
 

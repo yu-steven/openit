@@ -7,7 +7,7 @@ from clash import push
 from multiprocessing import Process, Manager
 from yaml.loader import SafeLoader
 
-headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive', 'User-Agent': 'v2rayN/5.34'}
+headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive', 'User-Agent': 'Clash'}
 
 def fetch(proxy_list, filename):
     current_date = time.strftime("%Y_%m_%d", time.localtime())

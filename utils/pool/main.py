@@ -69,7 +69,8 @@ if __name__ == '__main__':
             end = time.time() #time end
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
         except:
-            continue
+            end = time.time() #time end
+            print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
 
         proxy_list=list(proxy_list)
         proxies = makeclash(proxy_list)

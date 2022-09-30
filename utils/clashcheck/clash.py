@@ -56,7 +56,7 @@ def push(list, outfile):
 
 
 def checkenv():
-    operating_system = str(platform.system() + '/' +  platform.machine())
+    operating_system = str(platform.system() + '/' +  platform.machine() + ' with ' + platform.node())
     if operating_system.startswith('Darwin'):
         if 'arm64' in operating_system:
             clashname='./clash-darwin-arm64'

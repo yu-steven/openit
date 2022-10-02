@@ -47,9 +47,9 @@ if __name__ == '__main__':
             filenames = list()
             filenames = data[current_date]
         except KeyError:
-            print("Success: " + "find" + str(sfiles) + " Clash link")
+            print("Success: " + "find " + str(sfiles) + " Clash link")
         else:
-            print("Success: " + "find" + str(tfiles) + " Clash link")
+            print("Success: " + "find " + str(tfiles) + " Clash link")
 
         processes=[]
 

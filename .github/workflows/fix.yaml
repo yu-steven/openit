@@ -32,7 +32,7 @@ jobs:
         #base64 ./sub/url2 > ./utils/subconverter/b64 -w 0
         #./utils/subconverter/subconverter -g --artifact "fix" && rm ./utils/subconverter/b64
         cd ./utils/subconverter/ && wget https://raw.githubusercontent.com/paimonhub/Paimonnode/main/nodefetcher/out.txt -O fix
-        base64 -d fix > url && rm ./utils/subconverter/fix
+        base64 -d fix > url && rm fix
     - name: remove & rename
       run: mv ./utils/subconverter/url ./utils/rm/url && cd ./utils/rm/ && npm ci && npm start
     - name: sub/url2

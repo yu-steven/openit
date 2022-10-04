@@ -1,0 +1,21 @@
+name: Subconverter
+
+on: 
+  workflow_dispatch: #手动调试按钮
+
+jobs: 
+  my-job: 
+    name: Job
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v3     #git clone
+    - name: init #port: 25500
+      run: wget ${{ secrets.File }} -q -O sub/out.txt
+    - name: input
+      run: mv ./sub/out.txt ./utils/subconverter/out.txt
+    - name: run
+      run: ./utils/subconverter/subconverter -g --artifact "base642clash"
+    - name: output
+      run: rm ./utils/subconverter/out.txt && mv ./utils/subconverter/out.yaml ./sub/out.yaml
+    - name: push
+      run: ./.github/update-repo.sh || true

@@ -10,7 +10,7 @@ jobs:
     steps: 
     - uses: actions/checkout@v3     #git clone
     - name: input
-      run: wget ${{ secrets.File }} -O ./utils/subconverter/out.txt -q
+      run: wget ${{ secrets.File }} -O out.txt -q && mv out.txt ./utils/subconverter/out.txt
     - name: run
       run: ./utils/subconverter/subconverter -g --artifact "base642clash"
     - name: output

@@ -251,6 +251,7 @@ proxies:
   - {name: 🇨🇳 CN 72, server: 116.162.120.23, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
   - {name: 🇨🇳 CN 8 → openitsub.com, server: gg.daozun.cc, port: 31500, type: trojan, password: e0429c4c-0e22-470e-ba73-29dde93c09c8, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 9 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 1 → openitsub.com, server: iepl10.dcnode.me, port: 10050, type: ss, cipher: aes-128-gcm, password: 2daf156a-b9ee-4671-913a-4339ddd39021, udp: true}
   - {name: 🇫🇷 FR 1 → openitsub.com, server: 146.19.230.241, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 1 → openitsub.com, server: zf2.windowsupdate1.com, port: 30060, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 2 → openitsub.com, server: hk.vc3.hyperlinkvpn.xyz, port: 52000, type: trojan, password: 0aa9e572-ca8b-4d2c-bef6-501fc3eacbb8, skip-cert-verify: true, udp: true}
@@ -259,7 +260,6 @@ proxies:
   - {name: 🇭🇰 HK 5 → openitsub.com, server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 1 → openitsub.com, server: kr1.api-aws.com, port: 443, type: trojan, password: ddeb5b2c-5a1e-41d4-bb3a-08babe54f1a1, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 2 → openitsub.com, server: jp-04.tiktokcdn.sbs, port: 443, type: trojan, password: f41e6f27-5a33-4eb0-b6be-eb3755c93b78, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 1 → openitsub.com, server: iepl10.dcnode.me, port: 10050, type: ss, cipher: aes-128-gcm, password: 2daf156a-b9ee-4671-913a-4339ddd39021, udp: true}
   - {name: 🇳🇱 NL 1 → openitsub.com, server: nlt-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-oqtxymz6gjl3, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 1 → openitsub.com, server: sgmax01.170203.xyz, port: 10000, type: trojan, password: e0429c4c-0e22-470e-ba73-29dde93c09c8, sni: sgmax01.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 2 → openitsub.com, server: zf1.windowsupdate1.com, port: 30050, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
@@ -350,6 +350,7 @@ proxy-groups:
       - 🇨🇳 CN 72
       - 🇨🇳 CN 8 → openitsub.com
       - 🇨🇳 CN 9 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇭🇰 HK 2 → openitsub.com
@@ -358,7 +359,6 @@ proxy-groups:
       - 🇭🇰 HK 5 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
-      - 🇰🇷 KR 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇸🇬 SG 2 → openitsub.com
@@ -438,6 +438,7 @@ proxy-groups:
       - 🇨🇳 CN 72
       - 🇨🇳 CN 8 → openitsub.com
       - 🇨🇳 CN 9 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇭🇰 HK 2 → openitsub.com
@@ -446,7 +447,6 @@ proxy-groups:
       - 🇭🇰 HK 5 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
-      - 🇰🇷 KR 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇸🇬 SG 2 → openitsub.com
@@ -524,7 +524,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇰🇷 KR 1 → openitsub.com
+      - DIRECT
   - name: 🌍 其他地区
     type: select
     proxies:
@@ -584,6 +584,7 @@ proxy-groups:
       - 🇨🇳 CN 72
       - 🇨🇳 CN 8 → openitsub.com
       - 🇨🇳 CN 9 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
   - name: 🪜 故障转移
@@ -648,6 +649,7 @@ proxy-groups:
       - 🇨🇳 CN 72
       - 🇨🇳 CN 8 → openitsub.com
       - 🇨🇳 CN 9 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇭🇰 HK 2 → openitsub.com
@@ -656,7 +658,6 @@ proxy-groups:
       - 🇭🇰 HK 5 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
-      - 🇰🇷 KR 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇸🇬 SG 2 → openitsub.com

@@ -1,7 +1,9 @@
 name: Subconverter
 
 on: 
-  workflow_dispatch: #手动调试按钮
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs: 
   my-job: 

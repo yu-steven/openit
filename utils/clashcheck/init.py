@@ -2,6 +2,7 @@ import os
 import yaml
 import requests
 import shutil
+import atexit
 from clash import filter
 
 from yaml import SafeLoader
@@ -42,6 +43,7 @@ def init():
     # return all variables
     return http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config
 
+@atexit.register
 def cleanup(clash):
     shutil.rmtree('./temp')
     clash.terminate()

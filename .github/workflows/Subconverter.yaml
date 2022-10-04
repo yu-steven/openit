@@ -12,7 +12,7 @@ jobs:
     - name: init
       run: git config pull.rebase false && git config --local user.name "GitHub Actions" && git config --local user.email "actions@github.com"
     - name: input
-      run: wget ${{ secrets.File }} -O utils/subconverter/out.txt -q
+      run: wget https://raw.githubusercontent.com/paimonhub/Paimonnode/main/nodefetcher/out.txt -O utils/subconverter/out.txt -q
     - name: run
       run: ./utils/subconverter/subconverter -g --artifact "base642clash" && rm ./utils/subconverter/out.txt
     - name: output

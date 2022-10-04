@@ -7,7 +7,7 @@ cd clashcheck/
 while true
 do
     if [ $PID_NUM -le 0 ];then
-       /usr/bin/timeout -k 20 4m /usr/bin/python3.7 main.py
+       /usr/bin/timeout -k 20 4m /usr/bin/python main.py
     else
        pkill -9 clash && sleep 24
     fi

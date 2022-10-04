@@ -8,12 +8,14 @@ jobs:
     name: Job
     runs-on: ubuntu-latest
     steps: 
-    - uses: actions/checkout@v3     #git clone
+    - uses: actions/checkout@v3
+    - name: init
+      run: git config pull.rebase false && git config --local user.name "GitHub Actions" && git config --local user.email "actions@github.com"
     - name: input
-      run: wget ${{ secrets.File }} -O out.txt -q && mv out.txt ./utils/subconverter/out.txt
+      run: wget ${{ secrets.File }} -O utils/subconverter/out.txt -q
     - name: run
-      run: ./utils/subconverter/subconverter -g --artifact "base642clash"
+      run: ./utils/subconverter/subconverter -g --artifact "base642clash" && rm ./utils/subconverter/out.txt
     - name: output
-      run: rm ./utils/subconverter/out.txt && mv ./utils/subconverter/out.yaml ./sub/out.yaml
+      run: mv ./utils/subconverter/out.yaml ./sub/out.yaml
     - name: push
       run: ./.github/update-repo.sh || true

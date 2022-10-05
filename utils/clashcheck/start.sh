@@ -1,4 +1,5 @@
 #!/bin/sh
+#pwd /home/username/clashcheck
 #$ nohup ./start.sh > /dev/null 2>&1 &
 
 PID_NAME=clash

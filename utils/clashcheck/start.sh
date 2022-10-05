@@ -1,5 +1,6 @@
 #!/bin/sh
 #pwd /home/username/clashcheck/
+#python is python 3.x
 #nohup ./start.sh > /dev/null 2>&1 &
 
 PID_NAME=clash

@@ -195,14 +195,17 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: MD 1 → openitsub.com, server: hk-1.tiktokcdn.sbs, port: 12288, type: trojan, password: OsFEF0P0ia, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 CA 1 → openitsub.com, server: 149.56.141.11, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 7, server: eduall.buzzline.org, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: 🇨🇦 CA 1 → openitsub.com, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: 14.29.124.168, port: 24009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 🇩🇪 DE 1 → openitsub.com, server: nice-de02.nicevpn.top, port: 443, type: trojan, password: 137032ae-1bdb-445d-85e0-6edd7d343afb, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 2 → openitsub.com, server: ge-03.tiktokcdn.sbs, port: 443, type: trojan, password: 9ccc0c60-9df8-45a3-9886-c2765a52ba2e, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: nice-us01.tiktokcdn.buzz, port: 443, type: trojan, password: "null", skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2 → openitsub.com, server: a.laolei.ml, port: 50757, type: trojan, password: dDbBcidENX, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3 → openitsub.com, server: ar-bue.daycat.space, port: 443, type: vmess, uuid: A9A56660-4554-4278-863A-D3CE30294B59, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ar-bue.daycat.space}}, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: jp-04.tiktokcdn.sbs, port: 443, type: trojan, password: f41e6f27-5a33-4eb0-b6be-eb3755c93b78, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 2 → openitsub.com, server: nice-jp01.tiktokcdn.buzz, port: 443, type: trojan, password: BXE9notY, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 1 → openitsub.com, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2 → openitsub.com, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3 → openitsub.com, server: 150.230.217.213, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4 → openitsub.com, server: nice-us01.tiktokcdn.buzz, port: 443, type: trojan, password: "null", skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 5 → openitsub.com, server: ar-bue.daycat.space, port: 443, type: vmess, uuid: A9A56660-4554-4278-863A-D3CE30294B59, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ar-bue.daycat.space}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -220,28 +223,34 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - MD 1 → openitsub.com
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 7
+      - 🇨🇳 CN 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
-      - 🇩🇪 DE 2 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
       - 🇺🇸 US 3 → openitsub.com
+      - 🇺🇸 US 4 → openitsub.com
+      - 🇺🇸 US 5 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - MD 1 → openitsub.com
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 7
+      - 🇨🇳 CN 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
-      - 🇩🇪 DE 2 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
       - 🇺🇸 US 3 → openitsub.com
+      - 🇺🇸 US 4 → openitsub.com
+      - 🇺🇸 US 5 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -255,7 +264,8 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP 1 → openitsub.com
+      - 🇯🇵 JP 2 → openitsub.com
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -265,6 +275,8 @@ proxy-groups:
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
       - 🇺🇸 US 3 → openitsub.com
+      - 🇺🇸 US 4 → openitsub.com
+      - 🇺🇸 US 5 → openitsub.com
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -289,25 +301,27 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - MD 1 → openitsub.com
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 7
+      - 🇨🇳 CN 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
-      - 🇩🇪 DE 2 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - MD 1 → openitsub.com
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 7
+      - 🇨🇳 CN 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
-      - 🇩🇪 DE 2 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
       - 🇺🇸 US 3 → openitsub.com
+      - 🇺🇸 US 4 → openitsub.com
+      - 🇺🇸 US 5 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

@@ -1,6 +1,6 @@
 #!/bin/sh
-#pwd /home/username/clashcheck
-#$ nohup ./start.sh > /dev/null 2>&1 &
+#pwd /home/username/clashcheck/
+#nohup ./start.sh > /dev/null 2>&1 &
 
 PID_NAME=clash
 PID_NUM=`ps -ef |grep -w $PID_NAME|grep -v grep|wc -l`

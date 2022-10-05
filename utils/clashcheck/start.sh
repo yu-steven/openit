@@ -14,6 +14,6 @@ do
     if [ $PID_NUM -le 0 ];then
        /usr/bin/timeout -k 20 4m /usr/bin/python main.py
     else
-       pkill -9 clash && sleep 24
+       pkill -9 clash
     fi
 done

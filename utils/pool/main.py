@@ -7,6 +7,7 @@ from clash import push
 from multiprocessing import Process, Manager
 from yaml.loader import SafeLoader
 
+link_num = 0
 headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive', 'User-Agent': 'Clash'}
 
 def fetch(proxy_list, filename):

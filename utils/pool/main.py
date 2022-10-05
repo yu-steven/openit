@@ -19,7 +19,6 @@ def fetch(proxy_list, filename):
     proxy_list.append(data_out)
 
 def url(proxy_list, link):
-    link_num = 0
     try:
         data_out=[]
         working = yaml.safe_load(requests.get(url=link, timeout=240, headers=headers).text)
@@ -27,9 +26,8 @@ def url(proxy_list, link):
             data_out.append(x)
         proxy_list.append(data_out)
     except:
-        link_num += 1
-        print(str(link_num) + "link error")
-        # print("Error in Collecting " + link )
+        print("a link error")
+        #print("Error in Collecting " + link )
 
 proxy_list=[]
 if __name__ == '__main__':

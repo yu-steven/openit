@@ -1,5 +1,5 @@
 #!/bin/sh
-#python is python 3.x
+#python 3.x
 #pwd /home/username/clashcheck/
 #nohup ./start.sh > /dev/null 2>&1 &
 

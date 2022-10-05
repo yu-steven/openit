@@ -3,7 +3,6 @@
 PID_NAME=clash
 PID_NUM=`ps -ef |grep -w $PID_NAME|grep -v grep|wc -l`
 
-cd clashcheck/
 while true
 do
     if [ $PID_NUM -le 0 ];then

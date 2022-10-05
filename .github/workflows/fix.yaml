@@ -29,6 +29,7 @@ jobs:
         sed -i -r '/^\s*$/d' url2  #删除带有空格或制表符的空行
     - name: subconverter
       run: | 
+        chmod +x utils/clashcheck/start.sh
         base64 ./sub/url2 > ./utils/subconverter/b64 -w 0
         ./utils/subconverter/subconverter -g --artifact "fix" && rm ./utils/subconverter/b64
         base64 -d ./utils/subconverter/fix > ./utils/rm/url && rm ./utils/subconverter/fix

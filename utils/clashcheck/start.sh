@@ -1,9 +1,9 @@
 #!/bin/sh
 #python 3.x
 #pwd /home/$USER/clashcheck
-#with log
+#with log ↓ 
 #nohup ./start.sh &
-#no log
+#no log ↓ 
 #nohup ./start.sh > /dev/null 2>&1 &
 
 PID_NAME=clash

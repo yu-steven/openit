@@ -26,7 +26,7 @@ def url(proxy_list, link):
             data_out.append(x)
         proxy_list.append(data_out)
     except:
-        link_num = link_num + 1
+        link_num += 1
         print(link_num + "link error")
         # print("Error in Collecting " + link )
 

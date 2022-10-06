@@ -13,10 +13,11 @@ def get_file_list():
             dirlist.append(data[count]['path'])
             count = count +1
         end = time.time()
-        print("Fetch changfengoss/pub succeeded in " + "{:.2f}".format(end-start) + " seconds")
+        #print("Fetch changfengoss/pub succeeded in " + "{:.2f}".format(end-start) + " seconds")
         return dirlist, count
     except:
-        print("Failed to fetch proxies from changfengoss/pub")
+        pass
+        #print("Failed to fetch proxies from changfengoss/pub")
 
 def get_proxies(date, file):
     baseurl = 'https://raw.githubusercontent.com/changfengoss/pub/main/data/'

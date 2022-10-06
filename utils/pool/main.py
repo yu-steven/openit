@@ -34,7 +34,7 @@ if __name__ == '__main__':
     with Manager() as manager:
         proxy_list = manager.list()
         current_date = time.strftime("%Y_%m_%d", time.localtime())
-        print("Today is: " + current_date)
+        #print("Today is: " + current_date)
         start = time.time() #time start
         with open('config.yaml', 'r') as reader:
             config = yaml.load(reader, Loader=SafeLoader)

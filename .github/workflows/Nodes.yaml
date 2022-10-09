@@ -2,12 +2,12 @@ name: Nodes
 
 on: 
   schedule: #UTC+0               #UTC+8
-    - cron: '*/35 0-8 * * 1-5'   #工作日 上午8:00 - 下午4:00
-    - cron: '*/25 8-14 * * 1-5'  #工作日 下午4:00 - 晚上10:00
-    - cron: '*/55 14-21 * * 1-4' #工作日 晚上10:00 - 次日凌晨5:00
-    - cron: '*/25 21-23 * * 1-5' #工作日 次日凌晨5:00 - 次日上午8:00
-    - cron: '*/25 14-21 * * 5'   #星期五 晚上10:00 - 次日凌晨5:00
-    - cron: '*/25 * * * 0,6'     #休息日 全天候
+    - cron: '*/25 0-8 * * 1-5'   #工作日 上午8:00 - 下午4:00
+    - cron: '*/15 8-14 * * 1-5'  #工作日 下午4:00 - 晚上10:00
+    - cron: '*/45 14-21 * * 1-4' #工作日 晚上10:00 - 次日凌晨5:00
+    - cron: '*/15 21-23 * * 1-5' #工作日 次日凌晨5:00 - 次日上午8:00
+    - cron: '*/15 14-21 * * 5'   #星期五 晚上10:00 - 次日凌晨5:00
+    - cron: '*/15 * * * 0,6'     #休息日 全天候
   workflow_dispatch: #手动调试按钮
 
 jobs: 
@@ -47,11 +47,11 @@ jobs:
     - name: clashcheck #如果您想要fork本仓库并运行此workflow，请用#号注释掉这一行和下一行并删除上方四行开头的#并按照yaml文件格式对其行头
       run: cd ./utils/clashcheck/ && wget ${{ secrets.Check_File }} -O check.yaml -q
     - name: move clashcheck to clash2base64 #input ./utils/clashcheck/check.yaml
-      run: mv ./utils/clashcheck/check.yaml ./utils/subconverter/check #output ./utils/subconverter/check.yaml
-    #- name: clash2base64 #input ./utils/subconverter/check.yaml
-    #  run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
+      run: mv ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
+    - name: clash2base64 #input ./utils/subconverter/check.yaml
+      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
     - name: marge urls #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check｜input ./sub/url2
-      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && sed -i '/^ssr:/d' utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url && rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
+      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url && rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
     - name: remove & rename #input ./utils/rm/url
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
     - name: url & https

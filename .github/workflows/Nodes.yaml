@@ -47,9 +47,9 @@ jobs:
     - name: clashcheck #如果您想要fork本仓库并运行此workflow，请用#号注释掉这一行和下一行并删除上方四行开头的#并按照yaml文件格式对其行头
       run: cd ./utils/clashcheck/ && wget ${{ secrets.Check_File }} -O check.yaml -q
     - name: move clashcheck to clash2base64 #input ./utils/clashcheck/check.yaml
-      run: mv ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
-    - name: clash2base64 #input ./utils/subconverter/check.yaml
-      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
+      run: mv ./utils/clashcheck/check.yaml ./utils/subconverter/check #output ./utils/subconverter/check.yaml
+    #- name: clash2base64 #input ./utils/subconverter/check.yaml
+    #  run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
     - name: marge urls #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check｜input ./sub/url2
       run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url && rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
     - name: remove & rename #input ./utils/rm/url

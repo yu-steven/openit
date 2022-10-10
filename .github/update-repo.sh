@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 status_log=$(git status -sb)
 # 这里使用的是 main 分支，根据需求自行修改
 if [ "$status_log" == "## main...origin/main" ];then

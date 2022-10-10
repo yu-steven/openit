@@ -7,6 +7,6 @@
 
 while true
 do
-  pkill -9 clash
+  pkill -9 clash-
   /usr/bin/timeout -k 20 4m /usr/bin/python main.py
 done

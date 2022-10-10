@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 name=Openit
 line=`wc -l < url`
 time=`date '+%Y.%m.%d %H:%M:%S'`

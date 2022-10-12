@@ -195,10 +195,10 @@ dns:
       - 0.0.0.0/32
     domain: #这些域名直接fallback
       - +.google.com
+      - +.github.com
       - +.facebook.com
       - +.twitter.com
       - +.youtube.com
-      - +.xn--ngstr-lra8j.com
       - +.google.cn
       - +.googleapis.cn
       - +.googleapis.com

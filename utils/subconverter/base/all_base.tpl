@@ -65,6 +65,7 @@ dns:
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
   default-nameserver: #解析Dot/Doh域名的DNS
+    - 114.114.114.114
     - 9.9.9.9
   nameserver: #clash首次解析
     - 1.2.4.8 #CNNIC sDNS

@@ -1,5 +1,5 @@
 #!/bin/bash
-name=openitsub
+name=Openitsub
 line=`wc -l < url`
 time=`date '+%Y.%m.%d %H:%M:%S'`
 

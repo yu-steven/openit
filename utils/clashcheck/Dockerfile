@@ -2,6 +2,7 @@ FROM python:3
 
 LABEL maintainer="yusteven@duck.com"
 
+# init TimeZone
 ENV TZ=Asia/Shanghai \
     DEBIAN_FRONTEND=noninteractive
 

@@ -20,7 +20,9 @@ def init():
         testurl = config['test-url']
         outfile = config['outfile']
     # get clash config file
-    if source.startswith('https://'):
+    if source.startswith('http://'):
+        proxyconfig = yaml.load(requests.get(source).text, Loader=SafeLoader)
+    elif source.startswith('https://'):
         proxyconfig = yaml.load(requests.get(source).text, Loader=SafeLoader)
     else:
         with open(source, 'r') as reader:

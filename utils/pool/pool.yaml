@@ -1,49 +1,46 @@
 proxies:
-  - {name: GB 1 → openitsub.com, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
-  - {name: CN 3 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
-  - {name: JP 3 → openitsub.com, server: 139.162.115.169, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
+  - {name: US 3 → openitsub.com, server: 98.126.215.15, port: 19231, type: trojan, password: 012fc57b-69e5-3924-9da4-d6ac132c5fc9, skip-cert-verify: true, udp: true}
+  - {name: US 2 → openitsub.com, server: tr6.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, skip-cert-verify: true, udp: true}
+  - {name: CN 5 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
   - {name: JP 1 → openitsub.com, server: 139.162.121.240, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
   - {name: JP 2 → openitsub.com, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: US 1 → openitsub.com, server: aewfhe5z1pokrkw8bi9g25.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
   - {name: CA 1 → openitsub.com, server: 149.56.141.11, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
-  - {name: FR 2 → openitsub.com, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: US 3 → openitsub.com, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: US 2 → openitsub.com, server: 18.167.212.152, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-hk.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: FR 1 → openitsub.com, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: FR 1 → openitsub.com, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: US 1 → openitsub.com, server: 18.167.212.152, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-hk.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: FR 3 → openitsub.com, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: FR 2 → openitsub.com, server: 146.19.230.241, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 Proxy
     type: select
     proxies:
       - 💡 Auto
       - DIRECT
-      - GB 1 → openitsub.com
-      - CN 3 → openitsub.com
-      - JP 3 → openitsub.com
-      - JP 1 → openitsub.com
-      - JP 2 → openitsub.com
-      - US 1 → openitsub.com
-      - CA 1 → openitsub.com
-      - FR 2 → openitsub.com
       - US 3 → openitsub.com
       - US 2 → openitsub.com
+      - CN 5 → openitsub.com
+      - JP 1 → openitsub.com
+      - JP 2 → openitsub.com
+      - CA 1 → openitsub.com
       - FR 1 → openitsub.com
+      - US 1 → openitsub.com
+      - FR 3 → openitsub.com
+      - FR 2 → openitsub.com
   - name: 💡 Auto
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - GB 1 → openitsub.com
-      - CN 3 → openitsub.com
-      - JP 3 → openitsub.com
-      - JP 1 → openitsub.com
-      - JP 2 → openitsub.com
-      - US 1 → openitsub.com
-      - CA 1 → openitsub.com
-      - FR 2 → openitsub.com
       - US 3 → openitsub.com
       - US 2 → openitsub.com
+      - CN 5 → openitsub.com
+      - JP 1 → openitsub.com
+      - JP 2 → openitsub.com
+      - CA 1 → openitsub.com
       - FR 1 → openitsub.com
+      - US 1 → openitsub.com
+      - FR 3 → openitsub.com
+      - FR 2 → openitsub.com
 cfw-bypass:
   - localhost
   - 127.*

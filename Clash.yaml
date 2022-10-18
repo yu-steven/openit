@@ -197,15 +197,14 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇦 CA 1 → openitsub.com, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB 1 → openitsub.com, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 1 → openitsub.com, server: aewfhe5z1pokrkw8bi9g25.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 2 → openitsub.com, server: 149.56.141.11, port: 443, type: trojan, password: 67960bfb-00de-4a6b-9a7a-e74fc9e8b158, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 6, server: vphk-3.gito.cc, port: 751, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 30855:0FvZRy, obfs-param: 940c230855.download.windowsupdate.com, udp: true}
   - {name: 🇯🇵 JP 1 → openitsub.com, server: aewfhe5z1pokrkw8bi9g07.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2 → openitsub.com, server: 139.162.121.240, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 3 → openitsub.com, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: aewfhe5z1pokrkw8bi9g25.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2 → openitsub.com, server: aewfhe5z1pokrkw8bi9g03.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3 → openitsub.com, server: 138.2.113.84, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 2 → openitsub.com, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 3 → openitsub.com, server: 139.162.121.240, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -224,14 +223,13 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇬🇧 GB 1 → openitsub.com
+      - 🇨🇦 CA 2 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 6
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -239,14 +237,13 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇬🇧 GB 1 → openitsub.com
+      - 🇨🇦 CA 2 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 6
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -270,8 +267,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -297,8 +292,9 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇬🇧 GB 1 → openitsub.com
+      - 🇨🇦 CA 2 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 6
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -306,14 +302,13 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇬🇧 GB 1 → openitsub.com
+      - 🇨🇦 CA 2 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 6
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

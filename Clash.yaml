@@ -197,14 +197,13 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 1 → openitsub.com, server: 149.56.141.11, port: 443, type: trojan, password: 67960bfb-00de-4a6b-9a7a-e74fc9e8b158, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1 → openitsub.com, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: kr1.api-aws.com, port: 443, type: trojan, password: 036ba5aa-fcb7-4e6f-95b5-a857cb354aa8, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL 1 → openitsub.com, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 2 → openitsub.com, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 1 → openitsub.com, server: digitalocean.kinhproxy.com, port: 443, type: trojan, password: DigitalOcean, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: tr6.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2 → openitsub.com, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -222,28 +221,26 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -257,7 +254,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP 1 → openitsub.com
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -265,7 +262,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -290,25 +286,23 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

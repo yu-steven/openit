@@ -199,12 +199,13 @@ dns:
 proxies:
   - {name: 🇨🇦 CA 1 → openitsub.com, server: aewfhe5z1pokrkw8bi9g25.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 2 → openitsub.com, server: 149.56.141.11, port: 443, type: trojan, password: 67960bfb-00de-4a6b-9a7a-e74fc9e8b158, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 6, server: vphk-3.gito.cc, port: 751, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 30855:0FvZRy, obfs-param: 940c230855.download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: aewfhe5z1pokrkw8bi9g07.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 1 → openitsub.com, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, sni: adjprog.ir, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 1 → openitsub.com, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: 139.162.121.240, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 2 → openitsub.com, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 3 → openitsub.com, server: 139.162.121.240, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 3 → openitsub.com, server: aewfhe5z1pokrkw8bi9g07.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -224,8 +225,9 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇦 CA 2 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 6
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇫🇷 FR 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
@@ -238,8 +240,9 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇦 CA 2 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 6
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇫🇷 FR 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
@@ -293,8 +296,9 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇦 CA 2 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 6
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇫🇷 FR 1 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -303,8 +307,9 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇦 CA 2 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 6
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇫🇷 FR 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com

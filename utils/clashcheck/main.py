@@ -30,6 +30,7 @@ if __name__ == '__main__':
         alive=list(alive)
         push(alive,outfile)
         clash.terminate()
+
 import os, shutil, atexit
 @atexit.register
 def cleanup():

@@ -29,7 +29,7 @@ if __name__ == '__main__':
         time.sleep(5)
         alive=list(alive)
         push(alive,outfile)
-
+        clash.terminate()
 import os, shutil, atexit
 @atexit.register
 def cleanup():

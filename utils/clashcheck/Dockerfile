@@ -32,4 +32,4 @@ RUN pip install --no-cache-dir -r requirements.txt -q
 COPY . .
 
 # clashcheck with while
-CMD ["./start.sh"]
+CMD [ "./start.sh" ]

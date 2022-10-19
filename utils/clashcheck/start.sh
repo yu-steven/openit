@@ -6,7 +6,4 @@
 #TODO start clashcheck with while
 
 nginx
-while true
-do
-  timeout -k 20 4m python main.py
-done
+while true; do timeout -k 20 4m python main.py; done

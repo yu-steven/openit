@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
 import os, shutil, atexit
 @atexit.register
-def cleanup():
+def clean():
     shutil.rmtree('./temp')
     os.popen('pkill clash-')
     exit(0)

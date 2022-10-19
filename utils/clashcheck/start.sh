@@ -8,6 +8,5 @@
 nginx
 while true
 do
-  pkill -9 clash-
   timeout -k 20 4m python main.py
 done

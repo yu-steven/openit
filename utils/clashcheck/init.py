@@ -1,7 +1,6 @@
 import os
 import yaml
 import requests
-import shutil
 from clash import filter
 
 from yaml import SafeLoader
@@ -43,8 +42,3 @@ def init():
 
     # return all variables
     return http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config
-
-def cleanup(clash):
-    shutil.rmtree('./temp')
-    clash.terminate()
-    exit(0)

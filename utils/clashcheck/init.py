@@ -2,8 +2,8 @@ import os
 import yaml
 import requests
 from clash import filter
-
 from yaml import SafeLoader
+
 def init():
     if not os.path.exists('./temp'):
         os.mkdir('temp')

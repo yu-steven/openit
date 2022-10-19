@@ -34,5 +34,5 @@ import os, shutil, atexit
 @atexit.register
 def cleanup():
     shutil.rmtree('./temp')
-    os.popen("pkill -9 clash-")
+    os.popen('pkill -9 clash-')
     exit(0)

@@ -303,7 +303,7 @@ docker run -d -p 80:80 clashcheck
 端口被占用？
 `docker run -d -p [宿主机端口]:80 clashcheck`
 
-默认浏览器访问 `0.0.0.0:80` 筛选结果文件 `check.yaml`, ClashCheck配置文件 `config.yaml`, Nginx配置文件 `default.conf`
+默认浏览器访问 `0.0.0.0:80`｜筛选结果文件 `check.yaml`｜ClashCheck配置文件 `config.yaml`｜Nginx配置文件 `default.conf`
 
 # 声明
 

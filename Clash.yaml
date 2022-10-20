@@ -197,18 +197,16 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1 → openitsub.com, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 1 → openitsub.com, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 2 → openitsub.com, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 3 → openitsub.com, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 1 → openitsub.com, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 1 → openitsub.com, server: polo01.kctr2038.icu, port: 443, type: trojan, password: 88939272-790a-441f-b12b-8ce531aca810, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: hg14.leifengkeji.live, port: 48912, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg14.leifengkeji.live, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2 → openitsub.com, server: kr1.api-aws.com, port: 443, type: trojan, password: b70b2ed8-6d35-4fe0-8ae7-4e8fa45ff326, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 1 → openitsub.com, server: hg9.leifengkeji.live, port: 48907, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg9.leifengkeji.live, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 1 → openitsub.com, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 2 → openitsub.com, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: hg5.leifengkeji.live, port: 48903, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg5.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 2 → openitsub.com, server: 146.56.189.146, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 1 → openitsub.com, server: hg7.leifengkeji.live, port: 48905, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 2 → openitsub.com, server: hg16.leifengkeji.live, port: 48914, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg16.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 1 → openitsub.com, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -227,17 +225,15 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
-      - 🇫🇷 FR 2 → openitsub.com
-      - 🇫🇷 FR 3 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇰🇷 KR 1 → openitsub.com
+      - 🇰🇷 KR 2 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -245,17 +241,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
-      - 🇫🇷 FR 2 → openitsub.com
-      - 🇫🇷 FR 3 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇰🇷 KR 1 → openitsub.com
+      - 🇰🇷 KR 2 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -277,7 +271,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 US 1 → openitsub.com
+      - DIRECT
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -299,16 +293,15 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇰🇷 KR 1 → openitsub.com
+      - 🇰🇷 KR 2 → openitsub.com
   - name: 🌍 其他地区
     type: select
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
-      - 🇫🇷 FR 2 → openitsub.com
-      - 🇫🇷 FR 3 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -316,17 +309,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇫🇷 FR 1 → openitsub.com
-      - 🇫🇷 FR 2 → openitsub.com
-      - 🇫🇷 FR 3 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇰🇷 KR 1 → openitsub.com
+      - 🇰🇷 KR 2 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
-      - 🇳🇱 NL 2 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

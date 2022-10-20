@@ -60,17 +60,24 @@ def checkenv():
     if operating_system.startswith('Darwin'):
         if 'arm64' in operating_system:
             clashname='./clash-darwin-arm64'
-        else:
-            clashname='./clash-darwin-amd64'
-    elif operating_system.startswith('Linux'):
-        if 'AMD64' in operating_system:
-            clashname='./clash-linux-amd64'
         elif 'x86_64' in operating_system:
-            clashname='./clash-linux-amd64'
+            clashname='./clash-darwin-amd64'
         else:
+            print('Never mind')
+    elif operating_system.startswith('Linux'):
+        if 'x86_64' in operating_system:
+            clashname='./clash-linux-amd64'
+        elif 'AMD64' in operating_system:
+            clashname='./clash-linux-amd64'
+        elif 'arm64' in operating_system:
             clashname='./clash-linux-arm64' #armv8
+        else:
+            print('Never mind')
     elif operating_system.startswith('Windows'):
-        clashname='clash-windows-amd64.exe'
+        if 'AMD64' in operating_system:
+            clashname='clash-windows-amd64.exe'
+        else:
+            print('Never mind')
     else:
         print('Never mind')
         exit(1)

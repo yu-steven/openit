@@ -63,7 +63,7 @@ def checkenv():
         else:
             clashname='./clash-darwin-amd64'
     elif operating_system.startswith('Linux'):
-        if 'amd64' in operating_system:
+        if 'AMD64' in operating_system:
             clashname='./clash-linux-amd64'
         elif 'x86_64' in operating_system:
             clashname='./clash-linux-amd64'

@@ -163,9 +163,8 @@ def filter(config):
                         if 'skip-cert-verify' in x:
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
-                        if 'cipher' in x:
-                            if x['cipher'] not in vmess_supported_ciphers:
-                                continue
+                        if x['cipher'] not in vmess_supported_ciphers:
+                            continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'VMS'
                         authentication = 'uuid'
                     except:
@@ -219,8 +218,6 @@ def filter(config):
                     except:
                         continue
                 else:
-                    #print(x)
-                    #print('unsupported')
                     continue
                 if ip in iplist and x['port'] in iplist[ip]:
                     if country != 'CN':
@@ -230,7 +227,6 @@ def filter(config):
                             continue
                         else:
                             passlist.append(x[authentication])
-                            pass
                 else:
                     try:
                         iplist[ip].append(x['port'])

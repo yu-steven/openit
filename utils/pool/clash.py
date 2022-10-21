@@ -78,9 +78,6 @@ def push(list):
                         if 'tls' in x:
                             if x['tls'] not in [False, True]:
                                 continue
-                        #if 'alterId' in x:
-                            #if x['alterId'] not in [0]:
-                                #continue
                         if 'skip-cert-verify' in x:
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
@@ -89,7 +86,6 @@ def push(list):
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'VMS'
                         authentication = 'uuid'
                     except:
-                        print('shit went wrong: ' + str(x))
                         continue
                 elif x['type'] == 'trojan':
                     try:

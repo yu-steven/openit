@@ -78,6 +78,9 @@ def push(list):
                         if 'tls' in x:
                             if x['tls'] not in [False, True]:
                                 continue
+                        if 'alterId' in x
+                            if x['alterId'] not in [0]
+                                continue
                         if 'skip-cert-verify' in x:
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue

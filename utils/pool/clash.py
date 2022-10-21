@@ -30,6 +30,7 @@ def push(list):
             try:
                 x = list[i]
                 authentication = ''
+                x['port'] = int(x['port'])
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
@@ -48,7 +49,8 @@ def push(list):
                                 ss_omit_ip_dupe = ss_omit_ip_dupe + 1
                                 continue
                             else:
-                                iplist.append(ip)
+                                iplist[ip] = []
+                                iplist[ip].append(x['port'])
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSS'
                         authentication = 'password'
                     except:
@@ -66,8 +68,9 @@ def push(list):
                                 continue
                             else:
                                 iplist.append(ip)
-                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
+                                iplist[ip].append(x['port'])
                         authentication = 'password'
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
                     except:
                         continue
                 elif x['type'] == 'vmess':
@@ -81,9 +84,8 @@ def push(list):
                         if 'skip-cert-verify' in x:
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
-                        if 'cipher' in x:
-                            if x['cipher'] not in vmess_supported_ciphers:
-                                continue
+                        if x['cipher'] not in vmess_supported_ciphers:
+                            continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'VMS'
                         authentication = 'uuid'
                     except:
@@ -118,7 +120,7 @@ def push(list):
                             if x['tls'] not in [False, True]:
                                 continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'HTT'
-                        authentication = 'userpass'
+                        # authentication = 'userpass'
                     except:
                         continue
                 elif x['type'] == 'socks5':
@@ -133,27 +135,34 @@ def push(list):
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SK5'
-                        authentication = 'userpass'
+                        # authentication = 'userpass'
                     except:
                         continue
                 else:
                     continue
-                if ip in iplist:
+                if ip in iplist and x['port'] in iplist[ip]:
                     if country != 'CN':
                         continue
                     else:
                         if x[authentication] in passlist:
                             continue
                         else:
-                            passlist.append(x['authentication'])
+                            passlist.append(x[authentication])
                             pass
+                else:
+                    try:
+                        iplist[ip].append(x['port'])
+                    except:
+                        iplist[ip] = []
+                        iplist[ip].append(x['port'])
+
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
                 count = count + 1
+
             except:
                 continue
-                # print(list[i])
-                # pass
+
     with open('output.yaml', 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)

@@ -81,8 +81,9 @@ def push(list):
                         if 'skip-cert-verify' in x:
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
-                        if 'cipher' not in vmess_supported_ciphers:
-                            continue
+                        if 'cipher' in x:
+                            if x['cipher'] not in vmess_supported_ciphers:
+                                continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'VMS'
                         authentication = 'uuid'
                     except:

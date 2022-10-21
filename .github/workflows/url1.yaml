@@ -18,17 +18,27 @@ jobs:
       run: | 
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
-    - name: pool.yaml
+    - name: sed url1
       run: | #sed -n '/:\/\//p' bot >> ./openit/url #提取bot文本中符合行中有://字符的行追加到url文本结尾
          sed -i 's/^[ \t]*//g' url #删除行头空格和tab，对齐行头
          sed -i '/^sub:/d' url     #删除以sub:开头的行
          sed -i '/^$/d' url        #删除空白行
          sed -i -r '/^\s*$/d' url  #删除带有空格或制表符的空行
+    - name: subconverter
+      run: | 
+         base64 ./url > ./utils/subconverter/b64 -w 0
+         ./utils/subconverter/subconverter -g --artifact "fix" && rm ./utils/subconverter/b64
+         base64 -d ./utils/subconverter/fix > ./utils/rm/url && rm ./utils/subconverter/fix
+    - name: remove & rename
+      run: cd ./utils/rm/ && npm ci && npm start
+    - name: utils/pool/pool.yaml
+      run: | 
+         rm ./utils/rm/url
+         mv ./utils/rm/out ./url
          sort url -o url           #整理url文件
          base64 ./url > ./utils/subconverter/pool -w 0
          ./utils/subconverter/subconverter -g --artifact "pool" && rm ./utils/subconverter/pool
          sed -i '1,198d' ./utils/subconverter/pool.yaml #删除pool.yaml开头1-198行
          mv ./utils/subconverter/pool.yaml ./utils/pool/pool.yaml
-         
     - name: git push
       run: git pull origin main && git add . && git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库" && git push origin main

@@ -148,7 +148,6 @@ def push(list):
                             continue
                         else:
                             passlist.append(x[authentication])
-                            pass
                 else:
                     try:
                         iplist[ip].append(x['port'])

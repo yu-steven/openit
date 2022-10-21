@@ -31,7 +31,7 @@ jobs:
          base64 -d ./utils/subconverter/fix > ./utils/rm/url && rm ./utils/subconverter/fix
     - name: remove & rename
       run: cd ./utils/rm/ && npm ci && npm start
-    - name: utils/pool/pool.yaml
+    - name: ./url -> ./utils/pool/pool.yaml
       run: | 
          rm ./utils/rm/url
          mv ./utils/rm/out ./url

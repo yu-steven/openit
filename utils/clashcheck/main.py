@@ -1,5 +1,6 @@
 import time
 import subprocess
+import atexit
 from multiprocessing import Process, Manager, Semaphore
 from clash import push, checkenv
 from check import check

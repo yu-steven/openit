@@ -4,7 +4,7 @@ from multiprocessing import Process, Manager, Semaphore
 from clash import push, checkenv
 from check import check
 from tqdm import tqdm
-from init import init
+from init import init, clean
 
 if __name__ == '__main__':
     with Manager() as manager:
@@ -29,11 +29,4 @@ if __name__ == '__main__':
         time.sleep(5)
         alive=list(alive)
         push(alive,outfile)
-        clash.terminate()
-
-import os, shutil, atexit
-@atexit.register
-def clean():
-    shutil.rmtree('./temp')
-    os.popen('pkill clash-')
-    exit(0)
+        atexit.register(clean)

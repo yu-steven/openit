@@ -9,8 +9,9 @@ def init():
     if not os.path.exists('./temp'):
         os.mkdir('temp')
 
+    config = 'config.yaml'
     # read from config file
-    with open('config.yaml', 'r') as reader:
+    with open(config, 'r') as reader:
         config = yaml.load(reader, Loader=SafeLoader)
         http_port = config['http-port']
         api_port = config['api-port']

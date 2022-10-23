@@ -303,8 +303,6 @@ docker run -d -p 80:80 clashcheck
 端口被占用？
 `docker run -d -p [宿主机端口]:80 clashcheck`
 
-`start.sh` -> `zsh: command not found: timeout` -> https://stackoverflow.com/questions/3504945/timeout-command-on-mac-os-x
-
 `OSError: [Errno 24] Too many open files` -> `ulimit -Sn 10000`
 https://stackoverflow.com/a/35236738
 

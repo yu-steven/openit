@@ -1,7 +1,7 @@
 import os
 import yaml
+import shutil
 import requests
-import atexit, shutil
 from clash import filter
 from yaml import SafeLoader
 

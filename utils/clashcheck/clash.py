@@ -54,13 +54,14 @@ def push(list, outfile):
 
 def checkenv():
     operating_system = str(platform.system() + '/' +  platform.machine() + ' with ' + platform.node())
+    print('Clash is Running on '+ operating_system)
     if operating_system.startswith('Darwin'):
         if 'arm64' in operating_system:
             clashname='./clash-darwin-arm64'
         elif 'x86_64' in operating_system:
             clashname='./clash-darwin-amd64'
         else:
-            print('Never mind')
+            print('not supported')
             exit(1)
     elif operating_system.startswith('Linux'):
         if 'x86_64' in operating_system:
@@ -68,19 +69,18 @@ def checkenv():
         elif 'aarch64' in operating_system:
             clashname='./clash-linux-arm64'
         else:
-            print('Never mind')
+            print('not supported')
             exit(1)
     elif operating_system.startswith('Windows'):
         if 'AMD64' in operating_system:
             clashname='clash-windows-amd64.exe'
         else:
-            print('Never mind')
+            print('not supported')
             exit(1)
     else:
-        print('Never mind')
+        print('not supported')
         exit(1)
 
-    print('Clash is Running on '+ operating_system)
     return clashname, operating_system
 
 

@@ -47,9 +47,6 @@ def push(list, outfile):
                     clash['proxy-groups'][0]['proxies'].append(x['name'])
                     clash['proxy-groups'][1]['proxies'].append(x['name'])
                     count = count + 1
-            # except:
-            # print(list[i])
-            # pass
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
@@ -89,6 +86,7 @@ def checkenv():
 
     print('Clash is Running on '+ operating_system)
     return clashname, operating_system
+
 
 def filter(config):
     list = config["proxies"]

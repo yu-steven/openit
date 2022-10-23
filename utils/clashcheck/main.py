@@ -29,4 +29,4 @@ if __name__ == '__main__':
         time.sleep(5)
         alive=list(alive)
         push(alive,outfile)
-        atexit.register(clean)
+        atexit.register(clean, clash)

@@ -10,7 +10,7 @@ def init():
         os.mkdir('temp')
 
     config = 'data/config.yaml'
-    # read from config fil
+    # read from config file
     with open(config, 'r') as reader:
         config = yaml.load(reader, Loader=SafeLoader)
         http_port = config['http-port']

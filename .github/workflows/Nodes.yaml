@@ -85,5 +85,4 @@ jobs:
     needs: my-job
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - run: ./.github/webhook.sh ${{ secrets.webhook }}
+    - run: curl -s https://raw.githubusercontent.com/yu-steven/openit/main/.github/webhook.sh | bash -s ${{ secrets.webhook }}

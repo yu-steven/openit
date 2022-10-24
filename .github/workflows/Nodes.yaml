@@ -82,9 +82,9 @@ jobs:
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
 
-  Webhook: #触发Webhook启动下一次自动化
-    needs: my-job
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - run: sleep 1m && ./.github/webhook.sh
+  #Webhook: #触发Webhook启动下一次自动化
+  #  needs: my-job
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #  - uses: actions/checkout@v3
+  #  - run: sleep 1m && ./.github/webhook.sh

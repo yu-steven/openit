@@ -85,4 +85,5 @@ jobs:
     needs: my-job
     runs-on: ubuntu-latest
     steps:
-    - run: sleep 45 && curl -s https://raw.githubusercontent.com/yu-steven/openit/main/.github/webhook.sh | bash -s ${{ secrets.webhook }}
+    - name: cURL
+      run: sleep 45 && curl -s https://raw.githubusercontent.com/yu-steven/openit/main/.github/webhook.sh | bash -s ${{ secrets.webhook }}

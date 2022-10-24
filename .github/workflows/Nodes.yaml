@@ -78,7 +78,6 @@ jobs:
          mv ./utils/subconverter/long ./long || true #output ./long
          mv ./utils/subconverter/output.txt ./utils/pool/output.txt || true #output ./utils/pool/output.txt
          rm ./utils/subconverter/base64 ./utils/subconverter/output.yaml  #delete ./utils/subconverter/base64 ./utils/subconverter/output.yaml
-         chmod +x ./.github/webhook.sh
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
 

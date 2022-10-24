@@ -81,27 +81,9 @@ jobs:
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
 
-  long: #jsDelivr long同步
+  long: #触发Webhook启动下一次自动化
     needs: my-job
     runs-on: ubuntu-latest
     steps:
-    - name: CDN
-      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
-  HTTPS: #jsDelivr HTTPS同步
-    needs: my-job
-    runs-on: ubuntu-latest
-    steps:
-    - name: CDN
-      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
-  Clash: #jsDelivr Clash同步
-    needs: my-job
-    runs-on: ubuntu-latest
-    steps:
-    - name: CDN
-      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
-  Quanx: #jsDelivr Quanx同步
-    needs: my-job
-    runs-on: ubuntu-latest
-    steps:
-    - name: CDN
-      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Quanx.conf
+    - name: Webhook
+      run: curl curl -X POST https://api.github.com/repos/yu-steven/openit/dispatches -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token ${{ secrets.webhook }}" --data '{"event_type": "Webhook"}'

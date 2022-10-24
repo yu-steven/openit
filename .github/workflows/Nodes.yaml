@@ -86,4 +86,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: ./.github/webhook.sh
+    - run: ./.github/webhook.sh ${{ secrets.webhook }}

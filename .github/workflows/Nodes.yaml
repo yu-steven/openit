@@ -78,6 +78,7 @@ jobs:
          mv ./utils/subconverter/long ./long || true #output ./long
          mv ./utils/subconverter/output.txt ./utils/pool/output.txt || true #output ./utils/pool/output.txt
          rm ./utils/subconverter/base64 ./utils/subconverter/output.yaml  #delete ./utils/subconverter/base64 ./utils/subconverter/output.yaml
+         chmod +x ./.github/webhook.sh
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
 
@@ -85,5 +86,5 @@ jobs:
     needs: my-job
     runs-on: ubuntu-latest
     steps:
-    - name: cURL
-      run: curl -X POST https://api.github.com/repos/yu-steven/openit/dispatches -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token ${{ secrets.webhook }}" --data '{"event_type": "Webhook"}'
+    - uses: actions/checkout@v3
+    - run: ./.github/webhook.sh

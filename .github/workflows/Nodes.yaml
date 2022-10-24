@@ -86,4 +86,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: cURL
-      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
+      run: curl -X POST https://api.github.com/repos/yu-steven/openit/dispatches 

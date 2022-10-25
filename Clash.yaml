@@ -197,15 +197,12 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: 183.232.141.154, port: 19204, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/fr, headers: {Host: i0.hdslb.com}}, udp: true}
-  - {name: 🇨🇳 TW 1 → openitsub.com, server: download1tw.windowsupdate.lol, port: 443, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: 183.232.141.154, port: 19214, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 1 → openitsub.com, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com, port: 443, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1 → openitsub.com, server: 32a16649-2d4e-4368-85e0-2b1395259f95.cheme.tech, port: 80, type: vmess, uuid: cce5649e-bfb0-4011-b4e4-4833b4dab2e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yitai, headers: {Host: gd.189.cn}}, udp: true}
   - {name: 🇺🇸 US 2 → openitsub.com, server: 172.67.154.11, port: 2095, type: vmess, uuid: 60b698c1-2d98-426e-d53e-0b5febe988f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@airproxies, headers: {Host: air.brink.ga}}, udp: true}
-  - {name: 🇺🇸 US 3 → openitsub.com, server: 107.189.28.229, port: 20470, type: trojan, password: d4aac5d7-d17a-3ad0-9068-ac555f750b6d, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 4 → openitsub.com, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}, udp: true}
+  - {name: 🇺🇸 US 3 → openitsub.com, server: www.flieswiming.tk, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.flieswiming.tk}}, udp: true}
+  - {name: 🇺🇸 US 4 → openitsub.com, server: 107.189.28.229, port: 20470, type: trojan, password: d4aac5d7-d17a-3ad0-9068-ac555f750b6d, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -224,10 +221,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
-      - 🇯🇵 JP 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
       - 🇺🇸 US 3 → openitsub.com
@@ -239,10 +233,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
-      - 🇯🇵 JP 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
       - 🇺🇸 US 3 → openitsub.com
@@ -260,7 +251,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 JP 1 → openitsub.com
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -277,7 +268,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 TW 1 → openitsub.com
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -296,7 +287,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -304,10 +294,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
-      - 🇯🇵 JP 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
       - 🇺🇸 US 3 → openitsub.com

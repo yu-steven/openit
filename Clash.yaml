@@ -198,9 +198,8 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: 🇭🇰 HK 1 → openitsub.com, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: 107.189.28.229, port: 20470, type: trojan, password: d4aac5d7-d17a-3ad0-9068-ac555f750b6d, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2 → openitsub.com, server: 172.67.154.11, port: 2095, type: vmess, uuid: 60b698c1-2d98-426e-d53e-0b5febe988f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@airproxies, headers: {Host: air.brink.ga}}, udp: true}
-  - {name: 🇺🇸 US 3 → openitsub.com, server: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com, port: 443, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com}}, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: 172.67.154.11, port: 2095, type: vmess, uuid: 60b698c1-2d98-426e-d53e-0b5febe988f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@airproxies, headers: {Host: air.brink.ga}}, udp: true}
+  - {name: 🇺🇸 US 2 → openitsub.com, server: 107.189.28.229, port: 20470, type: trojan, password: d4aac5d7-d17a-3ad0-9068-ac555f750b6d, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -221,7 +220,6 @@ proxy-groups:
       - 🇭🇰 HK 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -231,7 +229,6 @@ proxy-groups:
       - 🇭🇰 HK 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -254,7 +251,6 @@ proxy-groups:
     proxies:
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -289,7 +285,6 @@ proxy-groups:
       - 🇭🇰 HK 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
       - 🇺🇸 US 2 → openitsub.com
-      - 🇺🇸 US 3 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

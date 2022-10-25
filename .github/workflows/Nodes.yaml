@@ -1,16 +1,16 @@
 name: Nodes
 
 on: 
-  # schedule: #UTC+0               #UTC+8
-  #   - cron: '*/35 0-8 * * 1-5'   #工作日 上午8:00 - 下午4:00
-  #   - cron: '*/25 8-14 * * 1-5'  #工作日 下午4:00 - 晚上10:00
-  #   - cron: '*/55 14-21 * * 1-4' #工作日 晚上10:00 - 次日凌晨5:00
-  #   - cron: '*/25 21-23 * * 1-5' #工作日 次日凌晨5:00 - 次日上午8:00
-  #   - cron: '*/25 14-21 * * 5'   #星期五 晚上10:00 - 次日凌晨5:00
-  #   - cron: '*/25 * * * 0,6'     #休息日 全天候
-  repository_dispatch: #https://www.chenshaowen.com/blog/how-to-trigger-github-action-remotely.html
-    types:
-      - Webhook
+  schedule: #UTC+0               #UTC+8
+    - cron: '*/35 0-8 * * 1-5'   #工作日 上午8:00 - 下午4:00
+    - cron: '*/25 8-14 * * 1-5'  #工作日 下午4:00 - 晚上10:00
+    - cron: '*/55 14-21 * * 1-4' #工作日 晚上10:00 - 次日凌晨5:00
+    - cron: '*/25 21-23 * * 1-5' #工作日 次日凌晨5:00 - 次日上午8:0
+    - cron: '*/25 14-21 * * 5'   #星期五 晚上10:00 - 次日凌晨5:00
+    - cron: '*/25 * * * 0,6'     #休息日 全天候
+  # repository_dispatch: #https://www.chenshaowen.com/blog/how-to-trigger-github-action-remotely.html
+  #   types:
+  #     - Webhook
   workflow_dispatch: #手动调试按钮
 
 jobs: 
@@ -81,9 +81,9 @@ jobs:
     - name: git push
       run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
 
-  Webhook: #触发Webhook启动下一次自动化
-    needs: my-job
-    runs-on: ubuntu-latest
-    steps:
-    - name: cURL
-      run: curl -s https://raw.githubusercontent.com/yu-steven/openit/main/.github/webhook.sh | bash -s ${{ secrets.webhook }}
+  # Webhook: #触发Webhook启动下一次自动化
+  #   needs: my-job
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: cURL
+  #     run: curl -s https://raw.githubusercontent.com/yu-steven/openit/main/.github/webhook.sh | bash -s ${{ secrets.webhook }}

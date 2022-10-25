@@ -9,7 +9,7 @@ def init():
     if not os.path.exists('./temp'):
         os.mkdir('temp')
 
-    config = 'data/config.yaml'
+    config = 'config/config.yaml'
     # read from config file
     with open(config, 'r') as reader:
         config = yaml.load(reader, Loader=SafeLoader)

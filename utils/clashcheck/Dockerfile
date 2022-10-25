@@ -23,7 +23,7 @@ WORKDIR /home/local
 EXPOSE 80
 
 # config nginx
-COPY /data/default.conf /etc/nginx/conf.d/default.conf
+COPY /config/default.conf /etc/nginx/conf.d/default.conf
 
 # install requirements
 COPY requirements.txt ./

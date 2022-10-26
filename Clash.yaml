@@ -197,11 +197,9 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com, server: 119.36.161.40, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.69961573.xyz}}, udp: true}
-  - {name: 🇨🇳 CN 4 → openitsub.com, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇨🇳 TW 1 → openitsub.com, server: download1tw.windowsupdate.lol, port: 443, type: trojan, password: 8498bfc8-c030-40df-80e8-69f9e06fe16a, sni: dc1-download.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: MD 1 → openitsub.com, server: shk.xlkjjs.top, port: 31998, type: vmess, uuid: e1ca21c6-7a78-30c6-98ce-80d0c9a3de18, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shk.xlkjjs.top}}, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -219,22 +217,18 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - MD 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - MD 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -262,7 +256,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 TW 1 → openitsub.com
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -280,21 +274,18 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - MD 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇨🇳 CN 4 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - MD 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

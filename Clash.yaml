@@ -199,6 +199,8 @@ dns:
 proxies:
   - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 1 → openitsub.com, server: 119.36.161.40, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.69961573.xyz}}, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: 119.36.161.40, port: 443, type: vmess, uuid: 946ba5df-5771-4873-a3cb-892378526147, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.99136853.xyz}}, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: 139.162.119.159, port: 80, type: vmess, uuid: f085e9a1-6af4-4806-992e-161057c0383e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,6 +220,8 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -226,6 +230,8 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -239,7 +245,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP 1 → openitsub.com
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -273,6 +279,7 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -281,6 +288,8 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇯🇵 JP 1 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

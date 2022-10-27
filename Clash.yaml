@@ -198,9 +198,10 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: 52.140.192.138, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2 → openitsub.com, server: 52.140.196.251, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: 52.140.196.251, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 2 → openitsub.com, server: 52.140.192.138, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL 1 → openitsub.com, server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 2 → openitsub.com, server: pf.napsternetv.com, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1 → openitsub.com, server: 20.247.87.246, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -223,6 +224,7 @@ proxy-groups:
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
+      - 🇳🇱 NL 2 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
@@ -234,6 +236,7 @@ proxy-groups:
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
+      - 🇳🇱 NL 2 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
@@ -283,6 +286,7 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
+      - 🇳🇱 NL 2 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -293,6 +297,7 @@ proxy-groups:
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇳🇱 NL 1 → openitsub.com
+      - 🇳🇱 NL 2 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 👉 国内网站
     type: select

@@ -303,7 +303,8 @@ docker run -d -p 80:80 clashcheck
 端口被占用？
 `docker run -d -p [宿主机端口]:80 clashcheck`
 
-`OSError: [Errno 24] Too many open files` -> https://stackoverflow.com/a/53661748/18250519
+`OSError: [Errno 24] Too many open files` -> `ulimit -n 4096` <- 仅更改该终端的当前限制
+<br>永久更改此限制 -> https://stackoverflow.com/a/53661748/18250519
 
 默认浏览器访问 `0.0.0.0:80`｜筛选结果文件 `data/check.yaml`｜ClashCheck配置文件 `data/config.yaml`｜Nginx配置文件 `data/default.conf`
 

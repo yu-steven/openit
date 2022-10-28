@@ -197,8 +197,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: hg5.leifengkeji.live, port: 8935, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -216,16 +215,14 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇯🇵 JP 1 → openitsub.com
+      - 🇨🇳 CN
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇯🇵 JP 1 → openitsub.com
+      - 🇨🇳 CN
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -239,7 +236,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 JP 1 → openitsub.com
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -271,15 +268,14 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇯🇵 JP 1 → openitsub.com
+      - 🇨🇳 CN
   - name: 👉 国内网站
     type: select
     proxies:

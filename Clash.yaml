@@ -201,14 +201,11 @@ proxies:
   - {name: IR 1 → openitsub.com, server: london1.na.invari.na.oonvari.com, port: 443, type: vmess, uuid: 3f3c52f5-0e50-4fcf-8ee2-c8b7e0c8abab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aaf44db73dfc/, headers: {Host: london1.na.invari.na.oonvari.com}}, udp: true}
   - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 1 → openitsub.com, server: 1024tw01.tfzhc.top, port: 443, type: trojan, password: d28cdee6-077d-4a86-bc42-dd63e42695af, sni: 1024tw01.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: 183.232.229.132, port: 11923, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: 111.45.22.246, port: 9010, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com, server: 111.45.22.136, port: 9010, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: 119.36.161.40, port: 443, type: vmess, uuid: 946ba5df-5771-4873-a3cb-892378526147, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.99136853.xyz}}, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: 116.129.254.184, port: 9001, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 1 → openitsub.com, server: 8.219.165.71, port: 8443, type: vmess, uuid: 377ca891-7b20-41c8-a5cc-1bb5b3f29f3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj2.qiancheng.ml}}, udp: true}
-  - {name: 🇸🇬 SG 2 → openitsub.com, server: 8.219.172.204, port: 8443, type: vmess, uuid: 377ca891-7b20-41c8-a5cc-1bb5b3f29f3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj2.qiancheng.ml}}, udp: true}
-  - {name: 🇸🇬 SG 3 → openitsub.com, server: 8.219.105.248, port: 8443, type: vmess, uuid: 377ca891-7b20-41c8-a5cc-1bb5b3f29f3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj2.qiancheng.ml}}, udp: true}
-  - {name: 🇸🇬 SG 4 → openitsub.com, server: 8.219.11.122, port: 8443, type: vmess, uuid: 377ca891-7b20-41c8-a5cc-1bb5b3f29f3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj2.qiancheng.ml}}, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: 20.2.80.92, port: 18080, type: vmess, uuid: 740fd096-66e4-41c8-a512-c94ed70c2437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1, headers: {Host: www.goole.com}}, udp: true}
+  - {name: 🇸🇬 SG 2 → openitsub.com, server: 8.219.105.248, port: 8443, type: vmess, uuid: 377ca891-7b20-41c8-a5cc-1bb5b3f29f3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dj2.qiancheng.ml}}, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: trask1.bitznet.one, port: 32005, type: trojan, password: afa468e8-0d63-42fa-8759-43be8570164a, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -232,11 +229,8 @@ proxy-groups:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇸🇬 SG 2 → openitsub.com
-      - 🇸🇬 SG 3 → openitsub.com
-      - 🇸🇬 SG 4 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
@@ -250,11 +244,8 @@ proxy-groups:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇸🇬 SG 2 → openitsub.com
-      - 🇸🇬 SG 3 → openitsub.com
-      - 🇸🇬 SG 4 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
@@ -292,8 +283,6 @@ proxy-groups:
     proxies:
       - 🇸🇬 SG 1 → openitsub.com
       - 🇸🇬 SG 2 → openitsub.com
-      - 🇸🇬 SG 3 → openitsub.com
-      - 🇸🇬 SG 4 → openitsub.com
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -310,7 +299,6 @@ proxy-groups:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -323,11 +311,8 @@ proxy-groups:
       - 🇨🇦 CA 1 → openitsub.com
       - 🇨🇳 CN 1 → openitsub.com
       - 🇨🇳 CN 2 → openitsub.com
-      - 🇨🇳 CN 3 → openitsub.com
       - 🇸🇬 SG 1 → openitsub.com
       - 🇸🇬 SG 2 → openitsub.com
-      - 🇸🇬 SG 3 → openitsub.com
-      - 🇸🇬 SG 4 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 👉 国内网站
     type: select

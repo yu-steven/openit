@@ -48,7 +48,7 @@ jobs:
     # - name: clashcheck #because ./utils/clashcheck/config/config.yaml so input ./utils/clashcheck/data/input.yaml
     #   run: cd ./utils/clashcheck/ && python main.py && rm data/input.yaml #output ./utils/clashcheck/data/check.yaml & delete ./utils/clashcheck/data/input.yaml
     - name: clashcheck #如果您想要fork本仓库并运行此workflow，请用#号注释掉这一行和下一行并删除上方四行开头的#并按照yaml文件格式对其行头
-      run: timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml --limit-rate=200k -q || timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml --limit-rate=200k -q
+      run: timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q
     - name: move clashcheck to clash2base64 #input ./utils/clashcheck/data/check.yaml
       run: mv ./utils/clashcheck/data/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml

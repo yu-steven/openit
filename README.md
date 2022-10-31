@@ -294,6 +294,8 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 # Dockerfile
 
 **pwd = /utils/clashcheck**
+
+运行前请先修改`config/config.yaml`的`source:`项以配置节点源
 ```
 git clone https://github.com/yu-steven/openit.git && \
 cd openit/utils/clashcheck && \

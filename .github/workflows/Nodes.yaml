@@ -50,7 +50,7 @@ jobs:
     - name: pull clashcheck file #如果您想要fork本仓库并运行此workflow，请用#号注释掉这一行和下两行并删除上方四行开头的#并按照yaml文件格式对其行头
       id: clashcheck
       run: timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q || timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q
-    - name: when pull clashcheck file has failed
+    - name: when pull has failed
       if: ${{ failure() && steps.clashcheck.conclusion == 'failure' }}
       run: echo -e "\033[31mFailed to pull clashcheck file.\033[0m"
     - name: move clashcheck to clash2base64 #input ./utils/clashcheck/data/check.yaml

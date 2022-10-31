@@ -307,8 +307,8 @@ docker run -d -p 80:80 clashcheck
 
 默认浏览器访问`0.0.0.0:80`以继续
 
-#`OSError: [Errno 24] Too many open files` -> 仅更改当前终端限制 -> `ulimit -n 4096`
-#<br>永久更改此限制 -> https://stackoverflow.com/a/53661748/18250519
+<!-- `OSError: [Errno 24] Too many open files` -> 仅更改当前终端限制 -> `ulimit -n 4096`
+<br>永久更改此限制 -> https://stackoverflow.com/a/53661748/18250519 -->
 
 
 # 声明

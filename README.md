@@ -305,7 +305,7 @@ docker run -d -p 80:80 clashcheck
 端口被占用？
 `docker run -d -p [宿主机端口]:80 clashcheck`
 
-默认浏览器访问`0.0.0.0:80`以继续
+默认浏览器访问`0.0.0.0:80`以等待筛选结果输出(check.yaml)
 
 <!-- `OSError: [Errno 24] Too many open files` -> 仅更改当前终端限制 -> `ulimit -n 4096`
 <br>永久更改此限制 -> https://stackoverflow.com/a/53661748/18250519 -->

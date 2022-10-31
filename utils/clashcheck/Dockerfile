@@ -1,4 +1,5 @@
 FROM python:3
+
 EXPOSE 80
 LABEL maintainer="yusteven@duck.com"
 
@@ -17,10 +18,13 @@ RUN apt update && \
 
 WORKDIR /home/clashcheck
 
-# copy & install requirements & make web pages
+# install requirements
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# copy all & make web pages
 COPY . .
-RUN pip install --no-cache-dir -r requirements.txt -q && \
-    rm -r /var/www/html && ln -s /home/clashcheck/data /var/www/html
+RUN rm -r /var/www/html && ln -s /home/clashcheck/data /var/www/html
 
 # start apache and clashcheck with while
 CMD ["./start.sh"]

@@ -1,35 +1,26 @@
 FROM python:3
-
+EXPOSE 80
 LABEL maintainer="yusteven@duck.com"
 
 # init TimeZone
 ENV TZ=Asia/Shanghai \
     DEBIAN_FRONTEND=noninteractive
+RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime && \
+    echo ${TZ} > /etc/timezone && \
+    dpkg-reconfigure --frontend noninteractive tzdata && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime \
-    && echo ${TZ} > /etc/timezone \
-    && dpkg-reconfigure --frontend noninteractive tzdata \
-    && rm -rf /var/lib/apt/lists/*
-
-# init nginx procps/pkill
+# init apache & procps/pkill
 RUN apt update && \
-    apt install -y --no-install-recommends nginx procps && \
-    # remove apt cache
+    apt install -y --no-install-recommends apache2 procps && \
     rm -rf /var/lib/apt/lists/* 
 
 WORKDIR /home/clashcheck
 
-# port
-EXPOSE 80
-
-# config nginx
-COPY /config/default.conf /etc/nginx/conf.d/default.conf
-
-# install requirements
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt -q
-
+# copy & install requirements & make web pages
 COPY . .
+RUN pip install --no-cache-dir -r requirements.txt -q && \
+    rm -r /var/www/html && ln -s /home/clashcheck/data /var/www/html
 
-# clashcheck with while
+# start apache and clashcheck with while
 CMD ["./start.sh"]

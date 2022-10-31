@@ -20,7 +20,7 @@ WORKDIR /home/clashcheck
 
 # install requirements
 COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -q
 
 # copy all & make web pages
 COPY . .

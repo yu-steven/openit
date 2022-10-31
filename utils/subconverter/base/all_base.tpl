@@ -171,7 +171,6 @@ dns:
     - https://1.1.1.1/dns-query #Cloudflare Doh(IP)
     - https://cloudflare-dns.com/dns-query #Cloudflare Doh
     - https://dns.daycat.space/dns-query #openit/daycat Doh
-    - https://fdp.daycat.space/dns-query #openit/daycat Doh(new)
     - https://dns.adguard.com/dns-query #AdGuard Doh
     - https://dns-family.adguard.com/dns-query #AdGuard Doh
     - https://dns-unfiltered.adguard.com/dns-query #AdGuard Doh

@@ -88,6 +88,7 @@ jobs:
          mv ./utils/subconverter/output.txt ./utils/pool/output.txt || true #output ./utils/pool/output.txt
          rm ./utils/subconverter/base64 ./utils/subconverter/output.yaml  #delete ./utils/subconverter/base64 ./utils/subconverter/output.yaml
     - name: git push
+      if: ${{ always() }}
       run: ./.github/update-repo.sh   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
 
   # Webhook: #触发Webhook启动下一次自动化

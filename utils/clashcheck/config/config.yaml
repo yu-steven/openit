@@ -1,7 +1,7 @@
 http-port: 23940 #clash流量代理端口，可以修改，注意端口占用
 api-port: 23941 #api端口，可以修改，注意端口占用
 threads: 50 #线程数，指一次扫描多少个节点，视系统配置情况而定，此处为50个线程
-source: data/input.yaml #你的输入文件名，同级或下级目录的本地文件, 也可以是http(s)超文本传输协议的远程文件，注意必须是clash配置文件格式, 此处为下级目录data里的input.yaml
+source: https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/openit/main/utils/pool/output.yaml #你的输入文件名，同级或下级目录的本地文件, 也可以是http(s)超文本传输协议的远程文件，注意必须是clash配置文件格式, 此处为下级目录data里的input.yaml
 outfile: data/check.yaml #你的输出文件名, 同级或下级目录的本地文件，注意输出文件也是clash配置文件格式, 此处为下级目录data里的check.yaml
 test-url: https://www.youtube.com/s/player/23010b46/player_ias.vflset/en_US/remote.js #延迟测试地址, 可以更改，注意必须是GFW完全屏蔽的网站，github.com不行，此处为YouTube的某个js文件
 timeout: 5000 #测试的超时界限，单位: 毫秒

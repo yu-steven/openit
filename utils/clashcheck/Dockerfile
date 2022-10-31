@@ -17,7 +17,7 @@ RUN apt update && \
     # remove apt cache
     rm -rf /var/lib/apt/lists/* 
 
-WORKDIR /home/local
+WORKDIR /home/clashcheck
 
 # port
 EXPOSE 80

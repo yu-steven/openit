@@ -316,7 +316,7 @@ docker run -d -p 80:80 clashcheck
 本仓库采用 CC BY-SA 4.0 许可协议
 
 OpenPCRS = PCRS = ProxyPool + ClashCheck + Remove&Rename + Subconverter
-<br>在本系统中，其中收集部分引用daycat/pyray仓库(主程序`./utils/pool/main.py`)，测速筛选部分引用daycat/clashcheck仓库(主程序`./utils/clashcheck/main.py`)，去重重命名部分由Node.js编写(主程序`./utils/rm/index.js`)，编码转换部分引用tindy2013/subconverter仓库(主程序`./utils/subconverter/subconverter`), 依靠GitHub action(配置文件`./.github/workflows/Nodes.yaml`)持续集成持续交付持续部署
+<br>在本系统中，其中收集部分引用[daycat/pyray](https://github.com/daycat/pyray)仓库(主程序`./utils/pool/main.py`)，测速筛选部分引用[daycat/clashcheck](https://github.com/daycat/clashcheck)仓库(主程序`./utils/clashcheck/main.py`)，去重重命名部分由Node.js编写(主程序`./utils/rm/index.js`)，编码转换部分引用[tindy2013/subconverter](https://github.com/tindy2013/subconverter)仓库(主程序`./utils/subconverter/subconverter`), 依靠[GitHub action](https://github.com/yu-steven/openit/actions)(配置文件`./.github/workflows/Nodes.yaml`)持续集成持续交付持续部署
 <br>节点源文件 [➡️ 此处](https://github.com/yu-steven/openit/blob/main/url)
 
 Clash.yaml 使用的路由规则在 [➡️ 此处](https://github.com/yu-steven/openit/blob/main/utils/subconverter/config/rule.ini)

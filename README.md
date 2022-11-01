@@ -320,7 +320,7 @@ OpenPCRS = PCRS = ProxyPool + ClashCheck + Remove&Rename + Subconverter
 <br>节点源文件 [➡️ 此处](https://github.com/yu-steven/openit/blob/main/url)
 
 Clash.yaml 使用的路由规则在 [➡️ 此处](https://github.com/yu-steven/openit/blob/main/utils/subconverter/config/rule.ini)
-<br>Quanx.conf 引用神机, blackmatrix7和lhie1的重写规则, KOP-XIAO/QuantumultX的js脚本、ip-api数据库, Mazeorz整合的网易云音乐解锁, GeQ1an部分去广告规则和Koolson/Qure的图标
+<br>Quanx.conf 引用神机, [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)和[lhie1](https://github.com/lhie1)的重写规则, [KOP-XIAO/QuantumultX](https://github.com/KOP-XIAO/QuantumultX)的js脚本、[MaxMind](https://www.maxmind.com)ip数据库, [Mazeorz/iOS_Rules_Scripts](https://github.com/Mazeorz/iOS_Rules_Scripts)的网易云音乐解锁, [GeQ1an/Rules](https://github.com/GeQ1an/Rules)部分去广告规则和[Koolson/Qure](https://github.com/Koolson/Qure)的图标
 
 著作权归作者所有，节点归IP所有者所有，规则、js脚本、代码、图标归创作所有者所有
 <br>转载或引用本仓库时请遵守许可协议，商业转载请联系原作者获得授权，非商业转载请注明出处。

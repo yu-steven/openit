@@ -1,6 +1,6 @@
 FROM python:3
 
-EXPOSE 80
+EXPOSE 80/tcp
 LABEL maintainer="yusteven@duck.com"
 
 # init TimeZone

@@ -26,8 +26,8 @@ def url(proxy_list, link):
             data_out.append(x)
         proxy_list.append(data_out)
     except:
-        #pass
         print("Error in Collecting " + link )
+        #pass
 
 proxy_list=[]
 if __name__ == '__main__':

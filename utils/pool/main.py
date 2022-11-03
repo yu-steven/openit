@@ -36,7 +36,8 @@ if __name__ == '__main__':
         current_date = time.strftime("%Y_%m_%d", time.localtime())
         #print("Today is: " + current_date)
         start = time.time() #time start
-        with open('config.yaml', 'r') as reader:
+        config = 'config.yaml'
+        with open(config, 'r') as reader:
             config = yaml.load(reader, Loader=SafeLoader)
             subscribe_links = config['sub']
         directories, total = get_file_list()

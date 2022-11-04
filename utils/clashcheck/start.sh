@@ -7,4 +7,4 @@
 #macOS -> `zsh: command not found: timeout` -> https://stackoverflow.com/questions/3504945/timeout-command-on-mac-os-x
 
 apachectl start || true
-while true; do timeout -k 20 4m python main.py; done
+while [ $? -eq 0 ]; do timeout -k 20 4m python main.py; done

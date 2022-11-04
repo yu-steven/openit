@@ -16,7 +16,7 @@ RUN apt update && \
     apt install -y --no-install-recommends apache2 procps && \
     rm -rf /var/lib/apt/lists/* 
 
-WORKDIR /usr/src/clashcheck
+WORKDIR /home/clashcheck
 
 # install requirements
 COPY requirements.txt ./
@@ -24,7 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # copy all & make web pages
 COPY . .
-RUN rm -r /var/www/html && ln -s /usr/src/clashcheck/data /var/www/html
+RUN rm -r /var/www/html && ln -s /home/clashcheck/data /var/www/html
 
 # start apache and clashcheck with while
 CMD ["./start.sh"]

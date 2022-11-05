@@ -11,9 +11,9 @@ RUN ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime; \
     dpkg-reconfigure --frontend noninteractive tzdata; \
     rm -rf /var/lib/apt/lists/*
 
-# init apache & procps/pkill
+# init apache
 RUN apt update; \
-    apt install -y --no-install-recommends apache2 procps; \
+    apt install -y --no-install-recommends apache2; \
     rm -rf /var/lib/apt/lists/* 
 
 WORKDIR /usr/src/clashcheck

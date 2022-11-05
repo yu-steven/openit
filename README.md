@@ -300,7 +300,7 @@ git clone https://github.com/yu-steven/openit.git; \
 docker build -t clashcheck openit/utils/clashcheck; \
 docker run -d -p 80:80 clashcheck
 ```
-端口被占用？-> `docker run -d -p [宿主机端口]:80 clashcheck`
+端口被占用 -> `docker run -d -p [宿主机端口]:80 clashcheck`
 
 等待1-2分钟浏览器访问`0.0.0.0:80`查看筛选结果(check.yaml)，可以右键复制链接直接使用(需要保持docker容器运行)
 

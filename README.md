@@ -291,18 +291,15 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ` https://github.com/Qv2ray/Qv2ray/releases`
 *2021.8.17 11:41 --- v2.7.0* **The End**
 ***
-# Dockerfile
-## ClashCheck
-Dockerfile 位于 `./utils/clashcheck/Dockerfile`
-
-运行前请先修改`config/config.yaml`的`source:`项以配置节点源
+# ClashCheck Dockerfile
+Dockerfile -> `./utils/clashcheck/Dockerfile`
+<br>配置节点源 -> `./utils/clashcheck/config/config.yaml` 的 `source:` 项
 ```
 git clone https://github.com/yu-steven/openit.git; \
 docker build -t clashcheck openit/utils/clashcheck; \
 docker run -d -p 80:80 clashcheck
 ```
-端口被占用？
-`docker run -d -p [宿主机端口]:80 clashcheck`
+端口被占用？-> `docker run -d -p [宿主机端口]:80 clashcheck`
 
 等待1-2分钟浏览器访问`0.0.0.0:80`查看筛选结果(check.yaml)，可以右键复制链接直接使用(需要保持docker容器运行)
 

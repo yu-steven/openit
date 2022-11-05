@@ -13,7 +13,7 @@ RUN ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime; \
 
 # init apache & procps/pkill
 RUN apt update; \
-    apt install -y --no-install-recommends apache2 procps; \
+    apt install -y --no-install-recommends apache2; \
     rm -rf /var/lib/apt/lists/* 
 
 WORKDIR /usr/src/clashcheck

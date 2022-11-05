@@ -292,14 +292,13 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2021.8.17 11:41 --- v2.7.0* **The End**
 ***
 # Dockerfile
-
-**pwd = /utils/clashcheck**
+## ClashCheck
+Dockerfile 位于 `./utils/clashcheck/Dockerfile`
 
 运行前请先修改`config/config.yaml`的`source:`项以配置节点源
 ```
-git clone https://github.com/yu-steven/openit.git && \
-cd openit/utils/clashcheck && \
-docker build -t clashcheck . && \
+git clone https://github.com/yu-steven/openit.git; \
+docker build -t clashcheck openit/utils/clashcheck; \
 docker run -d -p 80:80 clashcheck
 ```
 端口被占用？

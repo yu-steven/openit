@@ -292,9 +292,9 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2021.8.17 11:41 --- v2.7.0* **The End**
 ***
 # ClashCheck Dockerfile
-Dockerfile -> `./utils/clashcheck/Dockerfile`
+Dockerfile -> [`./utils/clashcheck/Dockerfile`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/Dockerfile)
 
-配置节点源 -> `./utils/clashcheck/config/config.yaml` 的 `source:` 项
+配置节点源 -> [`./utils/clashcheck/config/config.yaml`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml) 的 [`source:`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml#L4) 项
 ```
 git clone https://github.com/yu-steven/openit.git; \
 docker build -t clashcheck openit/utils/clashcheck; \
@@ -302,7 +302,7 @@ docker run -d -p 80:80 clashcheck
 ```
 端口被占用 -> `docker run -d -p [宿主机端口]:80 clashcheck`
 
-等待1-2分钟浏览器访问`0.0.0.0:80`查看筛选结果(check.yaml)，可以右键复制链接直接使用(需要保持docker容器运行)
+正常需要等待1-2分钟浏览器访问`0.0.0.0:80`查看筛选结果(check.yaml)，可以右键复制链接直接使用(需要保持docker容器运行)
 
 <!-- `OSError: [Errno 24] Too many open files` -> 仅更改当前终端限制 -> `ulimit -n 4096`
 <br>永久更改此限制 -> https://stackoverflow.com/a/53661748/18250519 -->

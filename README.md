@@ -298,7 +298,7 @@ Dockerfile -> [`./utils/clashcheck/Dockerfile`](https://github.com/yu-steven/ope
 ```
 git clone https://github.com/yu-steven/openit.git; \
 docker build -t clashcheck openit/utils/clashcheck; \
-docker run -d -p 80:80 clashcheck
+docker run -d --restart=on-failure:3 -p 80:80 clashcheck
 ```
 端口被占用 -> `docker run -d -p [宿主机端口]:80 clashcheck`
 

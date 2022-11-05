@@ -293,7 +293,8 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ***
 # ClashCheck Dockerfile
 Dockerfile -> `./utils/clashcheck/Dockerfile`
-<br>配置节点源 -> `./utils/clashcheck/config/config.yaml` 的 `source:` 项
+
+配置节点源 -> `./utils/clashcheck/config/config.yaml` 的 `source:` 项
 ```
 git clone https://github.com/yu-steven/openit.git; \
 docker build -t clashcheck openit/utils/clashcheck; \

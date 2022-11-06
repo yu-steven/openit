@@ -292,7 +292,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2021.8.17 11:41 --- v2.7.0* **The End**
 ***
 # Dockerfile
-这是可以运行ClashCheck的Dockerfile，要使用它你需要安装Docker、了解并会使用Docker
+这是可以运行ClashCheck的容器，要使用它你需要安装Docker、了解并会使用Docker
 
 Dockerfile -> [`utils/clashcheck/Dockerfile`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/Dockerfile)
 

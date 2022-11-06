@@ -292,12 +292,12 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2021.8.17 11:41 --- v2.7.0* **The End**
 ***
 # Dockerfile
-这是可以运行ClashCheck的Dockerfile，要使用它你需要安装Docker, 了解并会使用Docker(https://yeasy.gitbook.io/docker_practice/)
+这是可以运行ClashCheck的Dockerfile，要使用它你需要安装Docker、了解并会使用Docker(https://yeasy.gitbook.io/docker_practice/)
 
 Dockerfile -> [`./utils/clashcheck/Dockerfile`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/Dockerfile)
 
 在运行Docker之前你需要配置节点源，默认openit节点池
-配置节点源 -> [`./utils/clashcheck/config/config.yaml`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml) 的 [`source:`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml#L4) 项
+<br>配置节点源 -> [`./utils/clashcheck/config/config.yaml`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml) 的 [`source:`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml#L4) 项
 
 要编译和运行此docker，只需使用以下命令：
 ```

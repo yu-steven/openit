@@ -35,9 +35,13 @@ jobs:
       run: rm ./utils/rm/url; mv ./utils/rm/out ./url; sort url -o url #整理url文件
     - name: ./url -> ./utils/pool/push.yaml
       run: | 
-         base64 ./url > ./utils/subconverter/push -w 0
-         ./utils/subconverter/subconverter -g --artifact "push"; rm ./utils/subconverter/push
-         sed -i '1,197d' ./utils/subconverter/push.yaml #删除push.yaml开头1-197行
-         mv ./utils/subconverter/push.yaml ./utils/pool/push.yaml
+         mv ./utils/pool/output.yaml ./utils/subconverter/push1.yaml
+         base64 ./url > ./utils/subconverter/push2 -w 0
+         ./utils/subconverter/subconverter -g --artifact "push"
+         mv ./utils/subconverter/push.yaml ./utils/subconverter/output.yaml
+         ./utils/subconverter/subconverter -g --artifact "output"
+         sed -i '1,197d' ./utils/subconverter/output.yaml
+         rm ./utils/subconverter/push1.yaml ./utils/subconverter/push2
+         mv ./utils/subconverter/output.txt ./utils/subconverter/output.yaml -t ./utils/pool/
     - name: git push
       run: git pull origin main; git add .; git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库"; git push origin main

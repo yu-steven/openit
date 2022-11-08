@@ -37,7 +37,7 @@ jobs:
       run: | 
          base64 ./url > ./utils/subconverter/push -w 0
          ./utils/subconverter/subconverter -g --artifact "push"; rm ./utils/subconverter/push
-         sed -i '1,198d' ./utils/subconverter/push.yaml #删除push.yaml开头1-198行
+         sed -i '1,197d' ./utils/subconverter/push.yaml #删除push.yaml开头1-197行
          mv ./utils/subconverter/push.yaml ./utils/pool/push.yaml
     - name: git push
       run: git pull origin main; git add .; git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库"; git push origin main

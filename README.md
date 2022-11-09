@@ -60,10 +60,10 @@
 
 [ss]: https://cdn.jsdelivr.net/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://cdn.jsdelivr.net/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
-[v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.37/v2rayN-Core.zip
-[clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.20.5/Clash.for.Windows-0.20.5-win.7z
+[v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.38/v2rayN-Core.zip
+[clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.20.7/Clash.for.Windows-0.20.7-win.7z
 [qv2ray]: https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.20.5_CN/app.asar
+[Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.20.7_CN/app.asar
 ## macOS
 首推Clash，界面美观，**只支持英文**且需要[订阅转换](https://sub.tsutsu.one/)！ClashX和Clash一样的内核，ClashX同样需要[订阅转换](https://sub.tsutsu.one/)但是**支持简体中文**，SS最后一次更新则是2019.11.13；M1芯片还可以使用iPhone/iPad版的Shadowrocket & Quantumult X & Arm版的Clash(Arm)和经过Rosetta 2转译的Clash(intel)
 OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
@@ -81,8 +81,8 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [![点击跳转至Mac App Store][macos-black]][one-click]
 
 [ss-NG]: https://cdn.jsdelivr.net/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.5/Clash.for.Windows-0.20.5.dmg
-[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.5/Clash.for.Windows-0.20.5-arm64.dmg
+[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.7/Clash.for.Windows-0.20.7.dmg
+[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.7/Clash.for.Windows-0.20.7-arm64.dmg
 [clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.95.1/ClashX.dmg
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [v2rayU]: https://ghproxy.com/https://github.com/yanue/V2rayU/releases/download/3.2.0/V2rayU.dmg
@@ -216,24 +216,24 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ## ShadowSocks
 ### Windows
 ` https://github.com/shadowsocks/shadowsocks-windows/releases`
-*2022.2.8 19:39 --- v4.4.1.0*
+*2022.02.08 19:39 --- v4.4.1.0*
 ### macOS
 ` https://github.com/shadowsocks/ShadowsocksX-NG/releases`
 *2019.11.13 10:18 --- v1.9.4*
 ### Android / TV
 ` https://github.com/shadowsocks/shadowsocks-android/releases`
-*2021.9.17 10:37 --- v5.2.6*
+*2021.09.17 10:37 --- v5.2.6*
 ### ShadowSocks-core
 ` https://github.com/shadowsocks/shadowsocks-libev/releases`
-*2020.9.15 10:53 --- v3.3.5*
+*2020.09.15 10:53 --- v3.3.5*
 
 ## ShadowSocksR
 ### Windows
 ` https://github.com/shadowsocksrr/shadowsocksr-csharp/releases`
-*2019.4.21 21:00 --- v4.9.2*
+*2019.04.21 21:00 --- v4.9.2*
 ### Android / TV
 ` https://github.com/shadowsocksrr/shadowsocksr-android/releases`
-*2018.3.9 15:00 --- v3.5.4*
+*2018.03.09 15:00 --- v3.5.4*
 ### ShadowSocksR-core
 ` https://github.com/shadowsocksrr/shadowsocksr-libev`
 *2016.12.29 07:00 --- v2.5.6*
@@ -241,55 +241,55 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 ## v2ray
 ### Windows
 ` https://github.com/2dust/v2rayN/releases`
-*2022.10.14 21:20 --- v5.37*
+*2022.11.02 20:10 --- v5.38*
 ### Android / TV
 ` https://github.com/2dust/v2rayNG/releases`
-*2022.10.14 21:33 --- v1.7.21*
+*2022.10.14 21:33 --- v1.7.25*
 ### v2rayA for Win
 ` https://github.com/v2rayA/v2rayA/releases`
-*2022.6.18 22:51 --- v1.5.7*
+*2022.06.18 22:51 --- v1.5.7*
 ### v2rayU for Mac
 ` https://github.com/yanue/V2rayU/releases`
-*2021.8.19 21:47 --- v3.3.0*
+*2021.08.19 21:47 --- v3.3.0*
 ### v2rayX for Mac
 ` https://github.com/Cenmrev/V2RayX/releases`
-*2019.2.14 11:51 --- v1.5.1*
+*2019.02.14 11:51 --- v1.5.1*
 ### v2rayL for Linux
 ` https://github.com/jiangxufeng/v2rayL/releases`
 *2019.11.24 --- v2.1.3*
 ### v2ray-core
 ` https://github.com/v2fly/v2ray-core/releases`
-*2022.6.13 07:29 --- v5.0.8*
+*2022.06.13 07:29 --- v5.0.8*
 ### Xray-core
 ` https://github.com/XTLS/Xray-core/releases`
-*2022.8.28 11:32 --- v1.5.10*
+*2022.11.07 12:42 --- v1.6.3*
 
 ## Clash
 ### Win / Mac
 ` https://github.com/Fndroid/clash_for_windows_pkg/releases`
-*2022.9.30 12:10 --- v0.20.5*
+*2022.11.04 17:25 --- v0.20.7*
 ### Android / TV
 ` https://github.com/Kr328/ClashForAndroid/releases`
-*2022.7.2 11:40 --- v2.5.11*
+*2022.07.02 11:40 --- v2.5.11*
 ### ClashN for Win
 ` https://github.com/2dust/clashN/releases`
-*2022.10.17 10:58 --- v2.6*
+*2022.11.03 21:42 --- v2.9*
 ### ClashX for Mac
 ` https://github.com/yichengchen/clashX/releases`
-*2022.9.4 20:13 --- v1.95.1*
+*2022.09.04 20:13 --- v1.95.1*
 ### Clash 汉化补丁 for Win
 ` https://github.com/BoyceLig/Clash_Chinese_Patch/releases`
-*2022.9.30 17:59 --- v0.20.5*
+*2022.11.04 21:55 --- v0.20.7*
 <br>` https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases`
-*2022.9.30 23:22 --- v0.20.5*
+*2022.11.05 13:50 --- v0.20.7*
 ### Clash-core
 ` https://github.com/Dreamacro/clash/releases`
-*2022.8.19 22:08 --- v1.11.8*
+*2022.11.04 13:58 --- v1.11.12*
 
 ## Qv2ray
 ### Win/Mac/Linux
 ` https://github.com/Qv2ray/Qv2ray/releases`
-*2021.8.17 11:41 --- v2.7.0* **The End**
+*2021.08.17 11:41 --- v2.7.0* **The End**
 ***
 # Dockerfile
 这是可以运行ClashCheck的容器，要使用它你需要安装Docker、了解并会使用Docker

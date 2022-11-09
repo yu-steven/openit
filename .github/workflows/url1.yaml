@@ -30,7 +30,7 @@ jobs:
     - name: remove & rename
       run: cd ./utils/rm/ && npm ci && npm start
     - name: ./url
-      run: rm ./utils/rm/url && mv ./utils/rm/out ./url && sort url -o url #整理url文件
+      run: rm ./utils/rm/url; mv ./utils/rm/out ./url; sort url -o url #整理url文件
     - name: ./url -> ./utils/pool/push.yaml
       run: | 
          mv ./utils/pool/output.yaml ./utils/subconverter/push1.yaml

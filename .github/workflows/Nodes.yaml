@@ -30,13 +30,11 @@ jobs:
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git
       run: | #配置git的上传用户名和邮箱
-         git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
     - name: npm
       run: | #安装npm包
-         cd ./utils/rm/
-         npm ci
+         cd ./utils/rm/ && npm ci
     - name: pip
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
@@ -46,7 +44,7 @@ jobs:
     # - name: copy pool to clashcheck #input ./utils/pool/output.yaml
     #   run: cp ./utils/pool/output.yaml ./utils/clashcheck/data/input.yaml #output ./utils/clashcheck/data/input.yaml
     # - name: clashcheck #because ./utils/clashcheck/config/config.yaml so input ./utils/clashcheck/data/input.yaml
-    #   run: cd ./utils/clashcheck/ && python main.py && rm data/input.yaml #output ./utils/clashcheck/data/check.yaml & delete ./utils/clashcheck/data/input.yaml
+    #   run: cd ./utils/clashcheck/ && python main.py; rm data/input.yaml #output ./utils/clashcheck/data/check.yaml & delete ./utils/clashcheck/data/input.yaml
     - name: pull clashcheck file #如果您想要fork本仓库并运行此workflow，请用#号注释掉这一行和下两行并删除上方四行开头的#并按照yaml文件格式对其行头
       id: clashcheck
       run: timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q || timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q
@@ -58,10 +56,10 @@ jobs:
       run: mv ./utils/clashcheck/data/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
       if: ${{ success() }}
-      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
+      run: ./utils/subconverter/subconverter -g --artifact "clash2base64"; rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
     - name: marge urls #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check｜input ./sub/url2
       if: ${{ success() }}
-      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url && rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
+      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url; rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
     - name: remove & rename #input ./utils/rm/url
       if: ${{ success() }}
       run: cd ./utils/rm/ && npm start #output ./utils/rm/out
@@ -72,8 +70,8 @@ jobs:
          mv ./utils/rm/out ./url       #output ./url
          ./.github/url.sh > ./1        #output ./1
          cp url 2                      #output ./2
-         cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
-         base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
+         cat 1 2 > 3; rm 1 2         #output ./3 & delete ./1 ./2
+         base64 3 > https -w 0; rm 3 #output ./https & delete ./3
          base64 ./url > ./utils/subconverter/base64 -w 0 #url文件base64编码引入subconverter
          cp ./utils/pool/output.yaml ./utils/subconverter/output.yaml #output.yaml节点池引入subconverter
          sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url

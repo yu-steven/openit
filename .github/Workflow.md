@@ -82,7 +82,7 @@ jobs:
       run: git push
 ````
 #### 其二 运行一个bash脚本
-理想情况是修改、提交、推送，但是或许存在一些情况，导致其实文件没有发生变化。如果这时执行`git commit`，会提示`nothing to commit, working tree clean`, 也有可能在action运行的过程中修改了仓库的某些文件导致冲突无法自动merge
+理想情况是修改、提交、推送，但是或许存在一些情况，导致其实文件没有发生变化。如果这时执行`git commit`，会提示`nothing to commit, working tree clean`, 也有可能在action运行的过程中人为修改了仓库的某些文件导致冲突无法自动merge
 <br>注意了，这是一个报错，意味着 action 执行失败，会出现一个红叉❌,注意避免分支运行此Action,会报错`error: src refspec main does not match any`
 <br>这里提供了一个bash脚本，需要放在仓库中，建议命名为`update-repo.sh`
 

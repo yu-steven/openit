@@ -301,7 +301,7 @@ Dockerfile -> [`utils/clashcheck/Dockerfile`](https://github.com/yu-steven/openi
 
 要构建并运行此docker，只需使用以下命令：
 ```
-git clone https://github.com/yu-steven/openit.git; \
+git clone https://github.com/yu-steven/openit.git --single-branch --depth=1; \
 docker build -t clashcheck openit/utils/clashcheck; \
 docker run -d --restart=on-failure:3 -p 80:80 clashcheck
 ```

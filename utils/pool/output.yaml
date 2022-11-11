@@ -1,15 +1,16 @@
 proxies:
 - name: "\U0001F1EF\U0001F1F5 JP 1 VMS"
   server: 152.69.197.60
-  port: 1069
   type: vmess
-  country: "\U0001F1FA\U0001F1F8 US"
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 1069
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
   alterId: 0
   cipher: auto
   network: tcp
-  http-opts: {}
   ws-path: /
+  http-opts: {}
+  h2-opts: {}
   skip-cert-verify: true
 - name: "\U0001F1F0\U0001F1F7 KR 2 VMS"
   server: 152.67.213.242
@@ -1202,11 +1203,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 111 TJN"
-  server: 40.earths.team
+  server: 22.earths.team
   type: trojan
   country: "\U0001F1ED\U0001F1F0 HK"
   port: 443
-  password: b3d27d09-77fe-431d-9829-6eba7dce20b0
+  password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1ED\U0001F1F0 HK 112 TJN"
@@ -1718,8 +1719,59 @@ proxies:
   password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4
   skip-cert-verify: true
   udp: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 173 TJN"
+  server: 223.111.202.148
+  port: 30020
+  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
+  udp: true
+  skip-cert-verify: true
+  sni: mzy.hruqoaw.cn
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 174 TJN"
+  server: 223.111.202.148
+  port: 30030
+  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
+  udp: true
+  skip-cert-verify: true
+  sni: mzy.hruqoaw.cn
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 175 TJN"
+  server: 223.111.202.148
+  port: 30010
+  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
+  udp: true
+  skip-cert-verify: true
+  sni: mzy.hruqoaw.cn
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 173 VMS"
+  name: "\U0001F1F1\U0001F1FA LU 176 VMS"
+  ws-opts:
+    path: /
+  server: frs.xlkjjs.top
+  port: 443
+  uuid: 2451d1d1-b50c-3aea-83a6-d1ff3e966fad
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 177 TJN"
+  server: 223.111.202.148
+  port: 30070
+  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
+  udp: true
+  skip-cert-verify: true
+  sni: mzy.hruqoaw.cn
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 178 TJN"
+  server: 223.111.202.148
+  port: 30100
+  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
+  udp: true
+  skip-cert-verify: true
+  sni: mzy.hruqoaw.cn
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 179 VMS"
   ws-opts:
     path: /dsaahjj1111d
   server: sl1.mayaa.eu.org
@@ -1730,7 +1782,7 @@ proxies:
   network: ws
   tls: true
 - type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 174 TJN"
+  name: "\U0001F1E8\U0001F1F3 CN 180 TJN"
   server: oss-cn-shanghai.westdatacloud.xyz
   port: 20048
   password: 30030B00-A596-87B4-965A-511CD7E05351
@@ -1738,7 +1790,7 @@ proxies:
   skip-cert-verify: true
   sni: oss-cn-shanghai.westdatacloud.xyz
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 175 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 181 VMS"
   ws-opts:
     path: /ray
     headers:
@@ -1751,14 +1803,14 @@ proxies:
   network: ws
   tls: true
 - type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 176 TJN"
+  name: "\U0001F1E8\U0001F1F3 CN 182 TJN"
   server: 211.99.96.117
   port: 65522
   password: 554a1a9d-ae4f-35c4-ae49-d5f1f02f8612
   udp: true
   skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1F0\U0001F1F7 KR 177 VMS"
+  name: "\U0001F1F0\U0001F1F7 KR 183 VMS"
   ws-opts:
     path: /zh-cn
     headers:
@@ -1771,7 +1823,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 178 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 184 VMS"
   ws-opts:
     path: /ipuyvws
     headers:
@@ -1783,57 +1835,6 @@ proxies:
   cipher: auto
   network: ws
   tls: true
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 179 TJN"
-  server: 223.111.202.148
-  port: 30020
-  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
-  udp: true
-  skip-cert-verify: true
-  sni: mzy.hruqoaw.cn
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 180 TJN"
-  server: 223.111.202.148
-  port: 30030
-  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
-  udp: true
-  skip-cert-verify: true
-  sni: mzy.hruqoaw.cn
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 181 TJN"
-  server: 223.111.202.148
-  port: 30010
-  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
-  udp: true
-  skip-cert-verify: true
-  sni: mzy.hruqoaw.cn
-- type: vmess
-  name: "\U0001F1F1\U0001F1FA LU 182 VMS"
-  ws-opts:
-    path: /
-  server: frs.xlkjjs.top
-  port: 443
-  uuid: 2451d1d1-b50c-3aea-83a6-d1ff3e966fad
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 183 TJN"
-  server: 223.111.202.148
-  port: 30070
-  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
-  udp: true
-  skip-cert-verify: true
-  sni: mzy.hruqoaw.cn
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 184 TJN"
-  server: 223.111.202.148
-  port: 30100
-  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
-  udp: true
-  skip-cert-verify: true
-  sni: mzy.hruqoaw.cn
 proxy-groups:
 - name: automatic
   type: url-test
@@ -2010,18 +2011,18 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 170 TJN"
   - "\U0001F1F8\U0001F1EC SG 171 TJN"
   - "\U0001F1FB\U0001F1F3 VN 172 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 173 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 173 TJN"
   - "\U0001F1E8\U0001F1F3 CN 174 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 175 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 176 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 177 VMS"
-  - "\U0001F1FA\U0001F1F8 US 178 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 179 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 175 TJN"
+  - "\U0001F1F1\U0001F1FA LU 176 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 177 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 178 TJN"
+  - "\U0001F1FA\U0001F1F8 US 179 VMS"
   - "\U0001F1E8\U0001F1F3 CN 180 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 181 TJN"
-  - "\U0001F1F1\U0001F1FA LU 182 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 183 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 184 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 181 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 182 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 183 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 184 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -2200,17 +2201,17 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 170 TJN"
   - "\U0001F1F8\U0001F1EC SG 171 TJN"
   - "\U0001F1FB\U0001F1F3 VN 172 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 173 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 173 TJN"
   - "\U0001F1E8\U0001F1F3 CN 174 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 175 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 176 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 177 VMS"
-  - "\U0001F1FA\U0001F1F8 US 178 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 179 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 175 TJN"
+  - "\U0001F1F1\U0001F1FA LU 176 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 177 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 178 TJN"
+  - "\U0001F1FA\U0001F1F8 US 179 VMS"
   - "\U0001F1E8\U0001F1F3 CN 180 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 181 TJN"
-  - "\U0001F1F1\U0001F1FA LU 182 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 183 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 184 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 181 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 182 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 183 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 184 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"

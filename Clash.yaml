@@ -196,12 +196,10 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: official.tokyometropolis.kherson.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1 → openitsub.com, server: de.vmess2.xservs.xyz, port: 80, type: vmess, uuid: dc5e01f7-8238-4755-840b-adf45da456c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: de.vmess2.xservs.xyz}}, udp: true}
   - {name: 🇭🇰 HK 1 → openitsub.com, server: 119.247.119.212, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua}, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: trs12.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: powerservice.com}}, udp: true}
-  - {name: 🇺🇸 US 2 → openitsub.com, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com}, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: dj.mv66.tk, port: 8080, type: trojan, password: tg艾特herhr6, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -219,24 +217,20 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
+      - MO 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
+      - MO 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -257,8 +251,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
+      - DIRECT
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -283,7 +276,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
+      - MO 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
@@ -291,12 +284,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN 1 → openitsub.com
+      - MO 1 → openitsub.com
       - 🇩🇪 DE 1 → openitsub.com
       - 🇭🇰 HK 1 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇺🇸 US 2 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

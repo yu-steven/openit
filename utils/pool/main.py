@@ -9,6 +9,16 @@ from yaml.loader import SafeLoader
 
 headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive', 'User-Agent': 'Clash'}
 
+def local(proxy_list, file):
+    try:
+        working = yaml.safe_load(file)
+        data_out = []
+        for x in working['proxies']:
+            data_out.append(x)
+        proxy_list.append(data_out)
+    except:
+        print(file + ": No such file")
+
 def url(proxy_list, link):
     try:
         working = yaml.safe_load(requests.get(url=link, timeout=240, headers=headers).text)
@@ -56,6 +66,12 @@ if __name__ == '__main__':
         processes=[]
 
         try: #Process开启多线程
+            for i in subscribe_links:
+                p = Process(target=local, args=(proxy_list, i))
+                p.start()
+                processes.append(p)
+            for p in processes:
+                p.join()
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()

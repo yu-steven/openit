@@ -31,7 +31,7 @@ def init():
 
     # set clash api url
     baseurl = '127.0.0.1:' + str(api_port)
-    apiurl = 'http://'+baseurl
+    apiurl = 'http://' + baseurl
 
     # filter config files
     proxyconfig = filter(proxyconfig)

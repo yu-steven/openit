@@ -50,6 +50,7 @@ if __name__ == '__main__':
         with open(config, 'r') as reader:
             config = yaml.load(reader, Loader=SafeLoader)
             subscribe_links = config['sub']
+            subscribe_files = config['local']
         directories, total = get_file_list()
         data = parse(directories)
         try:
@@ -66,7 +67,7 @@ if __name__ == '__main__':
         processes=[]
 
         try: #Process开启多线程
-            for i in subscribe_links:
+            for i in subscribe_files:
                 p = Process(target=local, args=(proxy_list, i))
                 p.start()
                 processes.append(p)

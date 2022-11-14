@@ -51,7 +51,7 @@ if __name__ == '__main__':
         with open(config, 'r') as reader:
             config = yaml.load(reader, Loader=SafeLoader)
             subscribe_links = config['sub']
-            subscribe_files = str(config['local'])
+            subscribe_files = config['local']
         directories, total = get_file_list()
         data = parse(directories)
         try:

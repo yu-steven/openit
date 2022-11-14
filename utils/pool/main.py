@@ -11,7 +11,8 @@ headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive
 
 def local(proxy_list, file):
     try:
-        working = yaml.safe_load(file)
+        with open(file, 'r') as reader:
+            working = yaml.safe_load(reader)
         data_out = []
         for x in working['proxies']:
             data_out.append(x)
@@ -50,7 +51,7 @@ if __name__ == '__main__':
         with open(config, 'r') as reader:
             config = yaml.load(reader, Loader=SafeLoader)
             subscribe_links = config['sub']
-            subscribe_files = config['local']
+            subscribe_files = str(config['local'])
         directories, total = get_file_list()
         data = parse(directories)
         try:

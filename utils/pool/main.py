@@ -20,8 +20,8 @@ def fetch(proxy_list, filename):
 
 def url(proxy_list, link):
     try:
-        data_out=[]
         working = yaml.safe_load(requests.get(url=link, timeout=240, headers=headers).text)
+        data_out=[]
         for x in working['proxies']:
             data_out.append(x)
         proxy_list.append(data_out)

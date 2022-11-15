@@ -42,4 +42,4 @@ jobs:
          rm ./utils/subconverter/push1.yaml ./utils/subconverter/push2
          mv ./utils/subconverter/output.txt ./utils/subconverter/output.yaml -t ./utils/pool/
     - name: git push
-      run: git pull origin main && git add . && git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库" && git push origin main
+      run: git status -s && git pull origin main && git add . && git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库" && git push origin main

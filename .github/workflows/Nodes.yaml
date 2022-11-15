@@ -50,7 +50,7 @@ jobs:
       run: timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q || timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q
     - name: when pull has failed
       if: ${{ failure() && steps.clashcheck.conclusion == 'failure' }}
-      run: echo -e "\033[31mFailed to pull clashcheck file.\033[0m"
+      run: echo -e "\033[31mFailed to pull clashcheck file.\033[0m"; rm utils/clashcheck/data/check.yaml
     - name: move clashcheck to clash2base64 #input ./utils/clashcheck/data/check.yaml
       if: ${{ success() }}
       run: mv ./utils/clashcheck/data/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml

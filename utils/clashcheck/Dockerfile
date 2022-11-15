@@ -26,5 +26,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 RUN rm -r /var/www/html; ln -s /usr/src/clashcheck/data /var/www/html
 
-# start apache and clashcheck with while
+# start apache & start clashcheck with while
 CMD ["./start.sh"]

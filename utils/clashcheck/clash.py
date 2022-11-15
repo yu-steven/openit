@@ -1,10 +1,11 @@
 import os
 import yaml
+import flag
 import socket
 import maxminddb
 import platform
+import psutil
 import requests
-import flag
 from tqdm import tqdm
 from pathlib import Path
 
@@ -82,6 +83,21 @@ def checkenv():
         exit(1)
 
     return clashname, operating_system
+
+
+def checkuse(clashname, operating_system):
+    pids = psutil.process_iter()
+    for pid in pids:
+        if(pid.name() == clashname):
+            if operating_system.startswith('Darwin'):
+                os.kill(pid.pid,9)
+            elif operating_system.startswith('Linux'):
+                os.kill(pid.pid,9)
+            elif operating_system.startswith('Windows'):
+                os.popen('taskkill.exe /pid:'+str(pid.pid))
+            else:
+                print("Please kill clash")
+                exit(1)
 
 
 def filter(config):

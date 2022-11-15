@@ -96,7 +96,7 @@ def checkuse(clashname, operating_system):
             elif operating_system.startswith('Windows'):
                 os.popen('taskkill.exe /pid:'+str(pid.pid))
             else:
-                print("Please kill clash")
+                print("Please kill " + clashname)
                 exit(1)
 
 

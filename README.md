@@ -116,8 +116,8 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 </a>
 
 ### [Matsuri][apk-Matsuri]
-<a href="https://f-droid.org/packages/moe.matsuri.lite" target="_black">
-<img alt="轻触跳转至Google Play" height="62px" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.svg" />
+<a href="https://play.google.com/store/apps/details?id=moe.matsuri.lite" target="_black">
+<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/google-play.svg" />
 </a>
 
 ### [SagerNet][apk-SagerNet]
@@ -138,18 +138,14 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 ### [魔改ss](https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/openit/main/images/Shadowsocks_4.8.5.apk)
 ### [SSR][apk-ssr]
 
-[apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
-[apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
+[apk-ss]: https://d.apkpure.com/b/APK/com.github.shadowsocks?version=latest
+[apk-v2rayng]: https://d.apkpure.com/b/APK/com.v2ray.ang?version=latest
 [apk-clash]: https://ghproxy.com/https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-foss-universal-release.apk
-[apk-Matsuri]: https://f-droid.org/repo/moe.matsuri.lite_725.apk
-[apk-SagerNet]: https://apkpure.com/kitsunebi/io.nekohasekai.sagernet/download
-[apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
-[apk-surfboard]: https://apkpure.com/surfboard/com.getsurfboard/download
+[apk-Matsuri]: https://d.apkpure.com/b/APK/moe.matsuri.lite?version=latest
+[apk-SagerNet]: https://d.apkpure.com/b/APK/io.nekohasekai.sagernet?version=latest
+[apk-Kitsunebi]: https://d.apkpure.com/b/APK/fun.kitsunebi.kitsunebi4android?version=latest
+[apk-surfboard]: https://d.apkpure.com/b/APK/com.getsurfboard?version=latest
 [apk-ssr]: https://ghproxy.com/https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk
-[google-ss]: https://play.google.com/store/apps/details?id=com.github.shadowsocks
-[google-v2rayng]: https://play.google.com/store/apps/details?id=com.v2ray.ang
-[google-clash]: https://play.google.com/store/apps/details?id=com.github.kr328.clash
-[google-surfboard]: https://play.google.com/store/apps/details?id=com.getsurfboard
 [google-play]: https://gitlab.com/yu-steven/tag/-/raw/main/google-play.svg
 
 ## iOS
@@ -262,7 +258,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2022.06.13 07:29 --- v5.0.8*
 ### Xray-core
 ` https://github.com/XTLS/Xray-core/releases`
-*2022.11.07 12:42 --- v1.6.3*
+*2022.11.14 10:36 --- v1.6.4*
 
 ## Clash
 ### Win / Mac

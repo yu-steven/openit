@@ -266,7 +266,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2022.11.04 17:25 --- v0.20.7*
 ### Android / TV
 ` https://github.com/Kr328/ClashForAndroid/releases`
-*2022.11.17 01:12 --- v2.5.12*
+*2022.11.17 01:12 --- v2.5.12* **最终版**
 ### ClashN for Win
 ` https://github.com/2dust/clashN/releases`
 *2022.11.03 21:42 --- v2.9*

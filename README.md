@@ -16,7 +16,7 @@
  [git-nodes]: ./url
  [git-license]: ./LICENSE
  [git-checkly]: https://openit.checklyhq.com
- [telegram]: https://t.me/ShareCentrePro
+ [telegram]: https://ShareCentre.Pro
  [svg-nodes]: https://github.com/yu-steven/openit/actions/workflows/Nodes.yaml/badge.svg?branch=main
  [svg-checkly]: https://api.checklyhq.com/v1/badges/checks/94ecef57-aedb-47e1-94d8-d8247ea02d9f?style=flat&theme=default
  [svg-license]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg?style=flat
@@ -140,7 +140,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 
 [apk-ss]: https://apkpure.com/shadowsocks/com.github.shadowsocks/download
 [apk-v2rayng]: https://apkpure.com/v2rayng/com.v2ray.ang/download
-[apk-clash]: https://cdn.jsdelivr.net/Kr328/ClashForAndroid/releases/
+[apk-clash]: https://ghproxy.com/https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-foss-universal-release.apk
 [apk-Matsuri]: https://f-droid.org/repo/moe.matsuri.lite_725.apk
 [apk-SagerNet]: https://apkpure.com/kitsunebi/io.nekohasekai.sagernet/download
 [apk-Kitsunebi]: https://apkpure.com/kitsunebi/fun.kitsunebi.kitsunebi4android/download
@@ -270,7 +270,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 *2022.11.04 17:25 --- v0.20.7*
 ### Android / TV
 ` https://github.com/Kr328/ClashForAndroid/releases`
-*2022.07.02 11:40 --- v2.5.11*
+*2022.11.17 01:12 --- v2.5.12*
 ### ClashN for Win
 ` https://github.com/2dust/clashN/releases`
 *2022.11.03 21:42 --- v2.9*

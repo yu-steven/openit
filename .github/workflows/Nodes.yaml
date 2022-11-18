@@ -70,8 +70,8 @@ jobs:
          mv ./utils/rm/out ./url       #output ./url
          ./.github/url.sh > ./1        #output ./1
          cp url 2                      #output ./2
-         cat 1 2 > 3; rm 1 2         #output ./3 & delete ./1 ./2
-         base64 3 > https -w 0; rm 3 #output ./https & delete ./3
+         cat 1 2 > 3; rm 1 2           #output ./3 & delete ./1 ./2
+         base64 3 > https -w 0; rm 3   #output ./https & delete ./3
          base64 ./url > ./utils/subconverter/base64 -w 0 #url文件base64编码引入subconverter
          cp ./utils/pool/output.yaml ./utils/subconverter/output.yaml #output.yaml节点池引入subconverter
          sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url

@@ -293,7 +293,8 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 Dockerfile -> [`utils/clashcheck/Dockerfile`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/Dockerfile)
 
 在运行Docker之前你需要配置节点源，默认openit节点池
-<br>配置节点源 -> [`utils/clashcheck/config/config.yaml`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml) 的 [`source:`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml#L4) 项
+
+配置节点源 -> [`utils/clashcheck/config/config.yaml`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml) 的 [`source:`](https://github.com/yu-steven/openit/blob/main/utils/clashcheck/config/config.yaml#L4) 项
 
 要使用默认openit节点池在本地构建并运行此docker，只需使用以下命令：
 ```

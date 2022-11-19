@@ -7,5 +7,5 @@ def check(alive, proxy, apiurl, sema, timeout, testurl):
         response = json.loads(r.text)
         if 'delay' in response and response['delay'] > 0:
             alive.append(proxy)
-        sema.release()
     except: pass
+    sema.release()

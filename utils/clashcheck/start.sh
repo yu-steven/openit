@@ -3,7 +3,7 @@
 #pwd /home/$USER/clashcheck
 #with log ↓          #no log ↓ 
 #nohup ./start.sh &  #nohup ./start.sh > /dev/null 2>&1 &
-#TODO start apache if exist & start clashcheck with while if no false
+#TODO start apache if docker & start clashcheck with while if no false
 
-apachectl start || true
+if [ "$in_docker" = "true" ]; then apachectl start; else echo "hello"; fi
 while [ $? -eq 0 ]; do python main.py; done

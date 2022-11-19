@@ -16,6 +16,7 @@ RUN apt update; \
     apt install -y --no-install-recommends apache2; \
     rm -rf /var/lib/apt/lists/* 
 
+ENV in_docker true
 WORKDIR /usr/src/clashcheck
 
 # install requirements

@@ -2,8 +2,10 @@ import requests
 import json
 
 def check(alive, proxy, apiurl, sema, timeout, testurl):
-    r = requests.get(url=apiurl + '/proxies/' + str(proxy['name']) + '/delay?url='+testurl+'&timeout=' + str(timeout), timeout=100)
-    response = json.loads(r.text)
-    if 'delay' in response and response['delay'] > 0:
-        alive.append(proxy)
-    sema.release()
+    try:
+        r = requests.get(url=apiurl + '/proxies/' + str(proxy['name']) + '/delay?url='+testurl+'&timeout=' + str(timeout), timeout=10)
+        response = json.loads(r.text)
+        if 'delay' in response and response['delay'] > 0:
+            alive.append(proxy)
+        sema.release()
+    except: pass

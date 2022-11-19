@@ -7,4 +7,3 @@
 
 if [ "$in_docker" = "true" ]; then apachectl start; else echo "Hello"; fi
 while [ $? -eq 0 ]; do python main.py; done
-echo "Bye"

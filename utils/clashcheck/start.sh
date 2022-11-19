@@ -5,5 +5,6 @@
 #nohup ./start.sh &  #nohup ./start.sh > /dev/null 2>&1 &
 #TODO start apache if docker & start clashcheck with while if no false
 
-if [ "$in_docker" = "true" ]; then apachectl start; else echo "hello"; fi
+if [ "$in_docker" = "true" ]; then apachectl start; else echo "Hello"; fi
 while [ $? -eq 0 ]; do python main.py; done
+echo "Bye"

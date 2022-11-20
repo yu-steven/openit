@@ -39,6 +39,7 @@ jobs:
          ./utils/subconverter/subconverter -g --artifact "push"
          mv ./utils/subconverter/push.yaml ./utils/subconverter/output.yaml
          ./utils/subconverter/subconverter -g --artifact "output"
+         sed -i '1,197d' ./utils/subconverter/into.yaml
          sed -i -e 's/!<str> //g' -e '1,197d' ./utils/subconverter/output.yaml
          rm ./utils/subconverter/push1.yaml ./utils/subconverter/push2
          mv ./utils/subconverter/into.yaml ./utils/subconverter/output.txt ./utils/subconverter/output.yaml -t ./utils/pool/

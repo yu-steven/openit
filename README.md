@@ -304,7 +304,7 @@ docker run -d --restart=on-failure:3 -p 80:80 clashcheck
 ```
 端口被占用 -> `docker run -d --restart=on-failure:3 -p [宿主机端口]:80 clashcheck`
 
-正常需要等待1-2分钟浏览器访问`0.0.0.0:[宿主机端口]`查看筛选结果(check.yaml)，可以右键复制链接直接使用(需要保持docker容器运行)
+正常需要等待1-2分钟浏览器访问`0.0.0.0:[宿主机端口]`查看筛选结果(check.yaml)，可以右键复制链接直接使用（需要保持docker容器运行）
 
 <!-- `OSError: [Errno 24] Too many open files` -> 仅更改当前终端限制 -> `ulimit -n 4096`
 <br>永久更改此限制 -> https://stackoverflow.com/a/53661748/18250519 -->

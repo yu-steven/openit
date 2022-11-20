@@ -31,7 +31,7 @@ jobs:
       run: cd ./utils/rm/ && npm ci && npm start
     - name: ./url
       run: rm ./utils/rm/url; mv ./utils/rm/out ./url; sort url -o url #整理url文件
-    - name: ./url -> ./utils/pool/output.txt & ./utils/pool/output.yaml
+    - name: ./url -> ./utils/pool/into.yaml & ./utils/pool/output.txt & ./utils/pool/output.yaml
       run: | 
          mv ./utils/pool/output.yaml ./utils/subconverter/push1.yaml
          base64 ./url > ./utils/subconverter/push2 -w 0

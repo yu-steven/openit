@@ -35,11 +35,12 @@ jobs:
       run: | 
          mv ./utils/pool/output.yaml ./utils/subconverter/push1.yaml
          base64 ./url > ./utils/subconverter/push2 -w 0
+         ./utils/subconverter/subconverter -g --artifact "into"
          ./utils/subconverter/subconverter -g --artifact "push"
          mv ./utils/subconverter/push.yaml ./utils/subconverter/output.yaml
          ./utils/subconverter/subconverter -g --artifact "output"
          sed -i -e 's/!<str> //g' -e '1,197d' ./utils/subconverter/output.yaml
          rm ./utils/subconverter/push1.yaml ./utils/subconverter/push2
-         mv ./utils/subconverter/output.txt ./utils/subconverter/output.yaml -t ./utils/pool/
+         mv ./utils/subconverter/into.yaml ./utils/subconverter/output.txt ./utils/subconverter/output.yaml -t ./utils/pool/
     - name: git push
       run: git status -s && git pull origin main && git add . && git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 节点入库" && git push origin main

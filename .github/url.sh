@@ -1,6 +1,7 @@
 #!/bin/bash
 name=Openitsub
-line=$(expr $(wc -l < url) - 1)
+#line=$(expr $(wc -l < url) - 1)
+line=$(wc -l < url)
 time=$(date '+%Y.%m.%d %H:%M:%S')
 
 echo "$time >>> $line" >> .github/log && sed -i '2d' .github/log

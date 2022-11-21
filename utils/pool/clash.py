@@ -135,20 +135,21 @@ def push(list):
                         continue
                 else:
                     continue
-                if ip in iplist and x['port'] in iplist[ip]:
-                    if country != 'CN':
-                        continue
-                    else:
-                        if x[authentication] in passlist:
-                            continue
-                        else:
-                            passlist.append(x[authentication])
-                else:
-                    try:
-                        iplist[ip].append(x['port'])
-                    except:
-                        iplist[ip] = []
-                        iplist[ip].append(x['port'])
+
+                #if ip in iplist and x['port'] in iplist[ip]:
+                #    if country != 'CN':
+                #        continue
+                #    else:
+                #        if x[authentication] in passlist:
+                #            continue
+                #        else:
+                #            passlist.append(x[authentication])
+                #else:
+                #    try:
+                #        iplist[ip].append(x['port'])
+                #    except:
+                #        iplist[ip] = []
+                #        iplist[ip].append(x['port'])
 
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])

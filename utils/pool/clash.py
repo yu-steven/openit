@@ -39,13 +39,13 @@ def push(list):
                         if x['cipher'] not in ss_supported_ciphers:
                             ss_omit_cipher_unsupported = ss_omit_cipher_unsupported + 1
                             continue
-                        #if country != 'CN':
-                        #    if ip in iplist:
-                        #        ss_omit_ip_dupe = ss_omit_ip_dupe + 1
-                        #        continue
-                        #    else:
-                        #        iplist[ip] = []
-                        #        iplist[ip].append(x['port'])
+                        if country != 'CN':
+                            if ip in iplist:
+                                ss_omit_ip_dupe = ss_omit_ip_dupe + 1
+                                continue
+                            else:
+                                iplist[ip] = []
+                                iplist[ip].append(x['port'])
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSS'
                         authentication = 'password'
                     except:
@@ -58,12 +58,12 @@ def push(list):
                             continue
                         if x['protocol'] not in ssr_supported_protocol:
                             continue
-                        #if country != 'CN':
-                        #    if ip in iplist:
-                        #        continue
-                        #    else:
-                        #        iplist.append(ip)
-                        #        iplist[ip].append(x['port'])
+                        if country != 'CN':
+                            if ip in iplist:
+                                continue
+                            else:
+                                iplist.append(ip)
+                                iplist[ip].append(x['port'])
                         authentication = 'password'
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
                     except:
@@ -136,20 +136,20 @@ def push(list):
                 else:
                     continue
 
-                #if ip in iplist and x['port'] in iplist[ip]:
-                #    if country != 'CN':
-                #        continue
-                #    else:
-                #        if x[authentication] in passlist:
-                #            continue
-                #        else:
-                #            passlist.append(x[authentication])
-                #else:
-                #    try:
-                #        iplist[ip].append(x['port'])
-                #    except:
-                #        iplist[ip] = []
-                #        iplist[ip].append(x['port'])
+                if ip in iplist and x['port'] in iplist[ip]:
+                    if country != 'CN':
+                        continue
+                    else:
+                        if x[authentication] in passlist:
+                            continue
+                        else:
+                            passlist.append(x[authentication])
+                else:
+                    try:
+                        iplist[ip].append(x['port'])
+                    except:
+                        iplist[ip] = []
+                        iplist[ip].append(x['port'])
 
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])

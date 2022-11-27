@@ -22,10 +22,10 @@ jobs:
     - name: sed url2
       run: | 
          cd ./sub/
-         sed -i '/^sub:/d' url           #删除以sub:开头的行
-         sed -i '/^$/d' url              #删除空白行
-         sed -i -r '/^\s*$/d' url        #删除带有空格或制表符的空行
-         sed -i 's/^[[:space:]]*//g' url #删除行头空格和tab，对齐行头
+         sed -i '/^sub:/d' url2           #删除以sub:开头的行
+         sed -i '/^$/d' url2              #删除空白行
+         sed -i -r '/^\s*$/d' url2        #删除带有空格或制表符的空行
+         sed -i 's/^[[:space:]]*//g' url2 #删除行头空格和tab，对齐行头
     - name: subconverter
       run: | 
          base64 ./sub/url2 > ./utils/subconverter/b64 -w 0

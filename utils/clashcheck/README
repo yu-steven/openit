@@ -1,5 +1,6 @@
 config → config/config.yaml
-=== Run
+
+== Run
 === Local Python 3.x
 $ git clone https://github.com/yu-steven/openit.git --single-branch --depth=1
 $ openit/utils/clashcheck/start.sh
@@ -7,6 +8,9 @@ $ openit/utils/clashcheck/start.sh
 $ git clone https://github.com/yu-steven/openit.git --single-branch --depth=1
 $ docker build -t clashcheck openit/utils/clashcheck
 $ docker run -d --restart=on-failure:3 -p 80:80 clashcheck
-=== Use
-=== Web View
+
+== Check
+$ curl 0.0.0.0:80/README
+
+== Use
 → 0.0.0.0:80 → check.yaml

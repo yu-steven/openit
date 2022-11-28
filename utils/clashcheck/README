@@ -1,0 +1,7 @@
+config → config/config.yaml
+===
+→ git clone https://github.com/yu-steven/openit.git --single-branch --depth=1
+→ docker build -t clashcheck openit/utils/clashcheck
+→ docker run -d --restart=on-failure:3 -p 80:80 clashcheck
+===
+→ 0.0.0.0:80 → check.yaml

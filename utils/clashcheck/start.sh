@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 #python 3.x
-#pwd /path/to/openit/clashcheck
+#pwd /path/to/openit/utils/clashcheck
 #with log ↓          #no log ↓ 
 #nohup ./start.sh &  #nohup ./start.sh > /dev/null 2>&1 &
 #TODO start apache if in docker & start clashcheck with while if no false

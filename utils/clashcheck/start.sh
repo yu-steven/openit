@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 #python 3.x
 #pwd /home/$USER/clashcheck
 #with log ↓          #no log ↓ 

@@ -34,10 +34,7 @@ def push(list, outfile):
                         country = str(countrify.get(ip)['country']['iso_code'])
                     except:
                         country = 'UN'
-                    if country == 'TW' or country == 'MO' or country == 'HK':
-                        flagcountry = 'CN'
-                    else:
-                        flagcountry = country
+                    flagcountry = country
                     try:
                         country_count[country] = country_count[country] + 1
                         x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)

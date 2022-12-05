@@ -196,9 +196,11 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
-  - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO 3 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S, sni: httah.freetrade.link, skip-cert-verify: true, udp: true}
   - {name: VN 1 → openitsub.com, server: 103.81.85.238, port: 443, type: trojan, password: b874173c-dfc6-40f4-9542-d973997f9659, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
+  - {name: VN 2 → openitsub.com, server: 103.81.85.238, port: 443, type: trojan, password: b874173c-dfc6-40f4-9542-d973997f9659, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 2 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 3 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
@@ -222,7 +224,9 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
       - VN 1 → openitsub.com
+      - VN 2 → openitsub.com
       - 🇨🇳 TW 1 → openitsub.com
       - 🇨🇳 TW 2 → openitsub.com
       - 🇨🇳 TW 3 → openitsub.com
@@ -235,7 +239,9 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
       - VN 1 → openitsub.com
+      - VN 2 → openitsub.com
       - 🇨🇳 TW 1 → openitsub.com
       - 🇨🇳 TW 2 → openitsub.com
       - 🇨🇳 TW 3 → openitsub.com
@@ -289,7 +295,9 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
       - VN 1 → openitsub.com
+      - VN 2 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -298,7 +306,9 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
       - VN 1 → openitsub.com
+      - VN 2 → openitsub.com
       - 🇨🇳 TW 1 → openitsub.com
       - 🇨🇳 TW 2 → openitsub.com
       - 🇨🇳 TW 3 → openitsub.com

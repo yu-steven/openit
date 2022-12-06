@@ -196,14 +196,12 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
-  - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 2 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 3 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: cm.henet.top, port: 30004, type: trojan, password: d6fccf88-48fa-4713-b70e-380c1f9925f0, skip-cert-verify: true, udp: true}
+  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 1 → openitsub.com, server: cm.henet.top, port: 30101, type: trojan, password: d6fccf88-48fa-4713-b70e-380c1f9925f0, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 2 → openitsub.com, server: cm.henet.top, port: 31101, type: trojan, password: d6fccf88-48fa-4713-b70e-380c1f9925f0, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 3 → openitsub.com, server: cm.henet.top, port: 30103, type: trojan, password: d6fccf88-48fa-4713-b70e-380c1f9925f0, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 3 → openitsub.com, server: cm.henet.top, port: 30004, type: trojan, password: d6fccf88-48fa-4713-b70e-380c1f9925f0, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 4 → openitsub.com, server: cm.henet.top, port: 30008, type: trojan, password: d6fccf88-48fa-4713-b70e-380c1f9925f0, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -224,12 +222,10 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
+      - 🇯🇵 JP 4 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
@@ -239,12 +235,10 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
+      - 🇯🇵 JP 4 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
@@ -262,6 +256,7 @@ proxy-groups:
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
+      - 🇯🇵 JP 4 → openitsub.com
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -275,9 +270,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -305,12 +298,10 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
       - 🇯🇵 JP 1 → openitsub.com
       - 🇯🇵 JP 2 → openitsub.com
       - 🇯🇵 JP 3 → openitsub.com
+      - 🇯🇵 JP 4 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 👉 国内网站
     type: select

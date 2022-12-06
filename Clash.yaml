@@ -197,14 +197,6 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
-  - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: shzz.ikuncloud.com, port: 21480, type: ss, cipher: chacha20-ietf-poly1305, password: 2b3bd8e6-7b66-4a17-9bbb-e2f7a8be78b7, udp: true}
-  - {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 2 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 3 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 211.72.35.152, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 4 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 5 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 6 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -224,14 +216,6 @@ proxy-groups:
     type: select
     proxies:
       - MO 1 → openitsub.com
-      - MO 2 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
-      - 🇨🇳 TW 4 → openitsub.com
-      - 🇨🇳 TW 5 → openitsub.com
-      - 🇨🇳 TW 6 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
@@ -240,14 +224,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - MO 1 → openitsub.com
-      - MO 2 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
-      - 🇨🇳 TW 4 → openitsub.com
-      - 🇨🇳 TW 5 → openitsub.com
-      - 🇨🇳 TW 6 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
@@ -276,12 +252,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
-      - 🇨🇳 TW 4 → openitsub.com
-      - 🇨🇳 TW 5 → openitsub.com
-      - 🇨🇳 TW 6 → openitsub.com
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -300,8 +271,6 @@ proxy-groups:
     type: select
     proxies:
       - MO 1 → openitsub.com
-      - MO 2 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -309,14 +278,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - MO 1 → openitsub.com
-      - MO 2 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 TW 1 → openitsub.com
-      - 🇨🇳 TW 2 → openitsub.com
-      - 🇨🇳 TW 3 → openitsub.com
-      - 🇨🇳 TW 4 → openitsub.com
-      - 🇨🇳 TW 5 → openitsub.com
-      - 🇨🇳 TW 6 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 👉 国内网站
     type: select

@@ -197,6 +197,9 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO 3 → openitsub.com, server: 45.64.22.41, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs09.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -216,6 +219,9 @@ proxy-groups:
     type: select
     proxies:
       - MO 1 → openitsub.com
+      - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
+      - 🇨🇳 TW 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
@@ -224,6 +230,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - MO 1 → openitsub.com
+      - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
+      - 🇨🇳 TW 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
@@ -252,7 +261,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇨🇳 TW 1 → openitsub.com
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -271,6 +280,8 @@ proxy-groups:
     type: select
     proxies:
       - MO 1 → openitsub.com
+      - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -278,6 +289,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - MO 1 → openitsub.com
+      - MO 2 → openitsub.com
+      - MO 3 → openitsub.com
+      - 🇨🇳 TW 1 → openitsub.com
       - 🇺🇸 US 1 → openitsub.com
   - name: 👉 国内网站
     type: select

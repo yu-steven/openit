@@ -198,6 +198,11 @@ dns:
 proxies:
   - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: jp08a.roc-taiwan.org.ua, port: 65018, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: 167.179.82.139, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: jp08a.roc-taiwan.org.ua, port: 65018, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 3 → openitsub.com, server: jp02a.roc-taiwan.net.ua, port: 65012, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4 → openitsub.com, server: jp03a.roc-taiwan.net.ua, port: 65013, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 TW 1 → openitsub.com, server: official.seoulcityhall.com.ua, port: 8080, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -217,6 +222,11 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇨🇳 TW 1 → openitsub.com
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -225,6 +235,11 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇨🇳 TW 1 → openitsub.com
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -252,7 +267,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇨🇳 TW 1 → openitsub.com
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -272,6 +287,10 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇨🇳 CN 4 → openitsub.com
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -280,6 +299,11 @@ proxy-groups:
     proxies:
       - MO 1 → openitsub.com
       - MO 2 → openitsub.com
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇨🇳 TW 1 → openitsub.com
   - name: 👉 国内网站
     type: select
     proxies:

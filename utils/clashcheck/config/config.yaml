@@ -1,7 +1,0 @@
-http-port: 23940 #clash流量代理端口，可以修改，注意端口占用
-api-port: 23941 #api端口，可以修改，注意端口占用
-threads: 50 #线程数，指一次扫描多少个节点，视系统配置情况而定，此处为50个线程
-source: https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/openit/main/utils/pool/output.yaml #你的输入文件名，同级、上级或下级目录的本地clash配置文件，上级目录的文件需要使用"../"进行引导, 也支持http(s)超文本传输协议的远程文件，注意必须是clash标准配置文件格式，此处为以ghproxy.com作为免翻墙的openit节点池
-outfile: data/check.yaml #你的输出文件名, 同级、上级或下级目录的本地clash配置文件, 上级目录的文件需要使用"../"进行引导, 目录应提前创建, 注意输出文件也是clash标准配置文件格式, 此处为下级目录data里的check.yaml文件
-test-url: https://www.youtube.com/s/player/23010b46/player_ias.vflset/en_US/remote.js #节点延迟测试地址, 可以更改，注意必须是GFW完全屏蔽的网站，github.com不行，此处为YouTube的某个js文件，注意http协议链接测试结果不准确，必须为加密的https协议链接
-timeout: 3000 #测试节点的延迟上限，不得低于1000 单位: 毫秒
